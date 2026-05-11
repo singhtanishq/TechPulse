@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Security — TechPulse</title>
+
+    <meta
+        name="description"
+        content="TechPulse Security Observatory — daily vulnerability and security intelligence."
+    >
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="index.html" class="brand">
+                <span class="brand-mark">T</span>
+                <span class="brand-name">TechPulse</span>
+            </a>
+
+            <nav class="main-nav">
+
+                <a href="index.html">Today</a>
+
+                <a href="history.html">History</a>
+
+                <a href="security.html" class="active">
+                    Security
+                </a>
+
+                <a href="releases.html">
+                    Releases
+                </a>
+
+                <a href="opensource.html">
+                    Open Source
+                </a>
+
+            </nav>
+
+            <div class="header-status">
+
+                <span class="status-dot"></span>
+
+                <span>Live</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE HERO -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <span class="section-kicker">
+                    SECURITY OBSERVATORY
+                </span>
+
+                <h1>
+                    Vulnerabilities.<br>
+                    <span>Tracked every day.</span>
+                </h1>
+
+                <p>
+                    A continuously updated record of vulnerabilities,
+                    security advisories and known exploited threats.
+                </p>
+
+                <div class="page-meta">
+
+                    <span>
+                        LAST UPDATED
+                    </span>
+
+                    <strong>
+                        18 SEP 2026 · 23:42 UTC
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECURITY OVERVIEW -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            TODAY
+                        </span>
+
+                        <h2>
+                            Security Overview
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+
+                        <span class="stat-label">
+                            NEW CVEs
+                        </span>
+
+                        <strong class="stat-value">
+                            42
+                        </strong>
+
+                        <span class="stat-detail">
+                            Published today
+                        </span>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <span class="stat-label">
+                            CRITICAL
+                        </span>
+
+                        <strong class="stat-value">
+                            8
+                        </strong>
+
+                        <span class="stat-detail">
+                            Critical severity
+                        </span>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <span class="stat-label">
+                            HIGH
+                        </span>
+
+                        <strong class="stat-value">
+                            23
+                        </strong>
+
+                        <span class="stat-detail">
+                            High severity
+                        </span>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <span class="stat-label">
+                            CISA KEV
+                        </span>
+
+                        <strong class="stat-value">
+                            3
+                        </strong>
+
+                        <span class="stat-detail">
+                            Known exploited
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VULNERABILITY LIST -->
+
+        <section class="section section-muted">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            VULNERABILITIES
+                        </span>
+
+                        <h2>
+                            Latest CVEs
+                        </h2>
+
+                    </div>
+
+                    <div class="filter-group">
+
+                        <button class="filter-button active">
+                            All
+                        </button>
+
+                        <button class="filter-button">
+                            Critical
+                        </button>
+
+                        <button class="filter-button">
+                            High
+                        </button>
+
+                        <button class="filter-button">
+                            Medium
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="vulnerability-list">
+
+
+                    <article class="vulnerability-card">
+
+                        <div class="vulnerability-id">
+
+                            <span>
+                                CVE
+                            </span>
+
+                            <strong>
+                                CVE-2026-XXXXX
+                            </strong>
+
+                        </div>
+
+
+                        <div class="vulnerability-content">
+
+                            <h3>
+                                Critical vulnerability detected
+                            </h3>
+
+                            <p>
+                                A newly published vulnerability affecting
+                                a tracked software ecosystem.
+                            </p>
+
+                            <div class="vulnerability-meta">
+
+                                <span>
+                                    Published today
+                                </span>
+
+                                <span>
+                                    CVSS 9.8
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="severity critical">
+                            CRITICAL
+                        </span>
+
+                    </article>
+
+
+                    <article class="vulnerability-card">
+
+                        <div class="vulnerability-id">
+
+                            <span>
+                                CVE
+                            </span>
+
+                            <strong>
+                                CVE-2026-XXXXX
+                            </strong>
+
+                        </div>
+
+
+                        <div class="vulnerability-content">
+
+                            <h3>
+                                High severity vulnerability
+                            </h3>
+
+                            <p>
+                                Security issue identified in a
+                                tracked software component.
+                            </p>
+
+                            <div class="vulnerability-meta">
+
+                                <span>
+                                    Published today
+                                </span>
+
+                                <span>
+                                    CVSS 8.1
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="severity high">
+                            HIGH
+                        </span>
+
+                    </article>
+
+
+                    <article class="vulnerability-card">
+
+                        <div class="vulnerability-id">
+
+                            <span>
+                                CVE
+                            </span>
+
+                            <strong>
+                                CVE-2026-XXXXX
+                            </strong>
+
+                        </div>
+
+
+                        <div class="vulnerability-content">
+
+                            <h3>
+                                Security advisory published
+                            </h3>
+
+                            <p>
+                                A new vulnerability has been added
+                                to the daily security record.
+                            </p>
+
+                            <div class="vulnerability-meta">
+
+                                <span>
+                                    Published today
+                                </span>
+
+                                <span>
+                                    CVSS 6.5
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="severity medium">
+                            MEDIUM
+                        </span>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DAILY ARCHIVE -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            HISTORICAL DATA
+                        </span>
+
+                        <h2>
+                            Daily Security Record
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="history.html"
+                        class="section-link"
+                    >
+                        View history →
+                    </a>
+
+                </div>
+
+
+                <div class="security-history">
+
+                    <div class="security-history-row">
+
+                        <span class="history-date">
+                            18 SEP 2026
+                        </span>
+
+                        <span>
+                            42 CVEs
+                        </span>
+
+                        <span>
+                            8 Critical
+                        </span>
+
+                        <span>
+                            23 High
+                        </span>
+
+                    </div>
+
+
+                    <div class="security-history-row">
+
+                        <span class="history-date">
+                            17 SEP 2026
+                        </span>
+
+                        <span>
+                            31 CVEs
+                        </span>
+
+                        <span>
+                            5 Critical
+                        </span>
+
+                        <span>
+                            18 High
+                        </span>
+
+                    </div>
+
+
+                    <div class="security-history-row">
+
+                        <span class="history-date">
+                            16 SEP 2026
+                        </span>
+
+                        <span>
+                            27 CVEs
+                        </span>
+
+                        <span>
+                            4 Critical
+                        </span>
+
+                        <span>
+                            15 High
+                        </span>
+
+                    </div>
+
+
+                    <div class="security-history-row">
+
+                        <span class="history-date">
+                            15 SEP 2026
+                        </span>
+
+                        <span>
+                            38 CVEs
+                        </span>
+
+                        <span>
+                            7 Critical
+                        </span>
+
+                        <span>
+                            21 High
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOURCES -->
+
+        <section class="section section-dark">
+
+            <div class="container source-note">
+
+                <span class="section-kicker">
+                    DATA SOURCES
+                </span>
+
+                <h2>
+                    Built from public security data.
+                </h2>
+
+                <p>
+                    TechPulse aggregates publicly available vulnerability
+                    and security information and preserves daily snapshots
+                    for historical analysis.
+                </p>
+
+                <div class="source-tags">
+
+                    <span>NVD</span>
+                    <span>CISA KEV</span>
+                    <span>PUBLIC ADVISORIES</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div>
+
+                <a href="index.html" class="brand">
+
+                    <span class="brand-mark">T</span>
+
+                    <span class="brand-name">
+                        TechPulse
+                    </span>
+
+                </a>
+
+                <p>
+                    Technology, observed every day.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="history.html">
+                    History
+                </a>
+
+                <a href="security.html">
+                    Security
+                </a>
+
+                <a href="releases.html">
+                    Releases
+                </a>
+
+                <a href="opensource.html">
+                    Open Source
+                </a>
+
+            </div>
+
+
+            <div class="footer-meta">
+
+                <span>
+                    Open source project
+                </span>
+
+                <span>
+                    Built with GitHub Actions
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
