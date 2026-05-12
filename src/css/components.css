@@ -605,3 +605,402 @@
     }
 
 }
+
+/* =========================================================
+   PAGE HERO
+   ========================================================= */
+
+.page-hero {
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.page-hero::after {
+    content: '';
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.016) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.016) 1px,
+            transparent 1px
+        );
+
+    background-size: 48px 48px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 85%
+    );
+
+    pointer-events: none;
+}
+
+.page-hero > .container {
+    position: relative;
+    z-index: 1;
+
+    padding-top: 100px;
+    padding-bottom: 92px;
+}
+
+.page-hero h1 {
+    max-width: 850px;
+
+    font-size: clamp(48px, 7vw, 88px);
+    line-height: 0.96;
+
+    letter-spacing: -0.06em;
+}
+
+.page-hero h1 span {
+    color: var(--text-muted);
+}
+
+.page-hero p {
+    max-width: 620px;
+
+    margin-top: 28px;
+
+    color: var(--text-soft);
+
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.page-meta {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 34px;
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 9px;
+
+    letter-spacing: 0.08em;
+}
+
+.page-meta strong {
+    color: var(--text-soft);
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   FILTERS
+   ========================================================= */
+
+.filter-group {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 4px;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    background: var(--bg);
+}
+
+.filter-button {
+    padding: 7px 11px;
+
+    border: 0;
+    border-radius: 4px;
+
+    background: transparent;
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 9px;
+
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+.filter-button:hover {
+    color: var(--text-soft);
+}
+
+.filter-button.active {
+    background: var(--surface);
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   VULNERABILITY CARDS
+   ========================================================= */
+
+.vulnerability-list {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid var(--border);
+}
+
+.vulnerability-card {
+    display: grid;
+
+    grid-template-columns:
+        180px
+        minmax(0, 1fr)
+        auto;
+
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid var(--border-soft);
+
+    transition:
+        background var(--transition),
+        border-color var(--transition);
+}
+
+.vulnerability-card:hover {
+    border-color: var(--border);
+}
+
+.vulnerability-id span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 8px;
+
+    letter-spacing: 0.12em;
+}
+
+.vulnerability-id strong {
+    color: var(--text-soft);
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.vulnerability-content h3 {
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: -0.015em;
+}
+
+.vulnerability-content p {
+    max-width: 650px;
+
+    margin-top: 5px;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+}
+
+.vulnerability-meta {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 12px;
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   SECURITY HISTORY
+   ========================================================= */
+
+.security-history {
+    border-top: 1px solid var(--border);
+}
+
+.security-history-row {
+    display: grid;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr
+        1fr;
+
+    align-items: center;
+
+    padding: 19px 0;
+
+    border-bottom: 1px solid var(--border-soft);
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 10px;
+}
+
+.security-history-row .history-date {
+    color: var(--text-soft);
+}
+
+
+/* =========================================================
+   SOURCE NOTE
+   ========================================================= */
+
+.source-note {
+    max-width: 760px;
+}
+
+.source-note h2 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+}
+
+.source-note > p {
+    max-width: 620px;
+
+    margin-top: 22px;
+
+    color: var(--text-soft);
+
+    line-height: 1.75;
+}
+
+.source-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 28px;
+}
+
+.source-tags span {
+    padding: 7px 10px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    background: var(--surface);
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 8px;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   SECURITY RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .vulnerability-card {
+        grid-template-columns:
+            140px
+            minmax(0, 1fr);
+
+        gap: 24px;
+    }
+
+    .vulnerability-card > .severity {
+        grid-column: 2;
+        width: fit-content;
+    }
+
+    .security-history-row {
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr
+            1fr;
+    }
+}
+
+
+@media (max-width: 680px) {
+
+    .page-hero > .container {
+        padding-top: 76px;
+        padding-bottom: 70px;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(46px, 14vw, 70px);
+    }
+
+    .page-meta {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .filter-group {
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+    .filter-button {
+        flex-shrink: 0;
+    }
+
+    .vulnerability-card {
+        display: block;
+
+        padding: 26px 0;
+    }
+
+    .vulnerability-content {
+        margin-top: 18px;
+    }
+
+    .vulnerability-card > .severity {
+        display: inline-block;
+
+        margin-top: 18px;
+    }
+
+    .security-history {
+        overflow-x: auto;
+    }
+
+    .security-history-row {
+        min-width: 520px;
+    }
+}
+
