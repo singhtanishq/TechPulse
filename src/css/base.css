@@ -14,13 +14,17 @@
     --bg-soft: #0f1216;
     --surface: #13171c;
     --surface-hover: #181d23;
+    --surface-soft: #161b21;
 
     --border: #252b33;
     --border-soft: #1b2026;
+    --border-strong: #303944;
 
     --text: #f1f3f5;
     --text-soft: #b0b7c0;
     --text-muted: #737c87;
+    --text-primary: #f1f3f5;
+    --text-secondary: #c8ccd4;
 
     --accent: #5eead4;
     --accent-soft: rgba(94, 234, 212, 0.10);
@@ -31,6 +35,7 @@
     --success: #5eead4;
 
     --font-main: 'Inter', sans-serif;
+    --font-sans: 'Inter', sans-serif;
     --font-mono: 'DM Mono', monospace;
 
     --container: 1180px;
