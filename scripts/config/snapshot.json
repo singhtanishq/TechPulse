@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "TechPulse Daily Snapshot Configuration",
+  "snapshot": {
+    "model": "utc_calendar_day",
+    "description": "Each snapshot represents a single UTC calendar day (00:00:00Z to 23:59:59Z).",
+    "timezone": "UTC",
+    "window": {
+      "start": "00:00:00Z",
+      "end": "23:59:59Z"
+    },
+    "collection": {
+      "description": "Collection runs after the UTC day ends to capture complete day's data.",
+      "recommended_schedule": "02:00 UTC daily",
+      "rationale": "Allows time for NVD/CISA/GitHub to publish/modify records for the previous UTC day."
+    },
+    "idempotency": {
+      "description": "Running multiple times for the same date produces identical output.",
+      "deduplication": "CVE ID for vulnerabilities, owner/repo for GitHub, GUID/URL for RSS"
+    }
+  },
+  "data_directories": {
+    "raw": "data/security/nvd/, data/security/cisa/, data/releases/, data/opensource/, data/tech/",
+    "normalized": "data/normalized/",
+    "generated": "generated/",
+    "daily_snapshots": "data/daily/"
+  },
+  "filename_convention": {
+    "nvd_raw": "data/security/nvd/YYYY-MM-DD.json",
+    "cisa_raw": "data/security/cisa/YYYY-MM-DD.json",
+    "github_raw": "data/releases/YYYY-MM-DD.json",
+    "opensource_raw": "data/opensource/YYYY-MM-DD.json",
+    "rss_raw": "data/tech/YYYY-MM-DD.json",
+    "daily_snapshot": "data/daily/YYYY-MM-DD.json",
+    "generated_frontend": "generated/data.json"
+  }
+}
