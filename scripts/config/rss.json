@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "TechPulse RSS/Atom Feeds Configuration",
+  "feeds": [
+    {
+      "name": "The Register - Security",
+      "url": "https://www.theregister.com/security/headlines.atom",
+      "category": "security",
+      "source": "The Register"
+    },
+    {
+      "name": "The Register - Software",
+      "url": "https://www.theregister.com/software/headlines.atom",
+      "category": "tech",
+      "source": "The Register"
+    },
+    {
+      "name": "Ars Technica - Technology",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "category": "tech",
+      "source": "Ars Technica"
+    },
+    {
+      "name": "Ars Technica - Security",
+      "url": "https://feeds.arstechnica.com/arstechnica/security",
+      "category": "security",
+      "source": "Ars Technica"
+    },
+    {
+      "name": "GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "category": "tech",
+      "source": "GitHub Blog"
+    },
+    {
+      "name": "AWS News Blog",
+      "url": "https://aws.amazon.com/blogs/aws/feed/",
+      "category": "tech",
+      "source": "AWS"
+    },
+    {
+      "name": "Google Cloud Blog",
+      "url": "https://cloudblog.withgoogle.com/rss/",
+      "category": "tech",
+      "source": "Google Cloud"
+    },
+    {
+      "name": "Microsoft Dev Blogs",
+      "url": "https://devblogs.microsoft.com/feed/",
+      "category": "tech",
+      "source": "Microsoft"
+    },
+    {
+      "name": "Mozilla Hacks",
+      "url": "https://hacks.mozilla.org/feed/",
+      "category": "tech",
+      "source": "Mozilla"
+    },
+    {
+      "name": "Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/rss/",
+      "category": "tech",
+      "source": "Cloudflare"
+    },
+    {
+      "name": "Netflix Tech Blog",
+      "url": "https://netflixtechblog.com/feed",
+      "category": "tech",
+      "source": "Netflix"
+    },
+    {
+      "name": "Uber Engineering",
+      "url": "https://eng.uber.com/feed/",
+      "category": "tech",
+      "source": "Uber"
+    },
+    {
+      "name": "Stripe Blog",
+      "url": "https://stripe.com/blog/rss",
+      "category": "tech",
+      "source": "Stripe"
+    }
+  ],
+  "collection": {
+    "timeout_seconds": 15,
+    "max_entries_per_feed": 50,
+    "rate_limit_delay_seconds": 2
+  }
+}
