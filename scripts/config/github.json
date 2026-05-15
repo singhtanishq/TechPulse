@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "TechPulse GitHub Tracked Repositories Configuration",
+  "tracked_repositories": [
+    {
+      "owner": "facebook",
+      "repo": "react",
+      "category": "frontend"
+    },
+    {
+      "owner": "laravel",
+      "repo": "framework",
+      "category": "backend"
+    },
+    {
+      "owner": "nodejs",
+      "repo": "node",
+      "category": "runtime"
+    },
+    {
+      "owner": "python",
+      "repo": "cpython",
+      "category": "runtime"
+    },
+    {
+      "owner": "vitejs",
+      "repo": "vite",
+      "category": "build-tool"
+    },
+    {
+      "owner": "vuejs",
+      "repo": "core",
+      "category": "frontend"
+    },
+    {
+      "owner": "django",
+      "repo": "django",
+      "category": "backend"
+    },
+    {
+      "owner": "rust-lang",
+      "repo": "rust",
+      "category": "language"
+    },
+    {
+      "owner": "golang",
+      "repo": "go",
+      "category": "language"
+    },
+    {
+      "owner": "tensorflow",
+      "repo": "tensorflow",
+      "category": "ml"
+    },
+    {
+      "owner": "pytorch",
+      "repo": "pytorch",
+      "category": "ml"
+    },
+    {
+      "owner": "kubernetes",
+      "repo": "kubernetes",
+      "category": "infrastructure"
+    },
+    {
+      "owner": "hashicorp",
+      "repo": "terraform",
+      "category": "infrastructure"
+    },
+    {
+      "owner": "docker",
+      "repo": "cli",
+      "category": "infrastructure"
+    },
+    {
+      "owner": "vercel",
+      "repo": "next.js",
+      "category": "frontend"
+    },
+    {
+      "owner": "tailwindlabs",
+      "repo": "tailwindcss",
+      "category": "css-framework"
+    },
+    {
+      "owner": "prisma",
+      "repo": "prisma",
+      "category": "database"
+    },
+    {
+      "owner": "supabase",
+      "repo": "supabase",
+      "category": "backend"
+    },
+    {
+      "owner": "anthropics",
+      "repo": "anthropic-sdk-python",
+      "category": "ai"
+    },
+    {
+      "owner": "openai",
+      "repo": "openai-python",
+      "category": "ai"
+    }
+  ],
+  "collection": {
+    "include_prereleases": false,
+    "include_drafts": false,
+    "max_releases_per_repo": 5,
+    "rate_limit_delay_seconds": 1
+  }
+}
