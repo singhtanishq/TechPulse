@@ -221,19 +221,19 @@
 
                     <div class="filter-group">
 
-                        <button class="filter-button active">
+                        <button class="filter-button active" data-filter="all">
                             All
                         </button>
 
-                        <button class="filter-button">
+                        <button class="filter-button" data-filter="critical">
                             Critical
                         </button>
 
-                        <button class="filter-button">
+                        <button class="filter-button" data-filter="high">
                             High
                         </button>
 
-                        <button class="filter-button">
+                        <button class="filter-button" data-filter="medium">
                             Medium
                         </button>
 
@@ -242,153 +242,8 @@
                 </div>
 
 
-                <div class="vulnerability-list">
-
-
-                    <article class="vulnerability-card">
-
-                        <div class="vulnerability-id">
-
-                            <span>
-                                CVE
-                            </span>
-
-                            <strong>
-                                CVE-2026-XXXXX
-                            </strong>
-
-                        </div>
-
-
-                        <div class="vulnerability-content">
-
-                            <h3>
-                                Critical vulnerability detected
-                            </h3>
-
-                            <p>
-                                A newly published vulnerability affecting
-                                a tracked software ecosystem.
-                            </p>
-
-                            <div class="vulnerability-meta">
-
-                                <span>
-                                    Published today
-                                </span>
-
-                                <span>
-                                    CVSS 9.8
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <span class="severity critical">
-                            CRITICAL
-                        </span>
-
-                    </article>
-
-
-                    <article class="vulnerability-card">
-
-                        <div class="vulnerability-id">
-
-                            <span>
-                                CVE
-                            </span>
-
-                            <strong>
-                                CVE-2026-XXXXX
-                            </strong>
-
-                        </div>
-
-
-                        <div class="vulnerability-content">
-
-                            <h3>
-                                High severity vulnerability
-                            </h3>
-
-                            <p>
-                                Security issue identified in a
-                                tracked software component.
-                            </p>
-
-                            <div class="vulnerability-meta">
-
-                                <span>
-                                    Published today
-                                </span>
-
-                                <span>
-                                    CVSS 8.1
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <span class="severity high">
-                            HIGH
-                        </span>
-
-                    </article>
-
-
-                    <article class="vulnerability-card">
-
-                        <div class="vulnerability-id">
-
-                            <span>
-                                CVE
-                            </span>
-
-                            <strong>
-                                CVE-2026-XXXXX
-                            </strong>
-
-                        </div>
-
-
-                        <div class="vulnerability-content">
-
-                            <h3>
-                                Security advisory published
-                            </h3>
-
-                            <p>
-                                A new vulnerability has been added
-                                to the daily security record.
-                            </p>
-
-                            <div class="vulnerability-meta">
-
-                                <span>
-                                    Published today
-                                </span>
-
-                                <span>
-                                    CVSS 6.5
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <span class="severity medium">
-                            MEDIUM
-                        </span>
-
-                    </article>
-
-
+                <div class="vulnerability-list" data-vulnerability-list>
+                    <div class="empty-state">Loading vulnerability data...</div>
                 </div>
 
             </div>
