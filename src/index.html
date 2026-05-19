@@ -188,63 +188,24 @@
 
                         <div>
                             <span>CRITICAL</span>
-                            <strong>8</strong>
+                            <strong data-critical>—</strong>
                         </div>
 
                         <div>
                             <span>HIGH</span>
-                            <strong>23</strong>
+                            <strong data-high>—</strong>
                         </div>
 
                         <div>
                             <span>MEDIUM</span>
-                            <strong>91</strong>
+                            <strong data-medium>—</strong>
                         </div>
 
                     </div>
 
 
-                    <div class="list">
-
-                        <div class="list-item">
-
-                            <div>
-                                <strong>CVE-2026-XXXXX</strong>
-                                <span>Critical vulnerability detected</span>
-                            </div>
-
-                            <span class="severity critical">
-                                CRITICAL
-                            </span>
-
-                        </div>
-
-                        <div class="list-item">
-
-                            <div>
-                                <strong>CVE-2026-XXXXX</strong>
-                                <span>High severity vulnerability</span>
-                            </div>
-
-                            <span class="severity high">
-                                HIGH
-                            </span>
-
-                        </div>
-
-                        <div class="list-item">
-
-                            <div>
-                                <strong>CVE-2026-XXXXX</strong>
-                                <span>Security advisory published</span>
-                            </div>
-
-                            <span class="severity medium">
-                                MEDIUM
-                            </span>
-
-                        </div>
-
+                    <div class="list" data-security-latest>
+                        <div class="empty-state">Loading security data...</div>
                     </div>
 
                 </article>
@@ -266,63 +227,8 @@
                     </div>
 
 
-                    <div class="list">
-
-                        <div class="release-item">
-
-                            <div class="release-icon">R</div>
-
-                            <div>
-                                <strong>React</strong>
-                                <span>v19.x.x</span>
-                            </div>
-
-                            <time>Today</time>
-
-                        </div>
-
-
-                        <div class="release-item">
-
-                            <div class="release-icon">L</div>
-
-                            <div>
-                                <strong>Laravel</strong>
-                                <span>v13.x.x</span>
-                            </div>
-
-                            <time>Today</time>
-
-                        </div>
-
-
-                        <div class="release-item">
-
-                            <div class="release-icon">N</div>
-
-                            <div>
-                                <strong>Node.js</strong>
-                                <span>v24.x.x</span>
-                            </div>
-
-                            <time>Yesterday</time>
-
-                        </div>
-
-
-                        <div class="release-item">
-
-                            <div class="release-icon">P</div>
-
-                            <div>
-                                <strong>Python</strong>
-                                <span>v3.x.x</span>
-                            </div>
-
-                            <time>Yesterday</time>
-
-                        </div>
-
+                    <div class="list" data-releases-list>
+                        <div class="empty-state">Loading release data...</div>
                     </div>
 
                 </article>
