@@ -1,0 +1,26 @@
+{
+  "history": [
+    {
+      "cves": 2294,
+      "date": "2026-09-17",
+      "knownExploited": 2,
+      "projects": 20,
+      "releases": 2,
+      "techEntries": 16
+    }
+  ],
+  "latest": {
+    "date": "2026-09-17",
+    "snapshot": {
+      "cves": 2294,
+      "knownExploited": 2,
+      "projects": 20,
+      "releases": 2,
+      "techEntries": 16
+    }
+  },
+  "meta": {
+    "processedAt": "2026-09-18T06:47:17.665870+00:00",
+    "totalSnapshots": 1
+  }
+}
