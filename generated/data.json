@@ -1,0 +1,379 @@
+{
+  "history": [
+    {
+      "cves": 2294,
+      "date": "2026-09-17",
+      "knownExploited": 2,
+      "projects": 20,
+      "releases": 2,
+      "techEntries": 16
+    }
+  ],
+  "meta": {
+    "date": "2026-09-18",
+    "daysObserved": 1,
+    "generatedAt": "2026-09-18T06:47:43.040581+00:00",
+    "snapshots": 1
+  },
+  "openSource": [
+    {
+      "daily_growth": null,
+      "description": "The library for web and native user interfaces.",
+      "full_name": "react/react",
+      "language": "JavaScript",
+      "name": "react",
+      "rank": 1,
+      "stars": 250550,
+      "url": "https://github.com/react/react"
+    },
+    {
+      "daily_growth": null,
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "full_name": "tensorflow/tensorflow",
+      "language": "C++",
+      "name": "tensorflow",
+      "rank": 2,
+      "stars": 200163,
+      "url": "https://github.com/tensorflow/tensorflow"
+    },
+    {
+      "daily_growth": null,
+      "description": "The React Framework",
+      "full_name": "vercel/next.js",
+      "language": "JavaScript",
+      "name": "next.js",
+      "rank": 3,
+      "stars": 142333,
+      "url": "https://github.com/vercel/next.js"
+    },
+    {
+      "daily_growth": null,
+      "description": "The Go programming language",
+      "full_name": "golang/go",
+      "language": "Go",
+      "name": "go",
+      "rank": 4,
+      "stars": 138870,
+      "url": "https://github.com/golang/go"
+    },
+    {
+      "daily_growth": null,
+      "description": "Production-Grade Container Scheduling and Management",
+      "full_name": "kubernetes/kubernetes",
+      "language": "Go",
+      "name": "kubernetes",
+      "rank": 5,
+      "stars": 127801,
+      "url": "https://github.com/kubernetes/kubernetes"
+    },
+    {
+      "daily_growth": null,
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "full_name": "nodejs/node",
+      "language": "JavaScript",
+      "name": "node",
+      "rank": 6,
+      "stars": 121983,
+      "url": "https://github.com/nodejs/node"
+    },
+    {
+      "daily_growth": null,
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "full_name": "rust-lang/rust",
+      "language": "Rust",
+      "name": "rust",
+      "rank": 7,
+      "stars": 118921,
+      "url": "https://github.com/rust-lang/rust"
+    },
+    {
+      "daily_growth": null,
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "full_name": "supabase/supabase",
+      "language": "TypeScript",
+      "name": "supabase",
+      "rank": 8,
+      "stars": 109935,
+      "url": "https://github.com/supabase/supabase"
+    },
+    {
+      "daily_growth": null,
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "full_name": "pytorch/pytorch",
+      "language": "Python",
+      "name": "pytorch",
+      "rank": 9,
+      "stars": 103079,
+      "url": "https://github.com/pytorch/pytorch"
+    },
+    {
+      "daily_growth": null,
+      "description": "A utility-first CSS framework for rapid UI development.",
+      "full_name": "tailwindlabs/tailwindcss",
+      "language": "TypeScript",
+      "name": "tailwindcss",
+      "rank": 10,
+      "stars": 97599,
+      "url": "https://github.com/tailwindlabs/tailwindcss"
+    }
+  ],
+  "releases": [
+    {
+      "date": "Today",
+      "project": "openai-python",
+      "repository": "openai/openai-python",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.15.0",
+      "version": "v3.15.0"
+    },
+    {
+      "date": "Yesterday",
+      "project": "core",
+      "repository": "vuejs/core",
+      "url": "https://github.com/vuejs/core/releases/tag/v3.5.43",
+      "version": "v3.5.43"
+    }
+  ],
+  "security": {
+    "critical": 195,
+    "high": 845,
+    "latest": [
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-93485",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": "HIGH",
+        "title": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Automattic WordPre...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93485"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-90984",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The Generate PDF using Contact Form 7 WordPress plugin before 4.2.2 does not restrict the destination of the image fetch...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90984"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-90978",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The Filter Gallery WordPress plugin before 1.1.5 does not verify the nonce on several of its AJAX handlers when the nonc...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90978"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-89008",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The Bookit — Booking & Appointment Calendar WordPress plugin before 2.6.0.5 does not perform an authorization check on o...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89008"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-89007",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The Bookit — Booking & Appointment Calendar WordPress plugin before 2.6.0.5 does not perform a capability check in one o...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89007"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-88993",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The All Bootstrap Blocks WordPress plugin through 1.3.31 does not properly escape a block attribute before outputting it...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88993"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-88844",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The MasterStudy LMS WordPress Plugin  WordPress plugin before 3.7.50 does not verify that the requesting user owns the c...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88844"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-88825",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The iGMS Direct Booking WordPress plugin before 2.0 does not authorise or escape its widget appearance settings, allowin...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88825"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-88798",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The Really Simple Security  WordPress plugin before 9.8.3 does not validate a client-supplied address value before using...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88798"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "id": "CVE-2026-87966",
+        "known_exploited": false,
+        "modified": "Today",
+        "published": "Today",
+        "severity": null,
+        "title": "The Easy Appointments WordPress plugin before 4.0.2.2 does not perform an ownership or authorization check on its unauth...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87966"
+      }
+    ],
+    "low": 84,
+    "medium": 495,
+    "unknown": 673
+  },
+  "snapshot": {
+    "cves": 2294,
+    "knownExploited": 2,
+    "projects": 20,
+    "releases": 2,
+    "techEntries": 16
+  },
+  "sources": {
+    "opensource": {
+      "github": {
+        "status": "success",
+        "total": 20
+      }
+    },
+    "releases": {
+      "github": {
+        "inWindow": 2,
+        "status": "success",
+        "totalReleases": 60,
+        "totalRepos": 20
+      }
+    },
+    "security": {
+      "cisa": {
+        "inWindow": 2,
+        "status": "success",
+        "total": 1713
+      },
+      "nvd": {
+        "inWindow": 2294,
+        "status": "success",
+        "total": 2294
+      }
+    },
+    "technology": {
+      "rss": {
+        "inWindow": 16,
+        "status": "success",
+        "total": 230
+      }
+    }
+  },
+  "technology": [
+    {
+      "category": "security",
+      "date": "Today",
+      "source": "The Register",
+      "summary": "Think tank points out that companies banned by Washington will help run the regime that Uncle Sam now controls",
+      "title": "USA’s Venezuela takeover comes with bonus exposure to Chinese AI surveillance tech",
+      "url": "https://www.theregister.com/security/2026/09/18/usas-venezuela-takeover-comes-with-bonus-exposure-to-chinese-ai-surveillance-tech/5297357"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Plugin4Shell attack affects all the major coding agents, researchers say",
+      "title": "AI coding agents' 0-click RCE flaw could hand attackers keys to the kingdom",
+      "url": "https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "AWS",
+      "summary": "AWS introduces new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 i...",
+      "title": "New low-cost burstable Amazon EC2 T8i instances are generally available",
+      "url": "https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Eve's dropping in on Alice and Bob",
+      "title": "Researchers find way to listen in on headphones from afar",
+      "url": "https://www.theregister.com/security/2026/09/17/researchers-find-way-to-listen-in-on-headphones-from-afar/5297303"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "AWS",
+      "summary": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
+      "title": "AWS Elastic Beanstalk introduces Cluster Mode",
+      "url": "https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Ars Technica",
+      "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
+      "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
+      "url": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Beware the SparroWocky, my son! The backdoor that bites…",
+      "title": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
+      "url": "https://www.theregister.com/security/2026/09/17/chinas-salt-typhoon-backdoors-latin-american-orgs-with-new-snooping-malware/5297286"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "Operating large data pipelines requires an orchestration layer that scales smoothly as workloads expand. When your pipelines process millions of complex data points every day to feed predictive models, staying up-to-date with your technology stack is a strategic necessity.\nPine59 provides location i...",
+      "title": "The future of orchestration: Pine59’s journey to Airflow 3 on Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/supply-chain-logistics/the-future-of-orchestration-pine59s-journey-to-airflow-3-on-google-cloud/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "At Google, we see firsthand how the speed, scale, and sophistication of cyber threats continue to challenge traditional enterprise defenses. Today’s defenders can’t rely on reactive triage or fragmented data feeds; you require high-fidelity intelligence, deep underground visibility, and actionable c...",
+      "title": "Google named a Leader in the External Threat Intelligence Service Forrester Wave™",
+      "url": "https://cloud.google.com/blog/products/identity-security/google-named-a-leader-in-the-external-threat-intelligence-service-forrester-wave/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "Editor's note: Lucius AI, a tender-intelligence startup covering markets across five continents, runs its entire data platform on AlloyDB for PostgreSQL with a single operator. By migrating semantic search to a ScaNN index and managing database operations through Model Context Protocol (MCP), query ...",
+      "title": "How a solo founder runs a five-continent tender platform on AlloyDB and MCP",
+      "url": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/"
+    }
+  ]
+}
