@@ -1,0 +1,597 @@
+{
+  "date": "2026-09-17",
+  "generatedAt": "2026-09-18T06:47:13.182271+00:00",
+  "opensource": {
+    "topProjects": [
+      {
+        "collected_at": "2026-09-18T06:44:30.819299+00:00",
+        "created_at": "2013-05-24T16:15:54Z",
+        "daily_growth": null,
+        "default_branch": "main",
+        "description": "The library for web and native user interfaces.",
+        "forks": 51373,
+        "full_name": "react/react",
+        "growth_available": false,
+        "id": 10270250,
+        "language": "JavaScript",
+        "name": "react",
+        "open_issues": 1379,
+        "owner": "react",
+        "pushed_at": "2026-09-17T19:48:26Z",
+        "rank": 1,
+        "source": "GitHub",
+        "stars": 250550,
+        "updated_at": "2026-09-18T06:43:30Z",
+        "url": "https://github.com/react/react",
+        "watchers": 250550
+      },
+      {
+        "collected_at": "2026-09-18T06:44:54.483878+00:00",
+        "created_at": "2015-11-07T01:19:20Z",
+        "daily_growth": null,
+        "default_branch": "master",
+        "description": "An Open Source Machine Learning Framework for Everyone",
+        "forks": 76718,
+        "full_name": "tensorflow/tensorflow",
+        "growth_available": false,
+        "id": 45717250,
+        "language": "C++",
+        "name": "tensorflow",
+        "open_issues": 3169,
+        "owner": "tensorflow",
+        "pushed_at": "2026-09-18T06:27:07Z",
+        "rank": 2,
+        "source": "GitHub",
+        "stars": 200163,
+        "updated_at": "2026-09-18T06:32:51Z",
+        "url": "https://github.com/tensorflow/tensorflow",
+        "watchers": 200163
+      },
+      {
+        "collected_at": "2026-09-18T06:45:07.568666+00:00",
+        "created_at": "2016-10-05T23:32:51Z",
+        "daily_growth": null,
+        "default_branch": "canary",
+        "description": "The React Framework",
+        "forks": 32277,
+        "full_name": "vercel/next.js",
+        "growth_available": false,
+        "id": 70107786,
+        "language": "JavaScript",
+        "name": "next.js",
+        "open_issues": 3421,
+        "owner": "vercel",
+        "pushed_at": "2026-09-18T06:37:04Z",
+        "rank": 3,
+        "source": "GitHub",
+        "stars": 142333,
+        "updated_at": "2026-09-18T06:41:54Z",
+        "url": "https://github.com/vercel/next.js",
+        "watchers": 142333
+      },
+      {
+        "collected_at": "2026-09-18T06:44:52.280303+00:00",
+        "created_at": "2014-08-19T04:33:40Z",
+        "daily_growth": null,
+        "default_branch": "master",
+        "description": "The Go programming language",
+        "forks": 19747,
+        "full_name": "golang/go",
+        "growth_available": false,
+        "id": 23096959,
+        "language": "Go",
+        "name": "go",
+        "open_issues": 10163,
+        "owner": "golang",
+        "pushed_at": "2026-09-17T22:32:30Z",
+        "rank": 4,
+        "source": "GitHub",
+        "stars": 138870,
+        "updated_at": "2026-09-18T06:29:10Z",
+        "url": "https://github.com/golang/go",
+        "watchers": 138870
+      },
+      {
+        "collected_at": "2026-09-18T06:45:00.519416+00:00",
+        "created_at": "2014-06-06T22:56:04Z",
+        "daily_growth": null,
+        "default_branch": "master",
+        "description": "Production-Grade Container Scheduling and Management",
+        "forks": 44468,
+        "full_name": "kubernetes/kubernetes",
+        "growth_available": false,
+        "id": 20580498,
+        "language": "Go",
+        "name": "kubernetes",
+        "open_issues": 3055,
+        "owner": "kubernetes",
+        "pushed_at": "2026-09-18T01:27:20Z",
+        "rank": 5,
+        "source": "GitHub",
+        "stars": 127801,
+        "updated_at": "2026-09-18T05:11:45Z",
+        "url": "https://github.com/kubernetes/kubernetes",
+        "watchers": 127801
+      },
+      {
+        "collected_at": "2026-09-18T06:44:36.419507+00:00",
+        "created_at": "2014-11-26T19:57:11Z",
+        "daily_growth": null,
+        "default_branch": "main",
+        "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+        "forks": 37149,
+        "full_name": "nodejs/node",
+        "growth_available": false,
+        "id": 27193779,
+        "language": "JavaScript",
+        "name": "node",
+        "open_issues": 1187,
+        "owner": "nodejs",
+        "pushed_at": "2026-09-18T05:37:41Z",
+        "rank": 6,
+        "source": "GitHub",
+        "stars": 121983,
+        "updated_at": "2026-09-18T05:37:50Z",
+        "url": "https://github.com/nodejs/node",
+        "watchers": 121983
+      },
+      {
+        "collected_at": "2026-09-18T06:44:49.528474+00:00",
+        "created_at": "2010-06-16T20:39:03Z",
+        "daily_growth": null,
+        "default_branch": "main",
+        "description": "Empowering everyone to build reliable and efficient software.",
+        "forks": 15942,
+        "full_name": "rust-lang/rust",
+        "growth_available": false,
+        "id": 724712,
+        "language": "Rust",
+        "name": "rust",
+        "open_issues": 12614,
+        "owner": "rust-lang",
+        "pushed_at": "2026-09-18T06:40:38Z",
+        "rank": 7,
+        "source": "GitHub",
+        "stars": 118921,
+        "updated_at": "2026-09-18T06:32:27Z",
+        "url": "https://github.com/rust-lang/rust",
+        "watchers": 118921
+      },
+      {
+        "collected_at": "2026-09-18T06:45:17.482076+00:00",
+        "created_at": "2019-10-12T05:56:49Z",
+        "daily_growth": null,
+        "default_branch": "master",
+        "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+        "forks": 14177,
+        "full_name": "supabase/supabase",
+        "growth_available": false,
+        "id": 214587193,
+        "language": "TypeScript",
+        "name": "supabase",
+        "open_issues": 1136,
+        "owner": "supabase",
+        "pushed_at": "2026-09-18T06:40:50Z",
+        "rank": 8,
+        "source": "GitHub",
+        "stars": 109935,
+        "updated_at": "2026-09-18T06:38:35Z",
+        "url": "https://github.com/supabase/supabase",
+        "watchers": 109935
+      },
+      {
+        "collected_at": "2026-09-18T06:44:56.958844+00:00",
+        "created_at": "2016-08-13T05:26:41Z",
+        "daily_growth": null,
+        "default_branch": "main",
+        "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+        "forks": 29662,
+        "full_name": "pytorch/pytorch",
+        "growth_available": false,
+        "id": 65600975,
+        "language": "Python",
+        "name": "pytorch",
+        "open_issues": 17598,
+        "owner": "pytorch",
+        "pushed_at": "2026-09-18T06:41:43Z",
+        "rank": 9,
+        "source": "GitHub",
+        "stars": 103079,
+        "updated_at": "2026-09-18T06:38:37Z",
+        "url": "https://github.com/pytorch/pytorch",
+        "watchers": 103079
+      },
+      {
+        "collected_at": "2026-09-18T06:45:09.991932+00:00",
+        "created_at": "2017-10-06T14:59:14Z",
+        "daily_growth": null,
+        "default_branch": "main",
+        "description": "A utility-first CSS framework for rapid UI development.",
+        "forks": 5969,
+        "full_name": "tailwindlabs/tailwindcss",
+        "growth_available": false,
+        "id": 106017343,
+        "language": "TypeScript",
+        "name": "tailwindcss",
+        "open_issues": 71,
+        "owner": "tailwindlabs",
+        "pushed_at": "2026-09-08T17:15:40Z",
+        "rank": 10,
+        "source": "GitHub",
+        "stars": 97599,
+        "updated_at": "2026-09-18T05:46:01Z",
+        "url": "https://github.com/tailwindlabs/tailwindcss",
+        "watchers": 97599
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "description": "## [3.15.0](https://github.com/openai/openai-python/compare/v3.14.1...v3.15.0) (2026-09-18)\n\n\n### Features\n\n* **api:** add agent session model settings ([#3882](https://github.com/openai/openai-python/issues/3882)) ([4b15817](https://github.com/openai/openai-python/commit/4b1581771ea97c870187f6ddfc3dbc87ff4fa443))\n* **api:** add audio-mini model choices ([#3886](https://github.com/openai/openai-python/issues/3886)) ([a6eeb3f](https://github.com/openai/openai-python/commit/a6eeb3f5a468ec576d2c911c19ce59c56ac46e43))\n* **api:** add compaction progress events ([#3866](https://github.com/openai/openai-python/issues/3866)) ([98e1d24](https://github.com/openai/openai-python/commit/98e1d24f4902ab58830adf0e2b6a729a5d5429b1))\n* **api:** add managed Responses WebSocket sessions ([#3887](https://github.com/openai/openai-python/issues/3887)) ([3b865af](https://github.com/openai/openai-python/commit/3b865af92e8dc65e14ab6d565304fe778bac1eef))\n* **api:** add prompt-cache prewarming ([#3888](https://github.com/openai/openai-python/issues/3888)) ([8f7cdb8](https://github.com/openai/openai-python/commit/8f7cdb80410434d29daed90895112a39936eb4fe))\n\n\n### Bug Fixes\n\n* preserve chat stream moderation results ([#3864](https://github.com/openai/openai-python/issues/3864)) ([b77076d](https://github.com/openai/openai-python/commit/b77076d23b6f3e34453b0fadd8cd2a001627e365))\n\n\n### Chores\n\n* **api:** clarify incoming SIP call ID usage ([#3885](https://github.com/openai/openai-python/issues/3885)) ([f0457ab](https://github.com/openai/openai-python/commit/f0457aba3403f83e91a369ab55e0e55d5f012372))\n* **api:** update image request examples ([#3889](https://github.com/openai/openai-python/issues/3889)) ([bb79676](https://github.com/openai/openai-python/commit/bb796764118004f8c9b0b0a46e07e5e55cfe34e4))\n\n\n### Documentation\n\n* **realtime:** remove nonexistent type imports ([#3869](https://github.com/openai/openai-python/issues/3869)) ([2971aaf](https://github.com/openai/openai-python/commit/2971aafce5c1966fc56efd00918b16314063284e))",
+        "project": "openai-python",
+        "published_at": "2026-09-18T00:52:15Z",
+        "relative_date": "Today",
+        "repository": "openai/openai-python",
+        "source": "GitHub",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.15.0",
+        "version": "v3.15.0"
+      },
+      {
+        "description": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+        "project": "core",
+        "published_at": "2026-09-17T08:36:57Z",
+        "relative_date": "Yesterday",
+        "repository": "vuejs/core",
+        "source": "GitHub",
+        "url": "https://github.com/vuejs/core/releases/tag/v3.5.43",
+        "version": "v3.5.43"
+      }
+    ]
+  },
+  "security": {
+    "latest": [
+      {
+        "cvss": {
+          "score": 7.1,
+          "severity": "HIGH",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+          "version": "3.1"
+        },
+        "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Automattic WordPress core allows DOM-Based XSS.\n\n\nThis issue affects WordPress versions 7.1 before 7.1.1; 7.0 through 7.0.4; 6.9 through 6.9.7; 6.8 through 6.8.8; 6.7 through 6.7.7; 6.6 through 6.6.7; 6.5 through 6.5.10; 6.4 through 6.4.10; 6.3 through 6.3.10; 6.2 through 6.2.11; 6.1 through 6.1.12; 6.0 through 6.0.14; 5.9 through 5.9.16; 5.8 through 5.8.15; 5.7 through 5.7.17; 5.6 through 5.6.19; 5.5 through 5.5.20; 5.4 through 5.4.21; 5.3 through 5.3.23; 5.2 through 5.2.26; 5.1 through 5.1.24; 5.0 through 5.0.27; 4.9 through 4.9.31; 4.8 through 4.8.30; and 4.7 through 4.7.35.\n\n\n\n\nThe Unauthenticated Stored XSS vulnerability in the WordPress core can be reproduced on a default WordPress installation. Comment moderation is disabled by default, and the requirement for commenters to have a previously approved comment can be bypassed.",
+        "id": "CVE-2026-93485",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.970",
+        "published": "2026-09-18T06:16:41.970",
+        "references": [
+          "https://patchstack.com/database/wordpress/wordpress/wordpress/vulnerability/wordpress-wordpress-wordpress-7-1-cross-site-scripting-xss-vulnerability?_s_id=cve",
+          "https://wordpress.org/news/2026/09/wordpress-7-1-1-maintenance-and-security-release/"
+        ],
+        "severity": "HIGH",
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The Generate PDF using Contact Form 7 WordPress plugin before 4.2.2 does not restrict the destination of the image fetch its PDF renderer performs on submitted form content, allowing unauthenticated users to make the server request internal resources and read the response back through the generated PDF.",
+        "id": "CVE-2026-90984",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.867",
+        "published": "2026-09-18T06:16:41.867",
+        "references": [
+          "https://wpscan.com/vulnerability/1aa459e4-bd75-49a5-a6de-812375d441e6/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The Filter Gallery WordPress plugin before 1.1.5 does not verify the nonce on several of its AJAX handlers when the nonce field is omitted, and applies no capability check, allowing low-privileged users to overwrite the content of arbitrary posts and delete the Filter Gallery WordPress plugin before 1.1.5's stored gallery options.",
+        "id": "CVE-2026-90978",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.730",
+        "published": "2026-09-18T06:16:41.730",
+        "references": [
+          "https://wpscan.com/vulnerability/39321ecd-98e5-4f4e-9a42-bedf5904c3d1/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The Bookit — Booking & Appointment Calendar WordPress plugin before 2.6.0.5 does not perform an authorization check on one of its appointment-retrieval actions, allowing users with a low-privilege Bookit — Booking & Appointment Calendar WordPress plugin before 2.6.0.5-specific role to read other users' appointment records, including customer names, email addresses, phone numbers and private booking comments.",
+        "id": "CVE-2026-89008",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.597",
+        "published": "2026-09-18T06:16:41.597",
+        "references": [
+          "https://wpscan.com/vulnerability/be5cf196-2f4b-4ad6-b477-287f80f1dd0d/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The Bookit — Booking & Appointment Calendar WordPress plugin before 2.6.0.5 does not perform a capability check in one of its appointment-deletion functions, allowing users with its low-privileged custom Staff role to delete arbitrary appointments.",
+        "id": "CVE-2026-89007",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.477",
+        "published": "2026-09-18T06:16:41.477",
+        "references": [
+          "https://wpscan.com/vulnerability/5e174229-a375-456c-b651-7ad4a3c004ab/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The All Bootstrap Blocks WordPress plugin through 1.3.31 does not properly escape a block attribute before outputting it in HTML tag-name position, allowing users with Contributor-level access and above to inject arbitrary web scripts that execute when the affected content is viewed.",
+        "id": "CVE-2026-88993",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.373",
+        "published": "2026-09-18T06:16:41.373",
+        "references": [
+          "https://wpscan.com/vulnerability/fc1f2f62-62cd-4a70-b541-2278eb0edefe/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The MasterStudy LMS WordPress Plugin  WordPress plugin before 3.7.50 does not verify that the requesting user owns the course before returning its enrolled-student data, allowing users with the MasterStudy LMS WordPress Plugin  WordPress plugin before 3.7.50's Instructor role to disclose the names and email addresses of students enrolled in other instructors' courses.",
+        "id": "CVE-2026-88844",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.267",
+        "published": "2026-09-18T06:16:41.267",
+        "references": [
+          "https://wpscan.com/vulnerability/13b4f5c4-db4a-4bc2-b092-07747ee790e6/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The iGMS Direct Booking WordPress plugin before 2.0 does not authorise or escape its widget appearance settings, allowing unauthenticated users to store arbitrary web scripts that execute in the context of an administrator viewing the iGMS Direct Booking WordPress plugin before 2.0 settings, and in the browser of any visitor to a page displaying the booking widget.",
+        "id": "CVE-2026-88825",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.157",
+        "published": "2026-09-18T06:16:41.157",
+        "references": [
+          "https://wpscan.com/vulnerability/12337af6-e465-4010-a54d-be92a5dfa5d6/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The Really Simple Security  WordPress plugin before 9.8.3 does not validate a client-supplied address value before using it as a storage key in one of its own options, allowing unauthenticated attackers to grow that option without bound and to slow the site's handling of missing pages.",
+        "id": "CVE-2026-88798",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:41.053",
+        "published": "2026-09-18T06:16:41.053",
+        "references": [
+          "https://wpscan.com/vulnerability/e658dcd2-2ff6-4611-a28d-e2482c65be8b/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      },
+      {
+        "cvss": null,
+        "description": "The Easy Appointments WordPress plugin before 4.0.2.2 does not perform an ownership or authorization check on its unauthenticated appointment-reservation endpoint before updating an existing appointment identified by a request-supplied id, allowing unauthenticated attackers to overwrite, and through a follow-on cleanup delete, arbitrary appointments.",
+        "id": "CVE-2026-87966",
+        "known_exploited": false,
+        "lastModified": "2026-09-18T06:16:40.950",
+        "published": "2026-09-18T06:16:40.950",
+        "references": [
+          "https://wpscan.com/vulnerability/e2e625f4-c146-4622-b439-3179c4484613/"
+        ],
+        "severity": null,
+        "source": "NVD"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 195,
+      "HIGH": 845,
+      "LOW": 84,
+      "MEDIUM": 495,
+      "NONE": 2,
+      "UNKNOWN": 673
+    }
+  },
+  "snapshot": {
+    "cves": 2294,
+    "knownExploited": 2,
+    "projects": 20,
+    "releases": 2,
+    "techEntries": 16
+  },
+  "sources": {
+    "cisa": {
+      "inWindow": 2,
+      "status": "success",
+      "total": 1713
+    },
+    "github": {
+      "inWindow": 2,
+      "status": "success",
+      "total": 0
+    },
+    "nvd": {
+      "inWindow": 2294,
+      "status": "success",
+      "total": 2294
+    },
+    "rss": {
+      "inWindow": 16,
+      "status": "success",
+      "total": 230
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 8,
+      "tech": 8
+    },
+    "recent": [
+      {
+        "collected_at": "2026-09-18T06:43:43.320700+00:00",
+        "feed_category": "security",
+        "feed_name": "The Register - Security",
+        "feed_source": "The Register",
+        "feed_url": "https://www.theregister.com/security/headlines.atom",
+        "guid": "https://www.theregister.com/a/5297357",
+        "published_at": "2026-09-18T02:28:30+00:00",
+        "relative_date": "Today",
+        "source": "RSS",
+        "summary": "Think tank points out that companies banned by Washington will help run the regime that Uncle Sam now controls",
+        "summary_short": "Think tank points out that companies banned by Washington will help run the regime that Uncle Sam now controls",
+        "title": "USA’s Venezuela takeover comes with bonus exposure to Chinese AI surveillance tech",
+        "url": "https://www.theregister.com/security/2026/09/18/usas-venezuela-takeover-comes-with-bonus-exposure-to-chinese-ai-surveillance-tech/5297357"
+      },
+      {
+        "collected_at": "2026-09-18T06:43:43.320705+00:00",
+        "feed_category": "security",
+        "feed_name": "The Register - Security",
+        "feed_source": "The Register",
+        "feed_url": "https://www.theregister.com/security/headlines.atom",
+        "guid": "https://www.theregister.com/a/5297335",
+        "published_at": "2026-09-17T22:42:29+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "Plugin4Shell attack affects all the major coding agents, researchers say",
+        "summary_short": "Plugin4Shell attack affects all the major coding agents, researchers say",
+        "title": "AI coding agents' 0-click RCE flaw could hand attackers keys to the kingdom",
+        "url": "https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335"
+      },
+      {
+        "collected_at": "2026-09-18T06:44:00.772047+00:00",
+        "feed_category": "tech",
+        "feed_name": "AWS News Blog",
+        "feed_source": "AWS",
+        "feed_url": "https://aws.amazon.com/blogs/aws/feed/",
+        "guid": "e54808ff9073a2b426d2baf919a0236eb2f63e40",
+        "published_at": "2026-09-17T21:11:48+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "AWS introduces new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 instances.",
+        "summary_short": "AWS introduces new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 i...",
+        "title": "New low-cost burstable Amazon EC2 T8i instances are generally available",
+        "url": "https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/"
+      },
+      {
+        "collected_at": "2026-09-18T06:43:43.320707+00:00",
+        "feed_category": "security",
+        "feed_name": "The Register - Security",
+        "feed_source": "The Register",
+        "feed_url": "https://www.theregister.com/security/headlines.atom",
+        "guid": "https://www.theregister.com/a/5297303",
+        "published_at": "2026-09-17T19:36:10+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "Eve's dropping in on Alice and Bob",
+        "summary_short": "Eve's dropping in on Alice and Bob",
+        "title": "Researchers find way to listen in on headphones from afar",
+        "url": "https://www.theregister.com/security/2026/09/17/researchers-find-way-to-listen-in-on-headphones-from-afar/5297303"
+      },
+      {
+        "collected_at": "2026-09-18T06:44:00.772055+00:00",
+        "feed_category": "tech",
+        "feed_name": "AWS News Blog",
+        "feed_source": "AWS",
+        "feed_url": "https://aws.amazon.com/blogs/aws/feed/",
+        "guid": "871c44b03c81444dbf2768f2c7efdf2a156c5808",
+        "published_at": "2026-09-17T19:20:21+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
+        "summary_short": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
+        "title": "AWS Elastic Beanstalk introduces Cluster Mode",
+        "url": "https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/"
+      },
+      {
+        "collected_at": "2026-09-18T06:43:50.899293+00:00",
+        "feed_category": "tech",
+        "feed_name": "Ars Technica - Technology",
+        "feed_source": "Ars Technica",
+        "feed_url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+        "guid": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
+        "published_at": "2026-09-17T18:33:13+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
+        "summary_short": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
+        "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
+        "url": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/"
+      },
+      {
+        "collected_at": "2026-09-18T06:43:43.320708+00:00",
+        "feed_category": "security",
+        "feed_name": "The Register - Security",
+        "feed_source": "The Register",
+        "feed_url": "https://www.theregister.com/security/headlines.atom",
+        "guid": "https://www.theregister.com/a/5297286",
+        "published_at": "2026-09-17T18:00:17+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "Beware the SparroWocky, my son! The backdoor that bites…",
+        "summary_short": "Beware the SparroWocky, my son! The backdoor that bites…",
+        "title": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
+        "url": "https://www.theregister.com/security/2026/09/17/chinas-salt-typhoon-backdoors-latin-american-orgs-with-new-snooping-malware/5297286"
+      },
+      {
+        "collected_at": "2026-09-18T06:44:05.586112+00:00",
+        "feed_category": "tech",
+        "feed_name": "Google Cloud Blog",
+        "feed_source": "Google Cloud",
+        "feed_url": "https://cloudblog.withgoogle.com/rss/",
+        "guid": "https://cloud.google.com/blog/topics/supply-chain-logistics/the-future-of-orchestration-pine59s-journey-to-airflow-3-on-google-cloud/",
+        "published_at": "2026-09-17T17:00:00+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "Operating large data pipelines requires an orchestration layer that scales smoothly as workloads expand. When your pipelines process millions of complex data points every day to feed predictive models, staying up-to-date with your technology stack is a strategic necessity.\nPine59 provides location intelligence data through data pipelines that produce analytical metrics on cadences ranging from hourly to quarterly. One of the company’s most data-intensive metrics, Daily Foot Traffic, computes data for as many as 14 million distinct locations in a single job. To handle this massive volume, Pine59’s system runs entirely on Google Cloud, with the heavy lifting in BigQuery and all of it orchestrated by Managed Service for Apache Airflow (formerly Cloud Composer) running Apache Airflow 3.\nAs the company’s volume of data and number of machine learning workloads scaled up, Pine59 decided to modernize its monorepo, which contains hundreds of directed acyclic graphs (DAGs). Here is a look at how that transition improved Pine59’s MLOps capabilities, developer workflow, and pipeline speed.\nProactive modernization for growth\nPine59 has long relied on a shared monorepo with code and tooling spanning multiple projects to run its metric production pipelines. As it considered its infrastructure’s future, the company wanted to help its data pipelines run faster and more reliably.\nThat’s why it decided to stress-test production workloads against the newly available Managed Airflow (Gen 3) architecture running Airflow 3. The initial results were unambiguous: the Gen 3 environment delivered immediate and significant processing speed, task scheduling, and overall stability improvements. Recognizing the clear potential for performance gains, Pine59 initiated a full transition to the new environment.\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nOrchestrating advanced MLOps\nPine59’s pipelines don’t just move data; they drive complex ML models, so a core aspect of its migration was optimizing the orchestration of its ML inference workloads.\nPreviously, Pine59 had used standard Kubernetes operators for these tasks. By moving to Managed Airflow (Gen 3), which features a highly optimized and abstracted infrastructure layer, the company’s engineering team refined its MLOps architecture. They did so by setting up a dedicated Google Kubernetes Engine (GKE) cluster that was specifically optimized for model inference and integrated it into the Pine59 pipelines.\nThis clear separation of orchestration and heavy ML execution compute allows data processing and model inference to run efficiently, showcasing Managed Airflow as a resilient, scalable backbone for enterprise MLOps.\nSupporting developers with custom extensibility\nBeyond infrastructure improvements, Pine59 was also able to immediately capitalize on Airflow 3’s delivery of a vastly improved developer workflow and user interface. Indeed, managing hundreds of interconnected DAGs requires excellent observability, and Pine59 found Airflow 3’s plugin authoring system remarkably easy to use.\nTo improve internal developer velocity, the company quickly built a number of custom plugins that it integrated directly into its new Airflow UI:\n\n\nBigQuery Auto-linkify: A tool that automatically detects internal BigQuery table references within the Airflow Logs and XCom tabs, dynamically generating direct links to BigQuery Studio for faster debugging (available as a public GitHub gist)\n\n\nDAG Run Configuration Search: A custom search form added directly to the DAG overview page. It allows Pine59 engineers to query specific key-value pairs within DAG run payloads (configs) and instantly surface matching runs. This in turn drastically reduces troubleshooting time.\n\n\nIn addition, the team also deployed a compatibility shim layer within its monorepo. This “compat” module dynamically abstracts logic between Airflow versions, streamlining operator migration across versions.\nFaster, more reliable pipelines\nFor Pine59, migrating to Managed Airflow (Gen 3) with Airflow 3 has yielded clear, quantifiable results.\nThe most important improvement was the speed of its DAG runs. In the company’s previous setup, tasks often got stuck in a queued state during peak processing surges. With Gen 3, queue latency has dropped dramatically, allowing tasks to start running almost immediately.\nConsider the comparison below of total aggregated “queued” & “running” time of more than 300 runs of the same DAG between Managed Airflow (Gen2) with Airflow 2.11 vs. Managed Airflow (Gen3) with Airflow 3.1 below. As we can readily see, the difference in queued time is significant.\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nCoupled with internal DAG optimizations made during the transition, the performance gains are also highly tangible. For example, the Daily Foot Traffic pipeline previously took nearly 38 minutes to complete. With the new instance, the same workload now takes less than 26 minutes —nearly 32% less processing time.\nToday, Pine59 processes all its production workloads on its new Managed Airflow (Gen 3) instance. By moving to this next generation orchestration, the company improved its MLOps capabilities, equipped its developers with better tools, and built a faster, more resilient foundation for future workloads.\nIf your engineering team spends more time managing infrastructure than delivering value, consider a similar transition and discover how it can help you move from maintaining servers to building the future of your data and AI pipelines today.\n\nSpecial thanks to the following contributor to this post: Alexandre Crespo-Perez",
+        "summary_short": "Operating large data pipelines requires an orchestration layer that scales smoothly as workloads expand. When your pipelines process millions of complex data points every day to feed predictive models, staying up-to-date with your technology stack is a strategic necessity.\nPine59 provides location i...",
+        "title": "The future of orchestration: Pine59’s journey to Airflow 3 on Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/supply-chain-logistics/the-future-of-orchestration-pine59s-journey-to-airflow-3-on-google-cloud/"
+      },
+      {
+        "collected_at": "2026-09-18T06:44:05.586103+00:00",
+        "feed_category": "tech",
+        "feed_name": "Google Cloud Blog",
+        "feed_source": "Google Cloud",
+        "feed_url": "https://cloudblog.withgoogle.com/rss/",
+        "guid": "https://cloud.google.com/blog/products/identity-security/google-named-a-leader-in-the-external-threat-intelligence-service-forrester-wave/",
+        "published_at": "2026-09-17T17:00:00+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "At Google, we see firsthand how the speed, scale, and sophistication of cyber threats continue to challenge traditional enterprise defenses. Today’s defenders can’t rely on reactive triage or fragmented data feeds; you require high-fidelity intelligence, deep underground visibility, and actionable context to anticipate adversary moves before an attack unfolds.\n\n  \n    \n\n      \n\n\n\n\n\n\n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n\n\n\n\n\n      We are proud to announce that Forrester has named Google a Leader in The Forrester Wave™: External Threat Intelligence Service Providers, Q3 2026. In this evaluation, Google received the highest possible score of 5.0 across nine distinct criteria spanning both Current Offering and Strategy.Organizations trust our decades of threat intelligence expertise to help them understand today’s attacks and to protect against tomorrow’s threats. Google Threat Intelligence operationalizes protection with specialized threat intelligence agents that autonomously conduct multi-step investigations and malware analysis at machine speed. Underpinning these capabilities is the unified visibility provided by Mandiant’s frontline incident response, VirusTotal’s crowdsourced visibility, and Google-scale infrastructure with industry-leading deep and dark web monitoring, illuminating adversary operations where they begin.\n    \n  \n\n\n\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n        Google is a Leader in the Forrester Wave™: External Threat Intelligence Service Providers, Q3 2026\n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nKey attributes of a leader\nAccurate and relevant deep and dark web monitoring enables proactive security, spotting exposed credentials, threat actor reconnaissance, and illicit forum chatter before they escalate into active attacks. \nWe received the highest possible score in the Deep and Dark Web Monitoring and Intelligence Collection Sources criteria. \nAs Forrester wrote in the report, “Google is the only vendor in this evaluation that is also a frontier AI model developer and a significant player in quantum computing.” \nBecause Google Threat Intelligence has direct access to a leading frontier model rather than an off-the-shelf wrapper, our AI agents don’t just summarize data — they can actively evolve. We fine-tune and stress-test our agents continuously using proprietary Gemini best practices, removing the usage limits and latency typical of third-party layers. \nFor security teams, this translates directly to immediate threat context, faster detection updates, and drastically reduced time to resolution. The Forrester report stated, \"Google's recent Gemini advancements accelerated the success of many of its Al-enabled functionalities.\" In addition to our finished intelligence reports, defenders can now use our agent to create custom analysis derived from frontline observations, tailored to their local threat profile and environment.\nGoogle Threat Intelligence agents autonomously conduct campaign attribution and pioneer complex agentic malware analysis. Backed by codified Mandiant tradecraft, dynamic visual workflows, and real-time telemetry that programmatically hardens tool routing and execution, our agentic platform transforms complex threat landscapes into a decisive defender advantage.\nGoogle received the highest scores possible in the Analyst Tradecraft and Services, Attribution and Frameworks Used, and Analyst Experience criteria in the report. This foundation is built by hundreds of dedicated researchers across the Google Threat Intelligence Group (GTIG) in over 30 countries speaking 30 languages. Our rigorous, evidence-based attribution maps directly to MITRE ATT&CK, empowering practitioners through interactive graphs and Gemini-enabled agentic threat intelligence. \nBy feeding the newest threat discoveries into detection workflows, these capabilities raise alert quality and take the guesswork out of rule creation across the security stack. Security operations center (SOC) teams and threat hunters can rapidly author resilient rules against novel variants, link suspicious events directly to known actor playbooks, and triage critical alerts with certainty. \nWhile Google also received a 5/5 score in the partner ecosystem criterion, customers using Google Security Operations can directly leverage Google Threat Intelligence enrichments with agents: \n\n\nThe Triage and Investigation agent autonomously investigates alerts and prioritizes threats. \n\n\nThe Detection Engineering agent automatically finds and fills coverage gaps as they emerge. \n\n\nThe Threat Hunting agent proactively searches your environment for novel attack patterns.\n\n\nWithin the strategy category, Google Threat Intelligence received the highest possible scores in the Roadmap, Partner Ecosystem, and Community criteria, as well as the Intelligence Dissemination criterion in the Current Offering category. \nThe Forrester report stated, “Google maintains an open, partner-centric approach that avoids lock-in to the Google SecOps ecosystem and benefits from a strong community presence across the broader Google Cloud Security ecosystem.”\nDelivering measurable value for security teams\nGoogle Threat Intelligence delivers a measurable impact on the speed and scale of modern defense. Our customers report identifying 139% more threats proactively and make their CTI teams 46% more efficient. These gains are accelerated by AI-driven summarization and context, and can help you eliminate manual guesswork, act on validated frontline intelligence, and focus on high-value investigations.\nBy accelerating detection engineering and proactive exposure management, Google Threat Intelligence identifies malicious infrastructure before adversaries can use it in campaigns. This faster defense helps you anticipate their maneuvers and disrupt their attack chains earlier, reducing threat dwell time and risk to your organization.\nEmpowering defenders everywhere\nWe are very pleased that Forrester recognized us as a Leader in Forrester Wave™: External Threat Intelligence Service Providers, Q3 2026. We continue to push the boundaries of what is possible in threat research, as an early, leading innovator enhancing malware analysis and dark web monitoring with AI. We continue to deliver the autonomous decision advantage to preemptively neutralize the right threats with the right action and the right context.\nTo learn more about Google’s position as a Leader, you can access the full Forrester Wave™: External Threat Intelligence Service Providers, Q3 2026 here.\n\nForrester does not endorse any company, product, brand, or service included in its research publications and does not advise any person to select the products or services of any company or brand based on the ratings included in such publications. Information is based on the best available resources. Opinions reflect judgment at the time and are subject to change. This report is part of a broader collection of Forrester resources, including interactive models, frameworks, tools, data, and access to analyst guidance. For more information, read about Forrester’s objectivity here .",
+        "summary_short": "At Google, we see firsthand how the speed, scale, and sophistication of cyber threats continue to challenge traditional enterprise defenses. Today’s defenders can’t rely on reactive triage or fragmented data feeds; you require high-fidelity intelligence, deep underground visibility, and actionable c...",
+        "title": "Google named a Leader in the External Threat Intelligence Service Forrester Wave™",
+        "url": "https://cloud.google.com/blog/products/identity-security/google-named-a-leader-in-the-external-threat-intelligence-service-forrester-wave/"
+      },
+      {
+        "collected_at": "2026-09-18T06:44:05.586116+00:00",
+        "feed_category": "tech",
+        "feed_name": "Google Cloud Blog",
+        "feed_source": "Google Cloud",
+        "feed_url": "https://cloudblog.withgoogle.com/rss/",
+        "guid": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/",
+        "published_at": "2026-09-17T16:00:00+00:00",
+        "relative_date": "Yesterday",
+        "source": "RSS",
+        "summary": "Editor's note: Lucius AI, a tender-intelligence startup covering markets across five continents, runs its entire data platform on AlloyDB for PostgreSQL with a single operator. By migrating semantic search to a ScaNN index and managing database operations through Model Context Protocol (MCP), query latency dropped by 47x while automating day-to-day administrative tasks via MCP.\n\nExecutive summary\n\n\nLucius AI runs a global tender platform spanning more than 210,000 tenders across the UK, EU, India, and Australia, requiring minimal operational overhead for a solo founder.\n\n\nLucius AI deployed AlloyDB for PostgreSQL to consolidate its relational catalog, audit logs, and vector embeddings into a single managed database engine.\n\n\nMigrating semantic search to a ScaNN index lowered query latency from 1.14 seconds to 24 milliseconds — a 47x speedup on a representative production query.\n\n\nConnecting an AI agent to AlloyDB using the Model Context Protocol (MCP) helps Lucius AI automate query analysis, data freshness checks, and incident forensics under strict least-privilege permissions.\n\n\nMaking tender intelligence work as a company of one\nLucius AI helps businesses bidding on public contracts evaluate opportunities across global markets. The platform ingests public procurement notices from the UK, the EU, the US and Canada, Australia and New Zealand, India and Singapore, alongside World Bank donor-funded notices across Africa and Asia. Lucius AI analyzes tender documents using Gemini to generate compliance matrices, bid recommendations, and draft responses citing original source pages. For small and mid-sized suppliers, this replaces days of manual document reviews and costly external consulting.\nRunning a platform of this scope requires extensive operational coordination:\n\n\nNightly ingestion from thirteen public procurement sources\n\n\nA catalog of more than 210,000 tenders, including tens of thousands open for active bidding\n\n\nTwo production regions on Cloud Run: Europe, and an Australian deployment on its own AlloyDB cluster with customer-managed encryption keys (CMEK) for defense-adjacent customers\n\n\nOngoing analytics, performance tuning, data validation, and incident response\n\n\nManaging these responsibilities without dedicated data engineering or database administration teams requires offloading operational maintenance. Lucius AI addressed this challenge on two fronts: using AlloyDB for PostgreSQL as the core system of record, and connecting an AI agent through the Model Context Protocol (MCP) to safely execute database operations.\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nConsolidating systems into AlloyDB\nRather than deploying separate relational databases, vector databases, and log stores, Lucius AI houses all core data in AlloyDB for PostgreSQL. The relational tender catalog, document metadata, audit logs, and vector embeddings reside in the same database engine. Storing vector embeddings alongside relational rows avoids managing separate vector stores, establishes a unified backup schedule, and centralizes identity management.\nAuthentication relies strictly on Cloud IAM. Services connect using dedicated Google Cloud service accounts mapped to database roles scoped to specific access requirements, without storing database passwords in application environments. Database reliability is managed natively by AlloyDB through automated backups and point-in-time recovery, avoiding custom disaster recovery procedures.\nIn production, this consolidated architecture supports:\n\n\nMore than 210,000 tenders in the catalog, with embeddings stored directly alongside them\n\n\nRebuilding the semantic index embedded 115,820 records in 10.6 minutes with the Gemini embedding model, for around three dollars in API spend; AlloyDB auto embeddings now keep those vectors current.\n\n\nRetrieval reranking executed directly inside the database using the ai.rank function — with mean latency of 77-milliseconds - returning the most relevant results for search queries without requiring a standalone reranking microservice\n\n\nAccelerating semantic search by 47x\nSemantic search across the tender catalog initially relied on unindexed vector comparisons, where a representative query took 1.14 seconds. Migrating this workload to a ScaNN index in AlloyDB reduced query latency to 24 milliseconds — a 47x improvement.\nThe index recommendation originated from the AI agent during an automated performance audit, where it benchmarked the query plan before preparing the index migration.\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nAutomating database operations with MCP\nTo delegate routine administrative tasks, Lucius AI configured the open-source MCP Toolbox for Databases using the prebuilt alloydb-postgres server.\nOperational delegation requires strict access controls. The agent connects using a dedicated PostgreSQL role granted SELECT across the schema and UPDATE on a single operational table. Destructive commands (DROP, DELETE, TRUNCATE) are omitted, restricting agent actions to authorized operational boundaries.\nUnder this configuration, the AI agent performs regular database operations across four key areas:\n\n\nOn-demand analytics: Compiles retention cohorts, activation funnels, and catalog coverage by country via ad hoc SQL queries, removing the need to build and maintain manual dashboards or complex analytical pipelines.\n\n\nPerformance optimization: Performs query-plan inspections and index analysis, such as identifying the ScaNN indexing strategy.\n\n\nIncident forensics: In response to an external security probe, the agent parsed audit logs to reconstruct the request timeline in minutes, verifying that tenant isolation remained intact.\n\n\nAutomated data-quality checks: Evaluates ingestion watermarks and freshness across all thirteen procurement sources every morning.\n\n\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nFor teams adopting this architecture, establishing a progressive permission structure provides clear guardrails: start with read-only access, expand permissions as requirements dictate, and keep destructive operations restricted to human administrators.\nLooking ahead\nLucius AI is planning three technical initiatives to further reduce operational overhead:\n\n\nAutomated vector embeddings in AlloyDB AI: After validating ai.initialize_embeddings across the full catalog, a weekly maintenance job uses ai.refresh_embeddings to update vectors.\n\n\nColumnar engine acceleration: Having enabled AlloyDB’s columnar engine with auto-columnarization, the database identified and stored 40 frequently queried columns across four tables in memory within a day, accelerating reporting queries without a separate analytical store.\n\n\nManaged Remote MCP Server: Transitioning from self-hosted Toolbox processes to Google Cloud's fully managed Remote MCP Server for AlloyDB will offload MCP server hosting and maintenance.\n\n\nBy anchoring core data in AlloyDB and managing routine operations through MCP, Lucius AI demonstrates how a single engineer can build and operate a resilient, multi-region procurement platform.\nTo explore Lucius AI, visit ailucius.com. To evaluate AlloyDB for PostgreSQL, deploy an AlloyDB cluster to test performance against your own workloads.",
+        "summary_short": "Editor's note: Lucius AI, a tender-intelligence startup covering markets across five continents, runs its entire data platform on AlloyDB for PostgreSQL with a single operator. By migrating semantic search to a ScaNN index and managing database operations through Model Context Protocol (MCP), query ...",
+        "title": "How a solo founder runs a five-continent tender platform on AlloyDB and MCP",
+        "url": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/"
+      }
+    ]
+  },
+  "window": {
+    "end": "2026-09-17T23:59:59+00:00",
+    "start": "2026-09-17T00:00:00+00:00"
+  }
+}
