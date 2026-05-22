@@ -229,42 +229,42 @@
       "releases": {
         "categories": {
           "major": 0,
-          "minor": 1,
+          "minor": 0,
           "other": 0,
           "patch": 1
         },
-        "count": 2
+        "count": 1
       },
       "security": {
         "severity": {
-          "CRITICAL": 195,
-          "HIGH": 845,
-          "LOW": 84,
-          "MEDIUM": 495,
+          "CRITICAL": 176,
+          "HIGH": 798,
+          "LOW": 77,
+          "MEDIUM": 474,
           "NONE": 2,
-          "UNKNOWN": 673
+          "UNKNOWN": 645
         }
       },
       "snapshot": {
-        "cves": 2294,
-        "knownExploited": 2,
+        "cves": 2172,
+        "knownExploited": 1,
         "projects": 20,
-        "releases": 2,
+        "releases": 1,
         "techEntries": 16
       },
       "sources": {
         "cisa": {
-          "inWindow": 2,
+          "inWindow": 1,
           "status": "success",
           "total": 1713
         },
         "github": {
-          "inWindow": 2,
+          "inWindow": 1,
           "status": "success",
           "total": 0
         },
         "nvd": {
-          "inWindow": 2294,
+          "inWindow": 2172,
           "status": "success",
           "total": 2294
         },
@@ -276,15 +276,15 @@
       },
       "technology": {
         "categories": {
-          "security": 8,
-          "tech": 8
+          "security": 7,
+          "tech": 9
         },
         "count": 10
       }
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-18T06:48:09.373525+00:00",
+    "generatedAt": "2026-09-18T06:48:50.914463+00:00",
     "totalSnapshots": 1
   }
 }
