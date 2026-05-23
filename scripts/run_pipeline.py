@@ -22,10 +22,10 @@ from typing import Any
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 COLLECTORS = [
-    ("NVD", "scripts/sources/nvd/collect.py"),
-    ("CISA KEV", "scripts/sources/cisa/collect.py"),
-    ("GitHub", "scripts/sources/github/collect.py"),
-    ("RSS/Atom", "scripts/sources/rss/collect.py"),
+    ("NVD", "scripts/sources/nvd/collect.py", ["--start", "{window_start}", "--end", "{window_end}"]),
+    ("CISA KEV", "scripts/sources/cisa/collect.py", []),
+    ("GitHub", "scripts/sources/github/collect.py", []),
+    ("RSS/Atom", "scripts/sources/rss/collect.py", []),
 ]
 
 PROCESSORS = [
