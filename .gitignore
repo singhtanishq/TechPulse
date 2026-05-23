@@ -1,2 +1,35 @@
-#auto-push
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.tox/
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Auto-push script (local development only)
 auto-push.sh
+
+# Do NOT ignore:
+# data/          # Historical snapshots should be committed
+# generated/     # Generated frontend data should be committed
