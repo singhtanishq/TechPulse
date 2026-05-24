@@ -119,12 +119,12 @@ def main() -> int:
     if not args.skip_collect and args.only != "process" and args.only != "generate":
         print("Phase 1: Source Collection")
         print("-" * 30)
-        for name, script, uses_window in COLLECTORS:
+        for name, script, uses_window, timeout in COLLECTORS:
             start = time.time()
             if uses_window:
-                success, output = run_script(script, processor_args)
+                success, output = run_script(script, processor_args, timeout)
             else:
-                success, output = run_script(script)
+                success, output = run_script(script, timeout=timeout)
             elapsed = time.time() - start
             print_stage(f"{name} ({elapsed:.1f}s)", success, output)
             if not success:
