@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "processedAt": "2026-09-18T07:11:54.222015+00:00",
+    "sources": {
+      "github": {
+        "inWindow": 0,
+        "status": "missing",
+        "totalReleases": 0,
+        "totalRepos": 0
+      }
+    },
+    "window": {
+      "end": "2026-09-17T23:59:59+00:00",
+      "start": "2026-09-17T00:00:00+00:00"
+    }
+  },
+  "releases": [],
+  "summary": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 0
+    },
+    "total": 0
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "archive": [
+    {
+      "date": "2026-09-17",
+      "opensource": {
+        "topProjects": []
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "count": 0
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 187,
+          "HIGH": 826,
+          "LOW": 78,
+          "MEDIUM": 487,
+          "NONE": 2,
+          "UNKNOWN": 645
+        }
+      },
+      "snapshot": {
+        "cves": 2225,
+        "knownExploited": 2,
+        "projects": 0,
+        "releases": 0,
+        "techEntries": 16
+      },
+      "sources": {
+        "cisa": {
+          "inWindow": 2,
+          "status": "success",
+          "total": 1713
+        },
+        "github": {
+          "inWindow": 0,
+          "status": "missing",
+          "total": 0
+        },
+        "nvd": {
+          "inWindow": 2225,
+          "status": "success",
+          "total": 2225
+        },
+        "rss": {
+          "inWindow": 16,
+          "status": "success",
+          "total": 230
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 7,
+          "tech": 9
+        },
+        "count": 10
+      }
+    }
+  ],
+  "meta": {
+    "generatedAt": "2026-09-18T07:11:54.435911+00:00",
+    "totalSnapshots": 1
+  }
+}
