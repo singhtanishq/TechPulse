@@ -22,7 +22,7 @@ from typing import Any
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 COLLECTORS = [
-    ("NVD", "scripts/sources/nvd/collect.py", True, 120),      # supports window args
+    ("NVD", "scripts/sources/nvd/collect.py", True, 300),      # supports window args - 5 min timeout
     ("CISA KEV", "scripts/sources/cisa/collect.py", False, 60), # no args
     ("GitHub", "scripts/sources/github/collect.py", False, 600),  # no args (uses config) - 10 min timeout
     ("RSS/Atom", "scripts/sources/rss/collect.py", False, 300),  # no args (uses config)
