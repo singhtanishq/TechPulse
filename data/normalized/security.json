@@ -1,0 +1,246 @@
+{
+  "latest": [
+    {
+      "cvss": {
+        "score": 6.0,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+        "version": "3.1"
+      },
+      "description": "A vulnerability in the installation process of Cisco IOS XR Software could allow an authenticated, local attacker to bypass Cisco IOS XR Software image signature verification and load unsigned software on an affected device. To exploit this vulnerability, the attacker must have root-system privileges on the affected device.\r\n\r\nThis vulnerability is due to incomplete validation of files during the installation of an .iso file. An attacker could exploit this vulnerability by modifying contents of the .iso image and then installing and activating it on the device. A successful exploit could allow the attacker to load an unsigned file as part of the image activation process.",
+      "id": "CVE-2025-20248",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:43:40.317",
+      "published": "2025-09-10T16:15:36.117",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-xrsig-UY4zRUCG"
+      ],
+      "severity": "MEDIUM",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 8.5,
+        "severity": "HIGH",
+        "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "NetworkManager-l2tp contains an improper input validation vulnerability that allows local users with VPN connection creation permissions to inject arbitrary pppd directives by supplying mru or mtu property values containing trailing non-numeric content after a valid integer. Attackers can exploit the verbatim write of unvalidated strings into the pppd options file via write_config_option() to inject the plugin directive, causing the privileged pppd process to load an attacker-controlled shared object and achieve arbitrary code execution as root.",
+      "id": "CVE-2026-93337",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:19:00.527",
+      "published": "2026-09-17T20:19:00.527",
+      "references": [
+        "https://github.com/nm-l2tp/NetworkManager-l2tp/commit/64879ce0ad866f7c9a45babe4d95731a916ea00f",
+        "https://github.com/nm-l2tp/NetworkManager-l2tp/security/advisories/GHSA-rp84-8h2r-5xc3",
+        "https://www.vulncheck.com/advisories/networkmanager-l2tp-privilege-escalation-via-pppd-plugin-injection"
+      ],
+      "severity": "HIGH",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 7.0,
+        "severity": "HIGH",
+        "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "BlueKitchen BTstack through 1.8.2 fails to validate the peer-reported endpoint count against table bounds in A2DP stream endpoint discovery. A bonded peer can send an AVDTP DISCOVER response with more endpoints than the fixed table holds, causing out-of-bounds writes that corrupt adjacent static objects and crash the process or sever event delivery.",
+      "id": "CVE-2026-93015",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:19:00.410",
+      "published": "2026-09-17T16:18:35.847",
+      "references": [
+        "https://github.com/bluekitchen/btstack",
+        "https://github.com/bluekitchen/btstack/blob/v1.8.2/src/classic/a2dp.c#L568",
+        "https://github.com/bluekitchen/btstack/blob/v1.8.2/src/classic/avdtp.c#L1703",
+        "https://github.com/bluekitchen/btstack/commit/fc208fcce056d4e0a5bb916abc90e83a383e1cdf",
+        "https://www.vulncheck.com/advisories/bluekitchen-btstack-through-1.8.2-a2dp-sep-discovery-out-of-bounds-write"
+      ],
+      "severity": "HIGH",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 2.1,
+        "severity": "LOW",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "A vulnerability was detected in Dromara mayfly-go up to 1.11.5. The impacted element is the function RunMachineScript of the file server/internal/machine/api/machine_script.go of the component Machine Script Feature. The manipulation of the argument params results in os command injection. The attack can be executed remotely. The exploit is now public and may be used. Exploitation needs no admin account. Any account holding machine:script:run plus tag access reaches arbitrary command execution on machines whose templates contain {{.param}} placeholders; the SSH exec layer (Cli.Run) also applies no input filtering to any caller. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "id": "CVE-2026-92993",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:19:00.233",
+      "published": "2026-09-17T20:19:00.233",
+      "references": [
+        "https://gist.github.com/xufengnian/b95662ba0d8881cfc5ba0bb99cbfc086",
+        "https://github.com/dromara/mayfly-go/",
+        "https://github.com/dromara/mayfly-go/pull/129",
+        "https://vuldb.com/cve/CVE-2026-92993",
+        "https://vuldb.com/submit/942254",
+        "https://vuldb.com/vuln/406447",
+        "https://vuldb.com/vuln/406447/cti"
+      ],
+      "severity": "LOW",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 2.1,
+        "severity": "LOW",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "A security vulnerability has been detected in Dromara mayfly-go up to 1.11.5. The affected element is an unknown function of the file server/internal/ai/api/ai.go of the component AI Assistant. The manipulation leads to missing authorization. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used. The identifier of the patch is 74bcb926eb4f5f94e7681144d7bf2168a0ec7cde. Applying a patch is the recommended action to fix this issue. The whitelist bypass is one-token wide. Any compound command containing curl, wget or sed auto-runs without approval; approval is granted by the same session user (self-approval). This issue got fixed with a silent patch.",
+      "id": "CVE-2026-92992",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:19:00.100",
+      "published": "2026-09-17T19:17:07.430",
+      "references": [
+        "https://gist.github.com/xufengnian/b95662ba0d8881cfc5ba0bb99cbfc086",
+        "https://github.com/dromara/mayfly-go/",
+        "https://github.com/dromara/mayfly-go/commit/74bcb926eb4f5f94e7681144d7bf2168a0ec7cde",
+        "https://github.com/dromara/mayfly-go/pull/129",
+        "https://vuldb.com/cve/CVE-2026-92992",
+        "https://vuldb.com/submit/942253",
+        "https://vuldb.com/vuln/406446",
+        "https://vuldb.com/vuln/406446/cti",
+        "https://gist.github.com/xufengnian/b95662ba0d8881cfc5ba0bb99cbfc086"
+      ],
+      "severity": "LOW",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 8.6,
+        "severity": "HIGH",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "SiYuan before 3.8.4 renders document titles as HTML in the backlink dock tree without escaping markup characters. Attackers can set malicious titles through the rename API or crafted notebooks to execute scripts in the Electron renderer with access to child_process for command execution.",
+      "id": "CVE-2026-92986",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:18:59.970",
+      "published": "2026-09-17T15:17:02.033",
+      "references": [
+        "https://github.com/siyuan-note/siyuan",
+        "https://github.com/siyuan-note/siyuan/blob/v3.8.3/app/src/util/Tree.ts#L134",
+        "https://github.com/siyuan-note/siyuan/commit/6f093ebe50afc503e2a8b056164293054f8509e7",
+        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-c5h9-g2c6-fxjw",
+        "https://www.vulncheck.com/advisories/siyuan-before-3.8.4-cross-site-scripting-via-document-title"
+      ],
+      "severity": "HIGH",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 8.8,
+        "severity": "HIGH",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "SGLang through 0.5.19 in prefill/decode disaggregation mode contains an unauthenticated PUT /route endpoint on the prefill bootstrap service that allows attackers to poison the KV transfer routing table. Attackers can supply arbitrary rank_ip and rank_port values to redirect decode workers to attacker-controlled endpoints, causing denial of service or disclosure of KV transfer metadata including session identifiers and tensor-parallel topology parameters.",
+      "id": "CVE-2026-92972",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:18:59.850",
+      "published": "2026-09-17T14:18:03.347",
+      "references": [
+        "https://github.com/sgl-project/sglang",
+        "https://github.com/sgl-project/sglang/blob/v0.5.19/python/sglang/srt/disaggregation/common/conn.py#L1716-L1718",
+        "https://github.com/sgl-project/sglang/blob/v0.5.19/python/sglang/srt/disaggregation/common/conn.py#L1736-L1810",
+        "https://github.com/sgl-project/sglang/issues/39400",
+        "https://www.vulncheck.com/advisories/sglang-through-0.5.19-unauthenticated-route-poisoning-via-put-endpoint"
+      ],
+      "severity": "HIGH",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 10.0,
+        "severity": "CRITICAL",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "vm2 versions 3.10.1 through 3.11.6 contain a sandbox escape reachable from a default `new VM()` sandbox when running on Node.js 26. WebAssembly.compileStreaming and WebAssembly.instantiateStreaming can produce a raw host-realm Promise that rejects with a host-realm error object; by controlling Symbol.species via Promise.prototype.finally, sandbox code receives that raw host error, walks from the host error constructor to the host Function constructor, and recovers the real host `process` object, gaining host Node.js capabilities (e.g. access to host modules such as fs) in the context of the process running the sandbox. No NodeVM, require permission, host object injection, or otherwise unsafe configuration is required. This is a bypass of the fix for GHSA-6j2x-vhqr-qr7q, which removed the JSPI entry points WebAssembly.promising and WebAssembly.Suspending. The issue is fixed in 3.11.7.",
+      "id": "CVE-2026-92956",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:18:59.730",
+      "published": "2026-09-17T14:18:01.640",
+      "references": [
+        "https://github.com/patriksimek/vm2/security/advisories/GHSA-wjwh-qqvp-g4p4",
+        "https://www.vulncheck.com/advisories/vm2-3.10.1-through-3.11.6-sandbox-escape-via-webassembly-compilestreaming"
+      ],
+      "severity": "CRITICAL",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 9.4,
+        "severity": "CRITICAL",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "vm2 before 3.11.7 contains an incorrect authorization vulnerability in the external package allowlist check that uses non-exact substring matching instead of full package-name boundary validation. Attackers can bypass the allowlist by requiring a colliding package name that contains an allowlisted package substring, causing vm2 to load and execute unauthorized host packages in the host context.",
+      "id": "CVE-2026-92951",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:18:59.610",
+      "published": "2026-09-17T14:18:00.827",
+      "references": [
+        "https://github.com/patriksimek/vm2/security/advisories/GHSA-c48m-32m9-vx93",
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.7-module-allowlist-bypass-via-custom-resolver"
+      ],
+      "severity": "CRITICAL",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 10.0,
+        "severity": "CRITICAL",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "vm2 before 3.11.7 contains a remote code execution vulnerability when require.external is enabled without an explicit require.root that excludes node_modules. Sandboxed code can require vm2's own package, instantiate an unrestricted NodeVM instance, and execute arbitrary host OS commands via child_process.",
+      "id": "CVE-2026-92946",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T20:18:59.483",
+      "published": "2026-09-17T14:17:59.963",
+      "references": [
+        "https://github.com/patriksimek/vm2/security/advisories/GHSA-j3hm-6rg5-mchv",
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.7-remote-code-execution-via-require-external"
+      ],
+      "severity": "CRITICAL",
+      "source": "NVD"
+    }
+  ],
+  "meta": {
+    "processedAt": "2026-09-18T07:25:29.095626+00:00",
+    "sources": {
+      "cisa": {
+        "inWindow": 2,
+        "status": "success",
+        "total": 1713
+      },
+      "nvd": {
+        "inWindow": 2138,
+        "status": "success",
+        "total": 2235
+      }
+    },
+    "window": {
+      "end": "2026-09-17T23:59:59+00:00",
+      "start": "2026-09-17T00:00:00+00:00"
+    }
+  },
+  "summary": {
+    "knownExploited": 2,
+    "severity": {
+      "CRITICAL": 176,
+      "HIGH": 806,
+      "LOW": 72,
+      "MEDIUM": 464,
+      "NONE": 2,
+      "UNKNOWN": 618
+    },
+    "total": 2138
+  }
+}
