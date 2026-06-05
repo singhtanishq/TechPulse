@@ -3,7 +3,23 @@
 """
 TechPulse — RSS/Atom Collector
 
-Collects technology news and updates from configured RSS/Atom feeds.
+Collects technology news and updates from configured RSS 2.0 and
+Atom 1.0 feeds.
+
+Design notes:
+    - Each feed is collected independently; one failing feed never
+      aborts the run or discards other feeds' data.
+    - Entries store title, source, URL, publication date and a short
+      excerpt only. Full article bodies are intentionally not stored
+      (copyright safety); TechPulse links to the original publisher.
+    - Deduplication uses the feed GUID, falling back to the URL.
+
+Output:
+    data/tech/YYYY-MM-DD.json
+
+Idempotency:
+    Re-running for the same date with identical entries does not
+    rewrite the output file.
 """
 
 from __future__ import annotations
@@ -11,10 +27,11 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 import sys
 import time
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
@@ -30,28 +47,50 @@ OUTPUT_DIR = PROJECT_ROOT / "data" / "tech"
 DEFAULT_TIMEOUT = 15
 MAX_RETRIES = 3
 RETRY_BACKOFF_BASE = 2
+SUMMARY_MAX_CHARS = 300
+
+ATOM_NS = "http://www.w3.org/2005/Atom"
 
 
 def utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
 
+def default_snapshot_date() -> str:
+    yesterday = (utc_now() - timedelta(days=1)).date()
+    return yesterday.isoformat()
+
+
 def parse_datetime(value: str | None) -> datetime | None:
-    """Parse various datetime formats from RSS/Atom feeds."""
+    """Parse common RSS/Atom date formats into aware UTC datetimes."""
     if not value:
         return None
     value = value.strip()
-    # Try common formats
+
+    # Normalize obsolete zone names used in some feeds.
+    value = re.sub(
+        r"\b(UT|GMT|EST|EDT|CST|CDT|MST|MDT|PST|PDT)\b",
+        lambda m: {
+            "UT": "+0000", "GMT": "+0000",
+            "EST": "-0500", "EDT": "-0400",
+            "CST": "-0600", "CDT": "-0500",
+            "MST": "-0700", "MDT": "-0600",
+            "PST": "-0800", "PDT": "-0700",
+        }[m.group(1)],
+        value,
+    )
+
     formats = [
-        "%a, %d %b %Y %H:%M:%S %z",      # RFC 822
-        "%a, %d %b %Y %H:%M:%S %Z",      # RFC 822 with timezone name
-        "%Y-%m-%dT%H:%M:%S%z",           # ISO 8601
-        "%Y-%m-%dT%H:%M:%SZ",            # ISO 8601 UTC
-        "%Y-%m-%dT%H:%M:%S.%f%z",        # ISO 8601 with microseconds
-        "%Y-%m-%dT%H:%M:%S.%fZ",         # ISO 8601 UTC with microseconds
-        "%Y-%m-%d %H:%M:%S%z",           # Space separator
-        "%Y-%m-%d %H:%M:%S",             # No timezone
+        "%a, %d %b %Y %H:%M:%S %z",       # RFC 822 (RSS 2.0)
+        "%a, %d %b %Y %H:%M:%S %Z",
+        "%Y-%m-%dT%H:%M:%S%z",            # ISO 8601 (Atom)
+        "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%dT%H:%M:%S.%f%z",
+        "%Y-%m-%dT%H:%M:%S.%fZ",
+        "%Y-%m-%dT%H:%M:%S",              # No timezone -> assume UTC below
+        "%Y-%m-%d",                       # Date only
     ]
+
     for fmt in formats:
         try:
             parsed = datetime.strptime(value, fmt)
@@ -60,160 +99,28 @@ def parse_datetime(value: str | None) -> datetime | None:
             return parsed.astimezone(timezone.utc)
         except ValueError:
             continue
+
     return None
 
 
-def clean_html(text: str | None) -> str:
-    """Strip HTML tags and decode entities."""
+def clean_text(text: str | None) -> str:
+    """Strip HTML tags and decode entities into plain text."""
     if not text:
         return ""
-    # Simple tag removal
-    import re
-    text = re.sub(r"<[^>]+>", "", text)
-    return html.unescape(text).strip()
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = html.unescape(text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
-def load_config() -> dict[str, Any]:
-    with CONFIG_PATH.open("r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def fetch_feed_with_retry(url: str) -> bytes | None:
-    """Fetch a feed URL with retry logic."""
-    headers = {
-        "User-Agent": "TechPulse/1.0 (RSS Collector)",
-        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
-    }
-    request = urllib.request.Request(url, headers=headers, method="GET")
-
-    last_exception: Exception | None = None
-
-    for attempt in range(MAX_RETRIES):
-        try:
-            with urllib.request.urlopen(request, timeout=DEFAULT_TIMEOUT) as response:
-                status = response.status
-                if status == 429:
-                    wait_time = 30 * (attempt + 1)
-                    print(f"  Rate limited (429). Waiting {wait_time}s...")
-                    time.sleep(wait_time)
-                    continue
-                if 500 <= status < 600:
-                    wait_time = RETRY_BACKOFF_BASE ** attempt
-                    print(f"  Server error ({status}). Retrying in {wait_time}s...")
-                    time.sleep(wait_time)
-                    continue
-                if status != 200:
-                    raise RuntimeError(f"Feed returned HTTP {status}")
-                return response.read()
-        except urllib.error.HTTPError as exc:
-            if exc.code == 429:
-                wait_time = 30 * (attempt + 1)
-                print(f"  Rate limited (429). Waiting {wait_time}s...")
-                time.sleep(wait_time)
-                last_exception = exc
-                continue
-            if 500 <= exc.code < 600:
-                wait_time = RETRY_BACKOFF_BASE ** attempt
-                print(f"  Server error ({exc.code}). Retrying in {wait_time}s...")
-                time.sleep(wait_time)
-                last_exception = exc
-                continue
-            print(f"  HTTP error {exc.code}: {exc.reason}")
-            return None
-        except urllib.error.URLError as exc:
-            wait_time = RETRY_BACKOFF_BASE ** attempt
-            print(f"  Network error: {exc.reason}. Retrying in {wait_time}s...")
-            time.sleep(wait_time)
-            last_exception = exc
-            continue
-        except Exception as exc:
-            last_exception = exc
-            wait_time = RETRY_BACKOFF_BASE ** attempt
-            print(f"  Unexpected error: {exc}. Retrying in {wait_time}s...")
-            time.sleep(wait_time)
-            continue
-
-    print(f"  Failed after {MAX_RETRIES} attempts")
-    return None
-
-
-def parse_rss(content: bytes, feed_url: str) -> list[dict[str, Any]]:
-    """Parse RSS 2.0 feed."""
-    entries = []
-    try:
-        root = ET.fromstring(content)
-        channel = root.find("channel")
-        if channel is None:
-            return entries
-
-        for item in channel.findall("item"):
-            title = item.findtext("title", "").strip()
-            link = item.findtext("link", "").strip()
-            description = clean_html(item.findtext("description"))
-            pub_date = parse_datetime(item.findtext("pubDate"))
-            guid = item.findtext("guid", "").strip()
-
-            # Use guid as fallback for link
-            if not link and guid:
-                link = guid
-
-            # Validate URL
-            if link and not is_valid_url(link):
-                link = ""
-
-            entries.append({
-                "title": title,
-                "url": link,
-                "summary": description,
-                "published_at": pub_date.isoformat() if pub_date else None,
-                "guid": guid or link,
-                "feed_url": feed_url,
-            })
-    except ET.ParseError:
-        pass
-    return entries
-
-
-def parse_atom(content: bytes, feed_url: str) -> list[dict[str, Any]]:
-    """Parse Atom 1.0 feed."""
-    entries = []
-    # Atom namespace
-    ns = {"atom": "http://www.w3.org/2005/Atom"}
-    try:
-        root = ET.fromstring(content)
-        for entry in root.findall("atom:entry", ns):
-            title = (entry.findtext("atom:title", "", ns) or "").strip()
-            link = ""
-            link_elem = entry.find("atom:link", ns)
-            if link_elem is not None:
-                link = (link_elem.get("href") or "").strip()
-            summary = clean_html(entry.findtext("atom:summary", "", ns) or
-                                 entry.findtext("atom:content", "", ns))
-            pub_date = parse_datetime(entry.findtext("atom:published", "", ns) or
-                                       entry.findtext("atom:updated", "", ns))
-            guid = (entry.findtext("atom:id", "", ns) or "").strip()
-
-            if not link and guid:
-                link = guid
-
-            if link and not is_valid_url(link):
-                link = ""
-
-            entries.append({
-                "title": title,
-                "url": link,
-                "summary": summary,
-                "published_at": pub_date.isoformat() if pub_date else None,
-                "guid": guid or link,
-                "feed_url": feed_url,
-            })
-    except ET.ParseError:
-        pass
-    return entries
+def truncate(text: str, limit: int = SUMMARY_MAX_CHARS) -> str:
+    """Shorten text to an excerpt (copyright safety: no full bodies)."""
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
 
 
 def is_valid_url(url: str) -> bool:
-    """Basic URL validation."""
+    """Only http/https URLs with a host are accepted."""
     try:
         result = urlparse(url)
         return result.scheme in ("http", "https") and bool(result.netloc)
@@ -221,128 +128,295 @@ def is_valid_url(url: str) -> bool:
         return False
 
 
-def detect_feed_type(content: bytes) -> str:
-    """Detect if feed is RSS or Atom."""
+def load_config() -> dict[str, Any]:
+    with CONFIG_PATH.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def fetch_feed(url: str) -> bytes | None:
+    """Fetch a feed with retries. Returns None on permanent failure."""
+
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "TechPulse/1.0 (+https://github.com/singhtanishq/TechPulse)",
+            "Accept": (
+                "application/rss+xml, application/atom+xml, "
+                "application/xml, text/xml, */*"
+            ),
+        },
+        method="GET",
+    )
+
+    for attempt in range(MAX_RETRIES):
+
+        if attempt > 0:
+            wait = RETRY_BACKOFF_BASE ** attempt * 2
+            print(f"    Retrying in {wait}s (attempt {attempt + 1}/{MAX_RETRIES})...")
+            time.sleep(wait)
+
+        try:
+            with urllib.request.urlopen(request, timeout=DEFAULT_TIMEOUT) as response:
+                if response.status != 200:
+                    print(f"    Feed returned HTTP {response.status}.")
+                    continue
+                return response.read()
+
+        except urllib.error.HTTPError as exc:
+            if 500 <= exc.code < 600 or exc.code == 429:
+                print(f"    Feed HTTP {exc.code}.")
+                continue
+            print(f"    Feed HTTP {exc.code}: {exc.reason}. Giving up on this feed.")
+            return None
+
+        except urllib.error.URLError as exc:
+            print(f"    Network error: {exc.reason}.")
+            continue
+
+        except Exception as exc:
+            print(f"    Unexpected error: {exc}.")
+            continue
+
+    return None
+
+
+def normalize_entry(
+    title: str,
+    link: str,
+    summary: str,
+    published: datetime | None,
+    guid: str,
+    feed: dict[str, Any],
+) -> dict[str, Any] | None:
+    """Normalize a single entry; returns None if structurally unusable."""
+
+    title = clean_text(title)
+    link = (link or guid or "").strip()
+
+    if not title and not link:
+        return None
+
+    if link and not is_valid_url(link):
+        link = ""
+
+    return {
+        "title": title or "(untitled)",
+        "url": link,
+        "summary": truncate(clean_text(summary)),
+        "published_at": published.isoformat() if published else None,
+        "guid": guid or link or title,
+        "feed_url": feed.get("url", ""),
+        "feed_name": feed.get("name", "Unknown"),
+        "feed_category": feed.get("category", "tech"),
+        "feed_source": feed.get("source", "Unknown"),
+        "source": "RSS",
+    }
+
+
+def parse_feed(content: bytes, feed: dict[str, Any]) -> list[dict[str, Any]]:
+    """Parse RSS 2.0 or Atom 1.0 content into normalized entries."""
+
+    entries: list[dict[str, Any]] = []
+
     try:
         root = ET.fromstring(content)
-        if root.tag.endswith("rss") or root.tag == "rss":
-            return "rss"
-        if root.tag.endswith("feed") or "feed" in root.tag.lower():
-            return "atom"
-        # Check for Atom namespace
-        if "http://www.w3.org/2005/Atom" in ET.tostring(root, encoding="unicode")[:500]:
-            return "atom"
     except ET.ParseError:
-        pass
-    return "rss"  # default
+        print("    Malformed XML; giving up on this feed.")
+        return entries
+
+    is_atom = root.tag == f"{{{ATOM_NS}}}feed" or root.tag == "feed"
+
+    if is_atom:
+        for entry in root.findall(f"{{{ATOM_NS}}}entry"):
+            title = entry.findtext(f"{{{ATOM_NS}}}title", "")
+            link = ""
+            for link_elem in entry.findall(f"{{{ATOM_NS}}}link"):
+                rel = link_elem.get("rel", "alternate")
+                if rel == "alternate" or link_elem.get("href"):
+                    link = link_elem.get("href", "")
+                    if rel == "alternate":
+                        break
+            summary = (
+                entry.findtext(f"{{{ATOM_NS}}}summary", "")
+                or entry.findtext(f"{{{ATOM_NS}}}content", "")
+            )
+            published_raw = (
+                entry.findtext(f"{{{ATOM_NS}}}published")
+                or entry.findtext(f"{{{ATOM_NS}}}updated")
+            )
+            guid = entry.findtext(f"{{{ATOM_NS}}}id", "")
+            published = parse_datetime(published_raw)
+
+            record = normalize_entry(title, link, summary, published, guid, feed)
+            if record:
+                entries.append(record)
+    else:
+        channel = root.find("channel")
+        if channel is None:
+            print("    RSS feed missing <channel>; giving up on this feed.")
+            return entries
+
+        for item in channel.findall("item"):
+            title = item.findtext("title", "")
+            link = item.findtext("link", "")
+            summary = item.findtext("description", "")
+            published = parse_datetime(item.findtext("pubDate"))
+            guid = item.findtext("guid", "")
+
+            record = normalize_entry(title, link, summary, published, guid, feed)
+            if record:
+                entries.append(record)
+
+    return entries
 
 
-def collect() -> list[dict[str, Any]]:
+def collect() -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
     """Collect entries from all configured feeds."""
+
     config = load_config()
     feeds = config.get("feeds", [])
     collection_config = config.get("collection", {})
     max_entries = collection_config.get("max_entries_per_feed", 50)
     delay = collection_config.get("rate_limit_delay_seconds", 2)
 
-    all_entries = []
+    all_entries: list[dict[str, Any]] = []
+    failures: list[dict[str, str]] = []
     seen_guids: set[str] = set()
 
     for feed in feeds:
         name = feed.get("name", "Unknown")
         url = feed.get("url")
-        category = feed.get("category", "tech")
         source = feed.get("source", "Unknown")
 
         if not url:
-            print(f"Skipping {name}: no URL")
+            failures.append({"feed": name, "error": "No URL configured"})
             continue
 
-        print(f"Fetching {name} ({url})...")
-        content = fetch_feed_with_retry(url)
-        if not content:
-            print(f"  Failed to fetch")
+        print(f"Fetching {name} ({source})...")
+
+        content = fetch_feed(url)
+        if content is None:
+            failures.append({"feed": name, "error": "Fetch failed after retries"})
             continue
 
-        feed_type = detect_feed_type(content)
-        print(f"  Detected {feed_type.upper()} feed")
+        entries = parse_feed(content, feed)
 
-        if feed_type == "atom":
-            entries = parse_atom(content, url)
-        else:
-            entries = parse_rss(content, url)
+        if not entries:
+            failures.append({"feed": name, "error": "No parseable entries"})
+            continue
 
-        # Add feed metadata to each entry
+        added = 0
         for entry in entries:
-            entry["feed_name"] = name
-            entry["feed_category"] = category
-            entry["feed_source"] = source
-            entry["source"] = "RSS"
-            entry["collected_at"] = utc_now().isoformat()
+            key = entry["guid"] or entry["url"]
+            if key and key not in seen_guids:
+                seen_guids.add(key)
+                all_entries.append(entry)
+                added += 1
+                if added >= max_entries:
+                    break
 
-        # Deduplicate by GUID
-        feed_entries = []
-        for entry in entries:
-            guid = entry.get("guid") or entry.get("url")
-            if guid and guid not in seen_guids:
-                seen_guids.add(guid)
-                feed_entries.append(entry)
+        print(f"    Collected {added} entries")
 
-        # Limit entries per feed
-        feed_entries = feed_entries[:max_entries]
-        all_entries.extend(feed_entries)
+        if delay > 0:
+            time.sleep(delay)
 
-        print(f"  Collected {len(feed_entries)} entries")
-        time.sleep(delay)
-
-    # Deterministic sort: by published date descending, then URL
+    # Deterministic ordering: publication date descending, then URL, then title.
     all_entries.sort(
-        key=lambda e: (e.get("published_at", "") or "", e.get("url", "")),
-        reverse=True
+        key=lambda e: (e.get("published_at") or "", e.get("url") or "", e.get("title") or ""),
+        reverse=True,
     )
 
-    return all_entries
+    return all_entries, failures
 
 
-def save_output(entries: list[dict[str, Any]]) -> Path:
+def records_fingerprint(entries: list[dict[str, Any]]) -> str:
+    return json.dumps(entries, sort_keys=True, ensure_ascii=False)
+
+
+def save_output(entries: list[dict[str, Any]], failures: list[dict[str, str]], snapshot_date: str) -> Path:
+    """Save entries idempotently for the target date."""
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    collection_date = utc_now().date().isoformat()
+
+    output_path = OUTPUT_DIR / f"{snapshot_date}.json"
+
+    new_records = records_fingerprint(entries)
+
+    if output_path.exists():
+        try:
+            existing = json.loads(output_path.read_text(encoding="utf-8"))
+            if records_fingerprint(existing.get("entries", [])) == new_records:
+                print(f"Entries unchanged for {snapshot_date}; keeping existing file.")
+                return output_path
+        except (json.JSONDecodeError, OSError):
+            pass
+
     output = {
         "meta": {
             "source": "RSS",
             "collectedAt": utc_now().isoformat(),
+            "snapshotDate": snapshot_date,
             "count": len(entries),
+            "failures": failures,
         },
         "entries": entries,
     }
-    output_path = OUTPUT_DIR / f"{collection_date}.json"
+
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False, sort_keys=True)
         f.write("\n")
+
     return output_path
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Collect technology updates from RSS/Atom feeds.")
+
+    parser = argparse.ArgumentParser(
+        description="Collect technology updates from RSS/Atom feeds."
+    )
+    parser.add_argument(
+        "--date",
+        type=str,
+        help="Snapshot date label (YYYY-MM-DD, UTC). Default: previous completed UTC day.",
+    )
     args = parser.parse_args()
+
+    if args.date:
+        try:
+            datetime.strptime(args.date, "%Y-%m-%d")
+            snapshot_date = args.date
+        except ValueError:
+            parser.error("--date must be in YYYY-MM-DD format.")
+    else:
+        snapshot_date = default_snapshot_date()
 
     print()
     print("TechPulse — RSS/Atom Collector")
     print("=" * 32)
+    print(f"Snapshot date : {snapshot_date}")
     print()
 
     try:
-        entries = collect()
-        output_path = save_output(entries)
+        entries, failures = collect()
+        output_path = save_output(entries, failures, snapshot_date)
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
     print()
-    print("Collection completed successfully.")
-    print(f"Entries   : {len(entries)}")
-    print(f"Output    : {output_path}")
+    print("Collection finished.")
+    print(f"Entries : {len(entries)}")
+    if failures:
+        print(f"Feed failures: {len(failures)}")
+        for failure in failures:
+            print(f"  - {failure['feed']}: {failure['error']}")
+    print(f"Output  : {output_path}")
     print()
+
+    # Exit 0 unless nothing at all was collected from any feed.
+    if not entries:
+        print("ERROR: No RSS entries could be collected.", file=sys.stderr)
+        return 1
 
     return 0
 
