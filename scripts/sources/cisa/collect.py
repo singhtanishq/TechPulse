@@ -3,10 +3,24 @@
 """
 TechPulse — CISA KEV Collector
 
-Collects the Known Exploited Vulnerabilities (KEV) catalog
-from CISA and stores normalized JSON data for downstream processing.
+Collects the Known Exploited Vulnerabilities (KEV) catalog from CISA
+and stores normalized JSON data for downstream processing.
 
 Source: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+Feed:   https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+
+Note on semantics:
+    The KEV catalog is a full catalog snapshot, not a daily delta.
+    A collected file records the catalog state at collection time for
+    the target snapshot date. Downstream processors derive "new KEV
+    entries for date X" by comparing dateAdded fields.
+
+Output:
+    data/security/cisa/YYYY-MM-DD.json
+
+Idempotency:
+    Re-running for the same date with an identical catalog does not
+    rewrite the output file.
 """
 
 from __future__ import annotations
@@ -15,7 +29,7 @@ import argparse
 import json
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -35,30 +49,24 @@ RETRY_BACKOFF_BASE = 2
 
 
 def utc_now() -> datetime:
-    """Return the current UTC time."""
     return datetime.now(timezone.utc)
 
 
-def parse_datetime(value: str) -> datetime:
-    """Parse an ISO-8601 datetime string."""
-    if not value:
-        return None
-    value = value.strip()
-    if value.endswith("Z"):
-        value = value[:-1] + "+00:00"
-    try:
-        parsed = datetime.fromisoformat(value)
-        if parsed.tzinfo is None:
-            parsed = parsed.replace(tzinfo=timezone.utc)
-        return parsed.astimezone(timezone.utc)
-    except Exception:
-        return None
+def default_snapshot_date() -> datetime:
+    yesterday = (utc_now() - timedelta(days=1)).date()
+    return datetime(yesterday.year, yesterday.month, yesterday.day, tzinfo=timezone.utc)
 
 
-def normalize_kev(entry: dict[str, Any]) -> dict[str, Any]:
+def normalize_kev(entry: dict[str, Any]) -> dict[str, Any] | None:
     """Convert a raw CISA KEV entry into TechPulse format."""
+
+    cve_id = entry.get("cveID")
+
+    if not cve_id:
+        return None
+
     return {
-        "cve_id": entry.get("cveID"),
+        "cve_id": cve_id,
         "source": "CISA KEV",
         "vendor_project": entry.get("vendorProject"),
         "product": entry.get("product"),
@@ -66,113 +74,151 @@ def normalize_kev(entry: dict[str, Any]) -> dict[str, Any]:
         "date_added": entry.get("dateAdded"),
         "due_date": entry.get("dueDate"),
         "required_action": entry.get("requiredAction"),
-        "ransomware_known": entry.get("ransomwareCampaign", False),
+        # CISA emits "Known" / "Unknown" strings.
+        "known_ransomware_use": entry.get("ransomwareCampaign") == "Known",
         "notes": entry.get("notes"),
-        "cve_url": f"https://nvd.nist.gov/vuln/detail/{entry.get('cveID')}" if entry.get("cveID") else None,
+        "cve_url": f"https://nvd.nist.gov/vuln/detail/{cve_id}",
     }
 
 
-def fetch_catalog_with_retry() -> dict[str, Any]:
-    """Fetch the CISA KEV catalog with retry logic."""
+def fetch_catalog() -> dict[str, Any]:
+    """Fetch the CISA KEV catalog with conservative retries."""
+
     request = urllib.request.Request(
         CATALOG_URL,
         headers={
-            "User-Agent": "TechPulse/1.0",
+            "User-Agent": "TechPulse/1.0 (+https://github.com/singhtanishq/TechPulse)",
             "Accept": "application/json",
         },
         method="GET",
     )
 
-    last_exception: Exception | None = None
+    last_error: Exception | None = None
 
     for attempt in range(MAX_RETRIES):
+
+        if attempt > 0:
+            wait = RETRY_BACKOFF_BASE ** attempt * 2
+            print(f"  Retrying in {wait}s (attempt {attempt + 1}/{MAX_RETRIES})...")
+            time.sleep(wait)
+
         try:
             with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT) as response:
-                status = response.status
-                if status == 429:
-                    wait_time = 30 * (attempt + 1)
-                    print(f"Rate limited (429). Waiting {wait_time}s before retry...")
-                    time.sleep(wait_time)
-                    continue
-                if status != 200:
-                    raise RuntimeError(f"CISA KEV API returned unexpected HTTP status {status}")
                 raw = response.read()
+
+            try:
+                data = json.loads(raw.decode("utf-8"))
+            except json.JSONDecodeError as exc:
+                raise RuntimeError("CISA KEV feed returned invalid JSON.") from exc
+
+            if "vulnerabilities" not in data:
+                raise RuntimeError("CISA KEV feed missing 'vulnerabilities' key.")
+
+            return data
+
         except urllib.error.HTTPError as exc:
-            if exc.code == 429:
-                wait_time = 30 * (attempt + 1)
-                print(f"Rate limited (429). Waiting {wait_time}s before retry...")
-                time.sleep(wait_time)
-                last_exception = exc
+            if 500 <= exc.code < 600 or exc.code == 429:
+                print(f"  CISA feed HTTP {exc.code}.")
+                last_error = RuntimeError(f"CISA KEV feed returned HTTP {exc.code}")
                 continue
-            if 500 <= exc.code < 600:
-                wait_time = RETRY_BACKOFF_BASE ** attempt
-                print(f"Server error ({exc.code}). Retrying in {wait_time}s...")
-                time.sleep(wait_time)
-                last_exception = exc
-                continue
-            raise RuntimeError(f"CISA KEV API returned HTTP {exc.code}: {exc.reason}") from exc
+            raise RuntimeError(f"CISA KEV feed returned HTTP {exc.code}: {exc.reason}") from exc
+
         except urllib.error.URLError as exc:
-            wait_time = RETRY_BACKOFF_BASE ** attempt
-            print(f"Network error: {exc.reason}. Retrying in {wait_time}s...")
-            time.sleep(wait_time)
-            last_exception = exc
+            print(f"  Network error reaching CISA: {exc.reason}")
+            last_error = RuntimeError(f"Unable to reach CISA KEV feed: {exc.reason}")
             continue
+
+        except RuntimeError:
+            raise
+
         except Exception as exc:
-            last_exception = exc
-            wait_time = RETRY_BACKOFF_BASE ** attempt
-            print(f"Unexpected error: {exc}. Retrying in {wait_time}s...")
-            time.sleep(wait_time)
+            print(f"  Unexpected error fetching CISA KEV: {exc}")
+            last_error = RuntimeError(f"Unexpected CISA error: {exc}")
             continue
 
-        try:
-            return json.loads(raw.decode("utf-8"))
-        except json.JSONDecodeError as exc:
-            raise RuntimeError("CISA KEV API returned invalid JSON.") from exc
-
-    if last_exception:
-        raise RuntimeError(f"Failed after {MAX_RETRIES} attempts: {last_exception}") from last_exception
-    raise RuntimeError(f"Failed after {MAX_RETRIES} attempts")
+    raise RuntimeError(
+        f"CISA KEV request failed after {MAX_RETRIES} attempts: {last_error}"
+    ) from last_error
 
 
 def collect() -> list[dict[str, Any]]:
-    """Collect and normalize CISA KEV entries."""
+    """Collect and normalize the KEV catalog."""
+
     print("Fetching CISA KEV catalog...")
-    data = fetch_catalog_with_retry()
+    data = fetch_catalog()
 
-    vulnerabilities = data.get("vulnerabilities", [])
-    print(f"Received {len(vulnerabilities)} KEV entries")
+    catalog_meta = {
+        "catalog_version": data.get("catalogVersion"),
+        "date_released": data.get("dateReleased"),
+        "count_reported": data.get("count"),
+    }
 
-    normalized = []
-    seen_ids: set[str] = set()
+    entries = data.get("vulnerabilities", [])
+    print(f"Received {len(entries)} KEV entries")
 
-    for entry in vulnerabilities:
-        normalized_entry = normalize_kev(entry)
-        cve_id = normalized_entry.get("cve_id")
-        if cve_id and cve_id not in seen_ids:
-            seen_ids.add(cve_id)
-            normalized.append(normalized_entry)
+    normalized: list[dict[str, Any]] = []
+    seen: set[str] = set()
 
-    # Deterministic sort: by CVE ID ascending
-    normalized.sort(key=lambda v: v.get("cve_id", ""))
+    malformed = 0
+    for entry in entries:
+        record = normalize_kev(entry)
+        if record is None:
+            malformed += 1
+            continue
+        if record["cve_id"] not in seen:
+            seen.add(record["cve_id"])
+            normalized.append(record)
+
+    if malformed:
+        print(f"Skipped {malformed} malformed KEV entries (missing cveID).")
+
+    # Deterministic ordering: CVE ID ascending.
+    normalized.sort(key=lambda v: v["cve_id"])
+
+    # Stash catalog metadata on the first pass via a module-level return pair.
+    collect.catalog_meta = catalog_meta  # type: ignore[attr-defined]
 
     return normalized
 
 
-def save_output(vulnerabilities: list[dict[str, Any]]) -> Path:
+def records_fingerprint(vulnerabilities: list[dict[str, Any]]) -> str:
+    return json.dumps(vulnerabilities, sort_keys=True, ensure_ascii=False)
+
+
+def save_output(vulnerabilities: list[dict[str, Any]], snapshot_date: str) -> Path:
+    """Save the catalog snapshot idempotently for the target date."""
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    collection_date = utc_now().date().isoformat()
+    output_path = OUTPUT_DIR / f"{snapshot_date}.json"
+
+    new_records = records_fingerprint(vulnerabilities)
+
+    if output_path.exists():
+        try:
+            existing = json.loads(output_path.read_text(encoding="utf-8"))
+            existing_records = records_fingerprint(existing.get("vulnerabilities", []))
+            if existing_records == new_records:
+                print(
+                    f"Catalog unchanged for {snapshot_date}; "
+                    f"keeping existing file (idempotent skip)."
+                )
+                return output_path
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    catalog_meta = getattr(collect, "catalog_meta", {})
 
     output = {
         "meta": {
             "source": "CISA KEV",
             "collectedAt": utc_now().isoformat(),
+            "snapshotDate": snapshot_date,
+            "catalog": catalog_meta,
             "count": len(vulnerabilities),
         },
         "vulnerabilities": vulnerabilities,
     }
-
-    output_path = OUTPUT_DIR / f"{collection_date}.json"
 
     with output_path.open("w", encoding="utf-8") as file:
         json.dump(output, file, indent=2, ensure_ascii=False, sort_keys=True)
@@ -182,17 +228,35 @@ def save_output(vulnerabilities: list[dict[str, Any]]) -> Path:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Collect CISA Known Exploited Vulnerabilities catalog.")
+
+    parser = argparse.ArgumentParser(
+        description="Collect the CISA Known Exploited Vulnerabilities catalog."
+    )
+    parser.add_argument(
+        "--date",
+        type=str,
+        help="Snapshot date label (YYYY-MM-DD, UTC). Default: previous completed UTC day.",
+    )
     args = parser.parse_args()
+
+    if args.date:
+        try:
+            datetime.strptime(args.date, "%Y-%m-%d")
+            snapshot_date = args.date
+        except ValueError:
+            parser.error("--date must be in YYYY-MM-DD format.")
+    else:
+        snapshot_date = default_snapshot_date().date().isoformat()
 
     print()
     print("TechPulse — CISA KEV Collector")
     print("=" * 32)
+    print(f"Snapshot date : {snapshot_date}")
     print()
 
     try:
         vulnerabilities = collect()
-        output_path = save_output(vulnerabilities)
+        output_path = save_output(vulnerabilities, snapshot_date)
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
