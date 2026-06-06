@@ -1,28 +1,28 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "TechPulse RSS/Atom Feeds Configuration",
+  "description": "TechPulse RSS/Atom feeds configuration. Each feed is collected independently; feed failures are recorded and never abort the run.",
   "feeds": [
     {
-      "name": "The Register - Security",
+      "name": "The Register — Security",
       "url": "https://www.theregister.com/security/headlines.atom",
       "category": "security",
       "source": "The Register"
     },
     {
-      "name": "The Register - Software",
+      "name": "The Register — Software",
       "url": "https://www.theregister.com/software/headlines.atom",
       "category": "tech",
       "source": "The Register"
     },
     {
-      "name": "Ars Technica - Technology",
+      "name": "Ars Technica — Technology",
       "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
       "category": "tech",
       "source": "Ars Technica"
     },
     {
-      "name": "Ars Technica - Security",
-      "url": "https://feeds.arstechnica.com/arstechnica/security",
+      "name": "Ars Technica — Security",
+      "url": "https://arstechnica.com/security/feed/",
       "category": "security",
       "source": "Ars Technica"
     },
@@ -69,21 +69,21 @@
       "source": "Netflix"
     },
     {
-      "name": "Uber Engineering",
-      "url": "https://eng.uber.com/feed/",
+      "name": "Meta Engineering",
+      "url": "https://engineering.fb.com/feed/",
       "category": "tech",
-      "source": "Uber"
+      "source": "Meta"
     },
     {
-      "name": "Stripe Blog",
-      "url": "https://stripe.com/blog/rss",
+      "name": "Chromium Blog",
+      "url": "https://blog.chromium.org/feeds/posts/default?alt=rss",
       "category": "tech",
-      "source": "Stripe"
+      "source": "Google Chrome"
     }
   ],
   "collection": {
     "timeout_seconds": 15,
-    "max_entries_per_feed": 50,
-    "rate_limit_delay_seconds": 2
+    "max_entries_per_feed": 30,
+    "rate_limit_delay_seconds": 1
   }
 }
