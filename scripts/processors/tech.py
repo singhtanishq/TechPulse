@@ -1,163 +1,168 @@
 #!/usr/bin/env python3
 
 """
-TechPulse — Technology/RSS Processor
+TechPulse — Technology Processor
 
-Processes RSS/Atom feed data into technology intelligence.
+Normalizes RSS/Atom entries into the application-ready technology
+dataset for the snapshot window.
+
+Output:
+    data/normalized/tech.json
 """
 
 from __future__ import annotations
 
-import json
+import argparse
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-from utils import (
-    load_json,
-    save_json,
-    parse_iso_datetime,
-    utc_now,
-    format_relative_date,
-    PROJECT_ROOT,
+SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from processors.utils import (
     DATA_DIR,
+    latest_dated_file,
+    load_json,
+    parse_iso_datetime,
+    save_json,
+    derive_processed_at,
+    format_relative_date,
+    status_from_counts,
+    utc_now,
 )
 
 TECH_DIR = DATA_DIR / "tech"
 NORMALIZED_DIR = DATA_DIR / "normalized"
 
 
-def load_latest_tech() -> dict[str, Any] | None:
-    """Load the most recent tech/RSS data file."""
-    files = list(TECH_DIR.glob("*.json"))
-    if not files:
-        return None
-    latest = max(files, key=lambda f: f.stat().st_mtime)
-    return load_json(latest)
+def resolve_window(start_arg: str | None, end_arg: str | None) -> tuple[datetime, datetime]:
+    end = parse_iso_datetime(end_arg) if end_arg else None
+    start = parse_iso_datetime(start_arg) if start_arg else None
+
+    if end is None:
+        day = (utc_now() - timedelta(days=1)).date()
+        end = datetime(day.year, day.month, day.day, tzinfo=timezone.utc) + timedelta(days=1) - timedelta(milliseconds=1)
+    if start is None:
+        start = end - timedelta(days=1) + timedelta(milliseconds=1)
+
+    return start, end
 
 
-def filter_by_window(entries: list[dict], start: datetime, end: datetime) -> list[dict]:
-    """Filter entries by published_at date within window."""
-    filtered = []
-    for entry in entries:
-        pub_str = entry.get("published_at")
-        pub_date = parse_iso_datetime(pub_str)
-        if pub_date and start <= pub_date <= end:
-            filtered.append(entry)
-    return filtered
-
-
-def categorize_entries(entries: list[dict]) -> dict[str, int]:
-    """Count entries by feed category."""
-    counts = {}
-    for entry in entries:
-        cat = entry.get("feed_category", "tech")
-        counts[cat] = counts.get(cat, 0) + 1
-    return counts
-
-
-def enrich_entries(entries: list[dict]) -> list[dict]:
-    """Add computed fields to entries."""
-    for entry in entries:
-        entry["relative_date"] = format_relative_date(entry.get("published_at"))
-        # Truncate summary for display
-        summary = entry.get("summary", "")
-        if len(summary) > 300:
-            entry["summary_short"] = summary[:300] + "..."
-        else:
-            entry["summary_short"] = summary
-    return entries
-
-
-def process_tech(
-    window_start: datetime | None = None,
-    window_end: datetime | None = None,
-) -> dict[str, Any]:
+def process_tech(start: datetime, end: datetime) -> dict[str, Any]:
     """Process technology/RSS data."""
 
+    tech_path = latest_dated_file(TECH_DIR)
+
     print("Loading tech/RSS data...")
-    tech_data = load_latest_tech()
+    tech_data = load_json(tech_path) if tech_path else None
     if not tech_data:
-        print("WARNING: No tech/RSS data found")
-        all_entries = []
+        print("  WARNING: no tech data available")
+        all_entries: list[dict[str, Any]] = []
+        failures = 1
     else:
-        all_entries = tech_data.get("entries", [])
-        print(f"  Loaded {len(all_entries)} entries")
+        all_entries = [e for e in tech_data.get("entries", []) if isinstance(e, dict)]
+        collector_failures = tech_data.get("meta", {}).get("failures", []) or []
+        failures = len(collector_failures)
+        print(f"  Loaded {len(all_entries)} entries from {tech_path.name}")
 
-    # Determine window
-    if window_end is None:
-        window_end = utc_now()
-    if window_start is None:
-        window_start = window_end - timedelta(days=1)
+    window_entries = []
+    for entry in all_entries:
+        published = parse_iso_datetime(entry.get("published_at"))
+        if published and start <= published <= end:
+            enriched = dict(entry)
+            enriched["relative_date"] = format_relative_date(published, now=utc_now())
+            window_entries.append(enriched)
 
-    # Filter by window
-    window_entries = filter_by_window(all_entries, window_start, window_end)
-    print(f"  {len(window_entries)} entries in window")
-
-    # Categorize
-    categories = categorize_entries(window_entries)
-
-    # Enrich
-    window_entries = enrich_entries(window_entries)
-
-    # Sort by published date descending
+    # Deterministic ordering: published descending, then URL, then title.
     window_entries.sort(
-        key=lambda e: e.get("published_at", "") or "",
-        reverse=True
+        key=lambda e: (
+            e.get("published_at") or "",
+            e.get("url") or "",
+            e.get("title") or "",
+        ),
+        reverse=True,
     )
 
-    # Build output
-    output = {
+    categories: dict[str, int] = {}
+    sources: dict[str, int] = {}
+    for entry in window_entries:
+        cat = entry.get("feed_category") or "tech"
+        src = entry.get("feed_source") or "Unknown"
+        categories[cat] = categories.get(cat, 0) + 1
+        sources[src] = sources.get(src, 0) + 1
+
+    status = status_from_counts(len(all_entries), len(window_entries), failures)
+    processed_at = derive_processed_at([tech_path])
+
+    return {
         "meta": {
-            "processedAt": utc_now().isoformat(),
-            "window": {
-                "start": window_start.isoformat(),
-                "end": window_end.isoformat(),
+            "processedAt": processed_at,
+            "window": {"start": start.isoformat(), "end": end.isoformat()},
+            "sourceFiles": {
+                "tech": tech_path.name if tech_path else None,
             },
             "sources": {
                 "rss": {
-                    "status": "success" if tech_data else "missing",
+                    "status": status,
                     "total": len(all_entries),
                     "inWindow": len(window_entries),
+                    "failures": failures,
                 },
             },
         },
         "summary": {
             "total": len(window_entries),
             "categories": categories,
+            "sources": sources,
         },
-        "entries": window_entries[:30],  # Limit for frontend
+        "entries": window_entries[:30],
     }
-
-    return output
 
 
 def main() -> int:
-    """Main entry point for tech processor."""
-    import argparse
-    parser = argparse.ArgumentParser(description="Process tech/RSS data.")
-    parser.add_argument("--start", help="Window start (ISO 8601 UTC)")
-    parser.add_argument("--end", help="Window end (ISO 8601 UTC)")
+
+    parser = argparse.ArgumentParser(description="Process technology/RSS data.")
+    parser.add_argument("--date", help="Snapshot date (YYYY-MM-DD, UTC).")
+    parser.add_argument("--start", help="Window start (ISO 8601 UTC). Overrides --date.")
+    parser.add_argument("--end", help="Window end (ISO 8601 UTC). Overrides --date.")
     args = parser.parse_args()
 
-    window_start = parse_iso_datetime(args.start) if args.start else None
-    window_end = parse_iso_datetime(args.end) if args.end else None
+    if args.start and args.end:
+        start = parse_iso_datetime(args.start)
+        end = parse_iso_datetime(args.end)
+        if start is None or end is None:
+            parser.error("Invalid --start/--end datetime.")
+    else:
+        if args.date:
+            try:
+                day = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            except ValueError:
+                parser.error("--date must be in YYYY-MM-DD format.")
+        else:
+            day = (utc_now() - timedelta(days=1)).date()
+            day = datetime(day.year, day.month, day.day, tzinfo=timezone.utc)
+        start = day
+        end = day + timedelta(days=1) - timedelta(milliseconds=1)
 
     print()
     print("TechPulse — Tech/RSS Processor")
     print("=" * 32)
+    print(f"Window: {start.isoformat()} -> {end.isoformat()}")
     print()
 
     try:
-        result = process_tech(window_start, window_end)
+        result = process_tech(start, end)
         output_path = NORMALIZED_DIR / "tech.json"
         save_json(result, output_path)
     except Exception as exc:
-        print(f"ERROR: {exc}")
+        print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
     print()
-    print("Processing completed successfully.")
+    print("Processing completed.")
+    print(f"In window: {result['summary']['total']} entries")
     print(f"Output: {output_path}")
     print()
 
