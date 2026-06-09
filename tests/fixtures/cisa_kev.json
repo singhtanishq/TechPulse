@@ -1,0 +1,38 @@
+{
+  "catalogVersion": "test-fixture",
+  "dateReleased": "2026-09-18T00:00:00.0000Z",
+  "count": 3,
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-2026-1001",
+      "vendorProject": "ExampleCorp",
+      "product": "ExampleServer",
+      "vulnerabilityName": "ExampleCorp ExampleServer Remote Code Execution",
+      "dateAdded": "2026-09-17",
+      "dueDate": "2026-10-01",
+      "requiredAction": "Apply updates per vendor instructions.",
+      "ransomwareCampaign": "Known",
+      "notes": "https://example.com/advisory"
+    },
+    {
+      "cveID": "CVE-2026-1002",
+      "vendorProject": "OtherCorp",
+      "product": "OtherProxy",
+      "vulnerabilityName": "OtherCorp OtherProxy Privilege Escalation",
+      "dateAdded": "2026-08-01",
+      "dueDate": "2026-08-15",
+      "requiredAction": "Apply mitigations per vendor instructions.",
+      "ransomwareCampaign": "Unknown",
+      "notes": ""
+    },
+    {
+      "cveID": "CVE-2026-1001",
+      "vendorProject": "ExampleCorp",
+      "product": "Duplicate Entry",
+      "vulnerabilityName": "Duplicate that must be dropped",
+      "dateAdded": "2026-09-17",
+      "requiredAction": "N/A",
+      "ransomwareCampaign": "Unknown"
+    }
+  ]
+}
