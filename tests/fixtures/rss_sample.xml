@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Example Tech News</title>
+    <link>https://example.com</link>
+    <description>Fixture RSS feed</description>
+    <item>
+      <title>First story &amp; it has entities</title>
+      <link>https://example.com/story-1</link>
+      <description><![CDATA[<p>Summary with <b>HTML</b> markup that must be stripped.</p>]]></description>
+      <pubDate>Wed, 16 Sep 2026 10:00:00 GMT</pubDate>
+      <guid>https://example.com/story-1</guid>
+    </item>
+    <item>
+      <title>Story with missing date</title>
+      <link>https://example.com/story-2</link>
+      <description>Plain summary.</description>
+      <guid>https://example.com/story-2</guid>
+    </item>
+    <item>
+      <title>Duplicate guid entry</title>
+      <link>https://example.com/story-1-dupe</link>
+      <description>Duplicate.</description>
+      <pubDate>Wed, 16 Sep 2026 11:00:00 GMT</pubDate>
+      <guid>https://example.com/story-1</guid>
+    </item>
+    <item>
+      <title>Story with javascript link</title>
+      <link>javascript:alert(1)</link>
+      <description>Dangerous scheme must be dropped.</description>
+      <pubDate>Wed, 16 Sep 2026 12:00:00 GMT</pubDate>
+      <guid>guid-js-story</guid>
+    </item>
+  </channel>
+</rss>
