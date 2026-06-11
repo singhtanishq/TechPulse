@@ -13,34 +13,6 @@
           },
           {
             "daily_growth": null,
-            "full_name": "tensorflow/tensorflow",
-            "language": "C++",
-            "stars": 200172,
-            "url": "https://github.com/tensorflow/tensorflow"
-          },
-          {
-            "daily_growth": null,
-            "full_name": "vercel/next.js",
-            "language": "JavaScript",
-            "stars": 142339,
-            "url": "https://github.com/vercel/next.js"
-          },
-          {
-            "daily_growth": null,
-            "full_name": "golang/go",
-            "language": "Go",
-            "stars": 138880,
-            "url": "https://github.com/golang/go"
-          },
-          {
-            "daily_growth": null,
-            "full_name": "kubernetes/kubernetes",
-            "language": "Go",
-            "stars": 127814,
-            "url": "https://github.com/kubernetes/kubernetes"
-          },
-          {
-            "daily_growth": null,
             "full_name": "nodejs/node",
             "language": "JavaScript",
             "stars": 121995,
@@ -48,31 +20,31 @@
           },
           {
             "daily_growth": null,
-            "full_name": "rust-lang/rust",
-            "language": "Rust",
-            "stars": 118932,
-            "url": "https://github.com/rust-lang/rust"
-          },
-          {
-            "daily_growth": null,
-            "full_name": "supabase/supabase",
+            "full_name": "vitejs/vite",
             "language": "TypeScript",
-            "stars": 110100,
-            "url": "https://github.com/supabase/supabase"
+            "stars": 82879,
+            "url": "https://github.com/vitejs/vite"
           },
           {
             "daily_growth": null,
-            "full_name": "pytorch/pytorch",
+            "full_name": "python/cpython",
             "language": "Python",
-            "stars": 103084,
-            "url": "https://github.com/pytorch/pytorch"
+            "stars": 77209,
+            "url": "https://github.com/python/cpython"
           },
           {
             "daily_growth": null,
-            "full_name": "tailwindlabs/tailwindcss",
+            "full_name": "vuejs/core",
             "language": "TypeScript",
-            "stars": 97607,
-            "url": "https://github.com/tailwindlabs/tailwindcss"
+            "stars": 54412,
+            "url": "https://github.com/vuejs/core"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "laravel/framework",
+            "language": "PHP",
+            "stars": 34925,
+            "url": "https://github.com/laravel/framework"
           }
         ]
       },
@@ -107,7 +79,7 @@
         "cves": 1675,
         "kevAdded": 0,
         "knownExploited": 2,
-        "projects": 20,
+        "projects": 6,
         "releases": 1,
         "techEntries": 16
       },
@@ -119,16 +91,16 @@
           "total": 1713
         },
         "github_releases": {
-          "failures": 0,
+          "failures": 14,
           "inWindow": 1,
-          "status": "success",
-          "total": 59
+          "status": "partial",
+          "total": 19
         },
         "github_repos": {
-          "failures": 0,
-          "inWindow": 20,
-          "status": "success",
-          "total": 20
+          "failures": 14,
+          "inWindow": 6,
+          "status": "partial",
+          "total": 6
         },
         "nvd": {
           "failures": 0,
@@ -214,7 +186,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-18T20:35:21.182763+00:00",
+    "generatedAt": "2026-09-18T20:40:38.522225+00:00",
     "totalSnapshots": 1
   }
 }
