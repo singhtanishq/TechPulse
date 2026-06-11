@@ -191,13 +191,16 @@ def normalize_entry(
     """Normalize a single entry; returns None if structurally unusable."""
 
     title = clean_text(title)
-    link = (link or guid or "").strip()
+    link = (link or "").strip()
 
-    if not title and not link:
-        return None
-
+    # A guid that is not a usable URL does not count as a link.
     if link and not is_valid_url(link):
         link = ""
+
+    # Entries with neither a real title nor a usable URL are junk
+    # (e.g. Atom entries carrying only an <id>).
+    if not title and not link:
+        return None
 
     return {
         "title": title or "(untitled)",
