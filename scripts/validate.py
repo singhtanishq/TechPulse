@@ -266,11 +266,14 @@ PLACEHOLDER_SCAN_FILES = ["*.html", "*.js", "*.css", "*.py", "*.json", "*.md"]
 def check_placeholders() -> None:
     section("6. Placeholder detection")
     findings = 0
+    self_path = Path(__file__).resolve()
     for pattern_name in PROJECT_ROOT.rglob("*"):
         if ".git" in pattern_name.parts or "__pycache__" in pattern_name.parts:
             continue
         if not pattern_name.is_file():
             continue
+        if pattern_name.resolve() == self_path:
+            continue  # The detector itself legitimately contains the patterns.
         if pattern_name.suffix not in (".html", ".js", ".css", ".py", ".json", ".md"):
             continue
         try:
