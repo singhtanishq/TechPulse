@@ -168,7 +168,7 @@ def format_relative_date(date_obj: datetime | str | None, now: datetime | None =
         return "Today"
     if delta == 1:
         return "Yesterday"
-    if delta < 7:
+    if delta < 14:
         return f"{delta} days ago"
     return format_date(date_obj)
 
