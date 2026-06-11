@@ -1,26 +1,29 @@
 {
   "history": [
     {
-      "cves": 2138,
+      "cves": 1675,
       "date": "2026-09-17",
+      "kevAdded": 0,
       "knownExploited": 2,
-      "projects": 0,
-      "releases": 0,
+      "projects": 20,
+      "releases": 1,
       "techEntries": 16
     }
   ],
   "latest": {
     "date": "2026-09-17",
     "snapshot": {
-      "cves": 2138,
+      "cves": 1675,
+      "kevAdded": 0,
       "knownExploited": 2,
-      "projects": 0,
-      "releases": 0,
+      "projects": 20,
+      "releases": 1,
       "techEntries": 16
     }
   },
   "meta": {
-    "processedAt": "2026-09-18T07:26:24.686115+00:00",
-    "totalSnapshots": 1
+    "processedAt": "2026-09-17T00:00:00+00:00",
+    "totalSnapshots": 1,
+    "warnings": []
   }
 }
