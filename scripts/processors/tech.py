@@ -112,7 +112,11 @@ def process_tech(start: datetime, end: datetime) -> dict[str, Any]:
     return {
         "meta": {
             "processedAt": processed_at,
-            "window": {"start": start.isoformat(), "end": end.isoformat()},
+            "window": {
+                "start": start.isoformat(),
+                "end": end.isoformat(),
+                "lookbackHours": 48,
+            },
             "sourceFiles": {
                 "tech": tech_path.name if tech_path else None,
             },
