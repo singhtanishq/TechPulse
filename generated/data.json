@@ -1,11 +1,11 @@
 {
   "history": [
     {
-      "cves": 1675,
+      "cves": 1670,
       "date": "2026-09-17",
       "kevAdded": 0,
       "knownExploited": 2,
-      "projects": 6,
+      "projects": 20,
       "releases": 1,
       "techEntries": 47
     }
@@ -13,7 +13,7 @@
   "meta": {
     "date": "2026-09-17",
     "daysObserved": 1,
-    "generatedAt": "2026-09-18T20:45:24.306140+00:00",
+    "generatedAt": "2026-09-18T21:22:21.525017+00:00",
     "snapshots": 1
   },
   "openSource": [
@@ -31,63 +31,111 @@
     },
     {
       "daily_growth": null,
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "full_name": "tensorflow/tensorflow",
+      "growth_available": false,
+      "language": "C++",
+      "name": "tensorflow",
+      "rank": 2,
+      "source": "GitHub",
+      "stars": 200174,
+      "url": "https://github.com/tensorflow/tensorflow"
+    },
+    {
+      "daily_growth": null,
+      "description": "The React Framework",
+      "full_name": "vercel/next.js",
+      "growth_available": false,
+      "language": "JavaScript",
+      "name": "next.js",
+      "rank": 3,
+      "source": "GitHub",
+      "stars": 142340,
+      "url": "https://github.com/vercel/next.js"
+    },
+    {
+      "daily_growth": null,
+      "description": "The Go programming language",
+      "full_name": "golang/go",
+      "growth_available": false,
+      "language": "Go",
+      "name": "go",
+      "rank": 4,
+      "source": "GitHub",
+      "stars": 138880,
+      "url": "https://github.com/golang/go"
+    },
+    {
+      "daily_growth": null,
+      "description": "Production-Grade Container Scheduling and Management",
+      "full_name": "kubernetes/kubernetes",
+      "growth_available": false,
+      "language": "Go",
+      "name": "kubernetes",
+      "rank": 5,
+      "source": "GitHub",
+      "stars": 127815,
+      "url": "https://github.com/kubernetes/kubernetes"
+    },
+    {
+      "daily_growth": null,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": false,
       "language": "JavaScript",
       "name": "node",
-      "rank": 2,
+      "rank": 6,
       "source": "GitHub",
       "stars": 121995,
       "url": "https://github.com/nodejs/node"
     },
     {
       "daily_growth": null,
-      "description": "Next generation frontend tooling. It's fast!",
-      "full_name": "vitejs/vite",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "full_name": "rust-lang/rust",
       "growth_available": false,
-      "language": "TypeScript",
-      "name": "vite",
-      "rank": 3,
+      "language": "Rust",
+      "name": "rust",
+      "rank": 7,
       "source": "GitHub",
-      "stars": 82879,
-      "url": "https://github.com/vitejs/vite"
+      "stars": 118932,
+      "url": "https://github.com/rust-lang/rust"
     },
     {
       "daily_growth": null,
-      "description": "The Python programming language",
-      "full_name": "python/cpython",
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "full_name": "supabase/supabase",
+      "growth_available": false,
+      "language": "TypeScript",
+      "name": "supabase",
+      "rank": 8,
+      "source": "GitHub",
+      "stars": 110110,
+      "url": "https://github.com/supabase/supabase"
+    },
+    {
+      "daily_growth": null,
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "full_name": "pytorch/pytorch",
       "growth_available": false,
       "language": "Python",
-      "name": "cpython",
-      "rank": 4,
+      "name": "pytorch",
+      "rank": 9,
       "source": "GitHub",
-      "stars": 77209,
-      "url": "https://github.com/python/cpython"
+      "stars": 103085,
+      "url": "https://github.com/pytorch/pytorch"
     },
     {
       "daily_growth": null,
-      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
-      "full_name": "vuejs/core",
+      "description": "A utility-first CSS framework for rapid UI development.",
+      "full_name": "tailwindlabs/tailwindcss",
       "growth_available": false,
       "language": "TypeScript",
-      "name": "core",
-      "rank": 5,
+      "name": "tailwindcss",
+      "rank": 10,
       "source": "GitHub",
-      "stars": 54412,
-      "url": "https://github.com/vuejs/core"
-    },
-    {
-      "daily_growth": null,
-      "description": "Laravel is a web application framework with expressive, elegant syntax.",
-      "full_name": "laravel/framework",
-      "growth_available": false,
-      "language": "PHP",
-      "name": "framework",
-      "rank": 6,
-      "source": "GitHub",
-      "stars": 34925,
-      "url": "https://github.com/laravel/framework"
+      "stars": 97607,
+      "url": "https://github.com/tailwindlabs/tailwindcss"
     }
   ],
   "releases": [
@@ -102,8 +150,8 @@
     }
   ],
   "security": {
-    "critical": 136,
-    "high": 675,
+    "critical": 135,
+    "high": 674,
     "kevCatalogTotal": 1716,
     "latest": [
       {
@@ -302,34 +350,34 @@
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54519"
       }
     ],
-    "low": 49,
-    "medium": 356,
+    "low": 48,
+    "medium": 355,
     "none": 2,
-    "unscored": 457
+    "unscored": 456
   },
   "snapshot": {
-    "cves": 1675,
+    "cves": 1670,
     "kevAdded": 0,
     "knownExploited": 2,
-    "projects": 6,
+    "projects": 20,
     "releases": 1,
     "techEntries": 47
   },
   "sources": {
     "opensource": {
       "github": {
-        "failures": 14,
-        "inWindow": 6,
-        "status": "partial",
-        "total": 6
+        "failures": 0,
+        "inWindow": 20,
+        "status": "success",
+        "total": 20
       }
     },
     "releases": {
       "github": {
-        "failures": 14,
+        "failures": 0,
         "inWindow": 1,
-        "status": "partial",
-        "total": 19
+        "status": "success",
+        "total": 59
       }
     },
     "security": {
@@ -341,9 +389,9 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1675,
+        "inWindow": 1670,
         "status": "success",
-        "total": 1675
+        "total": 1670
       }
     },
     "technology": {

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "collectedAt": "2026-09-18T20:45:24.306140+00:00",
-    "count": 1675,
+    "collectedAt": "2026-09-18T21:21:13.209352+00:00",
+    "count": 1670,
     "source": "NVD",
     "window": {
       "end": "2026-09-17T23:59:59.999Z",
@@ -617,18 +617,6 @@
         "https://cert-portal.siemens.com/productcert/html/ssa-585531.html"
       ],
       "severity": "HIGH",
-      "source": "NVD"
-    },
-    {
-      "cvss": null,
-      "description": "In MailData Email Archiving System v4.2 and earlier, a SQL injection vulnerability exists.",
-      "id": "CVE-2025-55787",
-      "lastModified": "2026-09-17T21:17:10.900",
-      "published": "2026-09-17T21:17:10.900",
-      "references": [
-        "https://gist.github.com/NSW111/77ce627fa18fc942a7252ccba8fbdd1d"
-      ],
-      "severity": null,
       "source": "NVD"
     },
     {
@@ -3334,29 +3322,6 @@
     },
     {
       "cvss": {
-        "score": 2.7,
-        "severity": "LOW",
-        "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N",
-        "version": "3.1"
-      },
-      "description": "Omni manages Kubernetes on bare metal, virtual machines, or in a cloud. Prior to 1.6.6 and 1.7.3, managementServer.CreateSchematic in internal/backend/grpc/schematics.go passes the caller-controlled TalosVersion field to imageFactoryClient.OverlaysVersions without validating it as a version. An authenticated Operator can submit traversal segments in TalosVersion, and url.URL.JoinPath normalizes them into unintended paths on the configured image-factory host. Omni then issues HTTP GET requests to those paths and reflects error-body content, enabling same-host endpoint probing and possible disclosure of internal diagnostics while preventing redirection to another host or write requests. This issue is fixed in versions 1.6.6 and 1.7.3.",
-      "id": "CVE-2026-45723",
-      "lastModified": "2026-09-17T20:16:49.347",
-      "published": "2026-09-17T20:16:49.347",
-      "references": [
-        "https://github.com/siderolabs/omni/commit/13c3f289789842e1fd954d98babb34b94eea1192",
-        "https://github.com/siderolabs/omni/commit/3e69e80802624bf322f16aa499d5eafca16d0025",
-        "https://github.com/siderolabs/omni/commit/9426c2cabccaa1d442bc8ebf28c16cae2d7c6ff7",
-        "https://github.com/siderolabs/omni/pull/2817",
-        "https://github.com/siderolabs/omni/releases/tag/v1.6.6",
-        "https://github.com/siderolabs/omni/releases/tag/v1.7.3",
-        "https://github.com/siderolabs/omni/security/advisories/GHSA-c66c-vq6w-fvh5"
-      ],
-      "severity": "LOW",
-      "source": "NVD"
-    },
-    {
-      "cvss": {
         "score": 7.6,
         "severity": "HIGH",
         "vector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H",
@@ -4122,26 +4087,6 @@
     },
     {
       "cvss": {
-        "score": 8.7,
-        "severity": "HIGH",
-        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-        "version": "4.0"
-      },
-      "description": "Frappe Learning Management System (LMS) is a learning system that helps users structure their content. Prior to version 2.52.1, a remote attacker can request a traversal path handled by SCORMRenderer.render in lms/page_renderers.py. The renderer constructs and opens a server-side path without first confirming that its real path remains within public/scorm, allowing files outside the SCORM directory to be read when they are accessible to the server process. This issue is fixed in version 2.52.1.",
-      "id": "CVE-2026-54343",
-      "lastModified": "2026-09-17T22:17:00.390",
-      "published": "2026-09-17T22:17:00.390",
-      "references": [
-        "https://github.com/frappe/lms/commit/e1b425ed5bf0fc9c373efc1ba235c7c70e23d465",
-        "https://github.com/frappe/lms/pull/2299",
-        "https://github.com/frappe/lms/releases/tag/v2.52.1",
-        "https://github.com/frappe/lms/security/advisories/GHSA-3mq2-3c8v-m92j"
-      ],
-      "severity": "HIGH",
-      "source": "NVD"
-    },
-    {
-      "cvss": {
         "score": 5.3,
         "severity": "MEDIUM",
         "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -4619,25 +4564,6 @@
     },
     {
       "cvss": {
-        "score": 5.3,
-        "severity": "MEDIUM",
-        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-        "version": "4.0"
-      },
-      "description": "OmniBlocks is a monorepo for the OmniBlocks project. Prior to the June 6, 2026 workflow remediation, .github/workflows/disc.yml runs for the issues opened event and the issues edited event and invokes the createDiscussion mutation whenever an issue is classified as off-topic, without recording that the issue was already converted or otherwise suppressing duplicate runs. A user who creates one off-topic issue and repeatedly edits its description before conversion completes can therefore cause multiple discussions to be created for the same issue, producing discussion spam and additional moderation work. This issue is fixed with commit 627e0f0a16a7d74b09128106b57dd7e85d2545df.",
-      "id": "CVE-2026-54594",
-      "lastModified": "2026-09-17T20:16:51.670",
-      "published": "2026-09-17T20:16:51.670",
-      "references": [
-        "https://github.com/OmniBlocks/monorepo/commit/2953ef77649fc3c206fc1ee306f74cedc31b67e3",
-        "https://github.com/OmniBlocks/monorepo/commit/627e0f0a16a7d74b09128106b57dd7e85d2545df",
-        "https://github.com/OmniBlocks/monorepo/security/advisories/GHSA-pq9c-3595-72jq"
-      ],
-      "severity": "MEDIUM",
-      "source": "NVD"
-    },
-    {
-      "cvss": {
         "score": 8.1,
         "severity": "HIGH",
         "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
@@ -4710,25 +4636,6 @@
         "https://github.com/HappySeaFox/sail/commit/fa24bceb93958ad665dbc3cf6b49a1079ab12559",
         "https://github.com/HappySeaFox/sail/releases/tag/v1.0.0",
         "https://github.com/HappySeaFox/sail/security/advisories/GHSA-744p-cqg2-m33h"
-      ],
-      "severity": "CRITICAL",
-      "source": "NVD"
-    },
-    {
-      "cvss": {
-        "score": 9.8,
-        "severity": "CRITICAL",
-        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-        "version": "3.1"
-      },
-      "description": "SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. In 0.9.10 and earlier, psd_private_sail_pixel_format() in src/sail-codecs/psd/helpers.c resolves a one-channel PSD in Bitmap color mode to SAIL_PIXEL_FORMAT_BPP1_INDEXED without requiring the file depth to be one, so the pixel buffer uses one-bit rows while sail_codec_load_frame_v8_psd() in src/sail-codecs/psd/psd.c accepts depth == 8 and writes one attacker-controlled byte per pixel. Loading a crafted PSD through sail_load_from_file() or sail_load_from_memory() therefore writes beyond each heap row, causing memory corruption, a reliable crash, or potential code execution. This mode/depth mismatch is distinct from GHSA-rcqx-gc76-r9mv and GHSA-wcj8-hxxf-pq2c. This issue is fixed in version 1.0.0.",
-      "id": "CVE-2026-54627",
-      "lastModified": "2026-09-17T20:16:52.117",
-      "published": "2026-09-17T20:16:52.117",
-      "references": [
-        "https://github.com/HappySeaFox/sail/commit/f44a8b779a1fc527fc6bc5caa71a66a8ed940d50",
-        "https://github.com/HappySeaFox/sail/releases/tag/v1.0.0",
-        "https://github.com/HappySeaFox/sail/security/advisories/GHSA-ccqf-rv86-h3wm"
       ],
       "severity": "CRITICAL",
       "source": "NVD"

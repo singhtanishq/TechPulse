@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "generatedAt": "2026-09-18T20:45:24.306140+00:00",
+  "generatedAt": "2026-09-18T21:22:21.525017+00:00",
   "opensource": {
     "growthBasis": "unavailable",
     "topProjects": [
@@ -13,6 +13,34 @@
       },
       {
         "daily_growth": null,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200174,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 142340,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 138880,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 127815,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": null,
         "full_name": "nodejs/node",
         "language": "JavaScript",
         "stars": 121995,
@@ -20,31 +48,31 @@
       },
       {
         "daily_growth": null,
-        "full_name": "vitejs/vite",
-        "language": "TypeScript",
-        "stars": 82879,
-        "url": "https://github.com/vitejs/vite"
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 118932,
+        "url": "https://github.com/rust-lang/rust"
       },
       {
         "daily_growth": null,
-        "full_name": "python/cpython",
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 110110,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "pytorch/pytorch",
         "language": "Python",
-        "stars": 77209,
-        "url": "https://github.com/python/cpython"
+        "stars": 103085,
+        "url": "https://github.com/pytorch/pytorch"
       },
       {
         "daily_growth": null,
-        "full_name": "vuejs/core",
+        "full_name": "tailwindlabs/tailwindcss",
         "language": "TypeScript",
-        "stars": 54412,
-        "url": "https://github.com/vuejs/core"
-      },
-      {
-        "daily_growth": null,
-        "full_name": "laravel/framework",
-        "language": "PHP",
-        "stars": 34925,
-        "url": "https://github.com/laravel/framework"
+        "stars": 97607,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
       }
     ]
   },
@@ -150,19 +178,19 @@
       }
     ],
     "severity": {
-      "CRITICAL": 136,
-      "HIGH": 675,
-      "LOW": 49,
-      "MEDIUM": 356,
+      "CRITICAL": 135,
+      "HIGH": 674,
+      "LOW": 48,
+      "MEDIUM": 355,
       "NONE": 2,
-      "UNSCORED": 457
+      "UNSCORED": 456
     }
   },
   "snapshot": {
-    "cves": 1675,
+    "cves": 1670,
     "kevAdded": 0,
     "knownExploited": 2,
-    "projects": 6,
+    "projects": 20,
     "releases": 1,
     "techEntries": 47
   },
@@ -174,22 +202,22 @@
       "total": 1716
     },
     "github_releases": {
-      "failures": 14,
+      "failures": 0,
       "inWindow": 1,
-      "status": "partial",
-      "total": 19
+      "status": "success",
+      "total": 59
     },
     "github_repos": {
-      "failures": 14,
-      "inWindow": 6,
-      "status": "partial",
-      "total": 6
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 20
     },
     "nvd": {
       "failures": 0,
-      "inWindow": 1675,
+      "inWindow": 1670,
       "status": "success",
-      "total": 1675
+      "total": 1670
     },
     "rss": {
       "failures": 0,

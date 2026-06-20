@@ -1,11 +1,11 @@
 {
   "history": [
     {
-      "cves": 1675,
+      "cves": 1670,
       "date": "2026-09-17",
       "kevAdded": 0,
       "knownExploited": 2,
-      "projects": 6,
+      "projects": 20,
       "releases": 1,
       "techEntries": 47
     }
@@ -13,10 +13,10 @@
   "latest": {
     "date": "2026-09-17",
     "snapshot": {
-      "cves": 1675,
+      "cves": 1670,
       "kevAdded": 0,
       "knownExploited": 2,
-      "projects": 6,
+      "projects": 20,
       "releases": 1,
       "techEntries": 47
     }
