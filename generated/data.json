@@ -13,7 +13,7 @@
   "meta": {
     "date": "2026-09-17",
     "daysObserved": 1,
-    "generatedAt": "2026-09-18T21:34:26.921234+00:00",
+    "generatedAt": "2026-09-18T21:39:44.385710+00:00",
     "snapshots": 1
   },
   "openSource": [
@@ -110,7 +110,7 @@
       "name": "supabase",
       "rank": 8,
       "source": "GitHub",
-      "stars": 110112,
+      "stars": 110114,
       "url": "https://github.com/supabase/supabase"
     },
     {
