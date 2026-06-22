@@ -1,12 +1,21 @@
 {
   "meta": {
-    "collectedAt": "2026-09-18T21:22:04.576213+00:00",
+    "collectedAt": "2026-09-18T21:34:08.421758+00:00",
     "count": 59,
     "failures": [],
     "snapshotDate": "2026-09-17",
     "source": "GitHub"
   },
   "releases": [
+    {
+      "name": "v3.16.2",
+      "project": "openai-python",
+      "published_at": "2026-09-18T21:26:27Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.16.2",
+      "version": "v3.16.2"
+    },
     {
       "name": "v3.16.1",
       "project": "openai-python",
@@ -96,15 +105,6 @@
       "source": "GitHub",
       "url": "https://github.com/laravel/framework/releases/tag/v13.32.0",
       "version": "v13.32.0"
-    },
-    {
-      "name": "v3.14.0",
-      "project": "openai-python",
-      "published_at": "2026-09-14T23:28:28Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.14.0",
-      "version": "v3.14.0"
     },
     {
       "name": "v1.5.0",
