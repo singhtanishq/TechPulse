@@ -2,241 +2,200 @@
 
 > Technology, observed every day.
 
-TechPulse is an autonomous technology intelligence and historical archive. It continuously collects, processes, and publishes structured data about technology changes — vulnerabilities, software releases, open-source activity, and technology news — creating a permanent public record of the technology ecosystem.
+TechPulse is an autonomous technology intelligence archive. It observes the
+technology ecosystem every day — vulnerabilities, known-exploited threats,
+software releases, open-source activity and technology news — structures the
+observations, and publishes them as a permanent, public, daily record.
 
-## Architecture
+**Live site:** https://singhtanishq.github.io/TechPulse/
 
-```
-PUBLIC SOURCES
-      ↓
-SOURCE ADAPTERS
-      ↓
-RAW / NORMALIZED DATA
-      ↓
-PROCESSORS
-      ↓
-DAILY SNAPSHOT GENERATION
-      ↓
-GENERATED STATIC JSON
-      ↓
-STATIC FRONTEND (GitHub Pages)
-      ↓
-GITHUB ACTIONS (scheduled)
-```
-
-## Data Sources
-
-| Source | Purpose | Collector |
-|--------|---------|-----------|
-| **NVD** | CVE vulnerabilities, CVSS scores, descriptions | `scripts/sources/nvd/collect.py` |
-| **CISA KEV** | Known exploited vulnerabilities catalog | `scripts/sources/cisa/collect.py` |
-| **GitHub API** | Repository metadata, releases, stars | `scripts/sources/github/collect.py` |
-| **RSS/Atom** | Technology news from major publications | `scripts/sources/rss/collect.py` |
-
-## Directory Structure
-
-```
-TechPulse/
-├── .github/workflows/     # GitHub Actions (to be configured)
-├── data/
-│   ├── daily/             # Daily snapshots (historical archive)
-│   ├── normalized/        # Processed, normalized data
-│   ├── security/
-│   │   ├── nvd/           # Raw NVD collections
-│   │   └── cisa/          # Raw CISA KEV collections
-│   ├── releases/          # Raw GitHub releases
-│   ├── opensource/        # Raw GitHub repo metadata
-│   └── tech/              # Raw RSS/Atom entries
-├── generated/
-│   ├── data.json          # Main frontend data
-│   └── archive.json       # Historical archive data
-├── scripts/
-│   ├── config/            # Source configurations
-│   │   ├── snapshot.json  # Snapshot semantics
-│   │   ├── github.json    # Tracked repositories
-│   │   └── rss.json       # RSS feed URLs
-│   ├── sources/           # Source collectors
-│   │   ├── nvd/
-│   │   ├── cisa/
-│   │   ├── github/
-│   │   └── rss/
-│   ├── processors/        # Data processors
-│   │   ├── security.py
-│   │   ├── releases.py
-│   │   ├── opensource.py
-│   │   ├── tech.py
-│   │   ├── daily.py
-│   │   └── history.py
-│   ├── generators/        # Frontend data generators
-│   │   ├── site_data.py
-│   │   └── archive.py
-│   └── run_pipeline.py    # Complete pipeline runner
-├── src/
-│   ├── index.html         # Home page
-│   ├── security.html      # Security observatory
-│   ├── releases.html      # Software releases
-│   ├── opensource.html    # Open source activity
-│   ├── history.html       # Historical archive
-│   ├── css/
-│   │   ├── base.css       # Design tokens & reset
-│   │   ├── layout.css     # Layout components
-│   │   └── components.css # UI components
-│   └── js/
-│       ├── data.js        # Data loader (fetch from generated/)
-│       ├── app.js         # Main application logic
-│       └── components.js  # Reusable UI components
-├── .gitignore
-├── LICENSE
-└── README.md
-```
-
-## Daily Snapshot Semantics
-
-TechPulse uses **UTC calendar day** model:
-
-- Each snapshot represents a single UTC day (00:00:00Z – 23:59:59Z)
-- Collection runs after the UTC day ends (recommended: 02:00 UTC)
-- This ensures complete capture of that day's publications/modifications
-- Snapshots are immutable once written to `data/daily/YYYY-MM-DD.json`
-
-## Local Development
-
-### Prerequisites
-
-- Python 3.10+
-- No external Python dependencies (standard library only)
-
-### Quick Start
-
-```bash
-# Clone and enter
-git clone https://github.com/singhtanishq/TechPulse
-cd TechPulse
-
-# Run complete pipeline (collects from live APIs)
-python3 scripts/run_pipeline.py
-
-# Or run individual stages
-python3 scripts/sources/nvd/collect.py --hours 24
-python3 scripts/sources/cisa/collect.py
-python3 scripts/sources/github/collect.py
-python3 scripts/sources/rss/collect.py
-
-python3 scripts/processors/security.py
-python3 scripts/processors/releases.py
-python3 scripts/processors/opensource.py
-python3 scripts/processors/tech.py
-python3 scripts/processors/daily.py
-python3 scripts/processors/history.py
-
-python3 scripts/generators/site_data.py
-python3 scripts/generators/archive.py
-```
-
-### Preview Frontend
-
-```bash
-# Using VS Code Live Server or any static server
-# Serve the src/ directory
-# Open http://localhost:5500/src/index.html
-```
-
-### Pipeline Options
-
-```bash
-# Run for specific date (UTC)
-python3 scripts/run_pipeline.py --date 2026-09-17
-
-# Skip collection (use existing raw data)
-python3 scripts/run_pipeline.py --skip-collect
-
-# Skip processing
-python3 scripts/run_pipeline.py --skip-process
-
-# Skip generation
-python3 scripts/run_pipeline.py --skip-generate
-
-# Run only one phase
-python3 scripts/run_pipeline.py --only collect
-python3 scripts/run_pipeline.py --only process
-python3 scripts/run_pipeline.py --only generate
-```
-
-## Configuration
-
-### Tracked Repositories
-
-Edit `scripts/config/github.json` to modify the list of tracked GitHub repositories.
-
-### RSS Feeds
-
-Edit `scripts/config/rss.json` to add/remove RSS/Atom feeds.
-
-### Snapshot Settings
-
-Edit `scripts/config/snapshot.json` for snapshot semantics (advanced).
-
-## GitHub Actions Automation
-
-The pipeline is designed to run in GitHub Actions. A workflow should:
-
-1. Checkout repository
-2. Set up Python 3.11+
-3. Run `python3 scripts/run_pipeline.py`
-4. Detect meaningful changes in `generated/` and `data/daily/`
-5. Commit and push changes
-6. Deploy to GitHub Pages
-
-**Not yet configured** — will be set up manually after local validation.
-
-## Zero-Cost Philosophy
-
-- **No paid APIs**: Uses public NVD, CISA, GitHub (unauthenticated), and RSS feeds
-- **No paid infrastructure**: GitHub Actions (free for public repos) + GitHub Pages
-- **No databases**: JSON files as storage
-- **No cloud servers**: Fully static frontend
-- **Minimal dependencies**: Python stdlib, vanilla HTML/CSS/JS
-
-## Data Integrity
-
-- **Deterministic output**: Sorted keys, stable ordering
-- **Idempotent**: Re-running produces identical results
-- **Source attribution**: Every record preserves `source` field
-- **No fabricated data**: Empty states shown when data unavailable
-- **Immutable history**: Daily snapshots never overwritten
-
-## Frontend
-
-Static HTML/CSS/JS with:
-- Responsive design (mobile-first)
-- No framework dependencies
-- Vanilla ES6 modules
-- Fetch-based data loading from `generated/data.json`
-- Graceful empty states
-
-## License
-
-MIT License — see [LICENSE](LICENSE)
-
-## Contributing
-
-1. Fork the repository
-2. Make changes locally
-3. Run full pipeline: `python3 scripts/run_pipeline.py`
-4. Verify frontend loads with real data
-5. Submit PR with meaningful commit messages
-
-## Status
-
-**Current Phase**: Pre-automation implementation complete
-- ✅ All source collectors implemented
-- ✅ All processors implemented
-- ✅ All generators implemented
-- ✅ Frontend connected to generated data
-- ✅ Placeholder data removed
-- ✅ Local pipeline tested
-- ⏳ GitHub Actions / Pages setup (manual step remaining)
+The system runs entirely on GitHub infrastructure at ₹0 operating cost: no
+laptop, no server, no paid API, no database. GitHub Actions collects and
+publishes daily; GitHub Pages serves the site.
 
 ---
 
-*TechPulse — Building a permanent record of technology change, one day at a time.*
+## How it works
+
+```
+PUBLIC SOURCES (NVD · CISA KEV · GitHub API · RSS/Atom)
+        ↓   GitHub Actions — daily schedule 02:30 UTC
+SOURCE COLLECTORS          scripts/sources/*        raw JSON, dated by snapshot day
+        ↓
+PROCESSORS                 scripts/processors/*     normalized datasets + source health
+        ↓
+DAILY SNAPSHOT             data/daily/YYYY-MM-DD.json   immutable archive record
+        ↓
+GENERATORS                 scripts/generators/*     frontend JSON (deterministic)
+        ↓
+VALIDATION                 scripts/validate.py      schema + integrity gates
+        ↓
+COMMIT (only if data meaningfully changed)
+        ↓
+DEPLOY                     GitHub Pages             static site
+```
+
+## Data sources
+
+| Source | What it provides | Attribution |
+|--------|------------------|-------------|
+| [NVD](https://nvd.nist.gov/) | CVEs published/modified on the snapshot day, CVSS scores, descriptions, references | every record carries `source: "NVD"` and links to `nvd.nist.gov` |
+| [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | Known Exploited Vulnerabilities catalog; daily delta derived from `dateAdded` | `source: "CISA KEV"` |
+| [GitHub REST API](https://docs.github.com/en/rest) | Metadata + latest stable releases for the configured tracked repositories | `source: "GitHub"`, links to github.com |
+| RSS/Atom feeds | Technology/security headlines (title, link, short excerpt, date) | `source: "<publisher>"`, links to the original article |
+
+TechPulse does not generate, rewrite or fabricate any of this data. RSS content
+is stored as short excerpts with links — never full articles.
+
+## Snapshot semantics
+
+- A snapshot covers exactly one **UTC calendar day**
+  (`00:00:00Z`–`23:59:59.999Z`), recorded in
+  `scripts/config/snapshot.json`.
+- The default target is the **previous completed UTC day**; the schedule runs
+  at 02:30 UTC to allow a buffer for source publication and processing lag.
+- Historical snapshots in `data/daily/` are append-only: a snapshot is
+  rewritten only when its actual content changes, never silently by a time
+  churn.
+- RSS is ephemeral, so the technology window applies a documented 48-hour
+  lookback before the snapshot day (items published no later than the end of
+  the snapshot day, still observable at collection time).
+
+## Data integrity rules
+
+- **No invented scores.** An NVD record without CVSS keeps
+  `severity: null` / `cvss: null` and is displayed as *UNSCORED*, never as
+  zero or LOW. NVD severity and CISA KEV "known exploited" status are kept
+  conceptually separate.
+- **No fabricated growth.** Open-source daily star growth is computed only
+  when a previous dated observation exists; otherwise it is reported as
+  unavailable (`n/a`).
+- **Deterministic output.** Sorted keys, stable ordering, timestamps derived
+  from source data. Reprocessing identical inputs produces byte-identical
+  files, so commits happen only when data meaningfully changed.
+- **Idempotent collectors.** Re-collecting a date with identical records does
+  not rewrite the file (the original `collectedAt` is preserved).
+- **Honest failure.** Every source reports `success` / `partial` / `failed` /
+  `empty`. One failing source never destroys other sources' data; the UI
+  shows a *PARTIAL* status when any source degraded.
+
+## Repository layout
+
+```
+.github/workflows/
+  collect.yml        daily collection pipeline (schedule + dispatch + push)
+  deploy.yml         GitHub Pages deployment
+scripts/
+  run_pipeline.py    one-command local pipeline (collect → process → generate)
+  validate.py        offline validation (syntax, JSON, schemas, placeholders)
+  config/            tracked repositories, RSS feeds, snapshot semantics
+  sources/           nvd/ · cisa/ · github/ · rss/ collectors
+  processors/        security · releases · opensource · tech · daily · history
+  generators/        site_data · archive
+data/
+  security/nvd/      raw NVD collections (committed)
+  security/cisa/     raw CISA KEV snapshots (committed)
+  releases/          raw GitHub releases (committed)
+  opensource/        raw GitHub repository metadata (committed)
+  tech/              raw RSS/Atom entries (committed)
+  daily/             the historical archive (committed)
+  normalized/        intermediate datasets (derived each run, not committed)
+generated/
+  data.json          frontend dataset
+  archive.json       archive dataset for the History page
+src/                 static frontend (HTML/CSS/vanilla JS, no framework)
+tests/               offline unit + failure-injection tests with fixtures
+```
+
+## Local usage
+
+Requirements: Python 3.10+ (standard library only — no packages to install).
+
+```bash
+# Complete pipeline for the previous UTC day (hits live APIs)
+python3 scripts/run_pipeline.py
+
+# Specific snapshot date
+python3 scripts/run_pipeline.py --date 2026-09-17
+
+# Re-run only processing/generation from existing raw data
+python3 scripts/run_pipeline.py --skip-collect
+
+# Offline validation (no network)
+python3 scripts/validate.py
+
+# Tests (offline, fixture-based)
+python3 -m unittest discover -s tests -v
+python3 tests/failure_injection.py
+```
+
+The GitHub collector is optional-token aware:
+
+```bash
+# Unauthenticated: 60 requests/hour (small repo lists only)
+python3 scripts/sources/github/collect.py
+
+# Authenticated: 5,000 requests/hour
+GITHUB_TOKEN=<your-token> python3 scripts/sources/github/collect.py
+```
+
+To preview the site locally, serve the repository root (not `src/`) so the
+frontend can find `generated/data.json`:
+
+```bash
+python3 -m http.server 8000
+# open http://127.0.0.1:8000/src/index.html
+```
+
+## Automation
+
+**Collect** (`.github/workflows/collect.yml`) runs at **02:30 UTC daily**,
+on every push touching `scripts/`/`tests/`, and via manual dispatch (with an
+optional `snapshot_date` input). It: checks out → validates → runs tests →
+collects all four sources (NVD, CISA KEV, GitHub with the workflow
+`GITHUB_TOKEN`, RSS) → processes → generates → validates → and commits only
+when data meaningfully changed
+(`TechPulse: daily snapshot YYYY-MM-DD`). Concurrency controls serialize
+runs; overlapping schedules cannot corrupt the archive.
+
+**Deploy** (`.github/workflows/deploy.yml`) assembles a staging directory
+(`src/` at the root, `generated/` alongside), uploads it as a Pages artifact
+and deploys. It runs on pushes touching `src/`/`generated/` and after every
+successful Collect run.
+
+## Exit codes and failure behavior
+
+- Pipeline exit `0` — completed. Partial source availability is reported in
+  logs and in the dataset's `sources` health block, and is surfaced in the UI
+  ("PARTIAL").
+- Pipeline exit `1` — a processing/generation stage failed, or **every**
+  collector failed (no usable data; nothing is committed).
+- A failed Collect run blocks the Deploy workflow (no deploying to hide a
+  broken pipeline).
+
+## Configuration
+
+- `scripts/config/github.json` — tracked repositories and collection options
+  (prereleases and drafts are excluded; documented in the file).
+- `scripts/config/rss.json` — RSS/Atom feeds; each feed fails independently.
+- `scripts/config/snapshot.json` — snapshot model documentation.
+
+## Limitations
+
+- NVD rate limits unauthenticated clients; the collector pages conservatively
+  (6 s between requests, retries with backoff). A token can be added later
+  via the `NVD_API_KEY` secret if volume grows.
+- The first GitHub Pages deployment required a one-time manual enablement
+  (Settings → Pages → Source: GitHub Actions); subsequent deploys are fully
+  automated.
+- Daily growth for open-source projects requires two consecutive daily
+  observations; it displays `n/a` before that.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+---
+
+*TechPulse — building a permanent record of technology change, one day at a
+time.*
