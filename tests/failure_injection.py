@@ -227,8 +227,10 @@ class ProcessorEmptyInputTests(unittest.TestCase):
                 security.CISA_DIR = original_cisa
 
         self.assertEqual(result["summary"]["total"], 0)
-        self.assertEqual(result["meta"]["sources"]["nvd"]["status"], "empty")
-        self.assertEqual(result["meta"]["sources"]["cisa"]["status"], "empty")
+        # Missing source files report "failed" — the safer honest signal
+        # when "never collected" and "collection failed" are indistinguishable.
+        self.assertEqual(result["meta"]["sources"]["nvd"]["status"], "failed")
+        self.assertEqual(result["meta"]["sources"]["cisa"]["status"], "failed")
 
     def test_releases_with_no_data(self):
         releases = self._load_processor("processors/releases.py", "fi_releases")
@@ -244,7 +246,7 @@ class ProcessorEmptyInputTests(unittest.TestCase):
                 releases.RELEASES_DIR = original
 
         self.assertEqual(result["summary"]["total"], 0)
-        self.assertEqual(result["meta"]["sources"]["github"]["status"], "empty")
+        self.assertEqual(result["meta"]["sources"]["github"]["status"], "failed")
 
     def test_opensource_with_no_data(self):
         opensource = self._load_processor("processors/opensource.py", "fi_opensource")
@@ -257,7 +259,7 @@ class ProcessorEmptyInputTests(unittest.TestCase):
                 opensource.REPO_META_DIR = original
 
         self.assertEqual(result["summary"]["totalTracked"], 0)
-        self.assertEqual(result["meta"]["sources"]["github"]["status"], "empty")
+        self.assertEqual(result["meta"]["sources"]["github"]["status"], "failed")
         # Growth must be unavailable, never fabricated.
         self.assertEqual(result["summary"]["growthBasis"], "unavailable")
 
@@ -275,7 +277,7 @@ class ProcessorEmptyInputTests(unittest.TestCase):
                 tech.TECH_DIR = original
 
         self.assertEqual(result["summary"]["total"], 0)
-        self.assertEqual(result["meta"]["sources"]["rss"]["status"], "empty")
+        self.assertEqual(result["meta"]["sources"]["rss"]["status"], "failed")
 
     def test_history_with_corrupt_and_valid_mix(self):
         history = self._load_processor("processors/history.py", "fi_history")
