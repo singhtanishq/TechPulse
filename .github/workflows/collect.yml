@@ -2,10 +2,10 @@ name: Collect
 
 # Daily collection pipeline: collect -> process -> generate -> validate -> commit.
 #
-# Schedule rationale:
-#   Runs at 02:30 UTC, once the previous UTC calendar day has completed
-#   plus a buffer for source publication/processing lag (NVD in
-#   particular continues to modify records after the day closes).
+# Schedule:
+#   Runs every day at 12:00 PM Asia/Kolkata (IST).
+#   The timezone is declared explicitly so the schedule is not dependent
+#   on UTC conversion or daylight-saving behavior elsewhere.
 #   Snapshot semantics: scripts/config/snapshot.json (utc_calendar_day).
 #
 # The GitHub collector authenticates with the workflow-provided
@@ -14,7 +14,8 @@ name: Collect
 
 on:
   schedule:
-    - cron: "30 2 * * *"
+    - cron: "0 12 * * *"
+      timezone: "Asia/Kolkata"
   workflow_dispatch:
     inputs:
       snapshot_date:
@@ -138,7 +139,7 @@ jobs:
             echo ""
             echo "| Stage | Result |"
             echo "|-------|--------|"
-            echo "| Snapshot date | \`${{ steps.date.outputs.date }}\` |"
+            echo "| Snapshot date | `${{ steps.date.outputs.date }}` |"
             echo "| Changes committed | ${{ steps.changes.outputs.changed == 'true' && 'yes' || 'no' }} |"
           } >> "$GITHUB_STEP_SUMMARY"
           if [ -f generated/data.json ]; then
