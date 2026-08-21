@@ -1,0 +1,310 @@
+{
+  "date": "2026-09-21",
+  "generatedAt": "2026-09-22T13:32:29.460044+00:00",
+  "opensource": {
+    "growthBasis": "previous_observation",
+    "topProjects": [
+      {
+        "daily_growth": 25,
+        "full_name": "react/react",
+        "language": "JavaScript",
+        "stars": 250648,
+        "url": "https://github.com/react/react"
+      },
+      {
+        "daily_growth": 21,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200243,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 8,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 142395,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 18,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 138937,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 23,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 127897,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 13,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122036,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 29,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119035,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 97,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 110590,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 19,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103168,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 11,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97640,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": []
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-7273",
+        "date_added": "2026-09-21",
+        "product": "GS1900 Series Switches",
+        "vendor_project": "Zyxel",
+        "vulnerability_name": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 2.0,
+        "description": "A vulnerability was determined in xuxueli xxl-job up to 3.5.0. The impacted element is an unknown function of the file /jobgroup/insert. This manipulation of the argument Name causes cross site script",
+        "id": "CVE-2026-94426",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94426"
+      },
+      {
+        "cvss": 8.7,
+        "description": "vLLM through 0.29.0 fails to validate the tp_size parameter in kv_transfer_params on OpenAI-compatible completion endpoints, allowing attackers to allocate unbounded memory. Attackers can supply arbit",
+        "id": "CVE-2026-94626",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94626"
+      },
+      {
+        "cvss": 6.9,
+        "description": "vLLM through 0.29.0 contains a resource exhaustion vulnerability in MooncakeConnector where rejected prefill requests create ownerless transfer placeholders that are never reclaimed. Attackers can sen",
+        "id": "CVE-2026-94625",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94625"
+      },
+      {
+        "cvss": 8.7,
+        "description": "vLLM through 0.29.0 contains a denial of service vulnerability in P2P KV offloading when OffloadingConnector is configured with TieringOffloadingSpec and a peer-to-peer secondary tier. Attackers can s",
+        "id": "CVE-2026-94624",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94624"
+      },
+      {
+        "cvss": 8.7,
+        "description": "vLLM through 0.29.0 contains a denial of service vulnerability in the NIXL connector's prefix caching implementation that fails to properly validate block counts across multi-prompt completion request",
+        "id": "CVE-2026-94623",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94623"
+      },
+      {
+        "cvss": 8.7,
+        "description": "vLLM versions through 0.29.0 contain a denial of service vulnerability in the NIXL connector's metadata handling for prefill/decode disaggregated deployments. Attackers can send requests with incomple",
+        "id": "CVE-2026-94622",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94622"
+      },
+      {
+        "cvss": 7.4,
+        "description": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and persist an attacker-selected paired identity by",
+        "id": "CVE-2026-94540",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94540"
+      },
+      {
+        "cvss": 5.3,
+        "description": "lamp-cloud through 5.10.0 fails to validate the employeeId parameter in the /anyone/visible/resource endpoint, allowing authenticated users to read any employee's roles and permissions. Attackers can ",
+        "id": "CVE-2026-94536",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94536"
+      },
+      {
+        "cvss": 7.1,
+        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the deleteMyNotice endpoint that allows authenticated users to delete other users' notifications. Attackers can call the DEL",
+        "id": "CVE-2026-94535",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94535"
+      },
+      {
+        "cvss": 7.1,
+        "description": "lamp-cloud through 5.10.0 fails to validate user identity in PUT /anyone/baseInfo and PUT /anyone/avatar endpoints, allowing authenticated attackers to modify arbitrary user profiles. Attackers can su",
+        "id": "CVE-2026-94534",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94534"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 143,
+      "HIGH": 591,
+      "LOW": 96,
+      "MEDIUM": 382,
+      "NONE": 0,
+      "UNSCORED": 64
+    }
+  },
+  "snapshot": {
+    "cves": 1276,
+    "kevAdded": 1,
+    "knownExploited": 8,
+    "projects": 20,
+    "releases": 0,
+    "techEntries": 19
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 1,
+      "status": "success",
+      "total": 1717
+    },
+    "github_releases": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 59
+    },
+    "github_repos": {
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 20
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1276,
+      "status": "success",
+      "total": 1276
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 19,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 6,
+      "tech": 13
+    },
+    "recent": [
+      {
+        "published_at": "2026-09-21T22:32:51+00:00",
+        "source": "The Register",
+        "title": "Anthropic-linked CVEs pile up, attackers mostly shrug",
+        "url": "https://www.theregister.com/security/2026/09/21/anthropic-linked-cves-pile-up-attackers-mostly-shrug/5298018"
+      },
+      {
+        "published_at": "2026-09-21T22:24:38+00:00",
+        "source": "Ars Technica",
+        "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+        "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/"
+      },
+      {
+        "published_at": "2026-09-21T19:59:52+00:00",
+        "source": "The Register",
+        "title": "Meta Muse AI app flaw lets local malware redirect dictation traffic",
+        "url": "https://www.theregister.com/ai-and-ml/2026/09/21/meta-muse-ai-app-flaw-lets-local-malware-redirect-dictation-traffic/5297980"
+      },
+      {
+        "published_at": "2026-09-21T19:10:53+00:00",
+        "source": "The Register",
+        "title": "Treasury chief says AI bosses, not their bots, will carry the can for criminal acts",
+        "url": "https://www.theregister.com/security/2026/09/21/treasury-chief-says-ai-bosses-not-their-bots-will-carry-the-can-for-criminal-acts/5297965"
+      },
+      {
+        "published_at": "2026-09-21T16:11:24+00:00",
+        "source": "AWS",
+        "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/"
+      },
+      {
+        "published_at": "2026-09-21T16:00:37+00:00",
+        "source": "Meta",
+        "title": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
+        "url": "https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/"
+      },
+      {
+        "published_at": "2026-09-21T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Strengthen your CI/CD pipeline with new Secure Source Manager capabilities",
+        "url": "https://cloud.google.com/blog/products/identity-security/strengthen-your-cicd-pipeline-with-new-secure-source-manager-capabilities/"
+      },
+      {
+        "published_at": "2026-09-21T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Maximizing Apache Spark availability: Mitigating compute stockouts with flexible VMs and other best practices",
+        "url": "https://cloud.google.com/blog/products/data-analytics/maximize-apache-spark-availability-with-flexible-vms/"
+      },
+      {
+        "published_at": "2026-09-21T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Global AI routing with <1% overhead on multi-cluster GKE Inference Gateway",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/gpu-and-tpu-utilization-with-multi-cluster-gke-inference-gateway/"
+      },
+      {
+        "published_at": "2026-09-21T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Scale your AI workloads faster and more efficiently with GKE Pod snapshots",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-pod-snapshots/"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 2,
+      "Cloudflare": 1,
+      "Google Cloud": 4,
+      "Meta": 2,
+      "Microsoft": 1,
+      "The Register": 8
+    }
+  },
+  "window": {
+    "end": "2026-09-21T23:59:59.999000+00:00",
+    "start": "2026-09-21T00:00:00+00:00"
+  }
+}

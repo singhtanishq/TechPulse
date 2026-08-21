@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1276,
+      "date": "2026-09-21",
+      "kevAdded": 1,
+      "knownExploited": 8,
+      "projects": 20,
+      "releases": 0,
+      "techEntries": 19
+    },
+    {
       "cves": 94,
       "date": "2026-09-20",
       "kevAdded": 0,
@@ -38,14 +47,14 @@
     }
   ],
   "meta": {
-    "date": "2026-09-20",
-    "daysObserved": 4,
-    "generatedAt": "2026-09-21T15:12:11.548100+00:00",
-    "snapshots": 4
+    "date": "2026-09-21",
+    "daysObserved": 5,
+    "generatedAt": "2026-09-22T13:32:29.460044+00:00",
+    "snapshots": 5
   },
   "openSource": [
     {
-      "daily_growth": 16,
+      "daily_growth": 25,
       "description": "The library for web and native user interfaces.",
       "full_name": "react/react",
       "growth_available": true,
@@ -53,11 +62,11 @@
       "name": "react",
       "rank": 1,
       "source": "GitHub",
-      "stars": 250623,
+      "stars": 250648,
       "url": "https://github.com/react/react"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 21,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -65,11 +74,11 @@
       "name": "tensorflow",
       "rank": 2,
       "source": "GitHub",
-      "stars": 200222,
+      "stars": 200243,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": -4,
+      "daily_growth": 8,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -77,11 +86,11 @@
       "name": "next.js",
       "rank": 3,
       "source": "GitHub",
-      "stars": 142387,
+      "stars": 142395,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": 18,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -89,11 +98,11 @@
       "name": "go",
       "rank": 4,
       "source": "GitHub",
-      "stars": 138919,
+      "stars": 138937,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 24,
+      "daily_growth": 23,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -101,11 +110,11 @@
       "name": "kubernetes",
       "rank": 5,
       "source": "GitHub",
-      "stars": 127874,
+      "stars": 127897,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 6,
+      "daily_growth": 13,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -113,11 +122,11 @@
       "name": "node",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122023,
+      "stars": 122036,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 29,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -125,11 +134,11 @@
       "name": "rust",
       "rank": 7,
       "source": "GitHub",
-      "stars": 119006,
+      "stars": 119035,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 105,
+      "daily_growth": 97,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -137,11 +146,11 @@
       "name": "supabase",
       "rank": 8,
       "source": "GitHub",
-      "stars": 110493,
+      "stars": 110590,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 19,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -149,11 +158,11 @@
       "name": "pytorch",
       "rank": 9,
       "source": "GitHub",
-      "stars": 103149,
+      "stars": 103168,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": -6,
+      "daily_growth": 11,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -161,224 +170,224 @@
       "name": "tailwindcss",
       "rank": 10,
       "source": "GitHub",
-      "stars": 97629,
+      "stars": 97640,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     }
   ],
   "releases": [],
   "security": {
-    "critical": 11,
-    "high": 43,
-    "kevCatalogTotal": 1716,
+    "critical": 143,
+    "high": 591,
+    "kevCatalogTotal": 1717,
     "latest": [
       {
-        "cvss_score": 9.4,
+        "cvss_score": 2.0,
         "cvss_version": "4.0",
-        "description": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged Remote Code Execution in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions saveWatermark() copied an uploaded file into a web-accessible directory using the client-supplied filename exactly as sent, with no extension check, no content check, and no filename sanitisation of any kind. An authenticated core.manage user…",
-        "id": "CVE-2026-88857",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged Remote Code Execution in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88857"
-      },
-      {
-        "cvss_score": 9.4,
-        "cvss_version": "4.0",
-        "description": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged Remote Code Execution in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions updateOSGallery(), reached via task=update_osgallery, read a JSON request body and called the value of a method field as a live PHP function, passing the value of a package field as its single argument, with no allow-list or is_callable() check…",
-        "id": "CVE-2026-88856",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged Remote Code Execution in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88856"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "4.0",
-        "description": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged SQL Injection in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions saveGallery() passes form data through a hand-rolled parser into Joomla’s Input object, then reads it back with the ARRAY/ STRING filter types, neither of which sanitises SQL content. Values from category_names[], catOrderIds, and image-ordering fields…",
-        "id": "CVE-2026-88855",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged SQL Injection in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88855"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "4.0",
-        "description": "Joomla Extension - OrdaSoft.com - Unauthenticated SQL Injection in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions showSearchResult() and showSearchResultAjax() read the textsearch/searchText request parameter with $input->getVar(), which is not a real Joomla filter method and falls through to a filter that strips HTML tags but does not touch quotes or SQL syntax. The value…",
-        "id": "CVE-2026-88854",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Joomla Extension - OrdaSoft.com - Unauthenticated SQL Injection in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions showSearchResult() and…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88854"
-      },
-      {
-        "cvss_score": 3.7,
-        "cvss_version": "3.1",
-        "description": "The TikTok WordPress plugin before 1.4.2 does not check that a request is authorised before acting on a sign-in code supplied in the URL, so any visitor can make the site redeem a code of their choosing against the advertising platform, using the site's own credentials. It matches that code loosely, so URLs that merely resemble the expected one trigger it too, and the callback runs on every…",
-        "id": "CVE-2026-92965",
+        "description": "A vulnerability was determined in xuxueli xxl-job up to 3.5.0. The impacted element is an unknown function of the file /jobgroup/insert. This manipulation of the argument Name causes cross site scripting. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+        "id": "CVE-2026-94426",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "LOW",
         "source": "NVD",
-        "title": "The TikTok WordPress plugin before 1.4.2 does not check that a request is authorised before acting on a sign-in code supplied in the URL, so any visitor can…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92965"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "3.1",
-        "description": "The Yo WordPress plugin from 1.1 through 1.3.1 does not sanitize or parameterize the username request parameter before using it in a SQL query, and reads it before WordPress applies its request escaping, allowing unauthenticated attackers to perform SQL injection and read arbitrary database contents including administrator password hashes.",
-        "id": "CVE-2026-87963",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "4 days ago",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The Yo WordPress plugin from 1.1 through 1.3.1 does not sanitize or parameterize the username request parameter before using it in a SQL query, and reads it…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87963"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "Missing Authorization in the IOCTL handlers of the wsdkd.sys kernel drivers in Watchdog WatchDog Antivirus 1.8.640 (driver versions 1.3.0.0 and earlier) on Microsoft Windows allows local, low-privileged attackers to delete arbitrary files with SYSTEM privileges, bypassing NTFS access controls and potentially disabling security products or destabilizing the operating system, via crafted IOCTL…",
-        "id": "CVE-2026-92254",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Missing Authorization in the IOCTL handlers of the wsdkd.sys kernel drivers in Watchdog WatchDog Antivirus 1.8.640 (driver versions 1.3.0.0 and earlier) on…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92254"
-      },
-      {
-        "cvss_score": 5.2,
-        "cvss_version": "4.0",
-        "description": "Improper link resolution before file access in the quarantine restoration process of WatchDog Anti-Virus 1.8.640 on Windows allows local, low-privileged attackers to cause a quarantined file to be written to an arbitrary filesystem location by creating a directory junction at the original file path and persuading an administrator to restore the file. This may enable modification of protected…",
-        "id": "CVE-2026-92253",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Improper link resolution before file access in the quarantine restoration process of WatchDog Anti-Virus 1.8.640 on Windows allows local, low-privileged…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92253"
-      },
-      {
-        "cvss_score": 5.9,
-        "cvss_version": "4.0",
-        "description": "Incorrect default permissions in the installation directory of WatchDog Anti-Virus on Windows allow local, low-privileged users to modify, replace, or delete antivirus binaries and configuration files, because the installer grants the Users group Full Control over C:\\Program Files (x86)\\Watchdog Anti-Virus. This may disable antivirus protection or enable privileged code execution if modified…",
-        "id": "CVE-2026-92252",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Incorrect default permissions in the installation directory of WatchDog Anti-Virus on Windows allow local, low-privileged users to modify, replace, or delete…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92252"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "An unauthenticated Remote Code Execution vulnerability was found in the survey passthrough routing and Data Import processing logic, in which a malicious user could potentially exploit it by manipulating HTTP requests to access an unintended controller route from a public survey context and by supplying a crafted file-path/stream parameter during import handling. If successfully exploited, this…",
-        "id": "CVE-2026-90817",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "An unauthenticated Remote Code Execution vulnerability was found in the survey passthrough routing and Data Import processing logic, in which a malicious user…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "Frappe ERPNext versions before 15.121.0 and 16.x before 16.34.0 contain an information disclosure vulnerability in whitelisted timesheet endpoints that fail to enforce doctype permissions. Authenticated attackers can call get_projectwise_timesheet_data, get_timesheet_detail_rate, and get_timesheet endpoints to enumerate and retrieve billable time logs including project names, billing amounts, and…",
-        "id": "CVE-2026-94113",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Frappe ERPNext versions before 15.121.0 and 16.x before 16.34.0 contain an information disclosure vulnerability in whitelisted timesheet endpoints that fail to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94113"
-      },
-      {
-        "cvss_score": 7.6,
-        "cvss_version": "4.0",
-        "description": "mayswind ezBookkeeping before 2.0.0 fails to invalidate TOTP passcodes after use, allowing attackers to replay captured codes within the acceptance window. Attackers with stolen credentials can authenticate and reuse a captured passcode against multiple authorization attempts for approximately 90 seconds without detection.",
-        "id": "CVE-2026-94112",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "mayswind ezBookkeeping before 2.0.0 fails to invalidate TOTP passcodes after use, allowing attackers to replay captured codes within the acceptance window…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94112"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "Tencent BrowserSkill through 0.3.0 contains an authentication bypass vulnerability in the local daemon WebSocket origin validation that accepts any chrome-extension origin with 32 characters in range a-p. Attackers can register a malicious extension as a browser client to intercept and manipulate page content, DOM, and screenshots returned to the AI agent.",
-        "id": "CVE-2026-94111",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Tencent BrowserSkill through 0.3.0 contains an authentication bypass vulnerability in the local daemon WebSocket origin validation that accepts any…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94111"
+        "title": "A vulnerability was determined in xuxueli xxl-job up to 3.5.0. The impacted element is an unknown function of the file /jobgroup/insert. This manipulation of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94426"
       },
       {
         "cvss_score": 8.7,
         "cvss_version": "4.0",
-        "description": "openEQUELLA versions before 2026.1.0 contain a remote code execution vulnerability in FreeMarker template compilation due to an unsandboxed TemplateClassResolver configuration. Authenticated attackers can inject malicious template expressions through collection summaries, dashboard portlets, or MIME templates to instantiate dangerous classes like freemarker.template.utility.Execute and invoke…",
-        "id": "CVE-2026-94109",
+        "description": "vLLM through 0.29.0 fails to validate the tp_size parameter in kv_transfer_params on OpenAI-compatible completion endpoints, allowing attackers to allocate unbounded memory. Attackers can supply arbitrary tp_size values in prefill/decode disaggregated deployments to exhaust memory and trigger kernel OOM-kill of the decode worker process.",
+        "id": "CVE-2026-94626",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "openEQUELLA versions before 2026.1.0 contain a remote code execution vulnerability in FreeMarker template compilation due to an unsandboxed…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94109"
+        "title": "vLLM through 0.29.0 fails to validate the tp_size parameter in kv_transfer_params on OpenAI-compatible completion endpoints, allowing attackers to allocate…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94626"
       },
       {
-        "cvss_score": 8.3,
+        "cvss_score": 6.9,
         "cvss_version": "4.0",
-        "description": "getID3 through 1.9.26 contains an XML external entity injection vulnerability in the XML2array helper function that fails to properly disable entity loading on PHP before 8.0. Attackers can craft malicious XML metadata in media files to disclose local files, perform server-side request forgery, or cause denial of service through entity expansion.",
-        "id": "CVE-2026-94108",
+        "description": "vLLM through 0.29.0 contains a resource exhaustion vulnerability in MooncakeConnector where rejected prefill requests create ownerless transfer placeholders that are never reclaimed. Attackers can send rejected requests to exhaust sender task pools, causing valid requests to be delayed by up to 480 seconds while health checks continue returning success.",
+        "id": "CVE-2026-94625",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "vLLM through 0.29.0 contains a resource exhaustion vulnerability in MooncakeConnector where rejected prefill requests create ownerless transfer placeholders…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94625"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "vLLM through 0.29.0 contains a denial of service vulnerability in P2P KV offloading when OffloadingConnector is configured with TieringOffloadingSpec and a peer-to-peer secondary tier. Attackers can supply arbitrary remote host and port values in kv_transfer_params to create unreachable peer sessions that retain ZeroMQ sockets until the context quota is exhausted, causing an uncaught ZMQError…",
+        "id": "CVE-2026-94624",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "getID3 through 1.9.26 contains an XML external entity injection vulnerability in the XML2array helper function that fails to properly disable entity loading on…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94108"
+        "title": "vLLM through 0.29.0 contains a denial of service vulnerability in P2P KV offloading when OffloadingConnector is configured with TieringOffloadingSpec and a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94624"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "vLLM through 0.29.0 contains a denial of service vulnerability in the NIXL connector's prefix caching implementation that fails to properly validate block counts across multi-prompt completion requests in prefill/decode disaggregated deployments. Attackers can trigger an assertion failure in NixlBaseConnectorWorker._apply_prefix_caching by submitting completion requests with multiple prompts of…",
+        "id": "CVE-2026-94623",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "vLLM through 0.29.0 contains a denial of service vulnerability in the NIXL connector's prefix caching implementation that fails to properly validate block…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94623"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "vLLM versions through 0.29.0 contain a denial of service vulnerability in the NIXL connector's metadata handling for prefill/decode disaggregated deployments. Attackers can send requests with incomplete kv_transfer_params dictionary entries to trigger an uncaught KeyError in EngineCore scheduling, causing the decode engine to terminate and making all routed requests fail until manual restart.",
+        "id": "CVE-2026-94622",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "vLLM versions through 0.29.0 contain a denial of service vulnerability in the NIXL connector's metadata handling for prefill/decode disaggregated deployments…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94622"
+      },
+      {
+        "cvss_score": 7.4,
+        "cvss_version": "4.0",
+        "description": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and persist an attacker-selected paired identity by interacting with the application's local service without any pairing confirmation or user interaction. Attackers can exploit the unauthenticated local service through same-device loopback to perform…",
+        "id": "CVE-2026-94540",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94540"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "lamp-cloud through 5.10.0 fails to validate the employeeId parameter in the /anyone/visible/resource endpoint, allowing authenticated users to read any employee's roles and permissions. Attackers can supply arbitrary employeeId values to enumerate other employees' role codes, permission codes, and complete front-end router trees without authorization checks.",
+        "id": "CVE-2026-94536",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "lamp-cloud through 5.10.0 fails to validate the employeeId parameter in the /anyone/visible/resource endpoint, allowing authenticated users to read any…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94536"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the deleteMyNotice endpoint that allows authenticated users to delete other users' notifications. Attackers can call the DELETE /anyone/extendNotice/deleteMyNotice endpoint with arbitrary notice IDs to permanently remove notifications belonging to other users without recipient validation.",
+        "id": "CVE-2026-94535",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the deleteMyNotice endpoint that allows authenticated users to delete other users'…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94535"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "lamp-cloud through 5.10.0 fails to validate user identity in PUT /anyone/baseInfo and PUT /anyone/avatar endpoints, allowing authenticated attackers to modify arbitrary user profiles. Attackers can supply target user IDs in request bodies to rewrite profile fields including nickname, ID card, sex, nation, education, work description, and avatar attachments of other users.",
+        "id": "CVE-2026-94534",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "lamp-cloud through 5.10.0 fails to validate user identity in PUT /anyone/baseInfo and PUT /anyone/avatar endpoints, allowing authenticated attackers to modify…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94534"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in FileAnyoneController that allows authenticated users to download arbitrary attachments. Attackers can retrieve other users' stored files by supplying valid attachment identifiers to the /anyone/file/down and /anyone/file/download endpoints, as the application never validates file ownership against the created_by column.",
+        "id": "CVE-2026-94533",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in FileAnyoneController that allows authenticated users to download arbitrary…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94533"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the getUserInfoById endpoint that allows authenticated users to read any other user's full profile. Attackers can iterate the userId parameter to harvest sensitive user information including mobile numbers, email addresses, national identity card numbers, and WeChat and DingTalk OpenIDs.",
+        "id": "CVE-2026-94532",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the getUserInfoById endpoint that allows authenticated users to read any other…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94532"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "4.0",
+        "description": "A flaw has been found in drogonframework drogon up to 1.9.13. This affects the function makeCriteria in the library orm_lib/src/Criteria.cc of the component ORM. Executing a manipulation of the argument filter can lead to sql injection. The attack may be performed from remote. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond…",
+        "id": "CVE-2026-94144",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A flaw has been found in drogonframework drogon up to 1.9.13. This affects the function makeCriteria in the library orm_lib/src/Criteria.cc of the component…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94144"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was detected in drogonframework drogon up to 1.9.13. Affected by this issue is the function Mapper::orderBy in the library Mapper.h of the component ORM Mapper. Performing a manipulation of the argument sort results in sql injection. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure…",
+        "id": "CVE-2026-94143",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A vulnerability was detected in drogonframework drogon up to 1.9.13. Affected by this issue is the function Mapper::orderBy in the library Mapper.h of the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94143"
+      },
+      {
+        "cvss_score": 7.4,
+        "cvss_version": "4.0",
+        "description": "Gladys Assistant before 5.1.0 contains a password reset link poisoning vulnerability that allows unauthenticated remote attackers to obtain valid password reset tokens for any account by exploiting the client-supplied origin parameter in the forgot_password endpoint without server-side validation. Attackers can send a crafted request specifying an attacker-controlled origin, causing the victim to…",
+        "id": "CVE-2026-93340",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Gladys Assistant before 5.1.0 contains a password reset link poisoning vulnerability that allows unauthenticated remote attackers to obtain valid password…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93340"
       }
     ],
-    "low": 9,
-    "medium": 31,
+    "low": 96,
+    "medium": 382,
     "none": 0,
-    "unscored": 0
+    "unscored": 64
   },
   "snapshot": {
-    "cves": 94,
-    "kevAdded": 0,
-    "knownExploited": 0,
+    "cves": 1276,
+    "kevAdded": 1,
+    "knownExploited": 8,
     "projects": 20,
     "releases": 0,
-    "techEntries": 21
+    "techEntries": 19
   },
   "sources": {
     "opensource": {
@@ -400,146 +409,146 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "partial",
-        "total": 1716
+        "inWindow": 1,
+        "status": "success",
+        "total": 1717
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 94,
+        "inWindow": 1276,
         "status": "success",
-        "total": 94
+        "total": 1276
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 21,
+        "inWindow": 19,
         "status": "success",
-        "total": 229
+        "total": 228
       }
     }
   },
   "technology": [
     {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Of 225 flaws found by Glasswing and tracked by VulnCheck researcher, just one has confirmed exploitation in the wild",
+      "title": "Anthropic-linked CVEs pile up, attackers mostly shrug",
+      "url": "https://www.theregister.com/security/2026/09/21/anthropic-linked-cves-pile-up-attackers-mostly-shrug/5298018"
+    },
+    {
       "category": "tech",
       "date": "Yesterday",
       "source": "Ars Technica",
-      "summary": "Google’s threat intelligence group said it had a mole inside TeamPCP's inner circle.",
-      "title": "An undercover Google analyst infiltrated a notorious supply-chain hacking gang",
-      "url": "https://arstechnica.com/security/2026/09/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/"
+      "summary": "A simple ClickFix attack is only one way to completely hijack the new agent.",
+      "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+      "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/"
     },
     {
       "category": "security",
-      "date": "2 days ago",
+      "date": "Yesterday",
       "source": "The Register",
-      "summary": "High time to stop kicking the security can down the road, investor tells The Reg",
-      "title": "Agentic security is the billion-dollar challenge for some clever startup to solve",
-      "url": "https://www.theregister.com/security/2026/09/19/agentic-security-is-the-billion-dollar-challenge-for-some-clever-startup-to-solve/5297546"
+      "summary": "Ad biz promises users control while bug could expose voice prompts",
+      "title": "Meta Muse AI app flaw lets local malware redirect dictation traffic",
+      "url": "https://www.theregister.com/ai-and-ml/2026/09/21/meta-muse-ai-app-flaw-lets-local-malware-redirect-dictation-traffic/5297980"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "'Humans are responsible, not the AI,' argues Scott Bessent as he calls out OpenAI agents' hack of Hugging Face",
+      "title": "Treasury chief says AI bosses, not their bots, will carry the can for criminal acts",
+      "url": "https://www.theregister.com/security/2026/09/21/treasury-chief-says-ai-bosses-not-their-bots-will-carry-the-can-for-criminal-acts/5297965"
     },
     {
       "category": "tech",
-      "date": "2 days ago",
-      "source": "The Register",
-      "summary": "From Waterfox to LibreWolf and Pale Moon, there's a browser for almost every Mozilla dissenter",
-      "title": "Firefox 156 arrives with a forest of forks in its wake",
-      "url": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194"
+      "date": "Yesterday",
+      "source": "AWS",
+      "summary": "Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through…",
+      "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/"
     },
     {
       "category": "tech",
-      "date": "3 days ago",
+      "date": "Yesterday",
+      "source": "Meta",
+      "summary": "We’re open-sourcing Rebalancer, the assignment-problem solver that has been used to solve resource allocation problems throughout Meta for over nine years. Rebalancer separates several related concerns: how to specify an assignment problem, how to store it efficiently in memory…",
+      "title": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
+      "url": "https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "A resilient software supply chain is the foundation of modern delivery, and securing your continuous integration and continuous delivery (CI/CD) pipeline is what keeps innovation moving safely. Notable supply chain attacks more than doubled in the first half of 2026 compared to…",
+      "title": "Strengthen your CI/CD pipeline with new Secure Source Manager capabilities",
+      "url": "https://cloud.google.com/blog/products/identity-security/strengthen-your-cicd-pipeline-with-new-secure-source-manager-capabilities/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "The surge in AI development has created unprecedented demand for compute capacity around the globe. This can have negative implications for data processing and pipelines with Apache Spark. Whether you are managing your own Spark infrastructure or using a managed service, you can…",
+      "title": "Maximizing Apache Spark availability: Mitigating compute stockouts with flexible VMs and other best practices",
+      "url": "https://cloud.google.com/blog/products/data-analytics/maximize-apache-spark-availability-with-flexible-vms/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "Demand for AI infrastructure is at an all-time high. Global accelerator shortages mean engineering teams can rarely get all the compute they need from just one data center — capacity comes a cluster here, a cluster there, often an ocean apart. At the same time, workloads are…",
+      "title": "Global AI routing with <1% overhead on multi-cluster GKE Inference Gateway",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gpu-and-tpu-utilization-with-multi-cluster-gke-inference-gateway/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "When running modern AI workloads, there’s often a conflict between performance and cost. Workloads like large language models (LLMs) load massive files, and may serve thousands of AI agents that need to execute code instantly. If each component is starting “cold” with a full…",
+      "title": "Scale your AI workloads faster and more efficiently with GKE Pod snapshots",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-pod-snapshots/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
       "source": "Cloudflare",
-      "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RAM usage with statistics.",
-      "title": "Saving another 100TB of RAM with math (and Rust)",
-      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/"
+      "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI without writing any JavaScript glue code.",
+      "title": "Python Workers are now generally available",
+      "url": "https://blog.cloudflare.com/python-workers-ga/"
     },
     {
       "category": "security",
-      "date": "3 days ago",
+      "date": "Yesterday",
       "source": "The Register",
-      "summary": "Agentic exploits for the win (again)",
-      "title": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
-      "url": "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517"
+      "summary": "Rival crew demands eight figures and threatens to expose companies that paid to keep quiet",
+      "title": "Clop gets a taste of its own medicine after ShinyHunters hijack leak site",
+      "url": "https://www.theregister.com/cyber-crime/2026/09/21/clop-gets-a-taste-of-its-own-medicine-after-shinyhunters-hijack-leak-site/5297702"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Meta",
+      "summary": "Petal, the next step in Meta’s subsea innovation, will be the first subsea cable to deliver petabit capacity at transoceanic distances, connecting France and the United States over approximately 7,000 km (4,300 mi). Expected to enter service in 2029, it will be the first subsea…",
+      "title": "Inside Petal: Building the World’s First Petabit-Class Transoceanic Subsea Cable",
+      "url": "https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/"
     },
     {
       "category": "security",
-      "date": "3 days ago",
+      "date": "Yesterday",
       "source": "The Register",
-      "summary": "WaterPlum recruiters used bogus coding tests to backdoor jobseekers and raid more than 7,000 crypto wallets",
-      "title": "North Korea's fake job interviews infected 30,000 devices",
-      "url": "https://www.theregister.com/security/2026/09/18/north-koreas-fake-job-interviews-infected-30000-devices/5297461"
+      "summary": "Attackers are courting crate owners with plausible company profiles and booby-trapped recruitment calls",
+      "title": "Rustaceans warned of job interviews with a malicious payload",
+      "url": "https://www.theregister.com/security/2026/09/21/rustaceans-warned-of-job-interviews-with-a-malicious-payload/5297690"
     },
     {
       "category": "tech",
-      "date": "3 days ago",
-      "source": "Google Cloud",
-      "summary": "Vector search is a critical component of generative AI, retrieval-augmented generation (RAG), and data agent architectures, but sometimes vector search alone isn't enough. While vector embeddings are incredible at understanding conceptual meaning, they stumble on specific…",
-      "title": "Announcing Native BM25 Ranking in AlloyDB and Cloud SQL",
-      "url": "https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql/"
-    },
-    {
-      "category": "security",
-      "date": "3 days ago",
+      "date": "Yesterday",
       "source": "The Register",
-      "summary": "AI, fake uniforms, and mock offices help crooks sell the con",
-      "title": "FBI: Fake cop and government impersonation scams cost victims $1.6B",
-      "url": "https://www.theregister.com/cyber-crime/2026/09/18/fbi-fake-cop-and-government-impersonation-scams-cost-victims-16b/5297499"
-    },
-    {
-      "category": "tech",
-      "date": "3 days ago",
-      "source": "Netflix",
-      "summary": "",
-      "title": "Leave the Class Path in the Rearview Mirror",
-      "url": "https://netflixtechblog.com/leave-the-class-path-in-the-rearview-mirror-67a85b15b6be?source=rss----2615bd06b42e---4"
-    },
-    {
-      "category": "tech",
-      "date": "3 days ago",
-      "source": "Google Cloud",
-      "summary": "AI is accelerating software development at an unprecedented pace. But as code generation scales, so do the challenges of securing the code, especially emerging AI-based vulnerability exploitations. To meet these challenges, the Google AI and Infrastructure team is transforming…",
-      "title": "Changing the game: Using agentic AI to secure infrastructure code",
-      "url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure/"
-    },
-    {
-      "category": "tech",
-      "date": "3 days ago",
-      "source": "Google Cloud",
-      "summary": "State and local governments are driven by a shared mission to provide responsive, equitable, and accessible services. However, achieving this goal is often hindered by legacy technical debt, disconnected data, and heavy administrative burdens that slow down mission delivery…",
-      "title": "Reimagining service delivery in the agentic era with Google Public Sector",
-      "url": "https://cloud.google.com/blog/topics/public-sector/reimagining-service-delivery-in-the-agentic-era-with-google-public-sector/"
-    },
-    {
-      "category": "tech",
-      "date": "3 days ago",
-      "source": "Google Cloud",
-      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
-      "title": "What’s new with Google Cloud",
-      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
-    },
-    {
-      "category": "tech",
-      "date": "3 days ago",
-      "source": "Google Cloud",
-      "summary": "This week we kicked off the DevFest season in North America at Google Hudson Square in New York City with 80 engineers packed into the room. Typical technical workshops hand you a finished repo, tell you to blindly paste blocks of code into your terminal, and hope nothing…",
-      "title": "The DevFest Community Workshop Experience: Building Real Agents Together",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/the-devfest-community-workshop-experience-building-real-agents-together/"
-    },
-    {
-      "category": "tech",
-      "date": "3 days ago",
-      "source": "Google Cloud",
-      "summary": "As enterprises invest in generative AI, tech leaders keep seeing the same pattern: Developers test AI tools for a week, hit setup problems, and then drift back to the backlog. Nothing ships. The real gap is enablement. In this landmark Harvard Business Review article , Josh…",
-      "title": "How to upskill enterprise AI builders by using daily micro habits",
-      "url": "https://cloud.google.com/blog/topics/consulting/upskill-your-ai-using-daily-micro-habits/"
-    },
-    {
-      "category": "tech",
-      "date": "3 days ago",
-      "source": "Google Cloud",
-      "summary": "Today, we are excited to announce enhancements to the borderless Lakehouse , our answer to how data engineers, data scientists, and increasingly, AI agents, can query governed data directly where it lives. To reason accurately and automate complex enterprise workflows, agents…",
-      "title": "Accelerating the borderless Lakehouse: Announcing preview of cross-cloud caching",
-      "url": "https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-cross-cloud-caching-and-connections/"
+      "summary": "Seats, Flex Credits, and all-you-can-eat contracts make for an 'anxiety-filled architecture'",
+      "title": "Salesforce wants to charge for AI outcomes, but first it needs to figure out how",
+      "url": "https://www.theregister.com/software/2026/09/21/salesforce-wants-to-charge-for-ai-outcomes-but-first-it-needs-to-figure-out-how/5297402"
     }
   ]
 }
