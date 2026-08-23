@@ -1,6 +1,225 @@
 {
   "archive": [
     {
+      "date": "2026-09-24",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 35,
+            "full_name": "react/react",
+            "language": "JavaScript",
+            "stars": 250717,
+            "url": "https://github.com/react/react"
+          },
+          {
+            "daily_growth": 32,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200307,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 10,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 142430,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 138995,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 33,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 127978,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 20,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122078,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 58,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 119157,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 34,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 110758,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 55,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103297,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 16,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97670,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 2
+        },
+        "recent": [
+          {
+            "project": "vite",
+            "published_at": "2026-09-24T12:23:55Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v8.3.1",
+            "version": "v8.3.1"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-09-24T00:05:23Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.19.2",
+            "version": "v3.19.2"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 200,
+          "HIGH": 926,
+          "LOW": 95,
+          "MEDIUM": 500,
+          "NONE": 0,
+          "UNSCORED": 138
+        }
+      },
+      "snapshot": {
+        "cves": 1859,
+        "kevAdded": 2,
+        "knownExploited": 17,
+        "projects": 20,
+        "releases": 2,
+        "techEntries": 54
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1723
+        },
+        "github_releases": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 59
+        },
+        "github_repos": {
+          "failures": 0,
+          "inWindow": 20,
+          "status": "success",
+          "total": 20
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1859,
+          "status": "success",
+          "total": 1859
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 54,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 20,
+          "tech": 34
+        },
+        "recent": [
+          {
+            "published_at": "2026-09-24T23:32:15+00:00",
+            "source": "The Register",
+            "title": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
+            "url": "https://www.theregister.com/security/2026/09/25/crook-used-three-open-source-agents-to-break-into-a-fortune-500-hospitality-company-a-major-us-airline-and-25-other-orgs/5299012"
+          },
+          {
+            "published_at": "2026-09-24T23:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Agent Factory recap: Agent harnesses, shifting left, and autonomous coding",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding/"
+          },
+          {
+            "published_at": "2026-09-24T20:58:46+00:00",
+            "source": "AWS",
+            "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
+            "url": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/"
+          },
+          {
+            "published_at": "2026-09-24T20:00:00+00:00",
+            "source": "GitHub Blog",
+            "title": "When chat is the wrong UI",
+            "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/"
+          },
+          {
+            "published_at": "2026-09-24T19:01:15+00:00",
+            "source": "The Register",
+            "title": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
+            "url": "https://www.theregister.com/security/2026/09/24/salesforce-agentforce-vulns-allowed-0-click-crm-data-theft-anonymous-phishing/5298958"
+          },
+          {
+            "published_at": "2026-09-24T19:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Google is a Leader in the 2026 Gartner Magic Quadrant for Container Management",
+            "url": "https://cloud.google.com/blog/products/containers-kubernetes/2026-gartner-magic-quadrant-for-container-management/"
+          },
+          {
+            "published_at": "2026-09-24T18:26:12+00:00",
+            "source": "GitHub Blog",
+            "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+            "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/"
+          },
+          {
+            "published_at": "2026-09-24T17:00:00+00:00",
+            "source": "The Register",
+            "title": "Decades-old file security flaws found in Android, Linux, macOS, and Windows",
+            "url": "https://www.theregister.com/security/2026/09/24/decades-old-file-security-flaws-found-in-android-linux-macos-and-windows/5298672"
+          },
+          {
+            "published_at": "2026-09-24T16:33:00+00:00",
+            "source": "The Register",
+            "title": "CVE flood pushes Ubuntu onto weekly kernel release cycle",
+            "url": "https://www.theregister.com/os-platforms/2026/09/24/cve-flood-pushes-ubuntu-onto-weekly-kernel-release-cycle/5298912"
+          },
+          {
+            "published_at": "2026-09-24T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Scribd, Inc. classifies more than 400 million documents with Gemini batch inference on Gemini Enterprise",
+            "url": "https://cloud.google.com/blog/topics/customers/scribd-inc-classifies-millions-of-documents-on-gemini-enterprise/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-09-23",
       "opensource": {
         "topProjects": [
@@ -1581,7 +1800,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-24T13:39:40.387241+00:00",
-    "totalSnapshots": 7
+    "generatedAt": "2026-09-25T13:59:14.018851+00:00",
+    "totalSnapshots": 8
   }
 }
