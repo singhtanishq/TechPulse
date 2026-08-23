@@ -1,0 +1,360 @@
+{
+  "date": "2026-09-23",
+  "generatedAt": "2026-09-24T13:39:40.387241+00:00",
+  "opensource": {
+    "growthBasis": "previous_observation",
+    "topProjects": [
+      {
+        "daily_growth": 15,
+        "full_name": "react/react",
+        "language": "JavaScript",
+        "stars": 250682,
+        "url": "https://github.com/react/react"
+      },
+      {
+        "daily_growth": 13,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200275,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 10,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 142420,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 7,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 138969,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 20,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 127945,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 5,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122058,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 29,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119099,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 36,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 110724,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 46,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103242,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 9,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97654,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 7
+    },
+    "recent": [
+      {
+        "project": "kubernetes",
+        "published_at": "2026-09-23T19:58:45Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.12",
+        "version": "v1.34.12"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-09-23T19:35:01Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.9",
+        "version": "v1.35.9"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-09-23T19:15:40Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.19.1",
+        "version": "v3.19.1"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-09-23T19:13:17Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.1",
+        "version": "v1.37.1"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-09-23T18:58:18Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.5",
+        "version": "v1.36.5"
+      },
+      {
+        "project": "node",
+        "published_at": "2026-09-23T18:21:37Z",
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node/releases/tag/v22.23.3",
+        "version": "v22.23.3"
+      },
+      {
+        "project": "terraform",
+        "published_at": "2026-09-23T12:44:16Z",
+        "repository": "hashicorp/terraform",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.4",
+        "version": "v1.16.4"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-09-23T00:08:02Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.19.0",
+        "version": "v3.19.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 2.1,
+        "description": "A vulnerability was detected in ByteDance Coze Scraper Extension up to 2.0.2. Affected by this vulnerability is the function chrome.runtime.onMessageExternal.addListener of the file static/background/",
+        "id": "CVE-2026-96680",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96680"
+      },
+      {
+        "cvss": 2.1,
+        "description": "A security vulnerability has been detected in weiqingwen spring-boot-forum up to 538eecc3c6b85fdf0768ab4e8354b48c0c17d94f. Affected is the function validate of the file src/main/java/com/qingwenwei/ut",
+        "id": "CVE-2026-96678",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96678"
+      },
+      {
+        "cvss": 2.1,
+        "description": "A vulnerability was identified in Fast FAC1900R 20190827_2.0.2. The impacted element is the function get_alias_name of the component uhttpd. Such manipulation leads to stack-based buffer overflow. The",
+        "id": "CVE-2026-96676",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96676"
+      },
+      {
+        "cvss": 5.5,
+        "description": "A security flaw has been discovered in LB-Link BL-CPE600EU 5.8.13. This vulnerability affects unknown code of the file Mifi_config.bin of the component Configuration Backup Handler. The manipulation r",
+        "id": "CVE-2026-96606",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96606"
+      },
+      {
+        "cvss": 8.8,
+        "description": "Microsoft Outlook Remote Code Execution Vulnerability",
+        "id": "CVE-2026-70125",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70125"
+      },
+      {
+        "cvss": 6.3,
+        "description": "hpack is an HTTP/2 Header Encoding for Python. Prior to version 4.2.0, unbounded variable integer decoding can cause run-away computation on malformed input leading to O(n^2) runtime, effectively bloc",
+        "id": "CVE-2026-59980",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59980"
+      },
+      {
+        "cvss": null,
+        "description": "Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2026-56120. Reason: This candidate is a duplicate of CVE-2026-56120. Notes: All CVE users should reference CVE-2026-5612",
+        "id": "CVE-2026-57168",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57168"
+      },
+      {
+        "cvss": 5.5,
+        "description": "A vulnerability was identified in SoftNews Media Group DataLife Engine 18.0. This affects the function strip_data of the file engine/modules/search.php of the component Search Module. The manipulation",
+        "id": "CVE-2026-96604",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96604"
+      },
+      {
+        "cvss": 5.5,
+        "description": "A vulnerability has been found in Abdurrab5 online-makeup-store. Affected is the function confirm_logged_in/confirm_user of the file functions.php of the component Admin Handler. Such manipulation of ",
+        "id": "CVE-2026-96603",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96603"
+      },
+      {
+        "cvss": 5.5,
+        "description": "A flaw has been found in Abdurrab5 online-makeup-store. This impacts an unknown function of the file customerSignin.php of the component Customer Login Handler. This manipulation of the argument usern",
+        "id": "CVE-2026-96602",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96602"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 162,
+      "HIGH": 602,
+      "LOW": 75,
+      "MEDIUM": 506,
+      "NONE": 0,
+      "UNSCORED": 193
+    }
+  },
+  "snapshot": {
+    "cves": 1538,
+    "kevAdded": 0,
+    "knownExploited": 4,
+    "projects": 20,
+    "releases": 8,
+    "techEntries": 39
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 1721
+    },
+    "github_releases": {
+      "failures": 0,
+      "inWindow": 8,
+      "status": "success",
+      "total": 60
+    },
+    "github_repos": {
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 20
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1538,
+      "status": "success",
+      "total": 1538
+    },
+    "rss": {
+      "failures": 1,
+      "inWindow": 39,
+      "status": "partial",
+      "total": 199
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 17,
+      "tech": 22
+    },
+    "recent": [
+      {
+        "published_at": "2026-09-23T21:46:36+00:00",
+        "source": "Ars Technica",
+        "title": "FBI rushes to investigate if ShinyHunters hack of thousands of employees is real",
+        "url": "https://arstechnica.com/tech-policy/2026/09/fbi-rushes-to-investigate-if-shinyhunters-hack-of-thousands-of-employees-is-real/"
+      },
+      {
+        "published_at": "2026-09-23T18:29:49+00:00",
+        "source": "GitHub Blog",
+        "title": "Rendering huge pull requests in the GitHub Copilot app",
+        "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/"
+      },
+      {
+        "published_at": "2026-09-23T18:09:28+00:00",
+        "source": "The Register",
+        "title": "Someone's attacking a critical 0-day RCE in F5 BIG-IP APM",
+        "url": "https://www.theregister.com/security/2026/09/23/someones-attacking-a-critical-0-day-rce-in-f5-big-ip-apm/5298659"
+      },
+      {
+        "published_at": "2026-09-23T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "A guide to speeding up your video processing with AlphaEvolve",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/how-to-speed-up-your-video-processing-with-alphaevolve/"
+      },
+      {
+        "published_at": "2026-09-23T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Scale your own way, using HPA with built-in support for PromQL metrics queries in GKE",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/native-support-for-prometheus-metrics-in-gke/"
+      },
+      {
+        "published_at": "2026-09-23T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "GKE becomes more elastic: Scale to zero, save costs, and keep workloads responsive",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-adds-native-scale-to-zero-capabilities/"
+      },
+      {
+        "published_at": "2026-09-23T15:08:00+00:00",
+        "source": "The Register",
+        "title": "Academic publisher Elsevier hit by LAPSUS$ redirect attack",
+        "url": "https://www.theregister.com/security/2026/09/23/academic-publisher-elsevier-hit-by-lapsus-redirect-attack/5298592"
+      },
+      {
+        "published_at": "2026-09-23T15:00:00+00:00",
+        "source": "The Register",
+        "title": "Closing the observability gap for the AI-ready enterprise",
+        "url": "https://www.theregister.com/security/2026/09/23/sponsored-closing-the-observability-gap-for-the-ai-ready-enterprise/5298070"
+      },
+      {
+        "published_at": "2026-09-23T13:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
+        "url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/"
+      },
+      {
+        "published_at": "2026-09-23T11:53:37+00:00",
+        "source": "The Register",
+        "title": "British regulator takes a hard look at Pornhub's Apple-powered age checks",
+        "url": "https://www.theregister.com/security/2026/09/23/british-regulator-takes-a-hard-look-at-pornhubs-apple-powered-age-checks/5298558"
+      }
+    ],
+    "sources": {
+      "AWS": 3,
+      "Ars Technica": 4,
+      "Cloudflare": 3,
+      "GitHub Blog": 2,
+      "Google Cloud": 8,
+      "Meta": 2,
+      "Microsoft": 1,
+      "The Register": 16
+    }
+  },
+  "window": {
+    "end": "2026-09-23T23:59:59.999000+00:00",
+    "start": "2026-09-23T00:00:00+00:00"
+  }
+}
