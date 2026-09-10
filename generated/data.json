@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1441,
+      "date": "2026-09-25",
+      "kevAdded": 3,
+      "knownExploited": 6,
+      "projects": 20,
+      "releases": 0,
+      "techEntries": 57
+    },
+    {
       "cves": 1859,
       "date": "2026-09-24",
       "kevAdded": 2,
@@ -74,14 +83,14 @@
     }
   ],
   "meta": {
-    "date": "2026-09-24",
-    "daysObserved": 8,
-    "generatedAt": "2026-09-25T13:59:14.018851+00:00",
-    "snapshots": 8
+    "date": "2026-09-25",
+    "daysObserved": 9,
+    "generatedAt": "2026-09-26T13:15:57.665963+00:00",
+    "snapshots": 9
   },
   "openSource": [
     {
-      "daily_growth": 35,
+      "daily_growth": 29,
       "description": "The library for web and native user interfaces.",
       "full_name": "react/react",
       "growth_available": true,
@@ -89,11 +98,11 @@
       "name": "react",
       "rank": 1,
       "source": "GitHub",
-      "stars": 250717,
+      "stars": 250746,
       "url": "https://github.com/react/react"
     },
     {
-      "daily_growth": 32,
+      "daily_growth": 48,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -101,11 +110,11 @@
       "name": "tensorflow",
       "rank": 2,
       "source": "GitHub",
-      "stars": 200307,
+      "stars": 200355,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 42,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -113,11 +122,11 @@
       "name": "next.js",
       "rank": 3,
       "source": "GitHub",
-      "stars": 142430,
+      "stars": 142472,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 30,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -125,11 +134,11 @@
       "name": "go",
       "rank": 4,
       "source": "GitHub",
-      "stars": 138995,
+      "stars": 139025,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 33,
+      "daily_growth": 34,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -137,11 +146,11 @@
       "name": "kubernetes",
       "rank": 5,
       "source": "GitHub",
-      "stars": 127978,
+      "stars": 128012,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 20,
+      "daily_growth": 23,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -149,11 +158,11 @@
       "name": "node",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122078,
+      "stars": 122101,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 58,
+      "daily_growth": 30,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -161,11 +170,11 @@
       "name": "rust",
       "rank": 7,
       "source": "GitHub",
-      "stars": 119157,
+      "stars": 119187,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 34,
+      "daily_growth": 18,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -173,11 +182,11 @@
       "name": "supabase",
       "rank": 8,
       "source": "GitHub",
-      "stars": 110758,
+      "stars": 110776,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 55,
+      "daily_growth": 53,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -185,11 +194,11 @@
       "name": "pytorch",
       "rank": 9,
       "source": "GitHub",
-      "stars": 103297,
+      "stars": 103350,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 21,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -197,243 +206,224 @@
       "name": "tailwindcss",
       "rank": 10,
       "source": "GitHub",
-      "stars": 97670,
+      "stars": 97691,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     }
   ],
-  "releases": [
-    {
-      "date": "Yesterday",
-      "kind": "patch",
-      "project": "vite",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.1",
-      "version": "v8.3.1"
-    },
-    {
-      "date": "Yesterday",
-      "kind": "patch",
-      "project": "openai-python",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.19.2",
-      "version": "v3.19.2"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 200,
-    "high": 926,
-    "kevCatalogTotal": 1723,
+    "critical": 95,
+    "high": 493,
+    "kevCatalogTotal": 1726,
     "latest": [
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "description": "Rejected reason: This CVE is a duplicate of another CVE.",
-        "id": "CVE-2026-97387",
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Horilla is an HR and CRM software. Prior to 2.0.0, HorillaListView.export_data in horilla_views/generic/cbv/views.py accepts an authenticated user's columns POST parameter, takes field_tuple[1], interpolates it into dynamic_fn_str as Python source, and passes the generated function definition to exec(). A crafted string that remains valid under ast.literal_eval can inject Python syntax into a…",
+        "id": "CVE-2026-96795",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
-        "severity": null,
-        "source": "NVD",
-        "title": "Rejected reason: This CVE is a duplicate of another CVE.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97387"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "vLLM through 0.29.0 fails to validate the tp_size parameter in kv_transfer_params on OpenAI-compatible completion endpoints, allowing attackers to allocate unbounded memory. Attackers can supply arbitrary tp_size values in prefill/decode disaggregated deployments to exhaust memory and trigger kernel OOM-kill of the decode worker process.",
-        "id": "CVE-2026-94626",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "4 days ago",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "vLLM through 0.29.0 fails to validate the tp_size parameter in kv_transfer_params on OpenAI-compatible completion endpoints, allowing attackers to allocate…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94626"
+        "title": "Horilla is an HR and CRM software. Prior to 2.0.0, HorillaListView.export_data in horilla_views/generic/cbv/views.py accepts an authenticated user's columns…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96795"
       },
       {
-        "cvss_score": 9.4,
-        "cvss_version": "4.0",
-        "description": "In OpenStack Octavia before 18.0.1, the Amphora provider driver did not validate the listener and pool tls_ciphers field for control characters. The value is written verbatim into the HAProxy configuration generated on the amphora, and thus an authenticated project member who owns a TLS-enabled load balancer can embed a newline and inject arbitrary HAProxy configuration directives. Only…",
-        "id": "CVE-2026-94572",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "4 days ago",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "In OpenStack Octavia before 18.0.1, the Amphora provider driver did not validate the listener and pool tls_ciphers field for control characters. The value is…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94572"
-      },
-      {
-        "cvss_score": 7.4,
-        "cvss_version": "4.0",
-        "description": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and persist an attacker-selected paired identity by interacting with the application's local service without any pairing confirmation or user interaction. Attackers can exploit the unauthenticated local service through same-device loopback to perform…",
-        "id": "CVE-2026-94540",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "4 days ago",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94540"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the getUserInfoById endpoint that allows authenticated users to read any other user's full profile. Attackers can iterate the userId parameter to harvest sensitive user information including mobile numbers, email addresses, national identity card numbers, and WeChat and DingTalk OpenIDs.",
-        "id": "CVE-2026-94532",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "4 days ago",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the getUserInfoById endpoint that allows authenticated users to read any other…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94532"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "jshERP through 3.6 fails to properly validate user privileges in SystemConfigService.updateSystemConfig, allowing authenticated users to modify tenant system configuration. Attackers can rewrite or delete tenant-wide settings covering company identity, stock rules, approval behavior, and printing configuration through the systemConfig endpoint.",
-        "id": "CVE-2026-94495",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "4 days ago",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "jshERP through 3.6 fails to properly validate user privileges in SystemConfigService.updateSystemConfig, allowing authenticated users to modify tenant system…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94495"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was detected in Gigatech PDV5701 1.0.31_240305_112640. This issue affects some unknown processing of the file /index.html of the component WebSocket Service. The manipulation results in missing authentication. The attack can be launched remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.",
-        "id": "CVE-2026-94493",
+        "cvss_score": 6.7,
+        "cvss_version": "3.1",
+        "description": "BusyBox passwd/group tokenize() references a stale endpoint pointer after trimming, causing an out-of-bounds write of heap pointers.",
+        "id": "CVE-2026-88839",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "3 days ago",
-        "severity": "CRITICAL",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A vulnerability was detected in Gigatech PDV5701 1.0.31_240305_112640. This issue affects some unknown processing of the file /index.html of the component…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94493"
+        "title": "BusyBox passwd/group tokenize() references a stale endpoint pointer after trimming, causing an out-of-bounds write of heap pointers.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88839"
       },
       {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was determined in xuxueli xxl-job up to 3.5.0. The impacted element is an unknown function of the file /jobgroup/insert. This manipulation of the argument Name causes cross site scripting. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
-        "id": "CVE-2026-94426",
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "BusyBox httpd treats yescrypt ($y$) password hashes as plaintext during Basic Authentication, inverting the authentication check.",
+        "id": "CVE-2026-88837",
         "known_exploited": false,
         "modified": "Yesterday",
-        "published": "4 days ago",
-        "severity": "LOW",
+        "published": "3 days ago",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A vulnerability was determined in xuxueli xxl-job up to 3.5.0. The impacted element is an unknown function of the file /jobgroup/insert. This manipulation of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94426"
+        "title": "BusyBox httpd treats yescrypt ($y$) password hashes as plaintext during Basic Authentication, inverting the authentication check.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88837"
+      },
+      {
+        "cvss_score": 6.1,
+        "cvss_version": "3.1",
+        "description": "BusyBox dpkg read_package_field() steps past a NUL terminator on malformed .deb packages, causing an out-of-bounds heap read.",
+        "id": "CVE-2026-88835",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "3 days ago",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "BusyBox dpkg read_package_field() steps past a NUL terminator on malformed .deb packages, causing an out-of-bounds heap read.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88835"
+      },
+      {
+        "cvss_score": 7.3,
+        "cvss_version": "3.1",
+        "description": "BusyBox romfs volume ID parsing uses unbounded strlen on attacker-controlled metadata, causing a heap buffer overflow when processing crafted filesystem images.",
+        "id": "CVE-2026-88832",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "3 days ago",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "BusyBox romfs volume ID parsing uses unbounded strlen on attacker-controlled metadata, causing a heap buffer overflow when processing crafted filesystem images.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88832"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "3.1",
+        "description": "BusyBox httpd IP deny rules with invalid CIDR prefix lengths fail open, leaving a parsed IP with a zeroed mask so the rule matches no clients.",
+        "id": "CVE-2026-88831",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "3 days ago",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "BusyBox httpd IP deny rules with invalid CIDR prefix lengths fail open, leaving a parsed IP with a zeroed mask so the rule matches no clients.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88831"
+      },
+      {
+        "cvss_score": 5.6,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in crun. When the container configuration does not give /dev a dedicated mount, terminal setup can redirect /dev/console onto an attacker-controlled path, including via the read-only-rootfs bind-mount fallback. Affected versions are crun 1.29.1 and earlier. Default configurations that mount a fresh /dev are not exposed. No fixed release is available yet.",
+        "id": "CVE-2026-88264",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "10 SEP 2026",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A flaw was found in crun. When the container configuration does not give /dev a dedicated mount, terminal setup can redirect /dev/console onto an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88264"
+      },
+      {
+        "cvss_score": 5.9,
+        "cvss_version": "4.0",
+        "description": "Horilla is an HR and CRM software. Prior to 2.0.0, approve_validate_attendance_request at /attendance/approve-validate-attendance-request/ changes attendance_validated, is_validate_request_approved, approved_by, and related pending-request state through an HTTP GET before calling attendance.save(), so Django does not require CSRF validation for the action. An unauthenticated attacker can cause a…",
+        "id": "CVE-2026-86066",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Horilla is an HR and CRM software. Prior to 2.0.0, approve_validate_attendance_request at /attendance/approve-validate-attendance-request/ changes…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86066"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "Actual is a local-first personal finance tool. Prior to 26.7.0, Actual Sync Server's CORS proxy is intended to let authenticated users fetch resources only from repositories listed in the official plugin allowlist. When `ACTUAL_GITHUB_TOKEN` is configured, the proxy automatically attaches the server's GitHub token to GitHub requests. The GitHub API allowlist check uses a raw `startsWith()` prefix…",
+        "id": "CVE-2026-57449",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Actual is a local-first personal finance tool. Prior to 26.7.0, Actual Sync Server's CORS proxy is intended to let authenticated users fetch resources only…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57449"
+      },
+      {
+        "cvss_score": 5.6,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in evolution-data-server. Inconsistent comparison logic in the addressbook file backend allows a Flatpak application with D-Bus access to craft a malicious URI containing directory traversal sequences. This URI is stored without proper validation during contact creation or modification. Later, during contact deletion, the URI is processed with a less strict check, leading to the…",
+        "id": "CVE-2026-2604",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "17 JUN 2026",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A flaw was found in evolution-data-server. Inconsistent comparison logic in the addressbook file backend allows a Flatpak application with D-Bus access to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2604"
       },
       {
         "cvss_score": 8.7,
         "cvss_version": "4.0",
-        "description": "jshERP 3.6 contains a privilege escalation vulnerability in the updateOneValueByKeyIdAndType endpoint that allows authenticated users to grant themselves arbitrary roles. Attackers can send a POST request with type=UserRole, their own user ID, and a role ID list to escalate from low-privilege tenant user to tenant administrator.",
-        "id": "CVE-2026-94411",
+        "description": "A remote code execution (RCE) vulnerability exists in Google Cloud Data Fusion.\nA user with permissions to upload artifacts to a Data Fusion instance can execute arbitrary code within the core AppFabric component. \nThis could allow the attacker to gain control over the Data Fusion instance, potentially leading to unauthorized access to sensitive data, modification of data pipelines, and…",
+        "id": "CVE-2025-9571",
         "known_exploited": false,
         "modified": "Yesterday",
-        "published": "4 days ago",
+        "published": "10 DEC 2025",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "jshERP 3.6 contains a privilege escalation vulnerability in the updateOneValueByKeyIdAndType endpoint that allows authenticated users to grant themselves…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94411"
+        "title": "A remote code execution (RCE) vulnerability exists in Google Cloud Data Fusion.\nA user with permissions to upload artifacts to a Data Fusion instance can…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-9571"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 4.2,
         "cvss_version": "3.1",
-        "description": "A flaw was found in libstoragemgmt. An attacker with control over a local or virtual storage device could provide specially crafted SCSI (Small Computer System Interface) Vital Product Data (VPD) page 0x80 data. This malformed data, specifically an untrusted page length field, can lead to a stack buffer overflow in the `_sg_parse_vpd_80()` function during serial number parsing. Successful…",
-        "id": "CVE-2026-93433",
+        "description": "An Improper Access Control in the SFTP service in Fortra's GoAnywhere MFT prior to version 7.9.0 allows Web Users with an Authentication Alias and a valid SSH key but limited to Password authentication for SFTP to still login using their SSH key.",
+        "id": "CVE-2025-8148",
         "known_exploited": false,
         "modified": "Yesterday",
-        "published": "4 days ago",
+        "published": "05 DEC 2025",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A flaw was found in libstoragemgmt. An attacker with control over a local or virtual storage device could provide specially crafted SCSI (Small Computer System…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93433"
+        "title": "An Improper Access Control in the SFTP service in Fortra's GoAnywhere MFT prior to version 7.9.0 allows Web Users with an Authentication Alias and a valid SSH…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8148"
       },
       {
-        "cvss_score": 5.7,
+        "cvss_score": 5.6,
         "cvss_version": "3.1",
-        "description": "Warpgate is an open source SSH, HTTPS and MySQL bastion host for Linux. From 0.25.0 until 0.27.6, the browser SSH path in warpgate-web-ssh/src/manager.rs handles RCEvent::HostKeyUnknown without the presenting hop identity and instead passes ssh_options.host and ssh_options.port for the final target to KnownHosts::trust. In Prompt and AutoAccept modes, a jump host key can therefore be stored for…",
-        "id": "CVE-2026-91166",
+        "description": "Origin validation error vulnerability in BeeDrive in Synology BeeDrive for desktop before 1.4.3-13973 allows local users to write arbitrary files with non-sensitive information via unspecified vectors.",
+        "id": "CVE-2025-8074",
         "known_exploited": false,
         "modified": "Yesterday",
-        "published": "4 days ago",
+        "published": "04 DEC 2025",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Warpgate is an open source SSH, HTTPS and MySQL bastion host for Linux. From 0.25.0 until 0.27.6, the browser SSH path in warpgate-web-ssh/src/manager.rs…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91166"
+        "title": "Origin validation error vulnerability in BeeDrive in Synology BeeDrive for desktop before 1.4.3-13973 allows local users to write arbitrary files with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8074"
       },
       {
-        "cvss_score": 4.3,
-        "cvss_version": "3.1",
-        "description": "Hatchet is a platform for orchestrating background tasks, AI agents, and durable workflows at scale. Prior to 0.106.1, the WorkerStatus gRPC polling path in pkg/repository/durable_events.go passes caller-supplied durable task, node, and branch identifiers to ListSatisfiedEntries without a tenant filter, allowing an authenticated tenant worker that knows another tenant's durable-task UUID to…",
-        "id": "CVE-2026-88978",
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "A stack-based buffer overflow vulnerability was identified in the ONVIF SOAP XML Parser in Tapo C200 v3 and C520WS v2.6. When processing XML tags with namespace prefixes, the parser fails to validate the prefix length before copying it to a fixed-size stack buffer.  It allowed a crafted SOAP request with an oversized namespace prefix to cause memory corruption in stack. \n\nAn unauthenticated…",
+        "id": "CVE-2025-8065",
         "known_exploited": false,
         "modified": "Yesterday",
-        "published": "4 days ago",
+        "published": "20 DEC 2025",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A stack-based buffer overflow vulnerability was identified in the ONVIF SOAP XML Parser in Tapo C200 v3 and C520WS v2.6. When processing XML tags with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-8065"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "NULL pointer dereference in TagSection.keys() in python-apt on APT-based Linux systems allows a local attacker to cause a denial of service (process crash) via a crafted deb822 file with a malformed non-UTF-8 key.",
+        "id": "CVE-2025-6966",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "05 DEC 2025",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Hatchet is a platform for orchestrating background tasks, AI agents, and durable workflows at scale. Prior to 0.106.1, the WorkerStatus gRPC polling path in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88978"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "Heap-based buffer overflow in Windows ALPC allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-85880",
-        "known_exploited": true,
-        "modified": "Yesterday",
-        "published": "08 SEP 2026",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Heap-based buffer overflow in Windows ALPC allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85880"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "3.1",
-        "description": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-85360",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "08 SEP 2026",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85360"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "Out-of-bounds read in Windows Key Distribution Center allows an unauthorized attacker to deny service over a network.",
-        "id": "CVE-2026-84001",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "08 SEP 2026",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Out-of-bounds read in Windows Key Distribution Center allows an unauthorized attacker to deny service over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84001"
+        "title": "NULL pointer dereference in TagSection.keys() in python-apt on APT-based Linux systems allows a local attacker to cause a denial of service (process crash) via…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6966"
       }
     ],
-    "low": 95,
-    "medium": 500,
+    "low": 43,
+    "medium": 394,
     "none": 0,
-    "unscored": 138
+    "unscored": 416
   },
   "snapshot": {
-    "cves": 1859,
-    "kevAdded": 2,
-    "knownExploited": 17,
+    "cves": 1441,
+    "kevAdded": 3,
+    "knownExploited": 6,
     "projects": 20,
-    "releases": 2,
-    "techEntries": 54
+    "releases": 0,
+    "techEntries": 57
   },
   "sources": {
     "opensource": {
@@ -447,154 +437,154 @@
     "releases": {
       "github": {
         "failures": 0,
-        "inWindow": 2,
-        "status": "success",
+        "inWindow": 0,
+        "status": "partial",
         "total": 59
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 2,
+        "inWindow": 3,
         "status": "success",
-        "total": 1723
+        "total": 1726
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1859,
+        "inWindow": 1441,
         "status": "success",
-        "total": 1859
+        "total": 1441
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 54,
+        "inWindow": 57,
         "status": "success",
-        "total": 229
+        "total": 228
       }
     }
   },
   "technology": [
     {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Ars Technica",
+      "summary": "Ads appearing all over the Internet are trying to scam people.",
+      "title": "Your uncle’s frozen Mac says it’s infected after viewing a Google ad. Now what?",
+      "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/"
+    },
+    {
       "category": "security",
       "date": "Yesterday",
       "source": "The Register",
-      "summary": "Operator’s AI bill averaged just $25 per completed scan",
-      "title": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
-      "url": "https://www.theregister.com/security/2026/09/25/crook-used-three-open-source-agents-to-break-into-a-fortune-500-hospitality-company-a-major-us-airline-and-25-other-orgs/5299012"
+      "summary": "More mockery and memes from the Dark Web Roast",
+      "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
+      "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
     },
     {
       "category": "tech",
       "date": "Yesterday",
-      "source": "Google Cloud",
-      "summary": "In this episode of The Agent Factory , we explore the reality of building with autonomous agents alongside Ryan Lopopolo, a software engineer at Google Cloud and the person who coined the term agent harness . From throwing out manual code editors to treating team collaboration…",
-      "title": "Agent Factory recap: Agent harnesses, shifting left, and autonomous coding",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding/"
+      "source": "The Register",
+      "summary": "Overhead reduced by as much as 99.7%",
+      "title": "New software dependency validation process increases speeds by 54x",
+      "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
     },
     {
-      "category": "tech",
+      "category": "security",
       "date": "Yesterday",
-      "source": "AWS",
-      "summary": "Amazon EventBridge announces an enhanced custom event bus for organizations scaling event-driven applications across teams and accounts. Deploy a single event bus shared across all AWS accounts in your organization, with ordering guarantees, a simplified Subscriber resource, and…",
-      "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
-      "url": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/"
+      "source": "The Register",
+      "summary": "Data theft and extortion biz, that is",
+      "title": "ShinyHunters tells The Reg: We hacked the FBI to 'protect our business'",
+      "url": "https://www.theregister.com/cyber-crime/2026/09/25/shinyhunters-tells-the-reg-we-hacked-the-fbi-to-protect-our-business/5299250"
     },
     {
       "category": "tech",
       "date": "Yesterday",
       "source": "GitHub Blog",
-      "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases. The post When chat is the wrong UI appeared first on The GitHub Blog .",
-      "title": "When chat is the wrong UI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/"
+      "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Beginners: How to build custom workflows with canvases…",
+      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/"
     },
     {
       "category": "security",
       "date": "Yesterday",
       "source": "The Register",
-      "summary": "'SalesBleed' security flaws 'lead to very unexpected consequences'",
-      "title": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
-      "url": "https://www.theregister.com/security/2026/09/24/salesforce-agentforce-vulns-allowed-0-click-crm-data-theft-anonymous-phishing/5298958"
+      "summary": "Nothing in the attack chain screams malicious software, except none of the impersonated HR and payroll providers actually offers a desktop app",
+      "title": "Crooks use fake desktop apps to fool HR staff into giving them remote access",
+      "url": "https://www.theregister.com/security/2026/09/25/crooks-use-fake-desktop-apps-to-fool-hr-staff-into-giving-them-remote-access/5299226"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Familiar fingerprints point to Kim’s regime … to the surprise of nobody",
+      "title": "Bitget blames North Korea for $387.5M crypto wallet raid",
+      "url": "https://www.theregister.com/cyber-crime/2026/09/25/bitget-blames-north-korea-for-3875m-crypto-wallet-raid/5299218"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Netflix",
+      "summary": "",
+      "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
+      "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252?source=rss----2615bd06b42e---4"
     },
     {
       "category": "tech",
       "date": "Yesterday",
       "source": "Google Cloud",
-      "summary": "We’re excited and proud to share that Gartner has recognized Google as a Leader for the fourth year in a row in the 2026 Gartner® Magic Quadrant™ for Container Management , based on its Completeness of Vision and Ability to Execute. Google was positioned highest in Ability to…",
-      "title": "Google is a Leader in the 2026 Gartner Magic Quadrant for Container Management",
-      "url": "https://cloud.google.com/blog/products/containers-kubernetes/2026-gartner-magic-quadrant-for-container-management/"
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "Reinforcement learning (RL) has been a keystone of modern LLM post-training, but it demands large training clusters and access to model internals that external customers can't have with proprietary models like Gemini. So here at Google Cloud, we packaged it into a managed RL…",
+      "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "The volume of data being generated today brings both opportunity and massive operational complexity. Most teams that operate at scale don't discover issues until they appear on an invoice — and by the time an unusual access pattern shows up as a line item, it has often been…",
+      "title": "Storage Intelligence advisor: Know what changed in your storage estate and act on it",
+      "url": "https://cloud.google.com/blog/products/storage-data-transfer/storage-intelligence-advisor-and-batch-operations-updates/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "At Google Cloud, we are committed to delivering the best managed experience backed by open source software. Today, we’re announcing the general availability of Memorystore for Valkey 9.1 , which achieves up to 3x queries per second (QPS) at microsecond latency compared to…",
+      "title": "Unlock 3x QPS and microsecond latency with Memorystore for Valkey 9.1",
+      "url": "https://cloud.google.com/blog/products/databases/memorystore-for-valkey-9-1-3x-qps-caching/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "But was the update at fault? Microsoft isn't saying",
+      "title": "Office 2016 and 2019 holdouts blame update for license deactivation bug",
+      "url": "https://www.theregister.com/software/2026/09/25/office-2016-and-2019-holdouts-blame-update-for-license-deactivation-bug/5299186"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Joe Fay chairs a Register dinner in New York on the file infrastructure nobody has got around to replacing, with nothing on the record.",
+      "title": "Which copy of that file is the real one? Dinner, off the record, in Midtown",
+      "url": "https://www.theregister.com/storage/2026/09/25/sponsored/5299080"
     },
     {
       "category": "tech",
       "date": "Yesterday",
       "source": "GitHub Blog",
-      "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. The post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog .",
-      "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
-      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/"
-    },
-    {
-      "category": "security",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "Security researchers report that Microsoft considers the side-channel leak of file events to be by design",
-      "title": "Decades-old file security flaws found in Android, Linux, macOS, and Windows",
-      "url": "https://www.theregister.com/security/2026/09/24/decades-old-file-security-flaws-found-in-android-linux-macos-and-windows/5298672"
-    },
-    {
-      "category": "security",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "AI-assisted bug hunting is helping pile up vulnerabilities faster than defenders can patch them, so Canonical is picking up the pace",
-      "title": "CVE flood pushes Ubuntu onto weekly kernel release cycle",
-      "url": "https://www.theregister.com/os-platforms/2026/09/24/cve-flood-pushes-ubuntu-onto-weekly-kernel-release-cycle/5298912"
-    },
-    {
-      "category": "tech",
-      "date": "Yesterday",
-      "source": "Google Cloud",
-      "summary": "Scribd, Inc . is home to one of the world's largest collections of human-created content. Scribd’s products leverage one of the world's largest collections of human-created content and intelligent tools to help people move from information access to real understanding and…",
-      "title": "Scribd, Inc. classifies more than 400 million documents with Gemini batch inference on Gemini Enterprise",
-      "url": "https://cloud.google.com/blog/topics/customers/scribd-inc-classifies-millions-of-documents-on-gemini-enterprise/"
-    },
-    {
-      "category": "tech",
-      "date": "Yesterday",
-      "source": "Google Cloud",
-      "summary": "Enterprises are increasingly standardizing on Google Kubernetes Engine (GKE) to run their most critical and AI-driven workloads. From Cloud Storage FUSE for high-throughput data access to custom compute classes (CCC) and advanced GPU slicing, GKE provides the scale and…",
-      "title": "Introducing GKE agentic migration for AI-assisted EKS-to-GKE migrations with built-in governance",
-      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-agentic-migration/"
-    },
-    {
-      "category": "security",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "Contact details and order records accessed, but PC maker is keeping schtum on how many customers are affected",
-      "title": "Someone went shopping in ASUS's eShop – for customer data",
-      "url": "https://www.theregister.com/security/2026/09/24/someone-went-shopping-in-asuss-eshop-for-customer-data/5298860"
-    },
-    {
-      "category": "tech",
-      "date": "Yesterday",
-      "source": "Google Cloud",
-      "summary": "Following our announcement of Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking last week, we are thrilled to share that Gemini 3.8 Live with Live Avatar is now generally available in Gemini Enterprise . First previewed at Google Cloud Next 2026 , the technology is now…",
-      "title": "Power your agents: Gemini 3.8 Live with Live Avatar is now generally available",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-8-live-with-live-avatar-is-now-generally-available/"
-    },
-    {
-      "category": "tech",
-      "date": "Yesterday",
-      "source": "Cloudflare",
-      "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps we took to remediate it.",
-      "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-      "url": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/"
-    },
-    {
-      "category": "tech",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "A desktop pitch and an attempt to curb LLM slop descended into very human mayhem",
-      "title": "Talk of AI in KDE sets the community ablaze",
-      "url": "https://www.theregister.com/software/2026/09/24/talk-of-ai-in-kde-sets-the-community-ablaze/5298854"
+      "summary": "How we fully migrated github.com away from CSS-in-JS. The post Improving site performance by shipping more CSS appeared first on The GitHub Blog .",
+      "title": "Improving site performance by shipping more CSS",
+      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/"
     }
   ]
 }
