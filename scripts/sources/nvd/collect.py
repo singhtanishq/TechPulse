@@ -379,19 +379,20 @@ def save_output(
     vulnerabilities: list[dict[str, Any]],
     start_date: datetime,
     end_date: datetime,
+    reporting_date: str,
 ) -> Path:
     """
-    Save output for the snapshot date, idempotently.
+    Save output for the reporting date, idempotently.
 
+    The filename carries the TechPulse reporting date (the edition the
+    window belongs to), never a date derived from the window bounds.
     If the file for this date already exists with identical records,
     it is left untouched (preserving the original collectedAt).
     """
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    snapshot_date = end_date.date().isoformat()
-
-    output_path = OUTPUT_DIR / f"{snapshot_date}.json"
+    output_path = OUTPUT_DIR / f"{reporting_date}.json"
 
     new_records = records_fingerprint(vulnerabilities)
 
