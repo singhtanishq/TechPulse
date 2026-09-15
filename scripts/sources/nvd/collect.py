@@ -433,52 +433,50 @@ def save_output(
 def main() -> int:
 
     parser = argparse.ArgumentParser(
-        description="Collect CVEs modified on a target UTC calendar day from the NVD API."
+        description="Collect CVEs for a TechPulse reporting day from the NVD API."
     )
 
     parser.add_argument(
         "--date",
         type=str,
-        help="Snapshot date (YYYY-MM-DD, UTC). Default: previous completed UTC day.",
+        help="Reporting date (YYYY-MM-DD, IST edition). Default: current reporting date.",
     )
 
     parser.add_argument(
         "--start",
         type=str,
-        help="Explicit UTC ISO-8601 window start (overrides --date).",
+        help="Explicit ISO-8601 window start (overrides --date).",
     )
 
     parser.add_argument(
         "--end",
         type=str,
-        help="Explicit UTC ISO-8601 window end (overrides --date).",
+        help="Explicit ISO-8601 window end (overrides --date).",
     )
 
     args = parser.parse_args()
 
-    if args.start and args.end:
-        start_date = parse_datetime(args.start)
-        end_date = parse_datetime(args.end)
-    elif args.start or args.end:
-        parser.error("--start and --end must be supplied together.")
-    elif args.date:
-        try:
-            day = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-        except ValueError:
-            parser.error("--date must be in YYYY-MM-DD format.")
-        start_date = day
-        end_date = day + timedelta(days=1) - timedelta(milliseconds=1)
-    else:
-        start_date = default_snapshot_date()
-        end_date = start_date + timedelta(days=1) - timedelta(milliseconds=1)
+    try:
+        start_date, end_date = resolve_window(args.date, args.start, args.end)
+    except ValueError as exc:
+        parser.error(str(exc))
 
     if start_date >= end_date:
         parser.error("Start datetime must be earlier than end datetime.")
 
+    # The output filename is the reporting date (edition), not the window
+    # end date — the window covers the IST day preceding the edition.
+    if args.start and args.end:
+        reporting_date = args.date or end_date.astimezone(
+            __import__("datetime").timezone(timedelta(hours=5, minutes=30))
+        ).date().isoformat()
+    else:
+        reporting_date = args.date or ist_today()
+
     print()
     print("TechPulse — NVD Collector")
     print("=" * 32)
-    print(f"Snapshot date : {end_date.date().isoformat()}")
+    print(f"Reporting date: {reporting_date} (IST edition)")
     print(f"Window start  : {format_nvd_datetime(start_date)}")
     print(f"Window end    : {format_nvd_datetime(end_date)}")
     print()
@@ -492,6 +490,7 @@ def main() -> int:
             vulnerabilities=vulnerabilities,
             start_date=start_date,
             end_date=end_date,
+            reporting_date=reporting_date,
         )
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
