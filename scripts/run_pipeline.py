@@ -3,7 +3,7 @@
 """
 TechPulse — Pipeline Runner
 
-Executes the complete data pipeline for one snapshot date:
+Executes the complete data pipeline for one reporting date:
 collect -> process -> generate -> validate.
 
 Usage:
@@ -11,14 +11,18 @@ Usage:
         [--skip-process] [--skip-generate] [--only collect|process|generate]
 
 Exit codes:
-    0 — pipeline completed (partial source failures are reported in
-        logs and the source health data, but do not fail the run)
+    0 — pipeline completed. Partial source failures are reported in the
+        logs and in the source health data; they do not fail the run.
     1 — fatal: invalid arguments, a processing/generation stage failed,
-        or every collector failed (no usable data at all)
+        or every collector failed (no usable data at all).
 
-Snapshot semantics:
-    Default snapshot date is the previous completed UTC day, matching
-    scripts/config/snapshot.json.
+Reporting semantics:
+    TechPulse reporting dates are India calendar days (Asia/Kolkata).
+    The edition for date X covers the previous IST day (X-1); the daily
+    workflow fires at 18:30 UTC = 00:00 IST, at the start of day X.
+    Default resolution (no --date): next pending edition after the
+    newest snapshot, never later than the current IST date — see
+    scripts/reporting_date.py.
 """
 
 from __future__ import annotations
@@ -27,8 +31,21 @@ import argparse
 import subprocess
 import sys
 import time
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+SCRIPTS_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from processors.utils import (  # noqa: E402
+    IST,
+    ist_day_window,
+    ist_now,
+    ist_today,
+    newest_snapshot_date,
+    parse_ist_date,
+    resolve_reporting_date,
+)
+from datetime import timedelta  # noqa: E402
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -53,15 +70,6 @@ GENERATORS = [
     ("Site Data", "scripts/generators/site_data.py", True, 60),
     ("Archive", "scripts/generators/archive.py", False, 60),
 ]
-
-
-def utc_now() -> datetime:
-    return datetime.now(timezone.utc)
-
-
-def default_snapshot_date() -> datetime:
-    day = (utc_now() - timedelta(days=1)).date()
-    return datetime(day.year, day.month, day.day, tzinfo=timezone.utc)
 
 
 def run_script(script: str, args: list[str], timeout: int) -> tuple[bool, str]:
@@ -114,7 +122,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Run the TechPulse data pipeline.")
     parser.add_argument(
         "--date",
-        help="Snapshot date (YYYY-MM-DD, UTC). Default: previous completed UTC day.",
+        help="Reporting date (YYYY-MM-DD, IST edition). Default: next pending edition.",
     )
     parser.add_argument("--skip-collect", action="store_true", help="Skip source collection.")
     parser.add_argument("--skip-process", action="store_true", help="Skip processing.")
@@ -129,19 +137,24 @@ def main() -> int:
 
     if args.date:
         try:
-            snapshot_date = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-        except ValueError:
-            print(f"ERROR: Invalid date '{args.date}'. Use YYYY-MM-DD.", file=sys.stderr)
+            reporting_date, date_reason = resolve_reporting_date("manual", args.date)
+        except ValueError as exc:
+            print(f"ERROR: {exc}", file=sys.stderr)
             return 1
     else:
-        snapshot_date = default_snapshot_date()
+        reporting_date, date_reason = resolve_reporting_date("manual", None)
 
-    date_str = snapshot_date.date().isoformat()
+    window_start, window_end = ist_day_window(reporting_date)
+    covered_day = (parse_ist_date(reporting_date) - timedelta(days=1)).isoformat()
 
     print()
     print("TechPulse — Pipeline Runner")
     print("=" * 50)
-    print(f"Snapshot date : {date_str} (UTC calendar day)")
+    print(f"Reporting date : {reporting_date} (edition, Asia/Kolkata)")
+    print(f"Covers IST day : {covered_day}")
+    print(f"Window (UTC)   : {window_start.isoformat()} -> {window_end.isoformat()}")
+    print(f"IST now        : {ist_now().isoformat()}")
+    print(f"Date resolved  : {date_reason}")
     print()
 
     overall_success = True
@@ -156,14 +169,13 @@ def main() -> int:
         print("Phase 1: Source Collection")
         print("-" * 30)
         for name, script, takes_date, timeout in COLLECTORS:
-            stage_args = ["--date", date_str] if takes_date else []
+            stage_args = ["--date", reporting_date] if takes_date else []
             start = time.time()
             success, output = run_script(script, stage_args, timeout)
             elapsed = time.time() - start
             collector_total += 1
             if not success:
                 collector_failures += 1
-                overall_success = False
             print_stage(f"{name} ({elapsed:.1f}s)", success, output, args.verbose)
         print()
 
@@ -172,7 +184,7 @@ def main() -> int:
         print("Phase 2: Data Processing")
         print("-" * 30)
         for name, script, takes_date, timeout in PROCESSORS:
-            stage_args = ["--date", date_str] if takes_date else []
+            stage_args = ["--date", reporting_date] if takes_date else []
             start = time.time()
             success, output = run_script(script, stage_args, timeout)
             elapsed = time.time() - start
@@ -186,7 +198,7 @@ def main() -> int:
         print("Phase 3: Data Generation")
         print("-" * 30)
         for name, script, takes_date, timeout in GENERATORS:
-            stage_args = ["--date", date_str] if takes_date else []
+            stage_args = ["--date", reporting_date] if takes_date else []
             start = time.time()
             success, output = run_script(script, stage_args, timeout)
             elapsed = time.time() - start
@@ -200,19 +212,22 @@ def main() -> int:
     if collector_failures:
         print(
             f"Source health: {collector_total - collector_failures}/{collector_total} "
-            "collectors succeeded (see per-stage output above)."
+            "collectors succeeded (degraded availability is recorded in the "
+            "source health data)."
         )
 
-    if overall_success:
-        print(f"Pipeline completed successfully ✓  (snapshot {date_str})")
-        return 0
-
     # A collector failure is fatal only when every collector failed:
-    # partial availability is a designed, honest outcome.
+    # partial availability is a designed, honest outcome. The failed
+    # collector is surfaced in the source health data and the frontend
+    # shows a PARTIAL status instead of silently hiding the gap.
     if run_collect and collector_failures == collector_total and collector_total > 0:
         print("Pipeline failed: every collector failed; no usable data collected. ✗",
               file=sys.stderr)
         return 1
+
+    if overall_success:
+        print(f"Pipeline completed successfully ✓  (edition {reporting_date})")
+        return 0
 
     print("Pipeline completed with failures ✗", file=sys.stderr)
     return 1
