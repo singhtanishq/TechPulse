@@ -402,7 +402,7 @@ def save_output(
             existing_records = records_fingerprint(existing.get("vulnerabilities", []))
             if existing_records == new_records:
                 print(
-                    f"Records unchanged for {snapshot_date}; "
+                    f"Records unchanged for {reporting_date}; "
                     f"keeping existing file (idempotent skip)."
                 )
                 return output_path
@@ -413,6 +413,7 @@ def save_output(
         "meta": {
             "source": "NVD",
             "collectedAt": utc_now().isoformat(),
+            "reportingDate": reporting_date,
             "window": {
                 "start": format_nvd_datetime(start_date),
                 "end": format_nvd_datetime(end_date),
