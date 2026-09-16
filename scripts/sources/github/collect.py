@@ -329,7 +329,7 @@ def main() -> int:
     parser.add_argument(
         "--date",
         type=str,
-        help="Snapshot date label (YYYY-MM-DD, UTC). Default: previous completed UTC day.",
+        help="Reporting date label (YYYY-MM-DD, IST edition). Default: current reporting date.",
     )
     args = parser.parse_args()
 
@@ -340,7 +340,7 @@ def main() -> int:
         except ValueError:
             parser.error("--date must be in YYYY-MM-DD format.")
     else:
-        snapshot_date = default_snapshot_date()
+        snapshot_date = ist_today()
 
     token = get_token()
     auth_state = "authenticated" if token else "unauthenticated (60 req/hour limit)"
@@ -348,7 +348,7 @@ def main() -> int:
     print()
     print("TechPulse — GitHub Collector")
     print("=" * 32)
-    print(f"Snapshot date : {snapshot_date}")
+    print(f"Reporting date: {snapshot_date} (IST edition)")
     print(f"Auth          : {auth_state}")
     print()
 
@@ -359,13 +359,13 @@ def main() -> int:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
-    collected_at = utc_now().isoformat()
+    collected_at = datetime.now(timezone.utc).isoformat()
 
     repo_payload = {
         "meta": {
             "source": "GitHub",
             "collectedAt": collected_at,
-            "snapshotDate": snapshot_date,
+            "reportingDate": snapshot_date,
             "count": len(repos),
             "failures": failures,
         },
@@ -376,7 +376,7 @@ def main() -> int:
         "meta": {
             "source": "GitHub",
             "collectedAt": collected_at,
-            "snapshotDate": snapshot_date,
+            "reportingDate": snapshot_date,
             "count": len(releases),
             "failures": failures,
         },
