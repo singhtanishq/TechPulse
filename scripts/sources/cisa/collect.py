@@ -187,7 +187,7 @@ def records_fingerprint(vulnerabilities: list[dict[str, Any]]) -> str:
 
 
 def save_output(vulnerabilities: list[dict[str, Any]], snapshot_date: str) -> Path:
-    """Save the catalog snapshot idempotently for the target date."""
+    """Save the catalog snapshot idempotently for the reporting date."""
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -214,7 +214,7 @@ def save_output(vulnerabilities: list[dict[str, Any]], snapshot_date: str) -> Pa
         "meta": {
             "source": "CISA KEV",
             "collectedAt": utc_now().isoformat(),
-            "snapshotDate": snapshot_date,
+            "reportingDate": snapshot_date,
             "catalog": catalog_meta,
             "count": len(vulnerabilities),
         },
