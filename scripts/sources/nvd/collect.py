@@ -99,21 +99,6 @@ def format_nvd_datetime(value: datetime) -> str:
     )
 
 
-def parse_datetime(value: str) -> datetime:
-    """Parse an ISO-8601 datetime string into an aware UTC datetime."""
-    value = value.strip()
-
-    if value.endswith("Z"):
-        value = value[:-1] + "+00:00"
-
-    parsed = datetime.fromisoformat(value)
-
-    if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=timezone.utc)
-
-    return parsed.astimezone(timezone.utc)
-
-
 def get_description(cve: dict[str, Any]) -> str:
     """Extract the English CVE description when available."""
 
