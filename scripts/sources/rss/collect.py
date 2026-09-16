@@ -376,7 +376,7 @@ def main() -> int:
     parser.add_argument(
         "--date",
         type=str,
-        help="Snapshot date label (YYYY-MM-DD, UTC). Default: previous completed UTC day.",
+        help="Reporting date label (YYYY-MM-DD, IST edition). Default: current reporting date.",
     )
     args = parser.parse_args()
 
@@ -387,12 +387,12 @@ def main() -> int:
         except ValueError:
             parser.error("--date must be in YYYY-MM-DD format.")
     else:
-        snapshot_date = default_snapshot_date()
+        snapshot_date = ist_today()
 
     print()
     print("TechPulse — RSS/Atom Collector")
     print("=" * 32)
-    print(f"Snapshot date : {snapshot_date}")
+    print(f"Reporting date: {snapshot_date} (IST edition)")
     print()
 
     try:
