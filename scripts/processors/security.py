@@ -141,10 +141,12 @@ def process_security(start: datetime, end: datetime, covered_ist_day: str) -> di
     for vuln in nvd_vulns:
         vuln["known_exploited"] = vuln.get("id") in kev_ids
 
-    # Window filtering.
+    # Window filtering. CVEs match by lastModified instant (half-open
+    # UTC window); KEV additions match by dateAdded IST calendar day —
+    # date-only values are never reinterpreted as UTC instants.
     window_vulns = [v for v in nvd_vulns if in_window(v, start, end)]
     kev_in_window = sorted(
-        (v for v in kev_records if in_window(v, start, end, "date_added")),
+        (v for v in kev_records if in_ist_day(v.get("date_added"), covered_ist_day)),
         key=lambda v: (v.get("date_added") or "", v.get("cve_id") or ""),
         reverse=True,
     )
