@@ -4,7 +4,7 @@
 TechPulse — Technology Processor
 
 Normalizes RSS/Atom entries into the application-ready technology
-dataset for the snapshot window.
+dataset for the edition's reporting window.
 
 Output:
     data/normalized/tech.json
@@ -14,7 +14,7 @@ from __future__ import annotations
 
 import argparse
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -23,31 +23,37 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (
     DATA_DIR,
+    ist_day_window,
+    ist_date_of,
+    ist_today,
     latest_dated_file,
     load_json,
     parse_iso_datetime,
     save_json,
     derive_processed_at,
-    format_relative_date,
     status_from_counts,
-    utc_now,
 )
 
 TECH_DIR = DATA_DIR / "tech"
 NORMALIZED_DIR = DATA_DIR / "normalized"
 
 
-def resolve_window(start_arg: str | None, end_arg: str | None) -> tuple[datetime, datetime]:
-    end = parse_iso_datetime(end_arg) if end_arg else None
-    start = parse_iso_datetime(start_arg) if start_arg else None
+def resolve_window(
+    date_arg: str | None,
+    start_arg: str | None,
+    end_arg: str | None,
+) -> tuple[datetime, datetime, str]:
+    """Resolve (start, end, covered_ist_day) — see processors/utils.py."""
+    if start_arg and end_arg:
+        start = parse_iso_datetime(start_arg)
+        end = parse_iso_datetime(end_arg)
+        if start is None or end is None:
+            raise ValueError("Invalid --start/--end datetime.")
+        return start, end, ist_date_of(start)
 
-    if end is None:
-        day = (utc_now() - timedelta(days=1)).date()
-        end = datetime(day.year, day.month, day.day, tzinfo=timezone.utc) + timedelta(days=1) - timedelta(milliseconds=1)
-    if start is None:
-        start = end - timedelta(days=1) + timedelta(milliseconds=1)
-
-    return start, end
+    reporting_date = date_arg or ist_today()
+    start, end = ist_day_window(reporting_date)
+    return start, end, ist_date_of(start)
 
 
 def process_tech(start: datetime, end: datetime) -> dict[str, Any]:
