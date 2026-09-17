@@ -149,36 +149,26 @@ def process_tech(start: datetime, end: datetime, covered_ist_day: str) -> dict[s
 def main() -> int:
 
     parser = argparse.ArgumentParser(description="Process technology/RSS data.")
-    parser.add_argument("--date", help="Snapshot date (YYYY-MM-DD, UTC).")
-    parser.add_argument("--start", help="Window start (ISO 8601 UTC). Overrides --date.")
-    parser.add_argument("--end", help="Window end (ISO 8601 UTC). Overrides --date.")
+    parser.add_argument("--date", help="Reporting date (YYYY-MM-DD, IST edition).")
+    parser.add_argument("--start", help="Window start (ISO 8601). Overrides --date.")
+    parser.add_argument("--end", help="Window end (ISO 8601, exclusive). Overrides --date.")
     args = parser.parse_args()
-
-    if args.start and args.end:
-        start = parse_iso_datetime(args.start)
-        end = parse_iso_datetime(args.end)
-        if start is None or end is None:
-            parser.error("Invalid --start/--end datetime.")
-    else:
-        if args.date:
-            try:
-                day = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-            except ValueError:
-                parser.error("--date must be in YYYY-MM-DD format.")
-        else:
-            day = (utc_now() - timedelta(days=1)).date()
-            day = datetime(day.year, day.month, day.day, tzinfo=timezone.utc)
-        start = day
-        end = day + timedelta(days=1) - timedelta(milliseconds=1)
 
     print()
     print("TechPulse — Tech/RSS Processor")
     print("=" * 32)
-    print(f"Window: {start.isoformat()} -> {end.isoformat()}")
+
+    try:
+        start, end, covered_ist_day = resolve_window(args.date, args.start, args.end)
+    except ValueError as exc:
+        parser.error(str(exc))
+
+    print(f"Covered IST day: {covered_ist_day}")
+    print(f"Window: {start.isoformat()} -> {end.isoformat()} (end exclusive)")
     print()
 
     try:
-        result = process_tech(start, end)
+        result = process_tech(start, end, covered_ist_day)
         output_path = NORMALIZED_DIR / "tech.json"
         save_json(result, output_path)
     except Exception as exc:
