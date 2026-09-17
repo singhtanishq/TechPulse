@@ -56,18 +56,18 @@ def resolve_window(
     return start, end, ist_date_of(start)
 
 
-def process_tech(start: datetime, end: datetime) -> dict[str, Any]:
+def process_tech(start: datetime, end: datetime, covered_ist_day: str) -> dict[str, Any]:
     """Process technology/RSS data.
 
     Window policy (documented):
         RSS/Atom feeds are ephemeral — entries rotate out of a feed
-        within roughly 1-3 days, so items observed for a snapshot day
-        may carry publication timestamps slightly before that day.
-        The technology window therefore applies a 48-hour lookback
-        before the snapshot day start: an entry counts if it was
-        published no later than the end of the snapshot day and was
-        still observable at collection time. This is bounded (no
-        unbounded history) and deterministic per snapshot date.
+        within roughly 1-3 days, so items observed for the edition's
+        covered day may carry publication timestamps slightly before
+        that day. The technology window therefore applies a 48-hour
+        lookback before the window start: an entry counts if it was
+        published before the window end and was still observable at
+        collection time. This is bounded (no unbounded history) and
+        deterministic per reporting date.
     """
 
     tech_path = latest_dated_file(TECH_DIR)
