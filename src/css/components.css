@@ -2134,3 +2134,18 @@ button:focus-visible {
     }
 
 }
+
+
+/* =========================================================
+   TECH SUMMARY — layout stability
+   ========================================================= */
+
+.tech-item p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    overflow-wrap: anywhere;
+}
