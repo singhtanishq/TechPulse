@@ -230,21 +230,24 @@ def save_daily_snapshot(snapshot: dict[str, Any]) -> Path:
 def main() -> int:
 
     parser = argparse.ArgumentParser(description="Create the daily snapshot.")
-    parser.add_argument("--date", help="Snapshot date (YYYY-MM-DD, UTC).")
-    parser.add_argument("--start", help="Window start override (ISO 8601 UTC).")
-    parser.add_argument("--end", help="Window end override (ISO 8601 UTC).")
+    parser.add_argument("--date", help="Reporting date (YYYY-MM-DD, IST edition).")
+    parser.add_argument("--start", help="Window start override (ISO 8601).")
+    parser.add_argument("--end", help="Window end override (ISO 8601, exclusive).")
     args = parser.parse_args()
 
-    snapshot_date = resolve_snapshot_date(args.date)
+    reporting_date = resolve_snapshot_date(args.date)
     window_start, window_end = resolve_window(args.date, args.start, args.end)
+    covered_ist_day = ist_date_of(window_start)
 
     print()
     print("TechPulse — Daily Snapshot Processor")
     print("=" * 32)
+    print(f"Reporting date : {reporting_date} (IST edition)")
+    print(f"Covers IST day : {covered_ist_day}")
     print()
 
     try:
-        snapshot = process_daily(snapshot_date, window_start, window_end)
+        snapshot = process_daily(reporting_date, window_start, window_end)
         output_path = save_daily_snapshot(snapshot)
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
