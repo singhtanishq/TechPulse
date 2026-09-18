@@ -1,0 +1,290 @@
+{
+  "archive": [
+    {
+      "date": "2026-09-17",
+      "opensource": {
+        "topProjects": [
+          {
+            "collected_at": "2026-09-18T06:44:30.819299+00:00",
+            "created_at": "2013-05-24T16:15:54Z",
+            "daily_growth": null,
+            "default_branch": "main",
+            "description": "The library for web and native user interfaces.",
+            "forks": 51373,
+            "full_name": "react/react",
+            "growth_available": false,
+            "id": 10270250,
+            "language": "JavaScript",
+            "name": "react",
+            "open_issues": 1379,
+            "owner": "react",
+            "pushed_at": "2026-09-17T19:48:26Z",
+            "rank": 1,
+            "source": "GitHub",
+            "stars": 250550,
+            "updated_at": "2026-09-18T06:43:30Z",
+            "url": "https://github.com/react/react",
+            "watchers": 250550
+          },
+          {
+            "collected_at": "2026-09-18T06:44:54.483878+00:00",
+            "created_at": "2015-11-07T01:19:20Z",
+            "daily_growth": null,
+            "default_branch": "master",
+            "description": "An Open Source Machine Learning Framework for Everyone",
+            "forks": 76718,
+            "full_name": "tensorflow/tensorflow",
+            "growth_available": false,
+            "id": 45717250,
+            "language": "C++",
+            "name": "tensorflow",
+            "open_issues": 3169,
+            "owner": "tensorflow",
+            "pushed_at": "2026-09-18T06:27:07Z",
+            "rank": 2,
+            "source": "GitHub",
+            "stars": 200163,
+            "updated_at": "2026-09-18T06:32:51Z",
+            "url": "https://github.com/tensorflow/tensorflow",
+            "watchers": 200163
+          },
+          {
+            "collected_at": "2026-09-18T06:45:07.568666+00:00",
+            "created_at": "2016-10-05T23:32:51Z",
+            "daily_growth": null,
+            "default_branch": "canary",
+            "description": "The React Framework",
+            "forks": 32277,
+            "full_name": "vercel/next.js",
+            "growth_available": false,
+            "id": 70107786,
+            "language": "JavaScript",
+            "name": "next.js",
+            "open_issues": 3421,
+            "owner": "vercel",
+            "pushed_at": "2026-09-18T06:37:04Z",
+            "rank": 3,
+            "source": "GitHub",
+            "stars": 142333,
+            "updated_at": "2026-09-18T06:41:54Z",
+            "url": "https://github.com/vercel/next.js",
+            "watchers": 142333
+          },
+          {
+            "collected_at": "2026-09-18T06:44:52.280303+00:00",
+            "created_at": "2014-08-19T04:33:40Z",
+            "daily_growth": null,
+            "default_branch": "master",
+            "description": "The Go programming language",
+            "forks": 19747,
+            "full_name": "golang/go",
+            "growth_available": false,
+            "id": 23096959,
+            "language": "Go",
+            "name": "go",
+            "open_issues": 10163,
+            "owner": "golang",
+            "pushed_at": "2026-09-17T22:32:30Z",
+            "rank": 4,
+            "source": "GitHub",
+            "stars": 138870,
+            "updated_at": "2026-09-18T06:29:10Z",
+            "url": "https://github.com/golang/go",
+            "watchers": 138870
+          },
+          {
+            "collected_at": "2026-09-18T06:45:00.519416+00:00",
+            "created_at": "2014-06-06T22:56:04Z",
+            "daily_growth": null,
+            "default_branch": "master",
+            "description": "Production-Grade Container Scheduling and Management",
+            "forks": 44468,
+            "full_name": "kubernetes/kubernetes",
+            "growth_available": false,
+            "id": 20580498,
+            "language": "Go",
+            "name": "kubernetes",
+            "open_issues": 3055,
+            "owner": "kubernetes",
+            "pushed_at": "2026-09-18T01:27:20Z",
+            "rank": 5,
+            "source": "GitHub",
+            "stars": 127801,
+            "updated_at": "2026-09-18T05:11:45Z",
+            "url": "https://github.com/kubernetes/kubernetes",
+            "watchers": 127801
+          },
+          {
+            "collected_at": "2026-09-18T06:44:36.419507+00:00",
+            "created_at": "2014-11-26T19:57:11Z",
+            "daily_growth": null,
+            "default_branch": "main",
+            "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+            "forks": 37149,
+            "full_name": "nodejs/node",
+            "growth_available": false,
+            "id": 27193779,
+            "language": "JavaScript",
+            "name": "node",
+            "open_issues": 1187,
+            "owner": "nodejs",
+            "pushed_at": "2026-09-18T05:37:41Z",
+            "rank": 6,
+            "source": "GitHub",
+            "stars": 121983,
+            "updated_at": "2026-09-18T05:37:50Z",
+            "url": "https://github.com/nodejs/node",
+            "watchers": 121983
+          },
+          {
+            "collected_at": "2026-09-18T06:44:49.528474+00:00",
+            "created_at": "2010-06-16T20:39:03Z",
+            "daily_growth": null,
+            "default_branch": "main",
+            "description": "Empowering everyone to build reliable and efficient software.",
+            "forks": 15942,
+            "full_name": "rust-lang/rust",
+            "growth_available": false,
+            "id": 724712,
+            "language": "Rust",
+            "name": "rust",
+            "open_issues": 12614,
+            "owner": "rust-lang",
+            "pushed_at": "2026-09-18T06:40:38Z",
+            "rank": 7,
+            "source": "GitHub",
+            "stars": 118921,
+            "updated_at": "2026-09-18T06:32:27Z",
+            "url": "https://github.com/rust-lang/rust",
+            "watchers": 118921
+          },
+          {
+            "collected_at": "2026-09-18T06:45:17.482076+00:00",
+            "created_at": "2019-10-12T05:56:49Z",
+            "daily_growth": null,
+            "default_branch": "master",
+            "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+            "forks": 14177,
+            "full_name": "supabase/supabase",
+            "growth_available": false,
+            "id": 214587193,
+            "language": "TypeScript",
+            "name": "supabase",
+            "open_issues": 1136,
+            "owner": "supabase",
+            "pushed_at": "2026-09-18T06:40:50Z",
+            "rank": 8,
+            "source": "GitHub",
+            "stars": 109935,
+            "updated_at": "2026-09-18T06:38:35Z",
+            "url": "https://github.com/supabase/supabase",
+            "watchers": 109935
+          },
+          {
+            "collected_at": "2026-09-18T06:44:56.958844+00:00",
+            "created_at": "2016-08-13T05:26:41Z",
+            "daily_growth": null,
+            "default_branch": "main",
+            "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+            "forks": 29662,
+            "full_name": "pytorch/pytorch",
+            "growth_available": false,
+            "id": 65600975,
+            "language": "Python",
+            "name": "pytorch",
+            "open_issues": 17598,
+            "owner": "pytorch",
+            "pushed_at": "2026-09-18T06:41:43Z",
+            "rank": 9,
+            "source": "GitHub",
+            "stars": 103079,
+            "updated_at": "2026-09-18T06:38:37Z",
+            "url": "https://github.com/pytorch/pytorch",
+            "watchers": 103079
+          },
+          {
+            "collected_at": "2026-09-18T06:45:09.991932+00:00",
+            "created_at": "2017-10-06T14:59:14Z",
+            "daily_growth": null,
+            "default_branch": "main",
+            "description": "A utility-first CSS framework for rapid UI development.",
+            "forks": 5969,
+            "full_name": "tailwindlabs/tailwindcss",
+            "growth_available": false,
+            "id": 106017343,
+            "language": "TypeScript",
+            "name": "tailwindcss",
+            "open_issues": 71,
+            "owner": "tailwindlabs",
+            "pushed_at": "2026-09-08T17:15:40Z",
+            "rank": 10,
+            "source": "GitHub",
+            "stars": 97599,
+            "updated_at": "2026-09-18T05:46:01Z",
+            "url": "https://github.com/tailwindlabs/tailwindcss",
+            "watchers": 97599
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 1,
+          "other": 0,
+          "patch": 1
+        },
+        "count": 2
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 195,
+          "HIGH": 845,
+          "LOW": 84,
+          "MEDIUM": 495,
+          "NONE": 2,
+          "UNKNOWN": 673
+        }
+      },
+      "snapshot": {
+        "cves": 2294,
+        "knownExploited": 2,
+        "projects": 20,
+        "releases": 2,
+        "techEntries": 16
+      },
+      "sources": {
+        "cisa": {
+          "inWindow": 2,
+          "status": "success",
+          "total": 1713
+        },
+        "github": {
+          "inWindow": 2,
+          "status": "success",
+          "total": 0
+        },
+        "nvd": {
+          "inWindow": 2294,
+          "status": "success",
+          "total": 2294
+        },
+        "rss": {
+          "inWindow": 16,
+          "status": "success",
+          "total": 230
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 8,
+          "tech": 8
+        },
+        "count": 10
+      }
+    }
+  ],
+  "meta": {
+    "generatedAt": "2026-09-18T06:48:09.373525+00:00",
+    "totalSnapshots": 1
+  }
+}
