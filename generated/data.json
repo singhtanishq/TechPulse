@@ -1,18 +1,18 @@
 {
   "history": [
     {
-      "cves": 2294,
+      "cves": 2172,
       "date": "2026-09-17",
-      "knownExploited": 2,
+      "knownExploited": 1,
       "projects": 20,
-      "releases": 2,
+      "releases": 1,
       "techEntries": 16
     }
   ],
   "meta": {
     "date": "2026-09-18",
     "daysObserved": 1,
-    "generatedAt": "2026-09-18T06:47:43.040581+00:00",
+    "generatedAt": "2026-09-18T06:48:50.887114+00:00",
     "snapshots": 1
   },
   "openSource": [
@@ -119,13 +119,6 @@
   ],
   "releases": [
     {
-      "date": "Today",
-      "project": "openai-python",
-      "repository": "openai/openai-python",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.15.0",
-      "version": "v3.15.0"
-    },
-    {
       "date": "Yesterday",
       "project": "core",
       "repository": "vuejs/core",
@@ -134,129 +127,129 @@
     }
   ],
   "security": {
-    "critical": 195,
-    "high": 845,
+    "critical": 176,
+    "high": 798,
     "latest": [
       {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "id": "CVE-2026-93485",
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-93436",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
+        "modified": "Yesterday",
+        "published": "Yesterday",
         "severity": "HIGH",
-        "title": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Automattic WordPre...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93485"
+        "title": "vLLM through 0.29.0 fails to properly clean up decode-side metadata for rejected inference requests in prefill/decode di...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93436"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-90984",
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-93435",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The Generate PDF using Contact Form 7 WordPress plugin before 4.2.2 does not restrict the destination of the image fetch...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90984"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "title": "redis-parser through 3.0.0 contains a denial of service vulnerability in the RESP protocol parser that allows malicious ...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93435"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-90978",
+        "cvss_score": 9.6,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-87701",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The Filter Gallery WordPress plugin before 1.1.5 does not verify the nonce on several of its AJAX handlers when the nonc...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90978"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "Improper neutralization of special elements in output used by a downstream component ('injection') in Azure Cosmos DB al...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87701"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-89008",
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-85917",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The Bookit — Booking & Appointment Calendar WordPress plugin before 2.6.0.5 does not perform an authorization check on o...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89008"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "title": "Server-side request forgery (ssrf) in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a netw...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85917"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-89007",
+        "cvss_score": 10.0,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-85889",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The Bookit — Booking & Appointment Calendar WordPress plugin before 2.6.0.5 does not perform a capability check in one o...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89007"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "Missing authentication for critical function in Azure AI Foundry allows an unauthorized attacker to elevate privileges o...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85889"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-88993",
+        "cvss_score": 9.9,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-85885",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The All Bootstrap Blocks WordPress plugin through 1.3.31 does not properly escape a block attribute before outputting it...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88993"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "Improper neutralization of special elements used in a command ('command injection') in M365 Copilot allows an authorized...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85885"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-88844",
+        "cvss_score": 10.0,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-83944",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The MasterStudy LMS WordPress Plugin  WordPress plugin before 3.7.50 does not verify that the requesting user owns the c...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88844"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "Improper access control in Azure Logic Apps allows an unauthorized attacker to elevate privileges over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83944"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-88825",
+        "cvss_score": 7.4,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-78501",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The iGMS Direct Booking WordPress plugin before 2.0 does not authorise or escape its widget appearance settings, allowin...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88825"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "title": "Improper neutralization of special elements used in a command ('command injection') in Microsoft 365 Copilot's Business ...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78501"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-88798",
+        "cvss_score": 9.0,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-77903",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The Really Simple Security  WordPress plugin before 9.8.3 does not validate a client-supplied address value before using...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88798"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "Authentication bypass by spoofing in Microsoft Dataverse allows an unauthorized attacker to elevate privileges over a ne...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77903"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "id": "CVE-2026-87966",
+        "cvss_score": 10.0,
+        "cvss_version": "3.1",
+        "id": "CVE-2026-70200",
         "known_exploited": false,
-        "modified": "Today",
-        "published": "Today",
-        "severity": null,
-        "title": "The Easy Appointments WordPress plugin before 4.0.2.2 does not perform an ownership or authorization check on its unauth...",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87966"
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "Improper limitation of a pathname to a restricted directory ('path traversal') in Azure Logic Apps allows an unauthorize...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70200"
       }
     ],
-    "low": 84,
-    "medium": 495,
-    "unknown": 673
+    "low": 77,
+    "medium": 474,
+    "unknown": 645
   },
   "snapshot": {
-    "cves": 2294,
-    "knownExploited": 2,
+    "cves": 2172,
+    "knownExploited": 1,
     "projects": 20,
-    "releases": 2,
+    "releases": 1,
     "techEntries": 16
   },
   "sources": {
@@ -268,7 +261,7 @@
     },
     "releases": {
       "github": {
-        "inWindow": 2,
+        "inWindow": 1,
         "status": "success",
         "totalReleases": 60,
         "totalRepos": 20
@@ -276,12 +269,12 @@
     },
     "security": {
       "cisa": {
-        "inWindow": 2,
+        "inWindow": 1,
         "status": "success",
         "total": 1713
       },
       "nvd": {
-        "inWindow": 2294,
+        "inWindow": 2172,
         "status": "success",
         "total": 2294
       }
@@ -295,14 +288,6 @@
     }
   },
   "technology": [
-    {
-      "category": "security",
-      "date": "Today",
-      "source": "The Register",
-      "summary": "Think tank points out that companies banned by Washington will help run the regime that Uncle Sam now controls",
-      "title": "USA’s Venezuela takeover comes with bonus exposure to Chinese AI surveillance tech",
-      "url": "https://www.theregister.com/security/2026/09/18/usas-venezuela-takeover-comes-with-bonus-exposure-to-chinese-ai-surveillance-tech/5297357"
-    },
     {
       "category": "security",
       "date": "Yesterday",
@@ -374,6 +359,14 @@
       "summary": "Editor's note: Lucius AI, a tender-intelligence startup covering markets across five continents, runs its entire data platform on AlloyDB for PostgreSQL with a single operator. By migrating semantic search to a ScaNN index and managing database operations through Model Context Protocol (MCP), query ...",
       "title": "How a solo founder runs a five-continent tender platform on AlloyDB and MCP",
       "url": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "September 14 - September 17\n\nManaged Service for Apache Kafka supports clusters with public Internet access!With Managed Kafka public clusters, you can now produce and consume messages from clients outside your VPC—including your local machine, for faster, frictionless testing. Public clusters unloc...",
+      "title": "What’s new with Google Data Cloud",
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
     }
   ]
 }
