@@ -306,27 +306,6 @@
     },
     {
       "cvss": {
-        "score": 8.7,
-        "severity": "HIGH",
-        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-        "version": "4.0"
-      },
-      "description": "Frappe Learning Management System (LMS) is a learning system that helps users structure their content. Prior to version 2.52.1, a remote attacker can request a traversal path handled by SCORMRenderer.render in lms/page_renderers.py. The renderer constructs and opens a server-side path without first confirming that its real path remains within public/scorm, allowing files outside the SCORM directory to be read when they are accessible to the server process. This issue is fixed in version 2.52.1.",
-      "id": "CVE-2026-54343",
-      "known_exploited": false,
-      "lastModified": "2026-09-17T22:17:00.390",
-      "published": "2026-09-17T22:17:00.390",
-      "references": [
-        "https://github.com/frappe/lms/commit/e1b425ed5bf0fc9c373efc1ba235c7c70e23d465",
-        "https://github.com/frappe/lms/pull/2299",
-        "https://github.com/frappe/lms/releases/tag/v2.52.1",
-        "https://github.com/frappe/lms/security/advisories/GHSA-3mq2-3c8v-m92j"
-      ],
-      "severity": "HIGH",
-      "source": "NVD"
-    },
-    {
-      "cvss": {
         "score": 7.7,
         "severity": "HIGH",
         "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -389,10 +368,21 @@
       ],
       "severity": "MEDIUM",
       "source": "NVD"
+    },
+    {
+      "cvss": null,
+      "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "id": "CVE-2026-11432",
+      "known_exploited": false,
+      "lastModified": "2026-09-17T22:16:58.490",
+      "published": "2026-09-17T22:16:58.490",
+      "references": [],
+      "severity": null,
+      "source": "NVD"
     }
   ],
   "meta": {
-    "processedAt": "2026-09-18T20:45:24.306140+00:00",
+    "processedAt": "2026-09-18T21:21:13.209352+00:00",
     "sourceFiles": {
       "cisa": "2026-09-17.json",
       "nvd": "2026-09-17.json"
@@ -406,9 +396,9 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1675,
+        "inWindow": 1670,
         "status": "success",
-        "total": 1675
+        "total": 1670
       }
     },
     "window": {
@@ -421,13 +411,13 @@
     "kevCatalogTotal": 1716,
     "knownExploited": 2,
     "severity": {
-      "CRITICAL": 136,
-      "HIGH": 675,
-      "LOW": 49,
-      "MEDIUM": 356,
+      "CRITICAL": 135,
+      "HIGH": 674,
+      "LOW": 48,
+      "MEDIUM": 355,
       "NONE": 2,
-      "UNSCORED": 457
+      "UNSCORED": 456
     },
-    "total": 1675
+    "total": 1670
   }
 }
