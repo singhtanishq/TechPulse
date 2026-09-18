@@ -365,16 +365,22 @@ def check_generated_data() -> None:
 def check_raw_data() -> None:
     section("8. Raw data sanity")
 
+    # directory, list key, id extractor, id pattern
     raw_specs = [
-        (PROJECT_ROOT / "data" / "security" / "nvd", "vulnerabilities", "id", r"^CVE-\d{4}-\d{4,}$"),
-        (PROJECT_ROOT / "data" / "security" / "cisa", "vulnerabilities", "cve_id", r"^CVE-\d{4}-\d{4,}$"),
-        (PROJECT_ROOT / "data" / "releases", "releases", "repository", None),
-        (PROJECT_ROOT / "data" / "opensource", "repositories", "full_name", None),
-        (PROJECT_ROOT / "data" / "tech", "entries", "guid", None),
+        (PROJECT_ROOT / "data" / "security" / "nvd", "vulnerabilities",
+         lambda r: r.get("id"), r"^CVE-\d{4}-\d{4,}$"),
+        (PROJECT_ROOT / "data" / "security" / "cisa", "vulnerabilities",
+         lambda r: r.get("cve_id"), r"^CVE-\d{4}-\d{4,}$"),
+        (PROJECT_ROOT / "data" / "releases", "releases",
+         lambda r: f"{r.get('repository')}@{r.get('version')}", None),
+        (PROJECT_ROOT / "data" / "opensource", "repositories",
+         lambda r: r.get("full_name"), None),
+        (PROJECT_ROOT / "data" / "tech", "entries",
+         lambda r: r.get("guid") or r.get("url"), None),
     ]
 
     checked_any = False
-    for directory, list_key, id_key, id_pattern in raw_specs:
+    for directory, list_key, id_of, id_pattern in raw_specs:
         if not directory.exists():
             continue
         files = sorted(directory.glob("*.json"))
@@ -382,8 +388,8 @@ def check_raw_data() -> None:
             continue
         checked_any = True
         problems = 0
-        seen: set = set()
-        duplicates = 0
+        duplicates_total = 0
+        unique_total: set = set()
         for path in files:
             try:
                 data = json.loads(path.read_text(encoding="utf-8"))
@@ -395,11 +401,12 @@ def check_raw_data() -> None:
             count = (data.get("meta") or {}).get("count")
             if isinstance(count, int) and count != len(records):
                 warn(f"{path.name}: meta.count ({count}) != record count ({len(records)})")
+            seen: set = set()
             for record in records:
                 if not isinstance(record, dict):
                     problems += 1
                     continue
-                record_id = record.get(id_key)
+                record_id = id_of(record)
                 if record_id is None:
                     problems += 1
                     continue
@@ -407,14 +414,15 @@ def check_raw_data() -> None:
                     fail(f"{path.name}: malformed id '{record_id}'")
                     problems += 1
                 if record_id in seen:
-                    duplicates += 1
+                    duplicates_total += 1
                 seen.add(record_id)
+                unique_total.add(record_id)
         label = directory.relative_to(PROJECT_ROOT)
-        dup_note = f", {duplicates} duplicate ids" if duplicates else ""
-        print(f"  {label}: {len(files)} file(s), {len(seen)} unique records, "
+        dup_note = f", {duplicates_total} duplicate ids" if duplicates_total else ""
+        print(f"  {label}: {len(files)} file(s), {len(unique_total)} unique records, "
               f"{problems} problems{dup_note}")
-        if duplicates:
-            warn(f"{label}: duplicate ids present")
+        if duplicates_total:
+            warn(f"{label}: duplicate ids within a file")
 
     if not checked_any:
         print("  No raw data collected yet (this is fine before first run)")
