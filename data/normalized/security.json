@@ -394,7 +394,7 @@
   "meta": {
     "processedAt": "2026-09-18T20:45:24.306140+00:00",
     "sourceFiles": {
-      "cisa": "2026-09-18.json",
+      "cisa": "2026-09-17.json",
       "nvd": "2026-09-17.json"
     },
     "sources": {
@@ -402,7 +402,7 @@
         "failures": 0,
         "inWindow": 0,
         "status": "partial",
-        "total": 1713
+        "total": 1716
       },
       "nvd": {
         "failures": 0,
@@ -418,7 +418,7 @@
   },
   "summary": {
     "kevAddedInWindow": 0,
-    "kevCatalogTotal": 1713,
+    "kevCatalogTotal": 1716,
     "knownExploited": 2,
     "severity": {
       "CRITICAL": 136,

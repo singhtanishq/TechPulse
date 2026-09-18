@@ -88,7 +88,7 @@
           "failures": 0,
           "inWindow": 0,
           "status": "partial",
-          "total": 1713
+          "total": 1716
         },
         "github_releases": {
           "failures": 14,
@@ -112,13 +112,13 @@
           "failures": 0,
           "inWindow": 16,
           "status": "success",
-          "total": 230
+          "total": 229
         }
       },
       "technology": {
         "categories": {
-          "security": 7,
-          "tech": 9
+          "security": 8,
+          "tech": 8
         },
         "recent": [
           {
@@ -176,17 +176,17 @@
             "url": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/"
           },
           {
-            "published_at": "2026-09-17T16:00:00+00:00",
-            "source": "Google Cloud",
-            "title": "What’s new with Google Data Cloud",
-            "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+            "published_at": "2026-09-17T15:30:00+00:00",
+            "source": "The Register",
+            "title": "London property manager breach may have exposed bank details and lockbox codes",
+            "url": "https://www.theregister.com/security/2026/09/17/london-property-manager-breach-may-have-exposed-bank-details-and-lockbox-codes/5297232"
           }
         ]
       }
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-18T20:40:38.522225+00:00",
+    "generatedAt": "2026-09-18T20:45:24.306140+00:00",
     "totalSnapshots": 1
   }
 }
