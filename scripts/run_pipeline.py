@@ -3,10 +3,22 @@
 """
 TechPulse — Pipeline Runner
 
-Executes the complete data collection and generation pipeline.
+Executes the complete data pipeline for one snapshot date:
+collect -> process -> generate -> validate.
 
 Usage:
-    python3 scripts/run_pipeline.py [--date YYYY-MM-DD] [--skip-collect] [--skip-process] [--skip-generate]
+    python3 scripts/run_pipeline.py [--date YYYY-MM-DD] [--skip-collect]
+        [--skip-process] [--skip-generate] [--only collect|process|generate]
+
+Exit codes:
+    0 — pipeline completed (partial source failures are reported in
+        logs and the source health data, but do not fail the run)
+    1 — fatal: invalid arguments, a processing/generation stage failed,
+        or every collector failed (no usable data at all)
+
+Snapshot semantics:
+    Default snapshot date is the previous completed UTC day, matching
+    scripts/config/snapshot.json.
 """
 
 from __future__ import annotations
@@ -17,29 +29,29 @@ import sys
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
+# (name, script, accepts --date flag, timeout seconds)
 COLLECTORS = [
-    ("NVD", "scripts/sources/nvd/collect.py", True, 300),      # supports window args - 5 min timeout
-    ("CISA KEV", "scripts/sources/cisa/collect.py", False, 60), # no args
-    ("GitHub", "scripts/sources/github/collect.py", False, 600),  # no args (uses config) - 10 min timeout
-    ("RSS/Atom", "scripts/sources/rss/collect.py", False, 300),  # no args (uses config)
+    ("NVD", "scripts/sources/nvd/collect.py", True, 600),
+    ("CISA KEV", "scripts/sources/cisa/collect.py", True, 120),
+    ("GitHub", "scripts/sources/github/collect.py", True, 600),
+    ("RSS/Atom", "scripts/sources/rss/collect.py", True, 300),
 ]
 
 PROCESSORS = [
-    ("Security", "scripts/processors/security.py", True),
-    ("Releases", "scripts/processors/releases.py", True),
-    ("Open Source", "scripts/processors/opensource.py", True),
-    ("Technology", "scripts/processors/tech.py", True),
-    ("Daily Snapshot", "scripts/processors/daily.py", False), # uses --date
-    ("History", "scripts/processors/history.py", False),      # no args
+    ("Security", "scripts/processors/security.py", True, 60),
+    ("Releases", "scripts/processors/releases.py", True, 60),
+    ("Open Source", "scripts/processors/opensource.py", True, 60),
+    ("Technology", "scripts/processors/tech.py", True, 60),
+    ("Daily Snapshot", "scripts/processors/daily.py", True, 60),
+    ("History", "scripts/processors/history.py", False, 60),
 ]
 
 GENERATORS = [
-    ("Site Data", "scripts/generators/site_data.py", False),
-    ("Archive", "scripts/generators/archive.py", False),
+    ("Site Data", "scripts/generators/site_data.py", True, 60),
+    ("Archive", "scripts/generators/archive.py", False, 60),
 ]
 
 
@@ -47,11 +59,15 @@ def utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def run_script(script_path: str, args: list[str] = None, timeout: int = 300) -> tuple[bool, str]:
-    """Run a Python script and return (success, output)."""
-    cmd = [sys.executable, script_path]
-    if args:
-        cmd.extend(args)
+def default_snapshot_date() -> datetime:
+    day = (utc_now() - timedelta(days=1)).date()
+    return datetime(day.year, day.month, day.day, tzinfo=timezone.utc)
+
+
+def run_script(script: str, args: list[str], timeout: int) -> tuple[bool, str]:
+    """Run one pipeline script. Returns (success, combined output)."""
+
+    cmd = [sys.executable, script, *args]
 
     try:
         result = subprocess.run(
@@ -61,117 +77,145 @@ def run_script(script_path: str, args: list[str] = None, timeout: int = 300) -> 
             text=True,
             timeout=timeout,
         )
-        output = result.stdout
+        output = result.stdout or ""
         if result.stderr:
-            output += "\n" + result.stderr
+            output += ("\n" if output else "") + result.stderr
         return result.returncode == 0, output
     except subprocess.TimeoutExpired:
-        return False, f"TIMEOUT: {script_path} exceeded {timeout} seconds"
+        return False, f"TIMEOUT: {script} exceeded {timeout}s"
     except Exception as exc:
         return False, f"ERROR: {exc}"
 
 
-def print_stage(name: str, success: bool, output: str = "") -> None:
-    """Print stage result."""
-    status = "✓" if success else "✗"
-    print(f"  [{status}] {name}")
-    if output and not success:
-        for line in output.strip().split("\n")[-5:]:  # Last 5 lines
-            print(f"      {line}")
+def print_stage(name: str, success: bool, output: str, verbose: bool) -> bool:
+    """Print a stage result line. Returns True when output warrants attention."""
+    marker = "✓" if success else "✗"
+    print(f"  [{marker}] {name}")
+    interesting = []
+    for line in output.splitlines():
+        lowered = line.lower()
+        if (
+            not success
+            or lowered.startswith(("error", "warning", "failures", "timeout"))
+            or "error:" in lowered
+            or "warning:" in lowered
+        ):
+            interesting.append(line)
+    for line in interesting[:6]:
+        print(f"      {line}")
+    if verbose and output:
+        for line in output.splitlines():
+            print(f"      | {line}")
+    return bool(interesting)
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run TechPulse data pipeline.")
-    parser.add_argument("--date", help="Snapshot date (YYYY-MM-DD), defaults to previous UTC day")
-    parser.add_argument("--skip-collect", action="store_true", help="Skip source collection")
-    parser.add_argument("--skip-process", action="store_true", help="Skip data processing")
-    parser.add_argument("--skip-generate", action="store_true", help="Skip data generation")
-    parser.add_argument("--only", choices=["collect", "process", "generate"], help="Run only one phase")
+
+    parser = argparse.ArgumentParser(description="Run the TechPulse data pipeline.")
+    parser.add_argument(
+        "--date",
+        help="Snapshot date (YYYY-MM-DD, UTC). Default: previous completed UTC day.",
+    )
+    parser.add_argument("--skip-collect", action="store_true", help="Skip source collection.")
+    parser.add_argument("--skip-process", action="store_true", help="Skip processing.")
+    parser.add_argument("--skip-generate", action="store_true", help="Skip generation.")
+    parser.add_argument(
+        "--only",
+        choices=["collect", "process", "generate"],
+        help="Run only one phase.",
+    )
+    parser.add_argument("-v", "--verbose", action="store_true", help="Print all stage output.")
     args = parser.parse_args()
 
-    # Determine snapshot date
     if args.date:
         try:
             snapshot_date = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
         except ValueError:
-            print(f"ERROR: Invalid date format: {args.date}. Use YYYY-MM-DD")
+            print(f"ERROR: Invalid date '{args.date}'. Use YYYY-MM-DD.", file=sys.stderr)
             return 1
     else:
-        snapshot_date = utc_now() - timedelta(days=1)
-        snapshot_date = snapshot_date.replace(hour=0, minute=0, second=0, microsecond=0)
+        snapshot_date = default_snapshot_date()
 
-    window_start = snapshot_date.isoformat()
-    window_end = (snapshot_date + timedelta(days=1) - timedelta(seconds=1)).isoformat()
-
-    processor_args = ["--start", window_start, "--end", window_end]
-    daily_args = ["--date", snapshot_date.date().isoformat()]
+    date_str = snapshot_date.date().isoformat()
 
     print()
     print("TechPulse — Pipeline Runner")
     print("=" * 50)
-    print(f"Snapshot date: {snapshot_date.date().isoformat()}")
-    print(f"Window: {window_start} to {window_end}")
+    print(f"Snapshot date : {date_str} (UTC calendar day)")
     print()
 
     overall_success = True
+    collector_failures = 0
+    collector_total = 0
+    run_collect = not args.skip_collect and args.only in (None, "collect")
+    run_process = not args.skip_process and args.only in (None, "process")
+    run_generate = not args.skip_generate and args.only in (None, "generate")
 
-    # Phase 1: Collect
-    if not args.skip_collect and args.only != "process" and args.only != "generate":
+    # Phase 1: Collect --------------------------------------------------
+    if run_collect:
         print("Phase 1: Source Collection")
         print("-" * 30)
-        for name, script, uses_window, timeout in COLLECTORS:
+        for name, script, takes_date, timeout in COLLECTORS:
+            stage_args = ["--date", date_str] if takes_date else []
             start = time.time()
-            if uses_window:
-                success, output = run_script(script, processor_args, timeout)
-            else:
-                success, output = run_script(script, timeout=timeout)
+            success, output = run_script(script, stage_args, timeout)
             elapsed = time.time() - start
-            print_stage(f"{name} ({elapsed:.1f}s)", success, output)
+            collector_total += 1
             if not success:
+                collector_failures += 1
                 overall_success = False
+            print_stage(f"{name} ({elapsed:.1f}s)", success, output, args.verbose)
         print()
 
-    # Phase 2: Process
-    if not args.skip_process and args.only != "collect" and args.only != "generate":
+    # Phase 2: Process --------------------------------------------------
+    if run_process:
         print("Phase 2: Data Processing")
         print("-" * 30)
-        for name, script, uses_window in PROCESSORS:
+        for name, script, takes_date, timeout in PROCESSORS:
+            stage_args = ["--date", date_str] if takes_date else []
             start = time.time()
-            if name == "Daily Snapshot":
-                success, output = run_script(script, daily_args)
-            elif name == "History":
-                success, output = run_script(script)
-            elif uses_window:
-                success, output = run_script(script, processor_args)
-            else:
-                success, output = run_script(script)
+            success, output = run_script(script, stage_args, timeout)
             elapsed = time.time() - start
-            print_stage(f"{name} ({elapsed:.1f}s)", success, output)
             if not success:
                 overall_success = False
+            print_stage(f"{name} ({elapsed:.1f}s)", success, output, args.verbose)
         print()
 
-    # Phase 3: Generate
-    if not args.skip_generate and args.only != "collect" and args.only != "process":
+    # Phase 3: Generate -------------------------------------------------
+    if run_generate:
         print("Phase 3: Data Generation")
         print("-" * 30)
-        for name, script, uses_window in GENERATORS:
+        for name, script, takes_date, timeout in GENERATORS:
+            stage_args = ["--date", date_str] if takes_date else []
             start = time.time()
-            success, output = run_script(script)
+            success, output = run_script(script, stage_args, timeout)
             elapsed = time.time() - start
-            print_stage(f"{name} ({elapsed:.1f}s)", success, output)
             if not success:
                 overall_success = False
+            print_stage(f"{name} ({elapsed:.1f}s)", success, output, args.verbose)
         print()
 
-    # Summary
+    # Summary -----------------------------------------------------------
     print("=" * 50)
+    if collector_failures:
+        print(
+            f"Source health: {collector_total - collector_failures}/{collector_total} "
+            "collectors succeeded (see per-stage output above)."
+        )
+
     if overall_success:
-        print("Pipeline completed successfully ✓")
+        print(f"Pipeline completed successfully ✓  (snapshot {date_str})")
         return 0
-    else:
-        print("Pipeline completed with errors ✗")
+
+    # A collector failure is fatal only when every collector failed:
+    # partial availability is a designed, honest outcome.
+    if run_collect and collector_failures == collector_total and collector_total > 0:
+        print("Pipeline failed: every collector failed; no usable data collected. ✗",
+              file=sys.stderr)
         return 1
+
+    print("Pipeline completed with failures ✗", file=sys.stderr)
+    return 1
 
 
 if __name__ == "__main__":
