@@ -73,13 +73,15 @@ def snapshot_fingerprint(snapshot: dict[str, Any]) -> str:
 
 
 def process_daily(
-    snapshot_date: datetime,
+    reporting_date: str,
     window_start: datetime,
     window_end: datetime,
 ) -> dict[str, Any]:
     """Create the daily snapshot from normalized datasets."""
 
-    print(f"Creating daily snapshot for {snapshot_date.date().isoformat()}...")
+    covered_ist_day = ist_date_of(window_start)
+
+    print(f"Creating daily snapshot for {reporting_date}...")
 
     security = load_json(NORMALIZED_DIR / "security.json")
     releases = load_json(NORMALIZED_DIR / "releases.json")
