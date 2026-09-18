@@ -173,6 +173,16 @@ def normalize_cve(vulnerability: dict[str, Any]) -> dict[str, Any] | None:
 
     cvss = extract_cvss(cve)
 
+    # NVD responses can contain the same reference URL twice;
+    # deduplicate while preserving first-seen order.
+    references: list[str] = []
+    seen_refs: set[str] = set()
+    for ref in cve.get("references", []):
+        url = ref.get("url")
+        if url and url not in seen_refs:
+            seen_refs.add(url)
+            references.append(url)
+
     return {
         "id": cve_id,
         "source": "NVD",
@@ -181,11 +191,7 @@ def normalize_cve(vulnerability: dict[str, Any]) -> dict[str, Any] | None:
         "description": get_description(cve),
         "severity": cvss.get("severity") if cvss else None,
         "cvss": cvss,
-        "references": [
-            ref.get("url")
-            for ref in cve.get("references", [])
-            if ref.get("url")
-        ],
+        "references": references,
     }
 
 
