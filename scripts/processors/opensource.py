@@ -21,7 +21,6 @@ from __future__ import annotations
 
 import argparse
 import sys
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -30,12 +29,13 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (
     DATA_DIR,
+    ist_today,
     latest_dated_file,
     load_json,
     save_json,
     derive_processed_at,
     status_from_counts,
-    utc_now,
+    parse_ist_date,
 )
 
 REPO_META_DIR = DATA_DIR / "opensource"
@@ -45,12 +45,11 @@ NORMALIZED_DIR = DATA_DIR / "normalized"
 def resolve_snapshot_date(date_arg: str | None) -> str:
     if date_arg:
         try:
-            datetime.strptime(date_arg, "%Y-%m-%d")
+            parse_ist_date(date_arg)
             return date_arg
         except ValueError:
             raise SystemExit("--date must be in YYYY-MM-DD format.")
-    day = (utc_now() - timedelta(days=1)).date()
-    return day.isoformat()
+    return ist_today()
 
 
 def previous_observation_stars() -> dict[str, int]:
