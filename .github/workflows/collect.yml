@@ -109,7 +109,26 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "TechPulse: daily snapshot ${{ steps.date.outputs.date }}"
-          git push
+          # Rebase onto any commits that landed while this run was
+          # collecting (e.g. a concurrent trigger), then push.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt); rebasing onto latest origin/main..."
+            git fetch origin
+            if git rebase origin/main; then
+              git add -A
+              git diff --cached --quiet || git commit --amend --no-edit
+            else
+              echo "::warning::Rebase conflict during push retry; aborting rebase"
+              git rebase --abort
+              exit 1
+            fi
+          done
+          echo "::error::Could not push after 3 attempts"
+          exit 1
 
       - name: Summary
         if: always()
