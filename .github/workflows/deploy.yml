@@ -1,0 +1,86 @@
+name: Deploy to GitHub Pages
+
+# Deploys the static site to GitHub Pages.
+#
+# Deployment architecture (explicit):
+#   The served site is a staging directory assembled from:
+#     - src/**          -> site root (HTML/CSS/JS, relative paths)
+#     - generated/**    -> site generated/ (frontend JSON data)
+#   Relative paths throughout the frontend resolve correctly under
+#   the project subpath https://<owner>.github.io/TechPulse/.
+#
+# Triggers:
+#   - push to main touching served content (src/ or generated/)
+#   - after each successful Collect run (via workflow_run)
+#   - manual dispatch
+
+on:
+  workflow_run:
+    workflows:
+      - Collect
+    types:
+      - completed
+    branches:
+      - main
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**"
+      - "generated/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Build and deploy site
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Skip when the Collect workflow failed (avoid deploying stale state
+    # while masking a failure).
+    if: >-
+      ${{ github.event_name != 'workflow_run' ||
+          github.event.workflow_run.conclusion == 'success' }}
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Assemble deployment staging
+        run: |
+          mkdir -p site/generated
+          cp -R src/. site/
+          cp generated/data.json site/generated/data.json
+          if [ -f generated/archive.json ]; then
+            cp generated/archive.json site/generated/archive.json
+          fi
+          echo "Staging contents:"
+          find site -type f | sort
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
