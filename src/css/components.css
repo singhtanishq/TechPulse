@@ -1870,3 +1870,267 @@
   }
 }
 
+
+
+/* =========================================================
+   EYEBROW (used on Open Source / History pages)
+   ========================================================= */
+
+.eyebrow {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: var(--accent);
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   EMPTY STATES
+   ========================================================= */
+
+.empty-state {
+    padding: 42px 24px;
+
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+
+    background: var(--bg-soft);
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 12px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SEVERITY — LOW / NONE / UNSCORED
+   ========================================================= */
+
+.severity.low {
+    border-color: rgba(176, 183, 192, 0.3);
+    background: rgba(176, 183, 192, 0.06);
+    color: var(--text-soft);
+}
+
+.severity.none,
+.severity.unscored {
+    border-color: var(--border);
+    background: transparent;
+    color: var(--text-muted);
+}
+
+.kev-badge {
+    padding: 3px 7px;
+
+    border: 1px solid rgba(255, 107, 107, 0.35);
+    border-radius: 4px;
+
+    background: rgba(255, 107, 107, 0.08);
+
+    color: var(--danger);
+
+    font-family: var(--font-mono);
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   TECHNOLOGY LIST
+   ========================================================= */
+
+.tech-list {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid var(--border);
+}
+
+.tech-item {
+    padding: 22px 0;
+
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.tech-item h4 {
+    font-size: 15px;
+    font-weight: 600;
+
+    letter-spacing: -0.015em;
+
+    line-height: 1.45;
+}
+
+.tech-item h4 a {
+    color: var(--text);
+
+    transition: color var(--transition);
+}
+
+.tech-item h4 a:hover {
+    color: var(--accent);
+}
+
+.tech-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 8px;
+
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 9px;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.tech-item p {
+    max-width: 760px;
+
+    margin-top: 10px;
+
+    color: var(--text-soft);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.tech-source {
+    color: var(--accent);
+}
+
+.link-dead {
+    color: var(--text-soft);
+}
+
+
+/* =========================================================
+   ARCHIVE DETAIL (History page)
+   ========================================================= */
+
+.archive-detail .archive-columns {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 28px;
+
+    margin-top: 24px;
+}
+
+.archive-columns h4 {
+    color: var(--text-muted);
+
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.archive-columns ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.archive-columns li {
+    overflow: hidden;
+
+    color: var(--text-soft);
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.archive-columns a {
+    color: var(--text-soft);
+
+    transition: color var(--transition);
+}
+
+.archive-columns a:hover {
+    color: var(--accent);
+}
+
+.archive-empty {
+    color: var(--text-muted);
+
+    font-style: italic;
+}
+
+.growth-na {
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY — FOCUS STATES
+   ========================================================= */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE ADDITIONS
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .archive-detail .archive-columns {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+}
