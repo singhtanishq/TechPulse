@@ -155,12 +155,21 @@ def generate_site_data(snapshot_date: str) -> dict[str, Any]:
 
     history_list = (history or {}).get("history", [])
 
+    # The edition for reporting date X covers the previous IST day.
+    try:
+        window_start, _ = ist_day_window(snapshot_date)
+        covered_date = ist_date_of(window_start)
+    except ValueError:
+        covered_date = None
+
     def sources_of(dataset: dict[str, Any] | None) -> dict[str, Any]:
         return (dataset or {}).get("meta", {}).get("sources", {})
 
     return {
         "meta": {
             "date": snapshot_date,
+            "coveredDate": covered_date,
+            "timezone": "Asia/Kolkata",
             "generatedAt": generated_at,
             "daysObserved": len(history_list),
             "snapshots": len(history_list),
