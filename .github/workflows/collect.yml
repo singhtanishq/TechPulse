@@ -1,0 +1,143 @@
+name: Collect
+
+# Daily collection pipeline: collect -> process -> generate -> validate -> commit.
+#
+# Schedule rationale:
+#   Runs at 02:30 UTC, once the previous UTC calendar day has completed
+#   plus a buffer for source publication/processing lag (NVD in
+#   particular continues to modify records after the day closes).
+#   Snapshot semantics: scripts/config/snapshot.json (utc_calendar_day).
+#
+# The GitHub collector authenticates with the workflow-provided
+# GITHUB_TOKEN (1,000 requests/hour). Local unauthenticated runs remain
+# supported (60 requests/hour).
+
+on:
+  schedule:
+    - cron: "30 2 * * *"
+  workflow_dispatch:
+    inputs:
+      snapshot_date:
+        description: "Snapshot date to (re)collect (YYYY-MM-DD, UTC). Empty = previous completed UTC day."
+        required: false
+        type: string
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - "tests/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  collect:
+    name: Collect and publish data
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Show environment
+        run: |
+          python3 --version
+          python3 -c "import sys; print('executable:', sys.executable)"
+
+      - name: Run offline validation
+        run: python3 scripts/validate.py
+
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Determine snapshot date
+        id: date
+        run: |
+          INPUT_DATE="${{ inputs.snapshot_date }}"
+          if [ -n "$INPUT_DATE" ]; then
+            if ! echo "$INPUT_DATE" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+              echo "::error::snapshot_date must be YYYY-MM-DD (got '$INPUT_DATE')"
+              exit 1
+            fi
+            echo "date=$INPUT_DATE" >> "$GITHUB_OUTPUT"
+          else
+            # Previous completed UTC day.
+            echo "date=$(date -u -d 'yesterday' +%F)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/run_pipeline.py --date "${{ steps.date.outputs.date }}" --verbose
+
+      - name: Validate generated output
+        run: python3 scripts/validate.py
+
+      - name: Detect meaningful changes
+        id: changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No meaningful data changes detected; nothing to commit."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changed files:"
+            git diff --cached --name-status
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "TechPulse: daily snapshot ${{ steps.date.outputs.date }}"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## TechPulse collect run"
+            echo ""
+            echo "| Stage | Result |"
+            echo "|-------|--------|"
+            echo "| Snapshot date | \`${{ steps.date.outputs.date }}\` |"
+            echo "| Changes committed | ${{ steps.changes.outputs.changed == 'true' && 'yes' || 'no' }} |"
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ -f generated/data.json ]; then
+            python3 - << 'PYEOF' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          with open("generated/data.json", encoding="utf-8") as f:
+              d = json.load(f)
+          s = d.get("snapshot", {})
+          print(f"| CVEs | {s.get('cves', 0)} |")
+          print(f"| Known exploited | {s.get('knownExploited', 0)} |")
+          print(f"| Releases | {s.get('releases', 0)} |")
+          print(f"| Projects | {s.get('projects', 0)} |")
+          print(f"| Tech entries | {s.get('techEntries', 0)} |")
+          print()
+          print("Source health:")
+          for group, sources in (d.get("sources") or {}).items():
+              for name, st in sources.items():
+                  status = st.get("status", "unknown") if isinstance(st, dict) else "unknown"
+                  print(f"- {name} ({group}): **{status}**")
+          PYEOF
+          fi
