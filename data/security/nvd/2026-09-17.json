@@ -1,6 +1,6 @@
 {
   "meta": {
-    "collectedAt": "2026-09-18T20:33:51.536206+00:00",
+    "collectedAt": "2026-09-18T20:40:06.548865+00:00",
     "count": 1675,
     "source": "NVD",
     "window": {
@@ -22,8 +22,6 @@
       "published": "2012-11-04T22:55:04.997",
       "references": [
         "http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf",
-        "https://exchange.xforce.ibmcloud.com/vulnerabilities/79831",
-        "http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf",
         "https://exchange.xforce.ibmcloud.com/vulnerabilities/79831"
       ],
       "severity": "HIGH",
@@ -44,10 +42,6 @@
         "http://www.securityfocus.com/bid/96988",
         "https://bugs.launchpad.net/ossn/+bug/1153614",
         "https://bugs.launchpad.net/ossn/+bug/1606495",
-        "https://wiki.openstack.org/wiki/OSSN/OSSN-0078",
-        "http://www.securityfocus.com/bid/96988",
-        "https://bugs.launchpad.net/ossn/+bug/1153614",
-        "https://bugs.launchpad.net/ossn/+bug/1606495",
         "https://wiki.openstack.org/wiki/OSSN/OSSN-0078"
       ],
       "severity": "MEDIUM",
@@ -65,7 +59,6 @@
       "lastModified": "2026-09-17T13:57:49.890",
       "published": "2021-02-25T17:15:28.160",
       "references": [
-        "https://jira.mongodb.org/browse/NODE-3125",
         "https://jira.mongodb.org/browse/NODE-3125"
       ],
       "severity": "MEDIUM",
@@ -86,12 +79,6 @@
         "http://packetstormsecurity.com/files/175963/Kernel-Live-Patch-Security-Notice-LSN-0099-1.html",
         "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=linux-6.1.y&id=790c2f9d15b594350ae9bca7b236f2b1859de02c",
         "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=4821df2ffe38d629170edc266e65fa05970e0745",
-        "https://kernel.dance/790c2f9d15b594350ae9bca7b236f2b1859de02c",
-        "https://lists.debian.org/debian-lts-announce/2023/10/msg00027.html",
-        "https://lists.debian.org/debian-lts-announce/2024/01/msg00004.html",
-        "https://www.debian.org/security/2023/dsa-5492",
-        "http://packetstormsecurity.com/files/175963/Kernel-Live-Patch-Security-Notice-LSN-0099-1.html",
-        "https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?h=linux-6.1.y&id=790c2f9d15b594350ae9bca7b236f2b1859de02c",
         "https://kernel.dance/790c2f9d15b594350ae9bca7b236f2b1859de02c",
         "https://lists.debian.org/debian-lts-announce/2023/10/msg00027.html",
         "https://lists.debian.org/debian-lts-announce/2024/01/msg00004.html",
@@ -118,13 +105,6 @@
         "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I56ITJAFMFAQ2G3BMGTCGM3GS62V2DTR/",
         "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ITRVK4FB74RZDIGTZJXOZMUW6X6F4TNF/",
         "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PFE3LDFRZ7EGWA5AU7YHYL62ELBOFZWQ/",
-        "https://support.apple.com/kb/HT213984",
-        "http://seclists.org/fulldisclosure/2023/Oct/24",
-        "https://github.com/vim/vim/commit/fc68299d436cf87453e432daa77b6d545df4d7ed",
-        "https://huntr.dev/bounties/1ab3ebdf-fe7d-4436-b483-9a586e03b0ea",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I56ITJAFMFAQ2G3BMGTCGM3GS62V2DTR/",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ITRVK4FB74RZDIGTZJXOZMUW6X6F4TNF/",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PFE3LDFRZ7EGWA5AU7YHYL62ELBOFZWQ/",
         "https://support.apple.com/kb/HT213984"
       ],
       "severity": "HIGH",
@@ -142,10 +122,6 @@
       "lastModified": "2026-09-17T17:58:59.463",
       "published": "2023-09-03T19:15:43.677",
       "references": [
-        "http://seclists.org/fulldisclosure/2023/Oct/24",
-        "https://github.com/vim/vim/commit/e1121b139480f53d1b06f84f3e4574048108fa0b",
-        "https://huntr.dev/bounties/db7be8d6-6cb7-4ae5-9c4e-805423afa378",
-        "https://support.apple.com/kb/HT213984",
         "http://seclists.org/fulldisclosure/2023/Oct/24",
         "https://github.com/vim/vim/commit/e1121b139480f53d1b06f84f3e4574048108fa0b",
         "https://huntr.dev/bounties/db7be8d6-6cb7-4ae5-9c4e-805423afa378",
@@ -174,15 +150,7 @@
         "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ITRVK4FB74RZDIGTZJXOZMUW6X6F4TNF/",
         "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PFE3LDFRZ7EGWA5AU7YHYL62ELBOFZWQ/",
         "https://support.apple.com/kb/HT213984",
-        "http://seclists.org/fulldisclosure/2023/Oct/24",
-        "https://github.com/vim/vim/commit/ee9166eb3b41846661a39b662dc7ebe8b5e15139",
-        "https://huntr.dev/bounties/85f62dd7-ed84-4fa2-b265-8a369a318757",
-        "https://lists.debian.org/debian-lts-announce/2023/09/msg00035.html",
-        "https://lists.debian.org/debian-lts-announce/2025/03/msg00023.html",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I56ITJAFMFAQ2G3BMGTCGM3GS62V2DTR/",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ITRVK4FB74RZDIGTZJXOZMUW6X6F4TNF/",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/PFE3LDFRZ7EGWA5AU7YHYL62ELBOFZWQ/",
-        "https://support.apple.com/kb/HT213984"
+        "https://lists.debian.org/debian-lts-announce/2025/03/msg00023.html"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -204,12 +172,7 @@
         "https://huntr.dev/bounties/c867eb0a-aa8b-4946-a621-510350673883",
         "https://lists.debian.org/debian-lts-announce/2023/09/msg00035.html",
         "https://support.apple.com/kb/HT213984",
-        "http://seclists.org/fulldisclosure/2023/Oct/24",
-        "https://github.com/vim/vim/commit/f6d28fe2c95c678cc3202cc5dc825a3fcc709e93",
-        "https://huntr.dev/bounties/c867eb0a-aa8b-4946-a621-510350673883",
-        "https://lists.debian.org/debian-lts-announce/2023/09/msg00035.html",
-        "https://lists.debian.org/debian-lts-announce/2025/03/msg00023.html",
-        "https://support.apple.com/kb/HT213984"
+        "https://lists.debian.org/debian-lts-announce/2025/03/msg00023.html"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -226,14 +189,6 @@
       "lastModified": "2026-09-17T17:59:18.660",
       "published": "2023-11-22T22:15:08.673",
       "references": [
-        "http://www.openwall.com/lists/oss-security/2023/11/22/3",
-        "https://github.com/gandalf4a/crash_report/blob/main/vim/vim_huaf",
-        "https://github.com/vim/vim/commit/26c11c56888d01e298cd8044caf860f3c26f57bb",
-        "https://github.com/vim/vim/pull/13552",
-        "https://github.com/vim/vim/security/advisories/GHSA-c8qm-x72m-q53q",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/DNMFS3IH74KEMMESOA3EOB6MZ56TWGFF/",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IVA7K73WHQH4KVFDJQ7ELIUD2WK5ZT5E/",
-        "https://security.netapp.com/advisory/ntap-20240105-0001/",
         "http://www.openwall.com/lists/oss-security/2023/11/22/3",
         "https://github.com/gandalf4a/crash_report/blob/main/vim/vim_huaf",
         "https://github.com/vim/vim/commit/26c11c56888d01e298cd8044caf860f3c26f57bb",
@@ -299,11 +254,6 @@
         "https://huntr.dev/bounties/2c2d85a7-1171-4014-bf7f-a2451745861f",
         "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VDDWD25AZIHBAA44HQT75OWLQ5UMDKU3/",
         "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VGTVLUV7UCXXCZAIQIUCLG6JXAVYT3HE/",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XPT7NMYJRLBPIALGSE24UWTY6F774GZW/",
-        "https://github.com/vim/vim/commit/41e6f7d6ba67b61d911f9b1d76325cd79224753d",
-        "https://huntr.dev/bounties/2c2d85a7-1171-4014-bf7f-a2451745861f",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VDDWD25AZIHBAA44HQT75OWLQ5UMDKU3/",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VGTVLUV7UCXXCZAIQIUCLG6JXAVYT3HE/",
         "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XPT7NMYJRLBPIALGSE24UWTY6F774GZW/"
       ],
       "severity": "HIGH",
@@ -340,15 +290,6 @@
       "lastModified": "2026-09-17T12:17:08.273",
       "published": "2024-01-31T22:15:53.780",
       "references": [
-        "http://packetstormsecurity.com/files/176993/runc-1.1.11-File-Descriptor-Leak-Privilege-Escalation.html",
-        "http://www.openwall.com/lists/oss-security/2024/02/01/1",
-        "http://www.openwall.com/lists/oss-security/2024/02/02/3",
-        "https://github.com/opencontainers/runc/commit/02120488a4c0fc487d1ed2867e901eeed7ce8ecf",
-        "https://github.com/opencontainers/runc/releases/tag/v1.1.12",
-        "https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv",
-        "https://lists.debian.org/debian-lts-announce/2024/02/msg00005.html",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/2NLXNE23Q5ESQUAI22Z7A63JX2WMPJ2J/",
-        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SYMO3BANINS6RGFQFKPRG4FIOJ7GWYTL/",
         "http://packetstormsecurity.com/files/176993/runc-1.1.11-File-Descriptor-Leak-Privilege-Escalation.html",
         "http://www.openwall.com/lists/oss-security/2024/02/01/1",
         "http://www.openwall.com/lists/oss-security/2024/02/02/3",
@@ -426,10 +367,6 @@
       "references": [
         "https://access.redhat.com/errata/RHSA-2024:4591",
         "https://access.redhat.com/errata/RHSA-2026:6503",
-        "https://access.redhat.com/security/cve/CVE-2024-5042",
-        "https://bugzilla.redhat.com/show_bug.cgi?id=2280921",
-        "https://github.com/advisories/GHSA-2rhx-qhxp-5jpw",
-        "https://access.redhat.com/errata/RHSA-2024:4591",
         "https://access.redhat.com/security/cve/CVE-2024-5042",
         "https://bugzilla.redhat.com/show_bug.cgi?id=2280921",
         "https://github.com/advisories/GHSA-2rhx-qhxp-5jpw"
@@ -1107,8 +1044,7 @@
       "references": [
         "https://github.com/FlowiseAI/Flowise/releases/tag/flowise%402.2.7-patch.1",
         "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-8vvx-qvq9-5948",
-        "https://www.vulncheck.com/advisories/flowise-arbitrary-file-write-to-remote-code-execution-via-document-store-api",
-        "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-8vvx-qvq9-5948"
+        "https://www.vulncheck.com/advisories/flowise-arbitrary-file-write-to-remote-code-execution-via-document-store-api"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -1437,8 +1373,7 @@
         "https://access.redhat.com/security/cve/CVE-2026-14164",
         "https://bugzilla.redhat.com/show_bug.cgi?id=2493411",
         "https://github.com/libarchive/libarchive/issues/3069",
-        "https://github.com/libarchive/libarchive/pull/3071",
-        "https://github.com/libarchive/libarchive/issues/3069"
+        "https://github.com/libarchive/libarchive/pull/3071"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -1638,7 +1573,6 @@
         "https://access.redhat.com/errata/RHSA-2026:68612",
         "https://access.redhat.com/security/cve/CVE-2026-15709",
         "https://bugzilla.redhat.com/show_bug.cgi?id=2499922",
-        "https://gitlab.gnome.org/GNOME/libsoup/-/issues/511",
         "https://gitlab.gnome.org/GNOME/libsoup/-/issues/511"
       ],
       "severity": "HIGH",
@@ -1662,7 +1596,6 @@
         "https://access.redhat.com/errata/RHSA-2026:68612",
         "https://access.redhat.com/security/cve/CVE-2026-15711",
         "https://bugzilla.redhat.com/show_bug.cgi?id=2499924",
-        "https://gitlab.gnome.org/GNOME/libsoup/-/issues/515",
         "https://gitlab.gnome.org/GNOME/libsoup/-/issues/515"
       ],
       "severity": "HIGH",
@@ -2696,7 +2629,6 @@
         "https://access.redhat.com/errata/RHSA-2026:65851",
         "https://access.redhat.com/security/cve/CVE-2026-3833",
         "https://bugzilla.redhat.com/show_bug.cgi?id=2445763",
-        "https://gitlab.com/gnutls/gnutls/-/issues/1803",
         "https://gitlab.com/gnutls/gnutls/-/issues/1803"
       ],
       "severity": "HIGH",
@@ -3293,7 +3225,6 @@
         "https://github.com/alanxz/rabbitmq-c/commit/1d3afbb056fee5cc9ea05680bf32288715d0d802",
         "https://github.com/alanxz/rabbitmq-c/pull/878",
         "https://github.com/alanxz/rabbitmq-c/releases/tag/v0.16.0",
-        "https://github.com/alanxz/rabbitmq-c/security/advisories/GHSA-9mmv-r8g3-qp46",
         "https://github.com/alanxz/rabbitmq-c/security/advisories/GHSA-9mmv-r8g3-qp46"
       ],
       "severity": "MEDIUM",
@@ -3481,7 +3412,6 @@
         "https://github.com/motioneye-project/motioneye/commit/0d5cb9c238a87447dae29812e5bf2ccf323cf3dc",
         "https://github.com/motioneye-project/motioneye/pull/3332",
         "https://github.com/motioneye-project/motioneye/releases/tag/0.44.0",
-        "https://github.com/motioneye-project/motioneye/security/advisories/GHSA-r3cw-c95m-wfh9",
         "https://github.com/motioneye-project/motioneye/security/advisories/GHSA-r3cw-c95m-wfh9"
       ],
       "severity": "CRITICAL",
@@ -3539,7 +3469,6 @@
       "references": [
         "https://github.com/julien040/anyquery/commit/33769e03bd4b0f76d7a20a4188cce7153f6db1c9",
         "https://github.com/julien040/anyquery/releases/tag/0.4.5",
-        "https://github.com/julien040/anyquery/security/advisories/GHSA-hrj8-hjv8-mgwc",
         "https://github.com/julien040/anyquery/security/advisories/GHSA-hrj8-hjv8-mgwc"
       ],
       "severity": "CRITICAL",
@@ -3732,7 +3661,6 @@
       "references": [
         "https://github.com/pomerium/pomerium/commit/593eb81c7e5bdbe6071a30d330f374967869577f",
         "https://github.com/pomerium/pomerium/releases/tag/v0.32.8",
-        "https://github.com/pomerium/pomerium/security/advisories/GHSA-ggw3-5987-rx77",
         "https://github.com/pomerium/pomerium/security/advisories/GHSA-ggw3-5987-rx77"
       ],
       "severity": "HIGH",
@@ -3808,8 +3736,7 @@
       "published": "2026-09-15T20:17:17.350",
       "references": [
         "https://albcyberguards.com/blog/cve-2026-51133-c-mor-cross-site-scripting",
-        "https://www.c-mor.com/video-surveillance-info/video-surveillance-change-log",
-        "https://albcyberguards.com/blog/cve-2026-51133-c-mor-cross-site-scripting"
+        "https://www.c-mor.com/video-surveillance-info/video-surveillance-change-log"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -3897,7 +3824,6 @@
       "references": [
         "https://github.com/traccar/traccar/commit/cd0dbaf5df806139f508cbafaba20b34e62b499e",
         "https://github.com/traccar/traccar/releases/tag/v6.14.0",
-        "https://github.com/traccar/traccar/security/advisories/GHSA-jx5h-fxhc-cc9w",
         "https://github.com/traccar/traccar/security/advisories/GHSA-jx5h-fxhc-cc9w"
       ],
       "severity": "HIGH",
@@ -4089,7 +4015,6 @@
         "https://github.com/contentful/contentful-mcp-server/pull/376",
         "https://github.com/contentful/contentful-mcp-server/releases/tag/mcp-server@1.7.19",
         "https://github.com/contentful/contentful-mcp-server/releases/tag/mcp-tools@0.4.5",
-        "https://github.com/contentful/contentful-mcp-server/security/advisories/GHSA-2xhg-73j7-rrgx",
         "https://github.com/contentful/contentful-mcp-server/security/advisories/GHSA-2xhg-73j7-rrgx"
       ],
       "severity": "HIGH",
@@ -4252,7 +4177,6 @@
       "references": [
         "https://github.com/Labs64/NetLicensing-MCP/commit/fbbb1d5ff88eb5400ec933a84e75601ebee48927",
         "https://github.com/Labs64/NetLicensing-MCP/releases/tag/0.1.6",
-        "https://github.com/Labs64/NetLicensing-MCP/security/advisories/GHSA-x9vc-9ffq-p3gj",
         "https://github.com/Labs64/NetLicensing-MCP/security/advisories/GHSA-x9vc-9ffq-p3gj"
       ],
       "severity": "HIGH",
@@ -4332,7 +4256,6 @@
         "https://github.com/andrea9293/mcp-documentation-server/commit/37159d4e06b8ee50c3645b2496e3d3f6d32c47f9",
         "https://github.com/andrea9293/mcp-documentation-server/pull/20",
         "https://github.com/andrea9293/mcp-documentation-server/releases/tag/v1.13.1",
-        "https://github.com/andrea9293/mcp-documentation-server/security/advisories/GHSA-6f5r-5672-72j7",
         "https://github.com/andrea9293/mcp-documentation-server/security/advisories/GHSA-6f5r-5672-72j7"
       ],
       "severity": "HIGH",
@@ -4412,7 +4335,6 @@
         "https://github.com/dfpc-coe/CloudTAK/commit/556b35632877802c7e9c818db44aef7a2c3abebf",
         "https://github.com/dfpc-coe/CloudTAK/pull/1513",
         "https://github.com/dfpc-coe/CloudTAK/releases/tag/v13.22.1",
-        "https://github.com/dfpc-coe/CloudTAK/security/advisories/GHSA-vqrw-qphh-p34v",
         "https://github.com/dfpc-coe/CloudTAK/security/advisories/GHSA-vqrw-qphh-p34v"
       ],
       "severity": "MEDIUM",
@@ -4433,7 +4355,6 @@
         "https://github.com/pipeboard-co/meta-ads-mcp/commit/95e852793b7ff8604a8132e85d5facd08c91a36e",
         "https://github.com/pipeboard-co/meta-ads-mcp/pull/137",
         "https://github.com/pipeboard-co/meta-ads-mcp/releases/tag/1.0.115",
-        "https://github.com/pipeboard-co/meta-ads-mcp/security/advisories/GHSA-2v2f-mvfg-ph56",
         "https://github.com/pipeboard-co/meta-ads-mcp/security/advisories/GHSA-2v2f-mvfg-ph56"
       ],
       "severity": "HIGH",
@@ -4788,7 +4709,6 @@
       "references": [
         "https://github.com/HappySeaFox/sail/commit/fa24bceb93958ad665dbc3cf6b49a1079ab12559",
         "https://github.com/HappySeaFox/sail/releases/tag/v1.0.0",
-        "https://github.com/HappySeaFox/sail/security/advisories/GHSA-744p-cqg2-m33h",
         "https://github.com/HappySeaFox/sail/security/advisories/GHSA-744p-cqg2-m33h"
       ],
       "severity": "CRITICAL",
@@ -4968,7 +4888,6 @@
         "https://github.com/ihor-sokoliuk/mcp-searxng/commit/48e5ecdcb4166a60b94c252dbe74b0a318110ac4",
         "https://github.com/ihor-sokoliuk/mcp-searxng/pull/79",
         "https://github.com/ihor-sokoliuk/mcp-searxng/releases/tag/v1.2.0",
-        "https://github.com/ihor-sokoliuk/mcp-searxng/security/advisories/GHSA-wppf-h75h-6pm6",
         "https://github.com/ihor-sokoliuk/mcp-searxng/security/advisories/GHSA-wppf-h75h-6pm6"
       ],
       "severity": "MEDIUM",
@@ -5064,7 +4983,6 @@
       "references": [
         "https://github.com/vouch/vouch-proxy/commit/fa18ce30ba50a4863a436acad044c22965329c4f",
         "https://github.com/vouch/vouch-proxy/releases/tag/v0.48.0",
-        "https://github.com/vouch/vouch-proxy/security/advisories/GHSA-qqff-5854-px68",
         "https://github.com/vouch/vouch-proxy/security/advisories/GHSA-qqff-5854-px68"
       ],
       "severity": "HIGH",
@@ -5157,8 +5075,7 @@
         "https://github.com/nesquena/hermes-webui/pull/3982",
         "https://github.com/nesquena/hermes-webui/pull/4269",
         "https://github.com/nesquena/hermes-webui/releases/tag/v0.51.443",
-        "https://www.vulncheck.com/advisories/hermes-webui-broken-access-control-in-api-session-endpoint",
-        "https://github.com/nesquena/hermes-webui/pull/3982"
+        "https://www.vulncheck.com/advisories/hermes-webui-broken-access-control-in-api-session-endpoint"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -5179,8 +5096,7 @@
         "https://github.com/nesquena/hermes-webui/pull/3991",
         "https://github.com/nesquena/hermes-webui/pull/4269",
         "https://github.com/nesquena/hermes-webui/releases/tag/v0.51.443",
-        "https://www.vulncheck.com/advisories/hermes-webui-cross-profile-session-data-exfiltration-via-session-export-endpoint",
-        "https://github.com/nesquena/hermes-webui/pull/3991"
+        "https://www.vulncheck.com/advisories/hermes-webui-cross-profile-session-data-exfiltration-via-session-export-endpoint"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -5221,8 +5137,7 @@
         "https://github.com/nesquena/hermes-webui/pull/3970",
         "https://github.com/nesquena/hermes-webui/pull/4338",
         "https://github.com/nesquena/hermes-webui/releases/tag/v0.51.468",
-        "https://www.vulncheck.com/advisories/hermes-webui-resource-exhaustion-via-unauthenticated-oauth-flow-endpoint",
-        "https://github.com/nesquena/hermes-webui/pull/3970"
+        "https://www.vulncheck.com/advisories/hermes-webui-resource-exhaustion-via-unauthenticated-oauth-flow-endpoint"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -5357,7 +5272,6 @@
         "https://github.com/openbao/openbao/pull/3313",
         "https://github.com/openbao/openbao/releases/tag/v2.5.5",
         "https://github.com/openbao/openbao/releases/tag/v2.6.0",
-        "https://github.com/openbao/openbao/security/advisories/GHSA-6mwx-4547-5vc9",
         "https://github.com/openbao/openbao/security/advisories/GHSA-6mwx-4547-5vc9"
       ],
       "severity": "MEDIUM",
@@ -5381,7 +5295,6 @@
         "https://github.com/openbao/openbao/pull/3312",
         "https://github.com/openbao/openbao/releases/tag/v2.5.5",
         "https://github.com/openbao/openbao/releases/tag/v2.6.0",
-        "https://github.com/openbao/openbao/security/advisories/GHSA-8w8f-r2xv-4q4j",
         "https://github.com/openbao/openbao/security/advisories/GHSA-8w8f-r2xv-4q4j"
       ],
       "severity": "MEDIUM",
@@ -5536,8 +5449,7 @@
       "published": "2026-06-24T13:16:33.067",
       "references": [
         "https://github.com/Cap-go/capgo/security/advisories/GHSA-jhjh-vp9p-54fg",
-        "https://www.vulncheck.com/advisories/capgo-account-takeover-via-cross-domain-sso-email-assertion-in-provision-user",
-        "https://github.com/Cap-go/capgo/security/advisories/GHSA-jhjh-vp9p-54fg"
+        "https://www.vulncheck.com/advisories/capgo-account-takeover-via-cross-domain-sso-email-assertion-in-provision-user"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -5555,8 +5467,7 @@
       "published": "2026-07-12T12:16:45.433",
       "references": [
         "https://github.com/Cap-go/capgo/security/advisories/GHSA-6ffx-8hjj-jhhf",
-        "https://www.vulncheck.com/advisories/capgo-sql-injection-via-unvalidated-limit-parameter-in-admin-stats-endpoint",
-        "https://github.com/Cap-go/capgo/security/advisories/GHSA-6ffx-8hjj-jhhf"
+        "https://www.vulncheck.com/advisories/capgo-sql-injection-via-unvalidated-limit-parameter-in-admin-stats-endpoint"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -5574,8 +5485,7 @@
       "published": "2026-07-12T12:16:45.837",
       "references": [
         "https://github.com/Cap-go/capgo/security/advisories/GHSA-c5jf-5wxg-mgrq",
-        "https://www.vulncheck.com/advisories/capgo-information-disclosure-via-unauthenticated-sso-check-domain-endpoint",
-        "https://github.com/Cap-go/capgo/security/advisories/GHSA-c5jf-5wxg-mgrq"
+        "https://www.vulncheck.com/advisories/capgo-information-disclosure-via-unauthenticated-sso-check-domain-endpoint"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -5604,8 +5514,7 @@
       "references": [
         "https://github.com/nanocoai/nanoclaw/commit/6227bd1a5b016fb1eb76411bb6681b4c924a51a0",
         "https://github.com/nanocoai/nanoclaw/pull/2478",
-        "https://www.vulncheck.com/advisories/nanoclaw-privilege-escalation-via-unverified-approval-response-handler",
-        "https://github.com/nanocoai/nanoclaw/pull/2478"
+        "https://www.vulncheck.com/advisories/nanoclaw-privilege-escalation-via-unverified-approval-response-handler"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -5783,7 +5692,6 @@
       "references": [
         "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27",
         "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60",
-        "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vmmj-pfw7-fjwp",
         "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-vmmj-pfw7-fjwp"
       ],
       "severity": "CRITICAL",
@@ -5803,7 +5711,6 @@
       "references": [
         "https://github.com/MervinPraison/PraisonAI/commit/709a0387853709a5e2f2c34680fa64cada252c27",
         "https://github.com/MervinPraison/PraisonAI/releases/tag/v4.6.60",
-        "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-j4f3-55x4-r6q2",
         "https://github.com/MervinPraison/PraisonAI/security/advisories/GHSA-j4f3-55x4-r6q2"
       ],
       "severity": "CRITICAL",
@@ -5863,7 +5770,6 @@
       "published": "2026-09-15T18:17:26.193",
       "references": [
         "https://github.com/gouef/githubtoplanguages/commit/6bf9c3a9cb66c937b9047ca266b3d02f2bb11027",
-        "https://github.com/gouef/githubtoplanguages/security/advisories/GHSA-c3xh-98xp-6qhf",
         "https://github.com/gouef/githubtoplanguages/security/advisories/GHSA-c3xh-98xp-6qhf"
       ],
       "severity": "HIGH",
@@ -5943,8 +5849,7 @@
         "https://github.com/toeverything/AFFiNE",
         "https://github.com/toeverything/AFFiNE/commit/1f0bcd01a37a522393fc1b288395e3a72a79ccad",
         "https://github.com/toeverything/AFFiNE/issues/15179",
-        "https://www.vulncheck.com/advisories/affine-unauthorized-document-edit-history-access-via-graphql-histories-field",
-        "https://github.com/toeverything/AFFiNE/issues/15179"
+        "https://www.vulncheck.com/advisories/affine-unauthorized-document-edit-history-access-via-graphql-histories-field"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -6018,8 +5923,7 @@
         "https://github.com/ghostfolio/ghostfolio",
         "https://github.com/ghostfolio/ghostfolio/commit/697ef59e3b58bebc5c21a9e482e4f5643390f316",
         "https://github.com/ghostfolio/ghostfolio/issues/7196",
-        "https://www.vulncheck.com/advisories/ghostfolio-unauthorized-portfolio-holding-tag-modification-via-missing-permission-check",
-        "https://github.com/ghostfolio/ghostfolio/issues/7196"
+        "https://www.vulncheck.com/advisories/ghostfolio-unauthorized-portfolio-holding-tag-modification-via-missing-permission-check"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -6098,7 +6002,6 @@
         "https://github.com/jhb-software/payload-plugins/commit/e39634868ce13a414e2981e219befc58101654d3",
         "https://github.com/jhb-software/payload-plugins/pull/159",
         "https://github.com/jhb-software/payload-plugins/releases/tag/alt-text@0.8.0",
-        "https://github.com/jhb-software/payload-plugins/security/advisories/GHSA-4qpv-39hg-f7fx",
         "https://github.com/jhb-software/payload-plugins/security/advisories/GHSA-4qpv-39hg-f7fx"
       ],
       "severity": "HIGH",
@@ -6119,7 +6022,6 @@
         "https://github.com/libp2p/rust-libp2p/commit/212f3774af048e2cecfb2e6b1e08477685e52b22",
         "https://github.com/libp2p/rust-libp2p/commit/e8f35e12c2418b04df6e9cdf036005e8aee3c7a2",
         "https://github.com/libp2p/rust-libp2p/pull/6525",
-        "https://github.com/libp2p/rust-libp2p/security/advisories/GHSA-5hq8-qhww-jm7q",
         "https://github.com/libp2p/rust-libp2p/security/advisories/GHSA-5hq8-qhww-jm7q"
       ],
       "severity": "HIGH",
@@ -6140,7 +6042,6 @@
         "https://github.com/zereight/gitlab-mcp/commit/6ffb4cc70706fd05b1ab80901676bc2998b6db6d",
         "https://github.com/zereight/gitlab-mcp/pull/625",
         "https://github.com/zereight/gitlab-mcp/releases/tag/v2.1.27",
-        "https://github.com/zereight/gitlab-mcp/security/advisories/GHSA-2h44-8472-frjj",
         "https://github.com/zereight/gitlab-mcp/security/advisories/GHSA-2h44-8472-frjj"
       ],
       "severity": "CRITICAL",
@@ -6329,7 +6230,6 @@
         "https://github.com/nuxt-modules/og-image/commit/243cac2228671d3711c2bd65e300c278fcdf5a4e",
         "https://github.com/nuxt-modules/og-image/pull/637",
         "https://github.com/nuxt-modules/og-image/releases/tag/v6.7.0",
-        "https://github.com/nuxt-modules/og-image/security/advisories/GHSA-q8hw-4fvp-9rwv",
         "https://github.com/nuxt-modules/og-image/security/advisories/GHSA-q8hw-4fvp-9rwv"
       ],
       "severity": "MEDIUM",
@@ -6401,8 +6301,7 @@
         "https://github.com/Dao-AILab/flash-attention/commit/0816ef12f424c6ec94b057a72c275b14f6e6edb2",
         "https://github.com/Dao-AILab/flash-attention/issues/2637",
         "https://github.com/Dao-AILab/flash-attention/pull/2702",
-        "https://www.vulncheck.com/advisories/flashattention-symlink-attack-via-tarfile-extractall-in-hopper-setup-py",
-        "https://github.com/Dao-AILab/flash-attention/issues/2637"
+        "https://www.vulncheck.com/advisories/flashattention-symlink-attack-via-tarfile-extractall-in-hopper-setup-py"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -6576,7 +6475,6 @@
       "references": [
         "https://github.com/vendurehq/vendure/commit/f74cbbb0b9a50b5b0131822835fe7ee9b71b42c9",
         "https://github.com/vendurehq/vendure/releases/tag/v3.6.5",
-        "https://github.com/vendurehq/vendure/security/advisories/GHSA-jgm3-qmp2-c4p7",
         "https://github.com/vendurehq/vendure/security/advisories/GHSA-jgm3-qmp2-c4p7"
       ],
       "severity": "HIGH",
@@ -6615,7 +6513,6 @@
       "references": [
         "https://github.com/vendurehq/vendure/commit/3bb04718ea4f9395fda731bd2a4bcfc3afb0a485",
         "https://github.com/vendurehq/vendure/releases/tag/v3.7.0",
-        "https://github.com/vendurehq/vendure/security/advisories/GHSA-6j36-r6pr-59x4",
         "https://github.com/vendurehq/vendure/security/advisories/GHSA-6j36-r6pr-59x4"
       ],
       "severity": "CRITICAL",
@@ -6637,7 +6534,6 @@
         "https://github.com/tinacms/tinacms/pull/7168",
         "https://github.com/tinacms/tinacms/releases/tag/@tinacms/auth@1.1.4",
         "https://github.com/tinacms/tinacms/releases/tag/next-tinacms-azure@15.0.1",
-        "https://github.com/tinacms/tinacms/security/advisories/GHSA-g74q-6g2f-874x",
         "https://github.com/tinacms/tinacms/security/advisories/GHSA-g74q-6g2f-874x"
       ],
       "severity": "HIGH",
@@ -6682,8 +6578,7 @@
         "https://github.com/InternLM/lmdeploy/commit/03c313006d17cc3feae86b633c44206a997c44db",
         "https://github.com/InternLM/lmdeploy/issues/4761",
         "https://github.com/InternLM/lmdeploy/pull/4734",
-        "https://www.vulncheck.com/advisories/lmdeploy-server-side-request-forgery-via-http-redirect-bypass",
-        "https://github.com/InternLM/lmdeploy/issues/4761"
+        "https://www.vulncheck.com/advisories/lmdeploy-server-side-request-forgery-via-http-redirect-bypass"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -6743,8 +6638,7 @@
         "https://github.com/onlook-dev/onlook/commit/423e2e924366419e418ee049093872d535eea41a",
         "https://github.com/onlook-dev/onlook/issues/3122",
         "https://github.com/onlook-dev/onlook/pull/3129",
-        "https://www.vulncheck.com/advisories/onlook-trpc-insecure-direct-object-reference-via-multiple-procedures",
-        "https://github.com/onlook-dev/onlook/issues/3122"
+        "https://www.vulncheck.com/advisories/onlook-trpc-insecure-direct-object-reference-via-multiple-procedures"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -6997,8 +6891,7 @@
       "references": [
         "https://github.com/siyuan-note/siyuan/commit/41f2861c87575ff5ac4b50a0520b1a4fe55b4a70",
         "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-pw5c-qhf3-jhwh",
-        "https://www.vulncheck.com/advisories/siyuan-before-stored-xss-to-rce-via-attribute-view",
-        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-pw5c-qhf3-jhwh"
+        "https://www.vulncheck.com/advisories/siyuan-before-stored-xss-to-rce-via-attribute-view"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -7017,8 +6910,7 @@
       "references": [
         "https://github.com/siyuan-note/siyuan/commit/41f2861c87575ff5ac4b50a0520b1a4fe55b4a70",
         "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-wp64-x7qh-h728",
-        "https://www.vulncheck.com/advisories/siyuan-before-cross-site-scripting-to-rce",
-        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-wp64-x7qh-h728"
+        "https://www.vulncheck.com/advisories/siyuan-before-cross-site-scripting-to-rce"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -7094,8 +6986,7 @@
       "references": [
         "https://github.com/siyuan-note/siyuan/commit/c72ca4cd09019e5f64afdee8f8c6ec5ef34858db",
         "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-cvhv-7xhj-xjp8",
-        "https://www.vulncheck.com/advisories/siyuan-before-unauthenticated-administrator-takeover-via-mcp",
-        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-cvhv-7xhj-xjp8"
+        "https://www.vulncheck.com/advisories/siyuan-before-unauthenticated-administrator-takeover-via-mcp"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -7130,8 +7021,7 @@
       "published": "2026-07-27T16:18:12.083",
       "references": [
         "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-6gx2-8gcr-x83f",
-        "https://www.vulncheck.com/advisories/siyuan-desktop-before-reflected-xss-to-rce-via-siyuan-protocol",
-        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-6gx2-8gcr-x83f"
+        "https://www.vulncheck.com/advisories/siyuan-desktop-before-reflected-xss-to-rce-via-siyuan-protocol"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -7149,8 +7039,7 @@
       "published": "2026-07-27T16:18:12.220",
       "references": [
         "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-5rxg-wh59-mg34",
-        "https://www.vulncheck.com/advisories/siyuan-before-stored-xss-to-rce-via-title-img-ial",
-        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-5rxg-wh59-mg34"
+        "https://www.vulncheck.com/advisories/siyuan-before-stored-xss-to-rce-via-title-img-ial"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -7911,8 +7800,7 @@
         "https://github.com/spacebarchat/server/commit/8d126f401914d68fa8a97f7e5986dcfcc42de9a8",
         "https://github.com/spacebarchat/server/issues/1685",
         "https://github.com/spacebarchat/server/security/advisories/GHSA-62g6-28hv-h6hc",
-        "https://www.vulncheck.com/advisories/spacebar-server-cross-channel-message-deletion-via-permission-check-bypass",
-        "https://github.com/spacebarchat/server/security/advisories/GHSA-62g6-28hv-h6hc"
+        "https://www.vulncheck.com/advisories/spacebar-server-cross-channel-message-deletion-via-permission-check-bypass"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -9283,8 +9171,7 @@
       "published": "2026-08-10T21:17:26.610",
       "references": [
         "https://github.com/Sucuri/sucuri-wordpress-plugin/issues/217",
-        "https://www.vulncheck.com/advisories/sucuri-wordpress-plugin-path-traversal-via-integrity-lib-php",
-        "https://github.com/Sucuri/sucuri-wordpress-plugin/issues/217"
+        "https://www.vulncheck.com/advisories/sucuri-wordpress-plugin-path-traversal-via-integrity-lib-php"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -9307,8 +9194,7 @@
         "https://github.com/louislam/dockge/blob/1.5.0/backend/stack.ts#L218-L232",
         "https://github.com/louislam/dockge/blob/1.5.0/backend/stack.ts#L377-L379",
         "https://github.com/louislam/dockge/issues/994",
-        "https://www.vulncheck.com/advisories/dockge-path-traversal-via-unvalidated-stack-name-allows-arbitrary-compose-and-env-disclosure-and-arbitrary-directory-deletion",
-        "https://github.com/louislam/dockge/issues/994"
+        "https://www.vulncheck.com/advisories/dockge-path-traversal-via-unvalidated-stack-name-allows-arbitrary-compose-and-env-disclosure-and-arbitrary-directory-deletion"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -9972,8 +9858,7 @@
       "references": [
         "https://github.com/next-terminal/next-terminal",
         "https://github.com/next-terminal/next-terminal/issues/573",
-        "https://www.vulncheck.com/advisories/next-terminal-missing-per-asset-authorization-on-portal-endpoints",
-        "https://github.com/next-terminal/next-terminal/issues/573"
+        "https://www.vulncheck.com/advisories/next-terminal-missing-per-asset-authorization-on-portal-endpoints"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -10013,8 +9898,7 @@
         "https://github.com/bastillion-io/Bastillion/blob/master/src/main/java/loophole/mvc/base/BaseKontroller.java",
         "https://github.com/bastillion-io/Bastillion/commit/d759fb686a1a097b1b026e286fd9b20e5ba349c8",
         "https://github.com/bastillion-io/Bastillion/issues/669",
-        "https://www.vulncheck.com/advisories/bastillion-authentication-bypass-via-path-prefix-routing-mismatch",
-        "https://github.com/bastillion-io/Bastillion/issues/669"
+        "https://www.vulncheck.com/advisories/bastillion-authentication-bypass-via-path-prefix-routing-mismatch"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -10594,7 +10478,6 @@
         "https://github.com/opencast/opencast/commit/ff84128c9b3bcbd79c28192d25929dab8faf185f",
         "https://github.com/opencast/opencast/releases/tag/19.7",
         "https://github.com/opencast/opencast/releases/tag/20.2",
-        "https://github.com/opencast/opencast/security/advisories/GHSA-6f53-jp7x-gg7p",
         "https://github.com/opencast/opencast/security/advisories/GHSA-6f53-jp7x-gg7p"
       ],
       "severity": "HIGH",
@@ -11184,7 +11067,6 @@
       "published": "2026-09-16T19:17:41.113",
       "references": [
         "https://github.com/TheMalwareGuardian/CVE-2026-79298",
-        "https://github.com/TheMalwareGuardian/UEFI-Security-Research-Howyar-SysReturn-NetCopy",
         "https://github.com/TheMalwareGuardian/UEFI-Security-Research-Howyar-SysReturn-NetCopy"
       ],
       "severity": "HIGH",
@@ -11221,8 +11103,7 @@
       "published": "2026-09-04T16:18:00.250",
       "references": [
         "https://drive.google.com/file/d/1QVH1MRo3G4KqmBORkhXITzcYmO_BDjWc/view",
-        "https://emxtecnologia.com.br/gestao-x-business-suite/",
-        "https://drive.google.com/file/d/1QVH1MRo3G4KqmBORkhXITzcYmO_BDjWc/view"
+        "https://emxtecnologia.com.br/gestao-x-business-suite/"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -12039,7 +11920,6 @@
         "https://github.com/open-telemetry/opentelemetry-go/issues/5996",
         "https://github.com/open-telemetry/opentelemetry-go/pull/5997",
         "https://github.com/open-telemetry/opentelemetry-go/releases/tag/sdk/v1.33.0",
-        "https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-p9f8-wvj8-2fg8",
         "https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-p9f8-wvj8-2fg8"
       ],
       "severity": "MEDIUM",
@@ -12061,7 +11941,6 @@
         "https://github.com/open-telemetry/opentelemetry-go/pull/8438",
         "https://github.com/open-telemetry/opentelemetry-go/releases/tag/exporters/zipkin/v1.45.0",
         "https://github.com/open-telemetry/opentelemetry-go/releases/tag/sdk/v1.45.0",
-        "https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-8wmf-6v46-5gfg",
         "https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-8wmf-6v46-5gfg"
       ],
       "severity": "LOW",
@@ -12102,7 +11981,6 @@
         "https://github.com/open-telemetry/opentelemetry-go/issues/6797",
         "https://github.com/open-telemetry/opentelemetry-go/pull/8620",
         "https://github.com/open-telemetry/opentelemetry-go/releases/tag/sdk/log/v0.21.0",
-        "https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-hjf4-fphr-2h65",
         "https://github.com/open-telemetry/opentelemetry-go/security/advisories/GHSA-hjf4-fphr-2h65"
       ],
       "severity": "MEDIUM",
@@ -12124,7 +12002,6 @@
         "https://github.com/hapifhir/org.hl7.fhir.core/pull/2493",
         "https://github.com/hapifhir/org.hl7.fhir.core/releases/tag/6.9.11",
         "https://github.com/hapifhir/org.hl7.fhir.core/releases/tag/6.9.12",
-        "https://github.com/hapifhir/org.hl7.fhir.core/security/advisories/GHSA-3w98-rrpr-fprr",
         "https://github.com/hapifhir/org.hl7.fhir.core/security/advisories/GHSA-3w98-rrpr-fprr"
       ],
       "severity": "HIGH",
@@ -12145,7 +12022,6 @@
         "https://github.com/hapifhir/org.hl7.fhir.core/commit/d804558bd77372b1629e55a5b901cad3f5134cdc",
         "https://github.com/hapifhir/org.hl7.fhir.core/commit/edd5d8c139e669e39270785f08be7b63aefef24c",
         "https://github.com/hapifhir/org.hl7.fhir.core/pull/2493",
-        "https://github.com/hapifhir/org.hl7.fhir.core/security/advisories/GHSA-gq9c-wmrm-5hvr",
         "https://github.com/hapifhir/org.hl7.fhir.core/security/advisories/GHSA-gq9c-wmrm-5hvr"
       ],
       "severity": "HIGH",
@@ -12511,8 +12387,7 @@
       "published": "2026-08-31T09:17:07.863",
       "references": [
         "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-xr3w-r926-xfmm",
-        "https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-tenant-database-manipulation",
-        "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-xr3w-r926-xfmm"
+        "https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-tenant-database-manipulation"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -12530,8 +12405,7 @@
       "published": "2026-08-31T09:17:08.017",
       "references": [
         "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-xqqj-pfc2-vf48",
-        "https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-organization-data-read-via-database-routes",
-        "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-xqqj-pfc2-vf48"
+        "https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-organization-data-read-via-database-routes"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -12549,8 +12423,7 @@
       "published": "2026-08-31T09:17:08.160",
       "references": [
         "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php",
-        "https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-workspace-authorization-bypass",
-        "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php"
+        "https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-workspace-authorization-bypass"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -12586,8 +12459,7 @@
       "published": "2026-08-31T09:17:08.610",
       "references": [
         "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-cx42-x23w-vhvf",
-        "https://www.vulncheck.com/advisories/tooljet-before-3.16.208-authorization-bypass-via-organizationid",
-        "https://github.com/ToolJet/ToolJet/security/advisories/GHSA-cx42-x23w-vhvf"
+        "https://www.vulncheck.com/advisories/tooljet-before-3.16.208-authorization-bypass-via-organizationid"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -16483,8 +16355,7 @@
         "https://github.com/Helicone/helicone",
         "https://github.com/Helicone/helicone/commit/ca34549ea56f7ed587843f82d9cc19baa1f36ba4",
         "https://github.com/Helicone/helicone/issues/5712",
-        "https://www.vulncheck.com/advisories/helicone-cross-tenant-provider-key-disclosure-via-missing-organization-filter",
-        "https://github.com/Helicone/helicone/issues/5712"
+        "https://www.vulncheck.com/advisories/helicone-cross-tenant-provider-key-disclosure-via-missing-organization-filter"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -16639,7 +16510,6 @@
       "references": [
         "https://github.com/mattiasw/ExifReader/commit/17b901cd192d2c90d7f9f347bd3073b28b482699",
         "https://github.com/mattiasw/ExifReader/releases/tag/v4.41.1",
-        "https://github.com/mattiasw/ExifReader/security/advisories/GHSA-pj96-35fp-cfcc",
         "https://github.com/mattiasw/ExifReader/security/advisories/GHSA-pj96-35fp-cfcc"
       ],
       "severity": "HIGH",
@@ -16793,7 +16663,6 @@
       "references": [
         "https://github.com/facelessuser/soupsieve/commit/ce44e4996e6632871c18cdd7a7fb641be8ef34ef",
         "https://github.com/facelessuser/soupsieve/releases/tag/2.9",
-        "https://github.com/facelessuser/soupsieve/security/advisories/GHSA-gjv8-xp57-g29c",
         "https://github.com/facelessuser/soupsieve/security/advisories/GHSA-gjv8-xp57-g29c"
       ],
       "severity": "MEDIUM",
@@ -16833,7 +16702,6 @@
         "https://github.com/libp2p/js-libp2p/commit/cec2b1f349d130065e561349a0336a239528267f",
         "https://github.com/libp2p/js-libp2p/pull/3569",
         "https://github.com/libp2p/js-libp2p/releases/tag/gossipsub-v16.0.5",
-        "https://github.com/libp2p/js-libp2p/security/advisories/GHSA-c3gv-825q-fvmp",
         "https://github.com/libp2p/js-libp2p/security/advisories/GHSA-c3gv-825q-fvmp"
       ],
       "severity": "HIGH",
@@ -18689,7 +18557,6 @@
       "lastModified": "2026-09-17T20:18:51.463",
       "published": "2026-09-16T20:17:38.453",
       "references": [
-        "https://github.com/sg-summer/cve/issues/2",
         "https://github.com/sg-summer/cve/issues/2"
       ],
       "severity": "CRITICAL",
@@ -18708,7 +18575,6 @@
       "published": "2026-09-15T20:19:19.687",
       "references": [
         "https://github.com/hekk-one/CVE",
-        "https://hekk.one/posts/research/cve-2026-88743/",
         "https://hekk.one/posts/research/cve-2026-88743/"
       ],
       "severity": "MEDIUM",
@@ -24621,8 +24487,7 @@
         "https://github.com/sosedoff/pgweb/blob/6b0b0244d1aefd6971999b03481eeeaa4ec7cf55/pkg/api/api.go",
         "https://github.com/sosedoff/pgweb/blob/6b0b0244d1aefd6971999b03481eeeaa4ec7cf55/pkg/api/routes.go",
         "https://github.com/sosedoff/pgweb/issues/869",
-        "https://www.vulncheck.com/advisories/pgweb-through-0.17.0-missing-authorization-on-direct-connect-endpoint",
-        "https://github.com/sosedoff/pgweb/issues/869"
+        "https://www.vulncheck.com/advisories/pgweb-through-0.17.0-missing-authorization-on-direct-connect-endpoint"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -24658,8 +24523,7 @@
       "published": "2026-09-15T16:17:43.883",
       "references": [
         "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-vcwp-f9rq-3887",
-        "https://www.vulncheck.com/advisories/flowise-before-3.1.4-remote-code-execution-via-custom-mcp-npx",
-        "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-vcwp-f9rq-3887"
+        "https://www.vulncheck.com/advisories/flowise-before-3.1.4-remote-code-execution-via-custom-mcp-npx"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -24695,8 +24559,7 @@
       "published": "2026-09-15T16:17:45.013",
       "references": [
         "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-jrcq-qjw5-xx5q",
-        "https://www.vulncheck.com/advisories/flowise-before-3.1.4-script-injection-via-docker-workflows",
-        "https://github.com/FlowiseAI/Flowise/security/advisories/GHSA-jrcq-qjw5-xx5q"
+        "https://www.vulncheck.com/advisories/flowise-before-3.1.4-script-injection-via-docker-workflows"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -24732,8 +24595,7 @@
       "published": "2026-09-15T16:17:46.150",
       "references": [
         "https://github.com/unclecode/crawl4ai/security/advisories/GHSA-7g3g-vhm6-79f3",
-        "https://www.vulncheck.com/advisories/crawl4ai-before-0.9.3-cross-site-scripting-via-innerhtml",
-        "https://github.com/unclecode/crawl4ai/security/advisories/GHSA-7g3g-vhm6-79f3"
+        "https://www.vulncheck.com/advisories/crawl4ai-before-0.9.3-cross-site-scripting-via-innerhtml"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -24806,8 +24668,7 @@
       "published": "2026-09-15T16:17:49.490",
       "references": [
         "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-m85m-3qxv-63h5",
-        "https://www.vulncheck.com/advisories/freerdp-before-3.31.0-denial-of-service-via-pool-decode-rect",
-        "https://github.com/FreeRDP/FreeRDP/security/advisories/GHSA-m85m-3qxv-63h5"
+        "https://www.vulncheck.com/advisories/freerdp-before-3.31.0-denial-of-service-via-pool-decode-rect"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -24879,8 +24740,7 @@
       "published": "2026-09-15T16:17:52.933",
       "references": [
         "https://github.com/WWBN/AVideo/security/advisories/GHSA-vjgr-5x63-cq96",
-        "https://www.vulncheck.com/advisories/avideo-through-29.0-blind-ssrf-via-getheadercontenttypefromurl",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-vjgr-5x63-cq96"
+        "https://www.vulncheck.com/advisories/avideo-through-29.0-blind-ssrf-via-getheadercontenttypefromurl"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -24916,8 +24776,7 @@
       "published": "2026-09-15T16:17:54.087",
       "references": [
         "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-6rvj-qwjf-3m4q",
-        "https://www.vulncheck.com/advisories/vikunja-before-2.6.0-authentication-bypass-via-unthrottled-api",
-        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-6rvj-qwjf-3m4q"
+        "https://www.vulncheck.com/advisories/vikunja-before-2.6.0-authentication-bypass-via-unthrottled-api"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -24953,8 +24812,7 @@
       "published": "2026-09-15T16:17:55.227",
       "references": [
         "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-88f6-4rjv-x774",
-        "https://www.vulncheck.com/advisories/vikunja-before-2.6.0-totp-secret-disclosure-via-api",
-        "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-88f6-4rjv-x774"
+        "https://www.vulncheck.com/advisories/vikunja-before-2.6.0-totp-secret-disclosure-via-api"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -25026,8 +24884,7 @@
       "published": "2026-09-15T16:17:58.447",
       "references": [
         "https://github.com/tornadoweb/tornado/security/advisories/GHSA-pw6j-qg29-8w7f",
-        "https://www.vulncheck.com/advisories/tornado-before-6.5.7-credential-leak-via-handle-reuse",
-        "https://github.com/tornadoweb/tornado/security/advisories/GHSA-pw6j-qg29-8w7f"
+        "https://www.vulncheck.com/advisories/tornado-before-6.5.7-credential-leak-via-handle-reuse"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -25068,8 +24925,7 @@
         "https://github.com/dromara/lamp-cloud/blob/bdc1a406eb0f6291e9f6dbad9cbccd67bc6a37b6/lamp-generator/lamp-generator-controller/src/main/java/top/tangyh/lamp/generator/controller/DefGenProjectController.java#L61-L64",
         "https://github.com/dromara/lamp-cloud/blob/bdc1a406eb0f6291e9f6dbad9cbccd67bc6a37b6/lamp-public/lamp-common/src/main/java/top/tangyh/lamp/common/properties/IgnoreProperties.java#L88",
         "https://github.com/geo-chen/oss/blob/main/lamp-cloud.md",
-        "https://www.vulncheck.com/advisories/lamp-cloud-through-5.10.0-missing-authentication-for-jvm-properties-endpoint",
-        "https://github.com/geo-chen/oss/blob/main/lamp-cloud.md"
+        "https://www.vulncheck.com/advisories/lamp-cloud-through-5.10.0-missing-authentication-for-jvm-properties-endpoint"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -25299,8 +25155,7 @@
         "https://vuldb.com/cve/CVE-2026-92416",
         "https://vuldb.com/submit/940464",
         "https://vuldb.com/vuln/405594",
-        "https://vuldb.com/vuln/405594/cti",
-        "https://github.com/open5gs/open5gs/issues/4744"
+        "https://vuldb.com/vuln/405594/cti"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -25322,8 +25177,7 @@
         "https://vuldb.com/cve/CVE-2026-92418",
         "https://vuldb.com/submit/940698",
         "https://vuldb.com/vuln/405596",
-        "https://vuldb.com/vuln/405596/cti",
-        "https://vuldb.com/submit/940698"
+        "https://vuldb.com/vuln/405596/cti"
       ],
       "severity": "LOW",
       "source": "NVD"
@@ -26132,8 +25986,7 @@
       "published": "2026-09-16T22:18:27.757",
       "references": [
         "https://github.com/HKUDS/nanobot/security/advisories/GHSA-vc5v-6vwm-wf9m",
-        "https://www.vulncheck.com/advisories/hkuds-nanobot-before-0.3.0-server-side-request-forgery-via-webfetchtool",
-        "https://github.com/HKUDS/nanobot/security/advisories/GHSA-vc5v-6vwm-wf9m"
+        "https://www.vulncheck.com/advisories/hkuds-nanobot-before-0.3.0-server-side-request-forgery-via-webfetchtool"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -26169,8 +26022,7 @@
       "published": "2026-09-16T22:18:28.053",
       "references": [
         "https://github.com/WWBN/AVideo/security/advisories/GHSA-fq38-jp6c-q4cx",
-        "https://www.vulncheck.com/advisories/wwbn-avideo-through-29.0-authentication-bypass-via-stored-password-hash",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-fq38-jp6c-q4cx"
+        "https://www.vulncheck.com/advisories/wwbn-avideo-through-29.0-authentication-bypass-via-stored-password-hash"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -26188,8 +26040,7 @@
       "published": "2026-09-16T22:18:28.470",
       "references": [
         "https://github.com/WWBN/AVideo/security/advisories/GHSA-hcfp-7hrc-5rvg",
-        "https://www.vulncheck.com/advisories/avideo-through-29.0-like-counter-desynchronization-via-array-parameter",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-hcfp-7hrc-5rvg"
+        "https://www.vulncheck.com/advisories/avideo-through-29.0-like-counter-desynchronization-via-array-parameter"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -26225,8 +26076,7 @@
       "published": "2026-09-16T22:18:28.747",
       "references": [
         "https://github.com/WWBN/AVideo/security/advisories/GHSA-8jrm-qg5f-966w",
-        "https://www.vulncheck.com/advisories/avideo-through-29.0-rate-limit-bypass-via-non-atomic-counter-increment",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-8jrm-qg5f-966w"
+        "https://www.vulncheck.com/advisories/avideo-through-29.0-rate-limit-bypass-via-non-atomic-counter-increment"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -26244,8 +26094,7 @@
       "published": "2026-09-16T22:18:29.157",
       "references": [
         "https://github.com/WWBN/AVideo/security/advisories/GHSA-fm4f-q895-8jhc",
-        "https://www.vulncheck.com/advisories/avideo-through-29.0-missing-authorization-via-comment-api-endpoint",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-fm4f-q895-8jhc"
+        "https://www.vulncheck.com/advisories/avideo-through-29.0-missing-authorization-via-comment-api-endpoint"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -26339,8 +26188,7 @@
         "https://github.com/nodemailer/nodemailer/commit/83b8c48",
         "https://github.com/nodemailer/nodemailer/commit/9116da9",
         "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-2x7j-588g-ccc2",
-        "https://www.vulncheck.com/advisories/nodemailer-before-9.1.0-denial-of-service-via-addressparser",
-        "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-2x7j-588g-ccc2"
+        "https://www.vulncheck.com/advisories/nodemailer-before-9.1.0-denial-of-service-via-addressparser"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26379,8 +26227,7 @@
         "https://github.com/nodemailer/nodemailer/commit/259c32d",
         "https://github.com/nodemailer/nodemailer/commit/b212ac4",
         "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-wmmp-3585-3rmp",
-        "https://www.vulncheck.com/advisories/nodemailer-before-9.1.0-idn-punycode-domain-allow-list-bypass",
-        "https://github.com/nodemailer/nodemailer/security/advisories/GHSA-wmmp-3585-3rmp"
+        "https://www.vulncheck.com/advisories/nodemailer-before-9.1.0-idn-punycode-domain-allow-list-bypass"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26461,8 +26308,7 @@
         "https://github.com/Shuffle/shuffle-shared/blob/v1.2.50/shared.go#L9888-L9912",
         "https://github.com/Shuffle/shuffle-shared/commit/c1b582e91b429bc7d5ad02e6c22f98234ec67615",
         "https://github.com/geo-chen/oss/blob/main/shuffle.md",
-        "https://www.vulncheck.com/advisories/shuffle-through-2.2.1-api-key-reset-cross-tenant-privilege-escalation",
-        "https://github.com/geo-chen/oss/blob/main/shuffle.md"
+        "https://www.vulncheck.com/advisories/shuffle-through-2.2.1-api-key-reset-cross-tenant-privilege-escalation"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26504,8 +26350,7 @@
         "https://github.com/chaitin/SafeLine/blob/v9.4.1/management/webserver/model/option.go#L27",
         "https://github.com/chaitin/SafeLine/blob/v9.4.1/management/webserver/utils/random.go#L10-L17",
         "https://github.com/chaitin/SafeLine/issues/1298",
-        "https://www.vulncheck.com/advisories/safeline-through-9.4.1-authentication-bypass-via-weak-session-secret",
-        "https://github.com/chaitin/SafeLine/issues/1298"
+        "https://www.vulncheck.com/advisories/safeline-through-9.4.1-authentication-bypass-via-weak-session-secret"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -26546,8 +26391,7 @@
         "https://github.com/yahoo/CMAK",
         "https://github.com/yahoo/CMAK/blob/3.0.0.6/app/loader/KafkaManagerLoader.scala#L48",
         "https://github.com/yahoo/CMAK/issues/935",
-        "https://www.vulncheck.com/advisories/cmak-through-3.0.0.6-cross-site-request-forgery-via-missing-csrf-filter",
-        "https://github.com/yahoo/CMAK/issues/935"
+        "https://www.vulncheck.com/advisories/cmak-through-3.0.0.6-cross-site-request-forgery-via-missing-csrf-filter"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26567,8 +26411,7 @@
         "https://github.com/Patrowl/PatrowlManager",
         "https://github.com/Patrowl/PatrowlManager/blob/1.8.4/users/apis.py#L29-L39",
         "https://github.com/Patrowl/PatrowlManager/issues/473",
-        "https://www.vulncheck.com/advisories/patrowlmanager-through-1.8.4-improper-access-control-via-users-api",
-        "https://github.com/Patrowl/PatrowlManager/issues/473"
+        "https://www.vulncheck.com/advisories/patrowlmanager-through-1.8.4-improper-access-control-via-users-api"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -26611,8 +26454,7 @@
         "https://github.com/shlinkio/shlink-common/blob/main/src/Mercure/LcobucciJwtProvider.php#L38-L41",
         "https://github.com/shlinkio/shlink/blob/v5.1.6/module/Rest/src/Action/MercureInfoAction.php#L26-L42",
         "https://github.com/shlinkio/shlink/issues/2633",
-        "https://www.vulncheck.com/advisories/shlink-through-5.1.6-mercure-token-authorization-bypass",
-        "https://github.com/shlinkio/shlink/issues/2633"
+        "https://www.vulncheck.com/advisories/shlink-through-5.1.6-mercure-token-authorization-bypass"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26632,8 +26474,7 @@
         "https://github.com/rundeck/rundeck",
         "https://github.com/rundeck/rundeck/blob/v5.20.1/rundeckapp/grails-app/controllers/rundeck/controllers/ProjectController.groovy#L3395-L3506",
         "https://github.com/rundeck/rundeck/issues/10459",
-        "https://www.vulncheck.com/advisories/rundeck-through-6.2.1-authorization-bypass-via-project-import",
-        "https://github.com/rundeck/rundeck/issues/10459"
+        "https://www.vulncheck.com/advisories/rundeck-through-6.2.1-authorization-bypass-via-project-import"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26653,8 +26494,7 @@
         "https://github.com/archerysec/archerysec",
         "https://github.com/archerysec/archerysec/blob/v2.0.6/webscanners/views.py#L297-L313",
         "https://github.com/archerysec/archerysec/issues/676",
-        "https://www.vulncheck.com/advisories/archerysec-through-2.0.6-information-disclosure-via-webscanvulnlist",
-        "https://github.com/archerysec/archerysec/issues/676"
+        "https://www.vulncheck.com/advisories/archerysec-through-2.0.6-information-disclosure-via-webscanvulnlist"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26677,8 +26517,7 @@
         "https://github.com/Leantime/leantime/blob/v3.9.5/app/Domain/Plugins/Services/Plugins.php#L546-L561",
         "https://github.com/Leantime/leantime/blob/v3.9.6/app/Domain/Plugins/Hxcontrollers/Details.php#L27",
         "https://github.com/Leantime/leantime/issues/3757",
-        "https://www.vulncheck.com/advisories/leantime-before-3.9.6-unauthorized-plugin-installation-via-htmx",
-        "https://github.com/Leantime/leantime/issues/3757"
+        "https://www.vulncheck.com/advisories/leantime-before-3.9.6-unauthorized-plugin-installation-via-htmx"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26781,8 +26620,7 @@
         "https://github.com/didi/KnowStreaming",
         "https://github.com/didi/KnowStreaming/blob/v3.4.0/km-rest/src/main/java/com/xiaojukeji/know/streaming/km/rest/interceptor/PermissionInterceptor.java#L46-L74",
         "https://github.com/didi/KnowStreaming/issues/1263",
-        "https://www.vulncheck.com/advisories/knowstreaming-through-3.4.1-missing-authorization-on-the-rest-api",
-        "https://github.com/didi/KnowStreaming/issues/1263"
+        "https://www.vulncheck.com/advisories/knowstreaming-through-3.4.1-missing-authorization-on-the-rest-api"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -26844,8 +26682,7 @@
         "https://github.com/Angel-ML/angel",
         "https://github.com/Angel-ML/angel/blob/Release-3.3.0/angel-ps/core/src/main/java/com/tencent/angel/utils/KryoUtils.java#L45-L70",
         "https://github.com/Angel-ML/angel/issues/1355",
-        "https://www.vulncheck.com/advisories/angel-through-3.3.0-unauthenticated-kryo-deserialization-of-arbitrary-classes",
-        "https://github.com/Angel-ML/angel/issues/1355"
+        "https://www.vulncheck.com/advisories/angel-through-3.3.0-unauthenticated-kryo-deserialization-of-arbitrary-classes"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -26907,8 +26744,7 @@
         "https://github.com/higress-group/higress/blob/v2.2.3/plugins/wasm-go/extensions/ai-token-ratelimit/util/utils.go#L52-L63",
         "https://github.com/higress-group/higress/blob/v2.2.4/plugins/wasm-go/extensions/ai-token-ratelimit/util/utils.go#L52-L63",
         "https://github.com/higress-group/higress/issues/4599",
-        "https://www.vulncheck.com/advisories/higress-before-2.2.4-rate-limit-bypass-via-malformed-cookie-header",
-        "https://github.com/higress-group/higress/issues/4599"
+        "https://www.vulncheck.com/advisories/higress-before-2.2.4-rate-limit-bypass-via-malformed-cookie-header"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -26969,8 +26805,7 @@
         "https://github.com/coze-dev/coze-studio",
         "https://github.com/coze-dev/coze-studio/blob/22275b1c2661d35344a7493cffe401e8cc61cf8e/backend/domain/plugin/service/tool/invocation_http.go#L127-L146",
         "https://github.com/coze-dev/coze-studio/issues/2711",
-        "https://www.vulncheck.com/advisories/coze-studio-through-0.5.1-server-side-request-forgery-via-plugin",
-        "https://github.com/coze-dev/coze-studio/issues/2711"
+        "https://www.vulncheck.com/advisories/coze-studio-through-0.5.1-server-side-request-forgery-via-plugin"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -27031,8 +26866,7 @@
         "https://github.com/LibreTranslate/LibreTranslate",
         "https://github.com/LibreTranslate/LibreTranslate/blob/v1.9.6/libretranslate/app.py#L1029-L1030",
         "https://github.com/LibreTranslate/LibreTranslate/issues/1012",
-        "https://www.vulncheck.com/advisories/libretranslate-through-1.9.6-missing-access-check-on-the-download-file-route",
-        "https://github.com/LibreTranslate/LibreTranslate/issues/1012"
+        "https://www.vulncheck.com/advisories/libretranslate-through-1.9.6-missing-access-check-on-the-download-file-route"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -27284,8 +27118,7 @@
       "published": "2026-09-17T12:18:30.290",
       "references": [
         "https://github.com/WWBN/AVideo/security/advisories/GHSA-v65f-hc7x-wj62",
-        "https://www.vulncheck.com/advisories/avideo-weak-prng-activation-code-authentication-bypass",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-v65f-hc7x-wj62"
+        "https://www.vulncheck.com/advisories/avideo-weak-prng-activation-code-authentication-bypass"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27321,8 +27154,7 @@
       "published": "2026-09-17T12:18:30.573",
       "references": [
         "https://github.com/WWBN/AVideo/security/advisories/GHSA-rg4h-fcmm-8w26",
-        "https://www.vulncheck.com/advisories/wwbn-avideo-userverifyemail-php-unauthenticated-access-control",
-        "https://github.com/WWBN/AVideo/security/advisories/GHSA-rg4h-fcmm-8w26"
+        "https://www.vulncheck.com/advisories/wwbn-avideo-userverifyemail-php-unauthenticated-access-control"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -27485,8 +27317,7 @@
       "published": "2026-09-17T14:17:57.513",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-x965-fc75-jpqh",
-        "https://www.vulncheck.com/advisories/vm2-before-3.11.8-sandbox-escape-rce-via-aggregateerror",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-x965-fc75-jpqh"
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.8-sandbox-escape-rce-via-aggregateerror"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27523,8 +27354,7 @@
       "published": "2026-09-17T14:17:58.320",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-x6m4-chr9-cg97",
-        "https://www.vulncheck.com/advisories/vm2-3.11.0-before-3.11.7-information-disclosure-via-error-stack",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-x6m4-chr9-cg97"
+        "https://www.vulncheck.com/advisories/vm2-3.11.0-before-3.11.7-information-disclosure-via-error-stack"
       ],
       "severity": "MEDIUM",
       "source": "NVD"
@@ -27560,8 +27390,7 @@
       "published": "2026-09-17T14:17:58.970",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-46pr-c5wc-xffx",
-        "https://www.vulncheck.com/advisories/vm2-3.11.3-through-3.11.6-native-code-execution-via-crypto-setengine",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-46pr-c5wc-xffx"
+        "https://www.vulncheck.com/advisories/vm2-3.11.3-through-3.11.6-native-code-execution-via-crypto-setengine"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27597,8 +27426,7 @@
       "published": "2026-09-17T14:17:59.310",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-98xx-8mx4-x7cm",
-        "https://www.vulncheck.com/advisories/vm2-3.11.3-before-3.11.7-tls-trust-store-manipulation",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-98xx-8mx4-x7cm"
+        "https://www.vulncheck.com/advisories/vm2-3.11.3-before-3.11.7-tls-trust-store-manipulation"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27672,8 +27500,7 @@
       "published": "2026-09-17T14:18:00.140",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-fcqc-726x-5wfc",
-        "https://www.vulncheck.com/advisories/vm2-before-3.11.7-memory-disclosure-via-buffer-pool",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-fcqc-726x-5wfc"
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.7-memory-disclosure-via-buffer-pool"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27709,8 +27536,7 @@
       "published": "2026-09-17T14:18:00.637",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-jxxv-8r27-vm4p",
-        "https://www.vulncheck.com/advisories/vm2-before-3.11.7-sandbox-escape-via-cli-require",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-jxxv-8r27-vm4p"
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.7-sandbox-escape-via-cli-require"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27746,8 +27572,7 @@
       "published": "2026-09-17T14:18:00.987",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-jf8q-945g-9q4c",
-        "https://www.vulncheck.com/advisories/vm2-3.11.4-through-3.11.6-sandbox-symbol-filtering-bypass",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-jf8q-945g-9q4c"
+        "https://www.vulncheck.com/advisories/vm2-3.11.4-through-3.11.6-sandbox-symbol-filtering-bypass"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -27783,8 +27608,7 @@
       "published": "2026-09-17T14:18:01.480",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-88hf-g992-jg85",
-        "https://www.vulncheck.com/advisories/vm2-before-3.11.8-sandbox-escape-via-nodevm",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-88hf-g992-jg85"
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.8-sandbox-escape-via-nodevm"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27820,8 +27644,7 @@
       "published": "2026-09-17T14:18:01.813",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-8686-vhfx-7r3j",
-        "https://www.vulncheck.com/advisories/vm2-before-3.11.7-authentication-bypass-via-node-prefix",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-8686-vhfx-7r3j"
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.7-authentication-bypass-via-node-prefix"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27857,8 +27680,7 @@
       "published": "2026-09-17T14:18:02.290",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-m5w8-4gq2-6f8x",
-        "https://www.vulncheck.com/advisories/vm2-before-3.11.6-process-wide-state-exposure-via-os-and-dns",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-m5w8-4gq2-6f8x"
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.6-process-wide-state-exposure-via-os-and-dns"
       ],
       "severity": "CRITICAL",
       "source": "NVD"
@@ -27894,8 +27716,7 @@
       "published": "2026-09-17T14:18:02.610",
       "references": [
         "https://github.com/patriksimek/vm2/security/advisories/GHSA-q3fm-4wcw-g57x",
-        "https://www.vulncheck.com/advisories/vm2-before-3.11.4-defense-invariant-violation-via-setup-sandbox-js",
-        "https://github.com/patriksimek/vm2/security/advisories/GHSA-q3fm-4wcw-g57x"
+        "https://www.vulncheck.com/advisories/vm2-before-3.11.4-defense-invariant-violation-via-setup-sandbox-js"
       ],
       "severity": "LOW",
       "source": "NVD"
@@ -27940,8 +27761,7 @@
         "https://github.com/InternLM/lmdeploy/blob/v0.17.0/lmdeploy/pytorch/utils.py#L187-L214",
         "https://github.com/InternLM/lmdeploy/blob/v0.17.0/lmdeploy/serve/openai/endpoints/completions.py#L130-L136",
         "https://github.com/InternLM/lmdeploy/issues/4965",
-        "https://www.vulncheck.com/advisories/internlm-lmdeploy-through-0.17.0-assertion-denial-of-service",
-        "https://github.com/InternLM/lmdeploy/issues/4965"
+        "https://www.vulncheck.com/advisories/internlm-lmdeploy-through-0.17.0-assertion-denial-of-service"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -28023,8 +27843,7 @@
         "https://github.com/siyuan-note/siyuan/blob/v3.8.3/app/src/util/Tree.ts#L134",
         "https://github.com/siyuan-note/siyuan/commit/6f093ebe50afc503e2a8b056164293054f8509e7",
         "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-jhfc-9mcq-8p8v",
-        "https://www.vulncheck.com/advisories/siyuan-before-3.8.4-cross-site-scripting-via-bookmark-labels",
-        "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-jhfc-9mcq-8p8v"
+        "https://www.vulncheck.com/advisories/siyuan-before-3.8.4-cross-site-scripting-via-bookmark-labels"
       ],
       "severity": "HIGH",
       "source": "NVD"
@@ -28090,8 +27909,7 @@
         "https://vuldb.com/cve/CVE-2026-92992",
         "https://vuldb.com/submit/942253",
         "https://vuldb.com/vuln/406446",
-        "https://vuldb.com/vuln/406446/cti",
-        "https://gist.github.com/xufengnian/b95662ba0d8881cfc5ba0bb99cbfc086"
+        "https://vuldb.com/vuln/406446/cti"
       ],
       "severity": "LOW",
       "source": "NVD"
@@ -28156,8 +27974,7 @@
         "https://gist.github.com/kazisabu/68bd095bc05b2341db318a063e05e644",
         "https://gitlab.com/francoisjacquet/rosariosis",
         "https://gitlab.com/francoisjacquet/rosariosis/-/commit/701f9c07330157181362927a40d4f8dcc8094d90",
-        "https://www.vulncheck.com/advisories/rosariosis-before-12.9-path-traversal-in-file-deletion-via-filename-parameter",
-        "https://gist.github.com/kazisabu/68bd095bc05b2341db318a063e05e644"
+        "https://www.vulncheck.com/advisories/rosariosis-before-12.9-path-traversal-in-file-deletion-via-filename-parameter"
       ],
       "severity": "HIGH",
       "source": "NVD"
