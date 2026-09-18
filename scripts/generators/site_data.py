@@ -6,6 +6,12 @@ TechPulse — Site Data Generator
 Generates the main frontend data file (generated/data.json) from the
 normalized datasets.
 
+Date handling:
+    - meta.date is the TechPulse reporting date — a date-only India
+      calendar day (Asia/Kolkata). The frontend renders it verbatim
+      and computes live relative labels from ISO timestamps; relative
+      strings are never frozen into the data.
+
 Determinism:
     The generation timestamp is derived from the newest processedAt in
     the normalized inputs, so reprocessing identical inputs produces
@@ -33,20 +39,23 @@ from processors.utils import (
     load_json,
     parse_iso_datetime,
     save_json,
-    format_relative_date,
-    utc_now,
+    ist_day_window,
+    ist_date_of,
+    ist_today,
+    parse_ist_date,
 )
+
+SCRIPTS_DIR_REF = Path(__file__).resolve().parents[1]
 
 
 def resolve_snapshot_date(date_arg: str | None) -> str:
     if date_arg:
         try:
-            datetime.strptime(date_arg, "%Y-%m-%d")
+            parse_ist_date(date_arg)
             return date_arg
         except ValueError:
             raise SystemExit("--date must be in YYYY-MM-DD format.")
-    day = (utc_now() - timedelta(days=1)).date()
-    return day.isoformat()
+    return ist_today()
 
 
 def truncate(text: str, limit: int = 160) -> str:
@@ -68,8 +77,9 @@ def format_cve(cve: dict[str, Any]) -> dict[str, Any]:
         "severity": cve.get("severity"),
         "cvss_score": cvss.get("score") if cvss else None,
         "cvss_version": cvss.get("version") if cvss else None,
-        "published": format_relative_date(cve.get("published")),
-        "modified": format_relative_date(cve.get("lastModified")),
+        # ISO timestamps — the frontend renders live relative labels.
+        "publishedAt": cve.get("published") or None,
+        "lastModifiedAt": cve.get("lastModified") or None,
         "known_exploited": bool(cve.get("known_exploited")),
         "url": f"https://nvd.nist.gov/vuln/detail/{cve.get('id')}" if cve.get("id") else "",
         "source": "NVD",
@@ -82,7 +92,7 @@ def format_release(rel: dict[str, Any]) -> dict[str, Any]:
         "repository": rel.get("repository") or "",
         "version": rel.get("version") or "",
         "kind": rel.get("kind") or "other",
-        "date": rel.get("relative_date") or format_relative_date(rel.get("published_at")),
+        "publishedAt": rel.get("published_at") or None,
         "url": rel.get("url") or "",
         "source": rel.get("source") or "GitHub",
     }
@@ -109,7 +119,7 @@ def format_tech_entry(entry: dict[str, Any]) -> dict[str, Any]:
         "url": entry.get("url") or "",
         "source": entry.get("feed_source") or "",
         "category": entry.get("feed_category") or "tech",
-        "date": entry.get("relative_date") or format_relative_date(entry.get("published_at")),
+        "publishedAt": entry.get("published_at") or None,
         # Defense in depth: legacy raw files may contain untruncated
         # summaries; the frontend excerpt must stay short regardless
         # (copyright safety + layout stability).
