@@ -207,6 +207,188 @@
       "summary": "A rewrite this size wasn't affordable before agents. Here's what porting the Copilot agent runtime to 800,000 lines of production Rust actually took. The post Migrating the GitHub Copilot runtime to Rust, using Copilot appeared first on The GitHub Blog .",
       "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
       "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
+    },
+    {
+      "feed_category": "security",
+      "feed_name": "The Register — Security",
+      "feed_source": "The Register",
+      "feed_url": "https://www.theregister.com/security/headlines.atom",
+      "guid": "https://www.theregister.com/a/5296991",
+      "published_at": "2026-09-16T22:10:24+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "This is a test - it is only a test",
+      "title": "AI agents can modify themselves without humans telling them to do so",
+      "url": "https://www.theregister.com/security/2026/09/16/ai-agents-can-modify-themselves-without-humans-telling-them-to-do-so/5296991"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "Ars Technica — Technology",
+      "feed_source": "Ars Technica",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "guid": "https://arstechnica.com/security/2026/09/nonprofit-that-tracks-meteors-taken-down-by-critical-blow-from-a-cyberattack/",
+      "published_at": "2026-09-16T21:08:14+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "Group plans to be largely out of commission for several weeks.",
+      "title": "Nonprofit that tracks meteors taken down by \"critical blow\" from a cyberattack",
+      "url": "https://arstechnica.com/security/2026/09/nonprofit-that-tracks-meteors-taken-down-by-critical-blow-from-a-cyberattack/"
+    },
+    {
+      "feed_category": "security",
+      "feed_name": "The Register — Security",
+      "feed_source": "The Register",
+      "feed_url": "https://www.theregister.com/security/headlines.atom",
+      "guid": "https://www.theregister.com/a/5296968",
+      "published_at": "2026-09-16T20:33:48+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "Agency's shift from static CVSS scores to risk-based prioritization sends the old format packing September 28",
+      "title": "CISA decides weekly vulnerability bulletin isn't necessary anymore",
+      "url": "https://www.theregister.com/security/2026/09/16/cisa-decides-weekly-vulnerability-bulletin-isnt-necessary-anymore/5296968"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "Cloudflare Blog",
+      "feed_source": "Cloudflare",
+      "feed_url": "https://blog.cloudflare.com/rss/",
+      "guid": "01M2KNF1C55YJDSSWYFA6ES3B6",
+      "published_at": "2026-09-16T20:06:17+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investigation.",
+      "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
+      "url": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/"
+    },
+    {
+      "feed_category": "security",
+      "feed_name": "The Register — Security",
+      "feed_source": "The Register",
+      "feed_url": "https://www.theregister.com/security/headlines.atom",
+      "guid": "https://www.theregister.com/a/5296936",
+      "published_at": "2026-09-16T17:56:31+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "CISA gives federal agencies just 3 days to patch",
+      "title": "Google Pixel phones pwned in zero-click attacks",
+      "url": "https://www.theregister.com/security/2026/09/16/google-pixel-phones-pwned-in-zero-click-attacks/5296936"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "AWS News Blog",
+      "feed_source": "AWS",
+      "feed_url": "https://aws.amazon.com/blogs/aws/feed/",
+      "guid": "08498470152ce637e9283653fce2e1e7198f87fb",
+      "published_at": "2026-09-16T17:50:14+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "AWS has reimagined the getting started experience with smart and sensible defaults to help developers get started fast so that they can focus on building. New customers can sign up and get started right away with $100 in Free Tier credits, managed project environments, and simplified team and…",
+      "title": "AWS reimagines the getting started experience",
+      "url": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "Google Cloud Blog",
+      "feed_source": "Google Cloud",
+      "feed_url": "https://cloudblog.withgoogle.com/rss/",
+      "guid": "https://cloud.google.com/blog/topics/telecommunications/how-orange-uses-agents-to-make-finops-everyones-responsibility/",
+      "published_at": "2026-09-16T16:00:00+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "At Orange , the leading France-based multinational telecom provider, there are days when engineering teams set aside their delivery backlogs and spend the day cleaning up cloud spend together. There's a leaderboard. There are goodies on the line. Experienced practitioners guide the newcomers, so…",
+      "title": "How Orange built FinOps accountability, and why agents are next",
+      "url": "https://cloud.google.com/blog/topics/telecommunications/how-orange-uses-agents-to-make-finops-everyones-responsibility/"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "Google Cloud Blog",
+      "feed_source": "Google Cloud",
+      "feed_url": "https://cloudblog.withgoogle.com/rss/",
+      "guid": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-monitors-ai-threats-advances-ai-defenses/",
+      "published_at": "2026-09-16T16:00:00+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "Welcome to the first Cloud CISO Perspectives for September 2026. Today, Sandra Joyce shares the latest details on Google’s visibility into how attackers are using AI, and how we’re using AI to stop them. As with all Cloud CISO Perspectives, the contents of this newsletter are posted to the Google…",
+      "title": "Cloud CISO Perspectives: How Google monitors AI threats and advances AI defenses",
+      "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-monitors-ai-threats-advances-ai-defenses/"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "Google Cloud Blog",
+      "feed_source": "Google Cloud",
+      "feed_url": "https://cloudblog.withgoogle.com/rss/",
+      "guid": "https://cloud.google.com/blog/products/containers-kubernetes/seaverse-chooses-gke-agent-sandbox/",
+      "published_at": "2026-09-16T16:00:00+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "Editor’s note: Today we hear from SeaVerse , a gaming startup from SeaArt that is building a platform for playable AI experiences , where users can open lightweight games, character chats, and interactive apps, or create their own experiences from a prompt. To support that creative loop, SeaVerse…",
+      "title": "For SeaVerse, GKE Agent Sandbox reduces infrastructure costs by 60%",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/seaverse-chooses-gke-agent-sandbox/"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "Google Cloud Blog",
+      "feed_source": "Google Cloud",
+      "feed_url": "https://cloudblog.withgoogle.com/rss/",
+      "guid": "https://cloud.google.com/blog/products/compute/compute-engine-m4n-vms/",
+      "published_at": "2026-09-16T16:00:00+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "As enterprise organizations scale mission-critical applications, storage I/O and memory access can become severe operational bottlenecks. Whether its Oracle databases, in-memory databases like SAP HANA, or high-throughput SQL Server clusters, EHR systems, and real-time big data analytics…",
+      "title": "M4N VM family, now GA: Highest per-core IOPS and throughput for I/O and memory-bound workloads",
+      "url": "https://cloud.google.com/blog/products/compute/compute-engine-m4n-vms/"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "The Register — Software",
+      "feed_source": "The Register",
+      "feed_url": "https://www.theregister.com/software/headlines.atom",
+      "guid": "https://www.theregister.com/a/5296873",
+      "published_at": "2026-09-16T15:27:46+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "Kmscon brings smooth scaling, richer colors, and better Unicode support beneath GNOME 51",
+      "title": "Fedora 45 beta drags the Linux console into the 21st century",
+      "url": "https://www.theregister.com/software/2026/09/16/fedora-45-beta-drags-the-linux-console-into-the-21st-century/5296873"
+    },
+    {
+      "feed_category": "security",
+      "feed_name": "The Register — Security",
+      "feed_source": "The Register",
+      "feed_url": "https://www.theregister.com/security/headlines.atom",
+      "guid": "https://www.theregister.com/a/5296844",
+      "published_at": "2026-09-16T11:56:55+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "Data protection chiefs call for 'immediate review' of data protection models",
+      "title": "Spain gets its first taste of AI-aided cyber attack",
+      "url": "https://www.theregister.com/cyber-crime/2026/09/16/spain-gets-its-first-taste-of-ai-aided-cyber-attack/5296844"
+    },
+    {
+      "feed_category": "security",
+      "feed_name": "The Register — Security",
+      "feed_source": "The Register",
+      "feed_url": "https://www.theregister.com/security/headlines.atom",
+      "guid": "https://www.theregister.com/a/5296808",
+      "published_at": "2026-09-16T10:42:28+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "Sensitive personal data was involved, but there is no evidence it was shared with third parties",
+      "title": "Ministry of Justice apologizes after court staff accessed Southport victims' files",
+      "url": "https://www.theregister.com/security/2026/09/16/ministry-of-justice-apologizes-after-court-staff-accessed-southport-victims-files/5296808"
+    },
+    {
+      "feed_category": "tech",
+      "feed_name": "Microsoft Dev Blogs",
+      "feed_source": "Microsoft",
+      "feed_url": "https://devblogs.microsoft.com/feed/",
+      "guid": "https://devblogs.microsoft.com/?p=22350",
+      "published_at": "2026-09-16T09:09:51+00:00",
+      "relative_date": "2 days ago",
+      "source": "RSS",
+      "summary": "Your AI coding agent passed the eval. But did the model know the answer, or did it find it somewhere on your machine? A correct answer can still invalidate your measurement. The post Your AI coding agent evaluation is only as good as its sandbox appeared first on Microsoft for Developers .",
+      "title": "Your AI coding agent evaluation is only as good as its sandbox",
+      "url": "https://devblogs.microsoft.com/blog/your-ai-coding-agent-evaluation-is-only-as-good-as-its-sandbox/"
     }
   ],
   "meta": {
@@ -217,28 +399,31 @@
     "sources": {
       "rss": {
         "failures": 0,
-        "inWindow": 16,
+        "inWindow": 47,
         "status": "success",
         "total": 229
       }
     },
     "window": {
       "end": "2026-09-17T23:59:59.999000+00:00",
+      "lookbackHours": 48,
       "start": "2026-09-17T00:00:00+00:00"
     }
   },
   "summary": {
     "categories": {
-      "security": 8,
-      "tech": 8
+      "security": 21,
+      "tech": 26
     },
     "sources": {
-      "AWS": 2,
-      "Ars Technica": 2,
+      "AWS": 3,
+      "Ars Technica": 3,
+      "Cloudflare": 3,
       "GitHub Blog": 1,
-      "Google Cloud": 3,
-      "The Register": 8
+      "Google Cloud": 12,
+      "Microsoft": 2,
+      "The Register": 23
     },
-    "total": 16
+    "total": 47
   }
 }

@@ -81,7 +81,7 @@
         "knownExploited": 2,
         "projects": 6,
         "releases": 1,
-        "techEntries": 16
+        "techEntries": 47
       },
       "sources": {
         "cisa": {
@@ -110,15 +110,15 @@
         },
         "rss": {
           "failures": 0,
-          "inWindow": 16,
+          "inWindow": 47,
           "status": "success",
           "total": 229
         }
       },
       "technology": {
         "categories": {
-          "security": 8,
-          "tech": 8
+          "security": 21,
+          "tech": 26
         },
         "recent": [
           {
