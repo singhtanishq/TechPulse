@@ -22,24 +22,24 @@ from typing import Any
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 COLLECTORS = [
-    ("NVD", "scripts/sources/nvd/collect.py", ["--start", "{window_start}", "--end", "{window_end}"]),
-    ("CISA KEV", "scripts/sources/cisa/collect.py", []),
-    ("GitHub", "scripts/sources/github/collect.py", []),
-    ("RSS/Atom", "scripts/sources/rss/collect.py", []),
+    ("NVD", "scripts/sources/nvd/collect.py", True),      # supports window args
+    ("CISA KEV", "scripts/sources/cisa/collect.py", False), # no args
+    ("GitHub", "scripts/sources/github/collect.py", False),  # no args (uses config)
+    ("RSS/Atom", "scripts/sources/rss/collect.py", False),  # no args (uses config)
 ]
 
 PROCESSORS = [
-    ("Security", "scripts/processors/security.py"),
-    ("Releases", "scripts/processors/releases.py"),
-    ("Open Source", "scripts/processors/opensource.py"),
-    ("Technology", "scripts/processors/tech.py"),
-    ("Daily Snapshot", "scripts/processors/daily.py"),
-    ("History", "scripts/processors/history.py"),
+    ("Security", "scripts/processors/security.py", True),
+    ("Releases", "scripts/processors/releases.py", True),
+    ("Open Source", "scripts/processors/opensource.py", True),
+    ("Technology", "scripts/processors/tech.py", True),
+    ("Daily Snapshot", "scripts/processors/daily.py", False), # uses --date
+    ("History", "scripts/processors/history.py", False),      # no args
 ]
 
 GENERATORS = [
-    ("Site Data", "scripts/generators/site_data.py"),
-    ("Archive", "scripts/generators/archive.py"),
+    ("Site Data", "scripts/generators/site_data.py", False),
+    ("Archive", "scripts/generators/archive.py", False),
 ]
 
 
@@ -119,13 +119,12 @@ def main() -> int:
     if not args.skip_collect and args.only != "process" and args.only != "generate":
         print("Phase 1: Source Collection")
         print("-" * 30)
-        for name, script in COLLECTORS:
+        for name, script, uses_window in COLLECTORS:
             start = time.time()
-            if name == "GitHub":
-                # GitHub collector doesn't use window args
-                success, output = run_script(script)
-            else:
+            if uses_window:
                 success, output = run_script(script, processor_args)
+            else:
+                success, output = run_script(script)
             elapsed = time.time() - start
             print_stage(f"{name} ({elapsed:.1f}s)", success, output)
             if not success:
@@ -136,14 +135,16 @@ def main() -> int:
     if not args.skip_process and args.only != "collect" and args.only != "generate":
         print("Phase 2: Data Processing")
         print("-" * 30)
-        for name, script in PROCESSORS:
+        for name, script, uses_window in PROCESSORS:
             start = time.time()
             if name == "Daily Snapshot":
                 success, output = run_script(script, daily_args)
             elif name == "History":
                 success, output = run_script(script)
-            else:
+            elif uses_window:
                 success, output = run_script(script, processor_args)
+            else:
+                success, output = run_script(script)
             elapsed = time.time() - start
             print_stage(f"{name} ({elapsed:.1f}s)", success, output)
             if not success:
@@ -154,7 +155,7 @@ def main() -> int:
     if not args.skip_generate and args.only != "collect" and args.only != "process":
         print("Phase 3: Data Generation")
         print("-" * 30)
-        for name, script in GENERATORS:
+        for name, script, uses_window in GENERATORS:
             start = time.time()
             success, output = run_script(script)
             elapsed = time.time() - start
