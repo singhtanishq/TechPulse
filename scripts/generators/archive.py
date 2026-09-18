@@ -9,9 +9,14 @@ Generates the historical archive data for the History page.
 from __future__ import annotations
 
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+# Add scripts to path for imports
+SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (
     load_json,
