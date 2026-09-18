@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "name": "react",
+    "full_name": "facebook/react",
+    "owner": {"login": "facebook"},
+    "html_url": "https://github.com/facebook/react",
+    "description": "The library for web and native user interfaces.",
+    "stargazers_count": 250000,
+    "forks_count": 10000,
+    "open_issues_count": 500,
+    "language": "JavaScript",
+    "default_branch": "main",
+    "created_at": "2013-05-24T16:15:54Z",
+    "updated_at": "2026-09-17T00:00:00Z",
+    "pushed_at": "2026-09-17T00:00:00Z",
+    "archived": false
+  }
+]
