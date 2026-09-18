@@ -1,27 +1,42 @@
 {
   "meta": {
-    "processedAt": "2026-09-18T07:26:24.522337+00:00",
+    "processedAt": "2026-09-18T20:35:21.182763+00:00",
+    "sourceFiles": {
+      "releases": "2026-09-17.json"
+    },
     "sources": {
       "github": {
-        "inWindow": 0,
-        "status": "missing",
-        "totalReleases": 0,
-        "totalRepos": 0
+        "failures": 0,
+        "inWindow": 1,
+        "status": "success",
+        "total": 59
       }
     },
     "window": {
-      "end": "2026-09-17T23:59:59+00:00",
+      "end": "2026-09-17T23:59:59.999000+00:00",
       "start": "2026-09-17T00:00:00+00:00"
     }
   },
-  "releases": [],
+  "releases": [
+    {
+      "kind": "patch",
+      "name": "v3.5.43",
+      "project": "core",
+      "published_at": "2026-09-17T08:36:57Z",
+      "relative_date": "Yesterday",
+      "repository": "vuejs/core",
+      "source": "GitHub",
+      "url": "https://github.com/vuejs/core/releases/tag/v3.5.43",
+      "version": "v3.5.43"
+    }
+  ],
   "summary": {
     "categories": {
       "major": 0,
       "minor": 0,
       "other": 0,
-      "patch": 0
+      "patch": 1
     },
-    "total": 0
+    "total": 1
   }
 }

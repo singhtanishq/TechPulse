@@ -1,265 +1,226 @@
 {
   "date": "2026-09-17",
-  "generatedAt": "2026-09-18T07:26:24.657331+00:00",
+  "generatedAt": "2026-09-18T20:35:21.182763+00:00",
   "opensource": {
-    "topProjects": []
+    "growthBasis": "unavailable",
+    "topProjects": [
+      {
+        "daily_growth": null,
+        "full_name": "react/react",
+        "language": "JavaScript",
+        "stars": 250566,
+        "url": "https://github.com/react/react"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200172,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 142339,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 138880,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 127814,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 121995,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 118932,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 110100,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103084,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": null,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97607,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      }
+    ]
   },
   "releases": {
     "categories": {
       "major": 0,
       "minor": 0,
       "other": 0,
-      "patch": 0
+      "patch": 1
     },
-    "recent": []
+    "recent": [
+      {
+        "project": "core",
+        "published_at": "2026-09-17T08:36:57Z",
+        "repository": "vuejs/core",
+        "url": "https://github.com/vuejs/core/releases/tag/v3.5.43",
+        "version": "v3.5.43"
+      }
+    ]
   },
   "security": {
+    "kevRecent": [],
     "latest": [
       {
-        "cvss": {
-          "score": 6.0,
-          "severity": "MEDIUM",
-          "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
-          "version": "3.1"
-        },
-        "description": "A vulnerability in the installation process of Cisco IOS XR Software could allow an authenticated, local attacker to bypass Cisco IOS XR Software image signature verification and load unsigned software on an affected device. To exploit this vulnerability, the attacker must have root-system privileges on the affected device.\r\n\r\nThis vulnerability is due to incomplete validation of files during the installation of an .iso file. An attacker could exploit this vulnerability by modifying contents of the .iso image and then installing and activating it on the device. A successful exploit could allow the attacker to load an unsigned file as part of the image activation process.",
-        "id": "CVE-2025-20248",
+        "cvss": 8.7,
+        "description": "vLLM through 0.29.0 fails to properly clean up decode-side metadata for rejected inference requests in prefill/decode disaggregated deployments. Remote attackers can submit requests with max_tokens=0 ",
+        "id": "CVE-2026-93436",
         "known_exploited": false,
-        "lastModified": "2026-09-17T20:43:40.317",
-        "published": "2025-09-10T16:15:36.117",
-        "references": [
-          "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-xrsig-UY4zRUCG"
-        ],
-        "severity": "MEDIUM",
-        "source": "NVD"
-      },
-      {
-        "cvss": {
-          "score": 8.5,
-          "severity": "HIGH",
-          "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "NetworkManager-l2tp contains an improper input validation vulnerability that allows local users with VPN connection creation permissions to inject arbitrary pppd directives by supplying mru or mtu property values containing trailing non-numeric content after a valid integer. Attackers can exploit the verbatim write of unvalidated strings into the pppd options file via write_config_option() to inject the plugin directive, causing the privileged pppd process to load an attacker-controlled shared object and achieve arbitrary code execution as root.",
-        "id": "CVE-2026-93337",
-        "known_exploited": false,
-        "lastModified": "2026-09-17T20:19:00.527",
-        "published": "2026-09-17T20:19:00.527",
-        "references": [
-          "https://github.com/nm-l2tp/NetworkManager-l2tp/commit/64879ce0ad866f7c9a45babe4d95731a916ea00f",
-          "https://github.com/nm-l2tp/NetworkManager-l2tp/security/advisories/GHSA-rp84-8h2r-5xc3",
-          "https://www.vulncheck.com/advisories/networkmanager-l2tp-privilege-escalation-via-pppd-plugin-injection"
-        ],
         "severity": "HIGH",
-        "source": "NVD"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93436"
       },
       {
-        "cvss": {
-          "score": 7.0,
-          "severity": "HIGH",
-          "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "BlueKitchen BTstack through 1.8.2 fails to validate the peer-reported endpoint count against table bounds in A2DP stream endpoint discovery. A bonded peer can send an AVDTP DISCOVER response with more endpoints than the fixed table holds, causing out-of-bounds writes that corrupt adjacent static objects and crash the process or sever event delivery.",
-        "id": "CVE-2026-93015",
+        "cvss": 8.7,
+        "description": "redis-parser through 3.0.0 contains a denial of service vulnerability in the RESP protocol parser that allows malicious Redis endpoints to crash the client process through unbounded recursion on neste",
+        "id": "CVE-2026-93435",
         "known_exploited": false,
-        "lastModified": "2026-09-17T20:19:00.410",
-        "published": "2026-09-17T16:18:35.847",
-        "references": [
-          "https://github.com/bluekitchen/btstack",
-          "https://github.com/bluekitchen/btstack/blob/v1.8.2/src/classic/a2dp.c#L568",
-          "https://github.com/bluekitchen/btstack/blob/v1.8.2/src/classic/avdtp.c#L1703",
-          "https://github.com/bluekitchen/btstack/commit/fc208fcce056d4e0a5bb916abc90e83a383e1cdf",
-          "https://www.vulncheck.com/advisories/bluekitchen-btstack-through-1.8.2-a2dp-sep-discovery-out-of-bounds-write"
-        ],
         "severity": "HIGH",
-        "source": "NVD"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93435"
       },
       {
-        "cvss": {
-          "score": 2.1,
-          "severity": "LOW",
-          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "A vulnerability was detected in Dromara mayfly-go up to 1.11.5. The impacted element is the function RunMachineScript of the file server/internal/machine/api/machine_script.go of the component Machine Script Feature. The manipulation of the argument params results in os command injection. The attack can be executed remotely. The exploit is now public and may be used. Exploitation needs no admin account. Any account holding machine:script:run plus tag access reaches arbitrary command execution on machines whose templates contain {{.param}} placeholders; the SSH exec layer (Cli.Run) also applies no input filtering to any caller. The vendor was contacted early about this disclosure but did not respond in any way.",
-        "id": "CVE-2026-92993",
+        "cvss": 7.1,
+        "description": "External control of file name or path in Microsoft Edge for Android allows an unauthorized attacker to disclose information locally.",
+        "id": "CVE-2026-66310",
         "known_exploited": false,
-        "lastModified": "2026-09-17T20:19:00.233",
-        "published": "2026-09-17T20:19:00.233",
-        "references": [
-          "https://gist.github.com/xufengnian/b95662ba0d8881cfc5ba0bb99cbfc086",
-          "https://github.com/dromara/mayfly-go/",
-          "https://github.com/dromara/mayfly-go/pull/129",
-          "https://vuldb.com/cve/CVE-2026-92993",
-          "https://vuldb.com/submit/942254",
-          "https://vuldb.com/vuln/406447",
-          "https://vuldb.com/vuln/406447/cti"
-        ],
-        "severity": "LOW",
-        "source": "NVD"
-      },
-      {
-        "cvss": {
-          "score": 2.1,
-          "severity": "LOW",
-          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:P/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "A security vulnerability has been detected in Dromara mayfly-go up to 1.11.5. The affected element is an unknown function of the file server/internal/ai/api/ai.go of the component AI Assistant. The manipulation leads to missing authorization. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used. The identifier of the patch is 74bcb926eb4f5f94e7681144d7bf2168a0ec7cde. Applying a patch is the recommended action to fix this issue. The whitelist bypass is one-token wide. Any compound command containing curl, wget or sed auto-runs without approval; approval is granted by the same session user (self-approval). This issue got fixed with a silent patch.",
-        "id": "CVE-2026-92992",
-        "known_exploited": false,
-        "lastModified": "2026-09-17T20:19:00.100",
-        "published": "2026-09-17T19:17:07.430",
-        "references": [
-          "https://gist.github.com/xufengnian/b95662ba0d8881cfc5ba0bb99cbfc086",
-          "https://github.com/dromara/mayfly-go/",
-          "https://github.com/dromara/mayfly-go/commit/74bcb926eb4f5f94e7681144d7bf2168a0ec7cde",
-          "https://github.com/dromara/mayfly-go/pull/129",
-          "https://vuldb.com/cve/CVE-2026-92992",
-          "https://vuldb.com/submit/942253",
-          "https://vuldb.com/vuln/406446",
-          "https://vuldb.com/vuln/406446/cti",
-          "https://gist.github.com/xufengnian/b95662ba0d8881cfc5ba0bb99cbfc086"
-        ],
-        "severity": "LOW",
-        "source": "NVD"
-      },
-      {
-        "cvss": {
-          "score": 8.6,
-          "severity": "HIGH",
-          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "SiYuan before 3.8.4 renders document titles as HTML in the backlink dock tree without escaping markup characters. Attackers can set malicious titles through the rename API or crafted notebooks to execute scripts in the Electron renderer with access to child_process for command execution.",
-        "id": "CVE-2026-92986",
-        "known_exploited": false,
-        "lastModified": "2026-09-17T20:18:59.970",
-        "published": "2026-09-17T15:17:02.033",
-        "references": [
-          "https://github.com/siyuan-note/siyuan",
-          "https://github.com/siyuan-note/siyuan/blob/v3.8.3/app/src/util/Tree.ts#L134",
-          "https://github.com/siyuan-note/siyuan/commit/6f093ebe50afc503e2a8b056164293054f8509e7",
-          "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-c5h9-g2c6-fxjw",
-          "https://www.vulncheck.com/advisories/siyuan-before-3.8.4-cross-site-scripting-via-document-title"
-        ],
         "severity": "HIGH",
-        "source": "NVD"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66310"
       },
       {
-        "cvss": {
-          "score": 8.8,
-          "severity": "HIGH",
-          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "SGLang through 0.5.19 in prefill/decode disaggregation mode contains an unauthenticated PUT /route endpoint on the prefill bootstrap service that allows attackers to poison the KV transfer routing table. Attackers can supply arbitrary rank_ip and rank_port values to redirect decode workers to attacker-controlled endpoints, causing denial of service or disclosure of KV transfer metadata including session identifiers and tensor-parallel topology parameters.",
-        "id": "CVE-2026-92972",
+        "cvss": null,
+        "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+        "id": "CVE-2026-65323",
         "known_exploited": false,
-        "lastModified": "2026-09-17T20:18:59.850",
-        "published": "2026-09-17T14:18:03.347",
-        "references": [
-          "https://github.com/sgl-project/sglang",
-          "https://github.com/sgl-project/sglang/blob/v0.5.19/python/sglang/srt/disaggregation/common/conn.py#L1716-L1718",
-          "https://github.com/sgl-project/sglang/blob/v0.5.19/python/sglang/srt/disaggregation/common/conn.py#L1736-L1810",
-          "https://github.com/sgl-project/sglang/issues/39400",
-          "https://www.vulncheck.com/advisories/sglang-through-0.5.19-unauthenticated-route-poisoning-via-put-endpoint"
-        ],
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65323"
+      },
+      {
+        "cvss": 7.8,
+        "description": "Out-of-bounds read in Windows Win32K - GRFX allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-56176",
+        "known_exploited": false,
         "severity": "HIGH",
-        "source": "NVD"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56176"
       },
       {
-        "cvss": {
-          "score": 10.0,
-          "severity": "CRITICAL",
-          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "vm2 versions 3.10.1 through 3.11.6 contain a sandbox escape reachable from a default `new VM()` sandbox when running on Node.js 26. WebAssembly.compileStreaming and WebAssembly.instantiateStreaming can produce a raw host-realm Promise that rejects with a host-realm error object; by controlling Symbol.species via Promise.prototype.finally, sandbox code receives that raw host error, walks from the host error constructor to the host Function constructor, and recovers the real host `process` object, gaining host Node.js capabilities (e.g. access to host modules such as fs) in the context of the process running the sandbox. No NodeVM, require permission, host object injection, or otherwise unsafe configuration is required. This is a bypass of the fix for GHSA-6j2x-vhqr-qr7q, which removed the JSPI entry points WebAssembly.promising and WebAssembly.Suspending. The issue is fixed in 3.11.7.",
-        "id": "CVE-2026-92956",
+        "cvss": 7.5,
+        "description": "Heap-based buffer overflow in Windows Internet Key Exchange (IKE) Protocol allows an unauthorized attacker to deny service over a network.",
+        "id": "CVE-2026-50696",
         "known_exploited": false,
-        "lastModified": "2026-09-17T20:18:59.730",
-        "published": "2026-09-17T14:18:01.640",
-        "references": [
-          "https://github.com/patriksimek/vm2/security/advisories/GHSA-wjwh-qqvp-g4p4",
-          "https://www.vulncheck.com/advisories/vm2-3.10.1-through-3.11.6-sandbox-escape-via-webassembly-compilestreaming"
-        ],
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50696"
+      },
+      {
+        "cvss": 8.0,
+        "description": "Relative path traversal in Windows PowerShell allows an authorized attacker to execute code over a network.",
+        "id": "CVE-2026-40400",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40400"
+      },
+      {
+        "cvss": null,
+        "description": "Rejected reason: reserved but not needed",
+        "id": "CVE-2026-78668",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78668"
+      },
+      {
+        "cvss": 9.1,
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.5, the contribution request dispatcher in web/html/contribuicao/controller/control.php accepts attacker-controlled nomeClasse and metod",
+        "id": "CVE-2026-54670",
+        "known_exploited": false,
         "severity": "CRITICAL",
-        "source": "NVD"
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54670"
       },
       {
-        "cvss": {
-          "score": 9.4,
-          "severity": "CRITICAL",
-          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "vm2 before 3.11.7 contains an incorrect authorization vulnerability in the external package allowlist check that uses non-exact substring matching instead of full package-name boundary validation. Attackers can bypass the allowlist by requiring a colliding package name that contains an allowlisted package substring, causing vm2 to load and execute unauthorized host packages in the host context.",
-        "id": "CVE-2026-92951",
+        "cvss": 7.2,
+        "description": "CubeCart is an ecommerce software solution. Prior to 6.7.5, admin/sources/settings.index.inc.php directly concatenates the administrator-controlled download_expire POST parameter into a raw UPDATE sta",
+        "id": "CVE-2026-54647",
         "known_exploited": false,
-        "lastModified": "2026-09-17T20:18:59.610",
-        "published": "2026-09-17T14:18:00.827",
-        "references": [
-          "https://github.com/patriksimek/vm2/security/advisories/GHSA-c48m-32m9-vx93",
-          "https://www.vulncheck.com/advisories/vm2-before-3.11.7-module-allowlist-bypass-via-custom-resolver"
-        ],
-        "severity": "CRITICAL",
-        "source": "NVD"
-      },
-      {
-        "cvss": {
-          "score": 10.0,
-          "severity": "CRITICAL",
-          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-          "version": "4.0"
-        },
-        "description": "vm2 before 3.11.7 contains a remote code execution vulnerability when require.external is enabled without an explicit require.root that excludes node_modules. Sandboxed code can require vm2's own package, instantiate an unrestricted NodeVM instance, and execute arbitrary host OS commands via child_process.",
-        "id": "CVE-2026-92946",
-        "known_exploited": false,
-        "lastModified": "2026-09-17T20:18:59.483",
-        "published": "2026-09-17T14:17:59.963",
-        "references": [
-          "https://github.com/patriksimek/vm2/security/advisories/GHSA-j3hm-6rg5-mchv",
-          "https://www.vulncheck.com/advisories/vm2-before-3.11.7-remote-code-execution-via-require-external"
-        ],
-        "severity": "CRITICAL",
-        "source": "NVD"
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54647"
       }
     ],
     "severity": {
-      "CRITICAL": 176,
-      "HIGH": 806,
-      "LOW": 72,
-      "MEDIUM": 464,
+      "CRITICAL": 136,
+      "HIGH": 675,
+      "LOW": 49,
+      "MEDIUM": 356,
       "NONE": 2,
-      "UNKNOWN": 618
+      "UNSCORED": 457
     }
   },
   "snapshot": {
-    "cves": 2138,
+    "cves": 1675,
+    "kevAdded": 0,
     "knownExploited": 2,
-    "projects": 0,
-    "releases": 0,
+    "projects": 20,
+    "releases": 1,
     "techEntries": 16
   },
   "sources": {
     "cisa": {
-      "inWindow": 2,
-      "status": "success",
+      "failures": 0,
+      "inWindow": 0,
+      "status": "partial",
       "total": 1713
     },
-    "github": {
-      "inWindow": 0,
-      "status": "missing",
-      "total": 0
+    "github_releases": {
+      "failures": 0,
+      "inWindow": 1,
+      "status": "success",
+      "total": 59
+    },
+    "github_repos": {
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 20
     },
     "nvd": {
-      "inWindow": 2138,
+      "failures": 0,
+      "inWindow": 1675,
       "status": "success",
-      "total": 2235
+      "total": 1675
     },
     "rss": {
+      "failures": 0,
       "inWindow": 16,
       "status": "success",
       "total": 230
@@ -272,159 +233,76 @@
     },
     "recent": [
       {
-        "collected_at": "2026-09-18T07:23:03.003110+00:00",
-        "feed_category": "security",
-        "feed_name": "The Register - Security",
-        "feed_source": "The Register",
-        "feed_url": "https://www.theregister.com/security/headlines.atom",
-        "guid": "https://www.theregister.com/a/5297335",
         "published_at": "2026-09-17T22:42:29+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "Plugin4Shell attack affects all the major coding agents, researchers say",
-        "summary_short": "Plugin4Shell attack affects all the major coding agents, researchers say",
+        "source": "The Register",
         "title": "AI coding agents' 0-click RCE flaw could hand attackers keys to the kingdom",
         "url": "https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335"
       },
       {
-        "collected_at": "2026-09-18T07:24:53.215872+00:00",
-        "feed_category": "tech",
-        "feed_name": "AWS News Blog",
-        "feed_source": "AWS",
-        "feed_url": "https://aws.amazon.com/blogs/aws/feed/",
-        "guid": "e54808ff9073a2b426d2baf919a0236eb2f63e40",
         "published_at": "2026-09-17T21:11:48+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "AWS introduces new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 instances.",
-        "summary_short": "AWS introduces new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 i...",
+        "source": "AWS",
         "title": "New low-cost burstable Amazon EC2 T8i instances are generally available",
         "url": "https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/"
       },
       {
-        "collected_at": "2026-09-18T07:23:03.003112+00:00",
-        "feed_category": "security",
-        "feed_name": "The Register - Security",
-        "feed_source": "The Register",
-        "feed_url": "https://www.theregister.com/security/headlines.atom",
-        "guid": "https://www.theregister.com/a/5297303",
         "published_at": "2026-09-17T19:36:10+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "Eve's dropping in on Alice and Bob",
-        "summary_short": "Eve's dropping in on Alice and Bob",
+        "source": "The Register",
         "title": "Researchers find way to listen in on headphones from afar",
         "url": "https://www.theregister.com/security/2026/09/17/researchers-find-way-to-listen-in-on-headphones-from-afar/5297303"
       },
       {
-        "collected_at": "2026-09-18T07:24:53.215886+00:00",
-        "feed_category": "tech",
-        "feed_name": "AWS News Blog",
-        "feed_source": "AWS",
-        "feed_url": "https://aws.amazon.com/blogs/aws/feed/",
-        "guid": "871c44b03c81444dbf2768f2c7efdf2a156c5808",
         "published_at": "2026-09-17T19:20:21+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
-        "summary_short": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
+        "source": "AWS",
         "title": "AWS Elastic Beanstalk introduces Cluster Mode",
         "url": "https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/"
       },
       {
-        "collected_at": "2026-09-18T07:24:13.484404+00:00",
-        "feed_category": "tech",
-        "feed_name": "Ars Technica - Technology",
-        "feed_source": "Ars Technica",
-        "feed_url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
-        "guid": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
         "published_at": "2026-09-17T18:33:13+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
-        "summary_short": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
+        "source": "Ars Technica",
         "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
         "url": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/"
       },
       {
-        "collected_at": "2026-09-18T07:23:03.003113+00:00",
-        "feed_category": "security",
-        "feed_name": "The Register - Security",
-        "feed_source": "The Register",
-        "feed_url": "https://www.theregister.com/security/headlines.atom",
-        "guid": "https://www.theregister.com/a/5297286",
         "published_at": "2026-09-17T18:00:17+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "Beware the SparroWocky, my son! The backdoor that bites…",
-        "summary_short": "Beware the SparroWocky, my son! The backdoor that bites…",
+        "source": "The Register",
         "title": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
         "url": "https://www.theregister.com/security/2026/09/17/chinas-salt-typhoon-backdoors-latin-american-orgs-with-new-snooping-malware/5297286"
       },
       {
-        "collected_at": "2026-09-18T07:25:02.465128+00:00",
-        "feed_category": "tech",
-        "feed_name": "Google Cloud Blog",
-        "feed_source": "Google Cloud",
-        "feed_url": "https://cloudblog.withgoogle.com/rss/",
-        "guid": "https://cloud.google.com/blog/topics/supply-chain-logistics/the-future-of-orchestration-pine59s-journey-to-airflow-3-on-google-cloud/",
         "published_at": "2026-09-17T17:00:00+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "Operating large data pipelines requires an orchestration layer that scales smoothly as workloads expand. When your pipelines process millions of complex data points every day to feed predictive models, staying up-to-date with your technology stack is a strategic necessity.\nPine59 provides location intelligence data through data pipelines that produce analytical metrics on cadences ranging from hourly to quarterly. One of the company’s most data-intensive metrics, Daily Foot Traffic, computes data for as many as 14 million distinct locations in a single job. To handle this massive volume, Pine59’s system runs entirely on Google Cloud, with the heavy lifting in BigQuery and all of it orchestrated by Managed Service for Apache Airflow (formerly Cloud Composer) running Apache Airflow 3.\nAs the company’s volume of data and number of machine learning workloads scaled up, Pine59 decided to modernize its monorepo, which contains hundreds of directed acyclic graphs (DAGs). Here is a look at how that transition improved Pine59’s MLOps capabilities, developer workflow, and pipeline speed.\nProactive modernization for growth\nPine59 has long relied on a shared monorepo with code and tooling spanning multiple projects to run its metric production pipelines. As it considered its infrastructure’s future, the company wanted to help its data pipelines run faster and more reliably.\nThat’s why it decided to stress-test production workloads against the newly available Managed Airflow (Gen 3) architecture running Airflow 3. The initial results were unambiguous: the Gen 3 environment delivered immediate and significant processing speed, task scheduling, and overall stability improvements. Recognizing the clear potential for performance gains, Pine59 initiated a full transition to the new environment.\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nOrchestrating advanced MLOps\nPine59’s pipelines don’t just move data; they drive complex ML models, so a core aspect of its migration was optimizing the orchestration of its ML inference workloads.\nPreviously, Pine59 had used standard Kubernetes operators for these tasks. By moving to Managed Airflow (Gen 3), which features a highly optimized and abstracted infrastructure layer, the company’s engineering team refined its MLOps architecture. They did so by setting up a dedicated Google Kubernetes Engine (GKE) cluster that was specifically optimized for model inference and integrated it into the Pine59 pipelines.\nThis clear separation of orchestration and heavy ML execution compute allows data processing and model inference to run efficiently, showcasing Managed Airflow as a resilient, scalable backbone for enterprise MLOps.\nSupporting developers with custom extensibility\nBeyond infrastructure improvements, Pine59 was also able to immediately capitalize on Airflow 3’s delivery of a vastly improved developer workflow and user interface. Indeed, managing hundreds of interconnected DAGs requires excellent observability, and Pine59 found Airflow 3’s plugin authoring system remarkably easy to use.\nTo improve internal developer velocity, the company quickly built a number of custom plugins that it integrated directly into its new Airflow UI:\n\n\nBigQuery Auto-linkify: A tool that automatically detects internal BigQuery table references within the Airflow Logs and XCom tabs, dynamically generating direct links to BigQuery Studio for faster debugging (available as a public GitHub gist)\n\n\nDAG Run Configuration Search: A custom search form added directly to the DAG overview page. It allows Pine59 engineers to query specific key-value pairs within DAG run payloads (configs) and instantly surface matching runs. This in turn drastically reduces troubleshooting time.\n\n\nIn addition, the team also deployed a compatibility shim layer within its monorepo. This “compat” module dynamically abstracts logic between Airflow versions, streamlining operator migration across versions.\nFaster, more reliable pipelines\nFor Pine59, migrating to Managed Airflow (Gen 3) with Airflow 3 has yielded clear, quantifiable results.\nThe most important improvement was the speed of its DAG runs. In the company’s previous setup, tasks often got stuck in a queued state during peak processing surges. With Gen 3, queue latency has dropped dramatically, allowing tasks to start running almost immediately.\nConsider the comparison below of total aggregated “queued” & “running” time of more than 300 runs of the same DAG between Managed Airflow (Gen2) with Airflow 2.11 vs. Managed Airflow (Gen3) with Airflow 3.1 below. As we can readily see, the difference in queued time is significant.\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nCoupled with internal DAG optimizations made during the transition, the performance gains are also highly tangible. For example, the Daily Foot Traffic pipeline previously took nearly 38 minutes to complete. With the new instance, the same workload now takes less than 26 minutes —nearly 32% less processing time.\nToday, Pine59 processes all its production workloads on its new Managed Airflow (Gen 3) instance. By moving to this next generation orchestration, the company improved its MLOps capabilities, equipped its developers with better tools, and built a faster, more resilient foundation for future workloads.\nIf your engineering team spends more time managing infrastructure than delivering value, consider a similar transition and discover how it can help you move from maintaining servers to building the future of your data and AI pipelines today.\n\nSpecial thanks to the following contributor to this post: Alexandre Crespo-Perez",
-        "summary_short": "Operating large data pipelines requires an orchestration layer that scales smoothly as workloads expand. When your pipelines process millions of complex data points every day to feed predictive models, staying up-to-date with your technology stack is a strategic necessity.\nPine59 provides location i...",
+        "source": "Google Cloud",
         "title": "The future of orchestration: Pine59’s journey to Airflow 3 on Google Cloud",
         "url": "https://cloud.google.com/blog/topics/supply-chain-logistics/the-future-of-orchestration-pine59s-journey-to-airflow-3-on-google-cloud/"
       },
       {
-        "collected_at": "2026-09-18T07:25:02.465119+00:00",
-        "feed_category": "tech",
-        "feed_name": "Google Cloud Blog",
-        "feed_source": "Google Cloud",
-        "feed_url": "https://cloudblog.withgoogle.com/rss/",
-        "guid": "https://cloud.google.com/blog/products/identity-security/google-named-a-leader-in-the-external-threat-intelligence-service-forrester-wave/",
         "published_at": "2026-09-17T17:00:00+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "At Google, we see firsthand how the speed, scale, and sophistication of cyber threats continue to challenge traditional enterprise defenses. Today’s defenders can’t rely on reactive triage or fragmented data feeds; you require high-fidelity intelligence, deep underground visibility, and actionable context to anticipate adversary moves before an attack unfolds.\n\n  \n    \n\n      \n\n\n\n\n\n\n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n\n\n\n\n\n      We are proud to announce that Forrester has named Google a Leader in The Forrester Wave™: External Threat Intelligence Service Providers, Q3 2026. In this evaluation, Google received the highest possible score of 5.0 across nine distinct criteria spanning both Current Offering and Strategy.Organizations trust our decades of threat intelligence expertise to help them understand today’s attacks and to protect against tomorrow’s threats. Google Threat Intelligence operationalizes protection with specialized threat intelligence agents that autonomously conduct multi-step investigations and malware analysis at machine speed. Underpinning these capabilities is the unified visibility provided by Mandiant’s frontline incident response, VirusTotal’s crowdsourced visibility, and Google-scale infrastructure with industry-leading deep and dark web monitoring, illuminating adversary operations where they begin.\n    \n  \n\n\n\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n        Google is a Leader in the Forrester Wave™: External Threat Intelligence Service Providers, Q3 2026\n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nKey attributes of a leader\nAccurate and relevant deep and dark web monitoring enables proactive security, spotting exposed credentials, threat actor reconnaissance, and illicit forum chatter before they escalate into active attacks. \nWe received the highest possible score in the Deep and Dark Web Monitoring and Intelligence Collection Sources criteria. \nAs Forrester wrote in the report, “Google is the only vendor in this evaluation that is also a frontier AI model developer and a significant player in quantum computing.” \nBecause Google Threat Intelligence has direct access to a leading frontier model rather than an off-the-shelf wrapper, our AI agents don’t just summarize data — they can actively evolve. We fine-tune and stress-test our agents continuously using proprietary Gemini best practices, removing the usage limits and latency typical of third-party layers. \nFor security teams, this translates directly to immediate threat context, faster detection updates, and drastically reduced time to resolution. The Forrester report stated, \"Google's recent Gemini advancements accelerated the success of many of its Al-enabled functionalities.\" In addition to our finished intelligence reports, defenders can now use our agent to create custom analysis derived from frontline observations, tailored to their local threat profile and environment.\nGoogle Threat Intelligence agents autonomously conduct campaign attribution and pioneer complex agentic malware analysis. Backed by codified Mandiant tradecraft, dynamic visual workflows, and real-time telemetry that programmatically hardens tool routing and execution, our agentic platform transforms complex threat landscapes into a decisive defender advantage.\nGoogle received the highest scores possible in the Analyst Tradecraft and Services, Attribution and Frameworks Used, and Analyst Experience criteria in the report. This foundation is built by hundreds of dedicated researchers across the Google Threat Intelligence Group (GTIG) in over 30 countries speaking 30 languages. Our rigorous, evidence-based attribution maps directly to MITRE ATT&CK, empowering practitioners through interactive graphs and Gemini-enabled agentic threat intelligence. \nBy feeding the newest threat discoveries into detection workflows, these capabilities raise alert quality and take the guesswork out of rule creation across the security stack. Security operations center (SOC) teams and threat hunters can rapidly author resilient rules against novel variants, link suspicious events directly to known actor playbooks, and triage critical alerts with certainty. \nWhile Google also received a 5/5 score in the partner ecosystem criterion, customers using Google Security Operations can directly leverage Google Threat Intelligence enrichments with agents: \n\n\nThe Triage and Investigation agent autonomously investigates alerts and prioritizes threats. \n\n\nThe Detection Engineering agent automatically finds and fills coverage gaps as they emerge. \n\n\nThe Threat Hunting agent proactively searches your environment for novel attack patterns.\n\n\nWithin the strategy category, Google Threat Intelligence received the highest possible scores in the Roadmap, Partner Ecosystem, and Community criteria, as well as the Intelligence Dissemination criterion in the Current Offering category. \nThe Forrester report stated, “Google maintains an open, partner-centric approach that avoids lock-in to the Google SecOps ecosystem and benefits from a strong community presence across the broader Google Cloud Security ecosystem.”\nDelivering measurable value for security teams\nGoogle Threat Intelligence delivers a measurable impact on the speed and scale of modern defense. Our customers report identifying 139% more threats proactively and make their CTI teams 46% more efficient. These gains are accelerated by AI-driven summarization and context, and can help you eliminate manual guesswork, act on validated frontline intelligence, and focus on high-value investigations.\nBy accelerating detection engineering and proactive exposure management, Google Threat Intelligence identifies malicious infrastructure before adversaries can use it in campaigns. This faster defense helps you anticipate their maneuvers and disrupt their attack chains earlier, reducing threat dwell time and risk to your organization.\nEmpowering defenders everywhere\nWe are very pleased that Forrester recognized us as a Leader in Forrester Wave™: External Threat Intelligence Service Providers, Q3 2026. We continue to push the boundaries of what is possible in threat research, as an early, leading innovator enhancing malware analysis and dark web monitoring with AI. We continue to deliver the autonomous decision advantage to preemptively neutralize the right threats with the right action and the right context.\nTo learn more about Google’s position as a Leader, you can access the full Forrester Wave™: External Threat Intelligence Service Providers, Q3 2026 here.\n\nForrester does not endorse any company, product, brand, or service included in its research publications and does not advise any person to select the products or services of any company or brand based on the ratings included in such publications. Information is based on the best available resources. Opinions reflect judgment at the time and are subject to change. This report is part of a broader collection of Forrester resources, including interactive models, frameworks, tools, data, and access to analyst guidance. For more information, read about Forrester’s objectivity here .",
-        "summary_short": "At Google, we see firsthand how the speed, scale, and sophistication of cyber threats continue to challenge traditional enterprise defenses. Today’s defenders can’t rely on reactive triage or fragmented data feeds; you require high-fidelity intelligence, deep underground visibility, and actionable c...",
+        "source": "Google Cloud",
         "title": "Google named a Leader in the External Threat Intelligence Service Forrester Wave™",
         "url": "https://cloud.google.com/blog/products/identity-security/google-named-a-leader-in-the-external-threat-intelligence-service-forrester-wave/"
       },
       {
-        "collected_at": "2026-09-18T07:25:02.465133+00:00",
-        "feed_category": "tech",
-        "feed_name": "Google Cloud Blog",
-        "feed_source": "Google Cloud",
-        "feed_url": "https://cloudblog.withgoogle.com/rss/",
-        "guid": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/",
         "published_at": "2026-09-17T16:00:00+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "Editor's note: Lucius AI, a tender-intelligence startup covering markets across five continents, runs its entire data platform on AlloyDB for PostgreSQL with a single operator. By migrating semantic search to a ScaNN index and managing database operations through Model Context Protocol (MCP), query latency dropped by 47x while automating day-to-day administrative tasks via MCP.\n\nExecutive summary\n\n\nLucius AI runs a global tender platform spanning more than 210,000 tenders across the UK, EU, India, and Australia, requiring minimal operational overhead for a solo founder.\n\n\nLucius AI deployed AlloyDB for PostgreSQL to consolidate its relational catalog, audit logs, and vector embeddings into a single managed database engine.\n\n\nMigrating semantic search to a ScaNN index lowered query latency from 1.14 seconds to 24 milliseconds — a 47x speedup on a representative production query.\n\n\nConnecting an AI agent to AlloyDB using the Model Context Protocol (MCP) helps Lucius AI automate query analysis, data freshness checks, and incident forensics under strict least-privilege permissions.\n\n\nMaking tender intelligence work as a company of one\nLucius AI helps businesses bidding on public contracts evaluate opportunities across global markets. The platform ingests public procurement notices from the UK, the EU, the US and Canada, Australia and New Zealand, India and Singapore, alongside World Bank donor-funded notices across Africa and Asia. Lucius AI analyzes tender documents using Gemini to generate compliance matrices, bid recommendations, and draft responses citing original source pages. For small and mid-sized suppliers, this replaces days of manual document reviews and costly external consulting.\nRunning a platform of this scope requires extensive operational coordination:\n\n\nNightly ingestion from thirteen public procurement sources\n\n\nA catalog of more than 210,000 tenders, including tens of thousands open for active bidding\n\n\nTwo production regions on Cloud Run: Europe, and an Australian deployment on its own AlloyDB cluster with customer-managed encryption keys (CMEK) for defense-adjacent customers\n\n\nOngoing analytics, performance tuning, data validation, and incident response\n\n\nManaging these responsibilities without dedicated data engineering or database administration teams requires offloading operational maintenance. Lucius AI addressed this challenge on two fronts: using AlloyDB for PostgreSQL as the core system of record, and connecting an AI agent through the Model Context Protocol (MCP) to safely execute database operations.\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nConsolidating systems into AlloyDB\nRather than deploying separate relational databases, vector databases, and log stores, Lucius AI houses all core data in AlloyDB for PostgreSQL. The relational tender catalog, document metadata, audit logs, and vector embeddings reside in the same database engine. Storing vector embeddings alongside relational rows avoids managing separate vector stores, establishes a unified backup schedule, and centralizes identity management.\nAuthentication relies strictly on Cloud IAM. Services connect using dedicated Google Cloud service accounts mapped to database roles scoped to specific access requirements, without storing database passwords in application environments. Database reliability is managed natively by AlloyDB through automated backups and point-in-time recovery, avoiding custom disaster recovery procedures.\nIn production, this consolidated architecture supports:\n\n\nMore than 210,000 tenders in the catalog, with embeddings stored directly alongside them\n\n\nRebuilding the semantic index embedded 115,820 records in 10.6 minutes with the Gemini embedding model, for around three dollars in API spend; AlloyDB auto embeddings now keep those vectors current.\n\n\nRetrieval reranking executed directly inside the database using the ai.rank function — with mean latency of 77-milliseconds - returning the most relevant results for search queries without requiring a standalone reranking microservice\n\n\nAccelerating semantic search by 47x\nSemantic search across the tender catalog initially relied on unindexed vector comparisons, where a representative query took 1.14 seconds. Migrating this workload to a ScaNN index in AlloyDB reduced query latency to 24 milliseconds — a 47x improvement.\nThe index recommendation originated from the AI agent during an automated performance audit, where it benchmarked the query plan before preparing the index migration.\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nAutomating database operations with MCP\nTo delegate routine administrative tasks, Lucius AI configured the open-source MCP Toolbox for Databases using the prebuilt alloydb-postgres server.\nOperational delegation requires strict access controls. The agent connects using a dedicated PostgreSQL role granted SELECT across the schema and UPDATE on a single operational table. Destructive commands (DROP, DELETE, TRUNCATE) are omitted, restricting agent actions to authorized operational boundaries.\nUnder this configuration, the AI agent performs regular database operations across four key areas:\n\n\nOn-demand analytics: Compiles retention cohorts, activation funnels, and catalog coverage by country via ad hoc SQL queries, removing the need to build and maintain manual dashboards or complex analytical pipelines.\n\n\nPerformance optimization: Performs query-plan inspections and index analysis, such as identifying the ScaNN indexing strategy.\n\n\nIncident forensics: In response to an external security probe, the agent parsed audit logs to reconstruct the request timeline in minutes, verifying that tenant isolation remained intact.\n\n\nAutomated data-quality checks: Evaluates ingestion watermarks and freshness across all thirteen procurement sources every morning.\n\n\n\n\n\n\n\n\n\n  \n    \n      \n  \n\n    \n\n      \n      \n        \n        \n        \n        \n      \n    \n\n  \n      \n    \n  \n\n\n\n\n\nFor teams adopting this architecture, establishing a progressive permission structure provides clear guardrails: start with read-only access, expand permissions as requirements dictate, and keep destructive operations restricted to human administrators.\nLooking ahead\nLucius AI is planning three technical initiatives to further reduce operational overhead:\n\n\nAutomated vector embeddings in AlloyDB AI: After validating ai.initialize_embeddings across the full catalog, a weekly maintenance job uses ai.refresh_embeddings to update vectors.\n\n\nColumnar engine acceleration: Having enabled AlloyDB’s columnar engine with auto-columnarization, the database identified and stored 40 frequently queried columns across four tables in memory within a day, accelerating reporting queries without a separate analytical store.\n\n\nManaged Remote MCP Server: Transitioning from self-hosted Toolbox processes to Google Cloud's fully managed Remote MCP Server for AlloyDB will offload MCP server hosting and maintenance.\n\n\nBy anchoring core data in AlloyDB and managing routine operations through MCP, Lucius AI demonstrates how a single engineer can build and operate a resilient, multi-region procurement platform.\nTo explore Lucius AI, visit ailucius.com. To evaluate AlloyDB for PostgreSQL, deploy an AlloyDB cluster to test performance against your own workloads.",
-        "summary_short": "Editor's note: Lucius AI, a tender-intelligence startup covering markets across five continents, runs its entire data platform on AlloyDB for PostgreSQL with a single operator. By migrating semantic search to a ScaNN index and managing database operations through Model Context Protocol (MCP), query ...",
+        "source": "Google Cloud",
         "title": "How a solo founder runs a five-continent tender platform on AlloyDB and MCP",
         "url": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/"
       },
       {
-        "collected_at": "2026-09-18T07:25:02.465131+00:00",
-        "feed_category": "tech",
-        "feed_name": "Google Cloud Blog",
-        "feed_source": "Google Cloud",
-        "feed_url": "https://cloudblog.withgoogle.com/rss/",
-        "guid": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/",
         "published_at": "2026-09-17T16:00:00+00:00",
-        "relative_date": "Yesterday",
-        "source": "RSS",
-        "summary": "September 14 - September 17\n\nManaged Service for Apache Kafka supports clusters with public Internet access!With Managed Kafka public clusters, you can now produce and consume messages from clients outside your VPC—including your local machine, for faster, frictionless testing. Public clusters unlock use cases like IoT devices, retail storefronts, and telco network towers. Enable public access on new or existing clusters via the Google Cloud console, gcloud CLI, or REST API. Spin up your first public cluster, or reach out to kafka-hotline@google.com with questions.\nStream data directly into Bigtable using Bigtable subscriptions, now in Preview!You can write Pub/Sub messages to a Bigtable table with zero ETL with Bigtable subscriptions. No pipelines, no code, delivered by the serverless, zero-ops experience you already know with Pub/Sub. Power your AI workloads, from model telemetry to real-time context engineering, without the overhead of managing complicated ETL pipelines. Built to be dependable, with native support for dead-letter topics. Try the feature today!\n\nSeptember 7 - September 10\n\n\nPub/Sub SMTs can now AI Inference your Gemini Enterprise Agent Platform models!Pub/Sub AI Inference SMTs allow you to apply inference on an incoming stream of events using models hosted in Gemini Enterprise Agent Platform. The model’s prediction is appended to your event, making it available for downstream processing in your data warehouse (like BigQuery) or operational database (like BigTable). This feature, now generally available, can dramatically simplify or enhance anomaly detection systems you are operating. \n\nPostgreSQL Source Connector is now generally available in Managed Service for Apache Kafka!Managed Service for Apache Kafka’s PostgreSQL connector allows customers to capture changes from their PostgreSQL database and ingest them into their Kafka infrastructure with low latency. This source connector is compatible with Cloud SQL for Postgres, AlloyDB, and self-managed PostgreSQL databases. Try this along with our entire portfolio of managed connectors, including MirrorMaker 2.0, BigQuery, Cloud Storage, and Pub/Sub! E-mail kafka-hotline@google.com if you have questions or feedback!\n\n\n\nPause-on-failure for Dataflow batch jobs is GADataflow pause-on-failure enables you to preserve the state of a batch Dataflow job before it fails. By pausing your Dataflow job, you can address issues that are external to the pipeline and resume processing without losing completed work. This helps you better manage resource costs and improve job reliability when you face temporary outages or capacity constraints.\n\n\n\n\nThe insertAll API is now the BigQuery Storage Write API (REST)The legacy insertAll streaming API is now rebranded as the BigQuery Storage Write API (REST). By dropping the \"legacy\" label, developers can confidently build long-term HTTP-based streaming workflows. This stateless JSON-over-HTTPS endpoint offers a lightweight alternative to heavy gRPC libraries—ideal for serverless web apps, IoT telemetry, and AI logging. The transition is seamless for existing users, requiring zero code changes and offering 100% backward compatibility. However, the Storage Write API (gRPC) version remains the recommended standard for high-throughput, continuous pipelines.\n\n\nAugust 31 - September 4\n\nStateful processing is available in BigQuery continuous queries in PreviewStateful operations significantly expand what’s possible with BigQuery continuous queries. This feature allows users to leverage functions like JOINs, aggregations, and windowing functions directly in their streaming queries. Now you can calculate metrics over time (for example, a 30-minute average) to power your downstream applications and AI agents with much richer, real-time signals.Try out our feature here and share your feedback with bq-continuous-queries-feedback@google.com!\n\nSynthetic data generator tool is available for Managed Service for KafkaYou’ve launched your first Kafka cluster. Now what? The next thing to do is to produce some data to the cluster, but that involves modifying a client application somewhere or spinning up a virtual machine. The synthetic data generator tool, now generally available, can start sending mock data to your cluster in 3 clicks, and will get data streaming into your cluster in less than two minutes. The perfect utility for those moments you just want to test your cluster and new features. Try our quickstart today!\n\n\n\n\nDataflow pipeline updates are faster & more flexibleDataflow pipeline updates can now stop-and-replace pipelines, a major addition to the existing in-place-update feature. The new parallel pipeline option accelerates the migration between the old & new pipeline, resulting in reduced disruption to your business. You can also set a timeout on drains that prevents runaway costs for your pipeliness in the event of stuck processing. This feature is generally available. Try it here!\n\n\nJuly 6 - July 10\n\n\nNew Lakehouse managed tables now in preview Lakehouse tables for Apache Iceberg are now in preview and available in the console. By using Google-managed Apache Iceberg tables in Lakehouse, you can eliminate the overhead of maintaining duplicate data pipelines and complex synchronization logic between BigQuery and open-source engines. This unified table format delivers native, multi-engine read and write interoperability, allowing you to run concurrent DML/DDL operations across diverse analytics tools on a single, shared storage layer.  Built-in automated table management handles painful background optimization tasks like compaction and partition tuning, freeing up your team to focus on building rather than managing storage maintenance.\n\n\nJune 1 - June 5\n\n\nBeyond the Query: Powering AI Agents with Bigtable, Firestore & Memorystore Discover the latest advancements in Google Cloud's NoSQL Database portfolio, including Bigtable, Firestore, and Memorystore. This series is designed for a broad audience: whether you are exploring these databases for the first time or are an existing user looking to leverage the new capabilities announced at Next '26. Register here to secure your spot!\n\n\n\n\nCloud Engineer's AI Toolkit Workshops: Solve data-driven challenges with BigQuery, AlloyDB, Gemini and more. Hosted by Google Cloud Labs, this highly technical event is built specifically for Platform Engineers, SREs, and cloud infrastructure teams ready to bridge the gap between AI prototypes and production-grade deployments. Look out for more locations coming soonToronto - June 25 (Data Cloud) | RSVP HereChicago - June 30 (Data Cloud) | RSVP Here\n\nStart a 10-day Bigtable free trial with a 1 node SSD cluster and up to 500GB of storage capacity. With no credit card required to start, you can easily ingest workloads and manage workloads that require low-latency, high-throughput, and predictable access. Plus, new Google Cloud customers get $300 in free credits on signup.\n\nMay 11 - May 15\n\nManaged Service for Apache Airflow has launched a wave of new features, including the general availability of Airflow 3.1, AI-powered agentic troubleshooting, a new managed Airflow MCP Server for custom agent integration, and declarative YAML-based orchestration pipelines—discover all the details in the full blog post.\n\nApril 20 - April 24\n\nGoogle-built ODBC Driver for BigQuery is now available in PreviewWe are excited to announce the launch of the new, Google-built ODBC driver for BigQuery. This new open-source driver provides a direct, high-performance connection for applications to BigQuery and is developed entirely in-house by Google. Download a new driver and connect your application to BigQuery.\n\nApril 13 - April 17\n\nWe announced we are reintroducing Data Studio to play a significant role in the AI era, expanding from data visualizations and reports to host BigQuery conversational agents and data apps built in Colab notebooks.\nWe announced BigQuery Graph is now available in preview, offering an easy-to-use, highly scalable graph analytics solution, empowering data professionals to model, analyze and visualize massive-scale relationships in an entirely new way. \n\nApril 6 - April 10\n\nWe introduced Conversational Analytics for Looker Embedded environments, enabling users to add natural language experiences to their own custom data-driven applications, powered by Gemini. \nWe expanded Looker’s capabilities for faster ad-hoc analysis, with the introduction of self-service Explores, enabling you to bring your own data to Looker’s semantic layer and gain instant access to insights in a governed data environment.\n\nMarch 23 - March 27\n\nWe showed you how you can scale your reads with Cloud SQL autoscaling read pools. This feature allows you to provision multiple read replicas that are accessible via a single read endpoint and to dynamically adjust your read capability based on real-time application needs. \nOur customers are leveraging the full power of Conversational Analytics and Looker to drive major business and technical breakthroughs in the AI era. Companies like Telenor, Pet Circle, Fluent Commerce, Lighthouse Intelligence, Wego, and ROLLER are turning data into insights and actions, grounded by Looker’s semantic layer.\n\nMarch 16 - March 20\n\nWe introduced an enhanced Gemini assistant in BigQuery Studio, transforming the agent from a code assistant into a fully context-aware analytics partner.\n\nFebruary 23 - February 27\n\n\nWe introduced managed and remote MCP support for Google Cloud databases, including AlloyDB, Spanner, Cloud SQL, Bigtable and Firestore, to power the next generation of agents. This announcement extends the ability for AI models to plan, build, and solve complex problems, connecting to the database tools our customers leverage daily as the backbone of their work environment.\n\nWe outlined how you can build a conversational agent in BigQuery using the Conversational Analytics API to help you build context-aware agents that can understand natural language, query your BigQuery data, and deliver answers in text, tables, and visual charts.\n\nFebruary 16 - February 20\n\nOur customers are leveraging the full power of Looker to drive major business and technical breakthroughs. Companies like Arrive, Audika, Carousell, Framebridge, GumGum, Intel, Overdose Digital, Ocean Network Express, Subskribe and Promevo are leveraging Looker’s newest AI-driven capabilities, including Conversational Analytics, to transform data to insights and actions, and empower their entire organization with a single source of truth, powered by Looker’s semantic layer.\n\nFebruary 2 - February 6\n\nJoin us on March 4 for our webinar, Win Your AI Strategy with Cloud SQL Enterprise Plus, to learn how to power your generative AI workloads with 3x higher performance and 99.99% availability. Register today to discover how to build a scalable, enterprise-grade foundation for your most demanding AI applications.\n\nJanuary 26 - January 30\n\nWe introduced Conversational Analytics in BigQuery, which allows users to analyze data using natural language. Conversational Analytics in BigQuery is an intelligent agent that generates, executes and visualizes answers grounded in your business context directly in BigQuery Studio, making data insights for data professionals more conversational.\nWe outlined how data products have become the foundation for AI agents, providing the context needed to make autonomous agents reliable and trusted for real business use, backed by organized business logic and semantic understanding.\nWe highlighted how you can supercharge data analytics workflows, and outlined Google Cloud’s AI agent offerings for data engineering, data science, and development tools, so you can integrate agentic workflows in your applications, empower your teams and speed discovery.\n\nJanuary 19 - January 23\n\n\nWe have fundamentally reimagined Firestore with pipeline operations for Enterprise edition. Experience a powerful new engine featuring over a hundred new query features, index-less queries, new index types, and observability tooling to improve query performance. Seamlessly migrate using built-in tools and leverage Firestore’s existing differentiated serverless foundation, virtually unlimited scale, and industry-leading SLA. Join a community of 600K developers to craft expressive applications that maximize the benefits of rich queryability, real-time listen queries, robust offline caching, and cutting-edge AI-assistive coding integrations.\n\n\nIntroducing Google Cloud SQL on MSSQLTips: We are highlighting a new technical guide published on MSSQLTips titled \"Introducing Google Cloud SQL.\" This article serves as an essential resource for SQL Server administrators and developers exploring Google Cloud's fully managed database service. It provides a detailed overview of Cloud SQL capabilities, including high availability, security integration, and the seamless transition of on-premises SQL Server workloads to the cloud, making it an ideal resource for those planning their migration strategy.\n\nWe are excited to announce the Public Preview of Microsoft Entra ID (formerly Azure Active Directory) integration with Cloud SQL for SQL Server. Designed to tackle the challenge of identity sprawl in multi-cloud environments, this integration allows organizations to govern database access using their existing Microsoft identity infrastructure. Key benefits include centralized identity management, enhanced security features like Multi-Factor Authentication (MFA), and simplified user administration through direct group mapping. This feature is available for SQL Server 2022 and supports both public and private IP configurations.\n\nJanuary 12 - January 16\n\nGoogle-built JDBC Driver for BigQuery is now available in PreviewWe are excited to announce the launch of the new, Google-built JDBC driver for BigQuery. This new open-source driver provides a direct, high-performance connection for Java applications to BigQuery and is developed entirely in-house by Google. Download a new driver and connect your Java application to BigQuery.\nTroubleshoot Airflow tasks instantly with Gemini Cloud Assist investigations: Cloud Composer just got smarter. We are excited to announce that Gemini Cloud Assist investigations are now available directly within Cloud Composer 3. Instead of manually sifting through raw logs, you can now simply click \"Investigate\" on a failed Airflow task. Gemini analyzes logs and task metadata to identify failure patterns—such as resource exhaustion or timeouts—and provides actionable recommendations driven by Gemini Cloud Assist to resolve the issue. This integration shifts the debugging experience from manual toil to automated root cause analysis, significantly reducing the time required to restore your pipelines. Learn more about AI-assisted troubleshooting.\n\n\n\n\n\n\n\n\n  \n    \n      \n        Related Article\n\n        \n          \n            \n          \n          \n            What’s new with Google Data Cloud - 2025\n            Recent product news and updates from our data analytics, database and business intelligence teams.\n            \n              Read Article",
-        "summary_short": "September 14 - September 17\n\nManaged Service for Apache Kafka supports clusters with public Internet access!With Managed Kafka public clusters, you can now produce and consume messages from clients outside your VPC—including your local machine, for faster, frictionless testing. Public clusters unloc...",
+        "source": "Google Cloud",
         "title": "What’s new with Google Data Cloud",
         "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
       }
-    ]
+    ],
+    "sources": {
+      "AWS": 2,
+      "Ars Technica": 1,
+      "GitHub Blog": 1,
+      "Google Cloud": 4,
+      "The Register": 8
+    }
   },
   "window": {
-    "end": "2026-09-17T23:59:59+00:00",
+    "end": "2026-09-17T23:59:59.999000+00:00",
     "start": "2026-09-17T00:00:00+00:00"
   }
 }

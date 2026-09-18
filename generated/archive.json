@@ -3,51 +3,141 @@
     {
       "date": "2026-09-17",
       "opensource": {
-        "topProjects": []
+        "topProjects": [
+          {
+            "daily_growth": null,
+            "full_name": "react/react",
+            "language": "JavaScript",
+            "stars": 250566,
+            "url": "https://github.com/react/react"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200172,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 142339,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 138880,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 127814,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 121995,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 118932,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 110100,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103084,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": null,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97607,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          }
+        ]
       },
       "releases": {
         "categories": {
           "major": 0,
           "minor": 0,
           "other": 0,
-          "patch": 0
+          "patch": 1
         },
-        "count": 0
+        "recent": [
+          {
+            "project": "core",
+            "published_at": "2026-09-17T08:36:57Z",
+            "repository": "vuejs/core",
+            "url": "https://github.com/vuejs/core/releases/tag/v3.5.43",
+            "version": "v3.5.43"
+          }
+        ]
       },
       "security": {
         "severity": {
-          "CRITICAL": 176,
-          "HIGH": 806,
-          "LOW": 72,
-          "MEDIUM": 464,
+          "CRITICAL": 136,
+          "HIGH": 675,
+          "LOW": 49,
+          "MEDIUM": 356,
           "NONE": 2,
-          "UNKNOWN": 618
+          "UNSCORED": 457
         }
       },
       "snapshot": {
-        "cves": 2138,
+        "cves": 1675,
+        "kevAdded": 0,
         "knownExploited": 2,
-        "projects": 0,
-        "releases": 0,
+        "projects": 20,
+        "releases": 1,
         "techEntries": 16
       },
       "sources": {
         "cisa": {
-          "inWindow": 2,
-          "status": "success",
+          "failures": 0,
+          "inWindow": 0,
+          "status": "partial",
           "total": 1713
         },
-        "github": {
-          "inWindow": 0,
-          "status": "missing",
-          "total": 0
+        "github_releases": {
+          "failures": 0,
+          "inWindow": 1,
+          "status": "success",
+          "total": 59
+        },
+        "github_repos": {
+          "failures": 0,
+          "inWindow": 20,
+          "status": "success",
+          "total": 20
         },
         "nvd": {
-          "inWindow": 2138,
+          "failures": 0,
+          "inWindow": 1675,
           "status": "success",
-          "total": 2235
+          "total": 1675
         },
         "rss": {
+          "failures": 0,
           "inWindow": 16,
           "status": "success",
           "total": 230
@@ -58,12 +148,73 @@
           "security": 7,
           "tech": 9
         },
-        "count": 10
+        "recent": [
+          {
+            "published_at": "2026-09-17T22:42:29+00:00",
+            "source": "The Register",
+            "title": "AI coding agents' 0-click RCE flaw could hand attackers keys to the kingdom",
+            "url": "https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335"
+          },
+          {
+            "published_at": "2026-09-17T21:11:48+00:00",
+            "source": "AWS",
+            "title": "New low-cost burstable Amazon EC2 T8i instances are generally available",
+            "url": "https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/"
+          },
+          {
+            "published_at": "2026-09-17T19:36:10+00:00",
+            "source": "The Register",
+            "title": "Researchers find way to listen in on headphones from afar",
+            "url": "https://www.theregister.com/security/2026/09/17/researchers-find-way-to-listen-in-on-headphones-from-afar/5297303"
+          },
+          {
+            "published_at": "2026-09-17T19:20:21+00:00",
+            "source": "AWS",
+            "title": "AWS Elastic Beanstalk introduces Cluster Mode",
+            "url": "https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/"
+          },
+          {
+            "published_at": "2026-09-17T18:33:13+00:00",
+            "source": "Ars Technica",
+            "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
+            "url": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/"
+          },
+          {
+            "published_at": "2026-09-17T18:00:17+00:00",
+            "source": "The Register",
+            "title": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
+            "url": "https://www.theregister.com/security/2026/09/17/chinas-salt-typhoon-backdoors-latin-american-orgs-with-new-snooping-malware/5297286"
+          },
+          {
+            "published_at": "2026-09-17T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "The future of orchestration: Pine59’s journey to Airflow 3 on Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/supply-chain-logistics/the-future-of-orchestration-pine59s-journey-to-airflow-3-on-google-cloud/"
+          },
+          {
+            "published_at": "2026-09-17T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Google named a Leader in the External Threat Intelligence Service Forrester Wave™",
+            "url": "https://cloud.google.com/blog/products/identity-security/google-named-a-leader-in-the-external-threat-intelligence-service-forrester-wave/"
+          },
+          {
+            "published_at": "2026-09-17T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How a solo founder runs a five-continent tender platform on AlloyDB and MCP",
+            "url": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/"
+          },
+          {
+            "published_at": "2026-09-17T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Data Cloud",
+            "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+          }
+        ]
       }
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-18T07:26:24.740500+00:00",
+    "generatedAt": "2026-09-18T20:35:21.182763+00:00",
     "totalSnapshots": 1
   }
 }
