@@ -3,205 +3,220 @@
 """
 TechPulse — Security Processor
 
-Processes NVD and CISA KEV data into normalized security intelligence.
+Normalizes NVD CVE records and the CISA KEV catalog into the
+application-ready security dataset.
+
+Semantics preserved:
+    - An NVD record without a CVSS score is valid and keeps
+      severity=null / cvss=null. Severity is never invented.
+    - CISA KEV "known exploited" status is tracked separately from
+      NVD severity; the two concepts are never merged.
+
+Output:
+    data/normalized/security.json
 """
 
 from __future__ import annotations
 
-import json
+import argparse
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-from utils import (
-    load_json,
-    save_json,
-    parse_iso_datetime,
-    utc_now,
-    deduplicate_by_key,
-    sort_by_severity,
-    PROJECT_ROOT,
+SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from processors.utils import (
     DATA_DIR,
+    latest_dated_file,
+    load_json,
+    parse_iso_datetime,
+    save_json,
+    derive_processed_at,
+    status_from_counts,
+    utc_now,
 )
 
 NVD_DIR = DATA_DIR / "security" / "nvd"
 CISA_DIR = DATA_DIR / "security" / "cisa"
 NORMALIZED_DIR = DATA_DIR / "normalized"
 
-
-def load_latest_nvd() -> dict[str, Any] | None:
-    """Load the most recent NVD data file."""
-    files = list(NVD_DIR.glob("*.json"))
-    if not files:
-        return None
-    latest = max(files, key=lambda f: f.stat().st_mtime)
-    return load_json(latest)
+SEVERITY_KEYS = ["CRITICAL", "HIGH", "MEDIUM", "LOW", "NONE"]
 
 
-def load_latest_cisa() -> dict[str, Any] | None:
-    """Load the most recent CISA KEV data file."""
-    files = list(CISA_DIR.glob("*.json"))
-    if not files:
-        return None
-    latest = max(files, key=lambda f: f.stat().st_mtime)
-    return load_json(latest)
+def resolve_window(start_arg: str | None, end_arg: str | None) -> tuple[datetime, datetime]:
+    """Resolve the processing window, defaulting to the previous UTC day."""
+    end = parse_iso_datetime(end_arg) if end_arg else None
+    start = parse_iso_datetime(start_arg) if start_arg else None
+
+    if end is None:
+        day = (utc_now() - timedelta(days=1)).date()
+        end = datetime(day.year, day.month, day.day, tzinfo=timezone.utc) + timedelta(days=1) - timedelta(milliseconds=1)
+    if start is None:
+        start = end - timedelta(days=1) + timedelta(milliseconds=1)
+
+    return start, end
 
 
-def get_cisa_kev_ids(cisa_data: dict[str, Any] | None) -> set[str]:
-    """Extract CVE IDs from CISA KEV data."""
-    if not cisa_data:
-        return set()
-    return {v.get("cve_id") for v in cisa_data.get("vulnerabilities", []) if v.get("cve_id")}
-
-
-def enrich_with_kev_status(nvd_vulns: list[dict], kev_ids: set[str]) -> list[dict]:
-    """Add known_exploited flag to NVD vulnerabilities."""
-    for vuln in nvd_vulns:
-        vuln["known_exploited"] = vuln.get("id") in kev_ids
-    return nvd_vulns
-
-
-def filter_by_window(vulns: list[dict], start: datetime, end: datetime) -> list[dict]:
-    """Filter vulnerabilities by lastModified date within window."""
-    filtered = []
+def severity_counts(vulns: list[dict[str, Any]]) -> dict[str, int]:
+    """Count vulnerabilities by severity, including unscored records."""
+    counts = {key: 0 for key in SEVERITY_KEYS}
+    counts["UNSCORED"] = 0
     for vuln in vulns:
-        mod_str = vuln.get("lastModified")
-        mod_date = parse_iso_datetime(mod_str)
-        if mod_date and start <= mod_date <= end:
-            filtered.append(vuln)
-    return filtered
-
-
-def get_severity_counts(vulns: list[dict]) -> dict[str, int]:
-    """Count vulnerabilities by severity."""
-    counts = {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "NONE": 0, "UNKNOWN": 0}
-    for vuln in vulns:
-        sev = vuln.get("severity")
-        if sev in counts:
-            counts[sev] += 1
-        elif sev is None:
-            counts["UNKNOWN"] += 1
+        severity = vuln.get("severity")
+        if severity in counts:
+            counts[severity] += 1
         else:
-            counts["UNKNOWN"] += 1
+            counts["UNSCORED"] += 1
     return counts
 
 
-def get_latest_vulnerabilities(vulns: list[dict], limit: int = 10) -> list[dict]:
-    """Get latest vulnerabilities sorted by lastModified descending."""
-    vulns_with_date = []
-    for v in vulns:
-        mod_date = parse_iso_datetime(v.get("lastModified"))
-        if mod_date:
-            vulns_with_date.append((mod_date, v))
-
-    vulns_with_date.sort(key=lambda x: x[0], reverse=True)
-    return [v for _, v in vulns_with_date[:limit]]
+def in_window(vuln: dict[str, Any], start: datetime, end: datetime,
+              date_field: str = "lastModified") -> bool:
+    """Check whether a record's date field falls within the window."""
+    stamp = parse_iso_datetime(vuln.get(date_field))
+    return stamp is not None and start <= stamp <= end
 
 
-def process_security(
-    window_start: datetime | None = None,
-    window_end: datetime | None = None,
-) -> dict[str, Any]:
-    """Process security data from NVD and CISA."""
+def latest_by_modified(vulns: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]:
+    """Return the most recently modified vulnerabilities (deterministic)."""
+    def sort_key(v: dict[str, Any]):
+        stamp = parse_iso_datetime(v.get("lastModified"))
+        return (stamp or datetime.min.replace(tzinfo=timezone.utc), v.get("id") or "")
+
+    return sorted(vulns, key=sort_key, reverse=True)[:limit]
+
+
+def process_security(start: datetime, end: datetime) -> dict[str, Any]:
+    """Process security data from NVD and CISA KEV."""
+
+    nvd_path = latest_dated_file(NVD_DIR)
+    cisa_path = latest_dated_file(CISA_DIR)
 
     print("Loading NVD data...")
-    nvd_data = load_latest_nvd()
+    nvd_data = load_json(nvd_path) if nvd_path else None
     if not nvd_data:
-        print("WARNING: No NVD data found")
-        nvd_vulns = []
+        print("  WARNING: no NVD data available")
+        nvd_vulns: list[dict[str, Any]] = []
+        nvd_failures = 1
     else:
-        nvd_vulns = nvd_data.get("vulnerabilities", [])
-        print(f"  Loaded {len(nvd_vulns)} NVD vulnerabilities")
+        nvd_vulns = [v for v in nvd_data.get("vulnerabilities", []) if isinstance(v, dict)]
+        print(f"  Loaded {len(nvd_vulns)} NVD records from {nvd_path.name}")
 
     print("Loading CISA KEV data...")
-    cisa_data = load_latest_cisa()
+    cisa_data = load_json(cisa_path) if cisa_path else None
     if not cisa_data:
-        print("WARNING: No CISA KEV data found")
-        kev_ids = set()
+        print("  WARNING: no CISA KEV data available")
+        kev_records: list[dict[str, Any]] = []
+        cisa_failures = 1
     else:
-        kev_ids = get_cisa_kev_ids(cisa_data)
-        print(f"  Loaded {len(kev_ids)} KEV entries")
+        kev_records = [v for v in cisa_data.get("vulnerabilities", []) if isinstance(v, dict)]
+        print(f"  Loaded {len(kev_records)} KEV records from {cisa_path.name}")
 
-    # Enrich NVD with KEV status
-    nvd_vulns = enrich_with_kev_status(nvd_vulns, kev_ids)
+    kev_ids = {v.get("cve_id") for v in kev_records if v.get("cve_id")}
 
-    # Determine window
-    if window_end is None:
-        window_end = utc_now()
-    if window_start is None:
-        window_start = window_end - timedelta(days=1)
+    # Enrich NVD records with KEV status.
+    for vuln in nvd_vulns:
+        vuln["known_exploited"] = vuln.get("id") in kev_ids
 
-    # Filter by window
-    window_vulns = filter_by_window(nvd_vulns, window_start, window_end)
-    print(f"  {len(window_vulns)} vulnerabilities in window")
+    # Window filtering.
+    window_vulns = [v for v in nvd_vulns if in_window(v, start, end)]
+    kev_in_window = sorted(
+        (v for v in kev_records if in_window(v, start, end, "date_added")),
+        key=lambda v: (v.get("date_added") or "", v.get("cve_id") or ""),
+        reverse=True,
+    )
 
-    # Severity counts
-    severity_counts = get_severity_counts(window_vulns)
+    nvd_failures = 0 if nvd_data else 1
+    cisa_failures = 0 if cisa_data else 1
 
-    # KEV in window
-    kev_in_window = [v for v in window_vulns if v.get("known_exploited")]
-    print(f"  {len(kev_in_window)} known exploited in window")
+    counts = severity_counts(window_vulns)
 
-    # Latest vulnerabilities
-    latest_vulns = get_latest_vulnerabilities(window_vulns, 10)
+    nvd_status = status_from_counts(len(nvd_vulns), len(window_vulns), nvd_failures)
+    cisa_status = status_from_counts(len(kev_records), len(kev_in_window), cisa_failures)
 
-    # Build output
-    output = {
+    processed_at = derive_processed_at([nvd_path, cisa_path])
+
+    return {
         "meta": {
-            "processedAt": utc_now().isoformat(),
-            "window": {
-                "start": window_start.isoformat(),
-                "end": window_end.isoformat(),
+            "processedAt": processed_at,
+            "window": {"start": start.isoformat(), "end": end.isoformat()},
+            "sourceFiles": {
+                "nvd": nvd_path.name if nvd_path else None,
+                "cisa": cisa_path.name if cisa_path else None,
             },
             "sources": {
                 "nvd": {
-                    "status": "success" if nvd_data else "missing",
+                    "status": nvd_status,
                     "total": len(nvd_vulns),
                     "inWindow": len(window_vulns),
+                    "failures": nvd_failures,
                 },
                 "cisa": {
-                    "status": "success" if cisa_data else "missing",
-                    "total": len(kev_ids),
+                    "status": cisa_status,
+                    "total": len(kev_records),
                     "inWindow": len(kev_in_window),
+                    "failures": cisa_failures,
                 },
             },
         },
         "summary": {
             "total": len(window_vulns),
-            "severity": severity_counts,
-            "knownExploited": len(kev_in_window),
+            "severity": counts,
+            "knownExploited": sum(1 for v in window_vulns if v.get("known_exploited")),
+            "kevCatalogTotal": len(kev_records),
+            "kevAddedInWindow": len(kev_in_window),
         },
-        "latest": latest_vulns,
+        "latest": latest_by_modified(window_vulns, 20),
+        "kevRecent": kev_in_window[:10],
     }
-
-    return output
 
 
 def main() -> int:
-    """Main entry point for security processor."""
-    parser = __import__("argparse").ArgumentParser(description="Process security data.")
-    parser.add_argument("--start", help="Window start (ISO 8601 UTC)")
-    parser.add_argument("--end", help="Window end (ISO 8601 UTC)")
+
+    parser = argparse.ArgumentParser(description="Process security data (NVD + CISA KEV).")
+    parser.add_argument("--date", help="Snapshot date (YYYY-MM-DD, UTC).")
+    parser.add_argument("--start", help="Window start (ISO 8601 UTC). Overrides --date.")
+    parser.add_argument("--end", help="Window end (ISO 8601 UTC). Overrides --date.")
     args = parser.parse_args()
 
-    window_start = parse_iso_datetime(args.start) if args.start else None
-    window_end = parse_iso_datetime(args.end) if args.end else None
+    if args.start and args.end:
+        start = parse_iso_datetime(args.start)
+        end = parse_iso_datetime(args.end)
+        if start is None or end is None:
+            parser.error("Invalid --start/--end datetime.")
+    else:
+        if args.date:
+            try:
+                day = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            except ValueError:
+                parser.error("--date must be in YYYY-MM-DD format.")
+        else:
+            day = (utc_now() - timedelta(days=1)).date()
+            day = datetime(day.year, day.month, day.day, tzinfo=timezone.utc)
+        start = day
+        end = day + timedelta(days=1) - timedelta(milliseconds=1)
 
     print()
     print("TechPulse — Security Processor")
     print("=" * 32)
+    print(f"Window: {start.isoformat()} -> {end.isoformat()}")
     print()
 
     try:
-        result = process_security(window_start, window_end)
+        result = process_security(start, end)
         output_path = NORMALIZED_DIR / "security.json"
         save_json(result, output_path)
     except Exception as exc:
-        print(f"ERROR: {exc}")
+        print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
+    summary = result["summary"]
     print()
-    print("Processing completed successfully.")
+    print("Processing completed.")
+    print(f"In window        : {summary['total']} CVEs")
+    print(f"Known exploited  : {summary['knownExploited']} (KEV added: {summary['kevAddedInWindow']})")
     print(f"Output: {output_path}")
     print()
 
