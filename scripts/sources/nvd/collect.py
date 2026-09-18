@@ -37,6 +37,8 @@ REQUEST_TIMEOUT = 30
 # NVD recommends respecting its API rate limits.
 # Keep requests conservative for the free/no-key workflow.
 REQUEST_DELAY_SECONDS = 6
+MAX_RETRIES = 3
+RETRY_BACKOFF_BASE = 2
 
 
 def utc_now() -> datetime:
@@ -163,12 +165,15 @@ def normalize_cve(vulnerability: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def fetch_page(
+def fetch_page_with_retry(
     start_index: int,
     results_per_page: int,
     start_date: datetime,
     end_date: datetime,
 ) -> dict[str, Any]:
+    """
+    Fetch a single page from NVD API with retry logic for transient failures.
+    """
 
     params = {
         "startIndex": start_index,
@@ -188,46 +193,103 @@ def fetch_page(
         method="GET",
     )
 
-    try:
-        with urllib.request.urlopen(
-            request,
-            timeout=REQUEST_TIMEOUT,
-        ) as response:
+    last_exception: Exception | None = None
 
-            status = response.status
+    for attempt in range(MAX_RETRIES):
+        try:
+            with urllib.request.urlopen(
+                request,
+                timeout=REQUEST_TIMEOUT,
+            ) as response:
 
-            if status != 200:
-                raise RuntimeError(
-                    f"NVD API returned unexpected HTTP status {status}"
+                status = response.status
+
+                if status == 429:
+                    # Rate limited - wait longer and retry
+                    wait_time = REQUEST_DELAY_SECONDS * (attempt + 1) * 2
+                    print(
+                        f"Rate limited (429). Waiting {wait_time}s before retry..."
+                    )
+                    time.sleep(wait_time)
+                    continue
+
+                if status != 200:
+                    raise RuntimeError(
+                        f"NVD API returned unexpected HTTP status {status}"
+                    )
+
+                raw = response.read()
+
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429:
+                wait_time = REQUEST_DELAY_SECONDS * (attempt + 1) * 2
+                print(
+                    f"Rate limited (429). Waiting {wait_time}s before retry..."
                 )
+                time.sleep(wait_time)
+                last_exception = exc
+                continue
+            if 500 <= exc.code < 600:
+                # Server error - retry
+                wait_time = RETRY_BACKOFF_BASE ** attempt
+                print(
+                    f"Server error ({exc.code}). Retrying in {wait_time}s..."
+                )
+                time.sleep(wait_time)
+                last_exception = exc
+                continue
+            raise RuntimeError(
+                f"NVD API returned HTTP {exc.code}: {exc.reason}"
+            ) from exc
 
-            raw = response.read()
+        except urllib.error.URLError as exc:
+            # Network error - retry
+            wait_time = RETRY_BACKOFF_BASE ** attempt
+            print(
+                f"Network error: {exc.reason}. Retrying in {wait_time}s..."
+            )
+            time.sleep(wait_time)
+            last_exception = exc
+            continue
 
-    except urllib.error.HTTPError as exc:
+        except Exception as exc:
+            last_exception = exc
+            wait_time = RETRY_BACKOFF_BASE ** attempt
+            print(
+                f"Unexpected error: {exc}. Retrying in {wait_time}s..."
+            )
+            time.sleep(wait_time)
+            continue
+
+        try:
+            return json.loads(raw.decode("utf-8"))
+
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(
+                "NVD API returned invalid JSON."
+            ) from exc
+
+    # All retries exhausted
+    if last_exception:
         raise RuntimeError(
-            f"NVD API returned HTTP {exc.code}: {exc.reason}"
-        ) from exc
+            f"Failed after {MAX_RETRIES} attempts: {last_exception}"
+        ) from last_exception
 
-    except urllib.error.URLError as exc:
-        raise RuntimeError(
-            f"Unable to reach NVD API: {exc.reason}"
-        ) from exc
-
-    try:
-        return json.loads(raw.decode("utf-8"))
-
-    except json.JSONDecodeError as exc:
-        raise RuntimeError(
-            "NVD API returned invalid JSON."
-        ) from exc
+    raise RuntimeError(f"Failed after {MAX_RETRIES} attempts")
 
 
 def collect(
     start_date: datetime,
     end_date: datetime,
 ) -> list[dict[str, Any]]:
+    """
+    Collect vulnerabilities from NVD within the given date window.
+
+    Returns deduplicated, deterministically sorted list of normalized CVEs.
+    """
 
     vulnerabilities: list[dict[str, Any]] = []
+    seen_ids: set[str] = set()
 
     start_index = 0
     total_results: int | None = None
@@ -239,7 +301,7 @@ def collect(
             f"starting at index {start_index}..."
         )
 
-        data = fetch_page(
+        data = fetch_page_with_retry(
             start_index=start_index,
             results_per_page=DEFAULT_RESULTS_PER_PAGE,
             start_date=start_date,
@@ -255,10 +317,12 @@ def collect(
             f"(total matching: {total_results})"
         )
 
-        vulnerabilities.extend(
-            normalize_cve(item)
-            for item in page_results
-        )
+        for item in page_results:
+            normalized = normalize_cve(item)
+            cve_id = normalized.get("id")
+            if cve_id and cve_id not in seen_ids:
+                seen_ids.add(cve_id)
+                vulnerabilities.append(normalized)
 
         start_index += len(page_results)
 
@@ -274,6 +338,9 @@ def collect(
         )
 
         time.sleep(REQUEST_DELAY_SECONDS)
+
+    # Deterministic sort: by CVE ID ascending
+    vulnerabilities.sort(key=lambda v: v.get("id", ""))
 
     return vulnerabilities
 
@@ -316,6 +383,7 @@ def save_output(
             file,
             indent=2,
             ensure_ascii=False,
+            sort_keys=True,
         )
 
         file.write("\n")
