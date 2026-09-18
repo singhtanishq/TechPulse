@@ -113,16 +113,15 @@ class GitHubFailureTests(unittest.TestCase):
             github.time.sleep = original_sleep
 
     def test_single_repo_404_preserves_others(self):
-        calls = []
+        fixture = json.loads((PROJECT_ROOT / "tests/fixtures/github_repo.json").read_text())
 
         def impl(url, token):
-            calls.append(url)
-            if "/repos/bad/two" in url:
+            if "/repos/bad/two" in url and "/releases" not in url:
                 raise github.GitHubError("Repository not found (HTTP 404).")
-            if url.endswith("/repos/good/one") :
-                return json.loads((PROJECT_ROOT / "tests/fixtures/github_repo.json").read_text())
+            if url.endswith("/repos/good/one"):
+                return fixture[0]
             if url.endswith("/repos/good/three"):
-                repo = json.loads((PROJECT_ROOT / "tests/fixtures/github_repo.json").read_text())[0]
+                repo = dict(fixture[0])
                 repo["full_name"] = "good/three"
                 repo["name"] = "three"
                 return repo
@@ -137,9 +136,11 @@ class GitHubFailureTests(unittest.TestCase):
         self.assertIn("404", failures[0]["error"])
 
     def test_rate_limit_marks_remaining_repos_skipped(self):
+        fixture = json.loads((PROJECT_ROOT / "tests/fixtures/github_repo.json").read_text())
+
         def impl(url, token):
             if url.endswith("/repos/good/one"):
-                return json.loads((PROJECT_ROOT / "tests/fixtures/github_repo.json").read_text())
+                return fixture[0]
             if "/repos/good/one/releases" in url:
                 return []
             if url.endswith("/repos/bad/two"):
