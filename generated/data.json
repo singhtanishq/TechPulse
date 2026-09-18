@@ -1,0 +1,263 @@
+{
+  "history": [
+    {
+      "cves": 2138,
+      "date": "2026-09-17",
+      "knownExploited": 2,
+      "projects": 0,
+      "releases": 0,
+      "techEntries": 16
+    }
+  ],
+  "meta": {
+    "date": "2026-09-18",
+    "daysObserved": 1,
+    "generatedAt": "2026-09-18T07:25:29.330184+00:00",
+    "snapshots": 1
+  },
+  "openSource": [],
+  "releases": [],
+  "security": {
+    "critical": 176,
+    "high": 806,
+    "latest": [
+      {
+        "cvss_score": 6.0,
+        "cvss_version": "3.1",
+        "id": "CVE-2025-20248",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "10 SEP 2025",
+        "severity": "MEDIUM",
+        "title": "A vulnerability in the installation process of Cisco IOS XR Software could allow an authenticated, local attacker to byp...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-20248"
+      },
+      {
+        "cvss_score": 8.5,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-93337",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "title": "NetworkManager-l2tp contains an improper input validation vulnerability that allows local users with VPN connection crea...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93337"
+      },
+      {
+        "cvss_score": 7.0,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-93015",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "title": "BlueKitchen BTstack through 1.8.2 fails to validate the peer-reported endpoint count against table bounds in A2DP stream...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93015"
+      },
+      {
+        "cvss_score": 2.1,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-92993",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "LOW",
+        "title": "A vulnerability was detected in Dromara mayfly-go up to 1.11.5. The impacted element is the function RunMachineScript of...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92993"
+      },
+      {
+        "cvss_score": 2.1,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-92992",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "LOW",
+        "title": "A security vulnerability has been detected in Dromara mayfly-go up to 1.11.5. The affected element is an unknown functio...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92992"
+      },
+      {
+        "cvss_score": 8.6,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-92986",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "title": "SiYuan before 3.8.4 renders document titles as HTML in the backlink dock tree without escaping markup characters. Attack...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92986"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-92972",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "title": "SGLang through 0.5.19 in prefill/decode disaggregation mode contains an unauthenticated PUT /route endpoint on the prefi...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92972"
+      },
+      {
+        "cvss_score": 10.0,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-92956",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "vm2 versions 3.10.1 through 3.11.6 contain a sandbox escape reachable from a default `new VM()` sandbox when running on ...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92956"
+      },
+      {
+        "cvss_score": 9.4,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-92951",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "vm2 before 3.11.7 contains an incorrect authorization vulnerability in the external package allowlist check that uses no...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92951"
+      },
+      {
+        "cvss_score": 10.0,
+        "cvss_version": "4.0",
+        "id": "CVE-2026-92946",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "title": "vm2 before 3.11.7 contains a remote code execution vulnerability when require.external is enabled without an explicit re...",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92946"
+      }
+    ],
+    "low": 72,
+    "medium": 464,
+    "unknown": 618
+  },
+  "snapshot": {
+    "cves": 2138,
+    "knownExploited": 2,
+    "projects": 0,
+    "releases": 0,
+    "techEntries": 16
+  },
+  "sources": {
+    "opensource": {
+      "github": {
+        "status": "missing",
+        "total": 0
+      }
+    },
+    "releases": {
+      "github": {
+        "inWindow": 0,
+        "status": "missing",
+        "totalReleases": 0,
+        "totalRepos": 0
+      }
+    },
+    "security": {
+      "cisa": {
+        "inWindow": 2,
+        "status": "success",
+        "total": 1713
+      },
+      "nvd": {
+        "inWindow": 2138,
+        "status": "success",
+        "total": 2235
+      }
+    },
+    "technology": {
+      "rss": {
+        "inWindow": 16,
+        "status": "success",
+        "total": 230
+      }
+    }
+  },
+  "technology": [
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Plugin4Shell attack affects all the major coding agents, researchers say",
+      "title": "AI coding agents' 0-click RCE flaw could hand attackers keys to the kingdom",
+      "url": "https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "AWS",
+      "summary": "AWS introduces new low-cost burstable Amazon EC2 T8i instances powered by custom sixth generation Intel Xeon Scalable Processors (Granite Rapids), available only on AWS. T8i instances are among the lowest-cost EC2 instances and deliver up to 30% better price performance over previous generation T3 i...",
+      "title": "New low-cost burstable Amazon EC2 T8i instances are generally available",
+      "url": "https://aws.amazon.com/blogs/aws/new-low-cost-burstable-amazon-ec2-t8i-instances-are-generally-available/"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Eve's dropping in on Alice and Bob",
+      "title": "Researchers find way to listen in on headphones from afar",
+      "url": "https://www.theregister.com/security/2026/09/17/researchers-find-way-to-listen-in-on-headphones-from-afar/5297303"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "AWS",
+      "summary": "Run an application on AWS Elastic Beanstalk Cluster Mode without provisioning or operating the compute underneath it. You provide a container image or source code; Elastic Beanstalk with service-operated compute creates and operates the environment that runs it.",
+      "title": "AWS Elastic Beanstalk introduces Cluster Mode",
+      "url": "https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Ars Technica",
+      "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
+      "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
+      "url": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Beware the SparroWocky, my son! The backdoor that bites…",
+      "title": "China's Salt Typhoon backdoors Latin American orgs with new snooping malware",
+      "url": "https://www.theregister.com/security/2026/09/17/chinas-salt-typhoon-backdoors-latin-american-orgs-with-new-snooping-malware/5297286"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "Operating large data pipelines requires an orchestration layer that scales smoothly as workloads expand. When your pipelines process millions of complex data points every day to feed predictive models, staying up-to-date with your technology stack is a strategic necessity.\nPine59 provides location i...",
+      "title": "The future of orchestration: Pine59’s journey to Airflow 3 on Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/supply-chain-logistics/the-future-of-orchestration-pine59s-journey-to-airflow-3-on-google-cloud/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "At Google, we see firsthand how the speed, scale, and sophistication of cyber threats continue to challenge traditional enterprise defenses. Today’s defenders can’t rely on reactive triage or fragmented data feeds; you require high-fidelity intelligence, deep underground visibility, and actionable c...",
+      "title": "Google named a Leader in the External Threat Intelligence Service Forrester Wave™",
+      "url": "https://cloud.google.com/blog/products/identity-security/google-named-a-leader-in-the-external-threat-intelligence-service-forrester-wave/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "Editor's note: Lucius AI, a tender-intelligence startup covering markets across five continents, runs its entire data platform on AlloyDB for PostgreSQL with a single operator. By migrating semantic search to a ScaNN index and managing database operations through Model Context Protocol (MCP), query ...",
+      "title": "How a solo founder runs a five-continent tender platform on AlloyDB and MCP",
+      "url": "https://cloud.google.com/blog/products/databases/solo-founder-runs-a-global-tender-platform-on-alloydb-and-mcp/"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "Google Cloud",
+      "summary": "September 14 - September 17\n\nManaged Service for Apache Kafka supports clusters with public Internet access!With Managed Kafka public clusters, you can now produce and consume messages from clients outside your VPC—including your local machine, for faster, frictionless testing. Public clusters unloc...",
+      "title": "What’s new with Google Data Cloud",
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+    }
+  ]
+}
