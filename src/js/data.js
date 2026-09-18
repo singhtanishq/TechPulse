@@ -1,147 +1,131 @@
 /* =========================================================
-   TECHPULSE — DATA
-   Temporary static dataset.
-
-   Later this will be generated automatically by GitHub
-   Actions from NVD, CISA, GitHub and RSS sources.
+   TECHPULSE — DATA LOADER
+   Loads generated data from generated/data.json
    ========================================================= */
 
 const TECHPULSE_DATA = {
-
     meta: {
-        date: "2026-09-18",
-        generatedAt: "2026-09-18T23:42:13Z",
-        daysObserved: 1,
-        snapshots: 1
+        date: "",
+        generatedAt: "",
+        daysObserved: 0,
+        snapshots: 0
     },
-
-
     snapshot: {
-        cves: 42,
-        releases: 17,
-        projects: 31,
-        advisories: 8
+        cves: 0,
+        knownExploited: 0,
+        releases: 0,
+        projects: 0,
+        techEntries: 0
     },
-
-
     security: {
-
-        critical: 8,
-        high: 23,
-        medium: 91,
-
-        latest: [
-
-            {
-                id: "CVE-2026-XXXXX",
-                title: "Critical vulnerability detected",
-                severity: "CRITICAL"
-            },
-
-            {
-                id: "CVE-2026-XXXXX",
-                title: "High severity vulnerability",
-                severity: "HIGH"
-            },
-
-            {
-                id: "CVE-2026-XXXXX",
-                title: "Security advisory published",
-                severity: "MEDIUM"
-            }
-
-        ]
-
+        critical: 0,
+        high: 0,
+        medium: 0,
+        low: 0,
+        unknown: 0,
+        latest: []
     },
+    releases: [],
+    openSource: [],
+    technology: [],
+    history: [],
+    sources: {}
+};
 
+let dataLoaded = false;
 
-    releases: [
+async function loadTechPulseData() {
+    if (dataLoaded) return TECHPULSE_DATA;
 
-        {
-            project: "React",
-            version: "v19.x.x",
-            date: "Today"
-        },
+    try {
+        // Try to load from generated data first
+        const response = await fetch('../generated/data.json', {
+            cache: 'no-cache'
+        });
 
-        {
-            project: "Laravel",
-            version: "v13.x.x",
-            date: "Today"
-        },
-
-        {
-            project: "Node.js",
-            version: "v24.x.x",
-            date: "Yesterday"
-        },
-
-        {
-            project: "Python",
-            version: "v3.x.x",
-            date: "Yesterday"
+        if (!response.ok) {
+            throw new Error(`Failed to load: ${response.status}`);
         }
 
-    ],
+        const data = await response.json();
+        mergeData(data);
+        dataLoaded = true;
 
+    } catch (error) {
+        console.warn('Could not load generated data, using empty state:', error.message);
+        // Data remains as empty defaults - UI will show empty states
+    }
 
-    openSource: [
+    return TECHPULSE_DATA;
+}
 
-        {
-            rank: 1,
-            name: "Project Alpha",
-            description:
-                "An open-source developer tool gaining momentum across the ecosystem.",
-            stars: 24821,
-            dailyGrowth: 842
-        },
+function mergeData(data) {
+    if (!data) return;
 
-        {
-            rank: 2,
-            name: "Project Beta",
-            description:
-                "Infrastructure tooling with rapidly increasing community activity.",
-            stars: 18492,
-            dailyGrowth: 531
-        },
+    // Meta
+    if (data.meta) {
+        TECHPULSE_DATA.meta.date = data.meta.date || '';
+        TECHPULSE_DATA.meta.generatedAt = data.meta.generatedAt || '';
+        TECHPULSE_DATA.meta.daysObserved = data.meta.daysObserved || 0;
+        TECHPULSE_DATA.meta.snapshots = data.meta.snapshots || 0;
+    }
 
-        {
-            rank: 3,
-            name: "Project Gamma",
-            description:
-                "A fast-growing project attracting developers and contributors.",
-            stars: 12381,
-            dailyGrowth: 418
-        }
+    // Snapshot counts
+    if (data.snapshot) {
+        TECHPULSE_DATA.snapshot.cves = data.snapshot.cves || 0;
+        TECHPULSE_DATA.snapshot.knownExploited = data.snapshot.knownExploited || 0;
+        TECHPULSE_DATA.snapshot.releases = data.snapshot.releases || 0;
+        TECHPULSE_DATA.snapshot.projects = data.snapshot.projects || 0;
+        TECHPULSE_DATA.snapshot.techEntries = data.snapshot.techEntries || 0;
+    }
 
-    ],
+    // Security
+    if (data.security) {
+        TECHPULSE_DATA.security.critical = data.security.critical || 0;
+        TECHPULSE_DATA.security.high = data.security.high || 0;
+        TECHPULSE_DATA.security.medium = data.security.medium || 0;
+        TECHPULSE_DATA.security.low = data.security.low || 0;
+        TECHPULSE_DATA.security.unknown = data.security.unknown || 0;
+        TECHPULSE_DATA.security.latest = Array.isArray(data.security.latest) ? data.security.latest : [];
+    }
 
+    // Releases
+    if (Array.isArray(data.releases)) {
+        TECHPULSE_DATA.releases = data.releases;
+    }
 
-    history: [
+    // Open Source
+    if (Array.isArray(data.openSource)) {
+        TECHPULSE_DATA.openSource = data.openSource;
+    }
 
-        {
-            date: "2026-09-18",
-            cves: 42,
-            releases: 17
-        },
+    // Technology
+    if (Array.isArray(data.technology)) {
+        TECHPULSE_DATA.technology = data.technology;
+    }
 
-        {
-            date: "2026-09-17",
-            cves: 31,
-            releases: 12
-        },
+    // History
+    if (Array.isArray(data.history)) {
+        TECHPULSE_DATA.history = data.history;
+    }
 
-        {
-            date: "2026-09-16",
-            cves: 27,
-            releases: 19
-        },
+    // Sources
+    if (data.sources) {
+        TECHPULSE_DATA.sources = data.sources;
+    }
+}
 
-        {
-            date: "2026-09-15",
-            cves: 38,
-            releases: 14
-        }
+function getData() {
+    return TECHPULSE_DATA;
+}
 
-    ]
+function isDataLoaded() {
+    return dataLoaded;
+}
 
+// Export for other modules
+window.TechPulseData = {
+    load: loadTechPulseData,
+    get: getData,
+    isLoaded: isDataLoaded
 };
