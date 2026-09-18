@@ -105,12 +105,15 @@ def format_project(project: dict[str, Any]) -> dict[str, Any]:
 
 def format_tech_entry(entry: dict[str, Any]) -> dict[str, Any]:
     return {
-        "title": entry.get("title") or "",
+        "title": truncate(entry.get("title") or "", 200),
         "url": entry.get("url") or "",
         "source": entry.get("feed_source") or "",
         "category": entry.get("feed_category") or "tech",
         "date": entry.get("relative_date") or format_relative_date(entry.get("published_at")),
-        "summary": entry.get("summary") or "",
+        # Defense in depth: legacy raw files may contain untruncated
+        # summaries; the frontend excerpt must stay short regardless
+        # (copyright safety + layout stability).
+        "summary": truncate(entry.get("summary") or "", 280),
     }
 
 
