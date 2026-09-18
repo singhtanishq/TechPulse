@@ -3,11 +3,20 @@
 """
 TechPulse — NVD Collector
 
-Collects recently published/modified CVE records from the
+Collects CVE records for a target UTC calendar day from the
 National Vulnerability Database (NVD) 2.0 API and stores
 normalized JSON data for downstream processing.
 
-This collector is intentionally independent from the frontend.
+Snapshot semantics:
+    A snapshot covers one UTC calendar day (00:00:00Z - 23:59:59.999Z).
+    The default target date is the previous completed UTC day.
+
+Output:
+    data/security/nvd/YYYY-MM-DD.json
+
+Idempotency:
+    Re-running for the same date with identical records does not
+    rewrite the output file (preserves the original collectedAt).
 """
 
 from __future__ import annotations
@@ -33,8 +42,9 @@ OUTPUT_DIR = PROJECT_ROOT / "data" / "security" / "nvd"
 
 DEFAULT_RESULTS_PER_PAGE = 2000
 REQUEST_TIMEOUT = 30
+PAGE_TIMEOUT_SECONDS = 120
 
-# NVD recommends respecting its API rate limits.
+# NVD rate limits unauthenticated clients aggressively.
 # Keep requests conservative for the free/no-key workflow.
 REQUEST_DELAY_SECONDS = 6
 MAX_RETRIES = 3
@@ -46,12 +56,14 @@ def utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def format_nvd_datetime(value: datetime) -> str:
-    """
-    Format datetime for NVD API query parameters.
+def default_snapshot_date() -> datetime:
+    """Return the previous completed UTC day at midnight."""
+    yesterday = (utc_now() - timedelta(days=1)).date()
+    return datetime(yesterday.year, yesterday.month, yesterday.day, tzinfo=timezone.utc)
 
-    NVD expects ISO-8601 timestamps.
-    """
+
+def format_nvd_datetime(value: datetime) -> str:
+    """Format datetime for NVD API query parameters (ISO-8601, milliseconds, Z)."""
     return value.astimezone(timezone.utc).isoformat(timespec="milliseconds").replace(
         "+00:00",
         "Z",
@@ -59,7 +71,7 @@ def format_nvd_datetime(value: datetime) -> str:
 
 
 def parse_datetime(value: str) -> datetime:
-    """Parse an ISO-8601 datetime string."""
+    """Parse an ISO-8601 datetime string into an aware UTC datetime."""
     value = value.strip()
 
     if value.endswith("Z"):
@@ -98,6 +110,9 @@ def extract_cvss(cve: dict[str, Any]) -> dict[str, Any] | None:
         CVSS v3.1
         CVSS v3.0
         CVSS v2.0
+
+    Records without any CVSS metric are valid NVD records; the
+    caller must represent the missing score explicitly as null.
     """
 
     metrics = cve.get("metrics", {})
@@ -142,15 +157,24 @@ def extract_cvss(cve: dict[str, Any]) -> dict[str, Any] | None:
     return None
 
 
-def normalize_cve(vulnerability: dict[str, Any]) -> dict[str, Any]:
-    """Convert a raw NVD vulnerability object into TechPulse format."""
+def normalize_cve(vulnerability: dict[str, Any]) -> dict[str, Any] | None:
+    """
+    Convert a raw NVD vulnerability object into TechPulse format.
+
+    Returns None for records without a CVE ID (structurally invalid).
+    """
 
     cve = vulnerability.get("cve", {})
+
+    cve_id = cve.get("id")
+
+    if not cve_id:
+        return None
 
     cvss = extract_cvss(cve)
 
     return {
-        "id": cve.get("id"),
+        "id": cve_id,
         "source": "NVD",
         "published": cve.get("published"),
         "lastModified": cve.get("lastModified"),
@@ -165,15 +189,13 @@ def normalize_cve(vulnerability: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def fetch_page_with_retry(
+def fetch_page(
     start_index: int,
     results_per_page: int,
     start_date: datetime,
     end_date: datetime,
 ) -> dict[str, Any]:
-    """
-    Fetch a single page from NVD API with retry logic for transient failures.
-    """
+    """Fetch a single page from the NVD API with conservative retries."""
 
     params = {
         "startIndex": start_index,
@@ -187,95 +209,70 @@ def fetch_page_with_retry(
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "TechPulse/1.0",
+            "User-Agent": "TechPulse/1.0 (+https://github.com/singhtanishq/TechPulse)",
             "Accept": "application/json",
         },
         method="GET",
     )
 
-    last_exception: Exception | None = None
+    last_error: Exception | None = None
 
     for attempt in range(MAX_RETRIES):
+
+        if attempt > 0:
+            wait = RETRY_BACKOFF_BASE ** attempt * REQUEST_DELAY_SECONDS
+            print(f"  Retrying in {wait}s (attempt {attempt + 1}/{MAX_RETRIES})...")
+            time.sleep(wait)
+
         try:
             with urllib.request.urlopen(
                 request,
-                timeout=REQUEST_TIMEOUT,
+                timeout=PAGE_TIMEOUT_SECONDS,
             ) as response:
-
                 status = response.status
-
-                if status == 429:
-                    # Rate limited - wait longer and retry
-                    wait_time = REQUEST_DELAY_SECONDS * (attempt + 1) * 2
-                    print(
-                        f"Rate limited (429). Waiting {wait_time}s before retry..."
-                    )
-                    time.sleep(wait_time)
-                    continue
-
-                if status != 200:
-                    raise RuntimeError(
-                        f"NVD API returned unexpected HTTP status {status}"
-                    )
-
                 raw = response.read()
+
+            if status == 429:
+                print("  NVD rate limit hit (429).")
+                last_error = RuntimeError("NVD API returned HTTP 429 (rate limited)")
+                continue
+
+            if status != 200:
+                last_error = RuntimeError(f"NVD API returned HTTP {status}")
+                continue
+
+            try:
+                return json.loads(raw.decode("utf-8"))
+            except json.JSONDecodeError as exc:
+                raise RuntimeError("NVD API returned invalid JSON.") from exc
 
         except urllib.error.HTTPError as exc:
             if exc.code == 429:
-                wait_time = REQUEST_DELAY_SECONDS * (attempt + 1) * 2
-                print(
-                    f"Rate limited (429). Waiting {wait_time}s before retry..."
-                )
-                time.sleep(wait_time)
-                last_exception = exc
+                print("  NVD rate limit hit (429).")
+                last_error = RuntimeError("NVD API returned HTTP 429 (rate limited)")
                 continue
             if 500 <= exc.code < 600:
-                # Server error - retry
-                wait_time = RETRY_BACKOFF_BASE ** attempt
-                print(
-                    f"Server error ({exc.code}). Retrying in {wait_time}s..."
-                )
-                time.sleep(wait_time)
-                last_exception = exc
+                print(f"  NVD server error ({exc.code}).")
+                last_error = RuntimeError(f"NVD API returned HTTP {exc.code}: {exc.reason}")
                 continue
-            raise RuntimeError(
-                f"NVD API returned HTTP {exc.code}: {exc.reason}"
-            ) from exc
+            raise RuntimeError(f"NVD API returned HTTP {exc.code}: {exc.reason}") from exc
 
         except urllib.error.URLError as exc:
-            # Network error - retry
-            wait_time = RETRY_BACKOFF_BASE ** attempt
-            print(
-                f"Network error: {exc.reason}. Retrying in {wait_time}s..."
-            )
-            time.sleep(wait_time)
-            last_exception = exc
+            print(f"  Network error reaching NVD: {exc.reason}")
+            last_error = RuntimeError(f"Unable to reach NVD API: {exc.reason}")
             continue
+
+        except RuntimeError:
+            raise
 
         except Exception as exc:
-            last_exception = exc
-            wait_time = RETRY_BACKOFF_BASE ** attempt
-            print(
-                f"Unexpected error: {exc}. Retrying in {wait_time}s..."
-            )
-            time.sleep(wait_time)
+            print(f"  Unexpected error fetching NVD page: {exc}")
+            last_error = RuntimeError(f"Unexpected NVD error: {exc}")
             continue
 
-        try:
-            return json.loads(raw.decode("utf-8"))
-
-        except json.JSONDecodeError as exc:
-            raise RuntimeError(
-                "NVD API returned invalid JSON."
-            ) from exc
-
-    # All retries exhausted
-    if last_exception:
-        raise RuntimeError(
-            f"Failed after {MAX_RETRIES} attempts: {last_exception}"
-        ) from last_exception
-
-    raise RuntimeError(f"Failed after {MAX_RETRIES} attempts")
+    raise RuntimeError(
+        f"NVD request failed after {MAX_RETRIES} attempts: {last_error}"
+    ) from last_error
 
 
 def collect(
@@ -283,9 +280,9 @@ def collect(
     end_date: datetime,
 ) -> list[dict[str, Any]]:
     """
-    Collect vulnerabilities from NVD within the given date window.
+    Collect CVEs modified within [start_date, end_date] from NVD.
 
-    Returns deduplicated, deterministically sorted list of normalized CVEs.
+    Returns a deduplicated list sorted deterministically by CVE ID.
     """
 
     vulnerabilities: list[dict[str, Any]] = []
@@ -296,12 +293,9 @@ def collect(
 
     while True:
 
-        print(
-            f"Fetching NVD records "
-            f"starting at index {start_index}..."
-        )
+        print(f"Fetching NVD records starting at index {start_index}...")
 
-        data = fetch_page_with_retry(
+        data = fetch_page(
             start_index=start_index,
             results_per_page=DEFAULT_RESULTS_PER_PAGE,
             start_date=start_date,
@@ -309,7 +303,6 @@ def collect(
         )
 
         total_results = data.get("totalResults", 0)
-
         page_results = data.get("vulnerabilities", [])
 
         print(
@@ -319,30 +312,32 @@ def collect(
 
         for item in page_results:
             normalized = normalize_cve(item)
-            cve_id = normalized.get("id")
-            if cve_id and cve_id not in seen_ids:
-                seen_ids.add(cve_id)
+            if normalized is None:
+                continue
+            if normalized["id"] not in seen_ids:
+                seen_ids.add(normalized["id"])
                 vulnerabilities.append(normalized)
 
         start_index += len(page_results)
 
+        if total_results == 0 or not page_results:
+            break
+
         if start_index >= total_results:
             break
 
-        if not page_results:
-            break
-
-        print(
-            f"Waiting {REQUEST_DELAY_SECONDS}s before "
-            "the next NVD request..."
-        )
-
+        print(f"Waiting {REQUEST_DELAY_SECONDS}s before the next NVD request...")
         time.sleep(REQUEST_DELAY_SECONDS)
 
-    # Deterministic sort: by CVE ID ascending
-    vulnerabilities.sort(key=lambda v: v.get("id", ""))
+    # Deterministic ordering: CVE ID ascending.
+    vulnerabilities.sort(key=lambda v: v["id"])
 
     return vulnerabilities
+
+
+def records_fingerprint(vulnerabilities: list[dict[str, Any]]) -> str:
+    """Return a stable fingerprint of the record set (ignores meta)."""
+    return json.dumps(vulnerabilities, sort_keys=True, ensure_ascii=False)
 
 
 def save_output(
@@ -350,13 +345,33 @@ def save_output(
     start_date: datetime,
     end_date: datetime,
 ) -> Path:
+    """
+    Save output for the snapshot date, idempotently.
 
-    OUTPUT_DIR.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
+    If the file for this date already exists with identical records,
+    it is left untouched (preserving the original collectedAt).
+    """
 
-    collection_date = utc_now().date().isoformat()
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    snapshot_date = end_date.date().isoformat()
+
+    output_path = OUTPUT_DIR / f"{snapshot_date}.json"
+
+    new_records = records_fingerprint(vulnerabilities)
+
+    if output_path.exists():
+        try:
+            existing = json.loads(output_path.read_text(encoding="utf-8"))
+            existing_records = records_fingerprint(existing.get("vulnerabilities", []))
+            if existing_records == new_records:
+                print(
+                    f"Records unchanged for {snapshot_date}; "
+                    f"keeping existing file (idempotent skip)."
+                )
+                return output_path
+        except (json.JSONDecodeError, OSError):
+            pass  # Corrupt existing file: overwrite with fresh data.
 
     output = {
         "meta": {
@@ -371,21 +386,8 @@ def save_output(
         "vulnerabilities": vulnerabilities,
     }
 
-    output_path = OUTPUT_DIR / f"{collection_date}.json"
-
-    with output_path.open(
-        "w",
-        encoding="utf-8",
-    ) as file:
-
-        json.dump(
-            output,
-            file,
-            indent=2,
-            ensure_ascii=False,
-            sort_keys=True,
-        )
-
+    with output_path.open("w", encoding="utf-8") as file:
+        json.dump(output, file, indent=2, ensure_ascii=False, sort_keys=True)
         file.write("\n")
 
     return output_path
@@ -394,84 +396,68 @@ def save_output(
 def main() -> int:
 
     parser = argparse.ArgumentParser(
-        description="Collect recent CVEs from the NVD API."
+        description="Collect CVEs modified on a target UTC calendar day from the NVD API."
     )
 
     parser.add_argument(
-        "--hours",
-        type=int,
-        default=24,
-        help="Number of hours to look back. Default: 24.",
+        "--date",
+        type=str,
+        help="Snapshot date (YYYY-MM-DD, UTC). Default: previous completed UTC day.",
     )
 
     parser.add_argument(
         "--start",
         type=str,
-        help="Explicit UTC ISO-8601 start datetime.",
+        help="Explicit UTC ISO-8601 window start (overrides --date).",
     )
 
     parser.add_argument(
         "--end",
         type=str,
-        help="Explicit UTC ISO-8601 end datetime.",
+        help="Explicit UTC ISO-8601 window end (overrides --date).",
     )
 
     args = parser.parse_args()
 
-    if args.hours <= 0:
-        parser.error("--hours must be greater than zero.")
-
     if args.start and args.end:
-
         start_date = parse_datetime(args.start)
         end_date = parse_datetime(args.end)
-
     elif args.start or args.end:
-
-        parser.error(
-            "--start and --end must be supplied together."
-        )
-
+        parser.error("--start and --end must be supplied together.")
+    elif args.date:
+        try:
+            day = datetime.strptime(args.date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        except ValueError:
+            parser.error("--date must be in YYYY-MM-DD format.")
+        start_date = day
+        end_date = day + timedelta(days=1) - timedelta(milliseconds=1)
     else:
-
-        end_date = utc_now()
-
-        start_date = end_date - timedelta(
-            hours=args.hours
-        )
+        start_date = default_snapshot_date()
+        end_date = start_date + timedelta(days=1) - timedelta(milliseconds=1)
 
     if start_date >= end_date:
-        parser.error(
-            "Start datetime must be earlier than end datetime."
-        )
+        parser.error("Start datetime must be earlier than end datetime.")
 
     print()
     print("TechPulse — NVD Collector")
     print("=" * 32)
-    print(f"Start : {format_nvd_datetime(start_date)}")
-    print(f"End   : {format_nvd_datetime(end_date)}")
+    print(f"Snapshot date : {end_date.date().isoformat()}")
+    print(f"Window start  : {format_nvd_datetime(start_date)}")
+    print(f"Window end    : {format_nvd_datetime(end_date)}")
     print()
 
     try:
-
         vulnerabilities = collect(
             start_date=start_date,
             end_date=end_date,
         )
-
         output_path = save_output(
             vulnerabilities=vulnerabilities,
             start_date=start_date,
             end_date=end_date,
         )
-
     except Exception as exc:
-
-        print(
-            f"ERROR: {exc}",
-            file=sys.stderr,
-        )
-
+        print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
     print()
