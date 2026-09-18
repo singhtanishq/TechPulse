@@ -3,152 +3,188 @@
 """
 TechPulse — Open Source Processor
 
-Processes GitHub repository metadata into open source intelligence.
+Normalizes GitHub repository metadata into the application-ready
+open-source dataset.
+
+Daily growth policy (documented):
+    Star growth is only computed when a previous dated observation for
+    the same repository exists (i.e. an earlier data/opensource/
+    YYYY-MM-DD.json file). Without a real prior observation the value
+    is null and the frontend must show it as unavailable — never a
+    fabricated number.
+
+Output:
+    data/normalized/opensource.json
 """
 
 from __future__ import annotations
 
-import json
+import argparse
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-from utils import (
+SCRIPTS_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from processors.utils import (
+    DATA_DIR,
+    latest_dated_file,
     load_json,
     save_json,
-    parse_iso_datetime,
+    derive_processed_at,
+    status_from_counts,
     utc_now,
-    PROJECT_ROOT,
-    DATA_DIR,
 )
 
 REPO_META_DIR = DATA_DIR / "opensource"
 NORMALIZED_DIR = DATA_DIR / "normalized"
 
 
-def load_latest_repos() -> dict[str, Any] | None:
-    """Load the most recent repository metadata file."""
-    files = list(REPO_META_DIR.glob("*.json"))
-    if not files:
-        return None
-    latest = max(files, key=lambda f: f.stat().st_mtime)
-    return load_json(latest)
+def resolve_snapshot_date(date_arg: str | None) -> str:
+    if date_arg:
+        try:
+            datetime.strptime(date_arg, "%Y-%m-%d")
+            return date_arg
+        except ValueError:
+            raise SystemExit("--date must be in YYYY-MM-DD format.")
+    day = (utc_now() - timedelta(days=1)).date()
+    return day.isoformat()
 
 
-def calculate_growth(repos: list[dict]) -> list[dict]:
+def previous_observation_stars() -> dict[str, int]:
     """
-    Calculate daily star growth for repositories.
-    Note: This requires historical data to compute actual growth.
-    For now, we return the current stars and mark growth as unavailable.
+    Build {full_name: stars} from the second-newest dated observation.
+
+    Returns an empty mapping when fewer than two dated files exist, in
+    which case growth is reported as unavailable rather than invented.
     """
-    for repo in repos:
-        repo["daily_growth"] = None
-        repo["growth_available"] = False
-    return repos
+    if not REPO_META_DIR.exists():
+        return {}
+    files = sorted(
+        (f for f in REPO_META_DIR.glob("*.json") if f.is_file()),
+        key=lambda f: f.stem,
+        reverse=True,
+    )
+    dated = []
+    for f in files:
+        try:
+            datetime.strptime(f.stem, "%Y-%m-%d")
+            dated.append(f)
+        except ValueError:
+            continue
+    if len(dated) < 2:
+        return {}
+
+    prior = load_json(dated[1])
+    if not prior:
+        return {}
+
+    return {
+        repo.get("full_name"): repo.get("stars") or 0
+        for repo in prior.get("repositories", [])
+        if isinstance(repo, dict) and repo.get("full_name")
+    }
 
 
-def rank_repositories(repos: list[dict]) -> list[dict]:
-    """Rank repositories by stars (descending)."""
-    ranked = sorted(repos, key=lambda r: r.get("stars", 0) or 0, reverse=True)
-    for i, repo in enumerate(ranked):
-        repo["rank"] = i + 1
-    return ranked
+def process_opensource(snapshot_date: str) -> dict[str, Any]:
+    """Process open-source repository metadata."""
 
-
-def categorize_repos(repos: list[dict]) -> dict[str, int]:
-    """Count repositories by language/category."""
-    counts = {}
-    for repo in repos:
-        lang = repo.get("language") or "Unknown"
-        counts[lang] = counts.get(lang, 0) + 1
-    return counts
-
-
-def process_opensource(
-    window_start: datetime | None = None,
-    window_end: datetime | None = None,
-) -> dict[str, Any]:
-    """Process open source data."""
+    repos_path = latest_dated_file(REPO_META_DIR)
 
     print("Loading repository metadata...")
-    repos_data = load_latest_repos()
+    repos_data = load_json(repos_path) if repos_path else None
     if not repos_data:
-        print("WARNING: No repository metadata found")
-        repos = []
+        print("  WARNING: no repository metadata available")
+        repos: list[dict[str, Any]] = []
+        failures = 1
     else:
-        repos = repos_data.get("repositories", [])
-        print(f"  Loaded {len(repos)} repositories")
+        repos = [r for r in repos_data.get("repositories", []) if isinstance(r, dict)]
+        collector_failures = repos_data.get("meta", {}).get("failures", []) or []
+        failures = len(collector_failures)
+        print(f"  Loaded {len(repos)} repositories from {repos_path.name}")
 
-    # Determine window (for metadata)
-    if window_end is None:
-        window_end = utc_now()
-    if window_start is None:
-        window_start = window_end - timedelta(days=1)
+    prior_stars = previous_observation_stars()
+    growth_basis = "previous_observation" if prior_stars else "unavailable"
 
-    # Calculate growth (placeholder - needs historical data)
-    repos = calculate_growth(repos)
+    for repo in repos:
+        full_name = repo.get("full_name")
+        stars = repo.get("stars")
+        if growth_basis == "previous_observation" and full_name in prior_stars and stars is not None:
+            repo["daily_growth"] = stars - prior_stars[full_name]
+            repo["growth_available"] = True
+        else:
+            repo["daily_growth"] = None
+            repo["growth_available"] = False
 
-    # Rank by stars
-    ranked_repos = rank_repositories(repos)
+    # Deterministic ranking: stars descending, then full_name ascending.
+    ranked = sorted(
+        repos,
+        key=lambda r: (-(r.get("stars") or 0), r.get("full_name") or ""),
+    )
+    for i, repo in enumerate(ranked):
+        repo["rank"] = i + 1
 
-    # Categorize
-    categories = categorize_repos(repos)
+    languages: dict[str, int] = {}
+    for repo in repos:
+        lang = repo.get("language") or "Unknown"
+        languages[lang] = languages.get(lang, 0) + 1
 
-    # Top projects for display
-    top_projects = ranked_repos[:10]
+    status = status_from_counts(len(repos), len(repos), failures)
+    processed_at = derive_processed_at([repos_path])
 
-    # Build output
-    output = {
+    return {
         "meta": {
-            "processedAt": utc_now().isoformat(),
-            "window": {
-                "start": window_start.isoformat(),
-                "end": window_end.isoformat(),
+            "processedAt": processed_at,
+            "snapshotDate": snapshot_date,
+            "sourceFiles": {
+                "opensource": repos_path.name if repos_path else None,
             },
             "sources": {
                 "github": {
-                    "status": "success" if repos_data else "missing",
+                    "status": status,
                     "total": len(repos),
+                    "inWindow": len(repos),
+                    "failures": failures,
                 },
             },
         },
         "summary": {
             "totalTracked": len(repos),
-            "categories": categories,
+            "languages": languages,
+            "growthBasis": growth_basis,
         },
-        "topProjects": top_projects,
-        "allProjects": ranked_repos,
+        "topProjects": ranked[:10],
+        "allProjects": ranked,
     }
-
-    return output
 
 
 def main() -> int:
-    """Main entry point for open source processor."""
-    import argparse
-    parser = argparse.ArgumentParser(description="Process open source data.")
-    parser.add_argument("--start", help="Window start (ISO 8601 UTC)")
-    parser.add_argument("--end", help="Window end (ISO 8601 UTC)")
+
+    parser = argparse.ArgumentParser(description="Process open-source repository data.")
+    parser.add_argument("--date", help="Snapshot date (YYYY-MM-DD, UTC).")
     args = parser.parse_args()
 
-    window_start = parse_iso_datetime(args.start) if args.start else None
-    window_end = parse_iso_datetime(args.end) if args.end else None
+    snapshot_date = resolve_snapshot_date(args.date)
 
     print()
     print("TechPulse — Open Source Processor")
     print("=" * 32)
+    print(f"Snapshot date: {snapshot_date}")
     print()
 
     try:
-        result = process_opensource(window_start, window_end)
+        result = process_opensource(snapshot_date)
         output_path = NORMALIZED_DIR / "opensource.json"
         save_json(result, output_path)
     except Exception as exc:
-        print(f"ERROR: {exc}")
+        print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
     print()
-    print("Processing completed successfully.")
+    print("Processing completed.")
+    print(f"Tracked repositories: {result['summary']['totalTracked']}")
     print(f"Output: {output_path}")
     print()
 
