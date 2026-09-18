@@ -81,7 +81,7 @@
       "published_at": "2026-09-18T16:00:00+00:00",
       "source": "RSS",
       "summary": "AI is accelerating software development at an unprecedented pace. But as code generation scales, so do the challenges of securing the code, especially emerging AI-based vulnerability exploitations. To meet these challenges, the Google AI and Infrastructure team is transforming how we approach…",
-      "title": "Changing the game: How Google uses agentic AI to secure hundreds of millions of lines of code",
+      "title": "Changing the game: Using agentic AI to secure infrastructure code",
       "url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure/"
     },
     {
@@ -833,12 +833,12 @@
       "feed_name": "Google Cloud Blog",
       "feed_source": "Google Cloud",
       "feed_url": "https://cloudblog.withgoogle.com/rss/",
-      "guid": "https://cloud.google.com/blog/products/compute/forrester-wave-public-cloud-platforms-q3-2026-report/",
+      "guid": "https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs/",
       "published_at": "2026-09-14T16:00:00+00:00",
       "source": "RSS",
-      "summary": "We are excited to share that Google Cloud was named a Leader and received the highest score in the ‘current offering’ category in the Forrester Wave™: Public Cloud Platforms, Q3 2026 report, which examines the 10 most significant public cloud providers across 30 comprehensive criteria, Google also…",
-      "title": "Google is a leader in The Forrester Wave™: Public Cloud Platforms, Q3 2026",
-      "url": "https://cloud.google.com/blog/products/compute/forrester-wave-public-cloud-platforms-q3-2026-report/"
+      "summary": "BigQuery now features a suite of augmented analytics Table-Valued Functions (TVFs) designed to automate complex data analysis at scale. Augmented analytics combines AI, ML and statistical methods to automate insight discovery and pattern explanation. These functions allow you to diagnose why…",
+      "title": "Agent-ready analytics: Unlocking insights with BigQuery augmented analytics",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs/"
     },
     {
       "feed_category": "tech",
@@ -2750,7 +2750,7 @@
     }
   ],
   "meta": {
-    "collectedAt": "2026-09-18T21:22:21.525017+00:00",
+    "collectedAt": "2026-09-18T21:34:26.921234+00:00",
     "count": 229,
     "failures": [],
     "snapshotDate": "2026-09-17",
