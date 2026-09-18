@@ -27,9 +27,17 @@ Thumbs.db
 *.tmp
 *.temp
 
-# Auto-push script (local development only)
+# Auto-push script (local development only, not part of the pipeline)
 auto-push.sh
 
-# Do NOT ignore:
-# data/          # Historical snapshots should be committed
-# generated/     # Generated frontend data should be committed
+# Normalized intermediate data is fully derived from raw/ each run
+# and is rebuilt by the pipeline; it is not part of the archive.
+data/normalized/
+
+# Committed on purpose (do NOT ignore):
+# data/security/   raw NVD + CISA KEV collections
+# data/releases/   raw GitHub releases
+# data/opensource/ raw GitHub repository metadata
+# data/tech/       raw RSS/Atom entries
+# data/daily/      daily snapshot archive (the core historical record)
+# generated/       frontend-consumable JSON
