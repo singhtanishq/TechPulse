@@ -57,7 +57,7 @@
             "daily_growth": null,
             "full_name": "supabase/supabase",
             "language": "TypeScript",
-            "stars": 110112,
+            "stars": 110114,
             "url": "https://github.com/supabase/supabase"
           },
           {
@@ -214,7 +214,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-18T21:34:26.921234+00:00",
+    "generatedAt": "2026-09-18T21:39:44.385710+00:00",
     "totalSnapshots": 1
   }
 }
