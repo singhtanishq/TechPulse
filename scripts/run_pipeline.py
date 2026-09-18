@@ -47,7 +47,7 @@ def utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def run_script(script_path: str, args: list[str] = None) -> tuple[bool, str]:
+def run_script(script_path: str, args: list[str] = None, timeout: int = 300) -> tuple[bool, str]:
     """Run a Python script and return (success, output)."""
     cmd = [sys.executable, script_path]
     if args:
@@ -59,14 +59,14 @@ def run_script(script_path: str, args: list[str] = None) -> tuple[bool, str]:
             cwd=PROJECT_ROOT,
             capture_output=True,
             text=True,
-            timeout=300,  # 5 minute timeout per script
+            timeout=timeout,
         )
         output = result.stdout
         if result.stderr:
             output += "\n" + result.stderr
         return result.returncode == 0, output
     except subprocess.TimeoutExpired:
-        return False, f"TIMEOUT: {script_path} exceeded 5 minutes"
+        return False, f"TIMEOUT: {script_path} exceeded {timeout} seconds"
     except Exception as exc:
         return False, f"ERROR: {exc}"
 
