@@ -1,0 +1,38 @@
+[
+  {
+    "tag_name": "v19.2.0",
+    "name": "React 19.2.0",
+    "html_url": "https://github.com/facebook/react/releases/tag/v19.2.0",
+    "published_at": "2026-09-17T15:00:00Z",
+    "draft": false,
+    "prerelease": false,
+    "body": "Release notes."
+  },
+  {
+    "tag_name": "v19.3.0-next",
+    "name": "Prerelease",
+    "html_url": "https://github.com/facebook/react/releases/tag/v19.3.0-next",
+    "published_at": "2026-09-17T16:00:00Z",
+    "draft": false,
+    "prerelease": true,
+    "body": "Prerelease excluded."
+  },
+  {
+    "tag_name": "v19.4.0-draft",
+    "name": "Draft",
+    "html_url": "",
+    "published_at": "2026-09-17T17:00:00Z",
+    "draft": true,
+    "prerelease": false,
+    "body": "Draft excluded."
+  },
+  {
+    "tag_name": "",
+    "name": "No tag",
+    "html_url": "https://github.com/facebook/react/releases/tag/untagged",
+    "published_at": "2026-09-17T18:00:00Z",
+    "draft": false,
+    "prerelease": false,
+    "body": "Missing tag excluded."
+  }
+]
