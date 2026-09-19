@@ -3,7 +3,7 @@ name: Collect
 # Daily collection pipeline: collect -> process -> generate -> validate -> commit.
 #
 # Schedule:
-#   Runs every day at 12:00 PM Asia/Kolkata (IST).
+#   Runs every day at 2:00 PM Asia/Kolkata (IST).
 #   The timezone is declared explicitly so the schedule is not dependent
 #   on UTC conversion or daylight-saving behavior elsewhere.
 #   Snapshot semantics: scripts/config/snapshot.json (utc_calendar_day).
@@ -14,14 +14,16 @@ name: Collect
 
 on:
   schedule:
-    - cron: "0 12 * * *"
+    - cron: "0 14 * * *"
       timezone: "Asia/Kolkata"
+
   workflow_dispatch:
     inputs:
       snapshot_date:
         description: "Snapshot date to (re)collect (YYYY-MM-DD, UTC). Empty = previous completed UTC day."
         required: false
         type: string
+
   push:
     branches:
       - main
@@ -109,7 +111,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git commit -m "TechPulse: daily snapshot ${{ steps.date.outputs.date }}"
+
           # Rebase onto any commits that landed while this run was
           # collecting (e.g. a concurrent trigger), then push.
           for attempt in 1 2 3; do
@@ -117,8 +121,11 @@ jobs:
               echo "Pushed on attempt $attempt"
               exit 0
             fi
+
             echo "Push rejected (attempt $attempt); rebasing onto latest origin/main..."
+
             git fetch origin
+
             if git rebase origin/main; then
               git add -A
               git diff --cached --quiet || git commit --amend --no-edit
@@ -128,6 +135,7 @@ jobs:
               exit 1
             fi
           done
+
           echo "::error::Could not push after 3 attempts"
           exit 1
 
@@ -139,25 +147,35 @@ jobs:
             echo ""
             echo "| Stage | Result |"
             echo "|-------|--------|"
-            echo "| Snapshot date | `${{ steps.date.outputs.date }}` |"
+            echo "| Snapshot date | \`${{ steps.date.outputs.date }}\` |"
             echo "| Changes committed | ${{ steps.changes.outputs.changed == 'true' && 'yes' || 'no' }} |"
           } >> "$GITHUB_STEP_SUMMARY"
+
           if [ -f generated/data.json ]; then
             python3 - << 'PYEOF' >> "$GITHUB_STEP_SUMMARY"
           import json
+
           with open("generated/data.json", encoding="utf-8") as f:
               d = json.load(f)
+
           s = d.get("snapshot", {})
+
           print(f"| CVEs | {s.get('cves', 0)} |")
           print(f"| Known exploited | {s.get('knownExploited', 0)} |")
           print(f"| Releases | {s.get('releases', 0)} |")
           print(f"| Projects | {s.get('projects', 0)} |")
           print(f"| Tech entries | {s.get('techEntries', 0)} |")
+
           print()
           print("Source health:")
+
           for group, sources in (d.get("sources") or {}).items():
               for name, st in sources.items():
-                  status = st.get("status", "unknown") if isinstance(st, dict) else "unknown"
+                  status = (
+                      st.get("status", "unknown")
+                      if isinstance(st, dict)
+                      else "unknown"
+                  )
                   print(f"- {name} ({group}): **{status}**")
           PYEOF
           fi
