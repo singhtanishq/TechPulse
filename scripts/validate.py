@@ -330,7 +330,7 @@ def check_generated_data() -> None:
         if not isinstance(value, int) or value < 0:
             fail(f"generated/data.json: snapshot.{key} must be a non-negative integer")
 
-    # CVEs must be real-looking IDs.
+    # CVEs must be real-looking IDs with ISO timestamps.
     for cve in data.get("security", {}).get("latest", []):
         cve_id = cve.get("id", "")
         if cve_id and not re.match(r"^CVE-\d{4}-\d{4,}$", cve_id):
@@ -338,6 +338,23 @@ def check_generated_data() -> None:
         severity = cve.get("severity")
         if severity is not None and severity not in ("CRITICAL", "HIGH", "MEDIUM", "LOW", "NONE"):
             fail(f"generated/data.json: invalid severity '{severity}' on {cve_id}")
+        for stamp_field in ("publishedAt", "lastModifiedAt"):
+            value = cve.get(stamp_field)
+            if value is not None and not isinstance(value, str):
+                fail(f"generated/data.json: {stamp_field} on {cve_id} must be an ISO string or null")
+
+    # Relative labels must never be frozen into generated data.
+    frozen_labels = re.compile(r"^(Today|Yesterday|\d+ days ago)$", re.IGNORECASE)
+    for cve in data.get("security", {}).get("latest", []):
+        for label_field in ("published", "modified"):
+            if isinstance(cve.get(label_field), str) and frozen_labels.match(cve[label_field]):
+                fail(f"generated/data.json: frozen relative label in cve.{label_field} ('{cve[label_field]}') — emit ISO timestamps instead")
+    for rel in data.get("releases", []):
+        if isinstance(rel.get("date"), str) and frozen_labels.match(rel["date"]):
+            fail("generated/data.json: frozen relative label in release.date — emit publishedAt instead")
+    for entry in data.get("technology", []):
+        if isinstance(entry.get("date"), str) and frozen_labels.match(entry["date"]):
+            fail("generated/data.json: frozen relative label in technology.date — emit publishedAt instead")
 
     # Timestamps must parse.
     for field in ("generatedAt",):
