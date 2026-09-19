@@ -425,8 +425,5 @@ class ISTReportingTests(unittest.TestCase):
             self.assertEqual(date, "2026-09-27")
 
 
-IST_TODAY_ORIGINAL = utils.ist_today
-
-
 if __name__ == "__main__":
     unittest.main(verbosity=2)
