@@ -19,7 +19,7 @@ publishes daily; GitHub Pages serves the site.
 
 ```
 PUBLIC SOURCES (NVD · CISA KEV · GitHub API · RSS/Atom)
-        ↓   GitHub Actions — daily schedule 02:30 UTC
+        ↓   GitHub Actions — daily schedule 06:30 UTC
 SOURCE COLLECTORS          scripts/sources/*        raw JSON, dated by snapshot day
         ↓
 PROCESSORS                 scripts/processors/*     normalized datasets + source health
@@ -53,7 +53,7 @@ is stored as short excerpts with links — never full articles.
   (`00:00:00Z`–`23:59:59.999Z`), recorded in
   `scripts/config/snapshot.json`.
 - The default target is the **previous completed UTC day**; the schedule runs
-  at 02:30 UTC to allow a buffer for source publication and processing lag.
+  at 06:30 UTC to allow a buffer for source publication and processing lag.
 - Historical snapshots in `data/daily/` are append-only: a snapshot is
   rewritten only when its actual content changes, never silently by a time
   churn.
@@ -149,7 +149,7 @@ python3 -m http.server 8000
 
 ## Automation
 
-**Collect** (`.github/workflows/collect.yml`) runs at **02:30 UTC daily**,
+**Collect** (`.github/workflows/collect.yml`) runs at **06:30 UTC daily**,
 on every push touching `scripts/`/`tests/`, and via manual dispatch (with an
 optional `snapshot_date` input). It: checks out → validates → runs tests →
 collects all four sources (NVD, CISA KEV, GitHub with the workflow
