@@ -30,7 +30,8 @@ from processors.utils import (
     load_json,
     parse_iso_datetime,
     save_json,
-    utc_now,
+    ist_day_window,
+    ist_today,
 )
 
 DAILY_DIR = DATA_DIR / "daily"
