@@ -1,6 +1,246 @@
 {
   "archive": [
     {
+      "date": "2026-09-18",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 18,
+            "full_name": "react/react",
+            "language": "JavaScript",
+            "stars": 250584,
+            "url": "https://github.com/react/react"
+          },
+          {
+            "daily_growth": 2,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200176,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 8,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 142348,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 1,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 138882,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 3,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 127817,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 9,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122004,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 13,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 118945,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 112,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 110226,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 11,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103096,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 3,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97610,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 3,
+          "other": 0,
+          "patch": 2
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-09-18T21:26:27Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.16.2",
+            "version": "v3.16.2"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-09-18T19:00:33Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.16.1",
+            "version": "v3.16.1"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-09-18T16:12:53Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0",
+            "version": "v1.7.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-09-18T14:52:49Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.16.0",
+            "version": "v3.16.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-09-18T00:52:15Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.15.0",
+            "version": "v3.15.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 214,
+          "HIGH": 926,
+          "LOW": 114,
+          "MEDIUM": 614,
+          "NONE": 1,
+          "UNSCORED": 13
+        }
+      },
+      "snapshot": {
+        "cves": 1882,
+        "kevAdded": 3,
+        "knownExploited": 1,
+        "projects": 20,
+        "releases": 5,
+        "techEntries": 49
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 3,
+          "status": "success",
+          "total": 1716
+        },
+        "github_releases": {
+          "failures": 0,
+          "inWindow": 5,
+          "status": "success",
+          "total": 59
+        },
+        "github_repos": {
+          "failures": 0,
+          "inWindow": 20,
+          "status": "success",
+          "total": 20
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1882,
+          "status": "success",
+          "total": 1882
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 49,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 19,
+          "tech": 30
+        },
+        "recent": [
+          {
+            "published_at": "2026-09-18T17:23:58+00:00",
+            "source": "Cloudflare",
+            "title": "Saving another 100TB of RAM with math (and Rust)",
+            "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/"
+          },
+          {
+            "published_at": "2026-09-18T17:16:00+00:00",
+            "source": "The Register",
+            "title": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
+            "url": "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517"
+          },
+          {
+            "published_at": "2026-09-18T16:53:00+00:00",
+            "source": "The Register",
+            "title": "North Korea's fake job interviews infected 30,000 devices",
+            "url": "https://www.theregister.com/security/2026/09/18/north-koreas-fake-job-interviews-infected-30000-devices/5297461"
+          },
+          {
+            "published_at": "2026-09-18T16:30:00+00:00",
+            "source": "Google Cloud",
+            "title": "Announcing Native BM25 Ranking in AlloyDB and Cloud SQL",
+            "url": "https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql/"
+          },
+          {
+            "published_at": "2026-09-18T16:19:27+00:00",
+            "source": "The Register",
+            "title": "FBI: Fake cop and government impersonation scams cost victims $1.6B",
+            "url": "https://www.theregister.com/cyber-crime/2026/09/18/fbi-fake-cop-and-government-impersonation-scams-cost-victims-16b/5297499"
+          },
+          {
+            "published_at": "2026-09-18T16:01:02+00:00",
+            "source": "Netflix",
+            "title": "Leave the Class Path in the Rearview Mirror",
+            "url": "https://netflixtechblog.com/leave-the-class-path-in-the-rearview-mirror-67a85b15b6be?source=rss----2615bd06b42e---4"
+          },
+          {
+            "published_at": "2026-09-18T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Changing the game: Using agentic AI to secure infrastructure code",
+            "url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure/"
+          },
+          {
+            "published_at": "2026-09-18T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Reimagining service delivery in the agentic era with Google Public Sector",
+            "url": "https://cloud.google.com/blog/topics/public-sector/reimagining-service-delivery-in-the-agentic-era-with-google-public-sector/"
+          },
+          {
+            "published_at": "2026-09-18T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-09-18T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "The DevFest Community Workshop Experience: Building Real Agents Together",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/the-devfest-community-workshop-experience-building-real-agents-together/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-09-17",
       "opensource": {
         "topProjects": [
@@ -214,7 +454,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-18T21:39:44.385710+00:00",
-    "totalSnapshots": 1
+    "generatedAt": "2026-09-19T07:46:19.668147+00:00",
+    "totalSnapshots": 2
   }
 }
