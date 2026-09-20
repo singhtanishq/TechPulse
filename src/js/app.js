@@ -3,23 +3,120 @@
    Renders all pages from generated data (loaded in data.js).
 
    Design rules:
-     - Every list has an honest empty state; no fabricated values.
+     - Every list has honest loading, empty and error states.
      - Unscored CVEs render explicitly as UNSCORED, never as zeros
        or LOW severity.
      - External content is escaped and URL-checked (see components.js).
+     - All dates follow the TechPulse IST reporting model (dates.js):
+       the displayed edition date is universal; relative labels are
+       computed live against the current IST calendar date.
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", async () => {
+    initChrome(); // nav, theme toggle, mobile menu — before data arrives
+    markSkeletons();
     await window.TechPulseData.load();
     updateAll();
     await updatePageSpecific();
+    initRevealAnimations();
 });
+
+/* =========================================================
+   SITE CHROME — nav state, mobile menu, theme toggle
+   ========================================================= */
+
+function initChrome() {
+    updateNavActive();
+    initMobileNav();
+    initThemeToggle();
+}
+
+function updateNavActive() {
+    const currentPage = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+    const links = document.querySelectorAll(".main-nav a[data-nav], .mobile-nav a[data-nav]");
+    links.forEach((link) => {
+        const href = (link.getAttribute("href") || "").toLowerCase();
+        const isHome = currentPage === "index.html" || currentPage === "";
+        const isActive = href === currentPage || (isHome && link.dataset.nav === "today");
+        link.classList.toggle("active", isActive);
+        if (isActive) {
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+    });
+}
+
+function initMobileNav() {
+    const toggle = document.querySelector("[data-nav-toggle]");
+    const menu = document.querySelector("[data-mobile-nav]");
+    if (!toggle || !menu) return;
+
+    const setOpen = (open) => {
+        document.body.classList.toggle("nav-open", open);
+        toggle.setAttribute("aria-expanded", String(open));
+    };
+
+    toggle.addEventListener("click", () => {
+        setOpen(!document.body.classList.contains("nav-open"));
+    });
+
+    menu.addEventListener("click", (event) => {
+        if (event.target.closest("a")) setOpen(false);
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") setOpen(false);
+    });
+}
+
+function initThemeToggle() {
+    const toggle = document.querySelector("[data-theme-toggle]");
+    if (!toggle) return;
+
+    const syncState = () => {
+        const theme = document.documentElement.getAttribute("data-theme") === "light"
+            ? "light"
+            : "dark";
+        toggle.setAttribute("aria-pressed", String(theme === "light"));
+        toggle.title = theme === "light" ? "Switch to dark theme" : "Switch to light theme";
+    };
+    syncState();
+
+    toggle.addEventListener("click", () => {
+        const root = document.documentElement;
+        const next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+        root.classList.add("theme-transition");
+        root.setAttribute("data-theme", next);
+        try {
+            localStorage.setItem("techpulse-theme", next);
+        } catch (error) { /* storage unavailable — theme is session-only */ }
+        window.setTimeout(() => root.classList.remove("theme-transition"), 400);
+        syncState();
+    });
+}
+
+/* =========================================================
+   SKELETONS — swap "Loading…" placeholders for shimmer states
+   ========================================================= */
+
+function markSkeletons() {
+    document.querySelectorAll("[data-skeleton]").forEach((el) => {
+        const variant = el.dataset.skeleton || "rows";
+        const count = Number(el.dataset.skeletonCount || 3);
+        renderSkeletons(el, count, variant);
+    });
+}
 
 /* =========================================================
    MAIN UPDATE
    ========================================================= */
 
 function updateAll() {
+    const loaded = window.TechPulseData.isLoaded();
+    if (!loaded) {
+        showDataErrorBanner();
+    }
     updateMeta();
     updateSnapshot();
     updateSecurity();
@@ -35,36 +132,50 @@ async function updatePageSpecific() {
         await window.TechPulseData.loadArchive();
         renderArchivePage();
     }
-    updateNavActive();
+}
+
+function showDataErrorBanner() {
+    const banner = document.querySelector("[data-error-banner]");
+    if (!banner) return;
+    const message = window.TechPulseData.getError();
+    banner.hidden = false;
+    banner.querySelector("[data-error-detail]").textContent =
+        message || "The generated data file could not be loaded.";
 }
 
 /* =========================================================
-   META
+   META — edition date, freshness, generated timestamp
    ========================================================= */
 
 function updateMeta() {
     const data = window.TechPulseData.get().meta;
+    const dates = window.TechPulseDates;
 
-    const formattedDate = data.date ? formatDisplayDate(data.date) : "—";
-
+    const formattedDate = data.date ? dates.display(data.date) : "—";
     setText("[data-today]", formattedDate);
     setText("[data-page-date]", formattedDate);
     setText("[data-snapshot-date]", formattedDate);
     setText("[data-security-date]", formattedDate);
     setText("[data-releases-date]", formattedDate);
 
-    document.querySelectorAll("[data-page-updated]").forEach((el) => {
-        if (data.generatedAt) {
-            const d = new Date(data.generatedAt);
-            if (!Number.isNaN(d.getTime())) {
-                el.textContent = d.toLocaleString("en-GB", {
-                    day: "2-digit", month: "short", year: "numeric",
-                    hour: "2-digit", minute: "2-digit", timeZone: "UTC",
-                }).toUpperCase() + " UTC";
-                return;
+    // Honest freshness: how does the displayed edition relate to the
+    // current TechPulse (IST) date? Deterministic for every visitor.
+    if (data.date) {
+        const freshness = dates.freshness(data.date);
+        document.querySelectorAll("[data-edition-chip]").forEach((el) => {
+            el.textContent = freshness.label;
+            el.classList.remove("chip--current", "chip--stale");
+            el.classList.add(freshness.state === "current" ? "chip--current" : "chip--stale");
+            if (data.coveredDate) {
+                el.title = `Edition for ${dates.long(data.date)} — covering the India day of ${dates.long(data.coveredDate)}`;
             }
-        }
-        el.textContent = "—";
+        });
+    }
+
+    document.querySelectorAll("[data-page-updated]").forEach((el) => {
+        el.textContent = data.generatedAt
+            ? formatTimestampIST(data.generatedAt)
+            : "—";
     });
 
     const observations = document.querySelector("[data-observations]");
@@ -85,6 +196,18 @@ function updateSnapshot() {
     setText("[data-releases]", snapshot.releases);
     setText("[data-projects]", snapshot.projects);
     setText("[data-tech-entries]", snapshot.techEntries);
+    setText("[data-tracked-count]", snapshot.projects);
+    setText("[data-releases-total]", snapshot.releases);
+
+    // Dynamic "first observation year" from the archive itself.
+    const history = window.TechPulseData.get().history;
+    const oldest = history.length ? history[history.length - 1].date : null;
+    const year = oldest ? window.TechPulseDates.chip(oldest).year : "—";
+    setText("[data-first-year]", year);
+
+    // Live counters for the autonomous section.
+    setText("[data-days-observed]", window.TechPulseData.get().meta.daysObserved || 0);
+    setText("[data-snapshots-count]", window.TechPulseData.get().meta.snapshots || 0);
 }
 
 /* =========================================================
@@ -99,6 +222,8 @@ function updateSecurity() {
     setText("[data-medium]", security.medium);
     setText("[data-low]", security.low);
     setText("[data-unscored]", security.unscored);
+
+    updateSeverityBars(security);
 
     const homeList = document.querySelector("[data-security-latest]");
     if (homeList) {
@@ -117,13 +242,35 @@ function updateSecurity() {
     }
 }
 
+function updateSeverityBars(security) {
+    const bars = document.querySelectorAll("[data-severity-bar]");
+    const total = (security.critical || 0) + (security.high || 0) + (security.medium || 0)
+        + (security.low || 0) + (security.unscored || 0);
+    bars.forEach((bar) => {
+        const key = (bar.dataset.severityBar || "").toLowerCase();
+        const value = security[key] || 0;
+        const fill = bar.querySelector("[data-severity-fill]");
+        const label = bar.querySelector("[data-severity-share]");
+        if (!fill) return;
+        const share = total > 0 ? Math.max((value / total) * 100, value > 0 ? 4 : 0) : 0;
+        if (prefersReducedMotion()) {
+            fill.style.width = `${share}%`;
+        } else {
+            requestAnimationFrame(() => { fill.style.width = `${share}%`; });
+        }
+        if (label) {
+            label.textContent = total > 0 ? `${Math.round((value / total) * 100)}%` : "—";
+        }
+    });
+}
+
 function renderHomeVulnerabilityList(container, vulnerabilities) {
     if (!Array.isArray(vulnerabilities) || !vulnerabilities.length) {
-        renderEmptyState(container, "No vulnerability data available for this snapshot.");
+        renderEmptyState(container, "No vulnerability data available for this edition.");
         return;
     }
-    container.innerHTML = vulnerabilities.slice(0, 5).map((vuln) => `
-        <div class="list-item">
+    container.innerHTML = vulnerabilities.slice(0, 5).map((vuln, index) => `
+        <div class="list-item reveal-item" style="--stagger:${index}">
             <div>
                 <strong>${escapeHtml(vuln.id)}</strong>
                 <span>${escapeHtml(vuln.title || "")}</span>
@@ -135,23 +282,23 @@ function renderHomeVulnerabilityList(container, vulnerabilities) {
 
 function renderVulnerabilityCards(container, vulnerabilities) {
     if (!Array.isArray(vulnerabilities) || !vulnerabilities.length) {
-        renderEmptyState(container, "No vulnerability data available for this snapshot.");
+        renderEmptyState(container, "No vulnerability data available for this edition.");
         return;
     }
 
-    container.innerHTML = vulnerabilities.map((vuln) => {
+    container.innerHTML = vulnerabilities.map((vuln, index) => {
         const link = safeUrl(vuln.url);
         const idHtml = link
             ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(vuln.id)}</a>`
             : escapeHtml(vuln.id);
         const cvss = (vuln.cvss_score !== null && vuln.cvss_score !== undefined)
-            ? `<span>CVSS v${escapeHtml(vuln.cvss_version)}: ${escapeHtml(vuln.cvss_score)}</span>`
+            ? `<span>CVSS v${escapeHtml(vuln.cvss_version)}: <strong>${escapeHtml(vuln.cvss_score)}</strong></span>`
             : "<span>CVSS: not yet scored</span>";
         const kev = vuln.known_exploited
-            ? '<span class="kev-badge">KNOWN EXPLOITED</span>'
+            ? '<span class="kev-badge" title="Present in the CISA Known Exploited Vulnerabilities catalog">KNOWN EXPLOITED</span>'
             : "";
         return `
-        <article class="vulnerability-card" data-severity="${severityClass(vuln.severity)}">
+        <article class="vulnerability-card reveal-item" data-severity="${severityClass(vuln.severity)}" style="--stagger:${index}">
             <div class="vulnerability-id">
                 <span>CVE</span>
                 <strong>${idHtml}</strong>
@@ -160,7 +307,7 @@ function renderVulnerabilityCards(container, vulnerabilities) {
                 <h3>${escapeHtml(vuln.title || "")}</h3>
                 <p>${escapeHtml(vuln.description || "")}</p>
                 <div class="vulnerability-meta">
-                    <span>Published ${escapeHtml(vuln.published || "—")}</span>
+                    <span title="${escapeHtml(formatDisplayDate(vuln.publishedAt))}">Published ${escapeHtml(formatRelativeDate(vuln.publishedAt))}</span>
                     ${cvss}
                     ${kev}
                 </div>
@@ -175,9 +322,9 @@ function renderSecurityHistory(container, history) {
         renderEmptyState(container, "No historical security data available yet.");
         return;
     }
-    container.innerHTML = history.slice(0, 10).map((item) => `
-        <div class="security-history-row">
-            <span class="history-date">${formatDisplayDate(item.date)}</span>
+    container.innerHTML = history.slice(0, 10).map((item, index) => `
+        <div class="security-history-row reveal-item" style="--stagger:${index}">
+            <span class="history-date" title="${escapeHtml(formatDisplayDate(item.date))}">${escapeHtml(formatRelativeDate(item.date))}</span>
             <span>${formatNumber(item.cves)} CVEs</span>
             <span>${formatNumber(item.knownExploited)} exploited</span>
             <span>${formatNumber(item.releases)} releases</span>
@@ -216,17 +363,18 @@ function updateReleases() {
 
 function renderReleasesTable(container, releases) {
     if (!Array.isArray(releases) || !releases.length) {
-        renderEmptyState(container, "No releases detected in this snapshot window.");
+        renderEmptyState(container, "No releases detected in this edition's window.");
         return;
     }
 
-    container.innerHTML = releases.map((rel) => {
-        const kind = severityClass(rel.kind) === "unscored" ? "patch" : (rel.kind || "patch");
+    container.innerHTML = releases.map((rel, index) => {
+        const kind = rel.kind || "other";
         const icon = (rel.project || "·").charAt(0).toUpperCase();
+        const absolute = formatDisplayDate(rel.publishedAt);
         return `
-        <article class="release-row">
+        <article class="release-row reveal-item" style="--stagger:${index}">
             <div class="release-project">
-                <div class="release-icon">${escapeHtml(icon)}</div>
+                <div class="release-icon" aria-hidden="true">${escapeHtml(icon)}</div>
                 <div>
                     <strong>${escapeHtml(rel.project || "—")}</strong>
                     <span>${escapeHtml(rel.repository || "—")}</span>
@@ -237,20 +385,20 @@ function renderReleasesTable(container, releases) {
                 <strong>${escapeHtml(rel.version || "—")}</strong>
             </div>
             <div class="release-type">
-                <span class="release-badge ${escapeHtml(kind)}">${escapeHtml((rel.kind || "other").toUpperCase())}</span>
+                <span class="release-badge ${escapeHtml(kind)}">${escapeHtml(kind.toUpperCase())}</span>
             </div>
-            <time>${escapeHtml(rel.date || "—")}</time>
+            <time title="${escapeHtml(absolute)}">${escapeHtml(formatRelativeDate(rel.publishedAt))}</time>
         </article>`;
     }).join("");
 }
 
 function renderTrackedProjects(container, projects) {
     if (!Array.isArray(projects) || !projects.length) {
-        renderEmptyState(container, "Repository data unavailable for this snapshot.");
+        renderEmptyState(container, "Repository data unavailable for this edition.");
         return;
     }
-    container.innerHTML = projects.map((project) => `
-        <div class="tracked-project">
+    container.innerHTML = projects.map((project, index) => `
+        <div class="tracked-project reveal-item" style="--stagger:${index}">
             <strong>${escapeHtml(project.name || "—")}</strong>
             <span>${escapeHtml(project.full_name || "—")}</span>
         </div>
@@ -273,12 +421,12 @@ function renderOpenSourceList(container, projects) {
     if (!Array.isArray(projects) || !projects.length) {
         renderEmptyState(
             container,
-            "Open-source data unavailable for this snapshot. Run the GitHub collector to populate this view."
+            "Open-source data unavailable for this edition. Run the GitHub collector to populate this view."
         );
         return;
     }
 
-    container.innerHTML = projects.map((project) => {
+    container.innerHTML = projects.map((project, index) => {
         const growth = project.growth_available && project.daily_growth !== null
             ? `+${formatNumber(project.daily_growth)} <span>stars</span>`
             : '<span class="growth-na">growth n/a</span>';
@@ -287,7 +435,7 @@ function renderOpenSourceList(container, projects) {
             ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(project.name || project.full_name || "—")}</a>`
             : escapeHtml(project.name || project.full_name || "—");
         return `
-        <article class="opensource-card">
+        <article class="opensource-card reveal-item" style="--stagger:${index}">
             <div class="opensource-rank">#${String(displayValue(project.rank, 0)).padStart(2, "0")}</div>
             <div class="opensource-main">
                 <div class="opensource-header">
@@ -322,17 +470,17 @@ function updateTechnology() {
 
 function renderTechList(container, entries) {
     if (!Array.isArray(entries) || !entries.length) {
-        renderEmptyState(container, "No technology updates collected for this snapshot.");
+        renderEmptyState(container, "No technology updates collected for this edition.");
         return;
     }
 
-    container.innerHTML = entries.map((entry) => `
-        <div class="tech-item">
+    container.innerHTML = entries.map((entry, index) => `
+        <div class="tech-item reveal-item" style="--stagger:${index}">
             <h4>${safeLink(entry.url, entry.title || "(untitled)", "tech-link")}</h4>
             <div class="tech-meta">
                 <span class="tech-source">${escapeHtml(entry.source || "Unknown")}</span>
                 <span class="tech-category">${escapeHtml(entry.category || "tech")}</span>
-                <span class="tech-date">${escapeHtml(entry.date || "—")}</span>
+                <span class="tech-date" title="${escapeHtml(formatDisplayDate(entry.publishedAt))}">${escapeHtml(formatRelativeDate(entry.publishedAt))}</span>
             </div>
             <p>${escapeHtml(entry.summary || "")}</p>
         </div>
@@ -369,21 +517,17 @@ function renderHistoryPreview(container, history) {
         renderEmptyState(container, "The archive begins with the first daily run.");
         return;
     }
-    const year = history[0].date ? history[0].date.slice(0, 4) : "";
+    const year = history[0].date ? window.TechPulseDates.chip(history[0].date).year : "";
     container.innerHTML = `
         <div class="timeline-year">${escapeHtml(year)}</div>
         <div class="timeline">
             ${history.map((item, index) => {
-                const d = new Date(`${item.date}T00:00:00Z`);
-                const day = Number.isNaN(d.getTime()) ? "·" : d.getUTCDate();
-                const month = Number.isNaN(d.getTime())
-                    ? "—"
-                    : d.toLocaleDateString("en-GB", { month: "long", timeZone: "UTC" });
+                const chip = window.TechPulseDates.chip(item.date);
                 return `
-                <div class="timeline-item ${index === 0 ? "active" : ""}">
-                    <span>${day}</span>
+                <div class="timeline-item ${index === 0 ? "active" : ""} reveal-item" style="--stagger:${index}">
+                    <span>${escapeHtml(chip.day)}</span>
                     <div>
-                        <strong>${escapeHtml(month)}</strong>
+                        <strong>${escapeHtml(chip.month)}</strong>
                         <small>${formatNumber(item.cves)} CVEs · ${formatNumber(item.releases)} releases</small>
                     </div>
                 </div>`;
@@ -399,22 +543,15 @@ function renderHistoryCards(container, history) {
 
     const currentDate = window.TechPulseData.get().meta.date;
 
-    container.innerHTML = history.map((item) => {
-        const d = new Date(`${item.date}T00:00:00Z`);
-        const valid = !Number.isNaN(d.getTime());
-        const day = valid ? d.getUTCDate() : "·";
-        const monthYear = valid
-            ? d.toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" }).toUpperCase()
-            : "—";
-        const weekday = valid
-            ? d.toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" })
-            : "";
+    container.innerHTML = history.map((item, index) => {
+        const chip = window.TechPulseDates.chip(item.date);
+        const weekday = window.TechPulseDates.weekday(item.date);
         const isCurrent = item.date === currentDate;
         return `
-        <article class="history-card">
+        <article class="history-card reveal-item" style="--stagger:${index}">
             <div class="history-date">
-                <strong>${day}</strong>
-                <span>${escapeHtml(monthYear)}</span>
+                <strong>${escapeHtml(chip.day)}</strong>
+                <span>${escapeHtml(chip.monthYear.toUpperCase())}</span>
             </div>
             <div class="history-content">
                 <div class="history-header">
@@ -448,33 +585,34 @@ async function renderArchivePage() {
         return;
     }
 
-    container.innerHTML = archive.map((snap) => {
+    container.innerHTML = archive.map((snap, index) => {
         const counts = snap.snapshot || {};
         const severity = (snap.security || {}).severity || {};
         const releases = (snap.releases || {}).recent || [];
         const projects = (snap.opensource || {}).topProjects || [];
         const tech = (snap.technology || {}).recent || [];
+        const chip = window.TechPulseDates.chip(snap.date);
 
         const releaseItems = releases.length
             ? releases.slice(0, 5).map((r) => `
                 <li>${safeLink(r.url, `${r.project} ${r.version}`, "archive-link")}</li>`).join("")
-            : "<li class=\"archive-empty\">No releases recorded</li>";
+            : '<li class="archive-empty">No releases recorded</li>';
 
         const projectItems = projects.length
             ? projects.slice(0, 5).map((p) => `
                 <li>${escapeHtml(p.full_name || "—")} · ★ ${formatNumber(p.stars)}</li>`).join("")
-            : "<li class=\"archive-empty\">No project data recorded</li>";
+            : '<li class="archive-empty">No project data recorded</li>';
 
         const techItems = tech.length
             ? tech.slice(0, 5).map((t) => `
                 <li>${safeLink(t.url, t.title || "(untitled)", "archive-link")}</li>`).join("")
-            : "<li class=\"archive-empty\">No tech entries recorded</li>";
+            : '<li class="archive-empty">No tech entries recorded</li>';
 
         return `
-        <article class="history-card archive-detail">
+        <article class="history-card archive-detail reveal-item" style="--stagger:${index}">
             <div class="history-date">
-                <strong>${escapeHtml((snap.date || "").slice(8, 10) || "·")}</strong>
-                <span>${escapeHtml((snap.date || "").slice(0, 7).replace("-", " / ").toUpperCase())}</span>
+                <strong>${escapeHtml(chip.day)}</strong>
+                <span>${escapeHtml(chip.monthYear.toUpperCase())}</span>
             </div>
             <div class="history-content">
                 <div class="history-header">
@@ -522,15 +660,13 @@ function updateStatus() {
     const mainStatus = document.querySelector("[data-status-main]");
 
     dotElements.forEach((el) => {
+        el.classList.remove("is-live", "is-warning", "is-error");
         if (!loaded) {
-            el.style.background = "var(--warning)";
-            el.style.boxShadow = "0 0 0 3px rgba(246, 200, 95, 0.08), 0 0 12px rgba(246, 200, 95, 0.45)";
+            el.classList.add("is-error");
         } else if (degraded) {
-            el.style.background = "var(--warning)";
-            el.style.boxShadow = "0 0 0 3px rgba(246, 200, 95, 0.08), 0 0 12px rgba(246, 200, 95, 0.45)";
+            el.classList.add("is-warning");
         } else {
-            el.style.background = "var(--accent)";
-            el.style.boxShadow = "";
+            el.classList.add("is-live");
         }
     });
 
@@ -539,59 +675,103 @@ function updateStatus() {
     });
 
     if (mainStatus) {
+        mainStatus.classList.remove("is-live", "is-warning", "is-error");
         if (!loaded) {
-            mainStatus.textContent = "● NO DATA";
-            mainStatus.style.color = "var(--warning)";
+            mainStatus.classList.add("is-error");
+            mainStatus.textContent = "No data";
             mainStatus.title = error ? `Data unavailable: ${error}` : "Data unavailable";
         } else if (degraded) {
-            mainStatus.textContent = "● PARTIAL";
-            mainStatus.style.color = "var(--warning)";
+            mainStatus.classList.add("is-warning");
+            mainStatus.textContent = "Partial";
             mainStatus.title = "One or more sources were unavailable during collection.";
         } else {
-            mainStatus.textContent = "● LIVE";
-            mainStatus.style.color = "var(--accent)";
+            mainStatus.classList.add("is-live");
+            mainStatus.textContent = "Live";
             mainStatus.title = "";
         }
     }
 }
 
 /* =========================================================
-   FILTERS + NAV
+   FILTERS
    ========================================================= */
 
 function initSecurityFilters() {
     const filterButtons = document.querySelectorAll("[data-filter]");
-    const cards = document.querySelectorAll("[data-vulnerability-list] .vulnerability-card");
-    if (!filterButtons.length || !cards.length) return;
+    const listContainer = document.querySelector("[data-vulnerability-list]");
+    if (!filterButtons.length || !listContainer) return;
+
+    const cards = () => listContainer.querySelectorAll(".vulnerability-card");
+
+    // Empty-result feedback when a filter matches nothing.
+    let note = listContainer.querySelector("[data-filter-empty]");
+    if (!note) {
+        note = document.createElement("div");
+        note.className = "empty-state";
+        note.setAttribute("data-filter-empty", "");
+        note.hidden = true;
+        note.textContent = "No CVEs with this severity in the current edition.";
+        listContainer.appendChild(note);
+    }
+
+    const applyFilter = (filter) => {
+        let visible = 0;
+        cards().forEach((card) => {
+            const match = filter === "all" || card.dataset.severity === filter;
+            card.classList.toggle("is-hidden", !match);
+            if (match) visible += 1;
+        });
+        note.hidden = visible > 0;
+    };
 
     filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
-            filterButtons.forEach((b) => b.classList.remove("active"));
-            button.classList.add("active");
-
-            const filter = button.dataset.filter;
-            cards.forEach((card) => {
-                const match = filter === "all" || card.dataset.severity === filter;
-                card.style.display = match ? "grid" : "none";
+            filterButtons.forEach((b) => {
+                b.classList.remove("active");
+                b.removeAttribute("aria-pressed");
             });
+            button.classList.add("active");
+            button.setAttribute("aria-pressed", "true");
+            applyFilter(button.dataset.filter);
         });
     });
-}
 
-function updateNavActive() {
-    const currentPage = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
-    document.querySelectorAll(".main-nav a[data-nav]").forEach((link) => {
-        const href = (link.getAttribute("href") || "").toLowerCase();
-        const isHome = currentPage === "index.html" || currentPage === "";
-        const isActive = href === currentPage || (isHome && link.dataset.nav === "today");
-        link.classList.toggle("active", isActive);
-    });
+    applyFilter("all");
 }
 
 /* =========================================================
-   HELPERS (formatDate alias for previews)
+   MOTION — reveal on scroll, count-ups, reduced motion
    ========================================================= */
 
-function formatDate(dateString) {
-    return formatDisplayDate(dateString);
+function prefersReducedMotion() {
+    return window.matchMedia
+        && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function initRevealAnimations() {
+    const targets = document.querySelectorAll(".reveal, .reveal-item");
+    if (!targets.length) return;
+
+    if (prefersReducedMotion() || !("IntersectionObserver" in window)) {
+        targets.forEach((el) => el.classList.add("is-visible"));
+        return;
+    }
+
+    // Batch stagger: within each visible batch, items get sequential
+    // delays so grouped cards cascade smoothly.
+    const observer = new IntersectionObserver((entries) => {
+        let batchIndex = 0;
+        const visible = entries.filter((e) => e.isIntersecting);
+        visible.forEach((entry) => {
+            const el = entry.target;
+            if (!el.style.getPropertyValue("--reveal-delay")) {
+                el.style.setProperty("--reveal-delay", `${Math.min(batchIndex * 60, 420)}ms`);
+                batchIndex += 1;
+            }
+            el.classList.add("is-visible");
+            observer.unobserve(el);
+        });
+    }, { threshold: 0.08, rootMargin: "0px 0px -5% 0px" });
+
+    targets.forEach((el) => observer.observe(el));
 }
