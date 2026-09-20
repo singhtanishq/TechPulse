@@ -8,6 +8,11 @@
      - All URLs pass through safeUrl(); only http/https links are
        rendered, everything else renders as inert text.
      - No raw external HTML is ever injected.
+
+   Date rules (see dates.js):
+     - TechPulse calendar dates are India days (Asia/Kolkata).
+     - Relative labels are computed live in the browser from ISO
+       timestamps — never frozen into the data.
    ========================================================= */
 
 /**
@@ -70,33 +75,25 @@ function setText(selector, value) {
     }
 }
 
+/* ---------------------------------------------------------
+   Dates — thin delegates to the IST-aware dates.js module.
+   --------------------------------------------------------- */
+
 function formatDisplayDate(dateString) {
-    if (!dateString || typeof dateString !== "string") return "—";
-    const date = new Date(`${dateString}T00:00:00Z`);
-    if (Number.isNaN(date.getTime())) return "—";
-    return date
-        .toLocaleDateString("en-GB", {
-            day: "2-digit",
-            month: "short",
-            year: "numeric",
-            timeZone: "UTC"
-        })
-        .toUpperCase();
+    if (window.TechPulseDates) return window.TechPulseDates.display(dateString);
+    return "—";
 }
 
+/** Live relative label vs the current IST calendar date. */
 function formatRelativeDate(dateString) {
-    if (!dateString || typeof dateString !== "string") return "—";
-    const date = new Date(dateString);
-    if (Number.isNaN(date.getTime())) return "—";
-    const now = new Date();
-    const diffDays = Math.floor(
-        (Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) -
-         Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate())) / 86400000
-    );
-    if (diffDays <= 0) return "Today";
-    if (diffDays === 1) return "Yesterday";
-    if (diffDays < 7) return `${diffDays} days ago`;
-    return formatDisplayDate(dateString.slice(0, 10));
+    if (window.TechPulseDates) return window.TechPulseDates.relative(dateString);
+    return "—";
+}
+
+/** ISO timestamp formatted explicitly in IST. */
+function formatTimestampIST(value) {
+    if (window.TechPulseDates) return window.TechPulseDates.timestampIST(value);
+    return "—";
 }
 
 function formatNumber(value) {
@@ -124,9 +121,37 @@ function severityLabel(severity) {
     return severity ? String(severity).toUpperCase() : "UNSCORED";
 }
 
+/* ---------------------------------------------------------
+   States — loading / empty / error
+   --------------------------------------------------------- */
+
 function renderEmptyState(container, message) {
     if (container) {
         container.innerHTML =
             `<div class="empty-state">${escapeHtml(message || "No data available")}</div>`;
     }
+}
+
+function renderErrorState(container, message) {
+    if (container) {
+        container.innerHTML =
+            `<div class="empty-state empty-state--error" role="status">` +
+            `<strong>Unable to load data</strong>` +
+            `<span>${escapeHtml(message || "Something went wrong while loading this view.")}</span>` +
+            `</div>`;
+    }
+}
+
+function renderSkeletons(container, count, variant) {
+    if (!container) return;
+    const skeletons = [];
+    for (let i = 0; i < (count || 3); i++) {
+        skeletons.push(
+            `<div class="skeleton ${variant ? `skeleton--${escapeHtml(variant)}` : ""}" aria-hidden="true">` +
+            `<span class="skeleton-line"></span>` +
+            `<span class="skeleton-line skeleton-line--short"></span>` +
+            `</div>`
+        );
+    }
+    container.innerHTML = skeletons.join("");
 }
