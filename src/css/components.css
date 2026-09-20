@@ -223,11 +223,11 @@
     transition: width 900ms var(--ease);
 }
 
-.severity-bar-fill[data-severity-bar-fill="critical"] { background: var(--danger); }
-.severity-bar-fill[data-severity-bar-fill="high"] { background: var(--warning); }
-.severity-bar-fill[data-severity-bar-fill="medium"] { background: var(--accent); }
-.severity-bar-fill[data-severity-bar-fill="low"] { background: var(--info); }
-.severity-bar-fill[data-severity-bar-fill="unscored"] { background: var(--text-muted); }
+.severity-bar-fill[data-severity-fill="critical"] { background: var(--danger); }
+.severity-bar-fill[data-severity-fill="high"] { background: var(--warning); }
+.severity-bar-fill[data-severity-fill="medium"] { background: var(--accent); }
+.severity-bar-fill[data-severity-fill="low"] { background: var(--info); }
+.severity-bar-fill[data-severity-fill="unscored"] { background: var(--text-muted); }
 
 .severity-bar [data-severity-share] {
     color: var(--text-muted);
