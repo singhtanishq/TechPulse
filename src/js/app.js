@@ -116,6 +116,7 @@ function updateAll() {
     const loaded = window.TechPulseData.isLoaded();
     if (!loaded) {
         showDataErrorBanner();
+        renderLoadErrorStates();
     }
     updateMeta();
     updateSnapshot();
@@ -125,6 +126,17 @@ function updateAll() {
     updateTechnology();
     updateHistory();
     updateStatus();
+}
+
+/* When the generated data itself cannot be fetched, every list shows an
+   honest error state (not a fake "no data" empty state). */
+function renderLoadErrorStates() {
+    const detail = window.TechPulseData.getError() || "Generated data could not be loaded.";
+    document.querySelectorAll(
+        "[data-security-latest], [data-vulnerability-list], [data-releases-list], " +
+        "[data-tracked-projects], [data-opensource-list], [data-technology-list], " +
+        "[data-history-preview], [data-history-list], [data-security-history]"
+    ).forEach((container) => renderErrorState(container, detail));
 }
 
 async function updatePageSpecific() {
