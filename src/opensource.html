@@ -5,55 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Open Source — TechPulse</title>
-  <meta
-    name="description"
-    content="Track open-source projects gaining momentum across the technology ecosystem."
-  >
+
+  <meta name="description" content="Track open-source projects gaining momentum across the technology ecosystem.">
+
+  <link rel="canonical" href="https://singhtanishq.github.io/TechPulse/opensource.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TechPulse">
+  <meta property="og:title" content="Open Source — TechPulse">
+  <meta property="og:description" content="Track open-source projects gaining momentum across the technology ecosystem.">
+  <meta property="og:url" content="https://singhtanishq.github.io/TechPulse/opensource.html">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="theme-color" content="#0a0d12">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
+
+  <script>
+    /* Theme bootstrap — runs before first paint to avoid a flash. */
+    (function () {
+      try {
+        var stored = localStorage.getItem("techpulse-theme");
+        if (stored === "light" || stored === "dark") {
+          document.documentElement.setAttribute("data-theme", stored);
+        }
+      } catch (e) { /* storage unavailable — keep default theme */ }
+    })();
+  </script>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header class="site-header">
+
     <div class="container header-inner">
 
-      <a href="index.html" class="brand">
-        <span class="brand-mark">T</span>
+      <a href="index.html" class="brand" aria-label="TechPulse — home">
+        <span class="brand-mark" aria-hidden="true">T</span>
         <span class="brand-name">TechPulse</span>
       </a>
 
-      <nav class="main-nav">
-        <a href="index.html" data-nav="today">Today</a>
-        <a href="history.html" data-nav="history">History</a>
-        <a href="security.html" data-nav="security">Security</a>
-        <a href="releases.html" data-nav="releases">Releases</a>
-        <a href="opensource.html" class="active" data-nav="opensource">Open Source</a>
+      <nav class="main-nav" aria-label="Primary">
+            <a href="index.html" data-nav="today">Today</a>
+            <a href="history.html" data-nav="history">History</a>
+            <a href="security.html" data-nav="security">Security</a>
+            <a href="releases.html" data-nav="releases">Releases</a>
+            <a href="opensource.html" data-nav="opensource">Open Source</a>
       </nav>
 
-      <div class="header-status">
-        <span class="status-dot" data-status-dot></span>
-        <span data-status-text>Loading...</span>
+      <div class="header-actions">
+
+        <div class="header-status" title="Daily pipeline status">
+          <span class="status-dot pulse" data-status-dot></span>
+          <span data-status-text>Loading…</span>
+        </div>
+
+        <button class="theme-toggle" type="button" data-theme-toggle
+                aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+
+        <button class="nav-toggle" type="button" data-nav-toggle
+                aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+
       </div>
 
     </div>
+
   </header>
 
+  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+            <a href="index.html" data-nav="today">Today</a>
+            <a href="history.html" data-nav="history">History</a>
+            <a href="security.html" data-nav="security">Security</a>
+            <a href="releases.html" data-nav="releases">Releases</a>
+            <a href="opensource.html" data-nav="opensource">Open Source</a>
+  </nav>
 
-  <!-- MAIN -->
-  <main>
+
+  <main id="main-content">
+
+    <div class="error-banner" data-error-banner hidden role="alert">
+      <div>
+        <strong>Live data unavailable.</strong>
+        The site is showing its static shell — generated data could not be loaded.
+        <span data-error-detail></span>
+      </div>
+    </div>
 
     <!-- PAGE HERO -->
+
     <section class="page-hero">
+
       <div class="container">
 
         <div class="eyebrow">OPEN SOURCE</div>
 
         <h1>
-          Projects on the move.
+          Projects on<br>
+          <span>the move.</span>
         </h1>
 
         <p>
@@ -62,23 +127,26 @@
         </p>
 
         <div class="page-meta">
-          <span>Observed today</span>
-          <span>•</span>
-          <span data-page-date>—</span>
+          <span>Observed edition</span>
+          <strong data-page-date>—</strong>
+          <span class="chip" data-edition-chip>checking…</span>
         </div>
 
       </div>
+
     </section>
 
 
     <!-- TOP PROJECTS -->
+
     <section class="section">
+
       <div class="container">
 
         <div class="section-heading">
           <div>
             <div class="eyebrow">DAILY SIGNAL</div>
-            <h2>Open Source Projects on the Move</h2>
+            <h2>Open-source projects on the move</h2>
           </div>
 
           <p>
@@ -87,22 +155,24 @@
         </div>
 
 
-        <div class="opensource-list" data-opensource-list>
-          <div class="empty-state">Loading open source data...</div>
+        <div class="opensource-list reveal" data-opensource-list data-skeleton="card" data-skeleton-count="5">
         </div>
 
       </div>
+
     </section>
 
 
     <!-- WHAT WE TRACK -->
-    <section class="section">
+
+    <section class="section section-muted">
+
       <div class="container">
 
         <div class="section-heading">
           <div>
             <div class="eyebrow">OBSERVATION MODEL</div>
-            <h2>What TechPulse Tracks</h2>
+            <h2>What TechPulse tracks</h2>
           </div>
 
           <p>
@@ -112,7 +182,7 @@
         </div>
 
 
-        <div class="opensource-signal-grid">
+        <div class="opensource-signal-grid reveal">
 
           <div class="opensource-signal">
             <span class="signal-number">01</span>
@@ -153,14 +223,17 @@
         </div>
 
       </div>
+
     </section>
 
 
     <!-- DAILY ARCHIVE -->
-    <section class="section section-muted">
+
+    <section class="section">
+
       <div class="container">
 
-        <div class="archive-panel">
+        <div class="archive-panel reveal">
 
           <div>
             <div class="eyebrow">DAILY ARCHIVE</div>
@@ -170,47 +243,76 @@
             </h2>
 
             <p>
-              TechPulse preserves daily observations so today's
+              TechPulse preserves daily observations so today&rsquo;s
               movement can be compared with what came before.
             </p>
           </div>
 
           <a href="history.html" class="button">
-            Explore History →
+            Explore history
           </a>
 
         </div>
 
       </div>
+
     </section>
 
   </main>
 
 
-  <!-- FOOTER -->
   <footer class="site-footer">
+
     <div class="container footer-inner">
 
       <div>
-        <a href="index.html" class="brand">
-          <span class="brand-mark">T</span>
+
+        <a href="index.html" class="brand" aria-label="TechPulse — home">
+          <span class="brand-mark" aria-hidden="true">T</span>
           <span class="brand-name">TechPulse</span>
         </a>
-        <span>Technology, observed every day.</span>
+
+        <p>
+          Technology, observed every day. An autonomous, permanent
+          record of the technology ecosystem.
+        </p>
+
       </div>
 
-      <div>
-        Built as a public technology archive.
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Today</a>
+        <a href="history.html">History</a>
+        <a href="security.html">Security</a>
+        <a href="releases.html">Releases</a>
+        <a href="opensource.html">Open Source</a>
+      </nav>
+
+      <div class="footer-meta">
+
+        <span>
+          Open source project
+        </span>
+
+        <span>
+          Built with GitHub Actions
+        </span>
+
+        <span>
+          Reporting timezone · Asia/Kolkata (IST)
+        </span>
+
       </div>
 
     </div>
+
   </footer>
 
 
-  <!-- SCRIPTS -->
-  <script src="js/data.js"></script>
+    <script src="js/data.js"></script>
+  <script src="js/dates.js"></script>
   <script src="js/components.js"></script>
   <script src="js/app.js"></script>
 
 </body>
+
 </html>
