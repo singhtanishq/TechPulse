@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-09-19",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 23,
+            "full_name": "react/react",
+            "language": "JavaScript",
+            "stars": 250607,
+            "url": "https://github.com/react/react"
+          },
+          {
+            "daily_growth": 31,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200207,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 43,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 142391,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 23,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 138905,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 33,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 127850,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 13,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122017,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 39,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 118984,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 162,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 110388,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 27,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103123,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 25,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97635,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 44,
+          "HIGH": 106,
+          "LOW": 17,
+          "MEDIUM": 120,
+          "NONE": 0,
+          "UNSCORED": 2
+        }
+      },
+      "snapshot": {
+        "cves": 289,
+        "kevAdded": 0,
+        "knownExploited": 3,
+        "projects": 20,
+        "releases": 0,
+        "techEntries": 36
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 1716
+        },
+        "github_releases": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 59
+        },
+        "github_repos": {
+          "failures": 0,
+          "inWindow": 20,
+          "status": "success",
+          "total": 20
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 289,
+          "status": "success",
+          "total": 289
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 36,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 14,
+          "tech": 22
+        },
+        "recent": [
+          {
+            "published_at": "2026-09-19T14:25:00+00:00",
+            "source": "The Register",
+            "title": "Agentic security is the billion-dollar challenge for some clever startup to solve",
+            "url": "https://www.theregister.com/security/2026/09/19/agentic-security-is-the-billion-dollar-challenge-for-some-clever-startup-to-solve/5297546"
+          },
+          {
+            "published_at": "2026-09-19T07:28:00+00:00",
+            "source": "The Register",
+            "title": "Firefox 156 arrives with a forest of forks in its wake",
+            "url": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194"
+          },
+          {
+            "published_at": "2026-09-18T17:23:58+00:00",
+            "source": "Cloudflare",
+            "title": "Saving another 100TB of RAM with math (and Rust)",
+            "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/"
+          },
+          {
+            "published_at": "2026-09-18T17:16:00+00:00",
+            "source": "The Register",
+            "title": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
+            "url": "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517"
+          },
+          {
+            "published_at": "2026-09-18T16:53:00+00:00",
+            "source": "The Register",
+            "title": "North Korea's fake job interviews infected 30,000 devices",
+            "url": "https://www.theregister.com/security/2026/09/18/north-koreas-fake-job-interviews-infected-30000-devices/5297461"
+          },
+          {
+            "published_at": "2026-09-18T16:30:00+00:00",
+            "source": "Google Cloud",
+            "title": "Announcing Native BM25 Ranking in AlloyDB and Cloud SQL",
+            "url": "https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql/"
+          },
+          {
+            "published_at": "2026-09-18T16:19:27+00:00",
+            "source": "The Register",
+            "title": "FBI: Fake cop and government impersonation scams cost victims $1.6B",
+            "url": "https://www.theregister.com/cyber-crime/2026/09/18/fbi-fake-cop-and-government-impersonation-scams-cost-victims-16b/5297499"
+          },
+          {
+            "published_at": "2026-09-18T16:01:02+00:00",
+            "source": "Netflix",
+            "title": "Leave the Class Path in the Rearview Mirror",
+            "url": "https://netflixtechblog.com/leave-the-class-path-in-the-rearview-mirror-67a85b15b6be?source=rss----2615bd06b42e---4"
+          },
+          {
+            "published_at": "2026-09-18T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Changing the game: Using agentic AI to secure infrastructure code",
+            "url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure/"
+          },
+          {
+            "published_at": "2026-09-18T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Reimagining service delivery in the agentic era with Google Public Sector",
+            "url": "https://cloud.google.com/blog/topics/public-sector/reimagining-service-delivery-in-the-agentic-era-with-google-public-sector/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-09-18",
       "opensource": {
         "topProjects": [
@@ -454,7 +658,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-19T07:46:19.668147+00:00",
-    "totalSnapshots": 2
+    "generatedAt": "2026-09-20T13:07:51.675363+00:00",
+    "totalSnapshots": 3
   }
 }

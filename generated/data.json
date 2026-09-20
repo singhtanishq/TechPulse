@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 289,
+      "date": "2026-09-19",
+      "kevAdded": 0,
+      "knownExploited": 3,
+      "projects": 20,
+      "releases": 0,
+      "techEntries": 36
+    },
+    {
       "cves": 1882,
       "date": "2026-09-18",
       "kevAdded": 3,
@@ -20,14 +29,14 @@
     }
   ],
   "meta": {
-    "date": "2026-09-18",
-    "daysObserved": 2,
-    "generatedAt": "2026-09-19T07:46:19.668147+00:00",
-    "snapshots": 2
+    "date": "2026-09-19",
+    "daysObserved": 3,
+    "generatedAt": "2026-09-20T13:07:51.675363+00:00",
+    "snapshots": 3
   },
   "openSource": [
     {
-      "daily_growth": 18,
+      "daily_growth": 23,
       "description": "The library for web and native user interfaces.",
       "full_name": "react/react",
       "growth_available": true,
@@ -35,11 +44,11 @@
       "name": "react",
       "rank": 1,
       "source": "GitHub",
-      "stars": 250584,
+      "stars": 250607,
       "url": "https://github.com/react/react"
     },
     {
-      "daily_growth": 2,
+      "daily_growth": 31,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -47,11 +56,11 @@
       "name": "tensorflow",
       "rank": 2,
       "source": "GitHub",
-      "stars": 200176,
+      "stars": 200207,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 8,
+      "daily_growth": 43,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -59,11 +68,11 @@
       "name": "next.js",
       "rank": 3,
       "source": "GitHub",
-      "stars": 142348,
+      "stars": 142391,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 1,
+      "daily_growth": 23,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -71,11 +80,11 @@
       "name": "go",
       "rank": 4,
       "source": "GitHub",
-      "stars": 138882,
+      "stars": 138905,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 3,
+      "daily_growth": 33,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -83,11 +92,11 @@
       "name": "kubernetes",
       "rank": 5,
       "source": "GitHub",
-      "stars": 127817,
+      "stars": 127850,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 9,
+      "daily_growth": 13,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -95,11 +104,11 @@
       "name": "node",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122004,
+      "stars": 122017,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 13,
+      "daily_growth": 39,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -107,11 +116,11 @@
       "name": "rust",
       "rank": 7,
       "source": "GitHub",
-      "stars": 118945,
+      "stars": 118984,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 112,
+      "daily_growth": 162,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -119,11 +128,11 @@
       "name": "supabase",
       "rank": 8,
       "source": "GitHub",
-      "stars": 110226,
+      "stars": 110388,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 11,
+      "daily_growth": 27,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -131,11 +140,11 @@
       "name": "pytorch",
       "rank": 9,
       "source": "GitHub",
-      "stars": 103096,
+      "stars": 103123,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 3,
+      "daily_growth": 25,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -143,270 +152,224 @@
       "name": "tailwindcss",
       "rank": 10,
       "source": "GitHub",
-      "stars": 97610,
+      "stars": 97635,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     }
   ],
-  "releases": [
-    {
-      "date": "Yesterday",
-      "kind": "patch",
-      "project": "openai-python",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.16.2",
-      "version": "v3.16.2"
-    },
-    {
-      "date": "Yesterday",
-      "kind": "patch",
-      "project": "openai-python",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.16.1",
-      "version": "v3.16.1"
-    },
-    {
-      "date": "Yesterday",
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "repository": "anthropics/anthropic-sdk-python",
-      "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0",
-      "version": "v1.7.0"
-    },
-    {
-      "date": "Yesterday",
-      "kind": "minor",
-      "project": "openai-python",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.16.0",
-      "version": "v3.16.0"
-    },
-    {
-      "date": "Yesterday",
-      "kind": "minor",
-      "project": "openai-python",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.15.0",
-      "version": "v3.15.0"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 214,
-    "high": 926,
+    "critical": 44,
+    "high": 106,
     "kevCatalogTotal": 1716,
     "latest": [
       {
-        "cvss_score": 5.5,
+        "cvss_score": 4.0,
         "cvss_version": "3.1",
-        "description": "A flaw was found in cockpit-machines. This vulnerability allows a local attacker to expose sensitive Virtual Machine (VM) credentials, including plaintext passwords, by inspecting process command-line arguments during VM creation or installation. The cockpit-machines component passes password values directly on the command line, making them visible to other local users on systems where process…",
-        "id": "CVE-2026-92768",
+        "description": "Exim before 4.100.1 allows SMTP smuggling in which the received message does not match any sent message, and instead depends on crafted data sent after a rejection during DATA processing.",
+        "id": "CVE-2026-94057",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A flaw was found in cockpit-machines. This vulnerability allows a local attacker to expose sensitive Virtual Machine (VM) credentials, including plaintext…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92768"
+        "title": "Exim before 4.100.1 allows SMTP smuggling in which the received message does not match any sent message, and instead depends on crafted data sent after a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94057"
       },
       {
-        "cvss_score": 5.0,
+        "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "A flaw was found in `cockpit-machines`. This vulnerability allows a local attacker with the ability to inspect running processes to expose sensitive guest virtual machine (VM) credentials, such as `rootPassword` and `userPassword`. This occurs when the `install_machine.py` script passes these credentials as a JSON command-line argument during VM creation or installation. The exposure is limited…",
-        "id": "CVE-2026-92747",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A flaw was found in `cockpit-machines`. This vulnerability allows a local attacker with the ability to inspect running processes to expose sensitive guest…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92747"
-      },
-      {
-        "cvss_score": 6.0,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in cockpit-files. A local unprivileged attacker can exploit a race condition during directory creation with owner assignment. By controlling a writable parent directory, the attacker can replace a newly created directory with a symbolic link (symlink) before the ownership change operation (chown) is applied. This allows the attacker to redirect the ownership change to an…",
-        "id": "CVE-2026-91205",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A flaw was found in cockpit-files. A local unprivileged attacker can exploit a race condition during directory creation with owner assignment. By controlling a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91205"
-      },
-      {
-        "cvss_score": 6.0,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in cockpit-files. This vulnerability allows a local attacker to exploit a timing issue, known as a symlink race condition, during privileged file operations such as changing file ownership or permissions. By manipulating directory entries and winning this race, the attacker can redirect these operations to unintended files. This could lead to unauthorized changes in file…",
-        "id": "CVE-2026-91203",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A flaw was found in cockpit-files. This vulnerability allows a local attacker to exploit a timing issue, known as a symlink race condition, during privileged…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91203"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was identified in Totolink A3002MU Hh-B20211125.1046. Affected is the function formWlEncrypt of the file /boafrm/formWlEncrypt. The manipulation of the argument submit-url leads to buffer overflow. It is possible to initiate the attack remotely. The exploit is publicly available and might be used.",
-        "id": "CVE-2026-93740",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "A vulnerability was identified in Totolink A3002MU Hh-B20211125.1046. Affected is the function formWlEncrypt of the file /boafrm/formWlEncrypt. The…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93740"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was determined in Totolink A3002MU Hh-B20211125.1046. This impacts the function formWlAc of the file /boafrm/formWlAc. Executing a manipulation of the argument submit-url can lead to buffer overflow. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized.",
-        "id": "CVE-2026-93739",
+        "description": "Exim before 4.100.1, when Proxy-Protocol is used with an attacker-controlled proxy, allows attackers to read certain uninitialized data from stack memory.",
+        "id": "CVE-2026-94056",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "A vulnerability was determined in Totolink A3002MU Hh-B20211125.1046. This impacts the function formWlAc of the file /boafrm/formWlAc. Executing a manipulation…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93739"
+        "title": "Exim before 4.100.1, when Proxy-Protocol is used with an attacker-controlled proxy, allows attackers to read certain uninitialized data from stack memory.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94056"
       },
       {
-        "cvss_score": 9.3,
+        "cvss_score": 3.7,
         "cvss_version": "3.1",
-        "description": "A flaw was found in the OpenShift console. Unauthenticated access to the `/api/devfile/` and `/api/devfile/samples/` endpoints allows a remote attacker to send crafted devfile payloads. This can lead to Server-Side Request Forgery (SSRF), where the console pod makes requests to internal services and reflects partial responses to the attacker. Additionally, by sending repeated large requests…",
-        "id": "CVE-2026-75885",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "A flaw was found in the OpenShift console. Unauthenticated access to the `/api/devfile/` and `/api/devfile/samples/` endpoints allows a remote attacker to send…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75885"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "In Vinyl Cache before 9.0,2, workspace buffer overflow vulnerability was found in the .upper() and .lower() string type methods of VCL. This can be used as a remote denial of service (DoS) vector to make the child process segfault or assert, and then restart. Effectively exploiting this vulnerability requires prior knowledge about the VCL in use and the ability to craft a request that contains a…",
-        "id": "CVE-2026-93894",
+        "description": "Exim before 4.100.1, when certain non-default TLS settings are used with GnuTLS, has a use-after-free.",
+        "id": "CVE-2026-94055",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "LOW",
         "source": "NVD",
-        "title": "In Vinyl Cache before 9.0,2, workspace buffer overflow vulnerability was found in the .upper() and .lower() string type methods of VCL. This can be used as a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93894"
+        "title": "Exim before 4.100.1, when certain non-default TLS settings are used with GnuTLS, has a use-after-free.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94055"
       },
       {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Cotonti through 1.0.0 fails to validate anti-CSRF tokens in the contact plugin submission handler, allowing attackers to forge messages. Attackers can auto-submit contact forms from attacker-controlled pages to send forged messages attributed to authenticated victims to the administrator inbox.",
-        "id": "CVE-2026-93873",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Cotonti through 1.0.0 fails to validate anti-CSRF tokens in the contact plugin submission handler, allowing attackers to forge messages. Attackers can…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93873"
-      },
-      {
-        "cvss_score": 9.2,
-        "cvss_version": "4.0",
-        "description": "Cotonti through 1.0.0 derives password recovery validation tokens from md5(microtime()) in users.passrecover.php, creating a predictable token space of approximately one million values per second. Unauthenticated attackers can read the server Date header, precompute candidate tokens within a narrow time window, and probe them against the passrecover authentication endpoint to reset any account…",
-        "id": "CVE-2026-93868",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Cotonti through 1.0.0 derives password recovery validation tokens from md5(microtime()) in users.passrecover.php, creating a predictable token space of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93868"
-      },
-      {
-        "cvss_score": 8.2,
-        "cvss_version": "4.0",
-        "description": "SGLang versions through 0.5.20 contain an unbounded memory allocation vulnerability in handle_staging_req() that fails to validate chunk_idx from ZMQ STAGING_REQ frames in prefill/decode disaggregation deployments. Attackers with access to the decode engine's internal ZMQ rank port can send a frame with an extremely large chunk_idx value, causing the scheduler to allocate memory until the system…",
-        "id": "CVE-2026-93838",
+        "cvss_score": 7.0,
+        "cvss_version": "3.1",
+        "description": "Exim before 4.100.1, when Proxy-Protocol is used with an attacker-controlled proxy, has an out-of-bounds write.",
+        "id": "CVE-2026-94054",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "SGLang versions through 0.5.20 contain an unbounded memory allocation vulnerability in handle_staging_req() that fails to validate chunk_idx from ZMQ…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93838"
+        "title": "Exim before 4.100.1, when Proxy-Protocol is used with an attacker-controlled proxy, has an out-of-bounds write.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94054"
       },
       {
         "cvss_score": 8.6,
         "cvss_version": "4.0",
-        "description": "A vulnerability was found in Totolink A3002MU Hh-B20211125.1046. This affects the function formSchedule of the file /boafrm/formSchedule. Performing a manipulation of the argument webpage results in buffer overflow. The attack is possible to be carried out remotely. The exploit has been made public and could be used.",
-        "id": "CVE-2026-93738",
+        "description": "Mistral Vibe before 2.25.5 contains a remote code execution vulnerability in the worktree creation process that executes git hooks before trust validation. Attackers can supply a repository with a crafted post-checkout hook that executes arbitrary shell commands with the privileges of the user running Vibe.",
+        "id": "CVE-2026-93993",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "A vulnerability was found in Totolink A3002MU Hh-B20211125.1046. This affects the function formSchedule of the file /boafrm/formSchedule. Performing a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93738"
+        "title": "Mistral Vibe before 2.25.5 contains a remote code execution vulnerability in the worktree creation process that executes git hooks before trust validation…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93993"
       },
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in Netty netty-codec-smtp. The component does not properly validate Carriage Return (CR) and Line Feed (LF) characters in the SMTP command-name field. A remote attacker, if an application routes untrusted input into this field, can embed CR/LF characters to inject arbitrary SMTP commands. This can lead to SMTP command smuggling, allowing for unauthorized email relay or spoofing…",
-        "id": "CVE-2026-93576",
+        "cvss_score": 7.0,
+        "cvss_version": "4.0",
+        "description": "Gopeed through 2.0.0-beta.3 contains a path traversal vulnerability in archive extraction that allows attackers to write arbitrary files outside the extraction directory. Attackers can craft malicious archives with entries containing directory traversal sequences that bypass validation, enabling file write operations when users download and extract archives with AutoExtract enabled.",
+        "id": "CVE-2026-93992",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "A flaw was found in Netty netty-codec-smtp. The component does not properly validate Carriage Return (CR) and Line Feed (LF) characters in the SMTP…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93576"
+        "title": "Gopeed through 2.0.0-beta.3 contains a path traversal vulnerability in archive extraction that allows attackers to write arbitrary files outside the extraction…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93992"
       },
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in Netty's MqttDecoder. An unauthenticated remote attacker can exploit this vulnerability by sending a specially crafted MQTT CONNECT packet. The decoder fails to properly validate the 'Properties Length' against the 'Remaining Length', allowing an attacker to bypass size limits. This leads to excessive memory and CPU consumption, resulting in a denial of service (DoS) due to an…",
-        "id": "CVE-2026-93575",
+        "cvss_score": 8.3,
+        "cvss_version": "4.0",
+        "description": "Argo Workflows versions 4.1.0 through 4.1.3 contain an authorization bypass vulnerability in ListArchivedWorkflows that fails to apply cluster-scoped access review when the metadata.namespace field selector uses the NotEquals operator. Attackers with namespace-scoped list permissions can use a negated namespace field selector to retrieve archived workflows from all other namespaces, exposing spec…",
+        "id": "CVE-2026-93991",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "A flaw was found in Netty's MqttDecoder. An unauthenticated remote attacker can exploit this vulnerability by sending a specially crafted MQTT CONNECT packet…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93575"
+        "title": "Argo Workflows versions 4.1.0 through 4.1.3 contain an authorization bypass vulnerability in ListArchivedWorkflows that fails to apply cluster-scoped access…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93991"
       },
       {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in Netty's `netty-codec-http` component. A remote attacker could exploit this vulnerability by sending a specially crafted HTTP/1.1 chunk-size token that includes post-digit whitespace. This incorrect parsing of the chunk size can lead to HTTP request smuggling. This allows an attacker to bypass security controls or access unauthorized resources in proxy/backend deployments.",
-        "id": "CVE-2026-93574",
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "Expat through 2.8.4 fails to validate low surrogates following high surrogates in UTF-16 input, allowing malformed UTF-16 sequences to be accepted. Attackers can craft UTF-16 encoded XML with lone high surrogates that consume following code units, hiding markup characters from the parser and enabling XML injection attacks.",
+        "id": "CVE-2026-93990",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
-        "severity": "MEDIUM",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A flaw was found in Netty's `netty-codec-http` component. A remote attacker could exploit this vulnerability by sending a specially crafted HTTP/1.1 chunk-size…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93574"
+        "title": "Expat through 2.8.4 fails to validate low surrogates following high surrogates in UTF-16 input, allowing malformed UTF-16 sequences to be accepted. Attackers…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93990"
+      },
+      {
+        "cvss_score": 2.3,
+        "cvss_version": "4.0",
+        "description": "vLLM through 0.29.0 fails to properly validate bad_words token indices against the model's generation output width in SamplingParams.update_from_tokenizer(). Attackers can supply out-of-bounds token indices that corrupt logits memory of concurrent requests, causing different in-flight HTTP requests to return incorrect tokens.",
+        "id": "CVE-2026-93989",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "vLLM through 0.29.0 fails to properly validate bad_words token indices against the model's generation output width in SamplingParams.update_from_tokenizer()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93989"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "QloApps through 1.7.0 contains a path traversal vulnerability in the getEmailHTML action of admin/ajax.php that allows authenticated back-office users to read arbitrary files. Attackers can supply relative path sequences in the email parameter to bypass directory restrictions and access sensitive files including database credentials and configuration data.",
+        "id": "CVE-2026-93988",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "QloApps through 1.7.0 contains a path traversal vulnerability in the getEmailHTML action of admin/ajax.php that allows authenticated back-office users to read…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93988"
+      },
+      {
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "A flaw has been found in olivier-ls PHP-FTS up to 1.1.2. Affected by this issue is the function SearchEngine::buildHighlights of the file src/SearchEngine.php of the component Search Engine. Executing a manipulation of the argument Query can lead to cross site scripting. The attack may be launched remotely. The exploit has been published and may be used. Upgrading to version 1.1.3 can resolve…",
+        "id": "CVE-2026-93956",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A flaw has been found in olivier-ls PHP-FTS up to 1.1.2. Affected by this issue is the function SearchEngine::buildHighlights of the file src/SearchEngine.php…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93956"
+      },
+      {
+        "cvss_score": 2.1,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was detected in grimmory-tools grimmory up to 3.3.3/3.4.1. Affected by this vulnerability is the function streamFileToResponse of the file backend/src/main/java/org/booklore/controller/KoboController.java of the component Download Endpoint. Performing a manipulation of the argument bookId results in authorization bypass. The attack may be initiated remotely. The exploit is now…",
+        "id": "CVE-2026-93955",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A vulnerability was detected in grimmory-tools grimmory up to 3.3.3/3.4.1. Affected by this vulnerability is the function streamFileToResponse of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93955"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+        "id": "CVE-2026-89155",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": null,
+        "source": "NVD",
+        "title": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89155"
+      },
+      {
+        "cvss_score": 2.1,
+        "cvss_version": "4.0",
+        "description": "A security vulnerability has been detected in grimmory-tools grimmory up to 3.3.3/3.4.1. Affected is the function AppSettingController.getAppSettings of the file backend/src/main/java/org/booklore/controller/AppSettingController.java of the component Settings API Endpoint. Such manipulation leads to incorrect authorization. The attack can be launched remotely. The exploit has been disclosed…",
+        "id": "CVE-2026-93954",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A security vulnerability has been detected in grimmory-tools grimmory up to 3.3.3/3.4.1. Affected is the function AppSettingController.getAppSettings of the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93954"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "Pod::Text versions before 6.1.1 for Perl allow CPU and memory exhaustion formatting a POD document whose =over nesting drives the margin to the output width.\n\nEach =over adds its indent to the margin, which wrap() subtracts from the output width to get the space available for text. When that space reaches zero, the line-splitting substitution matches the empty string, and the loop consumes no…",
+        "id": "CVE-2026-82560",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": null,
+        "source": "NVD",
+        "title": "Pod::Text versions before 6.1.1 for Perl allow CPU and memory exhaustion formatting a POD document whose =over nesting drives the margin to the output…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82560"
       }
     ],
-    "low": 114,
-    "medium": 614,
-    "none": 1,
-    "unscored": 13
+    "low": 17,
+    "medium": 120,
+    "none": 0,
+    "unscored": 2
   },
   "snapshot": {
-    "cves": 1882,
-    "kevAdded": 3,
-    "knownExploited": 1,
+    "cves": 289,
+    "kevAdded": 0,
+    "knownExploited": 3,
     "projects": 20,
-    "releases": 5,
-    "techEntries": 49
+    "releases": 0,
+    "techEntries": 36
   },
   "sources": {
     "opensource": {
@@ -420,29 +383,29 @@
     "releases": {
       "github": {
         "failures": 0,
-        "inWindow": 5,
-        "status": "success",
+        "inWindow": 0,
+        "status": "partial",
         "total": 59
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 3,
-        "status": "success",
+        "inWindow": 0,
+        "status": "partial",
         "total": 1716
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1882,
+        "inWindow": 289,
         "status": "success",
-        "total": 1882
+        "total": 289
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 49,
+        "inWindow": 36,
         "status": "success",
         "total": 229
       }
@@ -450,8 +413,24 @@
   },
   "technology": [
     {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "High time to stop kicking the security can down the road, investor tells The Reg",
+      "title": "Agentic security is the billion-dollar challenge for some clever startup to solve",
+      "url": "https://www.theregister.com/security/2026/09/19/agentic-security-is-the-billion-dollar-challenge-for-some-clever-startup-to-solve/5297546"
+    },
+    {
       "category": "tech",
       "date": "Yesterday",
+      "source": "The Register",
+      "summary": "From Waterfox to LibreWolf and Pale Moon, there's a browser for almost every Mozilla dissenter",
+      "title": "Firefox 156 arrives with a forest of forks in its wake",
+      "url": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194"
+    },
+    {
+      "category": "tech",
+      "date": "2 days ago",
       "source": "Cloudflare",
       "summary": "Cloudflare's global network is immense but not limitless. As we look for small ways to trim our resource usage, we sometimes get lucky and we can cut significantly more. Here’s how we reduced one of our Pingora-based service's RAM usage with statistics.",
       "title": "Saving another 100TB of RAM with math (and Rust)",
@@ -459,7 +438,7 @@
     },
     {
       "category": "security",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "The Register",
       "summary": "Agentic exploits for the win (again)",
       "title": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
@@ -467,7 +446,7 @@
     },
     {
       "category": "security",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "The Register",
       "summary": "WaterPlum recruiters used bogus coding tests to backdoor jobseekers and raid more than 7,000 crypto wallets",
       "title": "North Korea's fake job interviews infected 30,000 devices",
@@ -475,7 +454,7 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "Google Cloud",
       "summary": "Vector search is a critical component of generative AI, retrieval-augmented generation (RAG), and data agent architectures, but sometimes vector search alone isn't enough. While vector embeddings are incredible at understanding conceptual meaning, they stumble on specific…",
       "title": "Announcing Native BM25 Ranking in AlloyDB and Cloud SQL",
@@ -483,7 +462,7 @@
     },
     {
       "category": "security",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "The Register",
       "summary": "AI, fake uniforms, and mock offices help crooks sell the con",
       "title": "FBI: Fake cop and government impersonation scams cost victims $1.6B",
@@ -491,7 +470,7 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "Netflix",
       "summary": "",
       "title": "Leave the Class Path in the Rearview Mirror",
@@ -499,7 +478,7 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "Google Cloud",
       "summary": "AI is accelerating software development at an unprecedented pace. But as code generation scales, so do the challenges of securing the code, especially emerging AI-based vulnerability exploitations. To meet these challenges, the Google AI and Infrastructure team is transforming…",
       "title": "Changing the game: Using agentic AI to secure infrastructure code",
@@ -507,7 +486,7 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "Google Cloud",
       "summary": "State and local governments are driven by a shared mission to provide responsive, equitable, and accessible services. However, achieving this goal is often hindered by legacy technical debt, disconnected data, and heavy administrative burdens that slow down mission delivery…",
       "title": "Reimagining service delivery in the agentic era with Google Public Sector",
@@ -515,7 +494,7 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "Google Cloud",
       "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
       "title": "What’s new with Google Cloud",
@@ -523,7 +502,7 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "Google Cloud",
       "summary": "This week we kicked off the DevFest season in North America at Google Hudson Square in New York City with 80 engineers packed into the room. Typical technical workshops hand you a finished repo, tell you to blindly paste blocks of code into your terminal, and hope nothing…",
       "title": "The DevFest Community Workshop Experience: Building Real Agents Together",
@@ -531,7 +510,7 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "Google Cloud",
       "summary": "As enterprises invest in generative AI, tech leaders keep seeing the same pattern: Developers test AI tools for a week, hit setup problems, and then drift back to the backlog. Nothing ships. The real gap is enablement. In this landmark Harvard Business Review article , Josh…",
       "title": "How to upskill enterprise AI builders by using daily micro habits",
@@ -539,7 +518,7 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "Google Cloud",
       "summary": "Today, we are excited to announce enhancements to the borderless Lakehouse , our answer to how data engineers, data scientists, and increasingly, AI agents, can query governed data directly where it lives. To reason accurately and automate complex enterprise workflows, agents…",
       "title": "Accelerating the borderless Lakehouse: Announcing preview of cross-cloud caching",
@@ -547,27 +526,11 @@
     },
     {
       "category": "tech",
-      "date": "Yesterday",
+      "date": "2 days ago",
       "source": "The Register",
       "summary": "Legacy web apps have guaranteed shelter only through 2029, and Redmond warns modernization can take years",
       "title": "Admins, you've been warned: The clock is ticking on Edge's IE Mode",
       "url": "https://www.theregister.com/software/2026/09/18/admins-youve-been-warned-the-clock-is-ticking-on-edges-ie-mode/5297408"
-    },
-    {
-      "category": "tech",
-      "date": "Yesterday",
-      "source": "GitHub Blog",
-      "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog .",
-      "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-      "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
-    },
-    {
-      "category": "tech",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "Akademy talk imagines Plasma assembling itself around a personal model of each user",
-      "title": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-      "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282"
     }
   ]
 }
