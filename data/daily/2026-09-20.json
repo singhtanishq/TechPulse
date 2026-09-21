@@ -1,0 +1,301 @@
+{
+  "date": "2026-09-20",
+  "generatedAt": "2026-09-21T15:12:11.548100+00:00",
+  "opensource": {
+    "growthBasis": "previous_observation",
+    "topProjects": [
+      {
+        "daily_growth": 16,
+        "full_name": "react/react",
+        "language": "JavaScript",
+        "stars": 250623,
+        "url": "https://github.com/react/react"
+      },
+      {
+        "daily_growth": 15,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200222,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": -4,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 142387,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 14,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 138919,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 24,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 127874,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 6,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122023,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 22,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119006,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 105,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 110493,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 26,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103149,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": -6,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97629,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": []
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 9.4,
+        "description": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged Remote Code Execution in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions saveWatermark() copied an uploaded file into ",
+        "id": "CVE-2026-88857",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88857"
+      },
+      {
+        "cvss": 9.4,
+        "description": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged Remote Code Execution in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions updateOSGallery(), reached via task=update_os",
+        "id": "CVE-2026-88856",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88856"
+      },
+      {
+        "cvss": 8.6,
+        "description": "Joomla Extension - OrdaSoft.com - Authenticated, Privileged SQL Injection in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions saveGallery() passes form data through a hand-rolled ",
+        "id": "CVE-2026-88855",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88855"
+      },
+      {
+        "cvss": 9.3,
+        "description": "Joomla Extension - OrdaSoft.com - Unauthenticated SQL Injection in OrdaSoft Joomla Gallery extension for Joomla < 6.2.7 - The extensions showSearchResult() and showSearchResultAjax() read the textsear",
+        "id": "CVE-2026-88854",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88854"
+      },
+      {
+        "cvss": 3.7,
+        "description": "The TikTok WordPress plugin before 1.4.2 does not check that a request is authorised before acting on a sign-in code supplied in the URL, so any visitor can make the site redeem a code of their choosi",
+        "id": "CVE-2026-92965",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92965"
+      },
+      {
+        "cvss": 8.6,
+        "description": "The Yo WordPress plugin from 1.1 through 1.3.1 does not sanitize or parameterize the username request parameter before using it in a SQL query, and reads it before WordPress applies its request escapi",
+        "id": "CVE-2026-87963",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87963"
+      },
+      {
+        "cvss": 6.9,
+        "description": "Missing Authorization in the IOCTL handlers of the wsdkd.sys kernel drivers in Watchdog WatchDog Antivirus 1.8.640 (driver versions 1.3.0.0 and earlier) on Microsoft Windows allows local, low-privileg",
+        "id": "CVE-2026-92254",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92254"
+      },
+      {
+        "cvss": 5.2,
+        "description": "Improper link resolution before file access in the quarantine restoration process of WatchDog Anti-Virus 1.8.640 on Windows allows local, low-privileged attackers to cause a quarantined file to be wri",
+        "id": "CVE-2026-92253",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92253"
+      },
+      {
+        "cvss": 5.9,
+        "description": "Incorrect default permissions in the installation directory of WatchDog Anti-Virus on Windows allow local, low-privileged users to modify, replace, or delete antivirus binaries and configuration files",
+        "id": "CVE-2026-92252",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92252"
+      },
+      {
+        "cvss": 9.8,
+        "description": "An unauthenticated Remote Code Execution vulnerability was found in the survey passthrough routing and Data Import processing logic, in which a malicious user could potentially exploit it by manipulat",
+        "id": "CVE-2026-90817",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 11,
+      "HIGH": 43,
+      "LOW": 9,
+      "MEDIUM": 31,
+      "NONE": 0,
+      "UNSCORED": 0
+    }
+  },
+  "snapshot": {
+    "cves": 94,
+    "kevAdded": 0,
+    "knownExploited": 0,
+    "projects": 20,
+    "releases": 0,
+    "techEntries": 21
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 1716
+    },
+    "github_releases": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 59
+    },
+    "github_repos": {
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 20
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 94,
+      "status": "success",
+      "total": 94
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 21,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 6,
+      "tech": 15
+    },
+    "recent": [
+      {
+        "published_at": "2026-09-20T11:07:00+00:00",
+        "source": "Ars Technica",
+        "title": "An undercover Google analyst infiltrated a notorious supply-chain hacking gang",
+        "url": "https://arstechnica.com/security/2026/09/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/"
+      },
+      {
+        "published_at": "2026-09-19T14:25:00+00:00",
+        "source": "The Register",
+        "title": "Agentic security is the billion-dollar challenge for some clever startup to solve",
+        "url": "https://www.theregister.com/security/2026/09/19/agentic-security-is-the-billion-dollar-challenge-for-some-clever-startup-to-solve/5297546"
+      },
+      {
+        "published_at": "2026-09-19T07:28:00+00:00",
+        "source": "The Register",
+        "title": "Firefox 156 arrives with a forest of forks in its wake",
+        "url": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194"
+      },
+      {
+        "published_at": "2026-09-18T17:23:58+00:00",
+        "source": "Cloudflare",
+        "title": "Saving another 100TB of RAM with math (and Rust)",
+        "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/"
+      },
+      {
+        "published_at": "2026-09-18T17:16:00+00:00",
+        "source": "The Register",
+        "title": "Researchers used Claude to hack OpenAI employees' ChatGPT accounts",
+        "url": "https://www.theregister.com/security/2026/09/18/researchers-used-claude-to-hack-openai-employees-chatgpt-accounts/5297517"
+      },
+      {
+        "published_at": "2026-09-18T16:53:00+00:00",
+        "source": "The Register",
+        "title": "North Korea's fake job interviews infected 30,000 devices",
+        "url": "https://www.theregister.com/security/2026/09/18/north-koreas-fake-job-interviews-infected-30000-devices/5297461"
+      },
+      {
+        "published_at": "2026-09-18T16:30:00+00:00",
+        "source": "Google Cloud",
+        "title": "Announcing Native BM25 Ranking in AlloyDB and Cloud SQL",
+        "url": "https://cloud.google.com/blog/products/databases/native-bm25-search-in-alloydb-and-cloud-sql/"
+      },
+      {
+        "published_at": "2026-09-18T16:19:27+00:00",
+        "source": "The Register",
+        "title": "FBI: Fake cop and government impersonation scams cost victims $1.6B",
+        "url": "https://www.theregister.com/cyber-crime/2026/09/18/fbi-fake-cop-and-government-impersonation-scams-cost-victims-16b/5297499"
+      },
+      {
+        "published_at": "2026-09-18T16:01:02+00:00",
+        "source": "Netflix",
+        "title": "Leave the Class Path in the Rearview Mirror",
+        "url": "https://netflixtechblog.com/leave-the-class-path-in-the-rearview-mirror-67a85b15b6be?source=rss----2615bd06b42e---4"
+      },
+      {
+        "published_at": "2026-09-18T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Changing the game: Using agentic AI to secure infrastructure code",
+        "url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure/"
+      }
+    ],
+    "sources": {
+      "Ars Technica": 2,
+      "Cloudflare": 1,
+      "GitHub Blog": 1,
+      "Google Cloud": 7,
+      "Netflix": 1,
+      "The Register": 9
+    }
+  },
+  "window": {
+    "end": "2026-09-20T23:59:59.999000+00:00",
+    "start": "2026-09-20T00:00:00+00:00"
+  }
+}
