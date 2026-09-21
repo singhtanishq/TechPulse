@@ -1,427 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Releases — TechPulse</title>
+  <title>Releases — TechPulse</title>
 
-    <meta
-        name="description"
-        content="TechPulse Software Releases — track important releases across the developer ecosystem."
-    >
+  <meta name="description" content="TechPulse Software Releases — track important releases across the developer ecosystem.">
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+  <link rel="canonical" href="https://singhtanishq.github.io/TechPulse/releases.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TechPulse">
+  <meta property="og:title" content="Releases — TechPulse">
+  <meta property="og:description" content="TechPulse Software Releases — track important releases across the developer ecosystem.">
+  <meta property="og:url" content="https://singhtanishq.github.io/TechPulse/releases.html">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="theme-color" content="#0a0d12">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <script>
+    /* Theme bootstrap — runs before first paint to avoid a flash. */
+    (function () {
+      try {
+        var stored = localStorage.getItem("techpulse-theme");
+        if (stored === "light" || stored === "dark") {
+          document.documentElement.setAttribute("data-theme", stored);
+        }
+      } catch (e) { /* storage unavailable — keep default theme */ }
+    })();
+  </script>
 </head>
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header">
+  <header class="site-header">
 
-        <div class="container header-inner">
+    <div class="container header-inner">
 
-            <a href="index.html" class="brand">
-                <span class="brand-mark">T</span>
-                <span class="brand-name">TechPulse</span>
-            </a>
+      <a href="index.html" class="brand" aria-label="TechPulse — home">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-name">TechPulse</span>
+      </a>
 
-            <nav class="main-nav">
+      <nav class="main-nav" aria-label="Primary">
+            <a href="index.html" data-nav="today">Today</a>
+            <a href="history.html" data-nav="history">History</a>
+            <a href="security.html" data-nav="security">Security</a>
+            <a href="releases.html" data-nav="releases">Releases</a>
+            <a href="opensource.html" data-nav="opensource">Open Source</a>
+      </nav>
 
-                <a href="index.html" data-nav="today">
-                    Today
-                </a>
+      <div class="header-actions">
 
-                <a href="history.html" data-nav="history">
-                    History
-                </a>
+        <div class="header-status" title="Daily pipeline status">
+          <span class="status-dot pulse" data-status-dot></span>
+          <span data-status-text>Loading…</span>
+        </div>
 
-                <a href="security.html" data-nav="security">
-                    Security
-                </a>
+        <button class="theme-toggle" type="button" data-theme-toggle
+                aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
 
-                <a href="releases.html" class="active" data-nav="releases">
-                    Releases
-                </a>
+        <button class="nav-toggle" type="button" data-nav-toggle
+                aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
 
-                <a href="opensource.html" data-nav="opensource">
-                    Open Source
-                </a>
+      </div>
 
-            </nav>
+    </div>
 
-            <div class="header-status">
+  </header>
 
-                <span class="status-dot" data-status-dot></span>
+  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+            <a href="index.html" data-nav="today">Today</a>
+            <a href="history.html" data-nav="history">History</a>
+            <a href="security.html" data-nav="security">Security</a>
+            <a href="releases.html" data-nav="releases">Releases</a>
+            <a href="opensource.html" data-nav="opensource">Open Source</a>
+  </nav>
 
-                <span data-status-text>Loading...</span>
 
-            </div>
+  <main id="main-content">
+
+    <div class="error-banner" data-error-banner hidden role="alert">
+      <div>
+        <strong>Live data unavailable.</strong>
+        The site is showing its static shell — generated data could not be loaded.
+        <span data-error-detail></span>
+      </div>
+    </div>
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+      <div class="container">
+
+        <span class="section-kicker">
+          SOFTWARE RELEASES
+        </span>
+
+        <h1>
+          Software.<br>
+          <span>Always moving.</span>
+        </h1>
+
+        <p>
+          Tracking releases and version changes across the
+          technologies developers use every day.
+        </p>
+
+        <div class="page-meta">
+
+          <span>
+            LAST UPDATED
+          </span>
+
+          <strong data-page-updated>—</strong>
+
+          <span class="chip" data-edition-chip>checking…</span>
 
         </div>
 
-    </header>
+      </div>
 
+    </section>
 
-    <main>
 
-        <!-- =========================
-             PAGE HERO
-        ========================== -->
+    <!-- RELEASE OVERVIEW -->
 
-        <section class="page-hero">
+    <section class="section">
 
-            <div class="container">
+      <div class="container">
 
-                <span class="section-kicker">
-                    SOFTWARE RELEASES
-                </span>
+        <div class="section-heading">
 
-                <h1>
-                    Software.<br>
-                    <span>Always moving.</span>
-                </h1>
+          <div>
 
-                <p>
-                    Tracking releases and version changes across the
-                    technologies developers use every day.
-                </p>
+            <span class="section-kicker" data-releases-date>
+              EDITION
+            </span>
 
-                <div class="page-meta">
+            <h2>
+              Release activity
+            </h2>
 
-                    <span>
-                        LAST UPDATED
-                    </span>
-
-                    <strong data-page-updated>—</strong>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             RELEASE OVERVIEW
-        ========================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker" data-releases-date>
-                            TODAY
-                        </span>
-
-                        <h2>
-                            Release Activity
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-                <div class="stats-grid">
-
-                    <article class="stat-card">
-
-                        <span class="stat-label">
-                            RELEASES
-                        </span>
-
-                        <strong class="stat-value" data-releases-count>
-                            —
-                        </strong>
-
-                        <span class="stat-detail">
-                            In snapshot window
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-label">
-                            MAJOR
-                        </span>
-
-                        <strong class="stat-value" data-releases-major>
-                            —
-                        </strong>
-
-                        <span class="stat-detail">
-                            Major version changes
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-label">
-                            MINOR
-                        </span>
-
-                        <strong class="stat-value" data-releases-minor>
-                            —
-                        </strong>
-
-                        <span class="stat-detail">
-                            Minor version changes
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-label">
-                            PATCHES
-                        </span>
-
-                        <strong class="stat-value" data-releases-patch>
-                            —
-                        </strong>
-
-                        <span class="stat-detail">
-                            Patch releases
-                        </span>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             LATEST RELEASES
-        ========================== -->
-
-        <section class="section section-muted">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            LATEST
-                        </span>
-
-                        <h2>
-                            Recent Releases
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-                <div class="release-table" data-releases-list>
-                    <div class="empty-state">Loading releases...</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             TRACKED PROJECTS
-        ========================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            MONITORED ECOSYSTEM
-                        </span>
-
-                        <h2>
-                            Tracked Projects
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tracked-project-grid" data-tracked-projects>
-                    <div class="empty-state">Loading projects...</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             RELEASE HISTORY
-        ========================== -->
-
-        <section class="section section-dark">
-
-            <div class="container release-history">
-
-                <div>
-
-                    <span class="section-kicker">
-                        HISTORICAL RECORD
-                    </span>
-
-                    <h2>
-                        Software changes<br>
-                        become history.
-                    </h2>
-
-                    <p>
-                        Every release detected by TechPulse is preserved
-                        as part of the project's long-term archive.
-                    </p>
-
-                    <a
-                        href="history.html"
-                        class="button"
-                    >
-                        Explore history →
-                    </a>
-
-                </div>
-
-
-                <div class="release-history-stats">
-
-                    <div>
-                        <strong>
-                            2026
-                        </strong>
-
-                        <span>
-                            First observation year
-                        </span>
-                    </div>
-
-                    <div>
-                        <strong>
-                            24
-                        </strong>
-
-                        <span>
-                            Projects currently tracked
-                        </span>
-                    </div>
-
-                    <div>
-                        <strong>
-                            17
-                        </strong>
-
-                        <span>
-                            Releases today
-                        </span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="site-footer">
-
-        <div class="container footer-inner">
-
-            <div>
-
-                <a href="index.html" class="brand">
-
-                    <span class="brand-mark">
-                        T
-                    </span>
-
-                    <span class="brand-name">
-                        TechPulse
-                    </span>
-
-                </a>
-
-                <p>
-                    Technology, observed every day.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="history.html">
-                    History
-                </a>
-
-                <a href="security.html">
-                    Security
-                </a>
-
-                <a href="releases.html">
-                    Releases
-                </a>
-
-                <a href="opensource.html">
-                    Open Source
-                </a>
-
-            </div>
-
-
-            <div class="footer-meta">
-
-                <span>
-                    Open source project
-                </span>
-
-                <span>
-                    Built with GitHub Actions
-                </span>
-
-            </div>
+          </div>
 
         </div>
 
-    </footer>
+
+        <div class="stats-grid reveal">
+
+          <article class="stat-card">
+
+            <span class="stat-label">
+              RELEASES
+            </span>
+
+            <strong class="stat-value" data-releases-count>
+              —
+            </strong>
+
+            <span class="stat-detail">
+              In the edition&rsquo;s window
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-label">
+              MAJOR
+            </span>
+
+            <strong class="stat-value" data-releases-major>
+              —
+            </strong>
+
+            <span class="stat-detail">
+              Major version changes
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-label">
+              MINOR
+            </span>
+
+            <strong class="stat-value" data-releases-minor>
+              —
+            </strong>
+
+            <span class="stat-detail">
+              Minor version changes
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-label">
+              PATCHES
+            </span>
+
+            <strong class="stat-value" data-releases-patch>
+              —
+            </strong>
+
+            <span class="stat-detail">
+              Patch releases
+            </span>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LATEST RELEASES -->
+
+    <section class="section section-muted">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">
+              LATEST
+            </span>
+
+            <h2>
+              Recent releases
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="release-table reveal" data-releases-list data-skeleton="card" data-skeleton-count="5">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TRACKED PROJECTS -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">
+              MONITORED ECOSYSTEM
+            </span>
+
+            <h2>
+              Tracked projects
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="tracked-project-grid reveal" data-tracked-projects data-skeleton="card" data-skeleton-count="8">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- RELEASE HISTORY -->
+
+    <section class="section section-dark">
+
+      <div class="container release-history">
+
+        <div class="reveal">
+
+          <span class="section-kicker">
+            HISTORICAL RECORD
+          </span>
+
+          <h2>
+            Software changes<br>
+            become history.
+          </h2>
+
+          <p>
+            Every release detected by TechPulse is preserved
+            as part of the project&rsquo;s long-term archive.
+          </p>
+
+          <a href="history.html" class="button">
+            Explore history
+          </a>
+
+        </div>
+
+
+        <div class="release-history-stats reveal">
+
+          <div class="tracked-project">
+            <strong data-first-year>—</strong>
+            <span>First observation year</span>
+          </div>
+
+          <div class="tracked-project">
+            <strong data-tracked-count>—</strong>
+            <span>Projects currently tracked</span>
+          </div>
+
+          <div class="tracked-project">
+            <strong data-releases-total>—</strong>
+            <span>Releases in the latest edition</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div>
+
+        <a href="index.html" class="brand" aria-label="TechPulse — home">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span class="brand-name">TechPulse</span>
+        </a>
+
+        <p>
+          Technology, observed every day. An autonomous, permanent
+          record of the technology ecosystem.
+        </p>
+
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Today</a>
+        <a href="history.html">History</a>
+        <a href="security.html">Security</a>
+        <a href="releases.html">Releases</a>
+        <a href="opensource.html">Open Source</a>
+      </nav>
+
+      <div class="footer-meta">
+
+        <span>
+          Open source project
+        </span>
+
+        <span>
+          Built with GitHub Actions
+        </span>
+
+        <span>
+          Reporting timezone · Asia/Kolkata (IST)
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
 
 
     <script src="js/data.js"></script>
-    <script src="js/components.js"></script>
-    <script src="js/app.js"></script>
+  <script src="js/dates.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 
