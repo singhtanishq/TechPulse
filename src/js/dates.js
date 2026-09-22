@@ -127,8 +127,8 @@ function formatDisplayDate(value) {
         return `${String(parts.day).padStart(2, "0")} ${TECHPULSE_MONTHS[parts.month - 1]} ${parts.year}`.toUpperCase();
     }
 
-    const parsed = new Date(value);
-    if (Number.isNaN(parsed.getTime())) return "—";
+    const parsed = parseISOUTC(value);
+    if (!parsed) return "—";
     try {
         return parsed
             .toLocaleDateString("en-GB", {
