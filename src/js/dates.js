@@ -66,6 +66,22 @@ function dateParts(dateString) {
 }
 
 /**
+ * Parse an ISO timestamp as UTC. Sources emit timestamps both with an
+ * explicit offset ("...Z") and without one ("2026-09-27T18:16:32.407").
+ * JavaScript would read offset-less values as browser-local time — an
+ * ambiguity that must never leak into TechPulse dates — so the UTC
+ * designator is added when missing. Returns null when unparseable.
+ */
+function parseISOUTC(value) {
+    if (typeof value !== "string") return null;
+    const text = value.trim();
+    if (!text) return null;
+    const normalized = /[Zz]|[+-]\d{2}:?\d{2}$/.test(text) ? text : `${text}Z`;
+    const parsed = new Date(normalized);
+    return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+/**
  * Whole days between a TechPulse calendar date and the current IST
  * calendar date. Positive = that many days ago.
  */
