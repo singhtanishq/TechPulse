@@ -1,6 +1,182 @@
 {
   "archive": [
     {
+      "date": "2026-09-28",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 0,
+            "full_name": "react/react",
+            "language": "JavaScript",
+            "stars": 250794,
+            "url": "https://github.com/react/react"
+          },
+          {
+            "daily_growth": 0,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122147,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 0,
+            "full_name": "vitejs/vite",
+            "language": "TypeScript",
+            "stars": 83055,
+            "url": "https://github.com/vitejs/vite"
+          },
+          {
+            "daily_growth": 0,
+            "full_name": "python/cpython",
+            "language": "Python",
+            "stars": 77322,
+            "url": "https://github.com/python/cpython"
+          },
+          {
+            "daily_growth": 0,
+            "full_name": "vuejs/core",
+            "language": "TypeScript",
+            "stars": 54453,
+            "url": "https://github.com/vuejs/core"
+          },
+          {
+            "daily_growth": 0,
+            "full_name": "laravel/framework",
+            "language": "PHP",
+            "stars": 34931,
+            "url": "https://github.com/laravel/framework"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 35,
+          "HIGH": 133,
+          "LOW": 16,
+          "MEDIUM": 102,
+          "NONE": 0,
+          "UNSCORED": 0
+        }
+      },
+      "snapshot": {
+        "cves": 286,
+        "kevAdded": 2,
+        "knownExploited": 0,
+        "projects": 6,
+        "releases": 0,
+        "techEntries": 24
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1728
+        },
+        "github_releases": {
+          "failures": 15,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 18
+        },
+        "github_repos": {
+          "failures": 15,
+          "inWindow": 6,
+          "status": "partial",
+          "total": 6
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 286,
+          "status": "success",
+          "total": 286
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 24,
+          "status": "success",
+          "total": 228
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 7,
+          "tech": 17
+        },
+        "recent": [
+          {
+            "published_at": "2026-09-27T17:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+            "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
+          },
+          {
+            "published_at": "2026-09-25T19:38:59+00:00",
+            "source": "Ars Technica",
+            "title": "Your uncle’s frozen Mac says it’s infected after viewing a Google ad. Now what?",
+            "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/"
+          },
+          {
+            "published_at": "2026-09-25T19:13:20+00:00",
+            "source": "The Register",
+            "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
+            "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
+          },
+          {
+            "published_at": "2026-09-25T18:57:10+00:00",
+            "source": "The Register",
+            "title": "New software dependency validation process increases speeds by 54x",
+            "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
+          },
+          {
+            "published_at": "2026-09-25T18:23:31+00:00",
+            "source": "The Register",
+            "title": "ShinyHunters tells The Reg: We hacked the FBI to 'protect our business'",
+            "url": "https://www.theregister.com/cyber-crime/2026/09/25/shinyhunters-tells-the-reg-we-hacked-the-fbi-to-protect-our-business/5299250"
+          },
+          {
+            "published_at": "2026-09-25T18:00:00+00:00",
+            "source": "GitHub Blog",
+            "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+            "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/"
+          },
+          {
+            "published_at": "2026-09-25T17:29:54+00:00",
+            "source": "The Register",
+            "title": "Crooks use fake desktop apps to fool HR staff into giving them remote access",
+            "url": "https://www.theregister.com/security/2026/09/25/crooks-use-fake-desktop-apps-to-fool-hr-staff-into-giving-them-remote-access/5299226"
+          },
+          {
+            "published_at": "2026-09-25T17:04:07+00:00",
+            "source": "The Register",
+            "title": "Bitget blames North Korea for $387.5M crypto wallet raid",
+            "url": "https://www.theregister.com/cyber-crime/2026/09/25/bitget-blames-north-korea-for-3875m-crypto-wallet-raid/5299218"
+          },
+          {
+            "published_at": "2026-09-25T16:01:03+00:00",
+            "source": "Netflix",
+            "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
+            "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252?source=rss----2615bd06b42e---4"
+          },
+          {
+            "published_at": "2026-09-25T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-09-27",
       "opensource": {
         "topProjects": [
@@ -2411,7 +2587,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-28T07:10:42.867828+00:00",
-    "totalSnapshots": 11
+    "generatedAt": "2026-09-28T07:11:44.591941+00:00",
+    "totalSnapshots": 12
   }
 }
