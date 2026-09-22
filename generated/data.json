@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 286,
+      "date": "2026-09-28",
+      "kevAdded": 2,
+      "knownExploited": 0,
+      "projects": 6,
+      "releases": 0,
+      "techEntries": 24
+    },
+    {
       "cves": 1108,
       "date": "2026-09-27",
       "kevAdded": 0,
@@ -101,16 +110,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-09-26",
-    "date": "2026-09-27",
-    "daysObserved": 11,
-    "generatedAt": "2026-09-28T07:10:42.867828+00:00",
-    "snapshots": 11,
+    "coveredDate": "2026-09-27",
+    "date": "2026-09-28",
+    "daysObserved": 12,
+    "generatedAt": "2026-09-28T07:11:44.591941+00:00",
+    "snapshots": 12,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 25,
+      "daily_growth": 0,
       "description": "The library for web and native user interfaces.",
       "full_name": "react/react",
       "growth_available": true,
@@ -122,370 +131,330 @@
       "url": "https://github.com/react/react"
     },
     {
-      "daily_growth": 25,
-      "description": "An Open Source Machine Learning Framework for Everyone",
-      "full_name": "tensorflow/tensorflow",
-      "growth_available": true,
-      "language": "C++",
-      "name": "tensorflow",
-      "rank": 2,
-      "source": "GitHub",
-      "stars": 200576,
-      "url": "https://github.com/tensorflow/tensorflow"
-    },
-    {
-      "daily_growth": 49,
-      "description": "The React Framework",
-      "full_name": "vercel/next.js",
-      "growth_available": true,
-      "language": "JavaScript",
-      "name": "next.js",
-      "rank": 3,
-      "source": "GitHub",
-      "stars": 142817,
-      "url": "https://github.com/vercel/next.js"
-    },
-    {
-      "daily_growth": 7,
-      "description": "The Go programming language",
-      "full_name": "golang/go",
-      "growth_available": true,
-      "language": "Go",
-      "name": "go",
-      "rank": 4,
-      "source": "GitHub",
-      "stars": 139060,
-      "url": "https://github.com/golang/go"
-    },
-    {
-      "daily_growth": 17,
-      "description": "Production-Grade Container Scheduling and Management",
-      "full_name": "kubernetes/kubernetes",
-      "growth_available": true,
-      "language": "Go",
-      "name": "kubernetes",
-      "rank": 5,
-      "source": "GitHub",
-      "stars": 128063,
-      "url": "https://github.com/kubernetes/kubernetes"
-    },
-    {
-      "daily_growth": 15,
+      "daily_growth": 0,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
       "language": "JavaScript",
       "name": "node",
-      "rank": 6,
+      "rank": 2,
       "source": "GitHub",
       "stars": 122147,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 19,
-      "description": "Empowering everyone to build reliable and efficient software.",
-      "full_name": "rust-lang/rust",
-      "growth_available": true,
-      "language": "Rust",
-      "name": "rust",
-      "rank": 7,
-      "source": "GitHub",
-      "stars": 119254,
-      "url": "https://github.com/rust-lang/rust"
-    },
-    {
-      "daily_growth": 30,
-      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-      "full_name": "supabase/supabase",
+      "daily_growth": 0,
+      "description": "Next generation frontend tooling. It's fast!",
+      "full_name": "vitejs/vite",
       "growth_available": true,
       "language": "TypeScript",
-      "name": "supabase",
-      "rank": 8,
+      "name": "vite",
+      "rank": 3,
       "source": "GitHub",
-      "stars": 110835,
-      "url": "https://github.com/supabase/supabase"
+      "stars": 83055,
+      "url": "https://github.com/vitejs/vite"
     },
     {
-      "daily_growth": 30,
-      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "full_name": "pytorch/pytorch",
+      "daily_growth": 0,
+      "description": "The Python programming language",
+      "full_name": "python/cpython",
       "growth_available": true,
       "language": "Python",
-      "name": "pytorch",
-      "rank": 9,
+      "name": "cpython",
+      "rank": 4,
       "source": "GitHub",
-      "stars": 103434,
-      "url": "https://github.com/pytorch/pytorch"
+      "stars": 77322,
+      "url": "https://github.com/python/cpython"
     },
     {
-      "daily_growth": 17,
-      "description": "A utility-first CSS framework for rapid UI development.",
-      "full_name": "tailwindlabs/tailwindcss",
+      "daily_growth": 0,
+      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "full_name": "vuejs/core",
       "growth_available": true,
       "language": "TypeScript",
-      "name": "tailwindcss",
-      "rank": 10,
+      "name": "core",
+      "rank": 5,
       "source": "GitHub",
-      "stars": 97720,
-      "url": "https://github.com/tailwindlabs/tailwindcss"
+      "stars": 54453,
+      "url": "https://github.com/vuejs/core"
+    },
+    {
+      "daily_growth": 0,
+      "description": "Laravel is a web application framework with expressive, elegant syntax.",
+      "full_name": "laravel/framework",
+      "growth_available": true,
+      "language": "PHP",
+      "name": "framework",
+      "rank": 6,
+      "source": "GitHub",
+      "stars": 34931,
+      "url": "https://github.com/laravel/framework"
     }
   ],
   "releases": [],
   "security": {
-    "critical": 91,
-    "high": 459,
+    "critical": 35,
+    "high": 133,
     "kevCatalogTotal": 1728,
     "latest": [
       {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Lemonldap::NG::Handler versions from 2.0.0 before 2.16.10, from 2.17.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow an equivalent spelling of a path to bypass the locationRules that restrict it.\n\nThe handler matches each vhost's locationRules regular expressions against REQUEST_URI, the raw request line, while the web server routes on the path it has already percent-decoded and…",
-        "id": "CVE-2026-95811",
+        "cvss_score": 2.3,
+        "cvss_version": "4.0",
+        "description": "utcp-gql before 1.1.1 and utcp-websocket before 1.1.1 contain server-side request forgery vulnerabilities due to incomplete application of CVE-2026-44661 fixes. The GraphQL plugin uses a vulnerable prefix check allowing bypass URLs like http://127.0.0.1.attacker.example, while the WebSocket plugin performs no URL validation despite documented security requirements. Attackers can force connections…",
+        "id": "CVE-2026-101061",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T16:16:39.087",
-        "publishedAt": "2026-09-25T02:16:54.677",
+        "lastModifiedAt": "2026-09-27T18:16:32.407",
+        "publishedAt": "2026-09-27T18:16:32.407",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "utcp-gql before 1.1.1 and utcp-websocket before 1.1.1 contain server-side request forgery vulnerabilities due to incomplete application of CVE-2026-44661…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101061"
+      },
+      {
+        "cvss_score": 8.4,
+        "cvss_version": "4.0",
+        "description": "python-utcp versions before 1.1.4 contain a server-side request forgery vulnerability in HttpCommunicationProtocol.call_tool that validates the initial tool URL but follows HTTP redirects without re-validating the target. Attackers controlling a tool endpoint can return a 302 redirect to internal services, allowing the UTCP client to reach cloud metadata endpoints or internal HTTP services and…",
+        "id": "CVE-2026-101060",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T18:16:32.273",
+        "publishedAt": "2026-09-27T18:16:32.273",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "python-utcp versions before 1.1.4 contain a server-side request forgery vulnerability in HttpCommunicationProtocol.call_tool that validates the initial tool…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101060"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "utcp-http before 1.1.4 fails to validate the OAuth2 tokenUrl field from remote OpenAPI specifications, allowing attackers to redirect credential submission to arbitrary endpoints. When a victim registers an attacker-controlled OpenAPI spec and invokes a generated OAuth2-protected tool, the library POSTs the victim's client_id and client_secret to the attacker-supplied token endpoint without URL…",
+        "id": "CVE-2026-101059",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T18:16:32.130",
+        "publishedAt": "2026-09-27T18:16:32.130",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "utcp-http before 1.1.4 fails to validate the OAuth2 tokenUrl field from remote OpenAPI specifications, allowing attackers to redirect credential submission to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101059"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "python-utcp (pip package utcp-http) before 1.1.12 does not verify whether tool URLs declared in a hand-written UTCP manual point at the agent's own loopback interface when that manual is discovered from a remote, non-loopback origin. Because ensure_secure_url intentionally permits loopback HTTP for local development and native manuals bypassed the loopback check performed by the OpenAPI…",
+        "id": "CVE-2026-101058",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T18:16:31.973",
+        "publishedAt": "2026-09-27T18:16:31.973",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "python-utcp (pip package utcp-http) before 1.1.12 does not verify whether tool URLs declared in a hand-written UTCP manual point at the agent's own loopback…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101058"
+      },
+      {
+        "cvss_score": 2.3,
+        "cvss_version": "4.0",
+        "description": "utcp-mcp (the MCP plugin of python-utcp) through 1.1.2 connects to the HTTP and WebSocket MCP server URLs given in a call template's mcpServers configuration without the ensure_secure_url validation that the HTTP-family plugins apply, so the HTTPS/WSS-or-loopback rule is not enforced. A call template naming a plain-HTTP, non-loopback MCP server URL is dialed as configured, exposing the MCP…",
+        "id": "CVE-2026-101057",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T18:16:31.823",
+        "publishedAt": "2026-09-27T18:16:31.823",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "utcp-mcp (the MCP plugin of python-utcp) through 1.1.2 connects to the HTTP and WebSocket MCP server URLs given in a call template's mcpServers configuration…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101057"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "Cloudreve before 4.16.1 fails to revalidate share access when restoring cached navigator state from a context_hint UUID. Attackers who previously had valid share access can replay the cached hint to generate signed file URLs for up to 300 seconds after the share is deleted, expires, or reaches zero remaining downloads.",
+        "id": "CVE-2026-101056",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T18:16:31.777",
+        "publishedAt": "2026-09-27T18:16:31.667",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Lemonldap::NG::Handler versions from 2.0.0 before 2.16.10, from 2.17.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow an equivalent spelling of a path…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95811"
+        "title": "Cloudreve before 4.16.1 fails to revalidate share access when restoring cached navigator state from a context_hint UUID. Attackers who previously had valid…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101056"
       },
       {
-        "cvss_score": 9.4,
+        "cvss_score": 2.3,
         "cvss_version": "4.0",
-        "description": "vm2 through 3.11.6 does not normalize `node:`-prefixed builtin specifiers when evaluating user-supplied negative (deny) entries in a NodeVM wildcard require policy. Although NodeVM strips the `node:` prefix during require() resolution, negative wildcard entries are matched by exact string comparison against the canonical builtin names, so a policy such as `new NodeVM({ require: { builtin: ['*'…",
-        "id": "CVE-2026-92957",
+        "description": "Cloudreve before 4.16.1 fails to properly sanitize file paths returned by remote downloaders, allowing authenticated users to create files outside the selected destination directory. Attackers can exploit path traversal sequences in downloader metadata to write files to unexpected locations within accessible namespaces.",
+        "id": "CVE-2026-101051",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:17:00.297",
-        "publishedAt": "2026-09-17T14:18:01.813",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-09-27T18:16:31.620",
+        "publishedAt": "2026-09-27T18:16:31.510",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "vm2 through 3.11.6 does not normalize `node:`-prefixed builtin specifiers when evaluating user-supplied negative (deny) entries in a NodeVM wildcard require…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92957"
+        "title": "Cloudreve before 4.16.1 fails to properly sanitize file paths returned by remote downloaders, allowing authenticated users to create files outside the selected…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101051"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 5.3,
         "cvss_version": "4.0",
-        "description": "PLANET IGS-5225-8P2T4S industrial managed switch V1 and V2 firmware versions before 1.2412b260707 and 2.2412b260519 contain a stack-based buffer overflow in the web server. Insufficient bounds checking on data copied into a stack buffer allows a remote administrator to cause a denial of service or potentially execute arbitrary code on the underlying operating system.",
-        "id": "CVE-2026-81945",
+        "description": "Cloudreve before 4.17.0 registers the administrative node test endpoints (POST /api/v4/admin/node/test and POST /api/v4/admin/node/test/downloader) without requiring the Admin.Write OAuth scope, unlike the node create/update/delete routes. An OAuth client that has been authorized by an administrator with only the Admin.Read scope can therefore submit attacker-controlled node definitions and cause…",
+        "id": "CVE-2026-101048",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:59.610",
-        "publishedAt": "2026-09-18T16:17:11.413",
+        "lastModifiedAt": "2026-09-27T18:16:31.427",
+        "publishedAt": "2026-09-27T18:16:31.313",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Cloudreve before 4.17.0 registers the administrative node test endpoints (POST /api/v4/admin/node/test and POST /api/v4/admin/node/test/downloader) without…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101048"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "Fleet before 4.87.0 does not protect the two endpoints that serve in-house iOS application packages and manifests (enterprise tier only) with the intended random, time-limited URL token. Because Apple's InstallEnterpriseApplication MDM command requires these URLs to be reachable without a Fleet session, they cannot rely on session-based authentication, and the missing token allows an…",
+        "id": "CVE-2026-101047",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T18:16:31.177",
+        "publishedAt": "2026-09-27T18:16:31.177",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Fleet before 4.87.0 does not protect the two endpoints that serve in-house iOS application packages and manifests (enterprise tier only) with the intended…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101047"
+      },
+      {
+        "cvss_score": 2.3,
+        "cvss_version": "4.0",
+        "description": "Fleet before 4.89.0 contains an SQL injection vulnerability in the activity list endpoints (GET /api/v1/fleet/activities and GET /api/v1/fleet/hosts/{id}/activities). The deprecated cursor-pagination helper appendListOptionsWithCursorToSQL interpolated the caller-supplied sort/order key into the SQL ORDER BY clause without an allowlist, so an authenticated user with read access to Activity could…",
+        "id": "CVE-2026-101046",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T18:16:31.037",
+        "publishedAt": "2026-09-27T18:16:31.037",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "Fleet before 4.89.0 contains an SQL injection vulnerability in the activity list endpoints (GET /api/v1/fleet/activities and GET…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101046"
+      },
+      {
+        "cvss_score": 8.9,
+        "cvss_version": "4.0",
+        "description": "Fleet-maintained app install and uninstall scripts for macOS are generated from Homebrew cask metadata. In manifests generated before 2026-08-19, the script generator escaped this metadata at some interpolation sites but not all of them, so cask metadata containing shell metacharacters (for example $(...) command substitution) could be carried into scripts that execute as root on managed macOS…",
+        "id": "CVE-2026-101045",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T18:16:30.897",
+        "publishedAt": "2026-09-27T18:16:30.897",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "PLANET IGS-5225-8P2T4S industrial managed switch V1 and V2 firmware versions before 1.2412b260707 and 2.2412b260519 contain a stack-based buffer overflow in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81945"
-      },
-      {
-        "cvss_score": 9.4,
-        "cvss_version": "4.0",
-        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882/SLCx-03/SLCx-02 contain a command injection vulnerability that allows authenticated attackers with the services permission to execute arbitrary shell commands as root by exploiting the set script schedule command that passes unsanitized user…",
-        "id": "CVE-2026-80152",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:59.473",
-        "publishedAt": "2026-09-22T16:18:01.607",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80152"
-      },
-      {
-        "cvss_score": 9.4,
-        "cvss_version": "4.0",
-        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882/SLCx-03/SLCx-02 contain a command injection vulnerability that allows authenticated attackers with the services permission to execute arbitrary shell commands as root by exploiting the set nfs download command that passes unsanitized user…",
-        "id": "CVE-2026-80151",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:59.337",
-        "publishedAt": "2026-09-22T16:18:01.460",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80151"
-      },
-      {
-        "cvss_score": 7.7,
-        "cvss_version": "4.0",
-        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882 contain a server-side request forgery vulnerability in the WebSSH/WebTelnet listener that allows unauthenticated attackers to cause the affected device to establish Telnet connections to attacker-controlled endpoints. The custom shellinaboxd…",
-        "id": "CVE-2026-80150",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:59.203",
-        "publishedAt": "2026-09-22T16:18:01.313",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80150"
-      },
-      {
-        "cvss_score": 7.7,
-        "cvss_version": "4.0",
-        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882 contain a server-side request forgery vulnerability in the WebSSH/WebTelnet listener that allows unauthenticated attackers to cause the affected device to establish SSH connections to attacker-controlled endpoints. The custom shellinaboxd uses…",
-        "id": "CVE-2026-80149",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:59.067",
-        "publishedAt": "2026-09-22T16:18:01.160",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80149"
-      },
-      {
-        "cvss_score": 7.7,
-        "cvss_version": "4.0",
-        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882 contain a server-side request forgery vulnerability in the WebSSH/WebTelnet listener that allows unauthenticated attackers to cause the affected device to establish SSH connections to attacker-controlled endpoints. The custom shellinaboxd…",
-        "id": "CVE-2026-80148",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:58.920",
-        "publishedAt": "2026-09-22T16:18:01.013",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80148"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "4.0",
-        "description": "froxlor is a server administration panel. In versions 2.3.10 and earlier, Validate::validateUrl rejects carriage return and line feed characters only in the path, query and fragment components returned by parse_url, and never inspects the userinfo (user:pass@) components. This is an incomplete fix for GHSA-c3p2. An authenticated low-privilege customer with subdomain-create rights (no admin or…",
-        "id": "CVE-2026-100717",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:57.867",
-        "publishedAt": "2026-09-26T14:16:57.753",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "froxlor is a server administration panel. In versions 2.3.10 and earlier, Validate::validateUrl rejects carriage return and line feed characters only in the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100717"
-      },
-      {
-        "cvss_score": 9.4,
-        "cvss_version": "4.0",
-        "description": "Froxlor is a server administration panel. In versions 2.3.10 and earlier, the customer data-export (DataDump) cron fails to validate intermediate path components of the export destination: Froxlor\\FileDir::makeCorrectDir() contains an off-by-one in its path-component walk that skips the first segment below the customer home directory, and the guard in ExportCron.php checks only the final…",
-        "id": "CVE-2026-100716",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:57.707",
-        "publishedAt": "2026-09-26T14:16:57.583",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Froxlor is a server administration panel. In versions 2.3.10 and earlier, the customer data-export (DataDump) cron fails to validate intermediate path…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100716"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "4.0",
-        "description": "Froxlor through 2.3.10 is vulnerable to arbitrary file deletion via symlink following in the FTP data deletion cron task. Cron task 8 (deleteFtpData), queued when an FTP account is deleted, calls FileDir::makeCorrectDir() without the $fixed_homedir argument, so the symlink component walk is skipped, and then executes 'rm -rf' as root on the resulting path with string-level guards only. Because…",
-        "id": "CVE-2026-100715",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:57.537",
-        "publishedAt": "2026-09-26T14:16:57.427",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Froxlor through 2.3.10 is vulnerable to arbitrary file deletion via symlink following in the FTP data deletion cron task. Cron task 8 (deleteFtpData), queued…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100715"
+        "title": "Fleet-maintained app install and uninstall scripts for macOS are generated from Homebrew cask metadata. In manifests generated before 2026-08-19, the script…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101045"
       },
       {
         "cvss_score": 7.1,
         "cvss_version": "4.0",
-        "description": "froxlor through 2.3.10 disables a user's two-factor authentication immediately upon an unauthenticated-triggerable GET request to the 2FA management page (e.g. /customer_index.php?page=2fa&action=delete), with no confirmation, re-authentication, or CSRF token. The global CSRF middleware only covers POST/PUT/PATCH/DELETE requests, and the session cookie is set to SameSite=Lax, so a cross-site…",
-        "id": "CVE-2026-100712",
+        "description": "pacquet, the Rust package-manager component shipped in the pnpm npm package versions >=12.0.0-alpha.0 and <12.0.0-alpha.5, does not validate dependency alias/name paths taken from a lockfile before using them in install-time filesystem joins. When a user installs a project with an attacker-supplied lockfile using --trust-lockfile or a frozen lockfile, alias entries containing path traversal…",
+        "id": "CVE-2026-101044",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:57.020",
-        "publishedAt": "2026-09-26T14:16:56.903",
+        "lastModifiedAt": "2026-09-27T18:16:30.753",
+        "publishedAt": "2026-09-27T18:16:30.753",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "froxlor through 2.3.10 disables a user's two-factor authentication immediately upon an unauthenticated-triggerable GET request to the 2FA management page (e.g…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100712"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "froxlor versions before 2.3.12 fail to invalidate existing panel sessions, API keys, and 2FA trust cookies when a user password is changed. Attackers holding hijacked sessions, valid API keys, or 2FA trust tokens retain full account access after password rotation, bypassing incident response actions.",
-        "id": "CVE-2026-100711",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:56.857",
-        "publishedAt": "2026-09-26T14:16:56.743",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "froxlor versions before 2.3.12 fail to invalidate existing panel sessions, API keys, and 2FA trust cookies when a user password is changed. Attackers holding…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100711"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "Froxlor before 2.3.13 returns the ssl_key_file column — which stores the raw PEM TLS private-key content — verbatim in the JSON responses of the Certificates.get and Certificates.listing API commands, because the results of the underlying domain_ssl_settings queries are passed through ApiCommand::response() without any field stripping or allowlist. A low-privileged authenticated customer API…",
-        "id": "CVE-2026-100708",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:56.373",
-        "publishedAt": "2026-09-26T14:16:56.153",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Froxlor before 2.3.13 returns the ssl_key_file column — which stores the raw PEM TLS private-key content — verbatim in the JSON responses of the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100708"
+        "title": "pacquet, the Rust package-manager component shipped in the pnpm npm package versions >=12.0.0-alpha.0 and <12.0.0-alpha.5, does not validate dependency…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101044"
       },
       {
         "cvss_score": 8.3,
         "cvss_version": "4.0",
-        "description": "Kyverno before 1.19.1 contains a namespace isolation bypass in the apiCall context entry of namespaced Policy resources due to inconsistent path interpretation between validation and execution. A low-privilege tenant can use percent-encoded dot-segments in urlPath to bypass namespace checks and read resources from other namespaces using the Kyverno admission controller's ServiceAccount…",
-        "id": "CVE-2026-100707",
+        "description": "pnpm versions 11.0.0 before 11.11.0 and 10.7.0 before 10.34.5 expand ${VAR} environment-variable placeholders in the httpProxy, httpsProxy, and noProxy settings read from a project's pnpm-workspace.yaml. Because the manifest is repository-controlled and the proxy keys were omitted from the request-destination key set that otherwise suppresses placeholder expansion for untrusted manifests (as…",
+        "id": "CVE-2026-101043",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-26T14:16:55.983",
-        "publishedAt": "2026-09-26T14:16:55.983",
+        "lastModifiedAt": "2026-09-27T18:16:29.700",
+        "publishedAt": "2026-09-27T18:16:29.700",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Kyverno before 1.19.1 contains a namespace isolation bypass in the apiCall context entry of namespaced Policy resources due to inconsistent path interpretation…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100707"
+        "title": "pnpm versions 11.0.0 before 11.11.0 and 10.7.0 before 10.34.5 expand ${VAR} environment-variable placeholders in the httpProxy, httpsProxy, and noProxy…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101043"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "4.0",
+        "description": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23.",
+        "id": "CVE-2026-88778",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T17:16:57.110",
+        "publishedAt": "2026-09-27T17:16:57.110",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88778"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "4.0",
+        "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23  leading to unpredictable or erroneous behavior or Denial of Service",
+        "id": "CVE-2026-88777",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-27T17:16:56.990",
+        "publishedAt": "2026-09-27T17:16:56.990",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88777"
       }
     ],
-    "low": 82,
-    "medium": 447,
+    "low": 16,
+    "medium": 102,
     "none": 0,
-    "unscored": 29
+    "unscored": 0
   },
   "snapshot": {
-    "cves": 1108,
-    "kevAdded": 0,
-    "knownExploited": 7,
-    "projects": 20,
+    "cves": 286,
+    "kevAdded": 2,
+    "knownExploited": 0,
+    "projects": 6,
     "releases": 0,
-    "techEntries": 46
+    "techEntries": 24
   },
   "sources": {
     "opensource": {
       "github": {
-        "failures": 0,
-        "inWindow": 20,
-        "status": "success",
-        "total": 20
+        "failures": 15,
+        "inWindow": 6,
+        "status": "partial",
+        "total": 6
       }
     },
     "releases": {
       "github": {
-        "failures": 0,
+        "failures": 15,
         "inWindow": 0,
         "status": "partial",
-        "total": 59
+        "total": 18
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "partial",
+        "inWindow": 2,
+        "status": "success",
         "total": 1728
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1108,
+        "inWindow": 286,
         "status": "success",
-        "total": 1108
+        "total": 286
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 46,
+        "inWindow": 24,
         "status": "success",
         "total": 228
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-27T17:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help build a fair, sustainable future for the web.",
+      "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+      "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-09-25T19:38:59+00:00",
@@ -597,14 +566,6 @@
       "summary": "Joe Fay chairs a Register dinner in New York on the file infrastructure nobody has got around to replacing, with nothing on the record.",
       "title": "Which copy of that file is the real one? Dinner, off the record, in Midtown",
       "url": "https://www.theregister.com/storage/2026/09/25/sponsored/5299080"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T15:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "How we fully migrated github.com away from CSS-in-JS. The post Improving site performance by shipping more CSS appeared first on The GitHub Blog .",
-      "title": "Improving site performance by shipping more CSS",
-      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/"
     }
   ]
 }
