@@ -178,8 +178,8 @@ function dateChip(dateString) {
  */
 function formatTimestampIST(value) {
     if (!value || typeof value !== "string") return "—";
-    const parsed = new Date(value);
-    if (Number.isNaN(parsed.getTime())) return "—";
+    const parsed = parseISOUTC(value);
+    if (!parsed) return "—";
     try {
         const formatted = new Intl.DateTimeFormat("en-GB", {
             day: "2-digit",
