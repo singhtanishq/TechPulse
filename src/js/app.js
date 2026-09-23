@@ -722,7 +722,7 @@ function initSecurityFilters() {
         note.className = "empty-state";
         note.setAttribute("data-filter-empty", "");
         note.hidden = true;
-        note.textContent = "No CVEs with this severity in the current edition.";
+        note.textContent = "No CVEs with this severity in the displayed list.";
         listContainer.appendChild(note);
     }
 
