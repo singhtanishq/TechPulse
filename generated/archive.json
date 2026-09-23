@@ -1,6 +1,260 @@
 {
   "archive": [
     {
+      "date": "2026-09-22",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 19,
+            "full_name": "react/react",
+            "language": "JavaScript",
+            "stars": 250667,
+            "url": "https://github.com/react/react"
+          },
+          {
+            "daily_growth": 19,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200262,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 142410,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 25,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 138962,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 28,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 127925,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 17,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122053,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 35,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 119070,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 98,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 110688,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 28,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103196,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 5,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97645,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 5,
+          "other": 0,
+          "patch": 2
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-09-22T18:25:48Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.18.0",
+            "version": "v3.18.0"
+          },
+          {
+            "project": "next.js",
+            "published_at": "2026-09-22T17:15:10Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v16.3.6",
+            "version": "v16.3.6"
+          },
+          {
+            "project": "next.js",
+            "published_at": "2026-09-22T17:14:57Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v15.5.26",
+            "version": "v15.5.26"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-09-22T16:25:23Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.8.0",
+            "version": "v1.8.0"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-09-22T14:14:15Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v13.33.0",
+            "version": "v13.33.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-09-22T09:02:46Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v26.10.0",
+            "version": "v26.10.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-09-22T02:36:34Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.17.0",
+            "version": "v3.17.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 173,
+          "HIGH": 689,
+          "LOW": 112,
+          "MEDIUM": 451,
+          "NONE": 0,
+          "UNSCORED": 29
+        }
+      },
+      "snapshot": {
+        "cves": 1454,
+        "kevAdded": 4,
+        "knownExploited": 1,
+        "projects": 20,
+        "releases": 7,
+        "techEntries": 31
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 4,
+          "status": "success",
+          "total": 1721
+        },
+        "github_releases": {
+          "failures": 0,
+          "inWindow": 7,
+          "status": "success",
+          "total": 62
+        },
+        "github_repos": {
+          "failures": 0,
+          "inWindow": 20,
+          "status": "success",
+          "total": 20
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1454,
+          "status": "success",
+          "total": 1454
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 31,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 11,
+          "tech": 20
+        },
+        "recent": [
+          {
+            "published_at": "2026-09-22T22:23:14+00:00",
+            "source": "AWS",
+            "title": "Introducing Amazon CloudWatch Omni: collaborative AI-powered observability for your applications",
+            "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/"
+          },
+          {
+            "published_at": "2026-09-22T22:21:13+00:00",
+            "source": "AWS",
+            "title": "Introducing Amazon CloudWatch Omni: AI-powered observability for generative AI and agentic workloads",
+            "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/"
+          },
+          {
+            "published_at": "2026-09-22T21:33:29+00:00",
+            "source": "The Register",
+            "title": "Windows CLOSEDQUORUM malware uses AI models to autonomously select post-compromise actions",
+            "url": "https://www.theregister.com/security/2026/09/22/windows-closedquorum-malware-uses-ai-models-to-autonomously-select-post-compromise-actions/5298435"
+          },
+          {
+            "published_at": "2026-09-22T19:45:47+00:00",
+            "source": "Ars Technica",
+            "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
+            "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/"
+          },
+          {
+            "published_at": "2026-09-22T17:24:13+00:00",
+            "source": "The Register",
+            "title": "ShinyHunters claims FBI hack: 'This is NOT financially motivated'",
+            "url": "https://www.theregister.com/security/2026/09/22/shinyhunters-claims-fbi-hack-this-is-not-financially-motivated/5298385"
+          },
+          {
+            "published_at": "2026-09-22T16:55:40+00:00",
+            "source": "Ars Technica",
+            "title": "IT mistake erases 11 years of viewing history for hospitals’ maternity records",
+            "url": "https://arstechnica.com/information-technology/2026/09/it-mistake-erases-11-years-of-viewing-history-for-hospitals-maternity-records/"
+          },
+          {
+            "published_at": "2026-09-22T16:36:00+00:00",
+            "source": "The Register",
+            "title": "NightmareEclipse's latest zero-day leaves Microsoft Defender stuck in the past",
+            "url": "https://www.theregister.com/security/2026/09/22/nightmareeclipses-latest-zero-day-leaves-microsoft-defender-stuck-in-the-past/5298320"
+          },
+          {
+            "published_at": "2026-09-22T15:59:00+00:00",
+            "source": "The Register",
+            "title": "Z.ai says sorry for slurping up your code, open sources ZCode",
+            "url": "https://www.theregister.com/security/2026/09/22/zai-says-sorry-for-slurping-up-your-code-open-sources-zcode/5298300"
+          },
+          {
+            "published_at": "2026-09-22T15:00:00+00:00",
+            "source": "The Register",
+            "title": "UK cops arrest 2 EvilTokens suspects, Microsoft seizes 50 phishing kit websites",
+            "url": "https://www.theregister.com/security/2026/09/22/uk-cops-arrest-2-eviltokens-suspects-microsoft-seizes-50-phishing-kit-websites/5298317"
+          },
+          {
+            "published_at": "2026-09-22T15:00:00+00:00",
+            "source": "The Register",
+            "title": "Who signed off on that AI agent? Nobody? Thought so.",
+            "url": "https://www.theregister.com/security/2026/09/22/sponsored/5297693"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-09-21",
       "opensource": {
         "topProjects": [
@@ -1066,7 +1320,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-22T13:32:29.460044+00:00",
-    "totalSnapshots": 5
+    "generatedAt": "2026-09-23T13:47:04.352323+00:00",
+    "totalSnapshots": 6
   }
 }

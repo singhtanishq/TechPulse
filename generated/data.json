@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1454,
+      "date": "2026-09-22",
+      "kevAdded": 4,
+      "knownExploited": 1,
+      "projects": 20,
+      "releases": 7,
+      "techEntries": 31
+    },
+    {
       "cves": 1276,
       "date": "2026-09-21",
       "kevAdded": 1,
@@ -47,14 +56,14 @@
     }
   ],
   "meta": {
-    "date": "2026-09-21",
-    "daysObserved": 5,
-    "generatedAt": "2026-09-22T13:32:29.460044+00:00",
-    "snapshots": 5
+    "date": "2026-09-22",
+    "daysObserved": 6,
+    "generatedAt": "2026-09-23T13:47:04.352323+00:00",
+    "snapshots": 6
   },
   "openSource": [
     {
-      "daily_growth": 25,
+      "daily_growth": 19,
       "description": "The library for web and native user interfaces.",
       "full_name": "react/react",
       "growth_available": true,
@@ -62,11 +71,11 @@
       "name": "react",
       "rank": 1,
       "source": "GitHub",
-      "stars": 250648,
+      "stars": 250667,
       "url": "https://github.com/react/react"
     },
     {
-      "daily_growth": 21,
+      "daily_growth": 19,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -74,11 +83,11 @@
       "name": "tensorflow",
       "rank": 2,
       "source": "GitHub",
-      "stars": 200243,
+      "stars": 200262,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 8,
+      "daily_growth": 15,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -86,11 +95,11 @@
       "name": "next.js",
       "rank": 3,
       "source": "GitHub",
-      "stars": 142395,
+      "stars": 142410,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 18,
+      "daily_growth": 25,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -98,11 +107,11 @@
       "name": "go",
       "rank": 4,
       "source": "GitHub",
-      "stars": 138937,
+      "stars": 138962,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 23,
+      "daily_growth": 28,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -110,11 +119,11 @@
       "name": "kubernetes",
       "rank": 5,
       "source": "GitHub",
-      "stars": 127897,
+      "stars": 127925,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 13,
+      "daily_growth": 17,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -122,11 +131,11 @@
       "name": "node",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122036,
+      "stars": 122053,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 29,
+      "daily_growth": 35,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -134,11 +143,11 @@
       "name": "rust",
       "rank": 7,
       "source": "GitHub",
-      "stars": 119035,
+      "stars": 119070,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 97,
+      "daily_growth": 98,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -146,11 +155,11 @@
       "name": "supabase",
       "rank": 8,
       "source": "GitHub",
-      "stars": 110590,
+      "stars": 110688,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 19,
+      "daily_growth": 28,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -158,11 +167,11 @@
       "name": "pytorch",
       "rank": 9,
       "source": "GitHub",
-      "stars": 103168,
+      "stars": 103196,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 11,
+      "daily_growth": 5,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -170,224 +179,288 @@
       "name": "tailwindcss",
       "rank": 10,
       "source": "GitHub",
-      "stars": 97640,
+      "stars": 97645,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "date": "Yesterday",
+      "kind": "minor",
+      "project": "openai-python",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.18.0",
+      "version": "v3.18.0"
+    },
+    {
+      "date": "Yesterday",
+      "kind": "patch",
+      "project": "next.js",
+      "repository": "vercel/next.js",
+      "source": "GitHub",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.3.6",
+      "version": "v16.3.6"
+    },
+    {
+      "date": "Yesterday",
+      "kind": "patch",
+      "project": "next.js",
+      "repository": "vercel/next.js",
+      "source": "GitHub",
+      "url": "https://github.com/vercel/next.js/releases/tag/v15.5.26",
+      "version": "v15.5.26"
+    },
+    {
+      "date": "Yesterday",
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.8.0",
+      "version": "v1.8.0"
+    },
+    {
+      "date": "Yesterday",
+      "kind": "minor",
+      "project": "framework",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.33.0",
+      "version": "v13.33.0"
+    },
+    {
+      "date": "Yesterday",
+      "kind": "minor",
+      "project": "node",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.10.0",
+      "version": "v26.10.0"
+    },
+    {
+      "date": "Yesterday",
+      "kind": "minor",
+      "project": "openai-python",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.17.0",
+      "version": "v3.17.0"
+    }
+  ],
   "security": {
-    "critical": 143,
-    "high": 591,
-    "kevCatalogTotal": 1717,
+    "critical": 173,
+    "high": 689,
+    "kevCatalogTotal": 1721,
     "latest": [
       {
-        "cvss_score": 2.0,
+        "cvss_score": 2.1,
         "cvss_version": "4.0",
-        "description": "A vulnerability was determined in xuxueli xxl-job up to 3.5.0. The impacted element is an unknown function of the file /jobgroup/insert. This manipulation of the argument Name causes cross site scripting. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
-        "id": "CVE-2026-94426",
+        "description": "A vulnerability was determined in Mstfakts College-Management-System. This affects the function session_start of the file Front-end/server.php of the component Authentication. Executing a manipulation can lead to session fixiation. It is possible to launch the attack remotely. The exploit has been publicly disclosed and may be utilized. This product takes the approach of rolling releases to…",
+        "id": "CVE-2026-95828",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "LOW",
         "source": "NVD",
-        "title": "A vulnerability was determined in xuxueli xxl-job up to 3.5.0. The impacted element is an unknown function of the file /jobgroup/insert. This manipulation of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94426"
+        "title": "A vulnerability was determined in Mstfakts College-Management-System. This affects the function session_start of the file Front-end/server.php of the component…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95828"
       },
       {
-        "cvss_score": 8.7,
+        "cvss_score": 2.1,
         "cvss_version": "4.0",
-        "description": "vLLM through 0.29.0 fails to validate the tp_size parameter in kv_transfer_params on OpenAI-compatible completion endpoints, allowing attackers to allocate unbounded memory. Attackers can supply arbitrary tp_size values in prefill/decode disaggregated deployments to exhaust memory and trigger kernel OOM-kill of the decode worker process.",
-        "id": "CVE-2026-94626",
+        "description": "A vulnerability was found in anirbandutta9 College-Notes-Gallery up to 8c1cf3d98f30982d069c88ca172612c001eb39f6. Affected by this issue is some unknown functionality of the file /dashboard/userprofile.php?section=admin1. Performing a manipulation of the argument image results in unrestricted upload. It is possible to initiate the attack remotely. The exploit has been made public and could be…",
+        "id": "CVE-2026-95820",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A vulnerability was found in anirbandutta9 College-Notes-Gallery up to 8c1cf3d98f30982d069c88ca172612c001eb39f6. Affected by this issue is some unknown…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95820"
+      },
+      {
+        "cvss_score": 3.2,
+        "cvss_version": "3.1",
+        "description": "xdg-dbus-proxy incorrectly filters D-Bus broadcast messages, bypassing configured path, interface, and member restrictions. This allows a sandboxed Flatpak application to intercept broadcast signals on the D-Bus session bus and AT-SPI bus that should be restricted, potentially exposing sensitive information to unauthorized applications.",
+        "id": "CVE-2026-93676",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "5 days ago",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "xdg-dbus-proxy incorrectly filters D-Bus broadcast messages, bypassing configured path, interface, and member restrictions. This allows a sandboxed Flatpak…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93676"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in Netty's HTTP/1.1 decoder. This vulnerability allows a remote attacker to bypass `Transfer-Encoding` header validation by splitting the `Transfer-Encoding` field across multiple headers, with the last field containing a non-final transfer coding like `gzip` or `deflate`. This bypass can lead to HTTP request smuggling, enabling attackers to bypass security controls…",
+        "id": "CVE-2026-93573",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "5 days ago",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A flaw was found in Netty's HTTP/1.1 decoder. This vulnerability allows a remote attacker to bypass `Transfer-Encoding` header validation by splitting the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93573"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in Netty's WebSocketServerExtensionHandler. A remote, unauthenticated attacker can exploit this vulnerability by using HTTP/1.1 pipelining to send requests faster than the application can respond. This leads to an unbounded growth of a per-connection queue, consuming excessive memory. Eventually, this can cause the Java Virtual Machine (JVM) to exhaust its heap, resulting in a…",
+        "id": "CVE-2026-93558",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "5 days ago",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A flaw was found in Netty's WebSocketServerExtensionHandler. A remote, unauthenticated attacker can exploit this vulnerability by using HTTP/1.1 pipelining to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93558"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in Netty. SpdySessionHandler accepts an unlimited number of concurrent remote-initiated streams because localConcurrentStreams defaults to Integer.MAX_VALUE and the handler provides no API to change it. A remote peer can open a SPDY connection and send a large number of SYN_STREAM frames with FLAG_FIN=0, causing unbounded heap and direct memory allocation that can lead to JVM…",
+        "id": "CVE-2026-93488",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "5 days ago",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A flaw was found in Netty. SpdySessionHandler accepts an unlimited number of concurrent remote-initiated streams because localConcurrentStreams defaults to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93488"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in bubblewrap. During sandbox setup, creating files or directories under the new root can follow a parent symlink onto the host via /oldroot, writing attacker-chosen paths outside the sandbox as the launching user. This happens before the sandboxed process starts. This issue is GHSA-pxhw-h44j-8pfx. It is fixed in bubblewrap 0.12.0.",
+        "id": "CVE-2026-87766",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "09 SEP 2026",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A flaw was found in bubblewrap. During sandbox setup, creating files or directories under the new root can follow a parent symlink onto the host via /oldroot…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87766"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "ReactPress is a publishing system for React developers. Prior to version 3.7.0, ReactPress API list endpoints build TypeORM `QueryBuilder` conditions using unsanitized HTTP query parameter names as SQL column identifiers (e.g. `` `article.${key}` ``). TypeORM parameterizes values but not column names, allowing unauthenticated attackers to inject SQL through crafted query string keys. Version…",
+        "id": "CVE-2026-61685",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "vLLM through 0.29.0 fails to validate the tp_size parameter in kv_transfer_params on OpenAI-compatible completion endpoints, allowing attackers to allocate…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94626"
+        "title": "ReactPress is a publishing system for React developers. Prior to version 3.7.0, ReactPress API list endpoints build TypeORM `QueryBuilder` conditions using…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61685"
       },
       {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "vLLM through 0.29.0 contains a resource exhaustion vulnerability in MooncakeConnector where rejected prefill requests create ownerless transfer placeholders that are never reclaimed. Attackers can send rejected requests to exhaust sender task pools, causing valid requests to be delayed by up to 480 seconds while health checks continue returning success.",
-        "id": "CVE-2026-94625",
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "plone.app.dexterity is a content-type system for the Plone content management system, and plone.app.contenttypes provides Plone’s Dexterity-based content types. Plone.app.dexterity versions through 3.2.2, 4.0.0 through 4.1.2, and 5.0.0, and plone.app.contenttypes versions through 3.0.11, 4.0.0 through 4.0.9, and 5.0.0 are vulnerable to denial of service because an authenticated user can create…",
+        "id": "CVE-2026-57576",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "vLLM through 0.29.0 contains a resource exhaustion vulnerability in MooncakeConnector where rejected prefill requests create ownerless transfer placeholders…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94625"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "vLLM through 0.29.0 contains a denial of service vulnerability in P2P KV offloading when OffloadingConnector is configured with TieringOffloadingSpec and a peer-to-peer secondary tier. Attackers can supply arbitrary remote host and port values in kv_transfer_params to create unreachable peer sessions that retain ZeroMQ sockets until the context quota is exhausted, causing an uncaught ZMQError…",
-        "id": "CVE-2026-94624",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "vLLM through 0.29.0 contains a denial of service vulnerability in P2P KV offloading when OffloadingConnector is configured with TieringOffloadingSpec and a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94624"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "vLLM through 0.29.0 contains a denial of service vulnerability in the NIXL connector's prefix caching implementation that fails to properly validate block counts across multi-prompt completion requests in prefill/decode disaggregated deployments. Attackers can trigger an assertion failure in NixlBaseConnectorWorker._apply_prefix_caching by submitting completion requests with multiple prompts of…",
-        "id": "CVE-2026-94623",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "vLLM through 0.29.0 contains a denial of service vulnerability in the NIXL connector's prefix caching implementation that fails to properly validate block…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94623"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "vLLM versions through 0.29.0 contain a denial of service vulnerability in the NIXL connector's metadata handling for prefill/decode disaggregated deployments. Attackers can send requests with incomplete kv_transfer_params dictionary entries to trigger an uncaught KeyError in EngineCore scheduling, causing the decode engine to terminate and making all routed requests fail until manual restart.",
-        "id": "CVE-2026-94622",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "vLLM versions through 0.29.0 contain a denial of service vulnerability in the NIXL connector's metadata handling for prefill/decode disaggregated deployments…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94622"
+        "title": "plone.app.dexterity is a content-type system for the Plone content management system, and plone.app.contenttypes provides Plone’s Dexterity-based content…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57576"
       },
       {
         "cvss_score": 7.4,
-        "cvss_version": "4.0",
-        "description": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and persist an attacker-selected paired identity by interacting with the application's local service without any pairing confirmation or user interaction. Attackers can exploit the unauthenticated local service through same-device loopback to perform…",
-        "id": "CVE-2026-94540",
+        "cvss_version": "3.1",
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to obtain sensitive information due to cleartext transmission of sensitive information.",
+        "id": "CVE-2026-18176",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94540"
+        "title": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to obtain sensitive information due to cleartext transmission of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18176"
       },
       {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "lamp-cloud through 5.10.0 fails to validate the employeeId parameter in the /anyone/visible/resource endpoint, allowing authenticated users to read any employee's roles and permissions. Attackers can supply arbitrary employeeId values to enumerate other employees' role codes, permission codes, and complete front-end router trees without authorization checks.",
-        "id": "CVE-2026-94536",
+        "cvss_score": 3.7,
+        "cvss_version": "3.1",
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to obtain sensitive information due to improper enforcement of mutual TLS authentication.",
+        "id": "CVE-2026-18173",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
-        "severity": "MEDIUM",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "lamp-cloud through 5.10.0 fails to validate the employeeId parameter in the /anyone/visible/resource endpoint, allowing authenticated users to read any…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94536"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the deleteMyNotice endpoint that allows authenticated users to delete other users' notifications. Attackers can call the DELETE /anyone/extendNotice/deleteMyNotice endpoint with arbitrary notice IDs to permanently remove notifications belonging to other users without recipient validation.",
-        "id": "CVE-2026-94535",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the deleteMyNotice endpoint that allows authenticated users to delete other users'…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94535"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "lamp-cloud through 5.10.0 fails to validate user identity in PUT /anyone/baseInfo and PUT /anyone/avatar endpoints, allowing authenticated attackers to modify arbitrary user profiles. Attackers can supply target user IDs in request bodies to rewrite profile fields including nickname, ID card, sex, nation, education, work description, and avatar attachments of other users.",
-        "id": "CVE-2026-94534",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "lamp-cloud through 5.10.0 fails to validate user identity in PUT /anyone/baseInfo and PUT /anyone/avatar endpoints, allowing authenticated attackers to modify…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94534"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in FileAnyoneController that allows authenticated users to download arbitrary attachments. Attackers can retrieve other users' stored files by supplying valid attachment identifiers to the /anyone/file/down and /anyone/file/download endpoints, as the application never validates file ownership against the created_by column.",
-        "id": "CVE-2026-94533",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in FileAnyoneController that allows authenticated users to download arbitrary…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94533"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the getUserInfoById endpoint that allows authenticated users to read any other user's full profile. Attackers can iterate the userId parameter to harvest sensitive user information including mobile numbers, email addresses, national identity card numbers, and WeChat and DingTalk OpenIDs.",
-        "id": "CVE-2026-94532",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the getUserInfoById endpoint that allows authenticated users to read any other…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94532"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "4.0",
-        "description": "A flaw has been found in drogonframework drogon up to 1.9.13. This affects the function makeCriteria in the library orm_lib/src/Criteria.cc of the component ORM. Executing a manipulation of the argument filter can lead to sql injection. The attack may be performed from remote. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond…",
-        "id": "CVE-2026-94144",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A flaw has been found in drogonframework drogon up to 1.9.13. This affects the function makeCriteria in the library orm_lib/src/Criteria.cc of the component…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94144"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was detected in drogonframework drogon up to 1.9.13. Affected by this issue is the function Mapper::orderBy in the library Mapper.h of the component ORM Mapper. Performing a manipulation of the argument sort results in sql injection. The attack is possible to be carried out remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure…",
-        "id": "CVE-2026-94143",
-        "known_exploited": false,
-        "modified": "Yesterday",
-        "published": "Yesterday",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A vulnerability was detected in drogonframework drogon up to 1.9.13. Affected by this issue is the function Mapper::orderBy in the library Mapper.h of the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94143"
+        "title": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to obtain sensitive information due to improper enforcement of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18173"
       },
       {
         "cvss_score": 7.4,
-        "cvss_version": "4.0",
-        "description": "Gladys Assistant before 5.1.0 contains a password reset link poisoning vulnerability that allows unauthenticated remote attackers to obtain valid password reset tokens for any account by exploiting the client-supplied origin parameter in the forgot_password endpoint without server-side validation. Attackers can send a crafted request specifying an attacker-controlled origin, causing the victim to…",
-        "id": "CVE-2026-93340",
+        "cvss_version": "3.1",
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to obtain sensitive information due to improper restriction of XML external entity references.",
+        "id": "CVE-2026-18172",
         "known_exploited": false,
         "modified": "Yesterday",
         "published": "Yesterday",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Gladys Assistant before 5.1.0 contains a password reset link poisoning vulnerability that allows unauthenticated remote attackers to obtain valid password…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93340"
+        "title": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to obtain sensitive information due to improper restriction of XML…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18172"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to cause a denial of service due to allocation of resources without limits or throttling.",
+        "id": "CVE-2026-18170",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to cause a denial of service due to allocation of resources without…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18170"
+      },
+      {
+        "cvss_score": 9.9,
+        "cvss_version": "3.1",
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote authenticated attacker to obtain sensitive information due to improper validation of symbolic links.",
+        "id": "CVE-2026-18169",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote authenticated attacker to obtain sensitive information due to improper…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18169"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to execute arbitrary code due to improper deserialization of untrusted data.",
+        "id": "CVE-2026-18163",
+        "known_exploited": false,
+        "modified": "Yesterday",
+        "published": "Yesterday",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to execute arbitrary code due to improper deserialization of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18163"
       }
     ],
-    "low": 96,
-    "medium": 382,
+    "low": 112,
+    "medium": 451,
     "none": 0,
-    "unscored": 64
+    "unscored": 29
   },
   "snapshot": {
-    "cves": 1276,
-    "kevAdded": 1,
-    "knownExploited": 8,
+    "cves": 1454,
+    "kevAdded": 4,
+    "knownExploited": 1,
     "projects": 20,
-    "releases": 0,
-    "techEntries": 19
+    "releases": 7,
+    "techEntries": 31
   },
   "sources": {
     "opensource": {
@@ -401,154 +474,154 @@
     "releases": {
       "github": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "partial",
-        "total": 59
+        "inWindow": 7,
+        "status": "success",
+        "total": 62
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 1,
+        "inWindow": 4,
         "status": "success",
-        "total": 1717
+        "total": 1721
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1276,
+        "inWindow": 1454,
         "status": "success",
-        "total": 1276
+        "total": 1454
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 19,
+        "inWindow": 31,
         "status": "success",
-        "total": 228
+        "total": 229
       }
     }
   },
   "technology": [
     {
-      "category": "security",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "Of 225 flaws found by Glasswing and tracked by VulnCheck researcher, just one has confirmed exploitation in the wild",
-      "title": "Anthropic-linked CVEs pile up, attackers mostly shrug",
-      "url": "https://www.theregister.com/security/2026/09/21/anthropic-linked-cves-pile-up-attackers-mostly-shrug/5298018"
-    },
-    {
       "category": "tech",
       "date": "Yesterday",
-      "source": "Ars Technica",
-      "summary": "A simple ClickFix attack is only one way to completely hijack the new agent.",
-      "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
-      "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/"
-    },
-    {
-      "category": "security",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "Ad biz promises users control while bug could expose voice prompts",
-      "title": "Meta Muse AI app flaw lets local malware redirect dictation traffic",
-      "url": "https://www.theregister.com/ai-and-ml/2026/09/21/meta-muse-ai-app-flaw-lets-local-malware-redirect-dictation-traffic/5297980"
-    },
-    {
-      "category": "security",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "'Humans are responsible, not the AI,' argues Scott Bessent as he calls out OpenAI agents' hack of Hugging Face",
-      "title": "Treasury chief says AI bosses, not their bots, will carry the can for criminal acts",
-      "url": "https://www.theregister.com/security/2026/09/21/treasury-chief-says-ai-bosses-not-their-bots-will-carry-the-can-for-criminal-acts/5297965"
+      "source": "AWS",
+      "summary": "Amazon CloudWatch Omni is the next evolution of CloudWatch — unified observability that brings your applications and AI agents into one reimagined experience, with auto-discovered topology, natural language queries, and AI-guided investigation powered by AWS DevOps Agent.",
+      "title": "Introducing Amazon CloudWatch Omni: collaborative AI-powered observability for your applications",
+      "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/"
     },
     {
       "category": "tech",
       "date": "Yesterday",
       "source": "AWS",
-      "summary": "Living in the Netherlands, I spend a fair amount of time on trains, and that is usually where I catch up on what the builder community is writing. Until now, that meant opening a laptop or squinting at a browser tab on my phone. This week I found myself scrolling through…",
-      "title": "AWS Weekly Roundup: AWS Builder Center mobile apps, Amazon Connect Talent GA, Amazon Corretto 27, and more (September 21, 2026)",
-      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/"
+      "summary": "Learn how Amazon CloudWatch Omni delivers AI-powered observability purpose-built for generative AI and agentic workloads. Trace, evaluate, and experiment with AI agents across any framework—directly from your IDE or a standalone web experience—using open standards and built-in…",
+      "title": "Introducing Amazon CloudWatch Omni: AI-powered observability for generative AI and agentic workloads",
+      "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "'first' publicly documented Windows implant to use LLMs for C2",
+      "title": "Windows CLOSEDQUORUM malware uses AI models to autonomously select post-compromise actions",
+      "url": "https://www.theregister.com/security/2026/09/22/windows-closedquorum-malware-uses-ai-models-to-autonomously-select-post-compromise-actions/5298435"
     },
     {
       "category": "tech",
       "date": "Yesterday",
-      "source": "Meta",
-      "summary": "We’re open-sourcing Rebalancer, the assignment-problem solver that has been used to solve resource allocation problems throughout Meta for over nine years. Rebalancer separates several related concerns: how to specify an assignment problem, how to store it efficiently in memory…",
-      "title": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
-      "url": "https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/"
+      "source": "Ars Technica",
+      "summary": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
+      "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
+      "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "This time it's personal",
+      "title": "ShinyHunters claims FBI hack: 'This is NOT financially motivated'",
+      "url": "https://www.theregister.com/security/2026/09/22/shinyhunters-claims-fbi-hack-this-is-not-financially-motivated/5298385"
     },
     {
       "category": "tech",
       "date": "Yesterday",
-      "source": "Google Cloud",
-      "summary": "A resilient software supply chain is the foundation of modern delivery, and securing your continuous integration and continuous delivery (CI/CD) pipeline is what keeps innovation moving safely. Notable supply chain attacks more than doubled in the first half of 2026 compared to…",
-      "title": "Strengthen your CI/CD pipeline with new Secure Source Manager capabilities",
-      "url": "https://cloud.google.com/blog/products/identity-security/strengthen-your-cicd-pipeline-with-new-secure-source-manager-capabilities/"
+      "source": "Ars Technica",
+      "summary": "The English hospitals recovered patient care data only.",
+      "title": "IT mistake erases 11 years of viewing history for hospitals’ maternity records",
+      "url": "https://arstechnica.com/information-technology/2026/09/it-mistake-erases-11-years-of-viewing-history-for-hospitals-maternity-records/"
     },
     {
-      "category": "tech",
+      "category": "security",
       "date": "Yesterday",
-      "source": "Google Cloud",
-      "summary": "The surge in AI development has created unprecedented demand for compute capacity around the globe. This can have negative implications for data processing and pipelines with Apache Spark. Whether you are managing your own Spark infrastructure or using a managed service, you can…",
-      "title": "Maximizing Apache Spark availability: Mitigating compute stockouts with flexible VMs and other best practices",
-      "url": "https://cloud.google.com/blog/products/data-analytics/maximize-apache-spark-availability-with-flexible-vms/"
+      "source": "The Register",
+      "summary": "BigDiskBuster leaves Microsoft's antivirus running but unable to install updates",
+      "title": "NightmareEclipse's latest zero-day leaves Microsoft Defender stuck in the past",
+      "url": "https://www.theregister.com/security/2026/09/22/nightmareeclipses-latest-zero-day-leaves-microsoft-defender-stuck-in-the-past/5298320"
     },
     {
-      "category": "tech",
+      "category": "security",
       "date": "Yesterday",
-      "source": "Google Cloud",
-      "summary": "Demand for AI infrastructure is at an all-time high. Global accelerator shortages mean engineering teams can rarely get all the compute they need from just one data center — capacity comes a cluster here, a cluster there, often an ocean apart. At the same time, workloads are…",
-      "title": "Global AI routing with <1% overhead on multi-cluster GKE Inference Gateway",
-      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gpu-and-tpu-utilization-with-multi-cluster-gke-inference-gateway/"
+      "source": "The Register",
+      "summary": "China’s AI darling goes on the defense after engineer highlighted Grok-esque security flaws",
+      "title": "Z.ai says sorry for slurping up your code, open sources ZCode",
+      "url": "https://www.theregister.com/security/2026/09/22/zai-says-sorry-for-slurping-up-your-code-open-sources-zcode/5298300"
     },
     {
-      "category": "tech",
+      "category": "security",
       "date": "Yesterday",
-      "source": "Google Cloud",
-      "summary": "When running modern AI workloads, there’s often a conflict between performance and cost. Workloads like large language models (LLMs) load massive files, and may serve thousands of AI agents that need to execute code instantly. If each component is starting “cold” with a full…",
-      "title": "Scale your AI workloads faster and more efficiently with GKE Pod snapshots",
-      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-pod-snapshots/"
+      "source": "The Register",
+      "summary": "Used by crims to compromise 12K+ email inboxes across 10K+ global orgs",
+      "title": "UK cops arrest 2 EvilTokens suspects, Microsoft seizes 50 phishing kit websites",
+      "url": "https://www.theregister.com/security/2026/09/22/uk-cops-arrest-2-eviltokens-suspects-microsoft-seizes-50-phishing-kit-websites/5298317"
+    },
+    {
+      "category": "security",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "SPONSORED FEATURE: AI agents may be unpredictable. Who they are, what they can do, and who owns them shouldn’t be.",
+      "title": "Who signed off on that AI agent? Nobody? Thought so.",
+      "url": "https://www.theregister.com/security/2026/09/22/sponsored/5297693"
     },
     {
       "category": "tech",
       "date": "Yesterday",
       "source": "Cloudflare",
-      "summary": "Python Workers allow developers to run Python web frameworks and AI orchestration libraries natively in the Cloudflare Workers runtime. You can seamlessly integrate with Cloudflare's ecosystem including D1, R2, and Workers AI without writing any JavaScript glue code.",
-      "title": "Python Workers are now generally available",
-      "url": "https://blog.cloudflare.com/python-workers-ga/"
-    },
-    {
-      "category": "security",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "Rival crew demands eight figures and threatens to expose companies that paid to keep quiet",
-      "title": "Clop gets a taste of its own medicine after ShinyHunters hijack leak site",
-      "url": "https://www.theregister.com/cyber-crime/2026/09/21/clop-gets-a-taste-of-its-own-medicine-after-shinyhunters-hijack-leak-site/5297702"
+      "summary": "Vary support is now available in Cache Rules on every plan. You can normalize known negotiation headers, pass exact values through to the origin when those small differences matter, or bypass cache when the variation is too unpredictable.",
+      "title": "We just shipped support for the ugliest part of HTTP: Vary",
+      "url": "https://blog.cloudflare.com/vary-support/"
     },
     {
       "category": "tech",
       "date": "Yesterday",
-      "source": "Meta",
-      "summary": "Petal, the next step in Meta’s subsea innovation, will be the first subsea cable to deliver petabit capacity at transoceanic distances, connecting France and the United States over approximately 7,000 km (4,300 mi). Expected to enter service in 2029, it will be the first subsea…",
-      "title": "Inside Petal: Building the World’s First Petabit-Class Transoceanic Subsea Cable",
-      "url": "https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/"
-    },
-    {
-      "category": "security",
-      "date": "Yesterday",
-      "source": "The Register",
-      "summary": "Attackers are courting crate owners with plausible company profiles and booby-trapped recruitment calls",
-      "title": "Rustaceans warned of job interviews with a malicious payload",
-      "url": "https://www.theregister.com/security/2026/09/21/rustaceans-warned-of-job-interviews-with-a-malicious-payload/5297690"
+      "source": "Cloudflare",
+      "summary": "Worker Previews gives every branch its own URL, configuration, state, and observability, so you and your agents can test changes in parallel without affecting production.",
+      "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+      "url": "https://blog.cloudflare.com/worker-previews/"
     },
     {
       "category": "tech",
       "date": "Yesterday",
       "source": "The Register",
-      "summary": "Seats, Flex Credits, and all-you-can-eat contracts make for an 'anxiety-filled architecture'",
-      "title": "Salesforce wants to charge for AI outcomes, but first it needs to figure out how",
-      "url": "https://www.theregister.com/software/2026/09/21/salesforce-wants-to-charge-for-ai-outcomes-but-first-it-needs-to-figure-out-how/5297402"
+      "summary": "Other changes also afoot as employees unionize and the distro itself sees modifications",
+      "title": "Longtime SUSE staff asked if they'd opt for 'voluntary separation'",
+      "url": "https://www.theregister.com/software/2026/09/22/longtime-suse-staff-asked-if-theyd-opt-for-voluntary-separation/5297457"
+    },
+    {
+      "category": "tech",
+      "date": "Yesterday",
+      "source": "The Register",
+      "summary": "Amix gains newer CPU support and a package manager as Open Look joins the retro comeback",
+      "title": "Commodore's forgotten Amiga Unix gets a modern revival",
+      "url": "https://www.theregister.com/software/2026/09/22/commodores-forgotten-amiga-unix-gets-a-modern-revival/5297805"
+    },
+    {
+      "category": "security",
+      "date": "2 days ago",
+      "source": "The Register",
+      "summary": "Of 225 flaws found by Glasswing and tracked by VulnCheck researcher, just one has confirmed exploitation in the wild",
+      "title": "Anthropic-linked CVEs pile up, attackers mostly shrug",
+      "url": "https://www.theregister.com/security/2026/09/21/anthropic-linked-cves-pile-up-attackers-mostly-shrug/5298018"
     }
   ]
 }
