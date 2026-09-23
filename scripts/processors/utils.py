@@ -324,15 +324,15 @@ def deduplicate_by_key(items: list[dict], key: str) -> list[dict]:
 def status_from_counts(total: int, in_window: int, failures: int = 0) -> str:
     """
     Derive an honest source status:
-        empty   — source produced no data at all
-        failed  — collection reported failures only
-        partial — data collected but some items failed / nothing in window
-        success — data collected and present in window
+        success — data collected and present in the window
+        empty   — source healthy, but legitimately nothing in the window
+        partial — data collected, but some items failed
+        failed  — collection failed (no usable data)
+    An empty window is a normal daily outcome (e.g. no releases today),
+    never a degradation signal.
     """
-    if total <= 0 and failures <= 0:
+    if failures > 0:
+        return "partial" if total > 0 else "failed"
+    if total <= 0 or in_window <= 0:
         return "empty"
-    if total <= 0 and failures > 0:
-        return "failed"
-    if failures > 0 or in_window <= 0:
-        return "partial"
     return "success"
