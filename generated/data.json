@@ -7,7 +7,7 @@
       "knownExploited": 0,
       "projects": 20,
       "releases": 0,
-      "techEntries": 24
+      "techEntries": 22
     },
     {
       "cves": 1108,
@@ -113,7 +113,7 @@
     "coveredDate": "2026-09-27",
     "date": "2026-09-28",
     "daysObserved": 12,
-    "generatedAt": "2026-09-28T07:33:41.311468+00:00",
+    "generatedAt": "2026-09-28T07:36:37.677114+00:00",
     "snapshots": 12,
     "timezone": "Asia/Kolkata"
   },
@@ -155,7 +155,7 @@
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": -1,
+      "daily_growth": 0,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -163,11 +163,11 @@
       "name": "go",
       "rank": 4,
       "source": "GitHub",
-      "stars": 139059,
+      "stars": 139060,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 1,
+      "daily_growth": 2,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -175,7 +175,7 @@
       "name": "kubernetes",
       "rank": 5,
       "source": "GitHub",
-      "stars": 128064,
+      "stars": 128065,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
@@ -203,7 +203,7 @@
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 2,
+      "daily_growth": 3,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -211,7 +211,7 @@
       "name": "supabase",
       "rank": 8,
       "source": "GitHub",
-      "stars": 110837,
+      "stars": 110838,
       "url": "https://github.com/supabase/supabase"
     },
     {
@@ -452,7 +452,7 @@
     "knownExploited": 0,
     "projects": 20,
     "releases": 0,
-    "techEntries": 24
+    "techEntries": 22
   },
   "sources": {
     "opensource": {
@@ -467,7 +467,7 @@
       "github": {
         "failures": 0,
         "inWindow": 0,
-        "status": "partial",
+        "status": "empty",
         "total": 59
       }
     },
@@ -487,10 +487,10 @@
     },
     "technology": {
       "rss": {
-        "failures": 0,
-        "inWindow": 24,
-        "status": "success",
-        "total": 228
+        "failures": 1,
+        "inWindow": 22,
+        "status": "partial",
+        "total": 198
       }
     }
   },
@@ -518,14 +518,6 @@
       "summary": "More mockery and memes from the Dark Web Roast",
       "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
       "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T18:57:10+00:00",
-      "source": "The Register",
-      "summary": "Overhead reduced by as much as 99.7%",
-      "title": "New software dependency validation process increases speeds by 54x",
-      "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
     },
     {
       "category": "security",
@@ -600,20 +592,28 @@
       "url": "https://cloud.google.com/blog/products/databases/memorystore-for-valkey-9-1-3x-qps-caching/"
     },
     {
-      "category": "tech",
-      "publishedAt": "2026-09-25T15:01:00+00:00",
-      "source": "The Register",
-      "summary": "But was the update at fault? Microsoft isn't saying",
-      "title": "Office 2016 and 2019 holdouts blame update for license deactivation bug",
-      "url": "https://www.theregister.com/software/2026/09/25/office-2016-and-2019-holdouts-blame-update-for-license-deactivation-bug/5299186"
-    },
-    {
       "category": "security",
       "publishedAt": "2026-09-25T15:00:00+00:00",
       "source": "The Register",
       "summary": "Joe Fay chairs a Register dinner in New York on the file infrastructure nobody has got around to replacing, with nothing on the record.",
       "title": "Which copy of that file is the real one? Dinner, off the record, in Midtown",
       "url": "https://www.theregister.com/storage/2026/09/25/sponsored/5299080"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-25T15:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "How we fully migrated github.com away from CSS-in-JS. The post Improving site performance by shipping more CSS appeared first on The GitHub Blog .",
+      "title": "Improving site performance by shipping more CSS",
+      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-25T14:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Introduction As an update to the June 2026 post, ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit , Mandiant and Google Threat Intelligence Group (GTIG) have identified renewed mass exploitation of CVE-2026-35273 by UNC6240 (ShinyHunters), along with expanded…",
+      "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/"
     }
   ]
 }

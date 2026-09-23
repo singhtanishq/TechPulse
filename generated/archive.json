@@ -26,17 +26,17 @@
             "url": "https://github.com/vercel/next.js"
           },
           {
-            "daily_growth": -1,
+            "daily_growth": 0,
             "full_name": "golang/go",
             "language": "Go",
-            "stars": 139059,
+            "stars": 139060,
             "url": "https://github.com/golang/go"
           },
           {
-            "daily_growth": 1,
+            "daily_growth": 2,
             "full_name": "kubernetes/kubernetes",
             "language": "Go",
-            "stars": 128064,
+            "stars": 128065,
             "url": "https://github.com/kubernetes/kubernetes"
           },
           {
@@ -54,10 +54,10 @@
             "url": "https://github.com/rust-lang/rust"
           },
           {
-            "daily_growth": 2,
+            "daily_growth": 3,
             "full_name": "supabase/supabase",
             "language": "TypeScript",
-            "stars": 110837,
+            "stars": 110838,
             "url": "https://github.com/supabase/supabase"
           },
           {
@@ -101,7 +101,7 @@
         "knownExploited": 0,
         "projects": 20,
         "releases": 0,
-        "techEntries": 24
+        "techEntries": 22
       },
       "sources": {
         "cisa": {
@@ -113,7 +113,7 @@
         "github_releases": {
           "failures": 0,
           "inWindow": 0,
-          "status": "partial",
+          "status": "empty",
           "total": 59
         },
         "github_repos": {
@@ -129,16 +129,16 @@
           "total": 286
         },
         "rss": {
-          "failures": 0,
-          "inWindow": 24,
-          "status": "success",
-          "total": 228
+          "failures": 1,
+          "inWindow": 22,
+          "status": "partial",
+          "total": 198
         }
       },
       "technology": {
         "categories": {
           "security": 7,
-          "tech": 17
+          "tech": 15
         },
         "recent": [
           {
@@ -158,12 +158,6 @@
             "source": "The Register",
             "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
             "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
-          },
-          {
-            "published_at": "2026-09-25T18:57:10+00:00",
-            "source": "The Register",
-            "title": "New software dependency validation process increases speeds by 54x",
-            "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
           },
           {
             "published_at": "2026-09-25T18:23:31+00:00",
@@ -200,6 +194,12 @@
             "source": "Google Cloud",
             "title": "What’s new with Google Cloud",
             "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-09-25T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
           }
         ]
       }
@@ -2615,7 +2615,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-28T07:33:41.311468+00:00",
+    "generatedAt": "2026-09-28T07:36:37.677114+00:00",
     "totalSnapshots": 12
   }
 }
