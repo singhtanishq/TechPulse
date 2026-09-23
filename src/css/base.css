@@ -497,6 +497,11 @@ time {
     color: var(--warning);
 }
 
+/* The hidden attribute must always win over the flex display. */
+.error-banner[hidden] {
+    display: none;
+}
+
 .error-banner [data-error-detail] {
     display: block;
     margin-top: 2px;
