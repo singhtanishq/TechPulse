@@ -216,7 +216,7 @@ def main() -> int:
     print("=" * 32)
 
     try:
-        start, end, covered_ist_day = resolve_window(args.date, args.start, args.end)
+        start, end, covered_ist_day, reporting_date = resolve_window(args.date, args.start, args.end)
     except ValueError as exc:
         parser.error(str(exc))
 
@@ -225,7 +225,7 @@ def main() -> int:
     print()
 
     try:
-        result = process_security(start, end, covered_ist_day)
+        result = process_security(start, end, covered_ist_day, reporting_date)
         output_path = NORMALIZED_DIR / "security.json"
         save_json(result, output_path)
     except Exception as exc:
