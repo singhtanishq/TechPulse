@@ -90,7 +90,7 @@ def previous_observation_stars() -> dict[str, int]:
 def process_opensource(snapshot_date: str) -> dict[str, Any]:
     """Process open-source repository metadata."""
 
-    repos_path = latest_dated_file(REPO_META_DIR)
+    repos_path = dated_file_for(REPO_META_DIR, snapshot_date)
 
     print("Loading repository metadata...")
     repos_data = load_json(repos_path) if repos_path else None
