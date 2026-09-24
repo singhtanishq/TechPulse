@@ -29,6 +29,7 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (
     DATA_DIR,
+    dated_file_for,
     ist_day_window,
     ist_date_of,
     ist_today,
@@ -50,18 +51,18 @@ def resolve_window(
     date_arg: str | None,
     start_arg: str | None,
     end_arg: str | None,
-) -> tuple[datetime, datetime, str]:
-    """Resolve (start, end, covered_ist_day) — see processors/utils.py."""
+) -> tuple[datetime, datetime, str, str | None]:
+    """Resolve (start, end, covered_ist_day, reporting_date)."""
     if start_arg and end_arg:
         start = parse_iso_datetime(start_arg)
         end = parse_iso_datetime(end_arg)
         if start is None or end is None:
             raise ValueError("Invalid --start/--end datetime.")
-        return start, end, ist_date_of(start)
+        return start, end, ist_date_of(start), (date_arg or None)
 
     reporting_date = date_arg or ist_today()
     start, end = ist_day_window(reporting_date)
-    return start, end, ist_date_of(start)
+    return start, end, ist_date_of(start), reporting_date
 
 
 def release_kind(version: str) -> str:
