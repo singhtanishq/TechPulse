@@ -56,7 +56,7 @@ def resolve_window(
     return start, end, ist_date_of(start)
 
 
-def process_tech(start: datetime, end: datetime, covered_ist_day: str) -> dict[str, Any]:
+def process_tech(start: datetime, end: datetime, covered_ist_day: str, reporting_date: str | None = None) -> dict[str, Any]:
     """Process technology/RSS data.
 
     Window policy (documented):
@@ -70,7 +70,7 @@ def process_tech(start: datetime, end: datetime, covered_ist_day: str) -> dict[s
         deterministic per reporting date.
     """
 
-    tech_path = latest_dated_file(TECH_DIR)
+    tech_path = dated_file_for(TECH_DIR, reporting_date)
 
     print("Loading tech/RSS data...")
     tech_data = load_json(tech_path) if tech_path else None
@@ -159,7 +159,7 @@ def main() -> int:
     print("=" * 32)
 
     try:
-        start, end, covered_ist_day = resolve_window(args.date, args.start, args.end)
+        start, end, covered_ist_day, reporting_date = resolve_window(args.date, args.start, args.end)
     except ValueError as exc:
         parser.error(str(exc))
 
@@ -168,7 +168,7 @@ def main() -> int:
     print()
 
     try:
-        result = process_tech(start, end, covered_ist_day)
+        result = process_tech(start, end, covered_ist_day, reporting_date)
         output_path = NORMALIZED_DIR / "tech.json"
         save_json(result, output_path)
     except Exception as exc:
