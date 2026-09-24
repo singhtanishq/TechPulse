@@ -29,8 +29,8 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (
     DATA_DIR,
+    dated_file_for,
     ist_today,
-    latest_dated_file,
     load_json,
     save_json,
     derive_processed_at,
