@@ -52,31 +52,31 @@ def resolve_snapshot_date(date_arg: str | None) -> str:
     return ist_today()
 
 
-def previous_observation_stars() -> dict[str, int]:
+def previous_observation_stars(current_date: str | None = None) -> dict[str, int]:
     """
-    Build {full_name: stars} from the second-newest dated observation.
+    Build {full_name: stars} from the newest observation strictly older
+    than the current reporting date.
 
-    Returns an empty mapping when fewer than two dated files exist, in
-    which case growth is reported as unavailable rather than invented.
+    Returns an empty mapping when no prior observation exists, in which
+    case growth is reported as unavailable rather than invented.
     """
     if not REPO_META_DIR.exists():
         return {}
-    files = sorted(
-        (f for f in REPO_META_DIR.glob("*.json") if f.is_file()),
-        key=lambda f: f.stem,
-        reverse=True,
-    )
     dated = []
-    for f in files:
+    for f in REPO_META_DIR.glob("*.json"):
+        if not f.is_file():
+            continue
         try:
             parse_ist_date(f.stem)
-            dated.append(f)
         except ValueError:
             continue
-    if len(dated) < 2:
+        if current_date and f.stem >= current_date:
+            continue
+        dated.append(f)
+    if not dated:
         return {}
 
-    prior = load_json(dated[1])
+    prior = load_json(max(dated, key=lambda f: f.stem))
     if not prior:
         return {}
 
