@@ -101,7 +101,7 @@
         "knownExploited": 0,
         "projects": 20,
         "releases": 0,
-        "techEntries": 22
+        "techEntries": 41
       },
       "sources": {
         "cisa": {
@@ -130,23 +130,17 @@
         },
         "rss": {
           "failures": 1,
-          "inWindow": 22,
+          "inWindow": 41,
           "status": "partial",
           "total": 198
         }
       },
       "technology": {
         "categories": {
-          "security": 7,
-          "tech": 15
+          "security": 14,
+          "tech": 27
         },
         "recent": [
-          {
-            "published_at": "2026-09-27T17:00:00+00:00",
-            "source": "Cloudflare",
-            "title": "Cloudflare’s 2026 Annual Founders’ Letter",
-            "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
-          },
           {
             "published_at": "2026-09-25T19:38:59+00:00",
             "source": "Ars Technica",
@@ -200,6 +194,12 @@
             "source": "Google Cloud",
             "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
             "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
+          },
+          {
+            "published_at": "2026-09-25T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Storage Intelligence advisor: Know what changed in your storage estate and act on it",
+            "url": "https://cloud.google.com/blog/products/storage-data-transfer/storage-intelligence-advisor-and-batch-operations-updates/"
           }
         ]
       }
@@ -209,73 +209,73 @@
       "opensource": {
         "topProjects": [
           {
-            "daily_growth": 0,
+            "daily_growth": 25,
             "full_name": "react/react",
             "language": "JavaScript",
             "stars": 250794,
             "url": "https://github.com/react/react"
           },
           {
-            "daily_growth": 1,
+            "daily_growth": 25,
             "full_name": "tensorflow/tensorflow",
             "language": "C++",
-            "stars": 200577,
+            "stars": 200576,
             "url": "https://github.com/tensorflow/tensorflow"
           },
           {
-            "daily_growth": 2,
+            "daily_growth": 49,
             "full_name": "vercel/next.js",
             "language": "JavaScript",
-            "stars": 142819,
+            "stars": 142817,
             "url": "https://github.com/vercel/next.js"
           },
           {
-            "daily_growth": 0,
+            "daily_growth": 7,
             "full_name": "golang/go",
             "language": "Go",
             "stars": 139060,
             "url": "https://github.com/golang/go"
           },
           {
-            "daily_growth": 2,
+            "daily_growth": 17,
             "full_name": "kubernetes/kubernetes",
             "language": "Go",
-            "stars": 128065,
+            "stars": 128063,
             "url": "https://github.com/kubernetes/kubernetes"
           },
           {
-            "daily_growth": 0,
+            "daily_growth": 15,
             "full_name": "nodejs/node",
             "language": "JavaScript",
             "stars": 122147,
             "url": "https://github.com/nodejs/node"
           },
           {
-            "daily_growth": 0,
+            "daily_growth": 19,
             "full_name": "rust-lang/rust",
             "language": "Rust",
             "stars": 119254,
             "url": "https://github.com/rust-lang/rust"
           },
           {
-            "daily_growth": 3,
+            "daily_growth": 30,
             "full_name": "supabase/supabase",
             "language": "TypeScript",
-            "stars": 110838,
+            "stars": 110835,
             "url": "https://github.com/supabase/supabase"
           },
           {
-            "daily_growth": 1,
+            "daily_growth": 30,
             "full_name": "pytorch/pytorch",
             "language": "Python",
-            "stars": 103435,
+            "stars": 103434,
             "url": "https://github.com/pytorch/pytorch"
           },
           {
-            "daily_growth": 1,
+            "daily_growth": 17,
             "full_name": "tailwindlabs/tailwindcss",
             "language": "TypeScript",
-            "stars": 97721,
+            "stars": 97720,
             "url": "https://github.com/tailwindlabs/tailwindcss"
           }
         ]
@@ -291,18 +291,18 @@
       },
       "security": {
         "severity": {
-          "CRITICAL": 0,
-          "HIGH": 0,
-          "LOW": 0,
-          "MEDIUM": 0,
+          "CRITICAL": 91,
+          "HIGH": 459,
+          "LOW": 82,
+          "MEDIUM": 447,
           "NONE": 0,
-          "UNSCORED": 0
+          "UNSCORED": 29
         }
       },
       "snapshot": {
-        "cves": 0,
+        "cves": 1108,
         "kevAdded": 0,
-        "knownExploited": 0,
+        "knownExploited": 7,
         "projects": 20,
         "releases": 0,
         "techEntries": 41
@@ -328,9 +328,9 @@
         },
         "nvd": {
           "failures": 0,
-          "inWindow": 0,
-          "status": "empty",
-          "total": 286
+          "inWindow": 1108,
+          "status": "success",
+          "total": 1108
         },
         "rss": {
           "failures": 1,
@@ -2615,7 +2615,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-28T07:36:37.677114+00:00",
+    "generatedAt": "2026-09-28T07:40:43.722697+00:00",
     "totalSnapshots": 12
   }
 }
