@@ -1,0 +1,332 @@
+{
+  "date": "2026-09-24",
+  "generatedAt": "2026-09-25T13:59:14.018851+00:00",
+  "opensource": {
+    "growthBasis": "previous_observation",
+    "topProjects": [
+      {
+        "daily_growth": 35,
+        "full_name": "react/react",
+        "language": "JavaScript",
+        "stars": 250717,
+        "url": "https://github.com/react/react"
+      },
+      {
+        "daily_growth": 32,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200307,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 10,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 142430,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 26,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 138995,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 33,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 127978,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 20,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122078,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 58,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119157,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 34,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 110758,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 55,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103297,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 16,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97670,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 2
+    },
+    "recent": [
+      {
+        "project": "vite",
+        "published_at": "2026-09-24T12:23:55Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/v8.3.1",
+        "version": "v8.3.1"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-09-24T00:05:23Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.19.2",
+        "version": "v3.19.2"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-71362",
+        "date_added": "2026-09-24",
+        "product": "Commerce and Magento ",
+        "vendor_project": "Adobe",
+        "vulnerability_name": "Adobe Commerce and Magento Incorrect Authorization Vulnerability "
+      },
+      {
+        "cve_id": "CVE-2026-5430",
+        "date_added": "2026-09-24",
+        "product": "Multiple Products",
+        "vendor_project": "WSO2",
+        "vulnerability_name": "WSO2 Multiple Products Path Traversal Vulnerability "
+      }
+    ],
+    "latest": [
+      {
+        "cvss": null,
+        "description": "Rejected reason: This CVE is a duplicate of another CVE.",
+        "id": "CVE-2026-97387",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97387"
+      },
+      {
+        "cvss": 8.7,
+        "description": "vLLM through 0.29.0 fails to validate the tp_size parameter in kv_transfer_params on OpenAI-compatible completion endpoints, allowing attackers to allocate unbounded memory. Attackers can supply arbit",
+        "id": "CVE-2026-94626",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94626"
+      },
+      {
+        "cvss": 9.4,
+        "description": "In OpenStack Octavia before 18.0.1, the Amphora provider driver did not validate the listener and pool tls_ciphers field for control characters. The value is written verbatim into the HAProxy configur",
+        "id": "CVE-2026-94572",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94572"
+      },
+      {
+        "cvss": 7.4,
+        "description": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and persist an attacker-selected paired identity by",
+        "id": "CVE-2026-94540",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94540"
+      },
+      {
+        "cvss": 7.1,
+        "description": "lamp-cloud through 5.10.0 contains an authorization bypass vulnerability in the getUserInfoById endpoint that allows authenticated users to read any other user's full profile. Attackers can iterate th",
+        "id": "CVE-2026-94532",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94532"
+      },
+      {
+        "cvss": 7.1,
+        "description": "jshERP through 3.6 fails to properly validate user privileges in SystemConfigService.updateSystemConfig, allowing authenticated users to modify tenant system configuration. Attackers can rewrite or de",
+        "id": "CVE-2026-94495",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94495"
+      },
+      {
+        "cvss": 9.3,
+        "description": "A vulnerability was detected in Gigatech PDV5701 1.0.31_240305_112640. This issue affects some unknown processing of the file /index.html of the component WebSocket Service. The manipulation results i",
+        "id": "CVE-2026-94493",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94493"
+      },
+      {
+        "cvss": 2.0,
+        "description": "A vulnerability was determined in xuxueli xxl-job up to 3.5.0. The impacted element is an unknown function of the file /jobgroup/insert. This manipulation of the argument Name causes cross site script",
+        "id": "CVE-2026-94426",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94426"
+      },
+      {
+        "cvss": 8.7,
+        "description": "jshERP 3.6 contains a privilege escalation vulnerability in the updateOneValueByKeyIdAndType endpoint that allows authenticated users to grant themselves arbitrary roles. Attackers can send a POST req",
+        "id": "CVE-2026-94411",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94411"
+      },
+      {
+        "cvss": 5.5,
+        "description": "A flaw was found in libstoragemgmt. An attacker with control over a local or virtual storage device could provide specially crafted SCSI (Small Computer System Interface) Vital Product Data (VPD) page",
+        "id": "CVE-2026-93433",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93433"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 200,
+      "HIGH": 926,
+      "LOW": 95,
+      "MEDIUM": 500,
+      "NONE": 0,
+      "UNSCORED": 138
+    }
+  },
+  "snapshot": {
+    "cves": 1859,
+    "kevAdded": 2,
+    "knownExploited": 17,
+    "projects": 20,
+    "releases": 2,
+    "techEntries": 54
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 2,
+      "status": "success",
+      "total": 1723
+    },
+    "github_releases": {
+      "failures": 0,
+      "inWindow": 2,
+      "status": "success",
+      "total": 59
+    },
+    "github_repos": {
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 20
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1859,
+      "status": "success",
+      "total": 1859
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 54,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 20,
+      "tech": 34
+    },
+    "recent": [
+      {
+        "published_at": "2026-09-24T23:32:15+00:00",
+        "source": "The Register",
+        "title": "Crook used three open source agents to break into a Fortune 500 hospitality company, a major US airline and 25+ other orgs",
+        "url": "https://www.theregister.com/security/2026/09/25/crook-used-three-open-source-agents-to-break-into-a-fortune-500-hospitality-company-a-major-us-airline-and-25-other-orgs/5299012"
+      },
+      {
+        "published_at": "2026-09-24T23:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Agent Factory recap: Agent harnesses, shifting left, and autonomous coding",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-agent-harnesses-shifting-left-and-autonomous-coding/"
+      },
+      {
+        "published_at": "2026-09-24T20:58:46+00:00",
+        "source": "AWS",
+        "title": "Introducing enhanced custom event buses in Amazon EventBridge for enterprise-scale event-driven applications",
+        "url": "https://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications/"
+      },
+      {
+        "published_at": "2026-09-24T20:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "When chat is the wrong UI",
+        "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/"
+      },
+      {
+        "published_at": "2026-09-24T19:01:15+00:00",
+        "source": "The Register",
+        "title": "Salesforce Agentforce vulns allowed 0-click CRM data theft, anonymous phishing",
+        "url": "https://www.theregister.com/security/2026/09/24/salesforce-agentforce-vulns-allowed-0-click-crm-data-theft-anonymous-phishing/5298958"
+      },
+      {
+        "published_at": "2026-09-24T19:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Google is a Leader in the 2026 Gartner Magic Quadrant for Container Management",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/2026-gartner-magic-quadrant-for-container-management/"
+      },
+      {
+        "published_at": "2026-09-24T18:26:12+00:00",
+        "source": "GitHub Blog",
+        "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+        "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/"
+      },
+      {
+        "published_at": "2026-09-24T17:00:00+00:00",
+        "source": "The Register",
+        "title": "Decades-old file security flaws found in Android, Linux, macOS, and Windows",
+        "url": "https://www.theregister.com/security/2026/09/24/decades-old-file-security-flaws-found-in-android-linux-macos-and-windows/5298672"
+      },
+      {
+        "published_at": "2026-09-24T16:33:00+00:00",
+        "source": "The Register",
+        "title": "CVE flood pushes Ubuntu onto weekly kernel release cycle",
+        "url": "https://www.theregister.com/os-platforms/2026/09/24/cve-flood-pushes-ubuntu-onto-weekly-kernel-release-cycle/5298912"
+      },
+      {
+        "published_at": "2026-09-24T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Scribd, Inc. classifies more than 400 million documents with Gemini batch inference on Gemini Enterprise",
+        "url": "https://cloud.google.com/blog/topics/customers/scribd-inc-classifies-millions-of-documents-on-gemini-enterprise/"
+      }
+    ],
+    "sources": {
+      "AWS": 3,
+      "Ars Technica": 4,
+      "Cloudflare": 3,
+      "GitHub Blog": 4,
+      "Google Cloud": 15,
+      "Meta": 1,
+      "The Register": 24
+    }
+  },
+  "window": {
+    "end": "2026-09-24T23:59:59.999000+00:00",
+    "start": "2026-09-24T00:00:00+00:00"
+  }
+}
