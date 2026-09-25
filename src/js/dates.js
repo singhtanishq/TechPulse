@@ -114,9 +114,26 @@ function formatRelativeIST(dateString) {
 }
 
 /**
+ * IST calendar parts (year/month/day/hour/minute) for a UTC instant —
+ * computed arithmetically so every browser and ICU build renders
+ * identically (no Intl month-name variance).
+ */
+function istPartsFromInstant(ms) {
+    const shifted = new Date(ms + TECHPULSE_IST_OFFSET_MINUTES * 60000);
+    return {
+        year: shifted.getUTCFullYear(),
+        month: shifted.getUTCMonth() + 1,
+        day: shifted.getUTCDate(),
+        hour: shifted.getUTCHours(),
+        minute: shifted.getUTCMinutes(),
+    };
+}
+
+/**
  * Deterministic display label for any date value.
  * - Date-only strings: "28 SEP 2026" (from string parts).
- * - ISO timestamps: formatted in Asia/Kolkata explicitly.
+ * - ISO timestamps: converted to the IST calendar, then formatted from
+ *   parts (timestamps without an offset are treated as UTC).
  */
 function formatDisplayDate(value) {
     if (!value || typeof value !== "string") return "—";
@@ -129,18 +146,8 @@ function formatDisplayDate(value) {
 
     const parsed = parseISOUTC(value);
     if (!parsed) return "—";
-    try {
-        return parsed
-            .toLocaleDateString("en-GB", {
-                day: "2-digit",
-                month: "short",
-                year: "numeric",
-                timeZone: "Asia/Kolkata",
-            })
-            .toUpperCase();
-    } catch (error) {
-        return "—";
-    }
+    const parts = istPartsFromInstant(parsed.getTime());
+    return `${String(parts.day).padStart(2, "0")} ${TECHPULSE_MONTHS[parts.month - 1]} ${parts.year}`.toUpperCase();
 }
 
 /** Long-form label: "28 September 2026". */
