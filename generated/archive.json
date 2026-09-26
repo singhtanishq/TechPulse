@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-09-25",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 29,
+            "full_name": "react/react",
+            "language": "JavaScript",
+            "stars": 250746,
+            "url": "https://github.com/react/react"
+          },
+          {
+            "daily_growth": 48,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200355,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 42,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 142472,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 30,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139025,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 34,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128012,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 23,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122101,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 30,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 119187,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 18,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 110776,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 53,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103350,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 21,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97691,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 95,
+          "HIGH": 493,
+          "LOW": 43,
+          "MEDIUM": 394,
+          "NONE": 0,
+          "UNSCORED": 416
+        }
+      },
+      "snapshot": {
+        "cves": 1441,
+        "kevAdded": 3,
+        "knownExploited": 6,
+        "projects": 20,
+        "releases": 0,
+        "techEntries": 57
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 3,
+          "status": "success",
+          "total": 1726
+        },
+        "github_releases": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 59
+        },
+        "github_repos": {
+          "failures": 0,
+          "inWindow": 20,
+          "status": "success",
+          "total": 20
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1441,
+          "status": "success",
+          "total": 1441
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 57,
+          "status": "success",
+          "total": 228
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 19,
+          "tech": 38
+        },
+        "recent": [
+          {
+            "published_at": "2026-09-25T19:38:59+00:00",
+            "source": "Ars Technica",
+            "title": "Your uncle’s frozen Mac says it’s infected after viewing a Google ad. Now what?",
+            "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/"
+          },
+          {
+            "published_at": "2026-09-25T19:13:20+00:00",
+            "source": "The Register",
+            "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
+            "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
+          },
+          {
+            "published_at": "2026-09-25T18:57:10+00:00",
+            "source": "The Register",
+            "title": "New software dependency validation process increases speeds by 54x",
+            "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
+          },
+          {
+            "published_at": "2026-09-25T18:23:31+00:00",
+            "source": "The Register",
+            "title": "ShinyHunters tells The Reg: We hacked the FBI to 'protect our business'",
+            "url": "https://www.theregister.com/cyber-crime/2026/09/25/shinyhunters-tells-the-reg-we-hacked-the-fbi-to-protect-our-business/5299250"
+          },
+          {
+            "published_at": "2026-09-25T18:00:00+00:00",
+            "source": "GitHub Blog",
+            "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+            "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/"
+          },
+          {
+            "published_at": "2026-09-25T17:29:54+00:00",
+            "source": "The Register",
+            "title": "Crooks use fake desktop apps to fool HR staff into giving them remote access",
+            "url": "https://www.theregister.com/security/2026/09/25/crooks-use-fake-desktop-apps-to-fool-hr-staff-into-giving-them-remote-access/5299226"
+          },
+          {
+            "published_at": "2026-09-25T17:04:07+00:00",
+            "source": "The Register",
+            "title": "Bitget blames North Korea for $387.5M crypto wallet raid",
+            "url": "https://www.theregister.com/cyber-crime/2026/09/25/bitget-blames-north-korea-for-3875m-crypto-wallet-raid/5299218"
+          },
+          {
+            "published_at": "2026-09-25T16:01:03+00:00",
+            "source": "Netflix",
+            "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
+            "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252?source=rss----2615bd06b42e---4"
+          },
+          {
+            "published_at": "2026-09-25T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-09-25T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-09-24",
       "opensource": {
         "topProjects": [
@@ -1800,7 +2004,7 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-25T13:59:14.018851+00:00",
-    "totalSnapshots": 8
+    "generatedAt": "2026-09-26T13:15:57.665963+00:00",
+    "totalSnapshots": 9
   }
 }

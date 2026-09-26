@@ -1,0 +1,325 @@
+{
+  "date": "2026-09-25",
+  "generatedAt": "2026-09-26T13:15:57.665963+00:00",
+  "opensource": {
+    "growthBasis": "previous_observation",
+    "topProjects": [
+      {
+        "daily_growth": 29,
+        "full_name": "react/react",
+        "language": "JavaScript",
+        "stars": 250746,
+        "url": "https://github.com/react/react"
+      },
+      {
+        "daily_growth": 48,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200355,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 42,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 142472,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 30,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139025,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 34,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128012,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 23,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122101,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 30,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119187,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 18,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 110776,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 53,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103350,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 21,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97691,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": []
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-87902",
+        "date_added": "2026-09-25",
+        "product": "Core",
+        "vendor_project": "WordPress",
+        "vulnerability_name": "WordPress Core Remote File Inclusion Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-67279",
+        "date_added": "2026-09-25",
+        "product": "RouterOS",
+        "vendor_project": "MikroTik",
+        "vulnerability_name": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-65660",
+        "date_added": "2026-09-25",
+        "product": "SharePoint",
+        "vendor_project": "Microsoft",
+        "vulnerability_name": "Microsoft SharePoint Code Injection Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 8.8,
+        "description": "Horilla is an HR and CRM software. Prior to 2.0.0, HorillaListView.export_data in horilla_views/generic/cbv/views.py accepts an authenticated user's columns POST parameter, takes field_tuple[1], inter",
+        "id": "CVE-2026-96795",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96795"
+      },
+      {
+        "cvss": 6.7,
+        "description": "BusyBox passwd/group tokenize() references a stale endpoint pointer after trimming, causing an out-of-bounds write of heap pointers.",
+        "id": "CVE-2026-88839",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88839"
+      },
+      {
+        "cvss": 6.5,
+        "description": "BusyBox httpd treats yescrypt ($y$) password hashes as plaintext during Basic Authentication, inverting the authentication check.",
+        "id": "CVE-2026-88837",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88837"
+      },
+      {
+        "cvss": 6.1,
+        "description": "BusyBox dpkg read_package_field() steps past a NUL terminator on malformed .deb packages, causing an out-of-bounds heap read.",
+        "id": "CVE-2026-88835",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88835"
+      },
+      {
+        "cvss": 7.3,
+        "description": "BusyBox romfs volume ID parsing uses unbounded strlen on attacker-controlled metadata, causing a heap buffer overflow when processing crafted filesystem images.",
+        "id": "CVE-2026-88832",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88832"
+      },
+      {
+        "cvss": 5.3,
+        "description": "BusyBox httpd IP deny rules with invalid CIDR prefix lengths fail open, leaving a parsed IP with a zeroed mask so the rule matches no clients.",
+        "id": "CVE-2026-88831",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88831"
+      },
+      {
+        "cvss": 5.6,
+        "description": "A flaw was found in crun. When the container configuration does not give /dev a dedicated mount, terminal setup can redirect /dev/console onto an attacker-controlled path, including via the read-only-",
+        "id": "CVE-2026-88264",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88264"
+      },
+      {
+        "cvss": 5.9,
+        "description": "Horilla is an HR and CRM software. Prior to 2.0.0, approve_validate_attendance_request at /attendance/approve-validate-attendance-request/ changes attendance_validated, is_validate_request_approved, a",
+        "id": "CVE-2026-86066",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86066"
+      },
+      {
+        "cvss": 7.1,
+        "description": "Actual is a local-first personal finance tool. Prior to 26.7.0, Actual Sync Server's CORS proxy is intended to let authenticated users fetch resources only from repositories listed in the official plu",
+        "id": "CVE-2026-57449",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57449"
+      },
+      {
+        "cvss": 5.6,
+        "description": "A flaw was found in evolution-data-server. Inconsistent comparison logic in the addressbook file backend allows a Flatpak application with D-Bus access to craft a malicious URI containing directory tr",
+        "id": "CVE-2026-2604",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2604"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 95,
+      "HIGH": 493,
+      "LOW": 43,
+      "MEDIUM": 394,
+      "NONE": 0,
+      "UNSCORED": 416
+    }
+  },
+  "snapshot": {
+    "cves": 1441,
+    "kevAdded": 3,
+    "knownExploited": 6,
+    "projects": 20,
+    "releases": 0,
+    "techEntries": 57
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 3,
+      "status": "success",
+      "total": 1726
+    },
+    "github_releases": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 59
+    },
+    "github_repos": {
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 20
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1441,
+      "status": "success",
+      "total": 1441
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 57,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 19,
+      "tech": 38
+    },
+    "recent": [
+      {
+        "published_at": "2026-09-25T19:38:59+00:00",
+        "source": "Ars Technica",
+        "title": "Your uncle’s frozen Mac says it’s infected after viewing a Google ad. Now what?",
+        "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/"
+      },
+      {
+        "published_at": "2026-09-25T19:13:20+00:00",
+        "source": "The Register",
+        "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
+        "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
+      },
+      {
+        "published_at": "2026-09-25T18:57:10+00:00",
+        "source": "The Register",
+        "title": "New software dependency validation process increases speeds by 54x",
+        "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
+      },
+      {
+        "published_at": "2026-09-25T18:23:31+00:00",
+        "source": "The Register",
+        "title": "ShinyHunters tells The Reg: We hacked the FBI to 'protect our business'",
+        "url": "https://www.theregister.com/cyber-crime/2026/09/25/shinyhunters-tells-the-reg-we-hacked-the-fbi-to-protect-our-business/5299250"
+      },
+      {
+        "published_at": "2026-09-25T18:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+        "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/"
+      },
+      {
+        "published_at": "2026-09-25T17:29:54+00:00",
+        "source": "The Register",
+        "title": "Crooks use fake desktop apps to fool HR staff into giving them remote access",
+        "url": "https://www.theregister.com/security/2026/09/25/crooks-use-fake-desktop-apps-to-fool-hr-staff-into-giving-them-remote-access/5299226"
+      },
+      {
+        "published_at": "2026-09-25T17:04:07+00:00",
+        "source": "The Register",
+        "title": "Bitget blames North Korea for $387.5M crypto wallet raid",
+        "url": "https://www.theregister.com/cyber-crime/2026/09/25/bitget-blames-north-korea-for-3875m-crypto-wallet-raid/5299218"
+      },
+      {
+        "published_at": "2026-09-25T16:01:03+00:00",
+        "source": "Netflix",
+        "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
+        "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252?source=rss----2615bd06b42e---4"
+      },
+      {
+        "published_at": "2026-09-25T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      },
+      {
+        "published_at": "2026-09-25T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 3,
+      "Cloudflare": 2,
+      "GitHub Blog": 6,
+      "Google Cloud": 20,
+      "Meta": 1,
+      "Netflix": 1,
+      "The Register": 23
+    }
+  },
+  "window": {
+    "end": "2026-09-25T23:59:59.999000+00:00",
+    "start": "2026-09-25T00:00:00+00:00"
+  }
+}
