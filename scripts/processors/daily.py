@@ -6,7 +6,9 @@ TechPulse — Daily Snapshot Processor
 Creates the daily snapshot archive record from all normalized datasets.
 
 Semantics:
-    A snapshot covers exactly one UTC calendar day. Snapshots are
+    A snapshot (edition) represents one TechPulse reporting date — an
+    India calendar day (Asia/Kolkata). The edition for date X covers
+    the previous IST day [X-1 00:00 IST, X 00:00 IST). Snapshots are
     append-only: an existing snapshot for a date is never silently
     rewritten unless its content meaningfully changes (record counts
     and statistics). The generation timestamp is derived from source
@@ -21,7 +23,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -34,21 +36,23 @@ from processors.utils import (
     load_json,
     save_json,
     parse_iso_datetime,
-    utc_now,
-    format_relative_date,
+    ist_day_window,
+    ist_date_of,
+    ist_today,
+    parse_ist_date,
 )
 
 DAILY_DIR = DATA_DIR / "daily"
 
 
-def resolve_snapshot_date(date_arg: str | None) -> datetime:
+def resolve_snapshot_date(date_arg: str | None) -> str:
     if date_arg:
         try:
-            return datetime.strptime(date_arg, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            parse_ist_date(date_arg)
+            return date_arg
         except ValueError:
             raise SystemExit("--date must be in YYYY-MM-DD format.")
-    day = (utc_now() - timedelta(days=1)).date()
-    return datetime(day.year, day.month, day.day, tzinfo=timezone.utc)
+    return ist_today()
 
 
 def resolve_window(date_arg: str | None, start_arg: str | None, end_arg: str | None):
@@ -58,8 +62,8 @@ def resolve_window(date_arg: str | None, start_arg: str | None, end_arg: str | N
         if start is None or end is None:
             raise SystemExit("Invalid --start/--end datetime.")
         return start, end
-    day = resolve_snapshot_date(date_arg)
-    return day, day + timedelta(days=1) - timedelta(milliseconds=1)
+    reporting_date = resolve_snapshot_date(date_arg)
+    return ist_day_window(reporting_date)
 
 
 def snapshot_fingerprint(snapshot: dict[str, Any]) -> str:
