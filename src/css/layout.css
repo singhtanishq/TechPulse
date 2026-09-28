@@ -1005,13 +1005,13 @@ body.nav-open .mobile-nav {
     transition:
         opacity var(--dur-slow) var(--ease),
         transform var(--dur-slow) var(--ease);
-
-    transition-delay: var(--reveal-delay, var(--stagger, 0) is not set);
 }
 
-/* Per-item stagger from --stagger (index) or explicit --reveal-delay. */
+/* Per-item stagger from --stagger (index), overridden by --reveal-delay
+   when the JS observer assigns a batch delay. */
 .reveal-item {
     transition-delay: calc(min(var(--stagger, 0), 8) * 55ms);
+    transition-delay: var(--reveal-delay, calc(min(var(--stagger, 0), 8) * 55ms));
 }
 
 .reveal.is-visible,
