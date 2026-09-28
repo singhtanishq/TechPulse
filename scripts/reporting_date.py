@@ -69,11 +69,7 @@ def main() -> int:
         return 1
 
     window_start, window_end = ist_day_window(reporting_date)
-    covered_day = (
-        window_start.astimezone(__import__("datetime").timezone(
-            __import__("datetime").timedelta(hours=5, minutes=30)
-        )).date().isoformat()
-    )
+    covered_day = (parse_ist_date(reporting_date) - timedelta(days=1)).isoformat()
 
     print(f"REPORTING_DATE={reporting_date}")
     print(f"Resolved via : {reason}", file=sys.stderr)
