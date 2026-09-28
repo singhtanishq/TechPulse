@@ -104,7 +104,7 @@ def process_opensource(snapshot_date: str) -> dict[str, Any]:
         failures = len(collector_failures)
         print(f"  Loaded {len(repos)} repositories from {repos_path.name}")
 
-    prior_stars = previous_observation_stars()
+    prior_stars = previous_observation_stars(snapshot_date)
     growth_basis = "previous_observation" if prior_stars else "unavailable"
 
     for repo in repos:
