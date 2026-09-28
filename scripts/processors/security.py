@@ -110,11 +110,16 @@ def latest_by_modified(vulns: list[dict[str, Any]], limit: int) -> list[dict[str
     return sorted(vulns, key=sort_key, reverse=True)[:limit]
 
 
-def process_security(start: datetime, end: datetime, covered_ist_day: str) -> dict[str, Any]:
+def process_security(
+    start: datetime,
+    end: datetime,
+    covered_ist_day: str,
+    reporting_date: str | None = None,
+) -> dict[str, Any]:
     """Process security data from NVD and CISA KEV."""
 
-    nvd_path = latest_dated_file(NVD_DIR)
-    cisa_path = latest_dated_file(CISA_DIR)
+    nvd_path = dated_file_for(NVD_DIR, reporting_date)
+    cisa_path = dated_file_for(CISA_DIR, reporting_date)
 
     print("Loading NVD data...")
     nvd_data = load_json(nvd_path) if nvd_path else None
