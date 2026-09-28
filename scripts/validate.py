@@ -320,6 +320,9 @@ def check_generated_data() -> None:
     meta = data.get("meta", {})
     if not re.match(r"^\d{4}-\d{2}-\d{2}$", str(meta.get("date", ""))):
         fail("generated/data.json: meta.date must be YYYY-MM-DD")
+    if "coveredDate" in meta and meta.get("coveredDate") and \
+            not re.match(r"^\d{4}-\d{2}-\d{2}$", str(meta.get("coveredDate"))):
+        fail("generated/data.json: meta.coveredDate must be YYYY-MM-DD")
 
     snapshot = data.get("snapshot", {})
     for key in ("cves", "knownExploited", "releases", "projects", "techEntries"):
