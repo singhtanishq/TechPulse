@@ -78,10 +78,10 @@ def release_kind(version: str) -> str:
     return "patch"
 
 
-def process_releases(start: datetime, end: datetime, covered_ist_day: str) -> dict[str, Any]:
+def process_releases(start: datetime, end: datetime, covered_ist_day: str, reporting_date: str | None = None) -> dict[str, Any]:
     """Process releases data."""
 
-    releases_path = latest_dated_file(RELEASES_DIR)
+    releases_path = dated_file_for(RELEASES_DIR, reporting_date)
 
     print("Loading releases data...")
     releases_data = load_json(releases_path) if releases_path else None
@@ -160,7 +160,7 @@ def main() -> int:
     print("=" * 32)
 
     try:
-        start, end, covered_ist_day = resolve_window(args.date, args.start, args.end)
+        start, end, covered_ist_day, reporting_date = resolve_window(args.date, args.start, args.end)
     except ValueError as exc:
         parser.error(str(exc))
 
@@ -169,7 +169,7 @@ def main() -> int:
     print()
 
     try:
-        result = process_releases(start, end, covered_ist_day)
+        result = process_releases(start, end, covered_ist_day, reporting_date)
         output_path = NORMALIZED_DIR / "releases.json"
         save_json(result, output_path)
     except Exception as exc:
