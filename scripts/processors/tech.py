@@ -89,9 +89,10 @@ def process_tech(start: datetime, end: datetime, covered_ist_day: str) -> dict[s
     window_entries = []
     for entry in all_entries:
         published = parse_iso_datetime(entry.get("published_at"))
-        if published and lookback_start <= published <= end:
+        if published and lookback_start <= published < end:
             enriched = dict(entry)
-            enriched["relative_date"] = format_relative_date(published, now=utc_now())
+            # No relative labels here: the frontend renders live
+            # relative dates from the ISO timestamp.
             window_entries.append(enriched)
 
     # Deterministic ordering: published descending, then URL, then title.
