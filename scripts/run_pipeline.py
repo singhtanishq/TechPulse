@@ -31,21 +31,18 @@ import argparse
 import subprocess
 import sys
 import time
+from datetime import timedelta
 from pathlib import Path
 
 SCRIPTS_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (  # noqa: E402
-    IST,
     ist_day_window,
     ist_now,
-    ist_today,
-    newest_snapshot_date,
     parse_ist_date,
     resolve_reporting_date,
 )
-from datetime import timedelta  # noqa: E402
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
