@@ -12,6 +12,13 @@ Semantics preserved:
     - CISA KEV "known exploited" status is tracked separately from
       NVD severity; the two concepts are never merged.
 
+Reporting window:
+    The edition for reporting date X (an India calendar day) covers
+    the previous IST day [X-1 00:00 IST, X 00:00 IST). CVEs are matched
+    by their lastModified instant against this half-open window; KEV
+    additions are matched by the dateAdded calendar day (date-only
+    values are never reinterpreted as UTC instants).
+
 Output:
     data/normalized/security.json
 """
@@ -20,7 +27,7 @@ from __future__ import annotations
 
 import argparse
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -29,13 +36,16 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (
     DATA_DIR,
+    ist_day_window,
+    ist_date_of,
+    ist_today,
     latest_dated_file,
     load_json,
     parse_iso_datetime,
     save_json,
     derive_processed_at,
     status_from_counts,
-    utc_now,
+    in_ist_day,
 )
 
 NVD_DIR = DATA_DIR / "security" / "nvd"
@@ -45,18 +55,30 @@ NORMALIZED_DIR = DATA_DIR / "normalized"
 SEVERITY_KEYS = ["CRITICAL", "HIGH", "MEDIUM", "LOW", "NONE"]
 
 
-def resolve_window(start_arg: str | None, end_arg: str | None) -> tuple[datetime, datetime]:
-    """Resolve the processing window, defaulting to the previous UTC day."""
-    end = parse_iso_datetime(end_arg) if end_arg else None
-    start = parse_iso_datetime(start_arg) if start_arg else None
+def resolve_window(
+    date_arg: str | None,
+    start_arg: str | None,
+    end_arg: str | None,
+) -> tuple[datetime, datetime, str]:
+    """
+    Resolve (start, end, covered_ist_day).
 
-    if end is None:
-        day = (utc_now() - timedelta(days=1)).date()
-        end = datetime(day.year, day.month, day.day, tzinfo=timezone.utc) + timedelta(days=1) - timedelta(milliseconds=1)
-    if start is None:
-        start = end - timedelta(days=1) + timedelta(milliseconds=1)
+    --date is the TechPulse reporting date; its window is the previous
+    completed IST day. Explicit --start/--end (ISO-8601) override the
+    window; the covered day is then derived from the window start.
+    """
+    if start_arg and end_arg:
+        start = parse_iso_datetime(start_arg)
+        end = parse_iso_datetime(end_arg)
+        if start is None or end is None:
+            raise ValueError("Invalid --start/--end datetime.")
+        covered = ist_date_of(start)
+        return start, end, covered
 
-    return start, end
+    reporting_date = date_arg or ist_today()
+    start, end = ist_day_window(reporting_date)
+    covered = (start, end)
+    return start, end, ist_date_of(start)
 
 
 def severity_counts(vulns: list[dict[str, Any]]) -> dict[str, int]:
