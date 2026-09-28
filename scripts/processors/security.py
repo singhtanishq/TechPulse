@@ -36,6 +36,7 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (
     DATA_DIR,
+    dated_file_for,
     ist_day_window,
     ist_date_of,
     ist_today,
@@ -59,25 +60,25 @@ def resolve_window(
     date_arg: str | None,
     start_arg: str | None,
     end_arg: str | None,
-) -> tuple[datetime, datetime, str]:
+) -> tuple[datetime, datetime, str, str | None]:
     """
-    Resolve (start, end, covered_ist_day).
+    Resolve (start, end, covered_ist_day, reporting_date).
 
     --date is the TechPulse reporting date; its window is the previous
     completed IST day. Explicit --start/--end (ISO-8601) override the
-    window; the covered day is then derived from the window start.
+    window; the covered day is then derived from the window start and
+    the reporting date (if any) is only used for file selection.
     """
     if start_arg and end_arg:
         start = parse_iso_datetime(start_arg)
         end = parse_iso_datetime(end_arg)
         if start is None or end is None:
             raise ValueError("Invalid --start/--end datetime.")
-        covered = ist_date_of(start)
-        return start, end, covered
+        return start, end, ist_date_of(start), (date_arg or None)
 
     reporting_date = date_arg or ist_today()
     start, end = ist_day_window(reporting_date)
-    return start, end, ist_date_of(start)
+    return start, end, ist_date_of(start), reporting_date
 
 
 def severity_counts(vulns: list[dict[str, Any]]) -> dict[str, int]:
