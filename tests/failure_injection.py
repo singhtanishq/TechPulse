@@ -221,6 +221,8 @@ class ProcessorEmptyInputTests(unittest.TestCase):
                 result = security.process_security(
                     datetime(2026, 9, 17, tzinfo=timezone.utc),
                     datetime(2026, 9, 18, tzinfo=timezone.utc) - timedelta(milliseconds=1),
+                    "2026-09-17",
+                    None,
                 )
             finally:
                 security.NVD_DIR = original_nvd
@@ -241,6 +243,8 @@ class ProcessorEmptyInputTests(unittest.TestCase):
                 result = releases.process_releases(
                     datetime(2026, 9, 17, tzinfo=timezone.utc),
                     datetime(2026, 9, 18, tzinfo=timezone.utc) - timedelta(milliseconds=1),
+                    "2026-09-17",
+                    None,
                 )
             finally:
                 releases.RELEASES_DIR = original
@@ -272,6 +276,8 @@ class ProcessorEmptyInputTests(unittest.TestCase):
                 result = tech.process_tech(
                     datetime(2026, 9, 17, tzinfo=timezone.utc),
                     datetime(2026, 9, 18, tzinfo=timezone.utc) - timedelta(milliseconds=1),
+                    "2026-09-17",
+                    None,
                 )
             finally:
                 tech.TECH_DIR = original
@@ -317,7 +323,7 @@ class PipelineExitCodeTests(unittest.TestCase):
             capture_output=True, text=True,
         )
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("Invalid date", result.stderr)
+        self.assertIn("Reporting date must be YYYY-MM-DD", result.stderr)
 
 
 if __name__ == "__main__":
