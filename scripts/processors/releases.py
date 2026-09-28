@@ -77,7 +77,7 @@ def release_kind(version: str) -> str:
     return "patch"
 
 
-def process_releases(start: datetime, end: datetime) -> dict[str, Any]:
+def process_releases(start: datetime, end: datetime, covered_ist_day: str) -> dict[str, Any]:
     """Process releases data."""
 
     releases_path = latest_dated_file(RELEASES_DIR)
@@ -97,10 +97,11 @@ def process_releases(start: datetime, end: datetime) -> dict[str, Any]:
     window_releases = []
     for rel in all_releases:
         published = parse_iso_datetime(rel.get("published_at"))
-        if published and start <= published <= end:
+        if published and start <= published < end:
             enriched = dict(rel)
             enriched["kind"] = release_kind(rel.get("version", ""))
-            enriched["relative_date"] = format_relative_date(published, now=utc_now())
+            # No relative labels here: the frontend renders live
+            # relative dates from the ISO timestamp.
             window_releases.append(enriched)
 
     # Deterministic ordering: published descending, then repository, then version.
