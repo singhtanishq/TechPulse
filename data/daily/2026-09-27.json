@@ -6,73 +6,73 @@
     "growthBasis": "previous_observation",
     "topProjects": [
       {
-        "daily_growth": 0,
+        "daily_growth": 25,
         "full_name": "react/react",
         "language": "JavaScript",
         "stars": 250794,
         "url": "https://github.com/react/react"
       },
       {
-        "daily_growth": 1,
+        "daily_growth": 25,
         "full_name": "tensorflow/tensorflow",
         "language": "C++",
-        "stars": 200577,
+        "stars": 200576,
         "url": "https://github.com/tensorflow/tensorflow"
       },
       {
-        "daily_growth": 2,
+        "daily_growth": 49,
         "full_name": "vercel/next.js",
         "language": "JavaScript",
-        "stars": 142819,
+        "stars": 142817,
         "url": "https://github.com/vercel/next.js"
       },
       {
-        "daily_growth": 0,
+        "daily_growth": 7,
         "full_name": "golang/go",
         "language": "Go",
         "stars": 139060,
         "url": "https://github.com/golang/go"
       },
       {
-        "daily_growth": 2,
+        "daily_growth": 17,
         "full_name": "kubernetes/kubernetes",
         "language": "Go",
-        "stars": 128065,
+        "stars": 128063,
         "url": "https://github.com/kubernetes/kubernetes"
       },
       {
-        "daily_growth": 0,
+        "daily_growth": 15,
         "full_name": "nodejs/node",
         "language": "JavaScript",
         "stars": 122147,
         "url": "https://github.com/nodejs/node"
       },
       {
-        "daily_growth": 0,
+        "daily_growth": 19,
         "full_name": "rust-lang/rust",
         "language": "Rust",
         "stars": 119254,
         "url": "https://github.com/rust-lang/rust"
       },
       {
-        "daily_growth": 3,
+        "daily_growth": 30,
         "full_name": "supabase/supabase",
         "language": "TypeScript",
-        "stars": 110838,
+        "stars": 110835,
         "url": "https://github.com/supabase/supabase"
       },
       {
-        "daily_growth": 1,
+        "daily_growth": 30,
         "full_name": "pytorch/pytorch",
         "language": "Python",
-        "stars": 103435,
+        "stars": 103434,
         "url": "https://github.com/pytorch/pytorch"
       },
       {
-        "daily_growth": 1,
+        "daily_growth": 17,
         "full_name": "tailwindlabs/tailwindcss",
         "language": "TypeScript",
-        "stars": 97721,
+        "stars": 97720,
         "url": "https://github.com/tailwindlabs/tailwindcss"
       }
     ]
@@ -88,20 +88,101 @@
   },
   "security": {
     "kevRecent": [],
-    "latest": [],
+    "latest": [
+      {
+        "cvss": 6.5,
+        "description": "Lemonldap::NG::Handler versions from 2.0.0 before 2.16.10, from 2.17.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow an equivalent spelling of a path to bypass the locationRules that restric",
+        "id": "CVE-2026-95811",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95811"
+      },
+      {
+        "cvss": 9.4,
+        "description": "vm2 through 3.11.6 does not normalize `node:`-prefixed builtin specifiers when evaluating user-supplied negative (deny) entries in a NodeVM wildcard require policy. Although NodeVM strips the `node:` ",
+        "id": "CVE-2026-92957",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92957"
+      },
+      {
+        "cvss": 7.5,
+        "description": "PLANET IGS-5225-8P2T4S industrial managed switch V1 and V2 firmware versions before 1.2412b260707 and 2.2412b260519 contain a stack-based buffer overflow in the web server. Insufficient bounds checkin",
+        "id": "CVE-2026-81945",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81945"
+      },
+      {
+        "cvss": 9.4,
+        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882/SLCx-03/SLCx-02 contain a command injection ",
+        "id": "CVE-2026-80152",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80152"
+      },
+      {
+        "cvss": 9.4,
+        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882/SLCx-03/SLCx-02 contain a command injection ",
+        "id": "CVE-2026-80151",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80151"
+      },
+      {
+        "cvss": 7.7,
+        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882 contain a server-side request forgery vulner",
+        "id": "CVE-2026-80150",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80150"
+      },
+      {
+        "cvss": 7.7,
+        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882 contain a server-side request forgery vulner",
+        "id": "CVE-2026-80149",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80149"
+      },
+      {
+        "cvss": 7.7,
+        "description": "Lantronix SLC8000 before firmware v9.7.0.3, SLC9000 before firmware v9.7.0.2, EMG8500/EMG7500 before firmware v9.7.0.1, and all firmware versions of SLB882 contain a server-side request forgery vulner",
+        "id": "CVE-2026-80148",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80148"
+      },
+      {
+        "cvss": 8.5,
+        "description": "froxlor is a server administration panel. In versions 2.3.10 and earlier, Validate::validateUrl rejects carriage return and line feed characters only in the path, query and fragment components returne",
+        "id": "CVE-2026-100717",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100717"
+      },
+      {
+        "cvss": 9.4,
+        "description": "Froxlor is a server administration panel. In versions 2.3.10 and earlier, the customer data-export (DataDump) cron fails to validate intermediate path components of the export destination: Froxlor\\Fil",
+        "id": "CVE-2026-100716",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100716"
+      }
+    ],
     "severity": {
-      "CRITICAL": 0,
-      "HIGH": 0,
-      "LOW": 0,
-      "MEDIUM": 0,
+      "CRITICAL": 91,
+      "HIGH": 459,
+      "LOW": 82,
+      "MEDIUM": 447,
       "NONE": 0,
-      "UNSCORED": 0
+      "UNSCORED": 29
     }
   },
   "snapshot": {
-    "cves": 0,
+    "cves": 1108,
     "kevAdded": 0,
-    "knownExploited": 0,
+    "knownExploited": 7,
     "projects": 20,
     "releases": 0,
     "techEntries": 41
@@ -127,9 +208,9 @@
     },
     "nvd": {
       "failures": 0,
-      "inWindow": 0,
-      "status": "empty",
-      "total": 286
+      "inWindow": 1108,
+      "status": "success",
+      "total": 1108
     },
     "rss": {
       "failures": 1,
