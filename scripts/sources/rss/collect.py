@@ -31,13 +31,18 @@ import re
 import sys
 import time
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
 import urllib.error
 import urllib.request
+
+SCRIPTS_DIR = Path(__file__).resolve().parents[3] / "scripts"
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from processors.utils import ist_today  # noqa: E402
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -50,15 +55,6 @@ RETRY_BACKOFF_BASE = 2
 SUMMARY_MAX_CHARS = 300
 
 ATOM_NS = "http://www.w3.org/2005/Atom"
-
-
-def utc_now() -> datetime:
-    return datetime.now(timezone.utc)
-
-
-def default_snapshot_date() -> str:
-    yesterday = (utc_now() - timedelta(days=1)).date()
-    return yesterday.isoformat()
 
 
 def parse_datetime(value: str | None) -> datetime | None:
