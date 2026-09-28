@@ -159,11 +159,13 @@ def process_daily(
         }
 
     snapshot: dict[str, Any] = {
-        "date": snapshot_date.date().isoformat(),
+        "date": reporting_date,
+        "coveredIstDay": covered_ist_day,
         "generatedAt": generated_at,
         "window": {
             "start": window_start.isoformat(),
             "end": window_end.isoformat(),
+            "timezone": "Asia/Kolkata",
         },
         "snapshot": {
             "cves": security_summary.get("total", 0),
