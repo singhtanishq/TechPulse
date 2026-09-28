@@ -1,17 +1,18 @@
 name: Deploy to GitHub Pages
 
-# Deploys the static site to GitHub Pages.
+# Deploys the static TechPulse site to GitHub Pages.
 #
-# Deployment architecture (explicit):
-#   The served site is a staging directory assembled from:
-#     - src/**          -> site root (HTML/CSS/JS, relative paths)
-#     - generated/**    -> site generated/ (frontend JSON data)
-#   Relative paths throughout the frontend resolve correctly under
-#   the project subpath https://<owner>.github.io/TechPulse/.
+# Deployment architecture:
+#   src/**       -> site root
+#   generated/** -> site/generated/
+#
+# The frontend is intentionally deployed as a static directory tree.
+# Relative paths remain valid under the GitHub Pages project path:
+# https://<owner>.github.io/TechPulse/
 #
 # Triggers:
-#   - push to main touching served content (src/ or generated/)
-#   - after each successful Collect run (via workflow_run)
+#   - push to main touching served source or this workflow
+#   - after a successful Collect workflow
 #   - manual dispatch
 
 on:
@@ -22,13 +23,14 @@ on:
       - completed
     branches:
       - main
+
   push:
     branches:
       - main
     paths:
       - "src/**"
-      - "generated/**"
       - ".github/workflows/deploy.yml"
+
   workflow_dispatch:
 
 permissions:
@@ -46,41 +48,167 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
-    # Skip when the Collect workflow failed (avoid deploying stale state
-    # while masking a failure).
+    # A workflow_run deployment is allowed only after Collect succeeds.
+    # Direct pushes and manual runs are allowed independently.
     if: >-
-      ${{ github.event_name != 'workflow_run' ||
-          github.event.workflow_run.conclusion == 'success' }}
+      ${{
+        github.event_name != 'workflow_run' ||
+        github.event.workflow_run.conclusion == 'success'
+      }}
 
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      # -------------------------------------------------------------- #
+      # Checkout
+      # -------------------------------------------------------------- #
+
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      # -------------------------------------------------------------- #
+      # Validate deployment inputs
+      # -------------------------------------------------------------- #
+
+      - name: Verify deployment inputs
+        run: |
+          set -euo pipefail
+
+          test -d src || {
+            echo "::error::src/ directory is missing"
+            exit 1
+          }
+
+          test -f src/index.html || {
+            echo "::error::src/index.html is missing"
+            exit 1
+          }
+
+          test -f generated/data.json || {
+            echo "::error::generated/data.json is missing; refusing to deploy"
+            exit 1
+          }
+
+          if [ ! -f generated/archive.json ]; then
+            echo "::warning::generated/archive.json is missing; deploying without archive data"
+          fi
+
+          echo "Deployment inputs verified."
+
+      # -------------------------------------------------------------- #
+      # Configure GitHub Pages
+      # -------------------------------------------------------------- #
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
+      # -------------------------------------------------------------- #
+      # Assemble static deployment
+      # -------------------------------------------------------------- #
+
       - name: Assemble deployment staging
         run: |
+          set -euo pipefail
+
+          rm -rf site
           mkdir -p site/generated
+
           cp -R src/. site/
           cp generated/data.json site/generated/data.json
+
           if [ -f generated/archive.json ]; then
             cp generated/archive.json site/generated/archive.json
           fi
+
+          # GitHub Pages should never receive repository-internal
+          # source/control directories.
+          rm -rf \
+            site/.git \
+            site/.github \
+            site/scripts \
+            site/tests \
+            site/data
+
           echo "Staging contents:"
           find site -type f | sort
+
+      # -------------------------------------------------------------- #
+      # Static staging validation
+      # -------------------------------------------------------------- #
+
+      - name: Validate staged site
+        run: |
+          set -euo pipefail
+
+          test -f site/index.html
+          test -f site/security.html
+          test -f site/releases.html
+          test -f site/opensource.html
+          test -f site/history.html
+
+          test -f site/js/data.js
+          test -f site/js/dates.js
+          test -f site/js/components.js
+          test -f site/js/app.js
+
+          test -f site/css/base.css
+          test -f site/css/layout.css
+          test -f site/css/components.css
+
+          test -f site/generated/data.json
+
+          if [ -f site/generated/archive.json ]; then
+            echo "Archive data present."
+          else
+            echo "Archive data not present."
+          fi
+
+          echo "Staged site validation passed."
+
+      # -------------------------------------------------------------- #
+      # Upload Pages artifact
+      # -------------------------------------------------------------- #
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
+      # -------------------------------------------------------------- #
+      # Deploy
+      # -------------------------------------------------------------- #
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # -------------------------------------------------------------- #
+      # Summary
+      # -------------------------------------------------------------- #
+
+      - name: Deployment summary
+        if: always()
+        run: |
+          {
+            echo "## TechPulse deployment"
+            echo ""
+            echo "| Item | Value |"
+            echo "|------|-------|"
+            echo "| Trigger | \`${{ github.event_name }}\` |"
+            echo "| Commit | \`${{ github.sha }}\` |"
+            echo "| Site artifact | \`site/\` |"
+            echo "| Generated data | \`generated/data.json\` |"
+
+            if [ -f generated/archive.json ]; then
+              echo "| Archive data | present |"
+            else
+              echo "| Archive data | absent |"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
