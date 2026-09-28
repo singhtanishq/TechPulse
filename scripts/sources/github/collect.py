@@ -37,12 +37,17 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 import urllib.error
 import urllib.request
+
+SCRIPTS_DIR = Path(__file__).resolve().parents[3] / "scripts"
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from processors.utils import ist_today  # noqa: E402
 
 
 GITHUB_API_BASE = "https://api.github.com"
@@ -57,15 +62,6 @@ DEFAULT_TIMEOUT = 30
 MAX_ATTEMPTS = 3
 RETRY_BACKOFF_BASE = 2
 RATE_LIMIT_DELAY = 1
-
-
-def utc_now() -> datetime:
-    return datetime.now(timezone.utc)
-
-
-def default_snapshot_date() -> str:
-    yesterday = (utc_now() - timedelta(days=1)).date()
-    return yesterday.isoformat()
 
 
 def load_config() -> dict[str, Any]:
