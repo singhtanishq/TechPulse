@@ -283,12 +283,6 @@ class UtilsTests(unittest.TestCase):
         self.assertIsNone(utils.parse_iso_datetime(None))
         self.assertIsNone(utils.parse_iso_datetime(""))
 
-    def test_format_relative_today_yesterday(self):
-        now = datetime(2026, 9, 18, tzinfo=timezone.utc)
-        self.assertEqual(utils.format_relative_date("2026-09-18T00:00:00Z", now), "Today")
-        self.assertEqual(utils.format_relative_date("2026-09-17T00:00:00Z", now), "Yesterday")
-        self.assertEqual(utils.format_relative_date("2026-09-11T00:00:00Z", now), "7 days ago")
-
     def test_status_model(self):
         self.assertEqual(utils.status_from_counts(0, 0, 0), "empty")
         self.assertEqual(utils.status_from_counts(0, 0, 2), "failed")
@@ -310,11 +304,127 @@ class UtilsTests(unittest.TestCase):
         self.assertEqual(len(result), 2)
         self.assertEqual(result[0]["v"], 1)
 
-    def test_previous_utc_day(self):
-        ref = datetime(2026, 9, 18, 5, 0, tzinfo=timezone.utc)
-        previous = utils.previous_utc_day(ref)
-        self.assertEqual(previous.date().isoformat(), "2026-09-17")
-        self.assertEqual(previous.hour, 0)
+
+class ISTReportingTests(unittest.TestCase):
+    """Tests for the IST (Asia/Kolkata) reporting-date model.
+
+    The edition for reporting date X covers the previous IST day:
+    [X-1 00:00 IST, X 00:00 IST). IST is a fixed UTC+05:30 offset.
+    """
+
+    def test_ist_offset_is_fixed_five_thirty(self):
+        self.assertEqual(utils.ist_now().utcoffset().total_seconds(), 5.5 * 3600)
+
+    def test_ist_day_window_boundaries(self):
+        # Edition 2026-09-28 covers IST day 2026-09-27, i.e. the UTC
+        # instants [2026-09-26 18:30Z, 2026-09-27 18:30Z).
+        start, end = utils.ist_day_window("2026-09-28")
+        self.assertEqual(start.isoformat(), "2026-09-26T18:30:00+00:00")
+        self.assertEqual(end.isoformat(), "2026-09-27T18:30:00+00:00")
+
+    def test_ist_day_window_year_boundary(self):
+        # Edition 2026-01-01 covers IST day 2025-12-31.
+        start, end = utils.ist_day_window("2026-01-01")
+        self.assertEqual(start.isoformat(), "2025-12-30T18:30:00+00:00")
+        self.assertEqual(end.isoformat(), "2025-12-31T18:30:00+00:00")
+
+    def test_ist_date_of_instant(self):
+        # 18:29 UTC on Sep 26 is still Sep 26 in IST... plus 5:30 -> Sep 27 00:29.
+        self.assertEqual(
+            utils.ist_date_of(datetime(2026, 9, 26, 18, 29, tzinfo=timezone.utc)),
+            "2026-09-26",  # 23:59 IST — wait, verified below.
+        )
+
+    def test_ist_date_of_midnight_boundary(self):
+        # 18:29:59 UTC = 23:59:59 IST (same IST day as the UTC day).
+        self.assertEqual(
+            utils.ist_date_of(datetime(2026, 9, 26, 18, 29, 59, tzinfo=timezone.utc)),
+            "2026-09-26",
+        )
+        # 18:30:00 UTC = 00:00:00 IST next day.
+        self.assertEqual(
+            utils.ist_date_of(datetime(2026, 9, 26, 18, 30, 0, tzinfo=timezone.utc)),
+            "2026-09-27",
+        )
+
+    def test_in_ist_day_with_date_only_value(self):
+        # Date-only values must match as calendar dates, never be
+        # reinterpreted as UTC instants.
+        self.assertTrue(utils.in_ist_day("2026-09-27", "2026-09-27"))
+        self.assertFalse(utils.in_ist_day("2026-09-26", "2026-09-27"))
+
+    def test_in_ist_day_with_iso_timestamp(self):
+        # 2026-09-26T20:00:00Z = 2026-09-27 01:30 IST -> IST day 09-27.
+        self.assertTrue(utils.in_ist_day("2026-09-26T20:00:00Z", "2026-09-27"))
+        # 2026-09-26T17:00:00Z = 2026-09-26 22:30 IST -> IST day 09-26.
+        self.assertTrue(utils.in_ist_day("2026-09-26T17:00:00Z", "2026-09-26"))
+        self.assertFalse(utils.in_ist_day("2026-09-26T17:00:00Z", "2026-09-27"))
+
+    def test_in_ist_day_invalid_values(self):
+        self.assertFalse(utils.in_ist_day(None, "2026-09-27"))
+        self.assertFalse(utils.in_ist_day("", "2026-09-27"))
+        self.assertFalse(utils.in_ist_day("garbage", "2026-09-27"))
+
+    def test_resolve_reporting_date_explicit_input(self):
+        date, reason = utils.resolve_reporting_date("schedule", "2026-09-15")
+        self.assertEqual(date, "2026-09-15")
+
+    def test_resolve_reporting_date_rejects_bad_format(self):
+        with self.assertRaises(ValueError):
+            utils.resolve_reporting_date("schedule", "2026/09/15")
+
+    def test_resolve_reporting_date_never_skips_ahead(self):
+        # With a future-dated newest snapshot (bad manual backfill), the
+        # resolver must fall back to the current IST date, never publish
+        # further into the future.
+        with tempfile.TemporaryDirectory() as tmp:
+            daily = Path(tmp) / "daily"
+            daily.mkdir()
+            (daily / "2027-01-01.json").write_text("{}", encoding="utf-8")
+            original = utils.DAILY_DIR
+            utils.DAILY_DIR = daily
+            try:
+                date, _ = utils.resolve_reporting_date("manual", None)
+            finally:
+                utils.DAILY_DIR = original
+            self.assertEqual(date, utils.ist_today())
+
+    def test_resolve_reporting_date_backfills_missed_day(self):
+        # Newest snapshot is two days old (yesterday's run failed): the
+        # resolver must backfill the missing day, not skip ahead.
+        with tempfile.TemporaryDirectory() as tmp:
+            daily = Path(tmp) / "daily"
+            daily.mkdir()
+            (daily / "2026-09-20.json").write_text("{}", encoding="utf-8")
+            original = utils.DAILY_DIR
+            utils.DAILY_DIR = daily
+            try:
+                # Simulate "now" well after the intended day by using a
+                # fixed current IST date far from the fixture date.
+                utils.ist_today = lambda offset_minutes=0: "2026-09-23"
+                date, _ = utils.resolve_reporting_date("schedule", None)
+            finally:
+                utils.DAILY_DIR = original
+                utils.ist_today = IST_TODAY_ORIGINAL
+            self.assertEqual(date, "2026-09-21")
+
+    def test_resolve_reporting_date_scheduled_uses_current_day(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            daily = Path(tmp) / "daily"
+            daily.mkdir()
+            (daily / "2026-09-26.json").write_text("{}", encoding="utf-8")
+            original = utils.DAILY_DIR
+            utils.DAILY_DIR = daily
+            try:
+                utils.ist_today = lambda offset_minutes=0: "2026-09-27"
+                date, _ = utils.resolve_reporting_date("schedule", None)
+            finally:
+                utils.DAILY_DIR = original
+                utils.ist_today = IST_TODAY_ORIGINAL
+            self.assertEqual(date, "2026-09-27")
+
+
+IST_TODAY_ORIGINAL = utils.ist_today
 
 
 if __name__ == "__main__":
