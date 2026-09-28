@@ -12,11 +12,12 @@ Feed:   https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabi
 Note on semantics:
     The KEV catalog is a full catalog snapshot, not a daily delta.
     A collected file records the catalog state at collection time for
-    the target snapshot date. Downstream processors derive "new KEV
-    entries for date X" by comparing dateAdded fields.
+    the target reporting date. Downstream processors derive "new KEV
+    entries for the edition's covered India day" by matching the
+    dateAdded calendar day (see processors.utils.in_ist_day).
 
 Output:
-    data/security/cisa/YYYY-MM-DD.json
+    data/security/cisa/YYYY-MM-DD.json  (named by reporting date)
 
 Idempotency:
     Re-running for the same date with an identical catalog does not
@@ -29,12 +30,17 @@ import argparse
 import json
 import sys
 import time
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 import urllib.error
 import urllib.request
+
+SCRIPTS_DIR = Path(__file__).resolve().parents[3] / "scripts"
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from processors.utils import ist_today  # noqa: E402
 
 
 CATALOG_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
@@ -50,11 +56,6 @@ RETRY_BACKOFF_BASE = 2
 
 def utc_now() -> datetime:
     return datetime.now(timezone.utc)
-
-
-def default_snapshot_date() -> datetime:
-    yesterday = (utc_now() - timedelta(days=1)).date()
-    return datetime(yesterday.year, yesterday.month, yesterday.day, tzinfo=timezone.utc)
 
 
 def normalize_kev(entry: dict[str, Any]) -> dict[str, Any] | None:
