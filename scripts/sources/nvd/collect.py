@@ -3,13 +3,16 @@
 """
 TechPulse — NVD Collector
 
-Collects CVE records for a target UTC calendar day from the
-National Vulnerability Database (NVD) 2.0 API and stores
-normalized JSON data for downstream processing.
+Collects CVE records for a target reporting day from the National
+Vulnerability Database (NVD) 2.0 API and stores normalized JSON data
+for downstream processing.
 
 Snapshot semantics:
-    A snapshot covers one UTC calendar day (00:00:00Z - 23:59:59.999Z).
-    The default target date is the previous completed UTC day.
+    The reporting date is an India calendar day (Asia/Kolkata). The
+    edition for date X covers the previous completed IST day:
+    [X-1 00:00 IST, X 00:00 IST), passed to NVD as UTC instants.
+    The default target is the current reporting date (i.e. the IST day
+    that most recently ended).
 
 Output:
     data/security/nvd/YYYY-MM-DD.json
@@ -32,6 +35,15 @@ from typing import Any
 import urllib.error
 import urllib.parse
 import urllib.request
+
+SCRIPTS_DIR = Path(__file__).resolve().parents[3] / "scripts"
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from processors.utils import (  # noqa: E402
+    ist_day_window,
+    ist_today,
+    parse_iso_datetime,
+)
 
 
 API_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
@@ -56,10 +68,27 @@ def utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def default_snapshot_date() -> datetime:
-    """Return the previous completed UTC day at midnight."""
-    yesterday = (utc_now() - timedelta(days=1)).date()
-    return datetime(yesterday.year, yesterday.month, yesterday.day, tzinfo=timezone.utc)
+def resolve_window(date_arg: str | None, start_arg: str | None, end_arg: str | None) -> tuple[datetime, datetime]:
+    """
+    Resolve the collection window.
+
+    --date is the TechPulse reporting date (IST edition); its window is
+    the previous IST calendar day. Explicit --start/--end (ISO-8601,
+    any offset) override it.
+    """
+    if start_arg and end_arg:
+        start = parse_iso_datetime(start_arg)
+        end = parse_iso_datetime(end_arg)
+        if start is None or end is None:
+            raise ValueError("--start/--end must be ISO-8601 datetimes.")
+        return start, end
+    if start_arg or end_arg:
+        raise ValueError("--start and --end must be supplied together.")
+    reporting_date = date_arg or ist_today()
+    start, end = ist_day_window(reporting_date)
+    # NVD ranges are inclusive; end at the last millisecond before the
+    # IST midnight boundary so records never appear in two editions.
+    return start, end - timedelta(milliseconds=1)
 
 
 def format_nvd_datetime(value: datetime) -> str:
