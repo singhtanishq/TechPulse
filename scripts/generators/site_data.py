@@ -208,7 +208,7 @@ def generate_site_data(snapshot_date: str) -> dict[str, Any]:
 def main() -> int:
 
     parser = argparse.ArgumentParser(description="Generate the frontend site data.")
-    parser.add_argument("--date", help="Snapshot date (YYYY-MM-DD, UTC).")
+    parser.add_argument("--date", help="Reporting date (YYYY-MM-DD, IST edition).")
     args = parser.parse_args()
 
     snapshot_date = resolve_snapshot_date(args.date)
@@ -216,7 +216,7 @@ def main() -> int:
     print()
     print("TechPulse — Site Data Generator")
     print("=" * 32)
-    print(f"Snapshot date: {snapshot_date}")
+    print(f"Reporting date: {snapshot_date}")
     print()
 
     try:
