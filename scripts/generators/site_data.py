@@ -45,8 +45,6 @@ from processors.utils import (
     parse_ist_date,
 )
 
-SCRIPTS_DIR_REF = Path(__file__).resolve().parents[1]
-
 
 def resolve_snapshot_date(date_arg: str | None) -> str:
     if date_arg:
