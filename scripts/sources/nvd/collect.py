@@ -464,14 +464,10 @@ def main() -> int:
     if start_date >= end_date:
         parser.error("Start datetime must be earlier than end datetime.")
 
-    # The output filename is the reporting date (edition), not the window
-    # end date — the window covers the IST day preceding the edition.
-    if args.start and args.end:
-        reporting_date = args.date or end_date.astimezone(
-            __import__("datetime").timezone(timedelta(hours=5, minutes=30))
-        ).date().isoformat()
-    else:
-        reporting_date = args.date or ist_today()
+    # The output filename is the reporting date (edition), not a date
+    # derived from the window bounds — the window covers the IST day
+    # preceding the edition.
+    reporting_date = args.date or ist_today()
 
     print()
     print("TechPulse — NVD Collector")
