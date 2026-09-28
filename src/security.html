@@ -1,396 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Security — TechPulse</title>
+  <title>Security — TechPulse</title>
 
-    <meta
-        name="description"
-        content="TechPulse Security Observatory — daily vulnerability and security intelligence."
-    >
+  <meta name="description" content="TechPulse Security Observatory — daily vulnerability and security intelligence.">
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+  <link rel="canonical" href="https://singhtanishq.github.io/TechPulse/security.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TechPulse">
+  <meta property="og:title" content="Security — TechPulse">
+  <meta property="og:description" content="TechPulse Security Observatory — daily vulnerability and security intelligence.">
+  <meta property="og:url" content="https://singhtanishq.github.io/TechPulse/security.html">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="theme-color" content="#0a0d12">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <script>
+    /* Theme bootstrap — runs before first paint to avoid a flash. */
+    (function () {
+      try {
+        var stored = localStorage.getItem("techpulse-theme");
+        if (stored === "light" || stored === "dark") {
+          document.documentElement.setAttribute("data-theme", stored);
+        }
+      } catch (e) { /* storage unavailable — keep default theme */ }
+    })();
+  </script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header">
+  <header class="site-header">
 
-        <div class="container header-inner">
+    <div class="container header-inner">
 
-            <a href="index.html" class="brand">
-                <span class="brand-mark">T</span>
-                <span class="brand-name">TechPulse</span>
-            </a>
+      <a href="index.html" class="brand" aria-label="TechPulse — home">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-name">TechPulse</span>
+      </a>
 
-            <nav class="main-nav">
+      <nav class="main-nav" aria-label="Primary">
+            <a href="index.html" data-nav="today">Today</a>
+            <a href="history.html" data-nav="history">History</a>
+            <a href="security.html" data-nav="security">Security</a>
+            <a href="releases.html" data-nav="releases">Releases</a>
+            <a href="opensource.html" data-nav="opensource">Open Source</a>
+      </nav>
 
-                <a href="index.html" data-nav="today">Today</a>
+      <div class="header-actions">
 
-                <a href="history.html" data-nav="history">History</a>
+        <div class="header-status" title="Daily pipeline status">
+          <span class="status-dot pulse" data-status-dot></span>
+          <span data-status-text>Loading…</span>
+        </div>
 
-                <a href="security.html" class="active" data-nav="security">
-                    Security
-                </a>
+        <button class="theme-toggle" type="button" data-theme-toggle
+                aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
 
-                <a href="releases.html" data-nav="releases">
-                    Releases
-                </a>
+        <button class="nav-toggle" type="button" data-nav-toggle
+                aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
 
-                <a href="opensource.html" data-nav="opensource">
-                    Open Source
-                </a>
+      </div>
 
-            </nav>
+    </div>
 
-            <div class="header-status">
+  </header>
 
-                <span class="status-dot" data-status-dot></span>
+  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+            <a href="index.html" data-nav="today">Today</a>
+            <a href="history.html" data-nav="history">History</a>
+            <a href="security.html" data-nav="security">Security</a>
+            <a href="releases.html" data-nav="releases">Releases</a>
+            <a href="opensource.html" data-nav="opensource">Open Source</a>
+  </nav>
 
-                <span data-status-text>Loading...</span>
 
-            </div>
+  <main id="main-content">
+
+    <div class="error-banner" data-error-banner hidden role="alert">
+      <div>
+        <strong>Live data unavailable.</strong>
+        The site is showing its static shell — generated data could not be loaded.
+        <span data-error-detail></span>
+      </div>
+    </div>
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+      <div class="container">
+
+        <span class="section-kicker">
+          SECURITY OBSERVATORY
+        </span>
+
+        <h1>
+          Vulnerabilities.<br>
+          <span>Tracked every day.</span>
+        </h1>
+
+        <p>
+          A continuously updated record of vulnerabilities,
+          security advisories and known exploited threats.
+        </p>
+
+        <div class="page-meta">
+
+          <span>
+            LAST UPDATED
+          </span>
+
+          <strong data-page-updated>—</strong>
+
+          <span class="chip" data-edition-chip>checking…</span>
 
         </div>
 
-    </header>
+      </div>
 
+    </section>
 
-    <main>
 
-        <!-- PAGE HERO -->
+    <!-- SECURITY OVERVIEW -->
 
-        <section class="page-hero">
+    <section class="section">
 
-            <div class="container">
+      <div class="container">
 
-                <span class="section-kicker">
-                    SECURITY OBSERVATORY
-                </span>
+        <div class="section-heading">
 
-                <h1>
-                    Vulnerabilities.<br>
-                    <span>Tracked every day.</span>
-                </h1>
+          <div>
 
-                <p>
-                    A continuously updated record of vulnerabilities,
-                    security advisories and known exploited threats.
-                </p>
+            <span class="section-kicker" data-security-date>
+              EDITION
+            </span>
 
-                <div class="page-meta">
+            <h2>
+              Security overview
+            </h2>
 
-                    <span>
-                        LAST UPDATED
-                    </span>
-
-                    <strong data-page-updated>—</strong>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SECURITY OVERVIEW -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker" data-security-date>
-                            TODAY
-                        </span>
-
-                        <h2>
-                            Security Overview
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-                <div class="stats-grid">
-
-                    <article class="stat-card">
-
-                        <span class="stat-label">
-                            NEW CVEs
-                        </span>
-
-                        <strong class="stat-value" data-cves>
-                            —
-                        </strong>
-
-                        <span class="stat-detail">
-                            In snapshot window
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-label">
-                            CRITICAL
-                        </span>
-
-                        <strong class="stat-value" data-critical>
-                            —
-                        </strong>
-
-                        <span class="stat-detail">
-                            Critical severity
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-label">
-                            HIGH
-                        </span>
-
-                        <strong class="stat-value" data-high>
-                            —
-                        </strong>
-
-                        <span class="stat-detail">
-                            High severity
-                        </span>
-
-                    </article>
-
-
-                    <article class="stat-card">
-
-                        <span class="stat-label">
-                            CISA KEV
-                        </span>
-
-                        <strong class="stat-value" data-kev>
-                            —
-                        </strong>
-
-                        <span class="stat-detail">
-                            Known exploited
-                        </span>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- VULNERABILITY LIST -->
-
-        <section class="section section-muted">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            VULNERABILITIES
-                        </span>
-
-                        <h2>
-                            Latest CVEs
-                        </h2>
-
-                    </div>
-
-                    <div class="filter-group">
-
-                        <button class="filter-button active" data-filter="all">
-                            All
-                        </button>
-
-                        <button class="filter-button" data-filter="critical">
-                            Critical
-                        </button>
-
-                        <button class="filter-button" data-filter="high">
-                            High
-                        </button>
-
-                        <button class="filter-button" data-filter="medium">
-                            Medium
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-                <div class="vulnerability-list" data-vulnerability-list>
-                    <div class="empty-state">Loading vulnerability data...</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- DAILY ARCHIVE -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <span class="section-kicker">
-                            HISTORICAL DATA
-                        </span>
-
-                        <h2>
-                            Daily Security Record
-                        </h2>
-
-                    </div>
-
-                    <a
-                        href="history.html"
-                        class="section-link"
-                    >
-                        View history →
-                    </a>
-
-                </div>
-
-
-                <div class="security-history" data-security-history>
-                    <div class="empty-state">Loading history...</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SOURCES -->
-
-        <section class="section section-dark">
-
-            <div class="container source-note">
-
-                <span class="section-kicker">
-                    DATA SOURCES
-                </span>
-
-                <h2>
-                    Built from public security data.
-                </h2>
-
-                <p>
-                    TechPulse aggregates publicly available vulnerability
-                    and security information and preserves daily snapshots
-                    for historical analysis.
-                </p>
-
-                <div class="source-tags">
-
-                    <span>NVD</span>
-                    <span>CISA KEV</span>
-                    <span>PUBLIC ADVISORIES</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-
-    <footer class="site-footer">
-
-        <div class="container footer-inner">
-
-            <div>
-
-                <a href="index.html" class="brand">
-
-                    <span class="brand-mark">T</span>
-
-                    <span class="brand-name">
-                        TechPulse
-                    </span>
-
-                </a>
-
-                <p>
-                    Technology, observed every day.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="history.html">
-                    History
-                </a>
-
-                <a href="security.html">
-                    Security
-                </a>
-
-                <a href="releases.html">
-                    Releases
-                </a>
-
-                <a href="opensource.html">
-                    Open Source
-                </a>
-
-            </div>
-
-
-            <div class="footer-meta">
-
-                <span>
-                    Open source project
-                </span>
-
-                <span>
-                    Built with GitHub Actions
-                </span>
-
-            </div>
+          </div>
 
         </div>
 
-    </footer>
+
+        <div class="stats-grid reveal">
+
+          <article class="stat-card">
+
+            <span class="stat-label">
+              NEW CVEs
+            </span>
+
+            <strong class="stat-value" data-cves>
+              —
+            </strong>
+
+            <span class="stat-detail">
+              In the edition&rsquo;s window
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-label">
+              CRITICAL
+            </span>
+
+            <strong class="stat-value" data-critical>
+              —
+            </strong>
+
+            <span class="stat-detail">
+              Critical severity
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-label">
+              HIGH
+            </span>
+
+            <strong class="stat-value" data-high>
+              —
+            </strong>
+
+            <span class="stat-detail">
+              High severity
+            </span>
+
+          </article>
+
+
+          <article class="stat-card">
+
+            <span class="stat-label">
+              CISA KEV
+            </span>
+
+            <strong class="stat-value" data-kev>
+              —
+            </strong>
+
+            <span class="stat-detail">
+              Known exploited
+            </span>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- VULNERABILITY LIST -->
+
+    <section class="section section-muted">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">
+              VULNERABILITIES
+            </span>
+
+            <h2>
+              Latest CVEs
+            </h2>
+
+          </div>
+
+          <div class="filter-group" role="group" aria-label="Filter vulnerabilities by severity">
+
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">
+              All
+            </button>
+
+            <button class="filter-button" type="button" data-filter="critical" aria-pressed="false">
+              Critical
+            </button>
+
+            <button class="filter-button" type="button" data-filter="high" aria-pressed="false">
+              High
+            </button>
+
+            <button class="filter-button" type="button" data-filter="medium" aria-pressed="false">
+              Medium
+            </button>
+
+            <button class="filter-button" type="button" data-filter="low" aria-pressed="false">
+              Low
+            </button>
+
+            <button class="filter-button" type="button" data-filter="unscored" aria-pressed="false">
+              Unscored
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="vulnerability-list reveal" data-vulnerability-list data-skeleton="card" data-skeleton-count="5">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DAILY ARCHIVE -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-kicker">
+              HISTORICAL DATA
+            </span>
+
+            <h2>
+              Daily security record
+            </h2>
+
+          </div>
+
+          <a href="history.html" class="section-link">
+            View history
+          </a>
+
+        </div>
+
+
+        <div class="security-history reveal" data-security-history data-skeleton="rows" data-skeleton-count="6">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOURCES -->
+
+    <section class="section section-dark">
+
+      <div class="container source-note">
+
+        <span class="section-kicker">
+          DATA SOURCES
+        </span>
+
+        <h2>
+          Built from public security data.
+        </h2>
+
+        <p>
+          TechPulse aggregates publicly available vulnerability
+          and security information and preserves daily snapshots
+          for historical analysis.
+        </p>
+
+        <div class="source-tags">
+
+          <span>NVD</span>
+          <span>CISA KEV</span>
+          <span>PUBLIC ADVISORIES</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div>
+
+        <a href="index.html" class="brand" aria-label="TechPulse — home">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span class="brand-name">TechPulse</span>
+        </a>
+
+        <p>
+          Technology, observed every day. An autonomous, permanent
+          record of the technology ecosystem.
+        </p>
+
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Today</a>
+        <a href="history.html">History</a>
+        <a href="security.html">Security</a>
+        <a href="releases.html">Releases</a>
+        <a href="opensource.html">Open Source</a>
+      </nav>
+
+      <div class="footer-meta">
+
+        <span>
+          Open source project
+        </span>
+
+        <span>
+          Built with GitHub Actions
+        </span>
+
+        <span>
+          Reporting timezone · Asia/Kolkata (IST)
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
 
 
     <script src="js/data.js"></script>
-    <script src="js/components.js"></script>
-    <script src="js/app.js"></script>
+  <script src="js/dates.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 
