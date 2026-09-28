@@ -264,6 +264,23 @@ def latest_dated_file(directory: Path) -> Path | None:
     return max(files, key=lambda f: f.stat().st_mtime)
 
 
+def dated_file_for(directory: Path, reporting_date: str | None) -> Path | None:
+    """
+    Return the raw source file for the given reporting date.
+
+    Processors must never mix an edition's window with a newer
+    edition's raw file (possible when backfilling an older date), so
+    the exact date match always wins. Falls back to the newest dated
+    file when the exact date is absent (e.g. a source that was only
+    collected under a previous date).
+    """
+    if reporting_date and directory.exists():
+        exact = directory / f"{reporting_date}.json"
+        if exact.is_file():
+            return exact
+    return latest_dated_file(directory)
+
+
 def derive_processed_at(source_files: list[Path | None]) -> str:
     """
     Derive a deterministic processedAt timestamp from source data.
