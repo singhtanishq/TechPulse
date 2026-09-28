@@ -329,14 +329,7 @@ class ISTReportingTests(unittest.TestCase):
         self.assertEqual(end.isoformat(), "2025-12-31T18:30:00+00:00")
 
     def test_ist_date_of_instant(self):
-        # 18:29 UTC on Sep 26 is still Sep 26 in IST... plus 5:30 -> Sep 27 00:29.
-        self.assertEqual(
-            utils.ist_date_of(datetime(2026, 9, 26, 18, 29, tzinfo=timezone.utc)),
-            "2026-09-26",  # 23:59 IST — wait, verified below.
-        )
-
-    def test_ist_date_of_midnight_boundary(self):
-        # 18:29:59 UTC = 23:59:59 IST (same IST day as the UTC day).
+        # 18:29:59 UTC = 23:59:59 IST — same IST day.
         self.assertEqual(
             utils.ist_date_of(datetime(2026, 9, 26, 18, 29, 59, tzinfo=timezone.utc)),
             "2026-09-26",
@@ -344,6 +337,11 @@ class ISTReportingTests(unittest.TestCase):
         # 18:30:00 UTC = 00:00:00 IST next day.
         self.assertEqual(
             utils.ist_date_of(datetime(2026, 9, 26, 18, 30, 0, tzinfo=timezone.utc)),
+            "2026-09-27",
+        )
+        # 23:00 UTC = 04:30 IST next day.
+        self.assertEqual(
+            utils.ist_date_of(datetime(2026, 9, 26, 23, 0, tzinfo=timezone.utc)),
             "2026-09-27",
         )
 
