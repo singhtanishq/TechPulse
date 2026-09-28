@@ -44,6 +44,9 @@ github = load_module("techpulse_github_collect", "sources/github/collect.py")
 rss = load_module("techpulse_rss_collect", "sources/rss/collect.py")
 utils = load_processors_utils()
 
+# Original ist_today, preserved for monkeypatch restoration.
+IST_TODAY_ORIGINAL = utils.ist_today
+
 
 # ---------------------------------------------------------------- #
 # NVD
