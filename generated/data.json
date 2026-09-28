@@ -5,7 +5,7 @@
       "date": "2026-09-28",
       "kevAdded": 2,
       "knownExploited": 0,
-      "projects": 6,
+      "projects": 20,
       "releases": 0,
       "techEntries": 24
     },
@@ -113,7 +113,7 @@
     "coveredDate": "2026-09-27",
     "date": "2026-09-28",
     "daysObserved": 12,
-    "generatedAt": "2026-09-28T07:11:44.591941+00:00",
+    "generatedAt": "2026-09-28T07:33:41.311468+00:00",
     "snapshots": 12,
     "timezone": "Asia/Kolkata"
   },
@@ -131,64 +131,112 @@
       "url": "https://github.com/react/react"
     },
     {
+      "daily_growth": 1,
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "full_name": "tensorflow/tensorflow",
+      "growth_available": true,
+      "language": "C++",
+      "name": "tensorflow",
+      "rank": 2,
+      "source": "GitHub",
+      "stars": 200577,
+      "url": "https://github.com/tensorflow/tensorflow"
+    },
+    {
+      "daily_growth": 2,
+      "description": "The React Framework",
+      "full_name": "vercel/next.js",
+      "growth_available": true,
+      "language": "JavaScript",
+      "name": "next.js",
+      "rank": 3,
+      "source": "GitHub",
+      "stars": 142819,
+      "url": "https://github.com/vercel/next.js"
+    },
+    {
+      "daily_growth": -1,
+      "description": "The Go programming language",
+      "full_name": "golang/go",
+      "growth_available": true,
+      "language": "Go",
+      "name": "go",
+      "rank": 4,
+      "source": "GitHub",
+      "stars": 139059,
+      "url": "https://github.com/golang/go"
+    },
+    {
+      "daily_growth": 1,
+      "description": "Production-Grade Container Scheduling and Management",
+      "full_name": "kubernetes/kubernetes",
+      "growth_available": true,
+      "language": "Go",
+      "name": "kubernetes",
+      "rank": 5,
+      "source": "GitHub",
+      "stars": 128064,
+      "url": "https://github.com/kubernetes/kubernetes"
+    },
+    {
       "daily_growth": 0,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
       "language": "JavaScript",
       "name": "node",
-      "rank": 2,
+      "rank": 6,
       "source": "GitHub",
       "stars": 122147,
       "url": "https://github.com/nodejs/node"
     },
     {
       "daily_growth": 0,
-      "description": "Next generation frontend tooling. It's fast!",
-      "full_name": "vitejs/vite",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "full_name": "rust-lang/rust",
       "growth_available": true,
-      "language": "TypeScript",
-      "name": "vite",
-      "rank": 3,
+      "language": "Rust",
+      "name": "rust",
+      "rank": 7,
       "source": "GitHub",
-      "stars": 83055,
-      "url": "https://github.com/vitejs/vite"
+      "stars": 119254,
+      "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 0,
-      "description": "The Python programming language",
-      "full_name": "python/cpython",
+      "daily_growth": 2,
+      "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+      "full_name": "supabase/supabase",
+      "growth_available": true,
+      "language": "TypeScript",
+      "name": "supabase",
+      "rank": 8,
+      "source": "GitHub",
+      "stars": 110837,
+      "url": "https://github.com/supabase/supabase"
+    },
+    {
+      "daily_growth": 1,
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "full_name": "pytorch/pytorch",
       "growth_available": true,
       "language": "Python",
-      "name": "cpython",
-      "rank": 4,
+      "name": "pytorch",
+      "rank": 9,
       "source": "GitHub",
-      "stars": 77322,
-      "url": "https://github.com/python/cpython"
+      "stars": 103435,
+      "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 0,
-      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
-      "full_name": "vuejs/core",
+      "daily_growth": 1,
+      "description": "A utility-first CSS framework for rapid UI development.",
+      "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
       "language": "TypeScript",
-      "name": "core",
-      "rank": 5,
+      "name": "tailwindcss",
+      "rank": 10,
       "source": "GitHub",
-      "stars": 54453,
-      "url": "https://github.com/vuejs/core"
-    },
-    {
-      "daily_growth": 0,
-      "description": "Laravel is a web application framework with expressive, elegant syntax.",
-      "full_name": "laravel/framework",
-      "growth_available": true,
-      "language": "PHP",
-      "name": "framework",
-      "rank": 6,
-      "source": "GitHub",
-      "stars": 34931,
-      "url": "https://github.com/laravel/framework"
+      "stars": 97721,
+      "url": "https://github.com/tailwindlabs/tailwindcss"
     }
   ],
   "releases": [],
@@ -402,25 +450,25 @@
     "cves": 286,
     "kevAdded": 2,
     "knownExploited": 0,
-    "projects": 6,
+    "projects": 20,
     "releases": 0,
     "techEntries": 24
   },
   "sources": {
     "opensource": {
       "github": {
-        "failures": 15,
-        "inWindow": 6,
-        "status": "partial",
-        "total": 6
+        "failures": 0,
+        "inWindow": 20,
+        "status": "success",
+        "total": 20
       }
     },
     "releases": {
       "github": {
-        "failures": 15,
+        "failures": 0,
         "inWindow": 0,
         "status": "partial",
-        "total": 18
+        "total": 59
       }
     },
     "security": {
