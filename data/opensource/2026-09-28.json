@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "collectedAt": "2026-09-28T07:11:16.532138+00:00",
+    "count": 6,
+    "failures": [
+      {
+        "error": "GitHub API rate limit exhausted (set GITHUB_TOKEN to raise limits).",
+        "repository": "vuejs/core"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "django/django"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "rust-lang/rust"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "golang/go"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "tensorflow/tensorflow"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "pytorch/pytorch"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "kubernetes/kubernetes"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "hashicorp/terraform"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "docker/cli"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "vercel/next.js"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "tailwindlabs/tailwindcss"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "prisma/prisma"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "supabase/supabase"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "anthropics/anthropic-sdk-python"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "openai/openai-python"
+      }
+    ],
+    "reportingDate": "2026-09-28",
+    "source": "GitHub"
+  },
+  "repositories": [
+    {
+      "archived": false,
+      "category": "backend",
+      "created_at": "2013-01-10T21:27:28Z",
+      "default_branch": "13.x",
+      "description": "Laravel is a web application framework with expressive, elegant syntax.",
+      "forks": 11999,
+      "full_name": "laravel/framework",
+      "language": "PHP",
+      "name": "framework",
+      "open_issues": 91,
+      "owner": "laravel",
+      "pushed_at": "2026-09-28T01:17:24Z",
+      "source": "GitHub",
+      "stars": 34931,
+      "updated_at": "2026-09-28T02:46:55Z",
+      "url": "https://github.com/laravel/framework"
+    },
+    {
+      "archived": false,
+      "category": "runtime",
+      "created_at": "2014-11-26T19:57:11Z",
+      "default_branch": "main",
+      "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+      "forks": 38221,
+      "full_name": "nodejs/node",
+      "language": "JavaScript",
+      "name": "node",
+      "open_issues": 1187,
+      "owner": "nodejs",
+      "pushed_at": "2026-09-28T04:22:58Z",
+      "source": "GitHub",
+      "stars": 122147,
+      "updated_at": "2026-09-28T06:30:16Z",
+      "url": "https://github.com/nodejs/node"
+    },
+    {
+      "archived": false,
+      "category": "runtime",
+      "created_at": "2017-02-10T19:23:51Z",
+      "default_branch": "main",
+      "description": "The Python programming language",
+      "forks": 36803,
+      "full_name": "python/cpython",
+      "language": "Python",
+      "name": "cpython",
+      "open_issues": 9763,
+      "owner": "python",
+      "pushed_at": "2026-09-28T06:03:12Z",
+      "source": "GitHub",
+      "stars": 77322,
+      "updated_at": "2026-09-28T06:34:03Z",
+      "url": "https://github.com/python/cpython"
+    },
+    {
+      "archived": false,
+      "category": "frontend",
+      "created_at": "2013-05-24T16:15:54Z",
+      "default_branch": "main",
+      "description": "The library for web and native user interfaces.",
+      "forks": 51414,
+      "full_name": "react/react",
+      "language": "JavaScript",
+      "name": "react",
+      "open_issues": 1386,
+      "owner": "react",
+      "pushed_at": "2026-09-27T11:10:32Z",
+      "source": "GitHub",
+      "stars": 250794,
+      "updated_at": "2026-09-28T06:38:56Z",
+      "url": "https://github.com/react/react"
+    },
+    {
+      "archived": false,
+      "category": "build-tool",
+      "created_at": "2020-04-21T05:03:57Z",
+      "default_branch": "main",
+      "description": "Next generation frontend tooling. It's fast!",
+      "forks": 8793,
+      "full_name": "vitejs/vite",
+      "language": "TypeScript",
+      "name": "vite",
+      "open_issues": 791,
+      "owner": "vitejs",
+      "pushed_at": "2026-09-28T03:00:08Z",
+      "source": "GitHub",
+      "stars": 83055,
+      "updated_at": "2026-09-28T06:35:29Z",
+      "url": "https://github.com/vitejs/vite"
+    },
+    {
+      "archived": false,
+      "category": "frontend",
+      "created_at": "2018-06-12T13:49:36Z",
+      "default_branch": "main",
+      "description": "🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.",
+      "forks": 9220,
+      "full_name": "vuejs/core",
+      "language": "TypeScript",
+      "name": "core",
+      "open_issues": 934,
+      "owner": "vuejs",
+      "pushed_at": "2026-09-28T07:00:40Z",
+      "source": "GitHub",
+      "stars": 54453,
+      "updated_at": "2026-09-27T23:37:43Z",
+      "url": "https://github.com/vuejs/core"
+    }
+  ]
+}
