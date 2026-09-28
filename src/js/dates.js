@@ -182,27 +182,19 @@ function dateChip(dateString) {
 }
 
 /**
- * Timestamp formatted in IST, e.g. "27 SEP 2026, 19:38 IST".
- * Used for "last updated" — deterministic for every visitor.
+ * Timestamp formatted in IST from parts, e.g. "27 SEP 2026, 19:38 IST".
+ * Arithmetic conversion — identical output in every browser/timezone.
  */
 function formatTimestampIST(value) {
     if (!value || typeof value !== "string") return "—";
     const parsed = parseISOUTC(value);
     if (!parsed) return "—";
-    try {
-        const formatted = new Intl.DateTimeFormat("en-GB", {
-            day: "2-digit",
-            month: "short",
-            year: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-            hour12: false,
-            timeZone: "Asia/Kolkata",
-        }).format(parsed);
-        return `${formatted.toUpperCase()} IST`;
-    } catch (error) {
-        return "—";
-    }
+    const p = istPartsFromInstant(parsed.getTime());
+    const day = String(p.day).padStart(2, "0");
+    const month = TECHPULSE_MONTHS[p.month - 1];
+    const time = `${String(p.hour).padStart(2, "0")}:${String(p.minute).padStart(2, "0")}`;
+    return `${day} ${month} ${p.year}, ${time} IST`.toUpperCase()
+        .replace(/ IST$/, " IST");
 }
 
 /**
