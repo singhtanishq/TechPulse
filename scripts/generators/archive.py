@@ -66,8 +66,8 @@ def generate_archive() -> dict[str, Any]:
         if stamp and (generated_at is None or stamp > generated_at):
             generated_at = stamp
     if generated_at is None:
-        day = (utc_now() - timedelta(days=1)).date()
-        generated_at = datetime(day.year, day.month, day.day, tzinfo=timezone.utc)
+        window_start, _ = ist_day_window(ist_today())
+        generated_at = window_start
 
     archive = []
     for snap in snapshots:
