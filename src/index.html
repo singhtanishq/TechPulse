@@ -1,447 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TechPulse — Technology, Observed Every Day</title>
+  <title>TechPulse — Technology, Observed Every Day</title>
 
-    <meta
-        name="description"
-        content="TechPulse is an autonomous intelligence archive tracking technology, cybersecurity, software releases and open source every day."
-    >
+  <meta name="description" content="TechPulse is an autonomous intelligence archive tracking technology, cybersecurity, software releases and open source every day.">
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
+  <link rel="canonical" href="https://singhtanishq.github.io/TechPulse/index.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TechPulse">
+  <meta property="og:title" content="TechPulse — Technology, Observed Every Day">
+  <meta property="og:description" content="TechPulse is an autonomous intelligence archive tracking technology, cybersecurity, software releases and open source every day.">
+  <meta property="og:url" content="https://singhtanishq.github.io/TechPulse/index.html">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="theme-color" content="#0a0d12">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <script>
+    /* Theme bootstrap — runs before first paint to avoid a flash. */
+    (function () {
+      try {
+        var stored = localStorage.getItem("techpulse-theme");
+        if (stored === "light" || stored === "dark") {
+          document.documentElement.setAttribute("data-theme", stored);
+        }
+      } catch (e) { /* storage unavailable — keep default theme */ }
+    })();
+  </script>
 </head>
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header">
+  <header class="site-header">
 
-        <div class="container header-inner">
+    <div class="container header-inner">
 
-            <a href="index.html" class="brand">
-                <span class="brand-mark">T</span>
-                <span class="brand-name">TechPulse</span>
-            </a>
+      <a href="index.html" class="brand" aria-label="TechPulse — home">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-name">TechPulse</span>
+      </a>
 
-            <nav class="main-nav">
-                <a href="index.html" class="active" data-nav="today">Today</a>
-                <a href="history.html" data-nav="history">History</a>
-                <a href="security.html" data-nav="security">Security</a>
-                <a href="releases.html" data-nav="releases">Releases</a>
-                <a href="opensource.html" data-nav="opensource">Open Source</a>
-            </nav>
+      <nav class="main-nav" aria-label="Primary">
+            <a href="index.html" data-nav="today">Today</a>
+            <a href="history.html" data-nav="history">History</a>
+            <a href="security.html" data-nav="security">Security</a>
+            <a href="releases.html" data-nav="releases">Releases</a>
+            <a href="opensource.html" data-nav="opensource">Open Source</a>
+      </nav>
 
-            <div class="header-status">
-                <span class="status-dot" data-status-dot></span>
-                <span data-status-text>Loading...</span>
-            </div>
+      <div class="header-actions">
+
+        <div class="header-status" title="Daily pipeline status">
+          <span class="status-dot pulse" data-status-dot></span>
+          <span data-status-text>Loading…</span>
+        </div>
+
+        <button class="theme-toggle" type="button" data-theme-toggle
+                aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+
+        <button class="nav-toggle" type="button" data-nav-toggle
+                aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+            <a href="index.html" data-nav="today">Today</a>
+            <a href="history.html" data-nav="history">History</a>
+            <a href="security.html" data-nav="security">Security</a>
+            <a href="releases.html" data-nav="releases">Releases</a>
+            <a href="opensource.html" data-nav="opensource">Open Source</a>
+  </nav>
+
+
+  <main id="main-content">
+
+    <div class="error-banner" data-error-banner hidden role="alert">
+      <div>
+        <strong>Live data unavailable.</strong>
+        The site is showing its static shell — generated data could not be loaded.
+        <span data-error-detail></span>
+      </div>
+    </div>
+
+    <!-- ========================= HERO ========================== -->
+
+    <section class="hero">
+
+      <div class="container hero-inner">
+
+        <div class="hero-eyebrow">
+          <span class="status-dot pulse" aria-hidden="true"></span>
+          AUTONOMOUS TECHNOLOGY INTELLIGENCE
+        </div>
+
+        <h1>
+          Technology.<br>
+          <span>Observed every day.</span>
+        </h1>
+
+        <p class="hero-description">
+          TechPulse continuously tracks changes across software,
+          cybersecurity, releases and open source — creating a
+          permanent record of the technology ecosystem.
+        </p>
+
+        <div class="hero-meta">
+
+          <div>
+            <span class="meta-label">LATEST EDITION</span>
+            <strong data-today>—</strong>
+          </div>
+
+          <div>
+            <span class="meta-label">EDITION STATUS</span>
+            <strong><span class="chip" data-edition-chip>checking…</span></strong>
+          </div>
+
+          <div>
+            <span class="meta-label">PIPELINE</span>
+            <strong><span class="status-dot" data-status-dot aria-hidden="true"></span>
+              <span data-status-main>loading</span></strong>
+          </div>
+
+          <div>
+            <span class="meta-label">OBSERVATIONS</span>
+            <strong data-observations>000</strong>
+          </div>
 
         </div>
 
-    </header>
+      </div>
 
+    </section>
 
-    <main>
 
-        <!-- =========================
-             HERO
-        ========================== -->
+    <!-- ========================= DAILY EDITION ========================== -->
 
-        <section class="hero">
+    <section class="section">
 
-            <div class="container hero-inner">
+      <div class="container">
 
-                <div class="hero-eyebrow">
-                    <span class="status-dot"></span>
-                    AUTONOMOUS TECHNOLOGY INTELLIGENCE
-                </div>
+        <div class="section-heading">
 
-                <h1>
-                    Technology.<br>
-                    <span>Observed every day.</span>
-                </h1>
+          <div>
+            <span class="section-kicker" data-snapshot-date>—</span>
+            <h2>Today&rsquo;s edition</h2>
+          </div>
 
-                <p class="hero-description">
-                    TechPulse continuously tracks changes across software,
-                    cybersecurity, releases and open source — creating a
-                    permanent record of the technology ecosystem.
-                </p>
+          <a href="history.html" class="section-link">
+            Explore the archive
+          </a>
 
-                <div class="hero-meta">
+        </div>
 
-                    <div>
-                        <span class="meta-label">TODAY</span>
-                        <strong data-today>—</strong>
-                    </div>
 
-                    <div>
-                        <span class="meta-label">STATUS</span>
-                        <strong class="live-text" data-status-main>● LOADING</strong>
-                    </div>
+        <div class="stats-grid reveal">
 
-                    <div>
-                        <span class="meta-label">OBSERVATIONS</span>
-                        <strong data-observations>000</strong>
-                    </div>
+          <article class="stat-card">
+            <span class="stat-label">NEW CVEs</span>
+            <strong class="stat-value" data-cves>—</strong>
+            <span class="stat-detail">In the edition&rsquo;s window</span>
+          </article>
 
-                </div>
+          <article class="stat-card">
+            <span class="stat-label">KNOWN EXPLOITED</span>
+            <strong class="stat-value" data-known-exploited>—</strong>
+            <span class="stat-detail">CISA KEV catalog overlap</span>
+          </article>
 
-            </div>
+          <article class="stat-card">
+            <span class="stat-label">RELEASES</span>
+            <strong class="stat-value" data-releases>—</strong>
+            <span class="stat-detail">Software releases detected</span>
+          </article>
 
-        </section>
+          <article class="stat-card">
+            <span class="stat-label">PROJECTS</span>
+            <strong class="stat-value" data-projects>—</strong>
+            <span class="stat-detail">Open-source projects tracked</span>
+          </article>
 
+          <article class="stat-card">
+            <span class="stat-label">TECH SIGNALS</span>
+            <strong class="stat-value" data-tech-entries>—</strong>
+            <span class="stat-detail">Technology updates collected</span>
+          </article>
 
-        <!-- =========================
-             DAILY SNAPSHOT
-        ========================== -->
+        </div>
 
-        <section class="section">
+      </div>
 
-            <div class="container">
+    </section>
 
-                <div class="section-heading">
 
-                    <div>
-                        <span class="section-kicker" data-snapshot-date>—</span>
-                        <h2>Today's Snapshot</h2>
-                    </div>
+    <!-- ========================= SECURITY + RELEASES ========================== -->
 
-                    <a href="history.html" class="section-link">
-                        Explore history →
-                    </a>
+    <section class="section section-muted">
 
-                </div>
+      <div class="container two-column">
 
+        <!-- SECURITY -->
 
-                <div class="stats-grid">
+        <article class="panel reveal">
 
-                    <article class="stat-card">
-                        <span class="stat-label">NEW CVEs</span>
-                        <strong class="stat-value" data-cves>—</strong>
-                        <span class="stat-detail">Across tracked systems</span>
-                    </article>
-
-                    <article class="stat-card">
-                        <span class="stat-label">KNOWN EXPLOITED</span>
-                        <strong class="stat-value" data-known-exploited>—</strong>
-                        <span class="stat-detail">CISA KEV catalog</span>
-                    </article>
-
-                    <article class="stat-card">
-                        <span class="stat-label">RELEASES</span>
-                        <strong class="stat-value" data-releases>—</strong>
-                        <span class="stat-detail">Software releases detected</span>
-                    </article>
-
-                    <article class="stat-card">
-                        <span class="stat-label">PROJECTS</span>
-                        <strong class="stat-value" data-projects>—</strong>
-                        <span class="stat-detail">Open-source projects tracked</span>
-                    </article>
-
-                    <article class="stat-card">
-                        <span class="stat-label">TECH ENTRIES</span>
-                        <strong class="stat-value" data-tech-entries>—</strong>
-                        <span class="stat-detail">Technology updates collected</span>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SECURITY + RELEASES
-        ========================== -->
-
-        <section class="section section-muted">
-
-            <div class="container two-column">
-
-                <!-- SECURITY -->
-
-                <article class="panel">
-
-                    <div class="panel-header">
-
-                        <div>
-                            <span class="section-kicker">SECURITY</span>
-                            <h2>Threat Watch</h2>
-                        </div>
-
-                        <a href="security.html">View all →</a>
-
-                    </div>
-
-
-                    <div class="severity-grid">
-
-                        <div>
-                            <span>CRITICAL</span>
-                            <strong data-critical>—</strong>
-                        </div>
-
-                        <div>
-                            <span>HIGH</span>
-                            <strong data-high>—</strong>
-                        </div>
-
-                        <div>
-                            <span>MEDIUM</span>
-                            <strong data-medium>—</strong>
-                        </div>
-
-                    </div>
-
-
-                    <div class="list" data-security-latest>
-                        <div class="empty-state">Loading security data...</div>
-                    </div>
-
-                </article>
-
-
-                <!-- RELEASES -->
-
-                <article class="panel">
-
-                    <div class="panel-header">
-
-                        <div>
-                            <span class="section-kicker">SOFTWARE</span>
-                            <h2>Latest Releases</h2>
-                        </div>
-
-                        <a href="releases.html">View all →</a>
-
-                    </div>
-
-
-                    <div class="list" data-releases-list>
-                        <div class="empty-state">Loading release data...</div>
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             OPEN SOURCE
-        ========================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-                        <span class="section-kicker">OPEN SOURCE</span>
-                        <h2>Projects on the Move</h2>
-                    </div>
-
-                    <a href="opensource.html" class="section-link">
-                        Explore →
-                    </a>
-
-                </div>
-
-
-                <div class="projects-grid" data-opensource-list>
-                    <div class="empty-state">Loading open source data...</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             TECHNOLOGY WATCH
-        ========================== -->
-
-        <section class="section section-muted">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-                        <span class="section-kicker">TECHNOLOGY</span>
-                        <h2>Signals from the Ecosystem</h2>
-                    </div>
-
-                    <span class="section-link">
-                        Source: public RSS/Atom feeds
-                    </span>
-
-                </div>
-
-
-                <div class="tech-list" data-technology-list>
-                    <div class="empty-state">Loading technology data...</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             HISTORY
-        ========================== -->
-
-        <section class="section section-dark">
-
-            <div class="container history-section">
-
-                <div>
-
-                    <span class="section-kicker">
-                        THE ARCHIVE
-                    </span>
-
-                    <h2>
-                        Every day becomes<br>
-                        part of the record.
-                    </h2>
-
-                    <p>
-                        TechPulse preserves a snapshot of the technology
-                        ecosystem every day. Nothing is overwritten.
-                    </p>
-
-                    <a href="history.html" class="button">
-                        Explore the archive →
-                    </a>
-
-                </div>
-
-
-                <div class="timeline-preview" data-history-preview>
-                    <div class="empty-state">Loading history...</div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             AUTONOMOUS
-        ========================== -->
-
-        <section class="section">
-
-            <div class="container autonomous">
-
-                <div class="autonomous-icon">
-                    ⚡
-                </div>
-
-                <span class="section-kicker">
-                    BUILT TO RUN ALONE
-                </span>
-
-                <h2>
-                    TechPulse is autonomous.
-                </h2>
-
-                <p>
-                    Data is collected, processed and published automatically
-                    using GitHub Actions. The system doesn't require a
-                    computer, server or manual intervention to stay alive.
-                </p>
-
-                <div class="autonomous-stats">
-
-                    <div>
-                        <strong>01</strong>
-                        <span>Days observed</span>
-                    </div>
-
-                    <div>
-                        <strong>01</strong>
-                        <span>Snapshots</span>
-                    </div>
-
-                    <div>
-                        <strong>00</strong>
-                        <span>Manual updates</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="site-footer">
-
-        <div class="container footer-inner">
+          <div class="panel-header">
 
             <div>
-
-                <a href="index.html" class="brand">
-                    <span class="brand-mark">T</span>
-                    <span class="brand-name">TechPulse</span>
-                </a>
-
-                <p>
-                    Technology, observed every day.
-                </p>
-
+              <span class="section-kicker">SECURITY</span>
+              <h2>Threat watch</h2>
             </div>
 
-            <div class="footer-links">
+            <a href="security.html">View all</a>
 
-                <a href="history.html">History</a>
-                <a href="security.html">Security</a>
-                <a href="releases.html">Releases</a>
-                <a href="opensource.html">Open Source</a>
+          </div>
 
+
+          <div class="severity-grid">
+
+            <div data-tone="critical">
+              <span>CRITICAL</span>
+              <strong data-critical>—</strong>
             </div>
 
-            <div class="footer-meta">
-
-                <span>
-                    Open source project
-                </span>
-
-                <span>
-                    Built with GitHub Actions
-                </span>
-
+            <div data-tone="high">
+              <span>HIGH</span>
+              <strong data-high>—</strong>
             </div>
+
+            <div data-tone="medium">
+              <span>MEDIUM</span>
+              <strong data-medium>—</strong>
+            </div>
+
+          </div>
+
+
+          <div class="severity-bars" aria-label="Severity distribution">
+
+            <div class="severity-bar" data-severity-bar="critical">
+              <span>CRITICAL</span>
+              <span class="severity-bar-track">
+                <span class="severity-bar-fill" data-severity-fill="critical"></span>
+              </span>
+              <span data-severity-share>—</span>
+            </div>
+
+            <div class="severity-bar" data-severity-bar="high">
+              <span>HIGH</span>
+              <span class="severity-bar-track">
+                <span class="severity-bar-fill" data-severity-fill="high"></span>
+              </span>
+              <span data-severity-share>—</span>
+            </div>
+
+            <div class="severity-bar" data-severity-bar="medium">
+              <span>MEDIUM</span>
+              <span class="severity-bar-track">
+                <span class="severity-bar-fill" data-severity-fill="medium"></span>
+              </span>
+              <span data-severity-share>—</span>
+            </div>
+
+            <div class="severity-bar" data-severity-bar="low">
+              <span>LOW</span>
+              <span class="severity-bar-track">
+                <span class="severity-bar-fill" data-severity-fill="low"></span>
+              </span>
+              <span data-severity-share>—</span>
+            </div>
+
+            <div class="severity-bar" data-severity-bar="unscored">
+              <span>UNSCORED</span>
+              <span class="severity-bar-track">
+                <span class="severity-bar-fill" data-severity-fill="unscored"></span>
+              </span>
+              <span data-severity-share>—</span>
+            </div>
+
+          </div>
+
+
+          <div class="list" data-security-latest data-skeleton="rows" data-skeleton-count="5">
+          </div>
+
+        </article>
+
+
+        <!-- RELEASES -->
+
+        <article class="panel reveal">
+
+          <div class="panel-header">
+
+            <div>
+              <span class="section-kicker">SOFTWARE</span>
+              <h2>Latest releases</h2>
+            </div>
+
+            <a href="releases.html">View all</a>
+
+          </div>
+
+
+          <div class="list" data-releases-list data-skeleton="rows" data-skeleton-count="5">
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= OPEN SOURCE ========================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-kicker">OPEN SOURCE</span>
+            <h2>Projects on the move</h2>
+          </div>
+
+          <a href="opensource.html" class="section-link">
+            Explore momentum
+          </a>
 
         </div>
 
-    </footer>
+
+        <div class="projects-grid reveal" data-opensource-list data-skeleton="card" data-skeleton-count="6">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= TECHNOLOGY ========================== -->
+
+    <section class="section section-muted">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-kicker">TECHNOLOGY</span>
+            <h2>Signals from the ecosystem</h2>
+          </div>
+
+          <span class="section-link" aria-label="Source attribution">
+            Source: public RSS/Atom feeds
+          </span>
+
+        </div>
+
+
+        <div class="tech-list reveal" data-technology-list data-skeleton="rows" data-skeleton-count="5">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= HISTORY ========================== -->
+
+    <section class="section section-dark">
+
+      <div class="container history-section">
+
+        <div class="reveal">
+
+          <span class="section-kicker">
+            THE ARCHIVE
+          </span>
+
+          <h2>
+            Every day becomes<br>
+            part of the record.
+          </h2>
+
+          <p>
+            TechPulse preserves a snapshot of the technology
+            ecosystem every day. Nothing is overwritten.
+          </p>
+
+          <a href="history.html" class="button">
+            Explore the archive
+          </a>
+
+        </div>
+
+
+        <div class="timeline-preview reveal" data-history-preview data-skeleton="rows" data-skeleton-count="5">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================= AUTONOMOUS ========================== -->
+
+    <section class="section">
+
+      <div class="container autonomous reveal">
+
+        <div class="autonomous-icon" aria-hidden="true">
+          ⚡
+        </div>
+
+        <span class="section-kicker">
+          BUILT TO RUN ALONE
+        </span>
+
+        <h2>
+          TechPulse is autonomous.
+        </h2>
+
+        <p>
+          Data is collected, processed and published automatically
+          using GitHub Actions. The system doesn&rsquo;t require a
+          computer, server or manual intervention to stay alive.
+        </p>
+
+        <div class="autonomous-stats">
+
+          <div>
+            <strong data-days-observed>0</strong>
+            <span>Days observed</span>
+          </div>
+
+          <div>
+            <strong data-snapshots-count>0</strong>
+            <span>Editions preserved</span>
+          </div>
+
+          <div>
+            <strong>00</strong>
+            <span>Manual updates</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <div>
+
+        <a href="index.html" class="brand" aria-label="TechPulse — home">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span class="brand-name">TechPulse</span>
+        </a>
+
+        <p>
+          Technology, observed every day. An autonomous, permanent
+          record of the technology ecosystem.
+        </p>
+
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Today</a>
+        <a href="history.html">History</a>
+        <a href="security.html">Security</a>
+        <a href="releases.html">Releases</a>
+        <a href="opensource.html">Open Source</a>
+      </nav>
+
+      <div class="footer-meta">
+
+        <span>
+          Open source project
+        </span>
+
+        <span>
+          Built with GitHub Actions
+        </span>
+
+        <span>
+          Reporting timezone · Asia/Kolkata (IST)
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
 
 
     <script src="js/data.js"></script>
-    <script src="js/components.js"></script>
-    <script src="js/app.js"></script>
+  <script src="js/dates.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
+
 </html>
