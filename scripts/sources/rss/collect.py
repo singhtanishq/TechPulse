@@ -353,8 +353,8 @@ def save_output(entries: list[dict[str, Any]], failures: list[dict[str, str]], s
     output = {
         "meta": {
             "source": "RSS",
-            "collectedAt": utc_now().isoformat(),
-            "snapshotDate": snapshot_date,
+            "collectedAt": datetime.now(timezone.utc).isoformat(),
+            "reportingDate": snapshot_date,
             "count": len(entries),
             "failures": failures,
         },
