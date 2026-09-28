@@ -77,7 +77,6 @@ def resolve_window(
 
     reporting_date = date_arg or ist_today()
     start, end = ist_day_window(reporting_date)
-    covered = (start, end)
     return start, end, ist_date_of(start)
 
 
