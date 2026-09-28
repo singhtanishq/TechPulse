@@ -191,10 +191,10 @@ def check_configs() -> None:
     try:
         data = json.loads(snapshot_config.read_text(encoding="utf-8"))
         model = (data.get("snapshot") or {}).get("model")
-        if model != "utc_calendar_day":
-            fail("snapshot.json: snapshot.model must be utc_calendar_day")
+        if model != "ist_reporting_day":
+            fail("snapshot.json: snapshot.model must be ist_reporting_day")
         else:
-            print("  snapshot.json: utc_calendar_day model OK")
+            print("  snapshot.json: ist_reporting_day model OK")
     except (OSError, json.JSONDecodeError) as exc:
         fail(f"snapshot.json unreadable: {exc}")
 
