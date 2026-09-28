@@ -111,7 +111,7 @@ def process_daily(
         stamp = parse_iso_datetime((dataset or {}).get("meta", {}).get("processedAt"))
         if stamp:
             stamps.append(stamp)
-    generated_at = max(stamps).isoformat() if stamps else snapshot_date.isoformat()
+    generated_at = max(stamps).isoformat() if stamps else window_start.isoformat()
 
     # Severity for the record.
     severity = security_summary.get("severity", {})
