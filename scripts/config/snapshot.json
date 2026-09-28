@@ -2,17 +2,19 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "TechPulse Daily Snapshot Configuration",
   "snapshot": {
-    "model": "utc_calendar_day",
-    "description": "Each snapshot represents a single UTC calendar day (00:00:00Z to 23:59:59Z).",
-    "timezone": "UTC",
+    "model": "ist_reporting_day",
+    "description": "Each edition represents one India calendar day (Asia/Kolkata, UTC+05:30, no DST). The edition for reporting date X covers the previous IST day (X-1): [X-1 00:00 IST, X 00:00 IST).",
+    "timezone": "Asia/Kolkata",
+    "utcOffset": "+05:30",
     "window": {
-      "start": "00:00:00Z",
-      "end": "23:59:59Z"
+      "start": "X-1 00:00:00+05:30",
+      "end": "X 00:00:00+05:30 (exclusive)"
     },
     "collection": {
-      "description": "Collection runs after the UTC day ends to capture complete day's data.",
-      "recommended_schedule": "02:00 UTC daily",
-      "rationale": "Allows time for NVD/CISA/GitHub to publish/modify records for the previous UTC day."
+      "description": "The daily workflow fires at 18:30 UTC = 00:00 IST, at the start of edition day X. GitHub Actions cron is UTC-only, so the schedule is expressed as 30 18 * * *.",
+      "recommended_schedule": "30 18 * * * (UTC) = 00:00 IST daily",
+      "rationale": "Publishing at the start of the India day makes the edition date equal to the visitor's current IST calendar date for the whole day, and gives sources the complete covered day before collection.",
+      "jitter_policy": "GitHub Actions scheduling can fire minutes early or late. The reporting date is resolved from the newest snapshot (self-healing backfill) and the current IST date with a 90-minute forward buffer — never from the runner's raw execution timestamp. See scripts/reporting_date.py."
     },
     "idempotency": {
       "description": "Running multiple times for the same date produces identical output.",
