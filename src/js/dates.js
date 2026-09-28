@@ -161,8 +161,10 @@ function formatLongDate(dateString) {
 function formatWeekday(dateString) {
     const parts = dateParts(typeof dateString === "string" ? dateString.slice(0, 10) : "");
     if (!parts) return "";
-    // 2026-09-28 anchored at IST midnight; getUTCDay is exact for this anchor.
-    const asUTC = new Date(Date.UTC(parts.year, parts.month - 1, parts.day, -5, -30));
+    // Plain UTC-midnight anchor: getUTCDay of this instant is exactly
+    // the calendar day's weekday (the IST shift must NOT be applied
+    // here — it would roll the anchor back to the previous day).
+    const asUTC = new Date(Date.UTC(parts.year, parts.month - 1, parts.day));
     return TECHPULSE_WEEKDAYS[asUTC.getUTCDay()];
 }
 
