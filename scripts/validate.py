@@ -106,6 +106,7 @@ def check_json_validity() -> None:
 
 EXPECTED_PATHS = [
     "scripts/run_pipeline.py",
+    "scripts/reporting_date.py",
     "scripts/validate.py",
     "scripts/sources/nvd/collect.py",
     "scripts/sources/cisa/collect.py",
@@ -129,8 +130,10 @@ EXPECTED_PATHS = [
     "src/opensource.html",
     "src/history.html",
     "src/js/data.js",
-    "src/js/app.js",
+    "src/js/dates.js",
     "src/js/components.js",
+    "src/js/app.js",
+    "src/assets/favicon.svg",
     "src/css/base.css",
     "src/css/layout.css",
     "src/css/components.css",
