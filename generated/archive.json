@@ -209,73 +209,73 @@
       "opensource": {
         "topProjects": [
           {
-            "daily_growth": 25,
+            "daily_growth": 0,
             "full_name": "react/react",
             "language": "JavaScript",
             "stars": 250794,
             "url": "https://github.com/react/react"
           },
           {
-            "daily_growth": 25,
+            "daily_growth": 1,
             "full_name": "tensorflow/tensorflow",
             "language": "C++",
-            "stars": 200576,
+            "stars": 200577,
             "url": "https://github.com/tensorflow/tensorflow"
           },
           {
-            "daily_growth": 49,
+            "daily_growth": 2,
             "full_name": "vercel/next.js",
             "language": "JavaScript",
-            "stars": 142817,
+            "stars": 142819,
             "url": "https://github.com/vercel/next.js"
           },
           {
-            "daily_growth": 7,
+            "daily_growth": 0,
             "full_name": "golang/go",
             "language": "Go",
             "stars": 139060,
             "url": "https://github.com/golang/go"
           },
           {
-            "daily_growth": 17,
+            "daily_growth": 2,
             "full_name": "kubernetes/kubernetes",
             "language": "Go",
-            "stars": 128063,
+            "stars": 128065,
             "url": "https://github.com/kubernetes/kubernetes"
           },
           {
-            "daily_growth": 15,
+            "daily_growth": 0,
             "full_name": "nodejs/node",
             "language": "JavaScript",
             "stars": 122147,
             "url": "https://github.com/nodejs/node"
           },
           {
-            "daily_growth": 19,
+            "daily_growth": 0,
             "full_name": "rust-lang/rust",
             "language": "Rust",
             "stars": 119254,
             "url": "https://github.com/rust-lang/rust"
           },
           {
-            "daily_growth": 30,
+            "daily_growth": 3,
             "full_name": "supabase/supabase",
             "language": "TypeScript",
-            "stars": 110835,
+            "stars": 110838,
             "url": "https://github.com/supabase/supabase"
           },
           {
-            "daily_growth": 30,
+            "daily_growth": 1,
             "full_name": "pytorch/pytorch",
             "language": "Python",
-            "stars": 103434,
+            "stars": 103435,
             "url": "https://github.com/pytorch/pytorch"
           },
           {
-            "daily_growth": 17,
+            "daily_growth": 1,
             "full_name": "tailwindlabs/tailwindcss",
             "language": "TypeScript",
-            "stars": 97720,
+            "stars": 97721,
             "url": "https://github.com/tailwindlabs/tailwindcss"
           }
         ]
@@ -291,33 +291,33 @@
       },
       "security": {
         "severity": {
-          "CRITICAL": 91,
-          "HIGH": 459,
-          "LOW": 82,
-          "MEDIUM": 447,
+          "CRITICAL": 0,
+          "HIGH": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
           "NONE": 0,
-          "UNSCORED": 29
+          "UNSCORED": 0
         }
       },
       "snapshot": {
-        "cves": 1108,
+        "cves": 0,
         "kevAdded": 0,
-        "knownExploited": 7,
+        "knownExploited": 0,
         "projects": 20,
         "releases": 0,
-        "techEntries": 46
+        "techEntries": 41
       },
       "sources": {
         "cisa": {
           "failures": 0,
           "inWindow": 0,
-          "status": "partial",
+          "status": "empty",
           "total": 1728
         },
         "github_releases": {
           "failures": 0,
           "inWindow": 0,
-          "status": "partial",
+          "status": "empty",
           "total": 59
         },
         "github_repos": {
@@ -328,21 +328,21 @@
         },
         "nvd": {
           "failures": 0,
-          "inWindow": 1108,
-          "status": "success",
-          "total": 1108
+          "inWindow": 0,
+          "status": "empty",
+          "total": 286
         },
         "rss": {
-          "failures": 0,
-          "inWindow": 46,
-          "status": "success",
-          "total": 228
+          "failures": 1,
+          "inWindow": 41,
+          "status": "partial",
+          "total": 198
         }
       },
       "technology": {
         "categories": {
           "security": 14,
-          "tech": 32
+          "tech": 27
         },
         "recent": [
           {
@@ -356,12 +356,6 @@
             "source": "The Register",
             "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
             "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
-          },
-          {
-            "published_at": "2026-09-25T18:57:10+00:00",
-            "source": "The Register",
-            "title": "New software dependency validation process increases speeds by 54x",
-            "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
           },
           {
             "published_at": "2026-09-25T18:23:31+00:00",
@@ -404,6 +398,12 @@
             "source": "Google Cloud",
             "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
             "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
+          },
+          {
+            "published_at": "2026-09-25T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Storage Intelligence advisor: Know what changed in your storage estate and act on it",
+            "url": "https://cloud.google.com/blog/products/storage-data-transfer/storage-intelligence-advisor-and-batch-operations-updates/"
           }
         ]
       }
