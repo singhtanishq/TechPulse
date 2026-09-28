@@ -3,7 +3,7 @@
   "date": "2026-09-28",
   "generatedAt": "2026-09-28T07:40:43.722697+00:00",
   "opensource": {
-    "growthBasis": "previous_observation",
+    "growthBasis": "previous_reporting_date",
     "topProjects": [
       {
         "daily_growth": 0,
@@ -200,7 +200,7 @@
     "knownExploited": 0,
     "projects": 20,
     "releases": 0,
-    "techEntries": 41
+    "techEntries": 22
   },
   "sources": {
     "cisa": {
@@ -229,17 +229,23 @@
     },
     "rss": {
       "failures": 1,
-      "inWindow": 41,
+      "inWindow": 22,
       "status": "partial",
       "total": 198
     }
   },
   "technology": {
     "categories": {
-      "security": 14,
-      "tech": 27
+      "security": 7,
+      "tech": 15
     },
     "recent": [
+      {
+        "published_at": "2026-09-27T17:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+        "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
+      },
       {
         "published_at": "2026-09-25T19:38:59+00:00",
         "source": "Ars Technica",
@@ -293,23 +299,16 @@
         "source": "Google Cloud",
         "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
         "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
-      },
-      {
-        "published_at": "2026-09-25T16:00:00+00:00",
-        "source": "Google Cloud",
-        "title": "Storage Intelligence advisor: Know what changed in your storage estate and act on it",
-        "url": "https://cloud.google.com/blog/products/storage-data-transfer/storage-intelligence-advisor-and-batch-operations-updates/"
       }
     ],
     "sources": {
       "AWS": 1,
-      "Ars Technica": 3,
+      "Ars Technica": 1,
       "Cloudflare": 2,
-      "GitHub Blog": 4,
-      "Google Cloud": 16,
-      "Meta": 1,
+      "GitHub Blog": 3,
+      "Google Cloud": 7,
       "Netflix": 1,
-      "The Register": 13
+      "The Register": 7
     }
   },
   "window": {
