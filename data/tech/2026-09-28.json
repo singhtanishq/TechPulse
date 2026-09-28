@@ -13,18 +13,6 @@
       "url": "https://www.theregister.com/security/2026/09/28/certainties-in-life-death-taxes-and-critical-citrix-vulns-under-attack/5299369"
     },
     {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5299043",
-      "published_at": "2026-09-28T06:35:00+00:00",
-      "source": "RSS",
-      "summary": "Friday afternoon is not the time for snap decisions, but weekends are useful to cover your tracks",
-      "title": "Techie assumed boss knew what they were talking about and killed Exchange by deleting data",
-      "url": "https://www.theregister.com/software/2026/09/28/techie-assumed-boss-knew-what-they-were-talking-about-and-killed-exchange-by-deleting-data/5299043"
-    },
-    {
       "feed_category": "security",
       "feed_name": "The Register — Security",
       "feed_source": "The Register",
@@ -71,18 +59,6 @@
       "summary": "More mockery and memes from the Dark Web Roast",
       "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
       "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5299256",
-      "published_at": "2026-09-25T18:57:10+00:00",
-      "source": "RSS",
-      "summary": "Overhead reduced by as much as 99.7%",
-      "title": "New software dependency validation process increases speeds by 54x",
-      "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
     },
     {
       "feed_category": "security",
@@ -191,18 +167,6 @@
       "summary": "At Google Cloud, we are committed to delivering the best managed experience backed by open source software. Today, we’re announcing the general availability of Memorystore for Valkey 9.1 , which achieves up to 3x queries per second (QPS) at microsecond latency compared to Memorystore for Redis…",
       "title": "Unlock 3x QPS and microsecond latency with Memorystore for Valkey 9.1",
       "url": "https://cloud.google.com/blog/products/databases/memorystore-for-valkey-9-1-3x-qps-caching/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5299186",
-      "published_at": "2026-09-25T15:01:00+00:00",
-      "source": "RSS",
-      "summary": "But was the update at fault? Microsoft isn't saying",
-      "title": "Office 2016 and 2019 holdouts blame update for license deactivation bug",
-      "url": "https://www.theregister.com/software/2026/09/25/office-2016-and-2019-holdouts-blame-update-for-license-deactivation-bug/5299186"
     },
     {
       "feed_category": "security",
@@ -422,18 +386,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5298854",
-      "published_at": "2026-09-24T14:32:00+00:00",
-      "source": "RSS",
-      "summary": "A desktop pitch and an attempt to curb LLM slop descended into very human mayhem",
-      "title": "Talk of AI in KDE sets the community ablaze",
-      "url": "https://www.theregister.com/software/2026/09/24/talk-of-ai-in-kde-sets-the-community-ablaze/5298854"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "Google Cloud Blog",
       "feed_source": "Google Cloud",
       "feed_url": "https://cloudblog.withgoogle.com/rss/",
@@ -479,18 +431,6 @@
       "summary": "Introduction The landscape of software supply chain security has undergone a significant shift. Recent campaigns demonstrate that sophisticated threat actors are systematically targeting the engineering lifecycle by compromising trusted security and programming tools. These intrusions reveal three…",
       "title": "Proactive Defense: Hardening Code Pipelines and CI/CD Infrastructure",
       "url": "https://cloud.google.com/blog/topics/threat-intelligence/hardening-code-pipelines-and-ci-cd-infrastructure/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5298774",
-      "published_at": "2026-09-24T13:43:00+00:00",
-      "source": "RSS",
-      "summary": "Russian devs alleged to have built tools for US agencies as software from same op was sold to Moscow's security services",
-      "title": "DoJ: Uncle Sam bought forensics software from same Russian operation supplying FSB",
-      "url": "https://www.theregister.com/software/2026/09/24/doj-uncle-sam-bought-forensics-software-from-same-russian-operation-supplying-fsb/5298774"
     },
     {
       "feed_category": "security",
@@ -539,18 +479,6 @@
       "summary": "Until now, cryptographers thought factoring was the only way to break RSA. Not anymore.",
       "title": "There's a new way to break RSA that's faster than anything we've seen before",
       "url": "https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5298606",
-      "published_at": "2026-09-24T09:15:00+00:00",
-      "source": "RSS",
-      "summary": "For the German vendor, greater challenges may lie ahead, as rivals seek to control the user experience",
-      "title": "Experts question whether Salesforce demo breaches SAP API policy",
-      "url": "https://www.theregister.com/saas/2026/09/24/experts-question-whether-salesforce-demo-breaches-sap-api-policy/5298606"
     },
     {
       "feed_category": "security",
@@ -877,30 +805,6 @@
       "url": "https://blog.cloudflare.com/worker-previews/"
     },
     {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5297457",
-      "published_at": "2026-09-22T10:00:00+00:00",
-      "source": "RSS",
-      "summary": "Other changes also afoot as employees unionize and the distro itself sees modifications",
-      "title": "Longtime SUSE staff asked if they'd opt for 'voluntary separation'",
-      "url": "https://www.theregister.com/software/2026/09/22/longtime-suse-staff-asked-if-theyd-opt-for-voluntary-separation/5297457"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5297805",
-      "published_at": "2026-09-22T09:15:00+00:00",
-      "source": "RSS",
-      "summary": "Amix gains newer CPU support and a package manager as Open Look joins the retro comeback",
-      "title": "Commodore's forgotten Amiga Unix gets a modern revival",
-      "url": "https://www.theregister.com/software/2026/09/22/commodores-forgotten-amiga-unix-gets-a-modern-revival/5297805"
-    },
-    {
       "feed_category": "security",
       "feed_name": "The Register — Security",
       "feed_source": "The Register",
@@ -1010,18 +914,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5297402",
-      "published_at": "2026-09-21T09:07:00+00:00",
-      "source": "RSS",
-      "summary": "Seats, Flex Credits, and all-you-can-eat contracts make for an 'anxiety-filled architecture'",
-      "title": "Salesforce wants to charge for AI outcomes, but first it needs to figure out how",
-      "url": "https://www.theregister.com/software/2026/09/21/salesforce-wants-to-charge-for-ai-outcomes-but-first-it-needs-to-figure-out-how/5297402"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "Microsoft Dev Blogs",
       "feed_source": "Microsoft",
       "feed_url": "https://devblogs.microsoft.com/feed/",
@@ -1043,18 +935,6 @@
       "summary": "Google’s threat intelligence group said it had a mole inside TeamPCP's inner circle.",
       "title": "An undercover Google analyst infiltrated a notorious supply-chain hacking gang",
       "url": "https://arstechnica.com/security/2026/09/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5297194",
-      "published_at": "2026-09-19T07:28:00+00:00",
-      "source": "RSS",
-      "summary": "From Waterfox to LibreWolf and Pale Moon, there's a browser for almost every Mozilla dissenter",
-      "title": "Firefox 156 arrives with a forest of forks in its wake",
-      "url": "https://www.theregister.com/software/2026/09/19/firefox-156-arrives-with-a-forest-of-forks-in-its-wake/5297194"
     },
     {
       "feed_category": "tech",
@@ -1082,18 +962,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5297408",
-      "published_at": "2026-09-18T15:29:00+00:00",
-      "source": "RSS",
-      "summary": "Legacy web apps have guaranteed shelter only through 2029, and Redmond warns modernization can take years",
-      "title": "Admins, you've been warned: The clock is ticking on Edge's IE Mode",
-      "url": "https://www.theregister.com/software/2026/09/18/admins-youve-been-warned-the-clock-is-ticking-on-edges-ie-mode/5297408"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "GitHub Blog",
       "feed_source": "GitHub Blog",
       "feed_url": "https://github.blog/feed/",
@@ -1103,18 +971,6 @@
       "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog .",
       "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
       "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5297282",
-      "published_at": "2026-09-18T14:25:00+00:00",
-      "source": "RSS",
-      "summary": "Akademy talk imagines Plasma assembling itself around a personal model of each user",
-      "title": "KDE turns 30 and someone's brought an AI-native desktop proposal",
-      "url": "https://www.theregister.com/software/2026/09/18/kde-turns-30-and-someones-brought-an-ai-native-desktop-proposal/5297282"
     },
     {
       "feed_category": "security",
@@ -1127,18 +983,6 @@
       "summary": "Researchers used Claude to reach an OpenAI employee account and sensitive GitHub data.",
       "title": "Researchers used Claude to hack OpenAI",
       "url": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5297467",
-      "published_at": "2026-09-18T13:22:00+00:00",
-      "source": "RSS",
-      "summary": "Hotfix covers only Excel 2016 and may still come unstuck around conditional formatting",
-      "title": "Microsoft fixes the fix that broke Excel paste – partly",
-      "url": "https://www.theregister.com/software/2026/09/18/microsoft-fixes-the-fix-that-broke-excel-paste-partly/5297467"
     },
     {
       "feed_category": "tech",
@@ -1175,18 +1019,6 @@
       "summary": "SynthID can cause models to follow harmful instructions they would otherwise refuse.",
       "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
       "url": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5296780",
-      "published_at": "2026-09-17T10:44:00+00:00",
-      "source": "RSS",
-      "summary": "DHH's Arch-based desktop becomes the latest front in FOSS's culture wars",
-      "title": "Omarchy gains $18.5M in backing, fresh converts – and fierce critics",
-      "url": "https://www.theregister.com/software/2026/09/17/omarchy-gains-185m-in-backing-fresh-converts-and-fierce-critics/5296780"
     },
     {
       "feed_category": "security",
@@ -1250,18 +1082,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5296873",
-      "published_at": "2026-09-16T15:27:46+00:00",
-      "source": "RSS",
-      "summary": "Kmscon brings smooth scaling, richer colors, and better Unicode support beneath GNOME 51",
-      "title": "Fedora 45 beta drags the Linux console into the 21st century",
-      "url": "https://www.theregister.com/software/2026/09/16/fedora-45-beta-drags-the-linux-console-into-the-21st-century/5296873"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "Microsoft Dev Blogs",
       "feed_source": "Microsoft",
       "feed_url": "https://devblogs.microsoft.com/feed/",
@@ -1310,18 +1130,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5295937",
-      "published_at": "2026-09-15T09:15:00+00:00",
-      "source": "RSS",
-      "summary": "The existing layouts are fun, but there's much more we can do",
-      "title": "Give Xfce a Mac or Unity-style makeover",
-      "url": "https://www.theregister.com/software/2026/09/15/give-xfce-a-mac-or-unity-style-makeover/5295937"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "Ars Technica — Technology",
       "feed_source": "Ars Technica",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
@@ -1343,18 +1151,6 @@
       "summary": "There’s a particular energy to mid-September in New York. Pumpkin spice lattes are flowing, temperatures are dropping, and it’s nearly sweater weather. The city is back at full speed, and so is the AWS launch calendar. This week that energy showed up in a new frontier model on Amazon Bedrock, a…",
       "title": "AWS Weekly Roundup: OpenAI GPT-6 Astra on Amazon Bedrock, Amazon Quick desktop GA, Kiro for students, and more (September 14, 2026)",
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-openai-gpt-6-astra-on-amazon-bedrock-amazon-quick-desktop-ga-kiro-for-students-and-more-september-14-2026/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5295775",
-      "published_at": "2026-09-13T09:09:00+00:00",
-      "source": "RSS",
-      "summary": "Panel Profiles handles the heavy lifting, once you've installed the plugins it expects",
-      "title": "How to make Xfce look like almost any desktop you want",
-      "url": "https://www.theregister.com/software/2026/09/13/how-to-make-xfce-look-like-almost-any-desktop-you-want/5295775"
     },
     {
       "feed_category": "tech",
@@ -1394,30 +1190,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5295546",
-      "published_at": "2026-09-11T09:16:00+00:00",
-      "source": "RSS",
-      "summary": "A radical new way to resolve the Gordian knot of X11 versus Wayland",
-      "title": "Digital Research's GEM opens a new window on Linux",
-      "url": "https://www.theregister.com/software/2026/09/11/digital-researchs-gem-opens-a-new-window-on-linux/5295546"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5295736",
-      "published_at": "2026-09-11T02:43:10+00:00",
-      "source": "RSS",
-      "summary": "It’s a better interface, can speed installations, and drives IaaS sales too",
-      "title": "Oracle says AI will save it from the SaaSpocalypse, not bring it on",
-      "url": "https://www.theregister.com/software/2026/09/11/oracle-says-ai-will-save-it-from-the-saaspocalypse-not-bring-it-on/5295736"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "GitHub Blog",
       "feed_source": "GitHub Blog",
       "feed_url": "https://github.blog/feed/",
@@ -1439,30 +1211,6 @@
       "summary": "1.1.1.1 now validates DNSSEC signatures using NIST’s post-quantum ML-DSA-44 algorithm. Here is how we manage 2,420-byte signatures and downgrade risks at scale.",
       "title": "1.1.1.1 now supports post-quantum DNSSEC, all 2,420 bytes of it",
       "url": "https://blog.cloudflare.com/post-quantum-dnssec-1111/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5295251",
-      "published_at": "2026-09-10T09:45:00+00:00",
-      "source": "RSS",
-      "summary": "'Realigned' project plan aims to move existing landscape to new platform to 'achieve faster progress'",
-      "title": "German optics giant ditches greenfield SAP migration",
-      "url": "https://www.theregister.com/software/2026/09/10/german-optics-giant-ditches-greenfield-sap-migration/5295251"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5295428",
-      "published_at": "2026-09-10T04:53:32+00:00",
-      "source": "RSS",
-      "summary": "Ironically, this idea lands as Salesforce is struggling to sell its own AI",
-      "title": "Microsoft goes after Salesforce and ERP users with AI-powered converter",
-      "url": "https://www.theregister.com/software/2026/09/10/microsoft-goes-after-salesforce-and-erp-users-with-ai-powered-converter/5295428"
     },
     {
       "feed_category": "tech",
@@ -1502,18 +1250,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5295205",
-      "published_at": "2026-09-09T12:03:00+00:00",
-      "source": "RSS",
-      "summary": "Office 2021 joins the October retirement list as customers weigh pricier alternatives",
-      "title": "Microsoft closes the book on Publisher and unplugs Project Online",
-      "url": "https://www.theregister.com/software/2026/09/09/microsoft-closes-the-book-on-publisher-and-unplugs-project-online/5295205"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "Microsoft Dev Blogs",
       "feed_source": "Microsoft",
       "feed_url": "https://devblogs.microsoft.com/feed/",
@@ -1523,18 +1259,6 @@
       "summary": "The smartest model can cost five times more and deliver the same result, or even a worse one. See how evaluating your own work helps you get more value from your agent budget. The post Your work might not need the smartest model appeared first on Microsoft for Developers .",
       "title": "Your work might not need the smartest model",
       "url": "https://devblogs.microsoft.com/blog/your-work-might-not-need-the-smartest-model/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5295185",
-      "published_at": "2026-09-09T06:34:21+00:00",
-      "source": "RSS",
-      "summary": "Increase in vibe-coded browser extensions sees Edge team automate quality assessments",
-      "title": "Another Microsoft team admits it’s struggling to handle flood of AI-generated code",
-      "url": "https://www.theregister.com/software/2026/09/09/another-microsoft-team-admits-its-struggling-to-handle-flood-of-ai-generated-code/5295185"
     },
     {
       "feed_category": "tech",
@@ -1574,18 +1298,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5294805",
-      "published_at": "2026-09-07T13:56:51+00:00",
-      "source": "RSS",
-      "summary": "Commission reportedly seeks third-party views, although no formal investigation is underway",
-      "title": "Oracle may be next in EU software licensing hot seat following SAP deal",
-      "url": "https://www.theregister.com/software/2026/09/07/oracle-may-be-next-in-eu-software-licensing-hot-seat-following-sap-deal/5294805"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "Ars Technica — Technology",
       "feed_source": "Ars Technica",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
@@ -1619,18 +1331,6 @@
       "summary": "A once-overlooked block of unicode that's invisible to humans is gaining ever wider use.",
       "title": "Once popular for attacking AI, ASCII smuggling is embraced by spammers",
       "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5294345",
-      "published_at": "2026-09-04T04:00:00+00:00",
-      "source": "RSS",
-      "summary": "Why now? Well, the Linux desktop market share in the EU doubled between 2024 and 2025 (to 5.7%). That's why!",
-      "title": "The search company that plants trees just launched a Linux browser to help Europe battle big tech",
-      "url": "https://www.theregister.com/software/2026/09/04/the-search-company-that-plants-trees-just-launched-a-linux-browser-to-help-europe-battle-big-tech/5294345"
     },
     {
       "feed_category": "tech",
@@ -1682,18 +1382,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5294060",
-      "published_at": "2026-09-02T20:34:41+00:00",
-      "source": "RSS",
-      "summary": "Even the best model gets fungus identification right just 65% of the time - talk about a false friend",
-      "title": "AI-assisted mushroom hunting is a recipe for a bad trip",
-      "url": "https://www.theregister.com/offbeat/2026/09/02/ai-assisted-mushroom-hunting-is-a-recipe-for-a-bad-trip/5294060"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "Ars Technica — Technology",
       "feed_source": "Ars Technica",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
@@ -1703,18 +1391,6 @@
       "summary": "The FBI is reportedly investigating a massive data breach that is unfolding in real time.",
       "title": "I rented a car, and within hours, my driver's license was for sale",
       "url": "https://arstechnica.com/security/2026/09/my-drivers-license-is-one-of-153-million-for-sale-on-a-new-dark-website/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5293953",
-      "published_at": "2026-09-02T14:53:46+00:00",
-      "source": "RSS",
-      "summary": "Don't disable automatic updates if the pace is too much – that's what ESR is for",
-      "title": "Firefox and Thunderbird hit the fortnightly release treadmill",
-      "url": "https://www.theregister.com/software/2026/09/02/firefox-and-thunderbird-hit-the-fortnightly-release-treadmill/5293953"
     },
     {
       "feed_category": "tech",
@@ -1766,30 +1442,6 @@
     },
     {
       "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5293496",
-      "published_at": "2026-08-31T19:52:56+00:00",
-      "source": "RSS",
-      "summary": "'You mustn't be afraid to dream a little bigger, darling'",
-      "title": "Orbify.eu pitches warped Inception-style 3D maps for navigation",
-      "url": "https://www.theregister.com/software/2026/08/31/orbifyeu-pitches-warped-inception-style-3d-maps-for-navigation/5293496"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5293492",
-      "published_at": "2026-08-31T19:13:31+00:00",
-      "source": "RSS",
-      "summary": "Making installation easier and putting a new wrapper on the interface while leaving most of the security to users is a recipe for more trouble with the popular agent harness",
-      "title": "OpenClaw 2.0 pours glitter on slow-burning security dumpster fire",
-      "url": "https://www.theregister.com/ai-and-ml/2026/08/31/openclaw-20-pours-glitter-on-slow-burning-security-dumpster-fire/5293492"
-    },
-    {
-      "feed_category": "tech",
       "feed_name": "Ars Technica — Technology",
       "feed_source": "Ars Technica",
       "feed_url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
@@ -1799,18 +1451,6 @@
       "summary": "In exchange for free stuff, devices make home connections part of a proxy network.",
       "title": "Think twice before installing this device promising free movies",
       "url": "https://arstechnica.com/security/2026/08/how-some-media-streaming-devices-open-home-networks-to-a-world-of-harm/"
-    },
-    {
-      "feed_category": "tech",
-      "feed_name": "The Register — Software",
-      "feed_source": "The Register",
-      "feed_url": "https://www.theregister.com/software/headlines.atom",
-      "guid": "https://www.theregister.com/a/5293454",
-      "published_at": "2026-08-31T16:32:00+00:00",
-      "source": "RSS",
-      "summary": "Promises ‘secure artifacts’ for Spring and RabbitMQ, and other projects that matter to its Tanzu suite",
-      "title": "Broadcom pledges to lock down open source Python, Java libraries",
-      "url": "https://www.theregister.com/software/2026/08/31/broadcom-pledges-to-lock-down-open-source-python-java-libraries/5293454"
     },
     {
       "feed_category": "tech",
@@ -2738,9 +2378,14 @@
     }
   ],
   "meta": {
-    "collectedAt": "2026-09-28T07:11:44.591941+00:00",
-    "count": 228,
-    "failures": [],
+    "collectedAt": "2026-09-28T07:36:37.677114+00:00",
+    "count": 198,
+    "failures": [
+      {
+        "error": "No parseable entries",
+        "feed": "The Register — Software"
+      }
+    ],
     "reportingDate": "2026-09-28",
     "source": "RSS"
   }
