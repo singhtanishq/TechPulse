@@ -218,7 +218,7 @@ def check_frontend() -> None:
             fail(f"{page} unreadable: {exc}")
             continue
 
-        for script in ("js/data.js", "js/components.js", "js/app.js"):
+        for script in ("js/data.js", "js/dates.js", "js/components.js", "js/app.js"):
             if script not in html:
                 fail(f"{page}: missing script reference {script}")
 
