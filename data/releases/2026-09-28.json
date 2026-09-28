@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "collectedAt": "2026-09-28T07:11:16.532138+00:00",
+    "count": 18,
+    "failures": [
+      {
+        "error": "GitHub API rate limit exhausted (set GITHUB_TOKEN to raise limits).",
+        "repository": "vuejs/core"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "django/django"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "rust-lang/rust"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "golang/go"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "tensorflow/tensorflow"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "pytorch/pytorch"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "kubernetes/kubernetes"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "hashicorp/terraform"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "docker/cli"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "vercel/next.js"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "tailwindlabs/tailwindcss"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "prisma/prisma"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "supabase/supabase"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "anthropics/anthropic-sdk-python"
+      },
+      {
+        "error": "Skipped: GitHub rate limit exhausted earlier in run",
+        "repository": "openai/openai-python"
+      }
+    ],
+    "reportingDate": "2026-09-28",
+    "source": "GitHub"
+  },
+  "releases": [
+    {
+      "name": "v8.3.1",
+      "project": "vite",
+      "published_at": "2026-09-24T12:23:55Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.1",
+      "version": "v8.3.1"
+    },
+    {
+      "name": "2026-09-23, Version 22.23.3 'Jod' (LTS), @aduh95 prepared by @juanarbol",
+      "project": "node",
+      "published_at": "2026-09-23T18:21:37Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v22.23.3",
+      "version": "v22.23.3"
+    },
+    {
+      "name": "v13.33.0",
+      "project": "framework",
+      "published_at": "2026-09-22T14:14:15Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.33.0",
+      "version": "v13.33.0"
+    },
+    {
+      "name": "2026-09-22, Version 26.10.0 (Current), @aduh95",
+      "project": "node",
+      "published_at": "2026-09-22T09:02:46Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.10.0",
+      "version": "v26.10.0"
+    },
+    {
+      "name": "2026-09-16, Version 26.9.0 (Current), @aduh95",
+      "project": "node",
+      "published_at": "2026-09-16T18:16:39Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.9.0",
+      "version": "v26.9.0"
+    },
+    {
+      "name": "v13.32.0",
+      "project": "framework",
+      "published_at": "2026-09-15T14:57:14Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.32.0",
+      "version": "v13.32.0"
+    },
+    {
+      "name": "create-vite@9.2.1",
+      "project": "vite",
+      "published_at": "2026-09-10T11:41:17Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.2.1",
+      "version": "create-vite@9.2.1"
+    },
+    {
+      "name": "v8.3.0",
+      "project": "vite",
+      "published_at": "2026-09-10T11:25:16Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.0",
+      "version": "v8.3.0"
+    },
+    {
+      "name": "19.3.0 (September 9, 2026)",
+      "project": "react",
+      "published_at": "2026-09-09T18:01:33Z",
+      "repository": "facebook/react",
+      "source": "GitHub",
+      "url": "https://github.com/react/react/releases/tag/v19.3.0",
+      "version": "v19.3.0"
+    },
+    {
+      "name": "2026-09-09, Version 26.8.2 (Current), @aduh95",
+      "project": "node",
+      "published_at": "2026-09-09T16:07:48Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.8.2",
+      "version": "v26.8.2"
+    },
+    {
+      "name": "2026-09-08, Version 24.21.0 'Krypton' (LTS), @aduh95",
+      "project": "node",
+      "published_at": "2026-09-08T21:51:09Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v24.21.0",
+      "version": "v24.21.0"
+    },
+    {
+      "name": "v12.69.2",
+      "project": "framework",
+      "published_at": "2026-09-08T14:30:39Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v12.69.2",
+      "version": "v12.69.2"
+    },
+    {
+      "name": "v13.31.0",
+      "project": "framework",
+      "published_at": "2026-09-08T14:24:35Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.31.0",
+      "version": "v13.31.0"
+    },
+    {
+      "name": "v13.30.1",
+      "project": "framework",
+      "published_at": "2026-09-01T21:44:04Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.30.1",
+      "version": "v13.30.1"
+    },
+    {
+      "name": "19.2.8 (July 21st, 2026)",
+      "project": "react",
+      "published_at": "2026-07-21T15:49:09Z",
+      "repository": "facebook/react",
+      "source": "GitHub",
+      "url": "https://github.com/react/react/releases/tag/v19.2.8",
+      "version": "v19.2.8"
+    },
+    {
+      "name": "19.1.9 (July 21st, 2026)",
+      "project": "react",
+      "published_at": "2026-07-21T15:48:51Z",
+      "repository": "facebook/react",
+      "source": "GitHub",
+      "url": "https://github.com/react/react/releases/tag/v19.1.9",
+      "version": "v19.1.9"
+    },
+    {
+      "name": "19.0.8 (July 21st, 2026)",
+      "project": "react",
+      "published_at": "2026-07-21T15:48:28Z",
+      "repository": "facebook/react",
+      "source": "GitHub",
+      "url": "https://github.com/react/react/releases/tag/v19.0.8",
+      "version": "v19.0.8"
+    },
+    {
+      "name": "19.2.7 (June 1st, 2026)",
+      "project": "react",
+      "published_at": "2026-06-01T18:04:24Z",
+      "repository": "facebook/react",
+      "source": "GitHub",
+      "url": "https://github.com/react/react/releases/tag/v19.2.7",
+      "version": "v19.2.7"
+    }
+  ]
+}
