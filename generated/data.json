@@ -10,13 +10,13 @@
       "techEntries": 22
     },
     {
-      "cves": 1108,
+      "cves": 0,
       "date": "2026-09-27",
       "kevAdded": 0,
-      "knownExploited": 7,
+      "knownExploited": 0,
       "projects": 20,
       "releases": 0,
-      "techEntries": 46
+      "techEntries": 41
     },
     {
       "cves": 838,
@@ -110,8 +110,8 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-09-27",
-    "date": "2026-09-28",
+    "coveredDate": "2026-09-26",
+    "date": "2026-09-27",
     "daysObserved": 12,
     "generatedAt": "2026-09-28T07:36:37.677114+00:00",
     "snapshots": 12,
@@ -241,218 +241,22 @@
   ],
   "releases": [],
   "security": {
-    "critical": 35,
-    "high": 133,
+    "critical": 0,
+    "high": 0,
     "kevCatalogTotal": 1728,
-    "latest": [
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "utcp-gql before 1.1.1 and utcp-websocket before 1.1.1 contain server-side request forgery vulnerabilities due to incomplete application of CVE-2026-44661 fixes. The GraphQL plugin uses a vulnerable prefix check allowing bypass URLs like http://127.0.0.1.attacker.example, while the WebSocket plugin performs no URL validation despite documented security requirements. Attackers can force connections…",
-        "id": "CVE-2026-101061",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:32.407",
-        "publishedAt": "2026-09-27T18:16:32.407",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "utcp-gql before 1.1.1 and utcp-websocket before 1.1.1 contain server-side request forgery vulnerabilities due to incomplete application of CVE-2026-44661…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101061"
-      },
-      {
-        "cvss_score": 8.4,
-        "cvss_version": "4.0",
-        "description": "python-utcp versions before 1.1.4 contain a server-side request forgery vulnerability in HttpCommunicationProtocol.call_tool that validates the initial tool URL but follows HTTP redirects without re-validating the target. Attackers controlling a tool endpoint can return a 302 redirect to internal services, allowing the UTCP client to reach cloud metadata endpoints or internal HTTP services and…",
-        "id": "CVE-2026-101060",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:32.273",
-        "publishedAt": "2026-09-27T18:16:32.273",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "python-utcp versions before 1.1.4 contain a server-side request forgery vulnerability in HttpCommunicationProtocol.call_tool that validates the initial tool…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101060"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "utcp-http before 1.1.4 fails to validate the OAuth2 tokenUrl field from remote OpenAPI specifications, allowing attackers to redirect credential submission to arbitrary endpoints. When a victim registers an attacker-controlled OpenAPI spec and invokes a generated OAuth2-protected tool, the library POSTs the victim's client_id and client_secret to the attacker-supplied token endpoint without URL…",
-        "id": "CVE-2026-101059",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:32.130",
-        "publishedAt": "2026-09-27T18:16:32.130",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "utcp-http before 1.1.4 fails to validate the OAuth2 tokenUrl field from remote OpenAPI specifications, allowing attackers to redirect credential submission to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101059"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "python-utcp (pip package utcp-http) before 1.1.12 does not verify whether tool URLs declared in a hand-written UTCP manual point at the agent's own loopback interface when that manual is discovered from a remote, non-loopback origin. Because ensure_secure_url intentionally permits loopback HTTP for local development and native manuals bypassed the loopback check performed by the OpenAPI…",
-        "id": "CVE-2026-101058",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.973",
-        "publishedAt": "2026-09-27T18:16:31.973",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "python-utcp (pip package utcp-http) before 1.1.12 does not verify whether tool URLs declared in a hand-written UTCP manual point at the agent's own loopback…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101058"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "utcp-mcp (the MCP plugin of python-utcp) through 1.1.2 connects to the HTTP and WebSocket MCP server URLs given in a call template's mcpServers configuration without the ensure_secure_url validation that the HTTP-family plugins apply, so the HTTPS/WSS-or-loopback rule is not enforced. A call template naming a plain-HTTP, non-loopback MCP server URL is dialed as configured, exposing the MCP…",
-        "id": "CVE-2026-101057",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.823",
-        "publishedAt": "2026-09-27T18:16:31.823",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "utcp-mcp (the MCP plugin of python-utcp) through 1.1.2 connects to the HTTP and WebSocket MCP server URLs given in a call template's mcpServers configuration…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101057"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "Cloudreve before 4.16.1 fails to revalidate share access when restoring cached navigator state from a context_hint UUID. Attackers who previously had valid share access can replay the cached hint to generate signed file URLs for up to 300 seconds after the share is deleted, expires, or reaches zero remaining downloads.",
-        "id": "CVE-2026-101056",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.777",
-        "publishedAt": "2026-09-27T18:16:31.667",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Cloudreve before 4.16.1 fails to revalidate share access when restoring cached navigator state from a context_hint UUID. Attackers who previously had valid…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101056"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "Cloudreve before 4.16.1 fails to properly sanitize file paths returned by remote downloaders, allowing authenticated users to create files outside the selected destination directory. Attackers can exploit path traversal sequences in downloader metadata to write files to unexpected locations within accessible namespaces.",
-        "id": "CVE-2026-101051",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.620",
-        "publishedAt": "2026-09-27T18:16:31.510",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Cloudreve before 4.16.1 fails to properly sanitize file paths returned by remote downloaders, allowing authenticated users to create files outside the selected…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101051"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Cloudreve before 4.17.0 registers the administrative node test endpoints (POST /api/v4/admin/node/test and POST /api/v4/admin/node/test/downloader) without requiring the Admin.Write OAuth scope, unlike the node create/update/delete routes. An OAuth client that has been authorized by an administrator with only the Admin.Read scope can therefore submit attacker-controlled node definitions and cause…",
-        "id": "CVE-2026-101048",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.427",
-        "publishedAt": "2026-09-27T18:16:31.313",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Cloudreve before 4.17.0 registers the administrative node test endpoints (POST /api/v4/admin/node/test and POST /api/v4/admin/node/test/downloader) without…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101048"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "Fleet before 4.87.0 does not protect the two endpoints that serve in-house iOS application packages and manifests (enterprise tier only) with the intended random, time-limited URL token. Because Apple's InstallEnterpriseApplication MDM command requires these URLs to be reachable without a Fleet session, they cannot rely on session-based authentication, and the missing token allows an…",
-        "id": "CVE-2026-101047",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.177",
-        "publishedAt": "2026-09-27T18:16:31.177",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Fleet before 4.87.0 does not protect the two endpoints that serve in-house iOS application packages and manifests (enterprise tier only) with the intended…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101047"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "Fleet before 4.89.0 contains an SQL injection vulnerability in the activity list endpoints (GET /api/v1/fleet/activities and GET /api/v1/fleet/hosts/{id}/activities). The deprecated cursor-pagination helper appendListOptionsWithCursorToSQL interpolated the caller-supplied sort/order key into the SQL ORDER BY clause without an allowlist, so an authenticated user with read access to Activity could…",
-        "id": "CVE-2026-101046",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.037",
-        "publishedAt": "2026-09-27T18:16:31.037",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Fleet before 4.89.0 contains an SQL injection vulnerability in the activity list endpoints (GET /api/v1/fleet/activities and GET…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101046"
-      },
-      {
-        "cvss_score": 8.9,
-        "cvss_version": "4.0",
-        "description": "Fleet-maintained app install and uninstall scripts for macOS are generated from Homebrew cask metadata. In manifests generated before 2026-08-19, the script generator escaped this metadata at some interpolation sites but not all of them, so cask metadata containing shell metacharacters (for example $(...) command substitution) could be carried into scripts that execute as root on managed macOS…",
-        "id": "CVE-2026-101045",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:30.897",
-        "publishedAt": "2026-09-27T18:16:30.897",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Fleet-maintained app install and uninstall scripts for macOS are generated from Homebrew cask metadata. In manifests generated before 2026-08-19, the script…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101045"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "pacquet, the Rust package-manager component shipped in the pnpm npm package versions >=12.0.0-alpha.0 and <12.0.0-alpha.5, does not validate dependency alias/name paths taken from a lockfile before using them in install-time filesystem joins. When a user installs a project with an attacker-supplied lockfile using --trust-lockfile or a frozen lockfile, alias entries containing path traversal…",
-        "id": "CVE-2026-101044",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:30.753",
-        "publishedAt": "2026-09-27T18:16:30.753",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "pacquet, the Rust package-manager component shipped in the pnpm npm package versions >=12.0.0-alpha.0 and <12.0.0-alpha.5, does not validate dependency…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101044"
-      },
-      {
-        "cvss_score": 8.3,
-        "cvss_version": "4.0",
-        "description": "pnpm versions 11.0.0 before 11.11.0 and 10.7.0 before 10.34.5 expand ${VAR} environment-variable placeholders in the httpProxy, httpsProxy, and noProxy settings read from a project's pnpm-workspace.yaml. Because the manifest is repository-controlled and the proxy keys were omitted from the request-destination key set that otherwise suppresses placeholder expansion for untrusted manifests (as…",
-        "id": "CVE-2026-101043",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:29.700",
-        "publishedAt": "2026-09-27T18:16:29.700",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "pnpm versions 11.0.0 before 11.11.0 and 10.7.0 before 10.34.5 expand ${VAR} environment-variable placeholders in the httpProxy, httpsProxy, and noProxy…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101043"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "4.0",
-        "description": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23.",
-        "id": "CVE-2026-88778",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T17:16:57.110",
-        "publishedAt": "2026-09-27T17:16:57.110",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88778"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "4.0",
-        "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23  leading to unpredictable or erroneous behavior or Denial of Service",
-        "id": "CVE-2026-88777",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T17:16:56.990",
-        "publishedAt": "2026-09-27T17:16:56.990",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88777"
-      }
-    ],
-    "low": 16,
-    "medium": 102,
+    "latest": [],
+    "low": 0,
+    "medium": 0,
     "none": 0,
     "unscored": 0
   },
   "snapshot": {
-    "cves": 286,
-    "kevAdded": 2,
+    "cves": 0,
+    "kevAdded": 0,
     "knownExploited": 0,
     "projects": 20,
     "releases": 0,
-    "techEntries": 22
+    "techEntries": 41
   },
   "sources": {
     "opensource": {
@@ -474,35 +278,27 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 2,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1728
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 286,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 286
       }
     },
     "technology": {
       "rss": {
         "failures": 1,
-        "inWindow": 22,
+        "inWindow": 41,
         "status": "partial",
         "total": 198
       }
     }
   },
   "technology": [
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-27T17:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help build a fair, sustainable future for the web.",
-      "title": "Cloudflare’s 2026 Annual Founders’ Letter",
-      "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
-    },
     {
       "category": "tech",
       "publishedAt": "2026-09-25T19:38:59+00:00",
@@ -614,6 +410,14 @@
       "summary": "Introduction As an update to the June 2026 post, ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit , Mandiant and Google Threat Intelligence Group (GTIG) have identified renewed mass exploitation of CVE-2026-35273 by UNC6240 (ShinyHunters), along with expanded…",
       "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
       "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-25T13:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification.",
+      "title": "Agents can now set up your website’s security with Turnstile Spin",
+      "url": "https://blog.cloudflare.com/turnstile-spin/"
     }
   ]
 }
