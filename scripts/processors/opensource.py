@@ -69,7 +69,7 @@ def previous_observation_stars() -> dict[str, int]:
     dated = []
     for f in files:
         try:
-            datetime.strptime(f.stem, "%Y-%m-%d")
+            parse_ist_date(f.stem)
             dated.append(f)
         except ValueError:
             continue
