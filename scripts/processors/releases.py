@@ -124,6 +124,7 @@ def process_releases(start: datetime, end: datetime, covered_ist_day: str) -> di
     return {
         "meta": {
             "processedAt": processed_at,
+            "coveredIstDay": covered_ist_day,
             "window": {"start": start.isoformat(), "end": end.isoformat()},
             "sourceFiles": {
                 "releases": releases_path.name if releases_path else None,
