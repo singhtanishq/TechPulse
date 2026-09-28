@@ -95,9 +95,9 @@ def severity_counts(vulns: list[dict[str, Any]]) -> dict[str, int]:
 
 def in_window(vuln: dict[str, Any], start: datetime, end: datetime,
               date_field: str = "lastModified") -> bool:
-    """Check whether a record's date field falls within the window."""
+    """Check whether a record's date field falls within [start, end)."""
     stamp = parse_iso_datetime(vuln.get(date_field))
-    return stamp is not None and start <= stamp <= end
+    return stamp is not None and start <= stamp < end
 
 
 def latest_by_modified(vulns: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]:
@@ -109,7 +109,7 @@ def latest_by_modified(vulns: list[dict[str, Any]], limit: int) -> list[dict[str
     return sorted(vulns, key=sort_key, reverse=True)[:limit]
 
 
-def process_security(start: datetime, end: datetime) -> dict[str, Any]:
+def process_security(start: datetime, end: datetime, covered_ist_day: str) -> dict[str, Any]:
     """Process security data from NVD and CISA KEV."""
 
     nvd_path = latest_dated_file(NVD_DIR)
