@@ -289,8 +289,10 @@ class UtilsTests(unittest.TestCase):
     def test_status_model(self):
         self.assertEqual(utils.status_from_counts(0, 0, 0), "empty")
         self.assertEqual(utils.status_from_counts(0, 0, 2), "failed")
-        self.assertEqual(utils.status_from_counts(100, 0, 0), "partial")
+        self.assertEqual(utils.status_from_counts(100, 0, 0), "empty")
         self.assertEqual(utils.status_from_counts(100, 5, 0), "success")
+        self.assertEqual(utils.status_from_counts(100, 5, 3), "partial")
+        self.assertEqual(utils.status_from_counts(100, 0, 3), "partial")
 
     def test_latest_dated_file_prefers_newest_date(self):
         with tempfile.TemporaryDirectory() as tmp:
