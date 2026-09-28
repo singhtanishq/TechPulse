@@ -1,10 +1,18 @@
 """
 TechPulse — Processor Utilities
 
-Shared utilities for the processing and generation layers.
+Shared utilities for the collection, processing and generation layers.
 
 Conventions:
-    - All timestamps are timezone-aware UTC ISO-8601.
+    - All timestamps are timezone-aware UTC ISO-8601. TechPulse's
+      reporting cycle, however, is anchored to India Standard Time
+      (Asia/Kolkata, UTC+05:30 — no daylight saving).
+    - The TechPulse reporting date is a DATE-ONLY value ("YYYY-MM-DD")
+      representing one India calendar day. It is never parsed as a UTC
+      instant; date-only values are compared as calendar dates.
+    - The edition for reporting date X covers the previous IST calendar
+      day (X-1): [X-1 00:00 IST, X 00:00 IST). The daily workflow fires
+      at 18:30 UTC = 00:00 IST, i.e. at the start of edition day X.
     - "Latest raw file" selection is by dated filename (YYYY-MM-DD.json),
       not filesystem mtime, so file copies never change behavior.
     - Processed metadata timestamps are derived from source data so that
@@ -14,15 +22,28 @@ Conventions:
 from __future__ import annotations
 
 import json
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 DATA_DIR = PROJECT_ROOT / "data"
+DAILY_DIR = DATA_DIR / "daily"
 NORMALIZED_DIR = DATA_DIR / "normalized"
 GENERATED_DIR = PROJECT_ROOT / "generated"
+
+# India Standard Time — fixed offset, no DST. (Asia/Kolkata has not
+# observed DST since 1945, so a fixed offset is exact.)
+IST = timezone(timedelta(hours=5, minutes=30), name="Asia/Kolkata")
+
+# When the daily workflow fires on its 18:30 UTC (= 00:00 IST) slot,
+# GitHub's scheduler may start the run slightly before or after the
+# nominal time. A 90-minute forward buffer makes the intended reporting
+# date robust to that jitter: a run starting just BEFORE midnight IST
+# still resolves to the edition about to begin, and a run starting just
+# after midnight resolves to the edition that just began.
+SCHEDULE_JITTER_BUFFER_MINUTES = 90
 
 SEVERITY_ORDER = {
     "CRITICAL": 0,
@@ -33,18 +54,153 @@ SEVERITY_ORDER = {
 }
 
 
+# ------------------------------------------------------------------ #
+# Clock + reporting date
+# ------------------------------------------------------------------ #
+
 def utc_now() -> datetime:
     """Return the current aware UTC time."""
     return datetime.now(timezone.utc)
 
 
-def previous_utc_day(reference: datetime | None = None) -> datetime:
-    """Return midnight (UTC) of the previous completed UTC day."""
-    if reference is None:
-        reference = utc_now()
-    day = (reference - timedelta(days=1)).date()
-    return datetime(day.year, day.month, day.day, tzinfo=timezone.utc)
+def ist_now() -> datetime:
+    """Return the current aware IST (Asia/Kolkata) time."""
+    return utc_now().astimezone(IST)
 
+
+def ist_today(offset_minutes: int = 0) -> str:
+    """
+    Return the current IST calendar date as YYYY-MM-DD, optionally
+    shifted by whole minutes (positive = into the future).
+    """
+    instant = ist_now() + timedelta(minutes=offset_minutes)
+    return instant.date().isoformat()
+
+
+def ist_date_of(instant: datetime) -> str:
+    """Return the IST calendar date (YYYY-MM-DD) of an aware instant."""
+    return instant.astimezone(IST).date().isoformat()
+
+
+def parse_ist_date(value: str) -> date:
+    """Parse a strict YYYY-MM-DD reporting date. Raises ValueError."""
+    parsed = datetime.strptime(value.strip(), "%Y-%m-%d")
+    return parsed.date()
+
+
+def ist_day_window(reporting_date: str) -> tuple[datetime, datetime]:
+    """
+    Return the UTC [start, end) instants covering the IST calendar day
+    immediately preceding the reporting date.
+
+    The edition for reporting date X observes the previous completed
+    India day: [X-1 00:00 IST, X 00:00 IST). Both returned instants are
+    timezone-aware UTC.
+    """
+    day = parse_ist_date(reporting_date)
+    covered = day - timedelta(days=1)
+    start_ist = datetime(covered.year, covered.month, covered.day, tzinfo=IST)
+    end_ist = datetime(day.year, day.month, day.day, tzinfo=IST)
+    return start_ist.astimezone(timezone.utc), end_ist.astimezone(timezone.utc)
+
+
+def newest_snapshot_date() -> str | None:
+    """
+    Return the newest daily snapshot date (YYYY-MM-DD) by filename,
+    or None when no dated snapshot exists yet.
+    """
+    if not DAILY_DIR.exists():
+        return None
+    dated = []
+    for path in DAILY_DIR.glob("*.json"):
+        try:
+            parse_ist_date(path.stem)
+        except ValueError:
+            continue
+        dated.append(path.stem)
+    return max(dated) if dated else None
+
+
+def resolve_reporting_date(
+    event: str = "manual",
+    input_date: str | None = None,
+) -> tuple[str, str]:
+    """
+    Resolve the TechPulse reporting date for a pipeline run.
+
+    Returns (date, explanation). Resolution order:
+
+    1. Explicit input (workflow_dispatch input / CLI --date) — used
+       verbatim after format validation.
+    2. Otherwise, the earlier of:
+         a. newest existing snapshot date + 1 day  (self-healing:
+            backfills a day missed by a failed scheduled run and never
+            skips ahead), and
+         b. the IST calendar date of "now", shifted forward by the
+            scheduler-jitter buffer for scheduled runs (a run that
+            starts just before midnight IST belongs to the edition
+            that is about to begin).
+
+    Manual and push-triggered runs use "now" without the jitter buffer.
+    """
+    if input_date:
+        try:
+            parse_ist_date(input_date)
+        except ValueError:
+            raise ValueError(
+                f"Reporting date must be YYYY-MM-DD (got '{input_date}')."
+            )
+        return input_date, f"explicit input date {input_date}"
+
+    candidates: list[tuple[date, str]] = []
+
+    newest = newest_snapshot_date()
+    if newest:
+        backfill = parse_ist_date(newest) + timedelta(days=1)
+        candidates.append(
+            (backfill, f"next pending edition after newest snapshot {newest}")
+        )
+
+    now_ist = ist_today(
+        offset_minutes=SCHEDULE_JITTER_BUFFER_MINUTES
+        if event == "schedule"
+        else 0
+    )
+    candidates.append(
+        (parse_ist_date(now_ist), f"current IST date ({event} run, IST={ist_now().isoformat()})")
+    )
+
+    chosen, reason = min(candidates, key=lambda item: item[0])
+    return chosen.isoformat(), reason
+
+
+# ------------------------------------------------------------------ #
+# Window membership
+# ------------------------------------------------------------------ #
+
+def in_ist_day(value: str | None, ist_day: str) -> bool:
+    """
+    Whether a record timestamp falls on the given IST calendar day.
+
+    Full ISO-8601 timestamps are converted to IST and compared by
+    calendar date. Date-only values ("YYYY-MM-DD") are compared as
+    calendar dates directly — never reinterpreted as UTC instants.
+    Returns False for missing/unparseable values.
+    """
+    if not value or not isinstance(value, str):
+        return False
+    text = value.strip()
+    if len(text) == 10 and text[4] == "-" and text[7] == "-":
+        return text == ist_day
+    stamp = parse_iso_datetime(text)
+    if stamp is None:
+        return False
+    return ist_date_of(stamp) == ist_day
+
+
+# ------------------------------------------------------------------ #
+# Parsing / persistence
+# ------------------------------------------------------------------ #
 
 def parse_iso_datetime(value: str | None) -> datetime | None:
     """Parse an ISO-8601 datetime string; returns None when unparseable."""
@@ -97,7 +253,7 @@ def latest_dated_file(directory: Path) -> Path | None:
     def sort_key(path: Path) -> tuple[int, str]:
         stem = path.stem
         try:
-            datetime.strptime(stem, "%Y-%m-%d")
+            parse_ist_date(stem)
             return (1, stem)  # dated files sort by name
         except ValueError:
             return (0, "")   # non-dated files sort first (ignored below)
@@ -114,7 +270,8 @@ def derive_processed_at(source_files: list[Path | None]) -> str:
 
     Uses the newest 'collectedAt' across the given source files so that
     reprocessing the same inputs never changes this value.
-    Falls back to window end / previous day when sources are absent.
+    Falls back to the current IST reporting-day start (as UTC) when
+    sources are absent.
     """
     newest: datetime | None = None
     for path in source_files:
@@ -129,48 +286,27 @@ def derive_processed_at(source_files: list[Path | None]) -> str:
             newest = stamp
     if newest is not None:
         return newest.isoformat()
-    return previous_utc_day().isoformat()
+    window_start, _ = ist_day_window(ist_today())
+    return window_start.isoformat()
 
+
+# ------------------------------------------------------------------ #
+# Formatting
+# ------------------------------------------------------------------ #
 
 def format_date(date_obj: datetime | str | None) -> str:
-    """Format a date for display, e.g. '18 SEP 2026'."""
+    """Format a date for display, e.g. '18 SEP 2026' (IST calendar day)."""
     if isinstance(date_obj, str):
-        parsed = parse_iso_datetime(date_obj)
-        if parsed is None and date_obj:
-            # Already a bare YYYY-MM-DD string.
-            try:
-                parsed = datetime.strptime(date_obj, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-            except ValueError:
-                return ""
+        text = date_obj.strip()
+        if len(text) == 10 and text[4] == "-" and text[7] == "-":
+            return format_date(datetime.strptime(text, "%Y-%m-%d").replace(tzinfo=IST))
+        parsed = parse_iso_datetime(text)
+        if parsed is None:
+            return ""
         date_obj = parsed
-    if not isinstance(date_obj, datetime):
-        return ""
-    return date_obj.strftime("%d %b %Y").upper()
-
-
-def format_relative_date(date_obj: datetime | str | None, now: datetime | None = None) -> str:
-    """Format a relative date: Today / Yesterday / N days ago / absolute."""
-    if isinstance(date_obj, str):
-        parsed = parse_iso_datetime(date_obj)
-        if parsed is None and date_obj:
-            try:
-                parsed = datetime.strptime(date_obj, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-            except ValueError:
-                return ""
-        date_obj = parsed
-    if not isinstance(date_obj, datetime):
-        return ""
-
-    now = now or utc_now()
-    delta = (now.date() - date_obj.date()).days
-
-    if delta <= 0:
-        return "Today"
-    if delta == 1:
-        return "Yesterday"
-    if delta < 14:
-        return f"{delta} days ago"
-    return format_date(date_obj)
+    if isinstance(date_obj, datetime):
+        return date_obj.astimezone(IST).strftime("%d %b %Y").upper()
+    return ""
 
 
 def deduplicate_by_key(items: list[dict], key: str) -> list[dict]:
