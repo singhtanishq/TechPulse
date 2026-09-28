@@ -19,14 +19,16 @@ publishes daily; GitHub Pages serves the site.
 
 ```
 PUBLIC SOURCES (NVD · CISA KEV · GitHub API · RSS/Atom)
-        ↓   GitHub Actions — daily schedule 06:30 UTC
-SOURCE COLLECTORS          scripts/sources/*        raw JSON, dated by snapshot day
+        ↓   GitHub Actions — daily at 18:30 UTC = 12:00 AM IST
+REPORTING DATE RESOLVER    scripts/reporting_date.py   one India calendar day per edition
+        ↓
+SOURCE COLLECTORS          scripts/sources/*        raw JSON, dated by reporting day
         ↓
 PROCESSORS                 scripts/processors/*     normalized datasets + source health
         ↓
 DAILY SNAPSHOT             data/daily/YYYY-MM-DD.json   immutable archive record
         ↓
-GENERATORS                 scripts/generators/*     frontend JSON (deterministic)
+GENERATORS                 scripts/generators/*     frontend JSON (deterministic, ISO timestamps)
         ↓
 VALIDATION                 scripts/validate.py      schema + integrity gates
         ↓
@@ -47,19 +49,37 @@ DEPLOY                     GitHub Pages             static site
 TechPulse does not generate, rewrite or fabricate any of this data. RSS content
 is stored as short excerpts with links — never full articles.
 
-## Snapshot semantics
+## Reporting-date semantics (Asia/Kolkata)
 
-- A snapshot covers exactly one **UTC calendar day**
-  (`00:00:00Z`–`23:59:59.999Z`), recorded in
-  `scripts/config/snapshot.json`.
-- The default target is the **previous completed UTC day**; the schedule runs
-  at 06:30 UTC to allow a buffer for source publication and processing lag.
+- TechPulse reporting dates are **India calendar days**
+  (`Asia/Kolkata`, UTC+05:30, no DST) — recorded in
+  `scripts/config/snapshot.json` and resolved by
+  `scripts/reporting_date.py`.
+- **The edition for reporting date X covers the previous IST day**
+  `[X-1 00:00 IST, X 00:00 IST)`. The daily workflow fires at
+  **18:30 UTC = 12:00 AM IST** — the exact start of edition day X — so the
+  edition date equals the visitor's current IST date for the whole day,
+  regardless of where in the world the visitor is.
+- GitHub Actions cron is UTC-only (`30 18 * * *`). GitHub's scheduler can
+  fire minutes early or late, so the intended date is **never** taken from
+  the runner's execution timestamp: it is the earlier of
+  *(newest snapshot + 1 day)* (self-healing: a missed run is backfilled the
+  next night) and *(current IST date + a 90-minute forward buffer)*
+  (a run that starts just before midnight belongs to the edition about to
+  begin). Manual dispatch accepts an explicit date.
 - Historical snapshots in `data/daily/` are append-only: a snapshot is
   rewritten only when its actual content changes, never silently by a time
-  churn.
+  churn. Snapshots from before the IST model keep their original UTC-day
+  windows in their own `window` fields.
 - RSS is ephemeral, so the technology window applies a documented 48-hour
-  lookback before the snapshot day (items published no later than the end of
-  the snapshot day, still observable at collection time).
+  lookback before the covered day (items published before the window end,
+  still observable at collection time).
+- The frontend (`src/js/dates.js`) mirrors these rules: date-only values
+  are read as calendar dates (never parsed as UTC instants), ISO timestamps
+  without an offset are treated as UTC, and "Today / Yesterday / N days
+  ago" labels are computed live against the current IST date — identical
+  for every visitor. No relative labels are ever frozen into the generated
+  JSON.
 
 ## Data integrity rules
 
@@ -76,8 +96,11 @@ is stored as short excerpts with links — never full articles.
 - **Idempotent collectors.** Re-collecting a date with identical records does
   not rewrite the file (the original `collectedAt` is preserved).
 - **Honest failure.** Every source reports `success` / `partial` / `failed` /
-  `empty`. One failing source never destroys other sources' data; the UI
-  shows a *PARTIAL* status when any source degraded.
+  `empty` — where `empty` means a healthy source with a legitimately empty
+  window (e.g. no releases that day) and never triggers the degraded state.
+  One failing source never destroys other sources' data; the UI shows a
+  *PARTIAL* status only when a source actually degraded, and a partial
+  collector failure never blocks the daily commit.
 
 ## Repository layout
 
@@ -87,6 +110,7 @@ is stored as short excerpts with links — never full articles.
   deploy.yml         GitHub Pages deployment
 scripts/
   run_pipeline.py    one-command local pipeline (collect → process → generate)
+  reporting_date.py  resolves the IST reporting date for a run
   validate.py        offline validation (syntax, JSON, schemas, placeholders)
   config/            tracked repositories, RSS feeds, snapshot semantics
   sources/           nvd/ · cisa/ · github/ · rss/ collectors
@@ -103,7 +127,8 @@ data/
 generated/
   data.json          frontend dataset
   archive.json       archive dataset for the History page
-src/                 static frontend (HTML/CSS/vanilla JS, no framework)
+src/                 static frontend (HTML/CSS/vanilla JS, no framework;
+                     dark + light themes, IST-aware date rendering)
 tests/               offline unit + failure-injection tests with fixtures
 ```
 
@@ -112,11 +137,11 @@ tests/               offline unit + failure-injection tests with fixtures
 Requirements: Python 3.10+ (standard library only — no packages to install).
 
 ```bash
-# Complete pipeline for the previous UTC day (hits live APIs)
+# Complete pipeline for the next pending edition (hits live APIs)
 python3 scripts/run_pipeline.py
 
-# Specific snapshot date
-python3 scripts/run_pipeline.py --date 2026-09-17
+# Specific reporting date (IST edition; the window is the previous IST day)
+python3 scripts/run_pipeline.py --date 2026-09-28
 
 # Re-run only processing/generation from existing raw data
 python3 scripts/run_pipeline.py --skip-collect
@@ -149,14 +174,16 @@ python3 -m http.server 8000
 
 ## Automation
 
-**Collect** (`.github/workflows/collect.yml`) runs at **06:30 UTC daily**,
-on every push touching `scripts/`/`tests/`, and via manual dispatch (with an
-optional `snapshot_date` input). It: checks out → validates → runs tests →
-collects all four sources (NVD, CISA KEV, GitHub with the workflow
-`GITHUB_TOKEN`, RSS) → processes → generates → validates → and commits only
-when data meaningfully changed
+**Collect** (`.github/workflows/collect.yml`) runs at **18:30 UTC daily
+(= 12:00 AM IST / midnight India time)**, on every push touching
+`scripts/`/`tests/`, and via manual dispatch (with an optional
+`snapshot_date` reporting-date input). It: checks out → validates → runs
+tests → resolves the IST reporting date → collects all four sources
+(NVD, CISA KEV, GitHub with the workflow `GITHUB_TOKEN`, RSS) → processes →
+generates → validates → and commits only when data meaningfully changed
 (`TechPulse: daily snapshot YYYY-MM-DD`). Concurrency controls serialize
-runs; overlapping schedules cannot corrupt the archive.
+runs; overlapping schedules cannot corrupt the archive. The run summary
+states the processed India date and per-source health explicitly.
 
 **Deploy** (`.github/workflows/deploy.yml`) assembles a staging directory
 (`src/` at the root, `generated/` alongside), uploads it as a Pages artifact
@@ -178,7 +205,8 @@ successful Collect run.
 - `scripts/config/github.json` — tracked repositories and collection options
   (prereleases and drafts are excluded; documented in the file).
 - `scripts/config/rss.json` — RSS/Atom feeds; each feed fails independently.
-- `scripts/config/snapshot.json` — snapshot model documentation.
+- `scripts/config/snapshot.json` — reporting-model documentation
+  (IST edition day, window, schedule, jitter policy).
 
 ## Limitations
 
