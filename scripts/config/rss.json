@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "TechPulse RSS/Atom feeds configuration. Each feed is collected independently; feed failures are recorded and never abort the run.",
+  "description": "TechPulse RSS/Atom feed configuration. Each feed is collected independently; fetch or parsing failures are recorded without discarding successful feeds.",
   "feeds": [
     {
       "name": "The Register — Security",
@@ -82,7 +82,6 @@
     }
   ],
   "collection": {
-    "timeout_seconds": 15,
     "max_entries_per_feed": 30,
     "rate_limit_delay_seconds": 1
   }
