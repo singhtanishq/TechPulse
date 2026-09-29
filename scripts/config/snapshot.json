@@ -1,9 +1,200 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "TechPulse Daily Snapshot Configuration",
+  "title": "TechPulse Snapshot Configuration",
+  "description": "Defines the TechPulse reporting-date model, collection window, storage conventions, and snapshot semantics.",
+  "type": "object",
+  "required": [
+    "snapshot",
+    "data_directories",
+    "filename_convention"
+  ],
+  "properties": {
+    "snapshot": {
+      "type": "object",
+      "required": [
+        "model",
+        "timezone",
+        "utcOffset",
+        "window",
+        "collection",
+        "idempotency"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "const": "ist_reporting_day"
+        },
+        "description": {
+          "type": "string"
+        },
+        "timezone": {
+          "type": "string",
+          "const": "Asia/Kolkata"
+        },
+        "utcOffset": {
+          "type": "string",
+          "const": "+05:30"
+        },
+        "window": {
+          "type": "object",
+          "required": [
+            "start",
+            "end"
+          ],
+          "properties": {
+            "start": {
+              "type": "string",
+              "const": "X-1 00:00:00+05:30"
+            },
+            "end": {
+              "type": "string",
+              "const": "X 00:00:00+05:30 (exclusive)"
+            }
+          }
+        },
+        "collection": {
+          "type": "object",
+          "required": [
+            "description",
+            "recommended_schedule",
+            "rationale",
+            "jitter_policy"
+          ],
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "recommended_schedule": {
+              "type": "string",
+              "const": "30 18 * * * (UTC) = 00:00 IST daily"
+            },
+            "rationale": {
+              "type": "string"
+            },
+            "jitter_policy": {
+              "type": "string"
+            }
+          }
+        },
+        "idempotency": {
+          "type": "object",
+          "required": [
+            "description",
+            "deduplication"
+          ],
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "deduplication": {
+              "type": "object",
+              "required": [
+                "nvd",
+                "cisa",
+                "github_repositories",
+                "github_releases",
+                "rss"
+              ],
+              "properties": {
+                "nvd": {
+                  "type": "string",
+                  "const": "Normalized CVE ID"
+                },
+                "cisa": {
+                  "type": "string",
+                  "const": "Normalized CVE ID"
+                },
+                "github_repositories": {
+                  "type": "string",
+                  "const": "Repository full_name"
+                },
+                "github_releases": {
+                  "type": "string",
+                  "const": "repository + version"
+                },
+                "rss": {
+                  "type": "string",
+                  "const": "Feed identity + GUID, URL, or title fallback"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "data_directories": {
+      "type": "object",
+      "required": [
+        "raw",
+        "normalized",
+        "generated",
+        "daily_snapshots"
+      ],
+      "properties": {
+        "raw": {
+          "type": "string",
+          "const": "data/security/nvd/, data/security/cisa/, data/releases/, data/opensource/, data/tech/"
+        },
+        "normalized": {
+          "type": "string",
+          "const": "data/normalized/"
+        },
+        "generated": {
+          "type": "string",
+          "const": "generated/"
+        },
+        "daily_snapshots": {
+          "type": "string",
+          "const": "data/daily/"
+        }
+      }
+    },
+    "filename_convention": {
+      "type": "object",
+      "required": [
+        "nvd_raw",
+        "cisa_raw",
+        "github_raw",
+        "opensource_raw",
+        "rss_raw",
+        "daily_snapshot",
+        "generated_frontend"
+      ],
+      "properties": {
+        "nvd_raw": {
+          "type": "string",
+          "const": "data/security/nvd/YYYY-MM-DD.json"
+        },
+        "cisa_raw": {
+          "type": "string",
+          "const": "data/security/cisa/YYYY-MM-DD.json"
+        },
+        "github_raw": {
+          "type": "string",
+          "const": "data/releases/YYYY-MM-DD.json"
+        },
+        "opensource_raw": {
+          "type": "string",
+          "const": "data/opensource/YYYY-MM-DD.json"
+        },
+        "rss_raw": {
+          "type": "string",
+          "const": "data/tech/YYYY-MM-DD.json"
+        },
+        "daily_snapshot": {
+          "type": "string",
+          "const": "data/daily/YYYY-MM-DD.json"
+        },
+        "generated_frontend": {
+          "type": "string",
+          "const": "generated/data.json"
+        }
+      }
+    }
+  },
   "snapshot": {
     "model": "ist_reporting_day",
-    "description": "Each edition represents one India calendar day (Asia/Kolkata, UTC+05:30, no DST). The edition for reporting date X covers the previous IST day (X-1): [X-1 00:00 IST, X 00:00 IST).",
+    "description": "Each edition represents one India calendar day (Asia/Kolkata, UTC+05:30, no DST). The edition for reporting date X covers the previous IST calendar day (X-1): [X-1 00:00 IST, X 00:00 IST).",
     "timezone": "Asia/Kolkata",
     "utcOffset": "+05:30",
     "window": {
@@ -11,14 +202,20 @@
       "end": "X 00:00:00+05:30 (exclusive)"
     },
     "collection": {
-      "description": "The daily workflow fires at 18:30 UTC = 00:00 IST, at the start of edition day X. GitHub Actions cron is UTC-only, so the schedule is expressed as 30 18 * * *.",
+      "description": "The daily workflow is intended to run at the start of the edition day X, after the covered IST day has completed. GitHub Actions cron is expressed in UTC.",
       "recommended_schedule": "30 18 * * * (UTC) = 00:00 IST daily",
-      "rationale": "Publishing at the start of the India day makes the edition date equal to the visitor's current IST calendar date for the whole day, and gives sources the complete covered day before collection.",
-      "jitter_policy": "GitHub Actions scheduling can fire minutes early or late. The reporting date is resolved from the newest snapshot (self-healing backfill) and the current IST date with a 90-minute forward buffer — never from the runner's raw execution timestamp. See scripts/reporting_date.py."
+      "rationale": "Publishing at the start of the India day makes the edition date equal to the current IST calendar date while allowing the previous IST day to be fully covered by the collection window.",
+      "jitter_policy": "GitHub Actions scheduling can fire minutes early or late. Reporting-date resolution is handled centrally and must not depend directly on the runner execution timestamp. The resolver uses the repository's existing snapshots and current IST date to backfill missed editions without selecting a future reporting date."
     },
     "idempotency": {
-      "description": "Running multiple times for the same date produces identical output.",
-      "deduplication": "CVE ID for vulnerabilities, owner/repo for GitHub, GUID/URL for RSS"
+      "description": "Repeated processing of identical inputs for the same reporting date preserves the existing output when the records and relevant metadata are unchanged. Changed source data or health metadata may legitimately replace the snapshot.",
+      "deduplication": {
+        "nvd": "Normalized CVE ID",
+        "cisa": "Normalized CVE ID",
+        "github_repositories": "Repository full_name",
+        "github_releases": "repository + version",
+        "rss": "Feed identity + GUID, URL, or title fallback"
+      }
     }
   },
   "data_directories": {
