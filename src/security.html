@@ -6,25 +6,38 @@
 
   <title>Security — TechPulse</title>
 
-  <meta name="description" content="TechPulse Security Observatory — daily vulnerability and security intelligence.">
+  <meta
+    name="description"
+    content="TechPulse Security Observatory — daily vulnerability and security intelligence from public security sources."
+  >
 
-  <link rel="canonical" href="https://singhtanishq.github.io/TechPulse/security.html">
+  <!-- Relative canonical resolves correctly on the deployed site. -->
+  <link rel="canonical" href="./security.html">
+
+  <meta name="robots" content="index, follow">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TechPulse">
   <meta property="og:title" content="Security — TechPulse">
-  <meta property="og:description" content="TechPulse Security Observatory — daily vulnerability and security intelligence.">
-  <meta property="og:url" content="https://singhtanishq.github.io/TechPulse/security.html">
+  <meta
+    property="og:description"
+    content="TechPulse Security Observatory — daily vulnerability and security intelligence from public security sources."
+  >
+
   <meta name="twitter:card" content="summary">
 
   <meta name="theme-color" content="#0a0d12">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+  >
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -35,10 +48,16 @@
     (function () {
       try {
         var stored = localStorage.getItem("techpulse-theme");
+
         if (stored === "light" || stored === "dark") {
-          document.documentElement.setAttribute("data-theme", stored);
+          document.documentElement.setAttribute(
+            "data-theme",
+            stored
+          );
         }
-      } catch (e) { /* storage unavailable — keep default theme */ }
+      } catch (error) {
+        /* Storage unavailable — keep default theme. */
+      }
     })();
   </script>
 </head>
@@ -47,60 +66,152 @@
 
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
 
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header class="site-header">
     <div class="container header-inner">
 
-      <a href="index.html" class="brand" aria-label="TechPulse — home">
+      <a
+        href="index.html"
+        class="brand"
+        aria-label="TechPulse — home"
+      >
         <span class="brand-mark" aria-hidden="true">T</span>
         <span class="brand-name">TechPulse</span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
-            <a href="index.html" data-nav="today">Today</a>
-            <a href="history.html" data-nav="history">History</a>
-            <a href="security.html" data-nav="security">Security</a>
-            <a href="releases.html" data-nav="releases">Releases</a>
-            <a href="opensource.html" data-nav="opensource">Open Source</a>
+        <a href="index.html" data-nav="today">Today</a>
+        <a href="history.html" data-nav="history">History</a>
+        <a href="security.html" data-nav="security">Security</a>
+        <a href="releases.html" data-nav="releases">Releases</a>
+        <a href="opensource.html" data-nav="opensource">Open Source</a>
       </nav>
 
       <div class="header-actions">
 
-        <div class="header-status" title="Daily pipeline status">
-          <span class="status-dot pulse" data-status-dot></span>
+        <div
+          class="header-status"
+          title="Daily pipeline status"
+          aria-live="polite"
+        >
+          <span
+            class="status-dot pulse"
+            data-status-dot
+            aria-hidden="true"
+          ></span>
+
           <span data-status-text>Loading…</span>
         </div>
 
-        <button class="theme-toggle" type="button" data-theme-toggle
-                aria-label="Toggle color theme" aria-pressed="false">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch color theme"
+          aria-pressed="false"
+        >
+          <svg
+            class="icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
         </button>
 
-        <button class="nav-toggle" type="button" data-nav-toggle
-                aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <svg
+            class="icon-menu"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+
+          <svg
+            class="icon-close"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
         </button>
 
       </div>
-
     </div>
-
   </header>
 
-  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
-            <a href="index.html" data-nav="today">Today</a>
-            <a href="history.html" data-nav="history">History</a>
-            <a href="security.html" data-nav="security">Security</a>
-            <a href="releases.html" data-nav="releases">Releases</a>
-            <a href="opensource.html" data-nav="opensource">Open Source</a>
+
+  <!-- =========================================================
+       MOBILE NAV
+       ========================================================= -->
+
+  <nav
+    class="mobile-nav"
+    data-mobile-nav
+    aria-label="Mobile navigation"
+    aria-hidden="true"
+  >
+    <a href="index.html" data-nav="today">Today</a>
+    <a href="history.html" data-nav="history">History</a>
+    <a href="security.html" data-nav="security">Security</a>
+    <a href="releases.html" data-nav="releases">Releases</a>
+    <a href="opensource.html" data-nav="opensource">Open Source</a>
   </nav>
 
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
 
-    <div class="error-banner" data-error-banner hidden role="alert">
+    <!-- =========================================================
+         DATA ERROR
+         ========================================================= -->
+
+    <div
+      class="error-banner"
+      data-error-banner
+      hidden
+      role="alert"
+      aria-live="assertive"
+    >
       <div>
         <strong>Live data unavailable.</strong>
         The site is showing its static shell — generated data could not be loaded.
@@ -108,24 +219,30 @@
       </div>
     </div>
 
-    <!-- PAGE HERO -->
 
-    <section class="page-hero">
+    <!-- =========================================================
+         PAGE HERO
+         ========================================================= -->
 
+    <section
+      class="page-hero"
+      aria-labelledby="security-page-title"
+    >
       <div class="container">
 
         <span class="section-kicker">
           SECURITY OBSERVATORY
         </span>
 
-        <h1>
+        <h1 id="security-page-title">
           Vulnerabilities.<br>
           <span>Tracked every day.</span>
         </h1>
 
         <p>
-          A continuously updated record of vulnerabilities,
-          security advisories and known exploited threats.
+          A daily record of vulnerabilities, severity information,
+          and known exploited vulnerability signals from public
+          security sources.
         </p>
 
         <div class="page-meta">
@@ -136,33 +253,38 @@
 
           <strong data-page-updated>—</strong>
 
-          <span class="chip" data-edition-chip>checking…</span>
+          <span
+            class="chip"
+            data-edition-chip
+          >checking…</span>
 
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- SECURITY OVERVIEW -->
+    <!-- =========================================================
+         SECURITY OVERVIEW
+         ========================================================= -->
 
-    <section class="section">
-
+    <section
+      class="section"
+      aria-labelledby="security-overview-title"
+    >
       <div class="container">
 
         <div class="section-heading">
 
           <div>
+            <span
+              class="section-kicker"
+              data-security-date
+            >EDITION</span>
 
-            <span class="section-kicker" data-security-date>
-              EDITION
-            </span>
-
-            <h2>
+            <h2 id="security-overview-title">
               Security overview
             </h2>
-
           </div>
 
         </div>
@@ -171,122 +293,154 @@
         <div class="stats-grid reveal">
 
           <article class="stat-card">
-
             <span class="stat-label">
               NEW CVEs
             </span>
 
-            <strong class="stat-value" data-cves>
-              —
-            </strong>
+            <strong
+              class="stat-value"
+              data-cves
+            >—</strong>
 
             <span class="stat-detail">
               In the edition&rsquo;s window
             </span>
-
           </article>
 
 
           <article class="stat-card">
-
             <span class="stat-label">
               CRITICAL
             </span>
 
-            <strong class="stat-value" data-critical>
-              —
-            </strong>
+            <strong
+              class="stat-value"
+              data-critical
+            >—</strong>
 
             <span class="stat-detail">
               Critical severity
             </span>
-
           </article>
 
 
           <article class="stat-card">
-
             <span class="stat-label">
               HIGH
             </span>
 
-            <strong class="stat-value" data-high>
-              —
-            </strong>
+            <strong
+              class="stat-value"
+              data-high
+            >—</strong>
 
             <span class="stat-detail">
               High severity
             </span>
-
           </article>
 
 
           <article class="stat-card">
-
             <span class="stat-label">
               CISA KEV
             </span>
 
-            <strong class="stat-value" data-kev>
-              —
-            </strong>
+            <strong
+              class="stat-value"
+              data-kev
+            >—</strong>
 
             <span class="stat-detail">
               Known exploited
             </span>
-
           </article>
 
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- VULNERABILITY LIST -->
+    <!-- =========================================================
+         VULNERABILITY LIST
+         ========================================================= -->
 
-    <section class="section section-muted">
-
+    <section
+      class="section section-muted"
+      aria-labelledby="latest-cves-title"
+    >
       <div class="container">
 
         <div class="section-heading">
 
           <div>
-
             <span class="section-kicker">
               VULNERABILITIES
             </span>
 
-            <h2>
+            <h2 id="latest-cves-title">
               Latest CVEs
             </h2>
-
           </div>
 
-          <div class="filter-group" role="group" aria-label="Filter vulnerabilities by severity">
 
-            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">
+          <div
+            class="filter-group"
+            role="group"
+            aria-label="Filter vulnerabilities by severity"
+          >
+
+            <button
+              class="filter-button active"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
               All
             </button>
 
-            <button class="filter-button" type="button" data-filter="critical" aria-pressed="false">
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="critical"
+              aria-pressed="false"
+            >
               Critical
             </button>
 
-            <button class="filter-button" type="button" data-filter="high" aria-pressed="false">
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="high"
+              aria-pressed="false"
+            >
               High
             </button>
 
-            <button class="filter-button" type="button" data-filter="medium" aria-pressed="false">
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="medium"
+              aria-pressed="false"
+            >
               Medium
             </button>
 
-            <button class="filter-button" type="button" data-filter="low" aria-pressed="false">
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="low"
+              aria-pressed="false"
+            >
               Low
             </button>
 
-            <button class="filter-button" type="button" data-filter="unscored" aria-pressed="false">
+            <button
+              class="filter-button"
+              type="button"
+              data-filter="unscored"
+              aria-pressed="false"
+            >
               Unscored
             </button>
 
@@ -295,83 +449,106 @@
         </div>
 
 
-        <div class="vulnerability-list reveal" data-vulnerability-list data-skeleton="card" data-skeleton-count="5">
-        </div>
+        <div
+          class="vulnerability-list reveal"
+          data-vulnerability-list
+          data-skeleton="card"
+          data-skeleton-count="5"
+          aria-live="polite"
+          aria-busy="true"
+        ></div>
 
       </div>
-
     </section>
 
 
-    <!-- DAILY ARCHIVE -->
+    <!-- =========================================================
+         DAILY ARCHIVE
+         ========================================================= -->
 
-    <section class="section">
-
+    <section
+      class="section"
+      aria-labelledby="security-history-title"
+    >
       <div class="container">
 
         <div class="section-heading">
 
           <div>
-
             <span class="section-kicker">
               HISTORICAL DATA
             </span>
 
-            <h2>
+            <h2 id="security-history-title">
               Daily security record
             </h2>
-
           </div>
 
-          <a href="history.html" class="section-link">
+          <a
+            href="history.html"
+            class="section-link"
+          >
             View history
           </a>
 
         </div>
 
 
-        <div class="security-history reveal" data-security-history data-skeleton="rows" data-skeleton-count="6">
-        </div>
+        <div
+          class="security-history reveal"
+          data-security-history
+          data-skeleton="rows"
+          data-skeleton-count="6"
+          aria-live="polite"
+          aria-busy="true"
+        ></div>
 
       </div>
-
     </section>
 
 
-    <!-- SOURCES -->
+    <!-- =========================================================
+         SOURCES
+         ========================================================= -->
 
-    <section class="section section-dark">
-
+    <section
+      class="section section-dark"
+      aria-labelledby="security-sources-title"
+    >
       <div class="container source-note">
 
         <span class="section-kicker">
           DATA SOURCES
         </span>
 
-        <h2>
+        <h2 id="security-sources-title">
           Built from public security data.
         </h2>
 
         <p>
-          TechPulse aggregates publicly available vulnerability
-          and security information and preserves daily snapshots
+          TechPulse collects publicly available vulnerability and
+          known exploited vulnerability data, processes it into a
+          daily edition, and preserves the resulting observations
           for historical analysis.
         </p>
 
-        <div class="source-tags">
-
+        <div
+          class="source-tags"
+          aria-label="Security data sources"
+        >
           <span>NVD</span>
           <span>CISA KEV</span>
-          <span>PUBLIC ADVISORIES</span>
-
         </div>
 
       </div>
-
     </section>
 
   </main>
 
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
 
   <footer class="site-footer">
 
@@ -379,25 +556,34 @@
 
       <div>
 
-        <a href="index.html" class="brand" aria-label="TechPulse — home">
+        <a
+          href="index.html"
+          class="brand"
+          aria-label="TechPulse — home"
+        >
           <span class="brand-mark" aria-hidden="true">T</span>
           <span class="brand-name">TechPulse</span>
         </a>
 
         <p>
-          Technology, observed every day. An autonomous, permanent
-          record of the technology ecosystem.
+          Technology, observed every day. An autonomous historical
+          record of selected technology ecosystem signals.
         </p>
 
       </div>
 
-      <nav class="footer-links" aria-label="Footer">
+
+      <nav
+        class="footer-links"
+        aria-label="Footer"
+      >
         <a href="index.html">Today</a>
         <a href="history.html">History</a>
         <a href="security.html">Security</a>
         <a href="releases.html">Releases</a>
         <a href="opensource.html">Open Source</a>
       </nav>
+
 
       <div class="footer-meta">
 
@@ -420,11 +606,31 @@
   </footer>
 
 
-    <script src="js/data.js"></script>
+  <!-- =========================================================
+       NO-JAVASCRIPT FALLBACK
+       ========================================================= -->
+
+  <noscript>
+    <div class="error-banner" role="alert">
+      <div>
+        <strong>JavaScript is required.</strong>
+        TechPulse uses JavaScript to load and render the daily
+        security edition and historical security data.
+      </div>
+    </div>
+  </noscript>
+
+
+  <!-- =========================================================
+       APPLICATION SCRIPTS
+       Dependency order:
+         data → dates → components → app
+       ========================================================= -->
+
+  <script src="js/data.js"></script>
   <script src="js/dates.js"></script>
   <script src="js/components.js"></script>
   <script src="js/app.js"></script>
 
 </body>
-
 </html>
