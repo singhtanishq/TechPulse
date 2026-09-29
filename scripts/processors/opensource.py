@@ -6,12 +6,19 @@ TechPulse — Open Source Processor
 Normalizes GitHub repository metadata into the application-ready
 open-source dataset.
 
-Daily growth policy (documented):
-    Star growth is only computed when a previous dated observation for
-    the same repository exists (i.e. an earlier data/opensource/
-    YYYY-MM-DD.json file). Without a real prior observation the value
-    is null and the frontend must show it as unavailable — never a
-    fabricated number.
+Reporting-date semantics:
+    - A reporting date is an India calendar date (Asia/Kolkata).
+    - A date-specific processor may consume ONLY the exact matching
+      data/opensource/YYYY-MM-DD.json source file.
+    - No cross-date fallback is permitted.
+
+Daily growth policy:
+    - Growth is calculated only against the immediately preceding
+      reporting date.
+    - If that exact previous reporting-date observation does not exist,
+      growth is unavailable.
+    - Missing star values remain missing; they are never converted to
+      fabricated zero values.
 
 Output:
     data/normalized/opensource.json
@@ -21,6 +28,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from datetime import timedelta
 from pathlib import Path
 from typing import Any
 
@@ -29,166 +37,685 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from processors.utils import (
     DATA_DIR,
+    NORMALIZED_DIR,
     dated_file_for,
+    derive_processed_at,
     ist_today,
     load_json,
-    save_json,
-    derive_processed_at,
-    status_from_counts,
     parse_ist_date,
+    save_json,
+    status_from_counts,
 )
 
 REPO_META_DIR = DATA_DIR / "opensource"
-NORMALIZED_DIR = DATA_DIR / "normalized"
 
 
-def resolve_snapshot_date(date_arg: str | None) -> str:
+# ================================================================
+# Date handling
+# ================================================================
+
+def resolve_snapshot_date(
+    date_arg: str | None,
+) -> str:
+    """Resolve and validate the requested reporting date."""
     if date_arg:
         try:
             parse_ist_date(date_arg)
-            return date_arg
-        except ValueError:
-            raise SystemExit("--date must be in YYYY-MM-DD format.")
+        except (TypeError, ValueError):
+            raise SystemExit(
+                "--date must be in YYYY-MM-DD format."
+            )
+
+        return date_arg
+
     return ist_today()
 
 
-def previous_observation_stars(current_date: str | None = None) -> dict[str, int]:
+def previous_reporting_date(
+    snapshot_date: str,
+) -> str:
+    """Return the immediately preceding reporting date."""
+    return (
+        parse_ist_date(snapshot_date)
+        - timedelta(days=1)
+    ).isoformat()
+
+
+# ================================================================
+# Source helpers
+# ================================================================
+
+def _failure_count(
+    failures: Any,
+) -> int:
+    """Return a normalized collector failure count."""
+    if failures is None:
+        return 0
+
+    if isinstance(failures, list):
+        return len(failures)
+
+    if isinstance(failures, bool):
+        return int(failures)
+
+    if isinstance(failures, int):
+        return max(0, failures)
+
+    return 1
+
+
+def _validate_source_metadata(
+    data: dict[str, Any],
+    snapshot_date: str,
+) -> None:
     """
-    Build {full_name: stars} from the newest observation strictly older
-    than the current reporting date.
+    Validate source metadata for a date-specific collection.
 
-    Returns an empty mapping when no prior observation exists, in which
-    case growth is reported as unavailable rather than invented.
+    New source files must identify their reporting date explicitly.
     """
-    if not REPO_META_DIR.exists():
-        return {}
-    dated = []
-    for f in REPO_META_DIR.glob("*.json"):
-        if not f.is_file():
-            continue
-        try:
-            parse_ist_date(f.stem)
-        except ValueError:
-            continue
-        if current_date and f.stem >= current_date:
-            continue
-        dated.append(f)
-    if not dated:
-        return {}
+    meta = data.get("meta")
 
-    prior = load_json(max(dated, key=lambda f: f.stem))
-    if not prior:
-        return {}
+    if not isinstance(meta, dict):
+        raise ValueError(
+            "GitHub repository source is missing its meta object."
+        )
 
-    return {
-        repo.get("full_name"): repo.get("stars") or 0
-        for repo in prior.get("repositories", [])
-        if isinstance(repo, dict) and repo.get("full_name")
-    }
+    source = meta.get("source")
+
+    if source and source != "GitHub":
+        raise ValueError(
+            f"GitHub repository source has unexpected source: {source!r}"
+        )
+
+    reporting_date = meta.get("reportingDate")
+
+    if not isinstance(reporting_date, str):
+        raise ValueError(
+            "GitHub repository source is missing meta.reportingDate."
+        )
+
+    try:
+        parse_ist_date(reporting_date)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(
+            "GitHub repository source has invalid meta.reportingDate."
+        ) from exc
+
+    if reporting_date != snapshot_date:
+        raise ValueError(
+            "GitHub repository source reporting date "
+            f"{reporting_date} does not match requested "
+            f"reporting date {snapshot_date}."
+        )
 
 
-def process_opensource(snapshot_date: str) -> dict[str, Any]:
-    """Process open-source repository metadata."""
+def _load_repository_source(
+    snapshot_date: str,
+) -> tuple[
+    Path | None,
+    dict[str, Any] | None,
+    list[dict[str, Any]],
+    int,
+]:
+    """
+    Load the exact repository source for the requested reporting date.
 
-    repos_path = dated_file_for(REPO_META_DIR, snapshot_date)
-
-    print("Loading repository metadata...")
-    repos_data = load_json(repos_path) if repos_path else None
-    if not repos_data:
-        print("  WARNING: no repository metadata available")
-        repos: list[dict[str, Any]] = []
-        failures = 1
-    else:
-        repos = [r for r in repos_data.get("repositories", []) if isinstance(r, dict)]
-        collector_failures = repos_data.get("meta", {}).get("failures", []) or []
-        failures = len(collector_failures)
-        print(f"  Loaded {len(repos)} repositories from {repos_path.name}")
-
-    prior_stars = previous_observation_stars(snapshot_date)
-    growth_basis = "previous_observation" if prior_stars else "unavailable"
-
-    for repo in repos:
-        full_name = repo.get("full_name")
-        stars = repo.get("stars")
-        if growth_basis == "previous_observation" and full_name in prior_stars and stars is not None:
-            repo["daily_growth"] = stars - prior_stars[full_name]
-            repo["growth_available"] = True
-        else:
-            repo["daily_growth"] = None
-            repo["growth_available"] = False
-
-    # Deterministic ranking: stars descending, then full_name ascending.
-    ranked = sorted(
-        repos,
-        key=lambda r: (-(r.get("stars") or 0), r.get("full_name") or ""),
+    Returns:
+        (source_path, source_data, repositories, failure_count)
+    """
+    source_path = dated_file_for(
+        REPO_META_DIR,
+        snapshot_date,
     )
-    for i, repo in enumerate(ranked):
-        repo["rank"] = i + 1
+
+    if source_path is None:
+        print(
+            f"  FAILED: exact GitHub repository source file "
+            f"for {snapshot_date} is missing"
+        )
+        return None, None, [], 1
+
+    source_data = load_json(source_path)
+
+    if not isinstance(source_data, dict):
+        print(
+            f"  FAILED: GitHub repository source "
+            f"{source_path.name} is missing or invalid JSON"
+        )
+        return source_path, None, [], 1
+
+    try:
+        _validate_source_metadata(
+            source_data,
+            snapshot_date,
+        )
+    except ValueError as exc:
+        print(
+            f"  FAILED: {exc}"
+        )
+        return source_path, source_data, [], 1
+
+    repositories_raw = source_data.get(
+        "repositories"
+    )
+
+    if not isinstance(
+        repositories_raw,
+        list,
+    ):
+        print(
+            "  FAILED: GitHub repository source "
+            "repositories field is missing or invalid"
+        )
+        return source_path, source_data, [], 1
+
+    repositories = [
+        item
+        for item in repositories_raw
+        if isinstance(item, dict)
+    ]
+
+    invalid_items = (
+        len(repositories_raw)
+        - len(repositories)
+    )
+
+    configured_failures = _failure_count(
+        source_data.get("meta", {}).get("failures")
+    )
+
+    failures = (
+        configured_failures
+        + invalid_items
+    )
+
+    return (
+        source_path,
+        source_data,
+        repositories,
+        failures,
+    )
+
+
+def _load_previous_stars(
+    snapshot_date: str,
+) -> dict[str, int | float]:
+    """
+    Load star counts from ONLY the immediately preceding reporting date.
+
+    Never search further backward: doing so would create a false
+    day-over-day comparison.
+    """
+    previous_date = previous_reporting_date(
+        snapshot_date
+    )
+
+    previous_path = dated_file_for(
+        REPO_META_DIR,
+        previous_date,
+    )
+
+    if previous_path is None:
+        return {}
+
+    previous_data = load_json(
+        previous_path
+    )
+
+    if not isinstance(previous_data, dict):
+        return {}
+
+    previous_meta = previous_data.get("meta")
+
+    if not isinstance(previous_meta, dict):
+        return {}
+
+    previous_reporting = previous_meta.get(
+        "reportingDate"
+    )
+
+    if previous_reporting != previous_date:
+        return {}
+
+    previous_repositories = previous_data.get(
+        "repositories"
+    )
+
+    if not isinstance(
+        previous_repositories,
+        list,
+    ):
+        return {}
+
+    result: dict[str, int | float] = {}
+
+    for repo in previous_repositories:
+        if not isinstance(repo, dict):
+            continue
+
+        full_name = repo.get(
+            "full_name"
+        )
+
+        stars = repo.get(
+            "stars"
+        )
+
+        if not isinstance(
+            full_name,
+            str,
+        ) or not full_name.strip():
+            continue
+
+        if isinstance(stars, bool):
+            continue
+
+        if isinstance(stars, int):
+            if stars >= 0:
+                result[
+                    full_name.strip()
+                ] = stars
+            continue
+
+        if isinstance(stars, float):
+            if stars >= 0:
+                result[
+                    full_name.strip()
+                ] = stars
+
+    return result
+
+
+# ================================================================
+# Repository normalization
+# ================================================================
+
+def _normalize_star_value(
+    value: Any,
+) -> int | float | None:
+    """Preserve a valid non-negative numeric star count."""
+    if isinstance(value, bool):
+        return None
+
+    if isinstance(value, int):
+        return value if value >= 0 else None
+
+    if isinstance(value, float):
+        return value if value >= 0 else None
+
+    return None
+
+
+def _repository_identity(
+    repo: dict[str, Any],
+) -> str:
+    """Return the normalized repository identity."""
+    value = repo.get(
+        "full_name"
+    )
+
+    if not isinstance(
+        value,
+        str,
+    ):
+        return ""
+
+    return value.strip()
+
+
+def _normalize_repository(
+    repo: dict[str, Any],
+    previous_stars: dict[str, int | float],
+) -> dict[str, Any] | None:
+    """Normalize one repository while preserving missing values."""
+    full_name = _repository_identity(
+        repo
+    )
+
+    if not full_name:
+        return None
+
+    normalized = dict(repo)
+
+    normalized["full_name"] = (
+        full_name
+    )
+
+    stars = _normalize_star_value(
+        repo.get("stars")
+    )
+
+    normalized["stars"] = stars
+
+    previous = previous_stars.get(
+        full_name
+    )
+
+    if (
+        stars is not None and
+        previous is not None
+    ):
+        normalized["daily_growth"] = (
+            stars - previous
+        )
+        normalized["growth_available"] = True
+    else:
+        normalized["daily_growth"] = None
+        normalized["growth_available"] = False
+
+    return normalized
+
+
+# ================================================================
+# Main processing
+# ================================================================
+
+def process_opensource(
+    snapshot_date: str,
+) -> dict[str, Any]:
+    """Process GitHub repository metadata."""
+
+    print(
+        "Loading repository metadata..."
+    )
+
+    (
+        repos_path,
+        repos_data,
+        raw_repositories,
+        failures,
+    ) = _load_repository_source(
+        snapshot_date
+    )
+
+    if repos_path is not None and repos_data is not None:
+        print(
+            f"  Loaded {len(raw_repositories)} repositories "
+            f"from {repos_path.name} "
+            f"(status="
+            f"{repos_data.get('meta', {}).get('status', 'unknown')}"
+            f")"
+        )
+
+    previous_stars = _load_previous_stars(
+        snapshot_date
+    )
+
+    normalized_repositories: list[
+        dict[str, Any]
+    ] = []
+
+    seen: set[str] = set()
+
+    duplicate_count = 0
+    invalid_identity_count = 0
+
+    for repo in raw_repositories:
+        normalized = _normalize_repository(
+            repo,
+            previous_stars,
+        )
+
+        if normalized is None:
+            invalid_identity_count += 1
+            continue
+
+        full_name = normalized[
+            "full_name"
+        ]
+
+        if full_name in seen:
+            duplicate_count += 1
+            continue
+
+        seen.add(full_name)
+
+        normalized_repositories.append(
+            normalized
+        )
+
+    failures += (
+        invalid_identity_count
+        + duplicate_count
+    )
+
+    # ------------------------------------------------------------
+    # Deterministic ranking.
+    #
+    # Repositories with valid star counts rank first, descending.
+    # Missing/invalid star counts are placed last.
+    # Ties resolve by full_name.
+    # ------------------------------------------------------------
+
+    ranked = sorted(
+        normalized_repositories,
+        key=lambda repo: (
+            repo.get("stars") is None,
+            -repo["stars"]
+            if isinstance(
+                repo.get("stars"),
+                (int, float),
+            )
+            and not isinstance(
+                repo.get("stars"),
+                bool,
+            )
+            else 0,
+            repo.get(
+                "full_name",
+                "",
+            ),
+        ),
+    )
+
+    for index, repo in enumerate(
+        ranked,
+        start=1,
+    ):
+        repo["rank"] = index
+
+    # ------------------------------------------------------------
+    # Summary statistics.
+    # ------------------------------------------------------------
 
     languages: dict[str, int] = {}
-    for repo in repos:
-        lang = repo.get("language") or "Unknown"
-        languages[lang] = languages.get(lang, 0) + 1
 
-    status = status_from_counts(len(repos), len(repos), failures)
-    processed_at = derive_processed_at([repos_path])
+    repositories_with_stars = 0
+    archived_repositories = 0
+    growth_observations = 0
+
+    for repo in ranked:
+        language = (
+            repo.get("language")
+            or "Unknown"
+        )
+
+        languages[language] = (
+            languages.get(language, 0)
+            + 1
+        )
+
+        if repo.get("stars") is not None:
+            repositories_with_stars += 1
+
+        if repo.get("archived") is True:
+            archived_repositories += 1
+
+        if repo.get(
+            "growth_available"
+        ) is True:
+            growth_observations += 1
+
+    if previous_stars:
+        growth_basis = (
+            "previous_reporting_date"
+        )
+    else:
+        growth_basis = "unavailable"
+
+    status_total = len(
+        ranked
+    )
+
+    status = status_from_counts(
+        status_total,
+        status_total,
+        failures,
+    )
+
+    processed_at = derive_processed_at(
+        [repos_path]
+    )
 
     return {
         "meta": {
             "processedAt": processed_at,
+            "reportingDate": snapshot_date,
             "snapshotDate": snapshot_date,
             "sourceFiles": {
-                "opensource": repos_path.name if repos_path else None,
+                "opensource": (
+                    repos_path.name
+                    if repos_path is not None
+                    else None
+                ),
             },
             "sources": {
                 "github": {
                     "status": status,
-                    "total": len(repos),
-                    "inWindow": len(repos),
+                    "total": status_total,
+                    "inWindow": status_total,
                     "failures": failures,
                 },
             },
         },
+
         "summary": {
-            "totalTracked": len(repos),
-            "languages": languages,
+            "totalTracked": len(ranked),
+            "repositoriesWithStars": (
+                repositories_with_stars
+            ),
+            "archivedRepositories": (
+                archived_repositories
+            ),
+            "growthObservations": (
+                growth_observations
+            ),
             "growthBasis": growth_basis,
+            "languages": languages,
         },
+
         "topProjects": ranked[:10],
         "allProjects": ranked,
     }
 
 
-def main() -> int:
+# ================================================================
+# CLI
+# ================================================================
 
-    parser = argparse.ArgumentParser(description="Process open-source repository data.")
-    parser.add_argument("--date", help="Snapshot date (YYYY-MM-DD, UTC).")
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Process GitHub open-source repository metadata."
+        )
+    )
+
+    parser.add_argument(
+        "--date",
+        help=(
+            "Reporting date "
+            "(YYYY-MM-DD, IST edition)."
+        ),
+    )
+
     args = parser.parse_args()
 
-    snapshot_date = resolve_snapshot_date(args.date)
+    snapshot_date = resolve_snapshot_date(
+        args.date
+    )
 
     print()
-    print("TechPulse — Open Source Processor")
-    print("=" * 32)
-    print(f"Snapshot date: {snapshot_date}")
+    print(
+        "TechPulse — Open Source Processor"
+    )
+    print(
+        "=" * 32
+    )
+    print(
+        f"Snapshot date: {snapshot_date}"
+    )
     print()
 
     try:
-        result = process_opensource(snapshot_date)
-        output_path = NORMALIZED_DIR / "opensource.json"
-        save_json(result, output_path)
+        result = process_opensource(
+            snapshot_date
+        )
+
+        output_path = (
+            NORMALIZED_DIR
+            / "opensource.json"
+        )
+
+        save_json(
+            result,
+            output_path,
+        )
+
     except Exception as exc:
-        print(f"ERROR: {exc}", file=sys.stderr)
+        print(
+            f"ERROR: {exc}",
+            file=sys.stderr,
+        )
         return 1
 
+    summary = result[
+        "summary"
+    ]
+
+    github_status = result[
+        "meta"
+    ][
+        "sources"
+    ][
+        "github"
+    ][
+        "status"
+    ]
+
     print()
-    print("Processing completed.")
-    print(f"Tracked repositories: {result['summary']['totalTracked']}")
-    print(f"Output: {output_path}")
+    print(
+        "Processing completed."
+    )
+    print(
+        f"Tracked repositories : "
+        f"{summary['totalTracked']}"
+    )
+    print(
+        f"Repositories with stars: "
+        f"{summary['repositoriesWithStars']}"
+    )
+    print(
+        f"Growth observations   : "
+        f"{summary['growthObservations']}"
+    )
+    print(
+        f"Growth basis          : "
+        f"{summary['growthBasis']}"
+    )
+    print(
+        f"GitHub status         : "
+        f"{github_status}"
+    )
+    print(
+        f"Output                : "
+        f"{output_path}"
+    )
     print()
 
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(
+        main()
+    )
