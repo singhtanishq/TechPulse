@@ -1,4 +1,3 @@
-```python
 """
 TechPulse — Processor Utilities
 
