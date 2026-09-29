@@ -1,43 +1,148 @@
+# =========================================================
+# TECHPULSE — GITIGNORE
+# Local-only files, caches, credentials, logs and temporary
+# development artifacts.
+#
+# Intentionally tracked:
+#   - data/security/
+#   - data/releases/
+#   - data/opensource/
+#   - data/tech/
+#   - data/daily/
+#   - generated/
+#
+# data/normalized/ is derived and rebuilt by the pipeline.
+# =========================================================
+
+
+# ---------------------------------------------------------
 # Python
+# ---------------------------------------------------------
+
 __pycache__/
 *.py[cod]
 *$py.class
+
 .pytest_cache/
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
 .coverage
+.coverage.*
+htmlcov/
+
 .tox/
+.nox/
+
 .venv/
 venv/
-.env
+env/
+ENV/
 
-# IDE
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+
+# ---------------------------------------------------------
+# Environment / secrets
+# ---------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+!.env.sample
+
+
+# ---------------------------------------------------------
+# IDE / editors
+# ---------------------------------------------------------
+
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+*.swn
 
-# OS
+
+# ---------------------------------------------------------
+# Operating system
+# ---------------------------------------------------------
+
 .DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+
 Thumbs.db
+ehthumbs.db
 
+
+# ---------------------------------------------------------
 # Logs
-*.log
+# ---------------------------------------------------------
 
+*.log
+logs/
+
+
+# ---------------------------------------------------------
 # Temporary files
+# ---------------------------------------------------------
+
 *.tmp
 *.temp
+*.bak
+*.backup
+*.orig
+*.rej
 
-# Auto-push script (local development only, not part of the pipeline)
+
+# ---------------------------------------------------------
+# Local development helpers
+# ---------------------------------------------------------
+
+# Local auto-commit/push helper; never required by CI.
 auto-push.sh
 
-# Normalized intermediate data is fully derived from raw/ each run
-# and is rebuilt by the pipeline; it is not part of the archive.
+
+# ---------------------------------------------------------
+# Derived / intermediate data
+# ---------------------------------------------------------
+
+# Rebuilt from the committed raw collections and daily data.
+# These files are not part of the historical archive.
 data/normalized/
 
-# Committed on purpose (do NOT ignore):
-# data/security/   raw NVD + CISA KEV collections
-# data/releases/   raw GitHub releases
-# data/opensource/ raw GitHub repository metadata
-# data/tech/       raw RSS/Atom entries
-# data/daily/      daily snapshot archive (the core historical record)
-# generated/       frontend-consumable JSON
+
+# ---------------------------------------------------------
+# Intentionally committed TechPulse data
+# ---------------------------------------------------------
+
+# data/security/    Raw NVD + CISA KEV collections
+# data/releases/   Raw GitHub release collections
+# data/opensource/ Raw GitHub repository metadata
+# data/tech/       Raw RSS/Atom entries
+# data/daily/      Daily reporting snapshots / historical archive
+# generated/       Frontend-consumable generated JSON
+
+
+# ---------------------------------------------------------
+# Local test artifacts
+# ---------------------------------------------------------
+
+.pytest_cache/
+test-results/
+coverage.xml
+coverage.json
+
+
+# ---------------------------------------------------------
+# Platform / tooling state
+# ---------------------------------------------------------
+
+.node_repl_history
+.npm/
