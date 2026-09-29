@@ -1,25 +1,24 @@
 name: Collect
 
-# Daily collection pipeline: collect -> process -> generate -> validate -> commit.
+# Daily collection pipeline:
+# collect -> process -> generate -> validate -> commit.
 #
-# Schedule (12:00 AM IST / midnight India time):
-#   GitHub Actions cron is evaluated in UTC only. Midnight IST
-#   (Asia/Kolkata, UTC+05:30, no DST) is 18:30 UTC on the previous day,
-#   so the daily slot is "30 18 * * *".
-#   Reporting semantics: the edition for India day X covers the previous
-#   IST day (X-1) and is published at the start of day X — see
-#   scripts/config/snapshot.json and scripts/reporting_date.py.
-#   The reporting date is resolved from the newest snapshot (self-healing
-#   backfill) and the current IST date with a 90-minute forward buffer,
-#   so GitHub's scheduler jitter can never shift the logical date.
+# Schedule:
+#   18:30 UTC = 00:00 IST (Asia/Kolkata) on the following day.
 #
-# The GitHub collector authenticates with the workflow-provided
-# GITHUB_TOKEN (1,000 requests/hour). Local unauthenticated runs remain
-# supported (60 requests/hour).
+# Reporting semantics:
+#   Reporting date X represents the TechPulse edition for India
+#   calendar day X and covers the previous completed IST day (X-1).
+#
+# The reporting date is resolved centrally by scripts/reporting_date.py.
+# It must never be inferred directly from the GitHub runner's execution
+# timestamp.
+#
+# The workflow also runs for changes to scripts/tests so pipeline logic
+# changes can regenerate the next pending edition.
 
 on:
   schedule:
-    # 18:30 UTC = 00:00 Asia/Kolkata (12:00 AM IST) — daily.
     - cron: "30 18 * * *"
 
   workflow_dispatch:
@@ -47,6 +46,10 @@ defaults:
   run:
     shell: bash
 
+env:
+  PYTHONUNBUFFERED: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+
 jobs:
   collect:
     name: Collect and publish data
@@ -58,90 +61,153 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
       - name: Show environment
         run: |
           python3 --version
           python3 -c "import sys; print('executable:', sys.executable)"
 
+      # ----------------------------------------------------------------
+      # Pre-flight validation
+      # ----------------------------------------------------------------
+
       - name: Run offline validation
-        run: python3 scripts/validate.py
+        run: |
+          python3 scripts/validate.py
 
       - name: Run unit tests
-        run: python3 -m unittest discover -s tests -v
+        run: |
+          python3 -m unittest discover -s tests -v
+
+      # ----------------------------------------------------------------
+      # Reporting date
+      # ----------------------------------------------------------------
 
       - name: Determine reporting date (IST)
         id: date
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_DATE: ${{ inputs.snapshot_date }}
         run: |
-          # Resolves the intended TechPulse edition date (India calendar
-          # day) independently of the runner's execution instant:
-          #   explicit input > next pending edition > current IST date.
-          # Detailed reasoning is printed to the step log.
-          DATE_OUTPUT="$(python3 scripts/reporting_date.py \
-            --event "${{ github.event_name }}" \
-            --input-date "${{ inputs.snapshot_date }}")"
+          set -euo pipefail
 
-          REPORTING_DATE="$(echo "$DATE_OUTPUT" | grep -oP '^REPORTING_DATE=\K.*')"
+          DATE_OUTPUT="$(
+            python3 scripts/reporting_date.py \
+              --event "$EVENT_NAME" \
+              --input-date "$INPUT_DATE"
+          )"
 
-          if ! echo "$REPORTING_DATE" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+          REPORTING_DATE="$(
+            printf '%s\n' "$DATE_OUTPUT" |
+              sed -n 's/^REPORTING_DATE=//p' |
+              head -n 1
+          )"
+
+          if [[ ! "$REPORTING_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
             echo "::error::Could not resolve a valid reporting date (got '$REPORTING_DATE')"
+            exit 1
+          fi
+
+          # Validate that the value is also a real calendar date.
+          if ! python3 - "$REPORTING_DATE" <<'PYEOF'
+          import sys
+          from datetime import datetime
+
+          value = sys.argv[1]
+
+          try:
+              datetime.strptime(value, "%Y-%m-%d")
+          except ValueError:
+              raise SystemExit(1)
+          PYEOF
+          then
+            echo "::error::Resolved reporting date is not a real calendar date: $REPORTING_DATE"
             exit 1
           fi
 
           echo "date=$REPORTING_DATE" >> "$GITHUB_OUTPUT"
           echo "::notice::TechPulse reporting date (IST edition): $REPORTING_DATE"
 
+      # ----------------------------------------------------------------
+      # Main pipeline
+      # ----------------------------------------------------------------
+
       - name: Run pipeline
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/run_pipeline.py --date "${{ steps.date.outputs.date }}" --verbose
+        run: |
+          python3 scripts/run_pipeline.py \
+            --date "${{ steps.date.outputs.date }}" \
+            --verbose
+
+      # ----------------------------------------------------------------
+      # Post-generation validation
+      # ----------------------------------------------------------------
 
       - name: Validate generated output
-        run: python3 scripts/validate.py
+        run: |
+          python3 scripts/validate.py
+
+      # ----------------------------------------------------------------
+      # Change detection
+      # ----------------------------------------------------------------
 
       - name: Detect meaningful changes
         id: changes
         run: |
+          set -euo pipefail
+
           git add -A
+
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No meaningful data changes detected; nothing to commit."
+            echo "No meaningful repository changes detected; nothing to commit."
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "Changed files:"
             git diff --cached --name-status
           fi
 
+      # ----------------------------------------------------------------
+      # Commit and push
+      # ----------------------------------------------------------------
+
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git commit -m "TechPulse: daily snapshot ${{ steps.date.outputs.date }}"
 
-          # Rebase onto any commits that landed while this run was
-          # collecting (e.g. a concurrent trigger), then push.
+          # Another workflow/manual push may have landed while this
+          # run was collecting. Rebase and retry rather than losing the
+          # generated snapshot.
           for attempt in 1 2 3; do
-            if git push; then
+            if git push origin HEAD:main; then
               echo "Pushed on attempt $attempt"
               exit 0
             fi
 
-            echo "Push rejected (attempt $attempt); rebasing onto latest origin/main..."
+            if [[ "$attempt" == "3" ]]; then
+              break
+            fi
 
-            git fetch origin
+            echo "Push rejected (attempt $attempt); fetching latest origin/main..."
 
-            if git rebase origin/main; then
-              git add -A
-              git diff --cached --quiet || git commit --amend --no-edit
-            else
-              echo "::warning::Rebase conflict during push retry; aborting rebase"
+            git fetch --prune origin main
+
+            if ! git rebase origin/main; then
+              echo "::error::Rebase conflict during push retry; aborting rebase"
               git rebase --abort
               exit 1
             fi
@@ -150,55 +216,96 @@ jobs:
           echo "::error::Could not push after 3 attempts"
           exit 1
 
+      # ----------------------------------------------------------------
+      # Summary
+      # ----------------------------------------------------------------
+
       - name: Summary
         if: always()
+        env:
+          REPORTING_DATE: ${{ steps.date.outputs.date }}
+          CHANGED: ${{ steps.changes.outputs.changed }}
         run: |
+          set -euo pipefail
+
           {
             echo "## TechPulse collect run"
             echo ""
             echo "| Stage | Result |"
             echo "|-------|--------|"
-            echo "| Reporting date (IST edition) | \`${{ steps.date.outputs.date }}\` |"
-            echo "| Changes committed | ${{ steps.changes.outputs.changed == 'true' && 'yes' || 'no' }} |"
+            echo "| Reporting date (IST edition) | \`${REPORTING_DATE:-unresolved}\` |"
+
+            if [[ "${CHANGED:-false}" == "true" ]]; then
+              echo "| Changes committed | yes |"
+            else
+              echo "| Changes committed | no |"
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
 
-          if [ -f generated/data.json ]; then
-            python3 - << 'PYEOF' >> "$GITHUB_STEP_SUMMARY"
+          if [[ -f generated/data.json ]]; then
+            python3 - <<'PYEOF' >> "$GITHUB_STEP_SUMMARY"
           import json
+          from pathlib import Path
 
-          with open("generated/data.json", encoding="utf-8") as f:
-              d = json.load(f)
+          path = Path("generated/data.json")
 
-          s = d.get("snapshot", {})
-          meta = d.get("meta", {})
+          try:
+              with path.open(encoding="utf-8") as f:
+                  data = json.load(f)
+          except Exception as exc:
+              print()
+              print(f"> [!WARNING]")
+              print(f"> Could not read generated/data.json for summary: `{exc}`")
+              raise SystemExit(0)
+
+          snapshot = data.get("snapshot") or {}
+          meta = data.get("meta") or {}
 
           print()
-          print(f"Edition: **{meta.get('date')}** (IST) — covering IST day **{meta.get('coveredDate')}**")
+          print(
+              f"Edition: **{meta.get('date')}** (IST) — "
+              f"covering IST day **{meta.get('coveredDate')}**"
+          )
           print()
-          print(f"| CVEs | {s.get('cves', 0)} |")
-          print(f"| Known exploited | {s.get('knownExploited', 0)} |")
-          print(f"| Releases | {s.get('releases', 0)} |")
-          print(f"| Projects | {s.get('projects', 0)} |")
-          print(f"| Tech entries | {s.get('techEntries', 0)} |")
+          print(f"| CVEs | {snapshot.get('cves', 0)} |")
+          print(f"| Known exploited | {snapshot.get('knownExploited', 0)} |")
+          print(f"| Releases | {snapshot.get('releases', 0)} |")
+          print(f"| Projects | {snapshot.get('projects', 0)} |")
+          print(f"| Tech entries | {snapshot.get('techEntries', 0)} |")
 
           print()
           print("Source health:")
 
           degraded = False
-          for group, sources in (d.get("sources") or {}).items():
-              for name, st in sources.items():
-                  status = (
-                      st.get("status", "unknown")
-                      if isinstance(st, dict)
-                      else "unknown"
-                  )
-                  if status in ("failed", "partial"):
-                      degraded = True
-                  print(f"- {name} ({group}): **{status}**")
+          sources = data.get("sources") or {}
+
+          if isinstance(sources, dict):
+              for group, group_sources in sources.items():
+                  if not isinstance(group_sources, dict):
+                      continue
+
+                  for name, status_data in group_sources.items():
+                      if isinstance(status_data, dict):
+                          status = status_data.get(
+                              "status",
+                              "unknown",
+                          )
+                      else:
+                          status = "unknown"
+
+                      if status in ("failed", "partial"):
+                          degraded = True
+
+                      print(
+                          f"- {name} ({group}): **{status}**"
+                      )
 
           if degraded:
               print()
               print("> [!WARNING]")
-              print("> One or more sources were unavailable — the edition was published degraded (PARTIAL).")
+              print(
+                  "> One or more sources were unavailable — "
+                  "the edition was published with degraded source coverage."
+              )
           PYEOF
           fi
