@@ -2,222 +2,419 @@
 
 > Technology, observed every day.
 
-TechPulse is an autonomous technology intelligence archive. It observes the
-technology ecosystem every day — vulnerabilities, known-exploited threats,
-software releases, open-source activity and technology news — structures the
-observations, and publishes them as a permanent, public, daily record.
+TechPulse is an autonomous technology intelligence archive. It observes selected parts of the technology ecosystem every day — vulnerabilities, known-exploited threats, software releases, open-source activity, and technology news — structures those observations, and publishes them as a dated, public historical record.
 
 **Live site:** https://singhtanishq.github.io/TechPulse/
 
-The system runs entirely on GitHub infrastructure at ₹0 operating cost: no
-laptop, no server, no paid API, no database. GitHub Actions collects and
-publishes daily; GitHub Pages serves the site.
+The system runs entirely on GitHub infrastructure with no required server, database, paid API, or always-on computer. GitHub Actions performs collection, processing, generation, and validation; GitHub Pages serves the resulting static site.
 
 ---
 
 ## How it works
 
-```
-PUBLIC SOURCES (NVD · CISA KEV · GitHub API · RSS/Atom)
-        ↓   GitHub Actions — daily at 18:30 UTC = 12:00 AM IST
-REPORTING DATE RESOLVER    scripts/reporting_date.py   one India calendar day per edition
+```text
+PUBLIC SOURCES
+NVD · CISA KEV · GitHub API · RSS/Atom
         ↓
-SOURCE COLLECTORS          scripts/sources/*        raw JSON, dated by reporting day
+GITHUB ACTIONS
+daily schedule / manual dispatch
         ↓
-PROCESSORS                 scripts/processors/*     normalized datasets + source health
+REPORTING DATE RESOLVER
+scripts/reporting_date.py
+one India calendar day per edition
         ↓
-DAILY SNAPSHOT             data/daily/YYYY-MM-DD.json   immutable archive record
+SOURCE COLLECTORS
+scripts/sources/*
+raw JSON, dated by reporting day
         ↓
-GENERATORS                 scripts/generators/*     frontend JSON (deterministic, ISO timestamps)
+PROCESSORS
+scripts/processors/*
+normalized datasets + source health
         ↓
-VALIDATION                 scripts/validate.py      schema + integrity gates
+DAILY SNAPSHOT
+data/daily/YYYY-MM-DD.json
+dated historical edition
         ↓
-COMMIT (only if data meaningfully changed)
+GENERATORS
+scripts/generators/*
+frontend JSON with deterministic output
         ↓
-DEPLOY                     GitHub Pages             static site
-```
+VALIDATION
+scripts/validate.py
+syntax + JSON + structure + integrity gates
+        ↓
+COMMIT
+only when repository content meaningfully changes
+        ↓
+DEPLOY
+GitHub Pages
+static site
+````
+
+---
 
 ## Data sources
 
-| Source | What it provides | Attribution |
-|--------|------------------|-------------|
-| [NVD](https://nvd.nist.gov/) | CVEs published/modified on the snapshot day, CVSS scores, descriptions, references | every record carries `source: "NVD"` and links to `nvd.nist.gov` |
-| [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | Known Exploited Vulnerabilities catalog; daily delta derived from `dateAdded` | `source: "CISA KEV"` |
-| [GitHub REST API](https://docs.github.com/en/rest) | Metadata + latest stable releases for the configured tracked repositories | `source: "GitHub"`, links to github.com |
-| RSS/Atom feeds | Technology/security headlines (title, link, short excerpt, date) | `source: "<publisher>"`, links to the original article |
+| Source                                                                   | What it provides                                                                                     | Attribution                                                                     |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [NVD](https://nvd.nist.gov/)                                             | CVEs published or modified for the collection window, CVSS information, descriptions, and references | Records identify `NVD` as the source and link to NVD where applicable           |
+| [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) | Known Exploited Vulnerabilities catalog data and reporting-day additions derived from `dateAdded`    | Records identify `CISA KEV` as the source                                       |
+| [GitHub REST API](https://docs.github.com/en/rest)                       | Repository metadata and latest stable releases for the configured tracked repositories               | Records identify `GitHub` as the source and link to GitHub                      |
+| RSS/Atom feeds                                                           | Technology and security headlines, links, excerpts, and publication information                      | Records retain the configured publisher/source and link to the original article |
 
-TechPulse does not generate, rewrite or fabricate any of this data. RSS content
-is stored as short excerpts with links — never full articles.
+TechPulse does not intentionally generate or fabricate source records. RSS content is stored as short excerpts with links rather than full articles.
+
+---
 
 ## Reporting-date semantics (Asia/Kolkata)
 
-- TechPulse reporting dates are **India calendar days**
-  (`Asia/Kolkata`, UTC+05:30, no DST) — recorded in
-  `scripts/config/snapshot.json` and resolved by
-  `scripts/reporting_date.py`.
-- **The edition for reporting date X covers the previous IST day**
-  `[X-1 00:00 IST, X 00:00 IST)`. The daily workflow fires at
-  **18:30 UTC = 12:00 AM IST** — the exact start of edition day X — so the
-  edition date equals the visitor's current IST date for the whole day,
-  regardless of where in the world the visitor is.
-- GitHub Actions cron is UTC-only (`30 18 * * *`). GitHub's scheduler can
-  fire minutes early or late, so the intended date is **never** taken from
-  the runner's execution timestamp: it is the earlier of
-  *(newest snapshot + 1 day)* (self-healing: a missed run is backfilled the
-  next night) and *(current IST date + a 90-minute forward buffer)*
-  (a run that starts just before midnight belongs to the edition about to
-  begin). Manual dispatch accepts an explicit date.
-- Historical snapshots in `data/daily/` are append-only: a snapshot is
-  rewritten only when its actual content changes, never silently by a time
-  churn. Snapshots from before the IST model keep their original UTC-day
-  windows in their own `window` fields.
-- RSS is ephemeral, so the technology window applies a documented 48-hour
-  lookback before the covered day (items published before the window end,
-  still observable at collection time).
-- The frontend (`src/js/dates.js`) mirrors these rules: date-only values
-  are read as calendar dates (never parsed as UTC instants), ISO timestamps
-  without an offset are treated as UTC, and "Today / Yesterday / N days
-  ago" labels are computed live against the current IST date — identical
-  for every visitor. No relative labels are ever frozen into the generated
-  JSON.
+TechPulse reporting dates are **India calendar days** using `Asia/Kolkata` (IST, UTC+05:30). The reporting model is documented in `scripts/config/snapshot.json` and resolved by `scripts/reporting_date.py`.
+
+### Edition date and covered day
+
+For reporting date `X`, the normal edition window covers the previous India calendar day:
+
+```text
+[X - 1 00:00 IST, X 00:00 IST)
+```
+
+The scheduled workflow runs at:
+
+```text
+18:30 UTC
+=
+00:00 IST
+```
+
+This makes the intended edition date the India calendar day that has just begun, rather than relying directly on the machine's local clock.
+
+GitHub Actions scheduling may execute slightly earlier or later than the requested cron time. The reporting-date resolver therefore determines the intended reporting date independently of the runner's execution timestamp. Manual dispatch can also provide an explicit reporting date.
+
+### Historical data
+
+Files in `data/daily/` are dated snapshots. The pipeline is idempotent: reprocessing identical input produces identical output, while a changed snapshot is replaced with the newly generated content for that same reporting date.
+
+This means historical files are stable with respect to identical inputs, but they are not technically immutable objects.
+
+Snapshots created under an earlier reporting model retain their own recorded `window` information so that historical interpretation does not depend on today's date rules.
+
+### RSS observation model
+
+RSS/Atom sources are ephemeral. The technology processor therefore uses a documented publication lookback and records the collection-time observation context.
+
+The current technology window uses a 48-hour publication lookback before the covered day so that items still observable when the feed is collected can be represented consistently.
+
+### Frontend date model
+
+The frontend mirrors the reporting model in `src/js/dates.js`:
+
+* date-only values are treated as calendar dates rather than UTC instants;
+* ISO timestamps without an explicit offset are interpreted as UTC;
+* relative labels such as `Today`, `Yesterday`, and `N days ago` are computed in the browser against the current IST calendar date;
+* future-dated editions are identified as future rather than incorrectly shown as current;
+* relative labels are never frozen into the generated JSON.
+
+---
 
 ## Data integrity rules
 
-- **No invented scores.** An NVD record without CVSS keeps
-  `severity: null` / `cvss: null` and is displayed as *UNSCORED*, never as
-  zero or LOW. NVD severity and CISA KEV "known exploited" status are kept
-  conceptually separate.
-- **No fabricated growth.** Open-source daily star growth is computed only
-  when a previous dated observation exists; otherwise it is reported as
-  unavailable (`n/a`).
-- **Deterministic output.** Sorted keys, stable ordering, timestamps derived
-  from source data. Reprocessing identical inputs produces byte-identical
-  files, so commits happen only when data meaningfully changed.
-- **Idempotent collectors.** Re-collecting a date with identical records does
-  not rewrite the file (the original `collectedAt` is preserved).
-- **Honest failure.** Every source reports `success` / `partial` / `failed` /
-  `empty` — where `empty` means a healthy source with a legitimately empty
-  window (e.g. no releases that day) and never triggers the degraded state.
-  One failing source never destroys other sources' data; the UI shows a
-  *PARTIAL* status only when a source actually degraded, and a partial
-  collector failure never blocks the daily commit.
+### No invented scores
+
+An NVD record without CVSS data retains a missing/unscored state rather than being converted into a numeric zero or LOW severity.
+
+NVD severity information and CISA KEV known-exploited status are treated as separate concepts.
+
+### No fabricated growth
+
+Open-source daily star growth is calculated only when a comparable observation exists for the immediately preceding reporting date. Otherwise growth is reported as unavailable (`n/a`).
+
+### Deterministic output
+
+Generated datasets use stable ordering and deterministic processing wherever source data permits it. Reprocessing identical inputs produces byte-identical generated output.
+
+The pipeline therefore avoids unnecessary commits caused solely by generation-time timestamp churn.
+
+### Idempotent collectors
+
+Re-collecting a reporting date with identical records does not intentionally rewrite an unchanged raw collection. Existing collection metadata is preserved where appropriate.
+
+### Honest source health
+
+Each source reports a health state such as:
+
+```text
+success
+partial
+failed
+empty
+```
+
+`empty` means a healthy source produced no usable records for its legitimate window. It is different from a source failure.
+
+A failure in one source does not intentionally destroy usable records from other sources. The generated dataset exposes source health, and the frontend surfaces degraded collection as `PARTIAL` when applicable.
+
+The pipeline exits successfully when at least one collector provides usable data and all subsequent processing and validation stages succeed. It exits with failure when a required processing/generation stage fails or when every collector fails.
+
+---
 
 ## Repository layout
 
-```
-.github/workflows/
-  collect.yml        daily collection pipeline (schedule + dispatch + push)
-  deploy.yml         GitHub Pages deployment
+```text
+.github/
+  workflows/
+    collect.yml        daily collection pipeline
+    deploy.yml         GitHub Pages deployment
+
 scripts/
-  run_pipeline.py    one-command local pipeline (collect → process → generate)
-  reporting_date.py  resolves the IST reporting date for a run
-  validate.py        offline validation (syntax, JSON, schemas, placeholders)
-  config/            tracked repositories, RSS feeds, snapshot semantics
-  sources/           nvd/ · cisa/ · github/ · rss/ collectors
-  processors/        security · releases · opensource · tech · daily · history
-  generators/        site_data · archive
+  run_pipeline.py      one-command local pipeline
+  reporting_date.py    resolves the IST reporting date
+  validate.py          offline validation and integrity checks
+
+  config/
+    github.json        tracked repositories and GitHub settings
+    rss.json           configured RSS/Atom feeds
+    snapshot.json      reporting-date and snapshot semantics
+
+  sources/
+    nvd/               NVD collector
+    cisa/              CISA KEV collector
+    github/            GitHub collector
+    rss/               RSS/Atom collector
+
+  processors/
+    security.py
+    releases.py
+    opensource.py
+    tech.py
+    daily.py
+    history.py
+    utils.py
+
+  generators/
+    site_data.py
+    archive.py
+
 data/
-  security/nvd/      raw NVD collections (committed)
-  security/cisa/     raw CISA KEV snapshots (committed)
-  releases/          raw GitHub releases (committed)
-  opensource/        raw GitHub repository metadata (committed)
-  tech/              raw RSS/Atom entries (committed)
-  daily/             the historical archive (committed)
-  normalized/        intermediate datasets (derived each run, not committed)
+  security/nvd/        raw NVD collections
+  security/cisa/       raw CISA KEV collections
+  releases/            raw GitHub release collections
+  opensource/          raw GitHub repository metadata
+  tech/                raw RSS/Atom entries
+  daily/               dated daily snapshots
+  normalized/          derived intermediate datasets
+
 generated/
-  data.json          frontend dataset
-  archive.json       archive dataset for the History page
-src/                 static frontend (HTML/CSS/vanilla JS, no framework;
-                     dark + light themes, IST-aware date rendering)
-tests/               offline unit + failure-injection tests with fixtures
+  data.json            frontend dataset
+  archive.json         archive dataset for the History page
+
+src/
+  static frontend
+  HTML + CSS + vanilla JavaScript
+  dark + light themes
+  IST-aware date rendering
+
+tests/
+  offline unit tests
+  failure-injection checks
+  fixtures
 ```
+
+`data/normalized/` is derived intermediate data and is not part of the committed historical record.
+
+---
 
 ## Local usage
 
-Requirements: Python 3.10+ (standard library only — no packages to install).
+Requirements:
+
+* Python 3.10+
+* Python standard library only
+* no package installation required for the pipeline
+
+### Run the complete pipeline
+
+This collects from live sources for the next pending reporting date:
 
 ```bash
-# Complete pipeline for the next pending edition (hits live APIs)
 python3 scripts/run_pipeline.py
+```
 
-# Specific reporting date (IST edition; the window is the previous IST day)
+### Run a specific reporting date
+
+```bash
 python3 scripts/run_pipeline.py --date 2026-09-28
+```
 
-# Re-run only processing/generation from existing raw data
+The edition date is an IST reporting date; under the current model its normal covered day is the preceding India calendar day.
+
+### Re-run processing and generation from existing raw data
+
+```bash
 python3 scripts/run_pipeline.py --skip-collect
+```
 
-# Offline validation (no network)
+### Offline validation
+
+```bash
 python3 scripts/validate.py
+```
 
-# Tests (offline, fixture-based)
+### Offline tests
+
+```bash
 python3 -m unittest discover -s tests -v
+```
+
+### Failure-injection checks
+
+```bash
 python3 tests/failure_injection.py
 ```
 
-The GitHub collector is optional-token aware:
+---
+
+## GitHub collector authentication
+
+The GitHub collector can operate without a token for small workloads and can also use an authentication token supplied through the environment.
+
+Unauthenticated:
 
 ```bash
-# Unauthenticated: 60 requests/hour (small repo lists only)
 python3 scripts/sources/github/collect.py
+```
 
-# Authenticated: 5,000 requests/hour
+Authenticated:
+
+```bash
 GITHUB_TOKEN=<your-token> python3 scripts/sources/github/collect.py
 ```
 
-To preview the site locally, serve the repository root (not `src/`) so the
-frontend can find `generated/data.json`:
+For GitHub Actions, the workflow provides the repository's GitHub Actions token to the collector.
+
+API quotas and limits are imposed by GitHub and can change independently of TechPulse; the collector therefore handles rate-limit responses rather than relying on a permanently hard-coded quota assumption.
+
+---
+
+## Preview the site locally
+
+Serve the repository root rather than `src/` so that the frontend can resolve the generated data files correctly:
 
 ```bash
 python3 -m http.server 8000
-# open http://127.0.0.1:8000/src/index.html
 ```
+
+Then open:
+
+```text
+http://127.0.0.1:8000/src/index.html
+```
+
+---
 
 ## Automation
 
-**Collect** (`.github/workflows/collect.yml`) runs at **18:30 UTC daily
-(= 12:00 AM IST / midnight India time)**, on every push touching
-`scripts/`/`tests/`, and via manual dispatch (with an optional
-`snapshot_date` reporting-date input). It: checks out → validates → runs
-tests → resolves the IST reporting date → collects all four sources
-(NVD, CISA KEV, GitHub with the workflow `GITHUB_TOKEN`, RSS) → processes →
-generates → validates → and commits only when data meaningfully changed
-(`TechPulse: daily snapshot YYYY-MM-DD`). Concurrency controls serialize
-runs; overlapping schedules cannot corrupt the archive. The run summary
-states the processed India date and per-source health explicitly.
+### Collect
 
-**Deploy** (`.github/workflows/deploy.yml`) assembles a staging directory
-(`src/` at the root, `generated/` alongside), uploads it as a Pages artifact
-and deploys. It runs on pushes touching `src/`/`generated/` and after every
-successful Collect run.
+`.github/workflows/collect.yml` runs the collection pipeline on the configured daily schedule, on relevant repository changes, and through manual dispatch.
+
+The pipeline:
+
+```text
+checkout
+→ offline validation
+→ tests
+→ reporting-date resolution
+→ NVD collection
+→ CISA KEV collection
+→ GitHub collection
+→ RSS/Atom collection
+→ processing
+→ generation
+→ validation
+→ commit if content changed
+```
+
+The workflow also records the processed India reporting date and source health in the run summary.
+
+Concurrency controls serialize collection runs so overlapping executions do not intentionally modify the archive simultaneously.
+
+### Deploy
+
+`.github/workflows/deploy.yml` prepares the static site for GitHub Pages and deploys it after a successful Collect workflow. It can also run for relevant frontend/workflow changes.
+
+The deployment staging area contains:
+
+```text
+src/
+generated/
+```
+
+and excludes development-only files such as the repository's tests, scripts, raw data collections, and Git metadata.
+
+---
 
 ## Exit codes and failure behavior
 
-- Pipeline exit `0` — completed. Partial source availability is reported in
-  logs and in the dataset's `sources` health block, and is surfaced in the UI
-  ("PARTIAL").
-- Pipeline exit `1` — a processing/generation stage failed, or **every**
-  collector failed (no usable data; nothing is committed).
-- A failed Collect run blocks the Deploy workflow (no deploying to hide a
-  broken pipeline).
+### Exit `0`
+
+The pipeline completed successfully.
+
+A source may still be `partial` provided usable data remains available and all downstream processing, generation, and validation stages succeed.
+
+### Exit `1`
+
+The pipeline failed because:
+
+* a processing stage failed;
+* a generation stage failed;
+* validation failed; or
+* every collector failed, leaving no usable collection to process.
+
+A failed Collect workflow prevents the normal successful-run deployment path from proceeding.
+
+---
 
 ## Configuration
 
-- `scripts/config/github.json` — tracked repositories and collection options
-  (prereleases and drafts are excluded; documented in the file).
-- `scripts/config/rss.json` — RSS/Atom feeds; each feed fails independently.
-- `scripts/config/snapshot.json` — reporting-model documentation
-  (IST edition day, window, schedule, jitter policy).
+### `scripts/config/github.json`
+
+Defines:
+
+* tracked repositories;
+* release collection limits;
+* collection delay;
+* stable-release inclusion rules.
+
+Draft and prerelease releases are excluded by the current configuration.
+
+### `scripts/config/rss.json`
+
+Defines the configured RSS/Atom feeds and collection behavior.
+
+Each feed is isolated so one unavailable feed does not automatically invalidate successful feeds.
+
+### `scripts/config/snapshot.json`
+
+Defines the reporting model, including:
+
+* `Asia/Kolkata` reporting timezone;
+* edition and covered-day semantics;
+* daily snapshot directory conventions;
+* source deduplication expectations;
+* idempotency rules.
+
+---
 
 ## Limitations
 
-- NVD rate limits unauthenticated clients; the collector pages conservatively
-  (6 s between requests, retries with backoff). A token can be added later
-  via the `NVD_API_KEY` secret if volume grows.
-- The first GitHub Pages deployment required a one-time manual enablement
-  (Settings → Pages → Source: GitHub Actions); subsequent deploys are fully
-  automated.
-- Daily growth for open-source projects requires two consecutive daily
-  observations; it displays `n/a` before that.
+* External APIs and feeds can become unavailable, change response formats, impose rate limits, or temporarily return incomplete data.
+* NVD collection is deliberately conservative and paginated to reduce request pressure. Authentication can be added later through an `NVD_API_KEY` secret if collection volume requires it.
+* RSS/Atom feeds are ephemeral sources; older content can disappear or become unavailable to later collection runs.
+* Open-source daily growth requires comparable observations for consecutive reporting dates. It is shown as `n/a` when that comparison is unavailable.
+* The current GitHub collector tracks the repositories configured in `scripts/config/github.json`; the open-source view is not a universal ranking of all GitHub repositories.
+* The first GitHub Pages deployment requires one-time Pages configuration with GitHub Actions as the deployment source. After that, deployment is automated by the workflow.
+
+---
 
 ## License
 
@@ -225,5 +422,4 @@ MIT — see [LICENSE](LICENSE).
 
 ---
 
-*TechPulse — building a permanent record of technology change, one day at a
-time.*
+*TechPulse — building a dated record of technology change, one day at a time.*
