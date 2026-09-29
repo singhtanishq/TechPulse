@@ -1,3 +1,4 @@
+```python
 """
 TechPulse — Processor Utilities
 
@@ -13,8 +14,9 @@ Conventions:
     - The edition for reporting date X covers the previous IST calendar
       day (X-1): [X-1 00:00 IST, X 00:00 IST). The daily workflow fires
       at 18:30 UTC = 00:00 IST, i.e. at the start of edition day X.
-    - "Latest raw file" selection is by dated filename (YYYY-MM-DD.json),
-      not filesystem mtime, so file copies never change behavior.
+    - Date-specific raw source files are strictly isolated by reporting
+      date. A processor requesting a specific date will NEVER silently
+      consume another date's raw file.
     - Processed metadata timestamps are derived from source data so that
       reprocessing identical inputs yields byte-identical outputs.
 """
@@ -99,25 +101,41 @@ def ist_day_window(reporting_date: str) -> tuple[datetime, datetime]:
     """
     day = parse_ist_date(reporting_date)
     covered = day - timedelta(days=1)
-    start_ist = datetime(covered.year, covered.month, covered.day, tzinfo=IST)
-    end_ist = datetime(day.year, day.month, day.day, tzinfo=IST)
-    return start_ist.astimezone(timezone.utc), end_ist.astimezone(timezone.utc)
+    start_ist = datetime(
+        covered.year,
+        covered.month,
+        covered.day,
+        tzinfo=IST,
+    )
+    end_ist = datetime(
+        day.year,
+        day.month,
+        day.day,
+        tzinfo=IST,
+    )
+    return (
+        start_ist.astimezone(timezone.utc),
+        end_ist.astimezone(timezone.utc),
+    )
 
 
 def newest_snapshot_date() -> str | None:
     """
     Return the newest daily snapshot date (YYYY-MM-DD) by filename,
-    or None when no dated snapshot exists yet.
+    or None when no dated snapshot exists.
     """
     if not DAILY_DIR.exists():
         return None
-    dated = []
+
+    dated: list[str] = []
+
     for path in DAILY_DIR.glob("*.json"):
         try:
             parse_ist_date(path.stem)
         except ValueError:
             continue
         dated.append(path.stem)
+
     return max(dated) if dated else None
 
 
@@ -158,16 +176,25 @@ def resolve_reporting_date(
     if newest:
         backfill = parse_ist_date(newest) + timedelta(days=1)
         candidates.append(
-            (backfill, f"next pending edition after newest snapshot {newest}")
+            (
+                backfill,
+                f"next pending edition after newest snapshot {newest}",
+            )
         )
 
     now_ist = ist_today(
-        offset_minutes=SCHEDULE_JITTER_BUFFER_MINUTES
-        if event == "schedule"
-        else 0
+        offset_minutes=(
+            SCHEDULE_JITTER_BUFFER_MINUTES
+            if event == "schedule"
+            else 0
+        )
     )
+
     candidates.append(
-        (parse_ist_date(now_ist), f"current IST date ({event} run, IST={ist_now().isoformat()})")
+        (
+            parse_ist_date(now_ist),
+            f"current IST date ({event} run, IST={ist_now().isoformat()})",
+        )
     )
 
     chosen, reason = min(candidates, key=lambda item: item[0])
@@ -189,12 +216,16 @@ def in_ist_day(value: str | None, ist_day: str) -> bool:
     """
     if not value or not isinstance(value, str):
         return False
+
     text = value.strip()
+
     if len(text) == 10 and text[4] == "-" and text[7] == "-":
         return text == ist_day
+
     stamp = parse_iso_datetime(text)
     if stamp is None:
         return False
+
     return ist_date_of(stamp) == ist_day
 
 
@@ -206,14 +237,20 @@ def parse_iso_datetime(value: str | None) -> datetime | None:
     """Parse an ISO-8601 datetime string; returns None when unparseable."""
     if not value or not isinstance(value, str):
         return None
+
     try:
         value = value.strip()
+
         if value.endswith("Z"):
             value = value[:-1] + "+00:00"
+
         parsed = datetime.fromisoformat(value)
+
         if parsed.tzinfo is None:
             parsed = parsed.replace(tzinfo=timezone.utc)
+
         return parsed.astimezone(timezone.utc)
+
     except (ValueError, TypeError):
         return None
 
@@ -223,7 +260,9 @@ def load_json(path: Path) -> dict[str, Any] | None:
     try:
         with path.open("r", encoding="utf-8") as f:
             data = json.load(f)
+
         return data if isinstance(data, dict) else None
+
     except (FileNotFoundError, json.JSONDecodeError, OSError):
         return None
 
@@ -231,9 +270,17 @@ def load_json(path: Path) -> dict[str, Any] | None:
 def save_json(data: dict[str, Any], path: Path) -> Path:
     """Save JSON deterministically (sorted keys, stable newline)."""
     path.parent.mkdir(parents=True, exist_ok=True)
+
     with path.open("w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False, sort_keys=True)
+        json.dump(
+            data,
+            f,
+            indent=2,
+            ensure_ascii=False,
+            sort_keys=True,
+        )
         f.write("\n")
+
     return path
 
 
@@ -241,68 +288,115 @@ def latest_dated_file(directory: Path) -> Path | None:
     """
     Return the newest dated JSON file in a directory (by filename).
 
-    Filenames must be YYYY-MM-DD.json so lexical order equals date order.
-    Falls back to mtime ordering for non-conforming names.
+    This helper is intentionally retained for operations where "latest"
+    is explicitly desired.
+
+    IMPORTANT:
+        This function must NOT be used to satisfy a request for a
+        specific reporting date. Date-specific processing must use
+        dated_file_for(), which enforces strict date isolation.
     """
     if not directory.exists():
         return None
-    files = [f for f in directory.glob("*.json") if f.is_file()]
+
+    files = [
+        f
+        for f in directory.glob("*.json")
+        if f.is_file()
+    ]
+
     if not files:
         return None
 
-    def sort_key(path: Path) -> tuple[int, str]:
-        stem = path.stem
-        try:
-            parse_ist_date(stem)
-            return (1, stem)  # dated files sort by name
-        except ValueError:
-            return (0, "")   # non-dated files sort first (ignored below)
+    dated: list[Path] = []
 
-    dated = [f for f in files if sort_key(f)[0] == 1]
+    for path in files:
+        try:
+            parse_ist_date(path.stem)
+        except ValueError:
+            continue
+        dated.append(path)
+
     if dated:
         return max(dated, key=lambda f: f.stem)
+
+    # This fallback is retained only for callers that explicitly ask
+    # for the latest file and when there are no YYYY-MM-DD filenames.
     return max(files, key=lambda f: f.stat().st_mtime)
 
 
-def dated_file_for(directory: Path, reporting_date: str | None) -> Path | None:
+def dated_file_for(
+    directory: Path,
+    reporting_date: str | None,
+) -> Path | None:
     """
-    Return the raw source file for the given reporting date.
+    Return the raw source file for a reporting date.
 
-    Processors must never mix an edition's window with a newer
-    edition's raw file (possible when backfilling an older date), so
-    the exact date match always wins. Falls back to the newest dated
-    file when the exact date is absent (e.g. a source that was only
-    collected under a previous date).
+    DATE ISOLATION RULE:
+        When reporting_date is supplied, only the exact
+        YYYY-MM-DD.json file for that date may be returned.
+
+        If that exact file does not exist, this function returns None.
+
+        It MUST NOT fall back to another date's file because doing so
+        can contaminate historical/backfilled editions with source data
+        collected for a different reporting date.
+
+    When reporting_date is None, no date-specific source is requested,
+    so the newest dated file may be returned. This preserves legitimate
+    "latest file" use-cases without compromising date-specific
+    processing.
     """
-    if reporting_date and directory.exists():
-        exact = directory / f"{reporting_date}.json"
-        if exact.is_file():
-            return exact
-    return latest_dated_file(directory)
+    if reporting_date is None:
+        return latest_dated_file(directory)
+
+    # Validate the requested reporting date before constructing the path.
+    # This prevents malformed values from turning into unexpected paths.
+    parse_ist_date(reporting_date)
+
+    if not directory.exists():
+        return None
+
+    exact = directory / f"{reporting_date}.json"
+
+    if exact.is_file():
+        return exact
+
+    return None
 
 
-def derive_processed_at(source_files: list[Path | None]) -> str:
+def derive_processed_at(
+    source_files: list[Path | None],
+) -> str:
     """
     Derive a deterministic processedAt timestamp from source data.
 
     Uses the newest 'collectedAt' across the given source files so that
     reprocessing the same inputs never changes this value.
+
     Falls back to the current IST reporting-day start (as UTC) when
     sources are absent.
     """
     newest: datetime | None = None
+
     for path in source_files:
         if path is None:
             continue
+
         data = load_json(path)
+
         if not data:
             continue
+
         meta = data.get("meta") or {}
         stamp = parse_iso_datetime(meta.get("collectedAt"))
+
         if stamp and (newest is None or stamp > newest):
             newest = stamp
+
     if newest is not None:
         return newest.isoformat()
+
     window_start, _ = ist_day_window(ist_today())
     return window_start.isoformat()
 
@@ -311,45 +405,72 @@ def derive_processed_at(source_files: list[Path | None]) -> str:
 # Formatting
 # ------------------------------------------------------------------ #
 
-def format_date(date_obj: datetime | str | None) -> str:
+def format_date(
+    date_obj: datetime | str | None,
+) -> str:
     """Format a date for display, e.g. '18 SEP 2026' (IST calendar day)."""
     if isinstance(date_obj, str):
         text = date_obj.strip()
+
         if len(text) == 10 and text[4] == "-" and text[7] == "-":
-            return format_date(datetime.strptime(text, "%Y-%m-%d").replace(tzinfo=IST))
+            return format_date(
+                datetime.strptime(
+                    text,
+                    "%Y-%m-%d",
+                ).replace(tzinfo=IST)
+            )
+
         parsed = parse_iso_datetime(text)
+
         if parsed is None:
             return ""
+
         date_obj = parsed
+
     if isinstance(date_obj, datetime):
         return date_obj.astimezone(IST).strftime("%d %b %Y").upper()
+
     return ""
 
 
-def deduplicate_by_key(items: list[dict], key: str) -> list[dict]:
+def deduplicate_by_key(
+    items: list[dict],
+    key: str,
+) -> list[dict]:
     """Deduplicate a list of dicts by a key, keeping the first occurrence."""
     seen: set[Any] = set()
     result: list[dict] = []
+
     for item in items:
         val = item.get(key)
+
         if val and val not in seen:
             seen.add(val)
             result.append(item)
+
     return result
 
 
-def status_from_counts(total: int, in_window: int, failures: int = 0) -> str:
+def status_from_counts(
+    total: int,
+    in_window: int,
+    failures: int = 0,
+) -> str:
     """
     Derive an honest source status:
+
         success — data collected and present in the window
         empty   — source healthy, but legitimately nothing in the window
         partial — data collected, but some items failed
         failed  — collection failed (no usable data)
+
     An empty window is a normal daily outcome (e.g. no releases today),
     never a degradation signal.
     """
     if failures > 0:
         return "partial" if total > 0 else "failed"
+
     if total <= 0 or in_window <= 0:
         return "empty"
+
     return "success"
