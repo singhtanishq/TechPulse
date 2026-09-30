@@ -8,7 +8,8 @@
     "collectedAt": "2026-09-22T13:31:12.447372+00:00",
     "count": 1717,
     "snapshotDate": "2026-09-21",
-    "source": "CISA KEV"
+    "source": "CISA KEV",
+    "reportingDate": "2026-09-21"
   },
   "vulnerabilities": [
     {
