@@ -452,7 +452,7 @@
     "knownExploited": 0,
     "projects": 20,
     "releases": 0,
-    "techEntries": 41
+    "techEntries": 22
   },
   "sources": {
     "opensource": {
@@ -488,13 +488,21 @@
     "technology": {
       "rss": {
         "failures": 1,
-        "inWindow": 41,
+        "inWindow": 22,
         "status": "partial",
         "total": 198
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-27T17:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help build a fair, sustainable future for the web.",
+      "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+      "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-09-25T19:38:59+00:00",
@@ -606,14 +614,6 @@
       "summary": "Introduction As an update to the June 2026 post, ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit , Mandiant and Google Threat Intelligence Group (GTIG) have identified renewed mass exploitation of CVE-2026-35273 by UNC6240 (ShinyHunters), along with expanded…",
       "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
       "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T13:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Misconfiguring Turnstile by skipping backend validation leaves sites exposed to bots. Turnstile Spin fixes incomplete setups by using your preferred AI coding agent to wire up server-side verification.",
-      "title": "Agents can now set up your website’s security with Turnstile Spin",
-      "url": "https://blog.cloudflare.com/turnstile-spin/"
     }
   ]
 }
