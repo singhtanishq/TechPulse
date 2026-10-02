@@ -1,6 +1,77 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "TechPulse GitHub Tracked Repositories Configuration",
+  "title": "TechPulse GitHub Configuration",
+  "description": "Configuration for GitHub repositories tracked by TechPulse.",
+  "type": "object",
+  "required": [
+    "tracked_repositories",
+    "collection"
+  ],
+  "properties": {
+    "tracked_repositories": {
+      "type": "array",
+      "description": "Public GitHub repositories whose metadata and stable releases are collected.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "owner",
+          "repo",
+          "category"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "owner": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,99}$"
+          },
+          "repo": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,99}$"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "collection": {
+      "type": "object",
+      "required": [
+        "include_prereleases",
+        "include_drafts",
+        "max_releases_per_repo",
+        "rate_limit_delay_seconds"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "include_prereleases": {
+          "type": "boolean",
+          "const": false,
+          "description": "TechPulse intentionally excludes prereleases from the stable release signal."
+        },
+        "include_drafts": {
+          "type": "boolean",
+          "const": false,
+          "description": "TechPulse intentionally excludes draft releases."
+        },
+        "max_releases_per_repo": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "rate_limit_delay_seconds": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60
+        }
+      }
+    }
+  },
   "tracked_repositories": [
     {
       "owner": "facebook",
