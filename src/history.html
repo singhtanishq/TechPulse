@@ -6,25 +6,38 @@
 
   <title>History — TechPulse</title>
 
-  <meta name="description" content="Explore historical daily snapshots of technology, security, releases, and open-source activity.">
+  <meta
+    name="description"
+    content="Explore historical daily snapshots of technology, security, releases, and open-source activity collected by TechPulse."
+  >
 
-  <link rel="canonical" href="https://singhtanishq.github.io/TechPulse/history.html">
+  <!-- Relative canonical resolves correctly on the deployed site. -->
+  <link rel="canonical" href="./history.html">
+
+  <meta name="robots" content="index, follow">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TechPulse">
   <meta property="og:title" content="History — TechPulse">
-  <meta property="og:description" content="Explore historical daily snapshots of technology, security, releases, and open-source activity.">
-  <meta property="og:url" content="https://singhtanishq.github.io/TechPulse/history.html">
+  <meta
+    property="og:description"
+    content="Explore historical daily snapshots of technology, security, releases, and open-source activity collected by TechPulse."
+  >
+
   <meta name="twitter:card" content="summary">
 
   <meta name="theme-color" content="#0a0d12">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+  >
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -35,10 +48,16 @@
     (function () {
       try {
         var stored = localStorage.getItem("techpulse-theme");
+
         if (stored === "light" || stored === "dark") {
-          document.documentElement.setAttribute("data-theme", stored);
+          document.documentElement.setAttribute(
+            "data-theme",
+            stored
+          );
         }
-      } catch (e) { /* storage unavailable — keep default theme */ }
+      } catch (error) {
+        /* Storage unavailable — keep default theme. */
+      }
     })();
   </script>
 </head>
@@ -47,60 +66,148 @@
 
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
 
+  <header class="site-header">
     <div class="container header-inner">
 
-      <a href="index.html" class="brand" aria-label="TechPulse — home">
+      <a
+        href="index.html"
+        class="brand"
+        aria-label="TechPulse — home"
+      >
         <span class="brand-mark" aria-hidden="true">T</span>
         <span class="brand-name">TechPulse</span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
-            <a href="index.html" data-nav="today">Today</a>
-            <a href="history.html" data-nav="history">History</a>
-            <a href="security.html" data-nav="security">Security</a>
-            <a href="releases.html" data-nav="releases">Releases</a>
-            <a href="opensource.html" data-nav="opensource">Open Source</a>
+        <a href="index.html" data-nav="today">Today</a>
+        <a href="history.html" data-nav="history">History</a>
+        <a href="security.html" data-nav="security">Security</a>
+        <a href="releases.html" data-nav="releases">Releases</a>
+        <a href="opensource.html" data-nav="opensource">Open Source</a>
       </nav>
 
       <div class="header-actions">
 
-        <div class="header-status" title="Daily pipeline status">
-          <span class="status-dot pulse" data-status-dot></span>
+        <div
+          class="header-status"
+          title="Daily pipeline status"
+          aria-live="polite"
+        >
+          <span
+            class="status-dot pulse"
+            data-status-dot
+            aria-hidden="true"
+          ></span>
           <span data-status-text>Loading…</span>
         </div>
 
-        <button class="theme-toggle" type="button" data-theme-toggle
-                aria-label="Toggle color theme" aria-pressed="false">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch color theme"
+          aria-pressed="false"
+        >
+          <svg
+            class="icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
         </button>
 
-        <button class="nav-toggle" type="button" data-nav-toggle
-                aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <svg
+            class="icon-menu"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+
+          <svg
+            class="icon-close"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
         </button>
 
       </div>
-
     </div>
-
   </header>
 
-  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
-            <a href="index.html" data-nav="today">Today</a>
-            <a href="history.html" data-nav="history">History</a>
-            <a href="security.html" data-nav="security">Security</a>
-            <a href="releases.html" data-nav="releases">Releases</a>
-            <a href="opensource.html" data-nav="opensource">Open Source</a>
+
+  <!-- =========================================================
+       MOBILE NAV
+       ========================================================= -->
+
+  <nav
+    class="mobile-nav"
+    data-mobile-nav
+    aria-label="Mobile navigation"
+    aria-hidden="true"
+  >
+    <a href="index.html" data-nav="today">Today</a>
+    <a href="history.html" data-nav="history">History</a>
+    <a href="security.html" data-nav="security">Security</a>
+    <a href="releases.html" data-nav="releases">Releases</a>
+    <a href="opensource.html" data-nav="opensource">Open Source</a>
   </nav>
 
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
 
-    <div class="error-banner" data-error-banner hidden role="alert">
+    <!-- =========================================================
+         DATA ERROR
+         ========================================================= -->
+
+    <div
+      class="error-banner"
+      data-error-banner
+      hidden
+      role="alert"
+      aria-live="assertive"
+    >
       <div>
         <strong>Live data unavailable.</strong>
         The site is showing its static shell — generated data could not be loaded.
@@ -108,104 +215,135 @@
       </div>
     </div>
 
-    <!-- PAGE HERO -->
 
-    <section class="page-hero">
+    <!-- =========================================================
+         PAGE HERO
+         ========================================================= -->
 
+    <section
+      class="page-hero"
+      aria-labelledby="history-page-title"
+    >
       <div class="container">
 
         <div class="eyebrow">DAILY ARCHIVE</div>
 
-        <h1>
+        <h1 id="history-page-title">
           Technology,<br>
           <span>preserved.</span>
         </h1>
 
         <p>
-          Every TechPulse observation becomes part of a growing
-          historical record of the technology ecosystem.
+          Each TechPulse edition becomes part of a growing historical
+          record of the technology ecosystem.
         </p>
 
         <div class="page-meta">
           <span>Archive status</span>
           <strong data-archive-status>Loading…</strong>
-          <span class="chip" data-edition-chip>checking…</span>
+          <span
+            class="chip"
+            data-edition-chip
+          >checking…</span>
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ARCHIVE OVERVIEW -->
+    <!-- =========================================================
+         ARCHIVE OVERVIEW
+         ========================================================= -->
 
-    <section class="section">
-
+    <section
+      class="section"
+      aria-labelledby="archive-overview-title"
+    >
       <div class="container">
 
         <div class="section-heading">
           <div>
             <div class="eyebrow">ARCHIVE OVERVIEW</div>
-            <h2>Daily snapshots</h2>
+            <h2 id="archive-overview-title">
+              Daily snapshots
+            </h2>
           </div>
 
           <p>
-            A chronological record of what TechPulse observed
-            each day.
+            A chronological record of what TechPulse collected
+            each reporting day.
           </p>
         </div>
 
 
-        <div class="history-list reveal" data-history-list data-skeleton="card" data-skeleton-count="5">
-        </div>
+        <div
+          class="history-list reveal"
+          data-history-list
+          data-skeleton="card"
+          data-skeleton-count="5"
+        ></div>
 
       </div>
-
     </section>
 
 
-    <!-- SNAPSHOT DETAIL -->
+    <!-- =========================================================
+         SNAPSHOT DETAIL
+         ========================================================= -->
 
-    <section class="section section-muted">
-
+    <section
+      class="section section-muted"
+      aria-labelledby="snapshot-detail-title"
+    >
       <div class="container">
 
         <div class="section-heading">
           <div>
             <div class="eyebrow">SNAPSHOT DETAIL</div>
-            <h2>Inside each day</h2>
+            <h2 id="snapshot-detail-title">
+              Inside each day
+            </h2>
           </div>
 
           <p>
-            Releases, projects and technology signals preserved
-            within every archived snapshot.
+            Releases, tracked projects and technology signals
+            preserved within archived snapshots.
           </p>
         </div>
 
 
-        <div class="history-list reveal" data-archive-list data-skeleton="card" data-skeleton-count="3">
-        </div>
+        <div
+          class="history-list reveal"
+          data-archive-list
+          data-skeleton="card"
+          data-skeleton-count="3"
+        ></div>
 
       </div>
-
     </section>
 
 
-    <!-- WHAT IS PRESERVED -->
+    <!-- =========================================================
+         WHAT IS PRESERVED
+         ========================================================= -->
 
-    <section class="section">
-
+    <section
+      class="section"
+      aria-labelledby="preserved-signals-title"
+    >
       <div class="container">
 
         <div class="section-heading">
           <div>
             <div class="eyebrow">PRESERVED SIGNALS</div>
-            <h2>What each snapshot contains</h2>
+            <h2 id="preserved-signals-title">
+              What each snapshot contains
+            </h2>
           </div>
 
           <p>
-            TechPulse turns continuously changing public information
-            into a structured daily record.
+            TechPulse turns selected public information into
+            a structured daily record.
           </p>
         </div>
 
@@ -216,8 +354,8 @@
             <span>01</span>
             <h3>Security</h3>
             <p>
-              Vulnerabilities, severity levels, advisories,
-              and known exploited threats.
+              Vulnerabilities, severity levels, known exploited
+              vulnerability data, and related security signals.
             </p>
           </div>
 
@@ -234,8 +372,8 @@
             <span>03</span>
             <h3>Open Source</h3>
             <p>
-              Projects showing changes in community activity
-              and ecosystem momentum.
+              Tracked projects, repository metadata, stars,
+              and day-over-day star growth where available.
             </p>
           </div>
 
@@ -243,47 +381,54 @@
             <span>04</span>
             <h3>Technology</h3>
             <p>
-              Significant technology developments collected
-              from public sources.
+              Technology updates collected from configured
+              public RSS and Atom sources.
             </p>
           </div>
 
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ARCHIVE PRINCIPLE -->
+    <!-- =========================================================
+         ARCHIVE PRINCIPLE
+         ========================================================= -->
 
-    <section class="section section-muted">
-
+    <section
+      class="section section-muted"
+      aria-labelledby="archive-principle-title"
+    >
       <div class="container">
 
         <div class="archive-principle reveal">
 
           <div class="eyebrow">THE PRINCIPLE</div>
 
-          <h2>
-            Today disappears.<br>
+          <h2 id="archive-principle-title">
+            Today changes.<br>
             The archive remembers.
           </h2>
 
           <p>
             Technology changes continuously. TechPulse is designed
-            to preserve those changes instead of allowing them to
-            disappear into an endless stream of updates.
+            to preserve dated observations so they can be examined
+            as a historical record instead of disappearing into
+            an endless stream of updates.
           </p>
 
         </div>
 
       </div>
-
     </section>
 
   </main>
 
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
 
   <footer class="site-footer">
 
@@ -291,25 +436,34 @@
 
       <div>
 
-        <a href="index.html" class="brand" aria-label="TechPulse — home">
+        <a
+          href="index.html"
+          class="brand"
+          aria-label="TechPulse — home"
+        >
           <span class="brand-mark" aria-hidden="true">T</span>
           <span class="brand-name">TechPulse</span>
         </a>
 
         <p>
-          Technology, observed every day. An autonomous, permanent
-          record of the technology ecosystem.
+          Technology, observed every day. An autonomous historical
+          record of selected technology ecosystem signals.
         </p>
 
       </div>
 
-      <nav class="footer-links" aria-label="Footer">
+
+      <nav
+        class="footer-links"
+        aria-label="Footer"
+      >
         <a href="index.html">Today</a>
         <a href="history.html">History</a>
         <a href="security.html">Security</a>
         <a href="releases.html">Releases</a>
         <a href="opensource.html">Open Source</a>
       </nav>
+
 
       <div class="footer-meta">
 
@@ -332,11 +486,31 @@
   </footer>
 
 
-    <script src="js/data.js"></script>
+  <!-- =========================================================
+       NO-JAVASCRIPT FALLBACK
+       ========================================================= -->
+
+  <noscript>
+    <div class="error-banner" role="alert">
+      <div>
+        <strong>JavaScript is required.</strong>
+        TechPulse uses JavaScript to load and render the latest
+        generated and archived data for this page.
+      </div>
+    </div>
+  </noscript>
+
+
+  <!-- =========================================================
+       APPLICATION SCRIPTS
+       Dependency order:
+         data → dates → components → app
+       ========================================================= -->
+
+  <script src="js/data.js"></script>
   <script src="js/dates.js"></script>
   <script src="js/components.js"></script>
   <script src="js/app.js"></script>
 
 </body>
-
 </html>
