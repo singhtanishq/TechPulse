@@ -6,25 +6,37 @@
 
   <title>Open Source — TechPulse</title>
 
-  <meta name="description" content="Track open-source projects gaining momentum across the technology ecosystem.">
+  <meta
+    name="description"
+    content="Track monitored open-source projects, repository activity, stars, and day-over-day growth across the technology ecosystem."
+  >
 
-  <link rel="canonical" href="https://singhtanishq.github.io/TechPulse/opensource.html">
+  <link rel="canonical" href="./opensource.html">
+
+  <meta name="robots" content="index, follow">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TechPulse">
   <meta property="og:title" content="Open Source — TechPulse">
-  <meta property="og:description" content="Track open-source projects gaining momentum across the technology ecosystem.">
-  <meta property="og:url" content="https://singhtanishq.github.io/TechPulse/opensource.html">
+  <meta
+    property="og:description"
+    content="Track monitored open-source projects, repository activity, stars, and day-over-day growth across the technology ecosystem."
+  >
+
   <meta name="twitter:card" content="summary">
 
   <meta name="theme-color" content="#0a0d12">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+  >
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -35,10 +47,16 @@
     (function () {
       try {
         var stored = localStorage.getItem("techpulse-theme");
+
         if (stored === "light" || stored === "dark") {
-          document.documentElement.setAttribute("data-theme", stored);
+          document.documentElement.setAttribute(
+            "data-theme",
+            stored
+          );
         }
-      } catch (e) { /* storage unavailable — keep default theme */ }
+      } catch (error) {
+        /* Storage unavailable — keep default theme. */
+      }
     })();
   </script>
 </head>
@@ -47,60 +65,152 @@
 
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
 
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header class="site-header">
     <div class="container header-inner">
 
-      <a href="index.html" class="brand" aria-label="TechPulse — home">
+      <a
+        href="index.html"
+        class="brand"
+        aria-label="TechPulse — home"
+      >
         <span class="brand-mark" aria-hidden="true">T</span>
         <span class="brand-name">TechPulse</span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
-            <a href="index.html" data-nav="today">Today</a>
-            <a href="history.html" data-nav="history">History</a>
-            <a href="security.html" data-nav="security">Security</a>
-            <a href="releases.html" data-nav="releases">Releases</a>
-            <a href="opensource.html" data-nav="opensource">Open Source</a>
+        <a href="index.html" data-nav="today">Today</a>
+        <a href="history.html" data-nav="history">History</a>
+        <a href="security.html" data-nav="security">Security</a>
+        <a href="releases.html" data-nav="releases">Releases</a>
+        <a href="opensource.html" data-nav="opensource">Open Source</a>
       </nav>
 
       <div class="header-actions">
 
-        <div class="header-status" title="Daily pipeline status">
-          <span class="status-dot pulse" data-status-dot></span>
+        <div
+          class="header-status"
+          title="Daily pipeline status"
+          aria-live="polite"
+        >
+          <span
+            class="status-dot pulse"
+            data-status-dot
+            aria-hidden="true"
+          ></span>
+
           <span data-status-text>Loading…</span>
         </div>
 
-        <button class="theme-toggle" type="button" data-theme-toggle
-                aria-label="Toggle color theme" aria-pressed="false">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch color theme"
+          aria-pressed="false"
+        >
+          <svg
+            class="icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
         </button>
 
-        <button class="nav-toggle" type="button" data-nav-toggle
-                aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <svg
+            class="icon-menu"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+
+          <svg
+            class="icon-close"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
         </button>
 
       </div>
-
     </div>
-
   </header>
 
-  <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
-            <a href="index.html" data-nav="today">Today</a>
-            <a href="history.html" data-nav="history">History</a>
-            <a href="security.html" data-nav="security">Security</a>
-            <a href="releases.html" data-nav="releases">Releases</a>
-            <a href="opensource.html" data-nav="opensource">Open Source</a>
+
+  <!-- =========================================================
+       MOBILE NAV
+       ========================================================= -->
+
+  <nav
+    class="mobile-nav"
+    data-mobile-nav
+    aria-label="Mobile navigation"
+    aria-hidden="true"
+  >
+    <a href="index.html" data-nav="today">Today</a>
+    <a href="history.html" data-nav="history">History</a>
+    <a href="security.html" data-nav="security">Security</a>
+    <a href="releases.html" data-nav="releases">Releases</a>
+    <a href="opensource.html" data-nav="opensource">Open Source</a>
   </nav>
 
 
-  <main id="main-content">
+  <main id="main-content" tabindex="-1">
 
-    <div class="error-banner" data-error-banner hidden role="alert">
+    <!-- =========================================================
+         DATA ERROR
+         ========================================================= -->
+
+    <div
+      class="error-banner"
+      data-error-banner
+      hidden
+      role="alert"
+      aria-live="assertive"
+    >
       <div>
         <strong>Live data unavailable.</strong>
         The site is showing its static shell — generated data could not be loaded.
@@ -108,77 +218,122 @@
       </div>
     </div>
 
-    <!-- PAGE HERO -->
 
-    <section class="page-hero">
+    <!-- =========================================================
+         PAGE HERO
+         ========================================================= -->
 
+    <section
+      class="page-hero"
+      aria-labelledby="opensource-page-title"
+    >
       <div class="container">
 
-        <div class="eyebrow">OPEN SOURCE</div>
+        <span class="section-kicker">
+          OPEN SOURCE
+        </span>
 
-        <h1>
+        <h1 id="opensource-page-title">
           Projects on<br>
           <span>the move.</span>
         </h1>
 
         <p>
-          A daily view of open-source projects gaining attention,
-          contributors, and community momentum.
+          A daily view of monitored open-source projects, their
+          GitHub star counts, and day-over-day growth where a
+          previous reporting-day observation is available.
         </p>
 
         <div class="page-meta">
-          <span>Observed edition</span>
+
+          <span>
+            OBSERVED EDITION
+          </span>
+
           <strong data-page-date>—</strong>
-          <span class="chip" data-edition-chip>checking…</span>
+
+          <span
+            class="chip"
+            data-edition-chip
+          >checking…</span>
+
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- TOP PROJECTS -->
+    <!-- =========================================================
+         TOP PROJECTS
+         ========================================================= -->
 
-    <section class="section">
-
+    <section
+      class="section"
+      aria-labelledby="opensource-projects-title"
+    >
       <div class="container">
 
         <div class="section-heading">
+
           <div>
-            <div class="eyebrow">DAILY SIGNAL</div>
-            <h2>Open-source projects on the move</h2>
+            <span class="section-kicker">
+              DAILY SIGNAL
+            </span>
+
+            <h2 id="opensource-projects-title">
+              Open-source projects on the move
+            </h2>
           </div>
 
           <p>
-            Projects showing notable community activity and growth.
+            Projects ranked using repository star counts, with
+            daily growth shown when comparable observations exist.
           </p>
+
         </div>
 
 
-        <div class="opensource-list reveal" data-opensource-list data-skeleton="card" data-skeleton-count="5">
-        </div>
+        <div
+          class="opensource-list reveal"
+          data-opensource-list
+          data-skeleton="card"
+          data-skeleton-count="5"
+          aria-live="polite"
+          aria-busy="true"
+        ></div>
 
       </div>
-
     </section>
 
 
-    <!-- WHAT WE TRACK -->
+    <!-- =========================================================
+         WHAT WE TRACK
+         ========================================================= -->
 
-    <section class="section section-muted">
-
+    <section
+      class="section section-muted"
+      aria-labelledby="observation-model-title"
+    >
       <div class="container">
 
         <div class="section-heading">
+
           <div>
-            <div class="eyebrow">OBSERVATION MODEL</div>
-            <h2>What TechPulse tracks</h2>
+            <span class="section-kicker">
+              OBSERVATION MODEL
+            </span>
+
+            <h2 id="observation-model-title">
+              What TechPulse tracks
+            </h2>
           </div>
 
           <p>
-            Open-source momentum is measured through multiple
-            public signals rather than a single metric.
+            The current open-source dataset focuses on repository
+            metadata and star-based observations from configured
+            GitHub projects.
           </p>
+
         </div>
 
 
@@ -186,80 +341,162 @@
 
           <div class="opensource-signal">
             <span class="signal-number">01</span>
+
             <h3>Stars</h3>
+
             <p>
-              Changes in GitHub stars provide a simple signal
-              of growing community attention.
+              GitHub star counts provide the primary measurable
+              signal used to rank the monitored repositories.
             </p>
           </div>
+
 
           <div class="opensource-signal">
             <span class="signal-number">02</span>
-            <h3>Contributors</h3>
+
+            <h3>Daily growth</h3>
+
             <p>
-              Contributor activity helps reveal whether a
-              project has an active development community.
+              Star growth is calculated against the immediately
+              preceding reporting-day observation when both
+              observations are available.
             </p>
           </div>
+
 
           <div class="opensource-signal">
             <span class="signal-number">03</span>
-            <h3>Activity</h3>
+
+            <h3>Repository metadata</h3>
+
             <p>
-              Commits, releases, issues, and pull requests
-              provide additional context around project activity.
+              Repository name, owner, description, language,
+              URL, archive state, and other configured metadata
+              provide context for each project.
             </p>
           </div>
 
+
           <div class="opensource-signal">
             <span class="signal-number">04</span>
-            <h3>Momentum</h3>
+
+            <h3>Historical observations</h3>
+
             <p>
-              Multiple signals are combined to identify projects
-              showing meaningful changes over time.
+              Dated observations make it possible to compare
+              current repository metrics with earlier reporting days.
             </p>
           </div>
 
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- DAILY ARCHIVE -->
+    <!-- =========================================================
+         INTERPRETATION NOTE
+         ========================================================= -->
 
-    <section class="section">
-
+    <section
+      class="section"
+      aria-labelledby="interpretation-title"
+    >
       <div class="container">
 
         <div class="archive-panel reveal">
 
           <div>
-            <div class="eyebrow">DAILY ARCHIVE</div>
 
-            <h2>
-              Every snapshot becomes history.
+            <div class="eyebrow">
+              INTERPRETATION
+            </div>
+
+            <h2 id="interpretation-title">
+              Growth is a signal,<br>
+              not a complete picture.
             </h2>
 
             <p>
-              TechPulse preserves daily observations so today&rsquo;s
-              movement can be compared with what came before.
+              A change in GitHub stars can indicate increased
+              attention, but it does not by itself measure
+              contributor activity, code changes, issues, pull
+              requests, or overall project health.
             </p>
+
           </div>
 
-          <a href="history.html" class="button">
+          <a
+            href="history.html"
+            class="button"
+          >
             Explore history
           </a>
 
         </div>
 
       </div>
+    </section>
 
+
+    <!-- =========================================================
+         DAILY ARCHIVE
+         ========================================================= -->
+
+    <section
+      class="section section-dark"
+      aria-labelledby="opensource-archive-title"
+    >
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-kicker">
+              DAILY ARCHIVE
+            </span>
+
+            <h2 id="opensource-archive-title">
+              Every observation becomes history.
+            </h2>
+          </div>
+
+          <p>
+            TechPulse preserves dated repository observations so
+            changes can be compared over time.
+          </p>
+
+        </div>
+
+
+        <div class="archive-panel reveal">
+
+          <div>
+            <p>
+              Historical snapshots retain the open-source metrics
+              collected for each reporting day, including project
+              rankings and star observations where available.
+            </p>
+          </div>
+
+          <a
+            href="history.html"
+            class="button"
+          >
+            Explore history
+          </a>
+
+        </div>
+
+      </div>
     </section>
 
   </main>
 
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
 
   <footer class="site-footer">
 
@@ -267,25 +504,34 @@
 
       <div>
 
-        <a href="index.html" class="brand" aria-label="TechPulse — home">
+        <a
+          href="index.html"
+          class="brand"
+          aria-label="TechPulse — home"
+        >
           <span class="brand-mark" aria-hidden="true">T</span>
           <span class="brand-name">TechPulse</span>
         </a>
 
         <p>
-          Technology, observed every day. An autonomous, permanent
-          record of the technology ecosystem.
+          Technology, observed every day. An autonomous historical
+          record of selected technology ecosystem signals.
         </p>
 
       </div>
 
-      <nav class="footer-links" aria-label="Footer">
+
+      <nav
+        class="footer-links"
+        aria-label="Footer"
+      >
         <a href="index.html">Today</a>
         <a href="history.html">History</a>
         <a href="security.html">Security</a>
         <a href="releases.html">Releases</a>
         <a href="opensource.html">Open Source</a>
       </nav>
+
 
       <div class="footer-meta">
 
@@ -308,11 +554,31 @@
   </footer>
 
 
-    <script src="js/data.js"></script>
+  <!-- =========================================================
+       NO-JAVASCRIPT FALLBACK
+       ========================================================= -->
+
+  <noscript>
+    <div class="error-banner" role="alert">
+      <div>
+        <strong>JavaScript is required.</strong>
+        TechPulse uses JavaScript to load and render the monitored
+        open-source project data.
+      </div>
+    </div>
+  </noscript>
+
+
+  <!-- =========================================================
+       APPLICATION SCRIPTS
+       Dependency order:
+         data → dates → components → app
+       ========================================================= -->
+
+  <script src="js/data.js"></script>
   <script src="js/dates.js"></script>
   <script src="js/components.js"></script>
   <script src="js/app.js"></script>
 
 </body>
-
 </html>
