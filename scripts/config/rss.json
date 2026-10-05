@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "description": "TechPulse RSS/Atom feed configuration. Each feed is collected independently; fetch or parsing failures are recorded without discarding successful feeds.",
+  "description": "TechPulse RSS/Atom feed configuration. Entries are deduplicated snapshot-globally by identity (GUID, then URL, then title); the first feed in this list that carried a story wins, so category-specific feeds are listed before broader ones. Feed fetch or parsing failures are recorded without discarding successful feeds.",
   "feeds": [
     {
       "name": "The Register — Security",
@@ -15,15 +15,15 @@
       "source": "The Register"
     },
     {
-      "name": "Ars Technica — Technology",
-      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
-      "category": "tech",
-      "source": "Ars Technica"
-    },
-    {
       "name": "Ars Technica — Security",
       "url": "https://arstechnica.com/security/feed/",
       "category": "security",
+      "source": "Ars Technica"
+    },
+    {
+      "name": "Ars Technica — Technology",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "category": "tech",
       "source": "Ars Technica"
     },
     {
