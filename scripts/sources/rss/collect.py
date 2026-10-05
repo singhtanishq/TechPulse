@@ -613,7 +613,7 @@ def collect() -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
 
     all_entries: list[dict[str, Any]] = []
     failures: list[dict[str, str]] = []
-    seen_keys: set[tuple[str, str]] = set()
+    seen_keys: set[str] = set()
 
     if not feeds:
         print("No RSS/Atom feeds configured.")
