@@ -16,8 +16,12 @@ Design notes:
     - Entries store title, source, URL, publication date and a short
       excerpt only. Full article bodies are intentionally not stored
       (copyright safety); TechPulse links to the original publisher.
-    - Deduplication is scoped to the feed identity plus entry identity,
-      preventing unrelated feeds from colliding on identical GUIDs.
+    - Deduplication is snapshot-global by entry identity (GUID, then
+      URL, then title). Publishers commonly syndicate the same story
+      through several feeds (for example a general technology feed and
+      a dedicated security feed); a story must appear once per edition
+      regardless of how many configured feeds carried it. Unrelated
+      articles never collide because their identities differ.
     - Publication timestamps are normalized to UTC when possible.
 
 Output:
@@ -552,22 +556,22 @@ def parse_feed(content: bytes, feed: dict[str, Any]) -> list[dict[str, Any]]:
     )
 
 
-def dedupe_key(entry: dict[str, Any]) -> tuple[str, str]:
-    """Build a feed-scoped deterministic deduplication key."""
-    feed_identity = (
-        str(entry.get("feed_url") or "").strip()
-        or str(entry.get("feed_name") or "").strip()
-        or str(entry.get("feed_source") or "").strip()
-        or "unknown-feed"
-    )
+def dedupe_key(entry: dict[str, Any]) -> str:
+    """
+    Build a snapshot-global deterministic deduplication key.
 
+    Identity falls back GUID -> URL -> title, matching the identity
+    contract enforced by scripts/validate.py for RSS snapshots. The
+    first feed (in configuration order) that carried a story wins, so
+    category-specific feeds should be configured before broader ones.
+    """
     entry_identity = (
         str(entry.get("guid") or "").strip()
         or str(entry.get("url") or "").strip()
         or str(entry.get("title") or "").strip()
     )
 
-    return feed_identity, entry_identity
+    return entry_identity
 
 
 def collect() -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
