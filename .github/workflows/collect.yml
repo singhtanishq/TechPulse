@@ -34,6 +34,7 @@ on:
     paths:
       - "scripts/**"
       - "tests/**"
+      - ".github/workflows/collect.yml"
 
 permissions:
   contents: write
@@ -58,16 +59,18 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           persist-credentials: true
           fetch-depth: 0
 
+      # Stdlib-only pipeline: do not enable cache: pip. setup-python fails
+      # when cache is requested and neither requirements.txt nor
+      # pyproject.toml exists in the repo.
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-          cache: "pip"
 
       - name: Show environment
         run: |
