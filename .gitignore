@@ -146,3 +146,4 @@ coverage.json
 
 .node_repl_history
 .npm/
+.zcodeignore
