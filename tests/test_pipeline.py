@@ -491,7 +491,10 @@ class RSSTests(unittest.TestCase):
             rss.is_valid_url("https://example.com/feed.xml")
         )
 
-    def test_deduplication_is_scoped_to_feed(self):
+    def test_deduplication_is_global_by_entry_identity(self):
+        # The same story syndicated by two different feeds (as real
+        # publishers do across general + topic feeds) must collide on
+        # one identity so it appears once per snapshot.
         first = rss.normalize_entry(
             "Same Story",
             "https://example.com/one",
@@ -502,7 +505,7 @@ class RSSTests(unittest.TestCase):
         )
         second = rss.normalize_entry(
             "Same Story",
-            "https://example.com/two",
+            "https://example.com/one",
             "",
             None,
             "same-guid",
@@ -511,6 +514,74 @@ class RSSTests(unittest.TestCase):
 
         self.assertIsNotNone(first)
         self.assertIsNotNone(second)
+
+        self.assertEqual(
+            rss.dedupe_key(first),
+            rss.dedupe_key(second),
+        )
+
+    def test_deduplication_falls_back_to_url_then_title(self):
+        # No GUID: the URL carries identity.
+        by_url_a = rss.normalize_entry(
+            "Story A",
+            "https://example.com/story",
+            "",
+            None,
+            "",
+            self.feed("FeedA"),
+        )
+        by_url_b = rss.normalize_entry(
+            "Story A retitled",
+            "https://example.com/story",
+            "",
+            None,
+            "",
+            self.feed("FeedB"),
+        )
+        self.assertEqual(
+            rss.dedupe_key(by_url_a),
+            rss.dedupe_key(by_url_b),
+        )
+
+        # No GUID and no URL: the title carries identity.
+        by_title_a = rss.normalize_entry(
+            "Shared Headline",
+            "",
+            "",
+            None,
+            "",
+            self.feed("FeedA"),
+        )
+        by_title_b = rss.normalize_entry(
+            "Shared Headline",
+            "",
+            "",
+            None,
+            "",
+            self.feed("FeedB"),
+        )
+        self.assertEqual(
+            rss.dedupe_key(by_title_a),
+            rss.dedupe_key(by_title_b),
+        )
+
+    def test_distinct_stories_from_different_feeds_do_not_collide(self):
+        first = rss.normalize_entry(
+            "Story One",
+            "https://example.com/one",
+            "",
+            None,
+            "guid-one",
+            self.feed("FeedA"),
+        )
+        second = rss.normalize_entry(
+            "Story Two",
+            "https://example.com/two",
+            "",
+            None,
+            "guid-two",
+            self.feed("FeedB"),
+        )
 
         self.assertNotEqual(
             rss.dedupe_key(first),
