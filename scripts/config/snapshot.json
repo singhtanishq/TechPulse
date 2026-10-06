@@ -112,10 +112,10 @@
                   "type": "string",
                   "const": "repository + version"
                 },
-                "rss": {
-                  "type": "string",
-                  "const": "Feed identity + GUID, URL, or title fallback"
-                }
+        "rss": {
+          "type": "string",
+          "const": "Entry identity (GUID, URL, or title fallback) across the whole snapshot"
+        }
               }
             }
           }
