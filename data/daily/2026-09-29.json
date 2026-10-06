@@ -1,0 +1,286 @@
+{
+  "coveredIstDay": "2026-09-28",
+  "date": "2026-09-29",
+  "generatedAt": "2026-10-07T13:39:20.270749+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 149,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200726,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 411,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143230,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 248,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139308,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 304,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128369,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 263,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122410,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 418,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119672,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 354,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111192,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 395,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103830,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 75,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97796,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 131,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91353,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-09-28T18:03:49Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.9.0",
+        "version": "v1.9.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 9.4,
+        "description": "Suricata before 8.0.7 has an Http2ThreadMultiBuf use-after-free when a transaction is inspected by rules that use http.response_header with and without a transform.",
+        "id": "CVE-2026-94084",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94084"
+      },
+      {
+        "cvss": 8.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Iron Mountain Archiving Services Inc. EnVision allows SQL Injection.\n\nThis issue affects enVision:",
+        "id": "CVE-2026-86595",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86595"
+      },
+      {
+        "cvss": 4.2,
+        "description": "Path traversal in the CLI client image export and copy functionality in Canonical LXD from 4.0.2 before 4.0.14, 5.0.10, 5.21.8, and 6.10 on all platforms allows a remote malicious or machine-in-the-mi",
+        "id": "CVE-2026-86334",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86334"
+      },
+      {
+        "cvss": 7.8,
+        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, Notepad++ contains a stack buffer overflow in NppParameters::writeSession in PowerEditor/src/Parameters.cpp because it copies a ",
+        "id": "CVE-2026-86054",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86054"
+      },
+      {
+        "cvss": 7.8,
+        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, the Folder as Workspace Run by system action in Notepad++ can resolve a different sibling file than the file selected by the use",
+        "id": "CVE-2026-77605",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77605"
+      },
+      {
+        "cvss": 9.2,
+        "description": "Dayforce Payroll is vulnerable to Path Traversal  in file download functionality. An unauthenticated attacker can sent GET request with file path parameter set to any path including an absolute\nlocal ",
+        "id": "CVE-2026-73642",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73642"
+      },
+      {
+        "cvss": 5.1,
+        "description": "Dayforce Payroll is vulnerable to Reflected XSS in multiple endpoints. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary JavaScript execution in the victim's brow",
+        "id": "CVE-2026-73641",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73641"
+      },
+      {
+        "cvss": 9.3,
+        "description": "Dayforce Payroll is vulnerable to Time Based-Blind SQL Injection in password recovery functionality. The unauthenticated attacker can prepare GET request with one of the parameters filled in with an a",
+        "id": "CVE-2026-73640",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73640"
+      },
+      {
+        "cvss": 7.4,
+        "description": "Python Social Auth is a social authentication/registration mechanism. Prior to version 5.0.0, the `vk-app` backend accepted VK application callback data without verifying the callback signature when t",
+        "id": "CVE-2026-57178",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57178"
+      },
+      {
+        "cvss": 7.1,
+        "description": "Incorrect Permission Assignment for Critical Resource vulnerability in ABB Protection and control IED manager (PCM600).\n\nThis issue affects Protection and control IED manager (PCM600): through 2.14.",
+        "id": "CVE-2026-15952",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15952"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 45,
+      "HIGH": 184,
+      "LOW": 35,
+      "MEDIUM": 223,
+      "NONE": 0,
+      "UNSCORED": 22
+    }
+  },
+  "snapshot": {
+    "cves": 509,
+    "kevAdded": 0,
+    "knownExploited": 2,
+    "projects": 18,
+    "releases": 1,
+    "techEntries": 6
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1734
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 1,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 509,
+      "status": "success",
+      "total": 509
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 6,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 1,
+      "tech": 5
+    },
+    "recent": [
+      {
+        "published_at": "2026-09-28T18:05:00+00:00",
+        "source": "Microsoft",
+        "title": "Get started with the GitHub Copilot app: a free, hands-on course",
+        "url": "https://devblogs.microsoft.com/blog/github-copilot-app-for-beginners/"
+      },
+      {
+        "published_at": "2026-09-28T17:23:33+00:00",
+        "source": "GitHub Blog",
+        "title": "Highlights from Git 2.56",
+        "url": "https://github.blog/open-source/git/highlights-from-git-2-56/"
+      },
+      {
+        "published_at": "2026-09-28T16:14:54+00:00",
+        "source": "AWS",
+        "title": "AWS Weekly Roundup: GPT-6 Sol and Luna, Claude Opus 5.5 on Amazon Bedrock, Strands harness, and more (September 28, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/"
+      },
+      {
+        "published_at": "2026-09-28T06:35:00+00:00",
+        "source": "The Register",
+        "title": "Techie assumed boss knew what they were talking about and killed Exchange by deleting data",
+        "url": "https://www.theregister.com/software/2026/09/28/techie-assumed-boss-knew-what-they-were-talking-about-and-killed-exchange-by-deleting-data/5299043"
+      },
+      {
+        "published_at": "2026-09-25T19:38:59+00:00",
+        "source": "Ars Technica",
+        "title": "Your uncle’s frozen Mac says it’s infected after viewing a Google ad. Now what?",
+        "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/"
+      },
+      {
+        "published_at": "2026-09-25T18:57:10+00:00",
+        "source": "The Register",
+        "title": "New software dependency validation process increases speeds by 54x",
+        "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 1,
+      "GitHub Blog": 1,
+      "Microsoft": 1,
+      "The Register": 2
+    }
+  },
+  "window": {
+    "end": "2026-09-28T18:30:00+00:00",
+    "start": "2026-09-27T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

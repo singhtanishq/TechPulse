@@ -1,13 +1,22 @@
 {
   "history": [
     {
+      "cves": 509,
+      "date": "2026-09-29",
+      "kevAdded": 0,
+      "knownExploited": 2,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 6
+    },
+    {
       "cves": 286,
       "date": "2026-09-28",
       "kevAdded": 2,
       "knownExploited": 0,
       "projects": 20,
       "releases": 0,
-      "techEntries": 41
+      "techEntries": 22
     },
     {
       "cves": 1108,
@@ -110,401 +119,435 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-09-27",
-    "date": "2026-09-28",
-    "daysObserved": 12,
-    "generatedAt": "2026-09-28T07:40:43.722697+00:00",
-    "snapshots": 12,
+    "coveredDate": "2026-09-28",
+    "date": "2026-09-29",
+    "daysObserved": 13,
+    "generatedAt": "2026-10-07T13:39:20.270749+00:00",
+    "snapshots": 13,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 0,
-      "description": "The library for web and native user interfaces.",
-      "full_name": "react/react",
-      "growth_available": true,
-      "language": "JavaScript",
-      "name": "react",
-      "rank": 1,
-      "source": "GitHub",
-      "stars": 250794,
-      "url": "https://github.com/react/react"
-    },
-    {
-      "daily_growth": 1,
+      "daily_growth": 149,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
       "language": "C++",
       "name": "tensorflow",
-      "rank": 2,
+      "rank": 1,
       "source": "GitHub",
-      "stars": 200577,
+      "stars": 200726,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 2,
+      "daily_growth": 411,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
       "language": "JavaScript",
       "name": "next.js",
-      "rank": 3,
+      "rank": 2,
       "source": "GitHub",
-      "stars": 142819,
+      "stars": 143230,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 248,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
       "language": "Go",
       "name": "go",
-      "rank": 4,
+      "rank": 3,
       "source": "GitHub",
-      "stars": 139060,
+      "stars": 139308,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 2,
+      "daily_growth": 304,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
       "language": "Go",
       "name": "kubernetes",
-      "rank": 5,
+      "rank": 4,
       "source": "GitHub",
-      "stars": 128065,
+      "stars": 128369,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 263,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
       "language": "JavaScript",
       "name": "node",
-      "rank": 6,
+      "rank": 5,
       "source": "GitHub",
-      "stars": 122147,
+      "stars": 122410,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 418,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
       "language": "Rust",
       "name": "rust",
-      "rank": 7,
+      "rank": 6,
       "source": "GitHub",
-      "stars": 119254,
+      "stars": 119672,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 3,
+      "daily_growth": 354,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
       "language": "TypeScript",
       "name": "supabase",
-      "rank": 8,
+      "rank": 7,
       "source": "GitHub",
-      "stars": 110838,
+      "stars": 111192,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 1,
+      "daily_growth": 395,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
       "language": "Python",
       "name": "pytorch",
-      "rank": 9,
+      "rank": 8,
       "source": "GitHub",
-      "stars": 103435,
+      "stars": 103830,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 1,
+      "daily_growth": 75,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
       "language": "TypeScript",
       "name": "tailwindcss",
+      "rank": 9,
+      "source": "GitHub",
+      "stars": 97796,
+      "url": "https://github.com/tailwindlabs/tailwindcss"
+    },
+    {
+      "daily_growth": 131,
+      "description": "The Web framework for perfectionists with deadlines.",
+      "full_name": "django/django",
+      "growth_available": true,
+      "language": "Python",
+      "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 97721,
-      "url": "https://github.com/tailwindlabs/tailwindcss"
+      "stars": 91353,
+      "url": "https://github.com/django/django"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-09-28T18:03:49Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.9.0",
+      "version": "v1.9.0"
+    }
+  ],
   "security": {
-    "critical": 35,
-    "high": 133,
-    "kevCatalogTotal": 1728,
+    "critical": 45,
+    "high": 184,
+    "kevCatalogTotal": 1734,
     "latest": [
       {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "utcp-gql before 1.1.1 and utcp-websocket before 1.1.1 contain server-side request forgery vulnerabilities due to incomplete application of CVE-2026-44661 fixes. The GraphQL plugin uses a vulnerable prefix check allowing bypass URLs like http://127.0.0.1.attacker.example, while the WebSocket plugin performs no URL validation despite documented security requirements. Attackers can force connections…",
-        "id": "CVE-2026-101061",
+        "cvss_score": 9.4,
+        "cvss_version": "3.1",
+        "description": "Suricata before 8.0.7 has an Http2ThreadMultiBuf use-after-free when a transaction is inspected by rules that use http.response_header with and without a transform.",
+        "id": "CVE-2026-94084",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:32.407",
-        "publishedAt": "2026-09-27T18:16:32.407",
-        "severity": "LOW",
+        "lastModifiedAt": "2026-09-28T18:29:51.570",
+        "publishedAt": "2026-09-20T02:16:53.717",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "utcp-gql before 1.1.1 and utcp-websocket before 1.1.1 contain server-side request forgery vulnerabilities due to incomplete application of CVE-2026-44661…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101061"
+        "title": "Suricata before 8.0.7 has an Http2ThreadMultiBuf use-after-free when a transaction is inspected by rules that use http.response_header with and without a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94084"
       },
       {
-        "cvss_score": 8.4,
-        "cvss_version": "4.0",
-        "description": "python-utcp versions before 1.1.4 contain a server-side request forgery vulnerability in HttpCommunicationProtocol.call_tool that validates the initial tool URL but follows HTTP redirects without re-validating the target. Attackers controlling a tool endpoint can return a 302 redirect to internal services, allowing the UTCP client to reach cloud metadata endpoints or internal HTTP services and…",
-        "id": "CVE-2026-101060",
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Iron Mountain Archiving Services Inc. EnVision allows SQL Injection.\n\nThis issue affects enVision: before 260655.",
+        "id": "CVE-2026-86595",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:32.273",
-        "publishedAt": "2026-09-27T18:16:32.273",
+        "lastModifiedAt": "2026-09-28T18:17:25.817",
+        "publishedAt": "2026-09-28T14:17:21.030",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "python-utcp versions before 1.1.4 contain a server-side request forgery vulnerability in HttpCommunicationProtocol.call_tool that validates the initial tool…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101060"
+        "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Iron Mountain Archiving Services Inc. EnVision allows SQL…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86595"
+      },
+      {
+        "cvss_score": 4.2,
+        "cvss_version": "3.1",
+        "description": "Path traversal in the CLI client image export and copy functionality in Canonical LXD from 4.0.2 before 4.0.14, 5.0.10, 5.21.8, and 6.10 on all platforms allows a remote malicious or machine-in-the-middle image server to overwrite arbitrary local files and execute code on the client system via a crafted Content-Disposition header filename parameter during unified image export or copy operations…",
+        "id": "CVE-2026-86334",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:25.683",
+        "publishedAt": "2026-09-28T14:17:20.590",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Path traversal in the CLI client image export and copy functionality in Canonical LXD from 4.0.2 before 4.0.14, 5.0.10, 5.21.8, and 6.10 on all platforms…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86334"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, Notepad++ contains a stack buffer overflow in NppParameters::writeSession in PowerEditor/src/Parameters.cpp because it copies a session path derived from -settingsDir= into backupPathName[MAX_PATH] with unbounded wcscpy and appends SESSION_BACKUP_EXT with unbounded wcscat. A sufficiently long settings directory causes the…",
+        "id": "CVE-2026-86054",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:25.420",
+        "publishedAt": "2026-09-22T18:17:23.827",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, Notepad++ contains a stack buffer overflow in NppParameters::writeSession in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86054"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, the Folder as Workspace Run by system action in Notepad++ can resolve a different sibling file than the file selected by the user. When an attacker places a command script whose name is the selected text-file path with .cmd appended, and the user invokes Run by system on the text file on Windows 10 or Windows 11, Notepad++…",
+        "id": "CVE-2026-77605",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:25.143",
+        "publishedAt": "2026-09-22T18:17:19.393",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, the Folder as Workspace Run by system action in Notepad++ can resolve a different…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77605"
+      },
+      {
+        "cvss_score": 9.2,
+        "cvss_version": "4.0",
+        "description": "Dayforce Payroll is vulnerable to Path Traversal  in file download functionality. An unauthenticated attacker can sent GET request with file path parameter set to any path including an absolute\nlocal file path.\n\n\nBecause vendor contact attempts were unsuccessful, the vulnerability has only been confirmed in version R2026.2.0 but may also affect other versions.",
+        "id": "CVE-2026-73642",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:24.290",
+        "publishedAt": "2026-09-28T14:17:17.160",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Dayforce Payroll is vulnerable to Path Traversal  in file download functionality. An unauthenticated attacker can sent GET request with file path parameter set…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73642"
+      },
+      {
+        "cvss_score": 5.1,
+        "cvss_version": "4.0",
+        "description": "Dayforce Payroll is vulnerable to Reflected XSS in multiple endpoints. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary JavaScript execution in the victim's browser.\n\nBecause vendor contact attempts were unsuccessful, the vulnerability has only been confirmed in version R2026.2.0 but may also affect other versions.",
+        "id": "CVE-2026-73641",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:24.157",
+        "publishedAt": "2026-09-28T14:17:17.000",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Dayforce Payroll is vulnerable to Reflected XSS in multiple endpoints. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73641"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "Dayforce Payroll is vulnerable to Time Based-Blind SQL Injection in password recovery functionality. The unauthenticated attacker can prepare GET request with one of the parameters filled in with an arbitrary SQL query. The parameter is interpreted as part of SQL predicate resulting in Time-Based Blind SQL Injection.\nBecause vendor contact attempts were unsuccessful, the vulnerability has only…",
+        "id": "CVE-2026-73640",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:24.013",
+        "publishedAt": "2026-09-28T14:17:16.843",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Dayforce Payroll is vulnerable to Time Based-Blind SQL Injection in password recovery functionality. The unauthenticated attacker can prepare GET request with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73640"
+      },
+      {
+        "cvss_score": 7.4,
+        "cvss_version": "3.1",
+        "description": "Python Social Auth is a social authentication/registration mechanism. Prior to version 5.0.0, the `vk-app` backend accepted VK application callback data without verifying the callback signature when the `auth_key` parameter was omitted. Applications using this backend could treat unsigned attacker-controlled data as a verified VK identity. An attacker could choose callback fields such as…",
+        "id": "CVE-2026-57178",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:23.873",
+        "publishedAt": "2026-09-24T18:17:14.970",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Python Social Auth is a social authentication/registration mechanism. Prior to version 5.0.0, the `vk-app` backend accepted VK application callback data…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57178"
       },
       {
         "cvss_score": 7.1,
         "cvss_version": "4.0",
-        "description": "utcp-http before 1.1.4 fails to validate the OAuth2 tokenUrl field from remote OpenAPI specifications, allowing attackers to redirect credential submission to arbitrary endpoints. When a victim registers an attacker-controlled OpenAPI spec and invokes a generated OAuth2-protected tool, the library POSTs the victim's client_id and client_secret to the attacker-supplied token endpoint without URL…",
-        "id": "CVE-2026-101059",
+        "description": "Incorrect Permission Assignment for Critical Resource vulnerability in ABB Protection and control IED manager (PCM600).\n\nThis issue affects Protection and control IED manager (PCM600): through 2.14.",
+        "id": "CVE-2026-15952",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:32.130",
-        "publishedAt": "2026-09-27T18:16:32.130",
+        "lastModifiedAt": "2026-09-28T18:17:21.543",
+        "publishedAt": "2026-09-28T14:17:15.110",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "utcp-http before 1.1.4 fails to validate the OAuth2 tokenUrl field from remote OpenAPI specifications, allowing attackers to redirect credential submission to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101059"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "python-utcp (pip package utcp-http) before 1.1.12 does not verify whether tool URLs declared in a hand-written UTCP manual point at the agent's own loopback interface when that manual is discovered from a remote, non-loopback origin. Because ensure_secure_url intentionally permits loopback HTTP for local development and native manuals bypassed the loopback check performed by the OpenAPI…",
-        "id": "CVE-2026-101058",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.973",
-        "publishedAt": "2026-09-27T18:16:31.973",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "python-utcp (pip package utcp-http) before 1.1.12 does not verify whether tool URLs declared in a hand-written UTCP manual point at the agent's own loopback…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101058"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "utcp-mcp (the MCP plugin of python-utcp) through 1.1.2 connects to the HTTP and WebSocket MCP server URLs given in a call template's mcpServers configuration without the ensure_secure_url validation that the HTTP-family plugins apply, so the HTTPS/WSS-or-loopback rule is not enforced. A call template naming a plain-HTTP, non-loopback MCP server URL is dialed as configured, exposing the MCP…",
-        "id": "CVE-2026-101057",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.823",
-        "publishedAt": "2026-09-27T18:16:31.823",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "utcp-mcp (the MCP plugin of python-utcp) through 1.1.2 connects to the HTTP and WebSocket MCP server URLs given in a call template's mcpServers configuration…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101057"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "Cloudreve before 4.16.1 fails to revalidate share access when restoring cached navigator state from a context_hint UUID. Attackers who previously had valid share access can replay the cached hint to generate signed file URLs for up to 300 seconds after the share is deleted, expires, or reaches zero remaining downloads.",
-        "id": "CVE-2026-101056",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.777",
-        "publishedAt": "2026-09-27T18:16:31.667",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Cloudreve before 4.16.1 fails to revalidate share access when restoring cached navigator state from a context_hint UUID. Attackers who previously had valid…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101056"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "Cloudreve before 4.16.1 fails to properly sanitize file paths returned by remote downloaders, allowing authenticated users to create files outside the selected destination directory. Attackers can exploit path traversal sequences in downloader metadata to write files to unexpected locations within accessible namespaces.",
-        "id": "CVE-2026-101051",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.620",
-        "publishedAt": "2026-09-27T18:16:31.510",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Cloudreve before 4.16.1 fails to properly sanitize file paths returned by remote downloaders, allowing authenticated users to create files outside the selected…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101051"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Cloudreve before 4.17.0 registers the administrative node test endpoints (POST /api/v4/admin/node/test and POST /api/v4/admin/node/test/downloader) without requiring the Admin.Write OAuth scope, unlike the node create/update/delete routes. An OAuth client that has been authorized by an administrator with only the Admin.Read scope can therefore submit attacker-controlled node definitions and cause…",
-        "id": "CVE-2026-101048",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.427",
-        "publishedAt": "2026-09-27T18:16:31.313",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Cloudreve before 4.17.0 registers the administrative node test endpoints (POST /api/v4/admin/node/test and POST /api/v4/admin/node/test/downloader) without…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101048"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "Fleet before 4.87.0 does not protect the two endpoints that serve in-house iOS application packages and manifests (enterprise tier only) with the intended random, time-limited URL token. Because Apple's InstallEnterpriseApplication MDM command requires these URLs to be reachable without a Fleet session, they cannot rely on session-based authentication, and the missing token allows an…",
-        "id": "CVE-2026-101047",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.177",
-        "publishedAt": "2026-09-27T18:16:31.177",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Fleet before 4.87.0 does not protect the two endpoints that serve in-house iOS application packages and manifests (enterprise tier only) with the intended…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101047"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "Fleet before 4.89.0 contains an SQL injection vulnerability in the activity list endpoints (GET /api/v1/fleet/activities and GET /api/v1/fleet/hosts/{id}/activities). The deprecated cursor-pagination helper appendListOptionsWithCursorToSQL interpolated the caller-supplied sort/order key into the SQL ORDER BY clause without an allowlist, so an authenticated user with read access to Activity could…",
-        "id": "CVE-2026-101046",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:31.037",
-        "publishedAt": "2026-09-27T18:16:31.037",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Fleet before 4.89.0 contains an SQL injection vulnerability in the activity list endpoints (GET /api/v1/fleet/activities and GET…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101046"
-      },
-      {
-        "cvss_score": 8.9,
-        "cvss_version": "4.0",
-        "description": "Fleet-maintained app install and uninstall scripts for macOS are generated from Homebrew cask metadata. In manifests generated before 2026-08-19, the script generator escaped this metadata at some interpolation sites but not all of them, so cask metadata containing shell metacharacters (for example $(...) command substitution) could be carried into scripts that execute as root on managed macOS…",
-        "id": "CVE-2026-101045",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:30.897",
-        "publishedAt": "2026-09-27T18:16:30.897",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Fleet-maintained app install and uninstall scripts for macOS are generated from Homebrew cask metadata. In manifests generated before 2026-08-19, the script…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101045"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "pacquet, the Rust package-manager component shipped in the pnpm npm package versions >=12.0.0-alpha.0 and <12.0.0-alpha.5, does not validate dependency alias/name paths taken from a lockfile before using them in install-time filesystem joins. When a user installs a project with an attacker-supplied lockfile using --trust-lockfile or a frozen lockfile, alias entries containing path traversal…",
-        "id": "CVE-2026-101044",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:30.753",
-        "publishedAt": "2026-09-27T18:16:30.753",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "pacquet, the Rust package-manager component shipped in the pnpm npm package versions >=12.0.0-alpha.0 and <12.0.0-alpha.5, does not validate dependency…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101044"
+        "title": "Incorrect Permission Assignment for Critical Resource vulnerability in ABB Protection and control IED manager (PCM600).\n\nThis issue affects Protection and…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15952"
       },
       {
         "cvss_score": 8.3,
         "cvss_version": "4.0",
-        "description": "pnpm versions 11.0.0 before 11.11.0 and 10.7.0 before 10.34.5 expand ${VAR} environment-variable placeholders in the httpProxy, httpsProxy, and noProxy settings read from a project's pnpm-workspace.yaml. Because the manifest is repository-controlled and the proxy keys were omitted from the request-destination key set that otherwise suppresses placeholder expansion for untrusted manifests (as…",
-        "id": "CVE-2026-101043",
+        "description": "Kyverno before 1.19.1 contains a namespace isolation bypass in the apiCall context entry of namespaced Policy resources due to inconsistent path interpretation between validation and execution. A low-privilege tenant can use percent-encoded dot-segments in urlPath to bypass namespace checks and read resources from other namespaces using the Kyverno admission controller's ServiceAccount…",
+        "id": "CVE-2026-100707",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T18:16:29.700",
-        "publishedAt": "2026-09-27T18:16:29.700",
+        "lastModifiedAt": "2026-09-28T18:17:16.030",
+        "publishedAt": "2026-09-26T14:16:55.983",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "pnpm versions 11.0.0 before 11.11.0 and 10.7.0 before 10.34.5 expand ${VAR} environment-variable placeholders in the httpProxy, httpsProxy, and noProxy…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101043"
+        "title": "Kyverno before 1.19.1 contains a namespace isolation bypass in the apiCall context entry of namespaced Policy resources due to inconsistent path interpretation…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100707"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 8.3,
         "cvss_version": "4.0",
-        "description": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23.",
-        "id": "CVE-2026-88778",
+        "description": "Kyverno 1.16.0 through 1.19.0 registers the globalcontext.Lib CEL library in its policy environment without confining it to the policy's namespace, unlike the sibling libraries (resource.Lib, http.Lib, configMap loader) which are handed the policy namespace. A tenant who can create a namespaced policy (e.g. NamespacedValidatingPolicy, and likewise the namespaced mutating, deleting, generating…",
+        "id": "CVE-2026-100703",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T17:16:57.110",
-        "publishedAt": "2026-09-27T17:16:57.110",
+        "lastModifiedAt": "2026-09-28T18:17:15.880",
+        "publishedAt": "2026-09-26T14:16:55.420",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88778"
+        "title": "Kyverno 1.16.0 through 1.19.0 registers the globalcontext.Lib CEL library in its policy environment without confining it to the policy's namespace, unlike the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100703"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 5.3,
         "cvss_version": "4.0",
-        "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23  leading to unpredictable or erroneous behavior or Denial of Service",
-        "id": "CVE-2026-88777",
+        "description": "Adminer before 6.0.2 contains a cross-site scripting vulnerability where the CONNECTION_ID() database result is interpolated into JavaScript without proper escaping, allowing a malicious database server to execute arbitrary JavaScript in the authenticated Adminer origin. In co-located deployments where the database has FILE privileges and can write to the webroot, attackers can use the XSS to…",
+        "id": "CVE-2026-100695",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-27T17:16:56.990",
-        "publishedAt": "2026-09-27T17:16:56.990",
+        "lastModifiedAt": "2026-09-28T18:17:15.590",
+        "publishedAt": "2026-09-26T14:16:54.297",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Adminer before 6.0.2 contains a cross-site scripting vulnerability where the CONNECTION_ID() database result is interpolated into JavaScript without proper…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100695"
+      },
+      {
+        "cvss_score": 7.0,
+        "cvss_version": "4.0",
+        "description": "Budibase Server before 3.45.0 fails to redact plaintext datasource credentials before broadcasting external table updates to the Builder collaboration websocket room. Attackers with Builder access can intercept unredacted datasource objects containing database passwords and API keys by observing table save or delete operations.",
+        "id": "CVE-2026-100687",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:15.300",
+        "publishedAt": "2026-09-26T14:16:53.140",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88777"
+        "title": "Budibase Server before 3.45.0 fails to redact plaintext datasource credentials before broadcasting external table updates to the Builder collaboration…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100687"
+      },
+      {
+        "cvss_score": 8.9,
+        "cvss_version": "4.0",
+        "description": "Budibase (@budibase/server) before 3.45.0 builds MySQL and MSSQL column-rename DDL in packages/backend-core/src/sql/sqlTable.ts by interpolating identifiers directly into a raw query string (backtick-quoted for MySQL, a single-quoted sp_rename literal for MSSQL) without applying the project's quoteMySqlIdentifier / quoteSqlServerIdentifier helpers. An attacker with DDL rights on a connected…",
+        "id": "CVE-2026-100683",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-28T18:17:15.153",
+        "publishedAt": "2026-09-26T14:16:52.567",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Budibase (@budibase/server) before 3.45.0 builds MySQL and MSSQL column-rename DDL in packages/backend-core/src/sql/sqlTable.ts by interpolating identifiers…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100683"
       }
     ],
-    "low": 16,
-    "medium": 102,
+    "low": 35,
+    "medium": 223,
     "none": 0,
-    "unscored": 0
+    "unscored": 22
   },
   "snapshot": {
-    "cves": 286,
-    "kevAdded": 2,
-    "knownExploited": 0,
-    "projects": 20,
-    "releases": 0,
-    "techEntries": 22
+    "cves": 509,
+    "kevAdded": 0,
+    "knownExploited": 2,
+    "projects": 18,
+    "releases": 1,
+    "techEntries": 6
   },
   "sources": {
     "opensource": {
       "github": {
-        "failures": 0,
-        "inWindow": 20,
-        "status": "success",
-        "total": 20
+        "failures": 2,
+        "inWindow": 18,
+        "status": "partial",
+        "total": 18
       }
     },
     "releases": {
       "github": {
-        "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 59
+        "failures": 2,
+        "inWindow": 1,
+        "status": "partial",
+        "total": 56
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 2,
-        "status": "success",
-        "total": 1728
+        "inWindow": 0,
+        "status": "empty",
+        "total": 1734
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 286,
+        "inWindow": 509,
         "status": "success",
-        "total": 286
+        "total": 509
       }
     },
     "technology": {
       "rss": {
-        "failures": 1,
-        "inWindow": 22,
-        "status": "partial",
-        "total": 198
+        "failures": 0,
+        "inWindow": 6,
+        "status": "success",
+        "total": 228
       }
     }
   },
   "technology": [
     {
       "category": "tech",
-      "publishedAt": "2026-09-27T17:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "The Internet is changing more today than at any point since Cloudflare launched back on September 27, 2010. As automated traffic surpasses human activity, we reflect on the rise of AI agents, new creators, and how we can help build a fair, sustainable future for the web.",
-      "title": "Cloudflare’s 2026 Annual Founders’ Letter",
-      "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
+      "publishedAt": "2026-09-28T18:05:00+00:00",
+      "source": "Microsoft",
+      "summary": "Learn to direct AI coding agents, review their work, and build reliable development workflows with this free GitHub Copilot app course. The post Get started with the GitHub Copilot app: a free, hands-on course appeared first on Microsoft for Developers .",
+      "title": "Get started with the GitHub Copilot app: a free, hands-on course",
+      "url": "https://devblogs.microsoft.com/blog/github-copilot-app-for-beginners/"
     },
     {
       "category": "tech",
+      "publishedAt": "2026-09-28T17:23:33+00:00",
+      "source": "GitHub Blog",
+      "summary": "The open source Git project just released Git 2.56. Here is GitHub's look at some of the most interesting features and changes introduced since last time. The post Highlights from Git 2.56 appeared first on The GitHub Blog .",
+      "title": "Highlights from Git 2.56",
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-56/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-28T16:14:54+00:00",
+      "source": "AWS",
+      "summary": "If there’s one theme that defined last week, it’s choice. The frontier models keep arriving, and the interesting question is no longer just “how smart is it?” but “which model fits this step, at this cost, at this latency?” That’s exactly what landed on Amazon Bedrock over the…",
+      "title": "AWS Weekly Roundup: GPT-6 Sol and Luna, Claude Opus 5.5 on Amazon Bedrock, Strands harness, and more (September 28, 2026)",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-28T06:35:00+00:00",
+      "source": "The Register",
+      "summary": "Friday afternoon is not the time for snap decisions, but weekends are useful to cover your tracks",
+      "title": "Techie assumed boss knew what they were talking about and killed Exchange by deleting data",
+      "url": "https://www.theregister.com/software/2026/09/28/techie-assumed-boss-knew-what-they-were-talking-about-and-killed-exchange-by-deleting-data/5299043"
+    },
+    {
+      "category": "security",
       "publishedAt": "2026-09-25T19:38:59+00:00",
       "source": "Ars Technica",
       "summary": "Ads appearing all over the Internet are trying to scam people.",
@@ -512,108 +555,12 @@
       "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/"
     },
     {
-      "category": "security",
-      "publishedAt": "2026-09-25T19:13:20+00:00",
+      "category": "tech",
+      "publishedAt": "2026-09-25T18:57:10+00:00",
       "source": "The Register",
-      "summary": "More mockery and memes from the Dark Web Roast",
-      "title": "Fake Google Security Team ad says 'no script reading' in voice phishing - then prints the script",
-      "url": "https://www.theregister.com/security/2026/09/25/fake-google-security-team-ad-says-no-script-reading-in-voice-phishing-then-prints-the-script/5299264"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-09-25T18:23:31+00:00",
-      "source": "The Register",
-      "summary": "Data theft and extortion biz, that is",
-      "title": "ShinyHunters tells The Reg: We hacked the FBI to 'protect our business'",
-      "url": "https://www.theregister.com/cyber-crime/2026/09/25/shinyhunters-tells-the-reg-we-hacked-the-fbi-to-protect-our-business/5299250"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T18:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Beginners: How to build custom workflows with canvases…",
-      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-09-25T17:29:54+00:00",
-      "source": "The Register",
-      "summary": "Nothing in the attack chain screams malicious software, except none of the impersonated HR and payroll providers actually offers a desktop app",
-      "title": "Crooks use fake desktop apps to fool HR staff into giving them remote access",
-      "url": "https://www.theregister.com/security/2026/09/25/crooks-use-fake-desktop-apps-to-fool-hr-staff-into-giving-them-remote-access/5299226"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-09-25T17:04:07+00:00",
-      "source": "The Register",
-      "summary": "Familiar fingerprints point to Kim’s regime … to the surprise of nobody",
-      "title": "Bitget blames North Korea for $387.5M crypto wallet raid",
-      "url": "https://www.theregister.com/cyber-crime/2026/09/25/bitget-blames-north-korea-for-3875m-crypto-wallet-raid/5299218"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T16:01:03+00:00",
-      "source": "Netflix",
-      "summary": "",
-      "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
-      "url": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252?source=rss----2615bd06b42e---4"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
-      "title": "What’s new with Google Cloud",
-      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Reinforcement learning (RL) has been a keystone of modern LLM post-training, but it demands large training clusters and access to model internals that external customers can't have with proprietary models like Gemini. So here at Google Cloud, we packaged it into a managed RL…",
-      "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "The volume of data being generated today brings both opportunity and massive operational complexity. Most teams that operate at scale don't discover issues until they appear on an invoice — and by the time an unusual access pattern shows up as a line item, it has often been…",
-      "title": "Storage Intelligence advisor: Know what changed in your storage estate and act on it",
-      "url": "https://cloud.google.com/blog/products/storage-data-transfer/storage-intelligence-advisor-and-batch-operations-updates/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "At Google Cloud, we are committed to delivering the best managed experience backed by open source software. Today, we’re announcing the general availability of Memorystore for Valkey 9.1 , which achieves up to 3x queries per second (QPS) at microsecond latency compared to…",
-      "title": "Unlock 3x QPS and microsecond latency with Memorystore for Valkey 9.1",
-      "url": "https://cloud.google.com/blog/products/databases/memorystore-for-valkey-9-1-3x-qps-caching/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-09-25T15:00:00+00:00",
-      "source": "The Register",
-      "summary": "Joe Fay chairs a Register dinner in New York on the file infrastructure nobody has got around to replacing, with nothing on the record.",
-      "title": "Which copy of that file is the real one? Dinner, off the record, in Midtown",
-      "url": "https://www.theregister.com/storage/2026/09/25/sponsored/5299080"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T15:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "How we fully migrated github.com away from CSS-in-JS. The post Improving site performance by shipping more CSS appeared first on The GitHub Blog .",
-      "title": "Improving site performance by shipping more CSS",
-      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T14:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Introduction As an update to the June 2026 post, ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit , Mandiant and Google Threat Intelligence Group (GTIG) have identified renewed mass exploitation of CVE-2026-35273 by UNC6240 (ShinyHunters), along with expanded…",
-      "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/"
+      "summary": "Overhead reduced by as much as 99.7%",
+      "title": "New software dependency validation process increases speeds by 54x",
+      "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
     }
   ]
 }

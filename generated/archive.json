@@ -1,6 +1,194 @@
 {
   "archive": [
     {
+      "date": "2026-09-29",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 149,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200726,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 411,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143230,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 248,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139308,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 304,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128369,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 263,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122410,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 418,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 119672,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 354,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 111192,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 395,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103830,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 75,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97796,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 131,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91353,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 1,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-09-28T18:03:49Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.9.0",
+            "version": "v1.9.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 45,
+          "HIGH": 184,
+          "LOW": 35,
+          "MEDIUM": 223,
+          "NONE": 0,
+          "UNSCORED": 22
+        }
+      },
+      "snapshot": {
+        "cves": 509,
+        "kevAdded": 0,
+        "knownExploited": 2,
+        "projects": 18,
+        "releases": 1,
+        "techEntries": 6
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1734
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 1,
+          "status": "partial",
+          "total": 56
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 509,
+          "status": "success",
+          "total": 509
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 6,
+          "status": "success",
+          "total": 228
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 1,
+          "tech": 5
+        },
+        "recent": [
+          {
+            "published_at": "2026-09-28T18:05:00+00:00",
+            "source": "Microsoft",
+            "title": "Get started with the GitHub Copilot app: a free, hands-on course",
+            "url": "https://devblogs.microsoft.com/blog/github-copilot-app-for-beginners/"
+          },
+          {
+            "published_at": "2026-09-28T17:23:33+00:00",
+            "source": "GitHub Blog",
+            "title": "Highlights from Git 2.56",
+            "url": "https://github.blog/open-source/git/highlights-from-git-2-56/"
+          },
+          {
+            "published_at": "2026-09-28T16:14:54+00:00",
+            "source": "AWS",
+            "title": "AWS Weekly Roundup: GPT-6 Sol and Luna, Claude Opus 5.5 on Amazon Bedrock, Strands harness, and more (September 28, 2026)",
+            "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/"
+          },
+          {
+            "published_at": "2026-09-28T06:35:00+00:00",
+            "source": "The Register",
+            "title": "Techie assumed boss knew what they were talking about and killed Exchange by deleting data",
+            "url": "https://www.theregister.com/software/2026/09/28/techie-assumed-boss-knew-what-they-were-talking-about-and-killed-exchange-by-deleting-data/5299043"
+          },
+          {
+            "published_at": "2026-09-25T19:38:59+00:00",
+            "source": "Ars Technica",
+            "title": "Your uncle’s frozen Mac says it’s infected after viewing a Google ad. Now what?",
+            "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/"
+          },
+          {
+            "published_at": "2026-09-25T18:57:10+00:00",
+            "source": "The Register",
+            "title": "New software dependency validation process increases speeds by 54x",
+            "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-09-28",
       "opensource": {
         "topProjects": [
@@ -101,7 +289,7 @@
         "knownExploited": 0,
         "projects": 20,
         "releases": 0,
-        "techEntries": 41
+        "techEntries": 22
       },
       "sources": {
         "cisa": {
@@ -130,17 +318,23 @@
         },
         "rss": {
           "failures": 1,
-          "inWindow": 41,
+          "inWindow": 22,
           "status": "partial",
           "total": 198
         }
       },
       "technology": {
         "categories": {
-          "security": 14,
-          "tech": 27
+          "security": 7,
+          "tech": 15
         },
         "recent": [
+          {
+            "published_at": "2026-09-27T17:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+            "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/"
+          },
           {
             "published_at": "2026-09-25T19:38:59+00:00",
             "source": "Ars Technica",
@@ -194,12 +388,6 @@
             "source": "Google Cloud",
             "title": "Best practices guide for customizing Gemini models via Reinforcement Learning (RL)",
             "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models/"
-          },
-          {
-            "published_at": "2026-09-25T16:00:00+00:00",
-            "source": "Google Cloud",
-            "title": "Storage Intelligence advisor: Know what changed in your storage estate and act on it",
-            "url": "https://cloud.google.com/blog/products/storage-data-transfer/storage-intelligence-advisor-and-batch-operations-updates/"
           }
         ]
       }
@@ -2615,8 +2803,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-09-28T07:40:43.722697+00:00",
-    "totalSnapshots": 12,
+    "generatedAt": "2026-10-07T13:39:20.270749+00:00",
+    "totalSnapshots": 13,
     "warnings": []
   }
 }
