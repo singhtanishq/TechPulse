@@ -8,19 +8,22 @@ collect -> process -> generate.
 
 Usage:
     python3 scripts/run_pipeline.py [--date YYYY-MM-DD]
-        [--skip-collect] [--skip-process] [--skip-generate]
+        [--catch-up] [--skip-collect] [--skip-process] [--skip-generate]
         [--only collect|process|generate]
 
 Exit codes:
     0 — requested pipeline stages completed successfully.
         Partial collector failures are recorded in source-health data
         and do not fail the run when at least one collector succeeds.
+        In --catch-up mode, at least one edition completed (a later
+        failed edition is reported and retried on the next run).
 
     1 — fatal:
         invalid arguments,
         a processing/generation stage failed,
         every requested collector failed,
-        or no pipeline stage was actually selected.
+        no pipeline stage was actually selected, or
+        (without --catch-up) the single requested edition failed.
 
 Reporting semantics:
     TechPulse reporting dates are India calendar days
@@ -33,6 +36,12 @@ Reporting semantics:
     Default resolution (no --date):
     next pending edition after the newest valid snapshot,
     never later than the current IST date.
+
+    --catch-up keeps resolving and processing further pending editions
+    (bounded by MAX_EDITIONS_PER_RUN) until the archive has caught up
+    with the current IST date. This heals backlogs left by failed runs
+    within a single scheduled execution instead of advancing one day
+    per day.
 
     See scripts/processors/utils.py for the shared resolver.
 """
@@ -140,6 +149,12 @@ GENERATORS = [
         60,
     ),
 ]
+
+# Upper bound on editions processed in a single pipeline invocation.
+# A backlog (caused by previously failed runs) is healed across
+# consecutive runs: each run processes up to this many editions, so
+# even multi-week gaps catch up without unbounded runtimes.
+MAX_EDITIONS_PER_RUN = 8
 
 
 def run_script(
