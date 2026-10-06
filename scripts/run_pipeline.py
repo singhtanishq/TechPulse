@@ -328,7 +328,8 @@ def validate_arguments(
     args: argparse.Namespace,
 ) -> str | None:
     """
-    Validate interactions between --only and --skip-* options.
+    Validate interactions between --only, --skip-* and --catch-up
+    options.
 
     Returns an error string or None when the argument combination is
     valid.
@@ -339,6 +340,19 @@ def validate_arguments(
         "process": args.skip_process,
         "generate": args.skip_generate,
     }
+
+    if args.catch_up:
+        if args.only:
+            return (
+                "--catch-up cannot be combined with --only: catch-up "
+                "requires the full pipeline for each edition."
+            )
+
+        if any(skip_flags.values()):
+            return (
+                "--catch-up cannot be combined with --skip-* flags: "
+                "catch-up requires the full pipeline for each edition."
+            )
 
     if args.only:
         if skip_flags.get(args.only):
