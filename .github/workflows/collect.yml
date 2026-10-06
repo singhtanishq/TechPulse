@@ -55,7 +55,9 @@ jobs:
   collect:
     name: Collect and publish data
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Catch-up mode can process several pending editions in one run
+    # (bounded by MAX_EDITIONS_PER_RUN in scripts/run_pipeline.py).
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
@@ -146,9 +148,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 scripts/run_pipeline.py \
-            --date "${{ steps.date.outputs.date }}" \
-            --verbose
+          set -euo pipefail
+
+          ARGS=(--verbose)
+
+          if [[ -n "${INPUT_DATE:-}" ]]; then
+            # Explicit dispatch request: process exactly the requested
+            # edition and nothing else.
+            ARGS+=("--date" "${{ steps.date.outputs.date }}")
+          else
+            # Automated run: start at the resolved edition and heal any
+            # backlog of pending editions in the same run.
+            ARGS+=("--date" "${{ steps.date.outputs.date }}" "--catch-up")
+          fi
+
+          python3 scripts/run_pipeline.py "${ARGS[@]}"
 
       # ----------------------------------------------------------------
       # Post-generation validation
