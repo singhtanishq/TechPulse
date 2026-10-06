@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 621,
+      "date": "2026-09-30",
+      "kevAdded": 1,
+      "knownExploited": 1,
+      "projects": 18,
+      "releases": 2,
+      "techEntries": 8
+    },
+    {
       "cves": 509,
       "date": "2026-09-29",
       "kevAdded": 0,
@@ -119,16 +128,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-09-28",
-    "date": "2026-09-29",
-    "daysObserved": 13,
-    "generatedAt": "2026-10-07T13:39:20.270749+00:00",
-    "snapshots": 13,
+    "coveredDate": "2026-09-29",
+    "date": "2026-09-30",
+    "daysObserved": 14,
+    "generatedAt": "2026-10-07T13:41:41.243821+00:00",
+    "snapshots": 14,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 149,
+      "daily_growth": 0,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -140,7 +149,7 @@
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 411,
+      "daily_growth": 0,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -152,7 +161,7 @@
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 248,
+      "daily_growth": 0,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -164,7 +173,7 @@
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 304,
+      "daily_growth": 0,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -176,7 +185,7 @@
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 263,
+      "daily_growth": 0,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -188,7 +197,7 @@
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 418,
+      "daily_growth": 0,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -200,7 +209,7 @@
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 354,
+      "daily_growth": 0,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -212,7 +221,7 @@
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 395,
+      "daily_growth": 0,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -224,7 +233,7 @@
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 75,
+      "daily_growth": 0,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -236,7 +245,7 @@
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 131,
+      "daily_growth": 0,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -250,228 +259,237 @@
   ],
   "releases": [
     {
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-09-28T18:03:49Z",
-      "repository": "anthropics/anthropic-sdk-python",
+      "kind": "patch",
+      "project": "framework",
+      "publishedAt": "2026-09-29T12:54:52Z",
+      "repository": "laravel/framework",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.9.0",
-      "version": "v1.9.0"
+      "url": "https://github.com/laravel/framework/releases/tag/v12.69.3",
+      "version": "v12.69.3"
+    },
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-09-29T12:48:01Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.34.0",
+      "version": "v13.34.0"
     }
   ],
   "security": {
-    "critical": 45,
-    "high": 184,
+    "critical": 71,
+    "high": 242,
     "kevCatalogTotal": 1734,
     "latest": [
       {
-        "cvss_score": 9.4,
+        "cvss_score": 8.0,
         "cvss_version": "3.1",
-        "description": "Suricata before 8.0.7 has an Http2ThreadMultiBuf use-after-free when a transaction is inspected by rules that use http.response_header with and without a transform.",
-        "id": "CVE-2026-94084",
+        "description": "Out-of-bounds read in Microsoft Local Security Authority Server (lsasrv) allows an authorized attacker to elevate privileges over a network.",
+        "id": "CVE-2026-69365",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:29:51.570",
-        "publishedAt": "2026-09-20T02:16:53.717",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-09-29T18:26:31.883",
+        "publishedAt": "2026-09-08T18:18:56.573",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "Suricata before 8.0.7 has an Http2ThreadMultiBuf use-after-free when a transaction is inspected by rules that use http.response_header with and without a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94084"
+        "title": "Out-of-bounds read in Microsoft Local Security Authority Server (lsasrv) allows an authorized attacker to elevate privileges over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69365"
+      },
+      {
+        "cvss_score": 8.1,
+        "cvss_version": "3.1",
+        "description": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an attacker could cause an XML injection. A successful exploit of this vulnerability might lead to data tampering and denial of service.",
+        "id": "CVE-2026-65124",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:24:54.667",
+        "publishedAt": "2026-09-22T15:17:12.670",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an attacker could cause an XML injection. A successful exploit of this vulnerability…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65124"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Iron Mountain Archiving Services Inc. EnVision allows SQL Injection.\n\nThis issue affects enVision: before 260655.",
-        "id": "CVE-2026-86595",
+        "description": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an attacker could cause external control of a file name or path. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, data tampering, and denial of service.",
+        "id": "CVE-2026-65125",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:25.817",
-        "publishedAt": "2026-09-28T14:17:21.030",
+        "lastModifiedAt": "2026-09-29T18:19:56.500",
+        "publishedAt": "2026-09-22T15:17:12.800",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Iron Mountain Archiving Services Inc. EnVision allows SQL…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86595"
+        "title": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an attacker could cause external control of a file name or path. A successful exploit…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65125"
       },
       {
-        "cvss_score": 4.2,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Path traversal in the CLI client image export and copy functionality in Canonical LXD from 4.0.2 before 4.0.14, 5.0.10, 5.21.8, and 6.10 on all platforms allows a remote malicious or machine-in-the-middle image server to overwrite arbitrary local files and execute code on the client system via a crafted Content-Disposition header filename parameter during unified image export or copy operations…",
-        "id": "CVE-2026-86334",
+        "description": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an attacker could cause improper enforcement of a behavioral workflow. A successful exploit of this vulnerability might lead to data tampering, denial of service, and information disclosure.",
+        "id": "CVE-2026-65126",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:25.683",
-        "publishedAt": "2026-09-28T14:17:20.590",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Path traversal in the CLI client image export and copy functionality in Canonical LXD from 4.0.2 before 4.0.14, 5.0.10, 5.21.8, and 6.10 on all platforms…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86334"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, Notepad++ contains a stack buffer overflow in NppParameters::writeSession in PowerEditor/src/Parameters.cpp because it copies a session path derived from -settingsDir= into backupPathName[MAX_PATH] with unbounded wcscpy and appends SESSION_BACKUP_EXT with unbounded wcscat. A sufficiently long settings directory causes the…",
-        "id": "CVE-2026-86054",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:25.420",
-        "publishedAt": "2026-09-22T18:17:23.827",
+        "lastModifiedAt": "2026-09-29T18:18:21.347",
+        "publishedAt": "2026-09-22T15:17:12.923",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, Notepad++ contains a stack buffer overflow in NppParameters::writeSession in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86054"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, the Folder as Workspace Run by system action in Notepad++ can resolve a different sibling file than the file selected by the user. When an attacker places a command script whose name is the selected text-file path with .cmd appended, and the user invokes Run by system on the text file on Windows 10 or Windows 11, Notepad++…",
-        "id": "CVE-2026-77605",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:25.143",
-        "publishedAt": "2026-09-22T18:17:19.393",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Notepad++ is a free and open-source source code editor. Prior to 8.9.8, the Folder as Workspace Run by system action in Notepad++ can resolve a different…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77605"
-      },
-      {
-        "cvss_score": 9.2,
-        "cvss_version": "4.0",
-        "description": "Dayforce Payroll is vulnerable to Path Traversal  in file download functionality. An unauthenticated attacker can sent GET request with file path parameter set to any path including an absolute\nlocal file path.\n\n\nBecause vendor contact attempts were unsuccessful, the vulnerability has only been confirmed in version R2026.2.0 but may also affect other versions.",
-        "id": "CVE-2026-73642",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:24.290",
-        "publishedAt": "2026-09-28T14:17:17.160",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Dayforce Payroll is vulnerable to Path Traversal  in file download functionality. An unauthenticated attacker can sent GET request with file path parameter set…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73642"
+        "title": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an attacker could cause improper enforcement of a behavioral workflow. A successful…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65126"
       },
       {
         "cvss_score": 5.1,
         "cvss_version": "4.0",
-        "description": "Dayforce Payroll is vulnerable to Reflected XSS in multiple endpoints. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary JavaScript execution in the victim's browser.\n\nBecause vendor contact attempts were unsuccessful, the vulnerability has only been confirmed in version R2026.2.0 but may also affect other versions.",
-        "id": "CVE-2026-73641",
+        "description": "A security flaw has been discovered in Krayin laravel-crm up to 2.2.5. This issue affects some unknown processing of the file Sanitizer.php of the component TinyMCE Media Upload. The manipulation results in cross site scripting. The attack may be performed from remote. Upgrading to version 2.2.6 is capable of addressing this issue. The patch is identified as…",
+        "id": "CVE-2026-97897",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:24.157",
-        "publishedAt": "2026-09-28T14:17:17.000",
+        "lastModifiedAt": "2026-09-29T18:17:32.423",
+        "publishedAt": "2026-09-25T19:18:00.170",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Dayforce Payroll is vulnerable to Reflected XSS in multiple endpoints. An attacker can prepare a specially crafted URL that, when opened, results in arbitrary…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73641"
+        "title": "A security flaw has been discovered in Krayin laravel-crm up to 2.2.5. This issue affects some unknown processing of the file Sanitizer.php of the component…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97897"
       },
       {
-        "cvss_score": 9.3,
-        "cvss_version": "4.0",
-        "description": "Dayforce Payroll is vulnerable to Time Based-Blind SQL Injection in password recovery functionality. The unauthenticated attacker can prepare GET request with one of the parameters filled in with an arbitrary SQL query. The parameter is interpreted as part of SQL predicate resulting in Time-Based Blind SQL Injection.\nBecause vendor contact attempts were unsuccessful, the vulnerability has only…",
-        "id": "CVE-2026-73640",
+        "cvss_score": 6.3,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in multicluster-global-hub. During a ManagedClusterMigration, the system incorrectly grants all managed hubs read access to a shared communication topic. This allows a compromised managed hub to intercept and collect sensitive bootstrap kubeconfigs, which contain API server tokens intended for other hubs. These tokens have an extended validity of approximately 9.86 years…",
+        "id": "CVE-2026-71577",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:24.013",
-        "publishedAt": "2026-09-28T14:17:16.843",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-09-29T18:17:16.757",
+        "publishedAt": "2026-08-10T17:17:36.197",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Dayforce Payroll is vulnerable to Time Based-Blind SQL Injection in password recovery functionality. The unauthenticated attacker can prepare GET request with…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73640"
+        "title": "A flaw was found in multicluster-global-hub. During a ManagedClusterMigration, the system incorrectly grants all managed hubs read access to a shared…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71577"
+      },
+      {
+        "cvss_score": 8.5,
+        "cvss_version": "4.0",
+        "description": "Horilla is an HR and CRM software. Prior to 1.6.0, the search parameter at /employee/employee-filter-view is reflected by jQuery .html() in employee/templates/employee_nav.html without HTML neutralization. An external attacker can craft and deliver a link that causes JavaScript to execute when an authenticated employee or administrator reaches the employee filter, allowing access to…",
+        "id": "CVE-2026-71483",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:17:16.577",
+        "publishedAt": "2026-09-25T22:18:20.173",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Horilla is an HR and CRM software. Prior to 1.6.0, the search parameter at /employee/employee-filter-view is reflected by jQuery .html() in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71483"
+      },
+      {
+        "cvss_score": 8.5,
+        "cvss_version": "4.0",
+        "description": "GLPI is a free asset and IT management software package. From 11.0.6 until 11.0.8, an authenticated technician can store active markup in supplier website fields. Any user who opens the affected item's suppliers list triggers the stored cross-site scripting payload. This issue is fixed in version 11.0.8.",
+        "id": "CVE-2026-55214",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:17:16.297",
+        "publishedAt": "2026-09-25T19:17:38.160",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "GLPI is a free asset and IT management software package. From 11.0.6 until 11.0.8, an authenticated technician can store active markup in supplier website…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55214"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "4.0",
+        "description": "GLPI is a free asset and IT management software package. From 11.0.0 until 11.0.8, an attacker can craft a URL for a dashboard that reflects attacker-controlled markup without sufficient output encoding. A user who opens the crafted URL triggers reflected cross-site scripting in the dashboard. This issue is fixed in version 11.0.8.",
+        "id": "CVE-2026-53610",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:17:15.713",
+        "publishedAt": "2026-09-25T19:17:27.123",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "GLPI is a free asset and IT management software package. From 11.0.0 until 11.0.8, an attacker can craft a URL for a dashboard that reflects…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53610"
+      },
+      {
+        "cvss_score": 4.6,
+        "cvss_version": "4.0",
+        "description": "GLPI is a free asset and IT management software package. From 0.70 until 10.0.26 and 11.0.8, an authenticated hotliner or technician can submit crafted criteria through the user import feature to bypass the configured default LDAP filter. This allows access to LDAP objects that the default filter was intended to exclude. This issue is fixed in versions 11.0.8 and 10.0.26.",
+        "id": "CVE-2026-49469",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:17:15.577",
+        "publishedAt": "2026-09-25T19:16:58.033",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "GLPI is a free asset and IT management software package. From 0.70 until 10.0.26 and 11.0.8, an authenticated hotliner or technician can submit crafted…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49469"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "SGLang through 0.5.20 in prefill/decode disaggregation mode fails to validate duplicate bootstrap_room fields in /generate requests with Mooncake KV transfer backend. Unauthenticated attackers can send concurrent requests with identical bootstrap_room values to crash scheduler processes or hang other users' requests until transfer timeout.",
+        "id": "CVE-2026-102634",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:17:09.033",
+        "publishedAt": "2026-09-29T17:17:07.147",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "SGLang through 0.5.20 in prefill/decode disaggregation mode fails to validate duplicate bootstrap_room fields in /generate requests with Mooncake KV transfer…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102634"
+      },
+      {
+        "cvss_score": 7.7,
+        "cvss_version": "4.0",
+        "description": "OpenClaw's Matrix integration (npm package @openclaw/matrix) versions >= 2026.2.2 and < 2026.8.1 lowercase complete Matrix user IDs — including historical localparts and the case-sensitive server-name portion — when deriving the OpenClaw authorization identity. As a result, distinct authenticated Matrix accounts can normalize to the same authorization identity. A Matrix participant controlling a…",
+        "id": "CVE-2026-100541",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:17:06.033",
+        "publishedAt": "2026-09-26T03:16:59.987",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "OpenClaw's Matrix integration (npm package @openclaw/matrix) versions >= 2026.2.2 and < 2026.8.1 lowercase complete Matrix user IDs — including historical…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100541"
+      },
+      {
+        "cvss_score": 2.3,
+        "cvss_version": "4.0",
+        "description": "OpenClaw (npm package 'openclaw') before 2026.8.1 fails to apply the originating requester's effective tool policy during Active Memory automatic recall. In deployments that use Active Memory together with requester-specific tool rules, deterministic and hidden recall paths can retrieve durable memory and inject it into the agent's context even when toolsBySender explicitly denies that requester…",
+        "id": "CVE-2026-100537",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:17:05.903",
+        "publishedAt": "2026-09-26T03:16:59.390",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "OpenClaw (npm package 'openclaw') before 2026.8.1 fails to apply the originating requester's effective tool policy during Active Memory automatic recall. In…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100537"
+      },
+      {
+        "cvss_score": 6.0,
+        "cvss_version": "4.0",
+        "description": "OpenClaw versions before 2026.8.1 contain a path traversal vulnerability in the tools.fs.workspaceOnly feature where Unicode filename fallback can normalize validated parent directory components. Admitted requesters can exploit canonically equivalent sibling directories to read files outside the configured workspace boundary.",
+        "id": "CVE-2026-100533",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-09-29T18:17:05.773",
+        "publishedAt": "2026-09-26T03:16:58.813",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "OpenClaw versions before 2026.8.1 contain a path traversal vulnerability in the tools.fs.workspaceOnly feature where Unicode filename fallback can normalize…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100533"
       },
       {
         "cvss_score": 7.4,
-        "cvss_version": "3.1",
-        "description": "Python Social Auth is a social authentication/registration mechanism. Prior to version 5.0.0, the `vk-app` backend accepted VK application callback data without verifying the callback signature when the `auth_key` parameter was omitted. Applications using this backend could treat unsigned attacker-controlled data as a verified VK identity. An attacker could choose callback fields such as…",
-        "id": "CVE-2026-57178",
+        "cvss_version": "4.0",
+        "description": "OpenClaw versions before 2026.8.1 contain an authorization scope widening vulnerability in file-transfer allow-always approvals that allows attackers to reuse standing grants for unreviewed paths. Attackers can exploit glob metacharacter interpretation and node display name reuse to access sibling paths or different nodes beyond the operator's original approval scope.",
+        "id": "CVE-2026-100529",
         "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:23.873",
-        "publishedAt": "2026-09-24T18:17:14.970",
+        "lastModifiedAt": "2026-09-29T18:17:05.640",
+        "publishedAt": "2026-09-26T03:16:58.217",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Python Social Auth is a social authentication/registration mechanism. Prior to version 5.0.0, the `vk-app` backend accepted VK application callback data…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57178"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "Incorrect Permission Assignment for Critical Resource vulnerability in ABB Protection and control IED manager (PCM600).\n\nThis issue affects Protection and control IED manager (PCM600): through 2.14.",
-        "id": "CVE-2026-15952",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:21.543",
-        "publishedAt": "2026-09-28T14:17:15.110",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Incorrect Permission Assignment for Critical Resource vulnerability in ABB Protection and control IED manager (PCM600).\n\nThis issue affects Protection and…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15952"
-      },
-      {
-        "cvss_score": 8.3,
-        "cvss_version": "4.0",
-        "description": "Kyverno before 1.19.1 contains a namespace isolation bypass in the apiCall context entry of namespaced Policy resources due to inconsistent path interpretation between validation and execution. A low-privilege tenant can use percent-encoded dot-segments in urlPath to bypass namespace checks and read resources from other namespaces using the Kyverno admission controller's ServiceAccount…",
-        "id": "CVE-2026-100707",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:16.030",
-        "publishedAt": "2026-09-26T14:16:55.983",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Kyverno before 1.19.1 contains a namespace isolation bypass in the apiCall context entry of namespaced Policy resources due to inconsistent path interpretation…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100707"
-      },
-      {
-        "cvss_score": 8.3,
-        "cvss_version": "4.0",
-        "description": "Kyverno 1.16.0 through 1.19.0 registers the globalcontext.Lib CEL library in its policy environment without confining it to the policy's namespace, unlike the sibling libraries (resource.Lib, http.Lib, configMap loader) which are handed the policy namespace. A tenant who can create a namespaced policy (e.g. NamespacedValidatingPolicy, and likewise the namespaced mutating, deleting, generating…",
-        "id": "CVE-2026-100703",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:15.880",
-        "publishedAt": "2026-09-26T14:16:55.420",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Kyverno 1.16.0 through 1.19.0 registers the globalcontext.Lib CEL library in its policy environment without confining it to the policy's namespace, unlike the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100703"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Adminer before 6.0.2 contains a cross-site scripting vulnerability where the CONNECTION_ID() database result is interpolated into JavaScript without proper escaping, allowing a malicious database server to execute arbitrary JavaScript in the authenticated Adminer origin. In co-located deployments where the database has FILE privileges and can write to the webroot, attackers can use the XSS to…",
-        "id": "CVE-2026-100695",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:15.590",
-        "publishedAt": "2026-09-26T14:16:54.297",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Adminer before 6.0.2 contains a cross-site scripting vulnerability where the CONNECTION_ID() database result is interpolated into JavaScript without proper…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100695"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "4.0",
-        "description": "Budibase Server before 3.45.0 fails to redact plaintext datasource credentials before broadcasting external table updates to the Builder collaboration websocket room. Attackers with Builder access can intercept unredacted datasource objects containing database passwords and API keys by observing table save or delete operations.",
-        "id": "CVE-2026-100687",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:15.300",
-        "publishedAt": "2026-09-26T14:16:53.140",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Budibase Server before 3.45.0 fails to redact plaintext datasource credentials before broadcasting external table updates to the Builder collaboration…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100687"
-      },
-      {
-        "cvss_score": 8.9,
-        "cvss_version": "4.0",
-        "description": "Budibase (@budibase/server) before 3.45.0 builds MySQL and MSSQL column-rename DDL in packages/backend-core/src/sql/sqlTable.ts by interpolating identifiers directly into a raw query string (backtick-quoted for MySQL, a single-quoted sp_rename literal for MSSQL) without applying the project's quoteMySqlIdentifier / quoteSqlServerIdentifier helpers. An attacker with DDL rights on a connected…",
-        "id": "CVE-2026-100683",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-09-28T18:17:15.153",
-        "publishedAt": "2026-09-26T14:16:52.567",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Budibase (@budibase/server) before 3.45.0 builds MySQL and MSSQL column-rename DDL in packages/backend-core/src/sql/sqlTable.ts by interpolating identifiers…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100683"
+        "title": "OpenClaw versions before 2026.8.1 contain an authorization scope widening vulnerability in file-transfer allow-always approvals that allows attackers to reuse…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100529"
       }
     ],
-    "low": 35,
-    "medium": 223,
+    "low": 50,
+    "medium": 251,
     "none": 0,
-    "unscored": 22
+    "unscored": 7
   },
   "snapshot": {
-    "cves": 509,
-    "kevAdded": 0,
-    "knownExploited": 2,
+    "cves": 621,
+    "kevAdded": 1,
+    "knownExploited": 1,
     "projects": 18,
-    "releases": 1,
-    "techEntries": 6
+    "releases": 2,
+    "techEntries": 8
   },
   "sources": {
     "opensource": {
@@ -485,7 +503,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 1,
+        "inWindow": 2,
         "status": "partial",
         "total": 56
       }
@@ -493,27 +511,59 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
+        "inWindow": 1,
+        "status": "success",
         "total": 1734
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 509,
+        "inWindow": 621,
         "status": "success",
-        "total": 509
+        "total": 621
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 6,
+        "inWindow": 8,
         "status": "success",
         "total": 228
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-29T16:32:00+00:00",
+      "source": "The Register",
+      "summary": "Use SharePoint Online? Keen on PDFs? Then you won't be keen on the latest Word bug",
+      "title": "Microsoft sends PDFs to strange new worlds instead of SharePoint",
+      "url": "https://www.theregister.com/software/2026/09/29/microsoft-sends-pdfs-to-strange-new-worlds-instead-of-sharepoint/5299735"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-29T16:30:35+00:00",
+      "source": "Microsoft",
+      "summary": "When an engineer or team creates useful agentic artifacts for their daily work (e.g., instructions, skills, and MCP configurations), others naturally want to adopt them when they see how those artifacts could help with their own work. Sharing the files is straightforward, but…",
+      "title": "Enabling Consistent AI-Assisted Engineering with GitHub Copilot Plugins",
+      "url": "https://devblogs.microsoft.com/blog/enabling-consistent-ai-assisted-engineering-with-github-copilot-plugins/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-29T15:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "Explore GitHub’s latest transparency data and learn more about policy updates affecting developers and open source. The post Developer policy update: Transparency, state policy, and what’s ahead appeared first on The GitHub Blog .",
+      "title": "Developer policy update: Transparency, state policy, and what’s ahead",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-09-28T19:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app. The post How we found 24 Android vulnerabilities using our open source AI security agent appeared first on The GitHub…",
+      "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+      "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-09-28T18:05:00+00:00",
@@ -545,22 +595,6 @@
       "summary": "Friday afternoon is not the time for snap decisions, but weekends are useful to cover your tracks",
       "title": "Techie assumed boss knew what they were talking about and killed Exchange by deleting data",
       "url": "https://www.theregister.com/software/2026/09/28/techie-assumed-boss-knew-what-they-were-talking-about-and-killed-exchange-by-deleting-data/5299043"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-09-25T19:38:59+00:00",
-      "source": "Ars Technica",
-      "summary": "Ads appearing all over the Internet are trying to scam people.",
-      "title": "Your uncle’s frozen Mac says it’s infected after viewing a Google ad. Now what?",
-      "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-09-25T18:57:10+00:00",
-      "source": "The Register",
-      "summary": "Overhead reduced by as much as 99.7%",
-      "title": "New software dependency validation process increases speeds by 54x",
-      "url": "https://www.theregister.com/software/2026/09/25/new-software-dependency-validation-process-increases-speeds-by-54x/5299256"
     }
   ]
 }
