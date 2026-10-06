@@ -416,94 +416,27 @@ def selected_phases(
     )
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description=(
-            "Run the TechPulse data pipeline."
-        )
-    )
+def run_edition(
+    reporting_date: str,
+    date_reason: str,
+    args: argparse.Namespace,
+    edition_number: int,
+) -> bool:
+    """
+    Run the complete pipeline for exactly one reporting edition.
 
-    parser.add_argument(
-        "--date",
-        help=(
-            "Reporting date (YYYY-MM-DD, IST edition). "
-            "Default: next pending edition."
-        ),
-    )
-
-    parser.add_argument(
-        "--skip-collect",
-        action="store_true",
-        help="Skip source collection.",
-    )
-
-    parser.add_argument(
-        "--skip-process",
-        action="store_true",
-        help="Skip data processing.",
-    )
-
-    parser.add_argument(
-        "--skip-generate",
-        action="store_true",
-        help="Skip data generation.",
-    )
-
-    parser.add_argument(
-        "--only",
-        choices=[
-            "collect",
-            "process",
-            "generate",
-        ],
-        help="Run only one pipeline phase.",
-    )
-
-    parser.add_argument(
-        "-v",
-        "--verbose",
-        action="store_true",
-        help="Print all stage output.",
-    )
-
-    args = parser.parse_args()
-
-    argument_error = validate_arguments(
-        args
-    )
-
-    if argument_error:
-        print(
-            f"ERROR: {argument_error}",
-            file=sys.stderr,
-        )
-        return 1
+    Returns True when every executed stage succeeded.
+    """
 
     try:
-        reporting_date, date_reason = (
-            resolve_reporting_date(
-                "manual",
-                args.date,
-            )
-        )
-    except ValueError as exc:
-        print(
-            f"ERROR: {exc}",
-            file=sys.stderr,
-        )
-        return 1
-
-    try:
-        resolved_date = parse_ist_date(
-            reporting_date
-        )
+        resolved_date = parse_ist_date(reporting_date)
     except (TypeError, ValueError):
         print(
             "ERROR: Reporting-date resolver returned "
             "an invalid date.",
             file=sys.stderr,
         )
-        return 1
+        return False
 
     if resolved_date is None:
         print(
@@ -511,12 +444,10 @@ def main() -> int:
             "an invalid date.",
             file=sys.stderr,
         )
-        return 1
+        return False
 
     window_start, window_end = (
-        ist_day_window(
-            reporting_date
-        )
+        ist_day_window(reporting_date)
     )
 
     covered_day = (
@@ -533,6 +464,9 @@ def main() -> int:
     print()
     print("TechPulse — Pipeline Runner")
     print("=" * 50)
+
+    if edition_number > 1:
+        print(f"Edition #{edition_number} (catch-up)")
 
     print(
         f"Reporting date : {reporting_date} "
@@ -643,7 +577,7 @@ def main() -> int:
                 "processing and generation were not attempted. ✗",
                 file=sys.stderr,
             )
-            return 1
+            return False
 
     # ================================================================ #
     # Phase 2: Process
@@ -740,7 +674,7 @@ def main() -> int:
         print()
 
     # ================================================================ #
-    # Summary
+    # Edition summary
     # ================================================================ #
 
     print("=" * 50)
@@ -765,13 +699,193 @@ def main() -> int:
             "Pipeline completed successfully ✓  "
             f"(edition {reporting_date})"
         )
-        return 0
+        return True
 
     print(
         "Pipeline completed with failures ✗",
         file=sys.stderr,
     )
-    return 1
+    return False
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Run the TechPulse data pipeline."
+        )
+    )
+
+    parser.add_argument(
+        "--date",
+        help=(
+            "Reporting date (YYYY-MM-DD, IST edition). "
+            "Default: next pending edition."
+        ),
+    )
+
+    parser.add_argument(
+        "--catch-up",
+        action="store_true",
+        help=(
+            "After the first edition, keep processing further "
+            "pending editions (bounded by MAX_EDITIONS_PER_RUN) "
+            "until the archive catches up with the current IST "
+            "date. Requires the full pipeline."
+        ),
+    )
+
+    parser.add_argument(
+        "--skip-collect",
+        action="store_true",
+        help="Skip source collection.",
+    )
+
+    parser.add_argument(
+        "--skip-process",
+        action="store_true",
+        help="Skip data processing.",
+    )
+
+    parser.add_argument(
+        "--skip-generate",
+        action="store_true",
+        help="Skip data generation.",
+    )
+
+    parser.add_argument(
+        "--only",
+        choices=[
+            "collect",
+            "process",
+            "generate",
+        ],
+        help="Run only one pipeline phase.",
+    )
+
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Print all stage output.",
+    )
+
+    args = parser.parse_args()
+
+    argument_error = validate_arguments(
+        args
+    )
+
+    if argument_error:
+        print(
+            f"ERROR: {argument_error}",
+            file=sys.stderr,
+        )
+        return 1
+
+    processed: list[str] = []
+    failed: list[str] = []
+
+    # Explicit --date without --catch-up processes exactly one
+    # edition, matching historical behavior.
+    max_editions = (
+        MAX_EDITIONS_PER_RUN
+        if args.catch_up
+        else 1
+    )
+
+    pending_start_date = args.date
+
+    while (
+        len(processed) + len(failed)
+        < max_editions
+    ):
+        if pending_start_date is not None:
+            reporting_date = pending_start_date
+            date_reason = (
+                f"explicit input date {pending_start_date}"
+            )
+            pending_start_date = None
+        else:
+            try:
+                (
+                    reporting_date,
+                    date_reason,
+                ) = resolve_reporting_date(
+                    "manual",
+                    None,
+                )
+            except ValueError as exc:
+                print(
+                    f"ERROR: {exc}",
+                    file=sys.stderr,
+                )
+                if processed:
+                    break
+
+                return 1
+
+        # The resolver can legitimately return an edition that was
+        # already processed in this run (for example after catching
+        # up to the current IST date). That is the steady state and
+        # means catch-up is complete.
+        if reporting_date in processed:
+            break
+
+        edition_number = len(processed) + len(failed) + 1
+
+        edition_success = run_edition(
+            reporting_date,
+            date_reason,
+            args,
+            edition_number,
+        )
+
+        if edition_success:
+            processed.append(reporting_date)
+        else:
+            failed.append(reporting_date)
+
+            # A failed edition blocks resolution of later pending
+            # editions (the resolver always picks the oldest
+            # pending date), so stop this run. Editions that already
+            # completed remain valid and will be committed.
+            break
+
+    print()
+    print("=" * 50)
+    print(
+        "Editions processed this run: "
+        f"{len(processed)}"
+    )
+
+    for date in processed:
+        print(f"  ✓ {date}")
+
+    if failed:
+        print(
+            "Editions failed this run: "
+            f"{len(failed)}"
+        )
+
+        for date in failed:
+            print(f"  ✗ {date}")
+
+        if processed:
+            print(
+                "Completed editions are valid and will be "
+                "published; failed editions are retried on the "
+                "next run.",
+                file=sys.stderr,
+            )
+
+    if failed and not processed:
+        print(
+            "Pipeline completed with failures ✗",
+            file=sys.stderr,
+        )
+        return 1
+
+    return 0
 
 
 if __name__ == "__main__":
