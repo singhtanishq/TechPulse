@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>404 — Signal lost · TechPulse</title>
+
+  <meta name="description" content="The requested TechPulse page could not be located. The signal was lost in transmission.">
+  <meta name="robots" content="noindex">
+
+  <meta name="theme-color" content="#04070d">
+
+  <style>
+    /* Self-contained: 404 pages are served at arbitrary broken
+       paths, so relative asset references cannot be trusted. */
+    :root {
+      color-scheme: dark;
+
+      --bg: #04070d;
+      --accent: #45e5c3;
+      --accent-border: rgba(69, 229, 195, 0.3);
+      --accent-glow: rgba(69, 229, 195, 0.42);
+      --text: #e9eef8;
+      --text-soft: #a9b4c9;
+      --text-muted: #6d788d;
+      --glass-border: rgba(151, 170, 208, 0.13);
+      --glass: rgba(13, 19, 33, 0.52);
+      --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+      --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-mono: 'DM Mono', 'SFMono-Regular', Menlo, monospace;
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      min-width: 320px;
+      background: var(--bg);
+    }
+
+    body {
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: var(--bg);
+      color: var(--text);
+
+      font-family: var(--font-main);
+      line-height: 1.6;
+
+      -webkit-font-smoothing: antialiased;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    .atmosphere {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.5;
+    }
+
+    .orb--a {
+      top: -220px;
+      left: -140px;
+      width: 640px;
+      height: 640px;
+      background: radial-gradient(circle, rgba(69, 229, 195, 0.2), transparent 65%);
+    }
+
+    .orb--b {
+      bottom: -240px;
+      right: -180px;
+      width: 620px;
+      height: 620px;
+      background: radial-gradient(circle, rgba(111, 130, 255, 0.16), transparent 65%);
+    }
+
+    .grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(148, 168, 205, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 168, 205, 0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      -webkit-mask-image: radial-gradient(90% 64% at 50% 40%, black 0%, transparent 100%);
+      mask-image: radial-gradient(90% 64% at 50% 40%, black 0%, transparent 100%);
+    }
+
+    .panel {
+      position: relative;
+
+      width: min(640px, calc(100% - 48px));
+
+      padding: 64px 56px 56px;
+
+      text-align: center;
+
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+
+      background:
+        linear-gradient(168deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0) 40%),
+        var(--glass);
+
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+
+      box-shadow: 0 24px 60px -18px rgba(1, 4, 10, 0.8);
+
+      animation:
+        panel-in
+        700ms
+        var(--ease-out)
+        both;
+    }
+
+    @keyframes panel-in {
+      from {
+        opacity: 0;
+        transform: translateY(26px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .code {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 18px;
+
+      margin-bottom: 26px;
+
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.28em;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+
+    .code::before,
+    .code::after {
+      content: '';
+      height: 1px;
+      width: 44px;
+      background: var(--accent-border);
+    }
+
+    .glyph {
+      position: relative;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 84px;
+      height: 84px;
+
+      margin-bottom: 28px;
+
+      border: 1px solid var(--accent-border);
+      border-radius: 26px;
+
+      background:
+        radial-gradient(circle at 50% 32%, rgba(69, 229, 195, 0.14), transparent 70%),
+        rgba(69, 229, 195, 0.06);
+
+      box-shadow: 0 0 44px -10px var(--accent-glow);
+    }
+
+    /* Radar sweep */
+    .glyph::before {
+      content: '';
+      position: absolute;
+      inset: 14px;
+      border-radius: 50%;
+      border: 1px dashed var(--accent-border);
+      opacity: 0.7;
+    }
+
+    .glyph::after {
+      content: '';
+      position: absolute;
+      inset: 14px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, rgba(69, 229, 195, 0.35), transparent 22%);
+      animation: sweep 3.2s linear infinite;
+    }
+
+    @keyframes sweep {
+      to { transform: rotate(360deg); }
+    }
+
+    .glyph svg {
+      position: relative;
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      color: var(--accent);
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(30px, 5vw, 44px);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+
+    h1 span {
+      background: linear-gradient(100deg, #7ff2da, #45e5c3 34%, #6fa0ff 68%, #a08bff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    .message {
+      max-width: 420px;
+      margin: 0 auto 34px;
+      color: var(--text-soft);
+      font-size: 15px;
+    }
+
+    .coords {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      margin-bottom: 34px;
+
+      padding: 7px 14px;
+
+      border: 1px solid var(--glass-border);
+      border-radius: 999px;
+
+      background: rgba(13, 19, 33, 0.34);
+
+      color: var(--text-muted);
+
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 0.08em;
+
+      overflow-wrap: anywhere;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 46px;
+      padding: 0 24px;
+
+      border: 1px solid var(--accent-border);
+      border-radius: 999px;
+
+      background: rgba(69, 229, 195, 0.1);
+      color: var(--accent);
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition:
+        background-color 180ms ease,
+        transform 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .button:hover {
+      background: rgba(69, 229, 195, 0.16);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px var(--accent-border), 0 10px 36px -10px var(--accent-glow);
+    }
+
+    .button--ghost {
+      border-color: var(--glass-border);
+      background: transparent;
+      color: var(--text-soft);
+    }
+
+    .button--ghost:hover {
+      background: rgba(255, 255, 255, 0.04);
+      box-shadow: none;
+      color: var(--text);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 480px) {
+      .panel {
+        padding: 48px 26px 44px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .glyph::after,
+      .panel {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="atmosphere" aria-hidden="true">
+    <div class="orb orb--a"></div>
+    <div class="orb orb--b"></div>
+    <div class="grid"></div>
+  </div>
+
+  <main class="panel">
+    <div class="code">error 404</div>
+
+    <div class="glyph" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <circle cx="12" cy="12" r="9"/>
+        <circle cx="12" cy="12" r="4.5" opacity="0.5"/>
+        <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+    </div>
+
+    <h1>Intelligence lost<br><span>in transmission.</span></h1>
+
+    <p class="message">
+      This route never made it into the record. The signal may have
+      decayed, been mistyped, or never existed at all.
+    </p>
+
+    <p class="coords">
+      <span aria-hidden="true">▲</span>
+      <span id="requested-path">unknown coordinates</span>
+    </p>
+
+    <div class="actions">
+      <a class="button" href="/" id="home-link">Return to base</a>
+      <a class="button button--ghost" href="/TechPulse/" id="alt-link" hidden>Open TechPulse</a>
+    </div>
+  </main>
+
+  <noscript>
+    <style>
+      .coords { display: none; }
+      #alt-link[hidden] { display: none !important; }
+    </style>
+  </noscript>
+
+  <script>
+    (function () {
+      var path = window.location.pathname || "/";
+
+      document.getElementById("requested-path").textContent = path;
+
+      /* GitHub Pages project sites live under /<repo>/. Compute the
+         project base so recovery links stay correct at any depth. */
+      var segments = path.split("/").filter(Boolean);
+      var base = segments.length ? "/" + segments[0] + "/" : "/";
+
+      var home = document.getElementById("home-link");
+      var alt = document.getElementById("alt-link");
+
+      var candidates = [];
+
+      if (base !== "/") {
+        candidates.push(base);
+      }
+
+      candidates.push("/");
+
+      home.setAttribute("href", candidates[0]);
+
+      if (candidates.length > 1) {
+        alt.setAttribute("href", candidates[1]);
+        alt.hidden = false;
+      }
+    })();
+  </script>
+
+</body>
+</html>
