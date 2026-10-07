@@ -852,6 +852,18 @@ body.nav-open {
     line-height: 1.7;
 }
 
+/* Hero calls to action */
+.hero-cta {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 34px;
+}
+
 /* Hero stat strip — glass tiles divided by hairlines */
 .hero-meta {
     display: grid;
