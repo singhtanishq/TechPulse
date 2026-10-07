@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     updateAll();
     await updatePageSpecific();
+    initCountUp();
     initRevealAnimations();
 });
 
