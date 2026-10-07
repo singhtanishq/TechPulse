@@ -235,6 +235,9 @@ function initChrome() {
     updateNavActive();
     initMobileNav();
     initThemeToggle();
+    initNavScroll();
+    initCursorSpotlight();
+    initSearchPalette();
 }
 
 function updateNavActive() {
