@@ -2465,3 +2465,707 @@ function initRevealAnimations() {
         (el) => observer.observe(el)
     );
 }
+
+
+/* =========================================================
+   MOTION — scroll-aware header + reading progress
+   ========================================================= */
+
+function initNavScroll() {
+    const header =
+        document.querySelector(
+            ".site-header"
+        );
+
+    const progress =
+        document.querySelector(
+            "[data-scroll-progress]"
+        );
+
+    if (
+        !header &&
+        !progress
+    ) {
+        return;
+    }
+
+    let ticking = false;
+
+    const update = () => {
+        ticking = false;
+
+        const scrollY =
+            window.scrollY || 0;
+
+        if (header) {
+            header.classList.toggle(
+                "is-scrolled",
+                scrollY > 12
+            );
+        }
+
+        if (progress) {
+            const docHeight =
+                document.documentElement.scrollHeight -
+                window.innerHeight;
+
+            const ratio =
+                docHeight > 0
+                    ? Math.min(
+                        Math.max(scrollY / docHeight, 0),
+                        1
+                    )
+                    : 0;
+
+            progress.style.transform =
+                `scaleX(${ratio})`;
+        }
+    };
+
+    const onScroll = () => {
+        if (ticking) {
+            return;
+        }
+
+        ticking = true;
+
+        window.requestAnimationFrame(update);
+    };
+
+    window.addEventListener(
+        "scroll",
+        onScroll,
+        { passive: true }
+    );
+
+    window.addEventListener(
+        "resize",
+        onScroll,
+        { passive: true }
+    );
+
+    update();
+}
+
+
+/* =========================================================
+   MOTION — cursor spotlight
+   A soft light that follows the pointer. Disabled for
+   touch devices and reduced-motion users.
+   ========================================================= */
+
+function initCursorSpotlight() {
+    if (prefersReducedMotion()) {
+        return;
+    }
+
+    if (
+        !window.matchMedia ||
+        window.matchMedia("(hover: none)").matches
+    ) {
+        return;
+    }
+
+    const spotlight =
+        document.createElement("div");
+
+    spotlight.className =
+        "cursor-spotlight";
+
+    spotlight.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    document.body.appendChild(spotlight);
+
+    let frame = 0;
+    let targetX = 0;
+    let targetY = 0;
+
+    const render = () => {
+        frame = 0;
+
+        spotlight.style.transform =
+            `translate(${targetX}px, ${targetY}px) translate(-50%, -50%)`;
+    };
+
+    window.addEventListener(
+        "pointermove",
+        (event) => {
+            if (
+                event.pointerType &&
+                event.pointerType !== "mouse"
+            ) {
+                return;
+            }
+
+            targetX = event.clientX;
+            targetY = event.clientY;
+
+            spotlight.classList.add("is-active");
+
+            if (!frame) {
+                frame =
+                    window.requestAnimationFrame(render);
+            }
+        },
+        { passive: true }
+    );
+
+    document.addEventListener(
+        "pointerleave",
+        () => {
+            spotlight.classList.remove("is-active");
+        }
+    );
+}
+
+
+/* =========================================================
+   MOTION — count-up statistics
+   Animates populated numeric stat values once data lands.
+   ========================================================= */
+
+function initCountUp() {
+    if (prefersReducedMotion()) {
+        return;
+    }
+
+    const targets = document.querySelectorAll(
+        ".stat-value, [data-observations], [data-days-observed], [data-snapshots-count]"
+    );
+
+    targets.forEach((el) => {
+        const raw =
+            (el.textContent || "").trim();
+
+        if (!/^\d+$/.test(raw)) {
+            return;
+        }
+
+        const finalValue =
+            parseInt(raw, 10);
+
+        if (
+            finalValue <= 0 ||
+            finalValue > 1000000
+        ) {
+            return;
+        }
+
+        const duration = 900;
+        const start =
+            performance.now();
+
+        const step = (now) => {
+            const progress = Math.min(
+                (now - start) / duration,
+                1
+            );
+
+            // ease-out cubic
+            const eased =
+                1 - Math.pow(1 - progress, 3);
+
+            el.textContent =
+                String(
+                    Math.round(finalValue * eased)
+                );
+
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            } else {
+                el.textContent =
+                    String(finalValue);
+            }
+        };
+
+        window.requestAnimationFrame(step);
+    });
+}
+
+
+/* =========================================================
+   SEARCH — command palette
+   Lightweight palette over the loaded generated dataset:
+   pages, CVEs, releases, projects and technology entries.
+   Opens with the header button, Cmd/Ctrl+K, or "/".
+   ========================================================= */
+
+const SEARCH_PAGES = [
+    { label: "Today's edition", sub: "overview", href: "index.html" },
+    { label: "Security observatory", sub: "CVEs · KEV", href: "security.html" },
+    { label: "Release radar", sub: "versions", href: "releases.html" },
+    { label: "Open-source momentum", sub: "stars · growth", href: "opensource.html" },
+    { label: "The archive", sub: "history", href: "history.html" }
+];
+
+let searchState = {
+    overlay: null,
+    input: null,
+    results: null,
+    items: [],
+    selectedIndex: 0,
+    lastFocused: null
+};
+
+function searchDataset() {
+    const data =
+        getPrimaryData() || {};
+
+    const cves = Array.isArray(
+        data.security &&
+        data.security.latest
+    )
+        ? data.security.latest
+        : [];
+
+    const releases = Array.isArray(
+        data.releases
+    )
+        ? data.releases
+        : [];
+
+    const projects = Array.isArray(
+        data.openSource
+    )
+        ? data.openSource
+        : [];
+
+    const tech = Array.isArray(
+        data.technology
+    )
+        ? data.technology
+        : [];
+
+    return { cves, releases, projects, tech };
+}
+
+function buildSearchResults(query) {
+    const {
+        cves,
+        releases,
+        projects,
+        tech
+    } = searchDataset();
+
+    const q = query.trim().toLowerCase();
+
+    const pages = SEARCH_PAGES
+        .filter(
+            (page) =>
+                !q ||
+                page.label.toLowerCase().includes(q) ||
+                page.sub.toLowerCase().includes(q)
+        )
+        .map(
+            (page) => ({
+                kind: "Page",
+                label: page.label,
+                sub: page.sub,
+                href: page.href,
+                external: false
+            })
+        );
+
+    const cveResults = cves
+        .filter(
+            (vuln) =>
+                !q ||
+                String(vuln.id || "")
+                    .toLowerCase()
+                    .includes(q) ||
+                String(vuln.title || "")
+                    .toLowerCase()
+                    .includes(q)
+        )
+        .slice(0, 6)
+        .map(
+            (vuln) => ({
+                kind: "CVE",
+                label: vuln.id || "—",
+                sub: vuln.title || "",
+                href: safeUrl(vuln.url) || "security.html",
+                external: Boolean(safeUrl(vuln.url))
+            })
+        );
+
+    const releaseResults = releases
+        .filter(
+            (rel) =>
+                !q ||
+                String(rel.project || "")
+                    .toLowerCase()
+                    .includes(q) ||
+                String(rel.version || "")
+                    .toLowerCase()
+                    .includes(q) ||
+                String(rel.repository || "")
+                    .toLowerCase()
+                    .includes(q)
+        )
+        .slice(0, 5)
+        .map(
+            (rel) => ({
+                kind: "Release",
+                label: `${rel.project || "—"} ${rel.version || ""}`.trim(),
+                sub: rel.repository || "",
+                href: safeUrl(rel.url) || "releases.html",
+                external: Boolean(safeUrl(rel.url))
+            })
+        );
+
+    const projectResults = projects
+        .filter(
+            (project) =>
+                !q ||
+                String(project.name || "")
+                    .toLowerCase()
+                    .includes(q) ||
+                String(project.full_name || "")
+                    .toLowerCase()
+                    .includes(q)
+        )
+        .slice(0, 4)
+        .map(
+            (project) => ({
+                kind: "Project",
+                label: project.name ||
+                    project.full_name ||
+                    "—",
+                sub: project.full_name || "",
+                href: safeUrl(project.url) || "opensource.html",
+                external: Boolean(safeUrl(project.url))
+            })
+        );
+
+    const techResults = tech
+        .filter(
+            (entry) =>
+                !q ||
+                String(entry.title || "")
+                    .toLowerCase()
+                    .includes(q) ||
+                String(entry.source || "")
+                    .toLowerCase()
+                    .includes(q)
+        )
+        .slice(0, 5)
+        .map(
+            (entry) => ({
+                kind: "Signal",
+                label: entry.title || "(untitled)",
+                sub: entry.source || "",
+                href: safeUrl(entry.url) || "",
+                external: Boolean(safeUrl(entry.url))
+            })
+        );
+
+    const groups = [
+        { label: "Navigate", items: pages },
+        { label: "Vulnerabilities", items: cveResults },
+        { label: "Releases", items: releaseResults },
+        { label: "Projects", items: projectResults },
+        { label: "Technology signals", items: techResults }
+    ].filter(
+        (group) => group.items.length
+    );
+
+    return groups;
+}
+
+function renderSearchResults(query) {
+    const { results } = searchState;
+
+    if (!results) {
+        return;
+    }
+
+    const groups =
+        buildSearchResults(query);
+
+    const flat = [];
+
+    const html = groups
+        .map(
+            (group) => `
+            <div class="search-group-label">${escapeHtml(group.label)}</div>
+            ${group.items
+                .map(
+                    (item) => {
+                        const index = flat.length;
+
+                        flat.push(item);
+
+                        const href =
+                            item.href || "#";
+
+                        return `
+                        <a
+                            class="search-result"
+                            role="option"
+                            data-index="${index}"
+                            href="${escapeHtml(href)}"
+                            ${item.external ? 'target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"' : ""}
+                        >
+                            <span class="search-result-kind">${escapeHtml(item.kind)}</span>
+                            <span class="search-result-label">${escapeHtml(item.label)}</span>
+                            <span class="search-result-sub">${escapeHtml(item.sub)}</span>
+                        </a>`;
+                    }
+                )
+                .join("")}`
+        )
+        .join("");
+
+    results.innerHTML =
+        html ||
+        `<div class="search-empty">No intelligence matches “${escapeHtml(query)}”. Try a CVE id, project, or keyword.</div>`;
+
+    searchState.items = flat;
+    searchState.selectedIndex = 0;
+
+    updateSearchSelection();
+}
+
+function updateSearchSelection() {
+    const { results, selectedIndex } = searchState;
+
+    if (!results) {
+        return;
+    }
+
+    const options =
+        results.querySelectorAll(".search-result");
+
+    options.forEach(
+        (el, index) => {
+            el.classList.toggle(
+                "is-selected",
+                index === selectedIndex
+            );
+
+            if (index === selectedIndex) {
+                el.setAttribute("aria-selected", "true");
+            } else {
+                el.removeAttribute("aria-selected");
+            }
+        }
+    );
+}
+
+function openSearchPalette() {
+    const { overlay, input } = searchState;
+
+    if (!overlay) {
+        return;
+    }
+
+    searchState.lastFocused =
+        document.activeElement;
+
+    overlay.hidden = false;
+
+    // Force a frame so the transition runs.
+    window.requestAnimationFrame(() => {
+        overlay.classList.add("is-open");
+    });
+
+    renderSearchResults(
+        input ? input.value : ""
+    );
+
+    if (input) {
+        input.value = "";
+        input.focus();
+    }
+}
+
+function closeSearchPalette() {
+    const { overlay } = searchState;
+
+    if (!overlay || overlay.hidden) {
+        return;
+    }
+
+    overlay.classList.remove("is-open");
+
+    window.setTimeout(() => {
+        overlay.hidden = true;
+    }, 220);
+
+    if (
+        searchState.lastFocused &&
+        typeof searchState.lastFocused.focus === "function"
+    ) {
+        searchState.lastFocused.focus();
+    }
+}
+
+function moveSearchSelection(delta) {
+    const count = searchState.items.length;
+
+    if (!count) {
+        return;
+    }
+
+    searchState.selectedIndex =
+        (searchState.selectedIndex + delta + count) % count;
+
+    updateSearchSelection();
+
+    const selected = searchState.results.querySelector(
+        `.search-result[data-index="${searchState.selectedIndex}"]`
+    );
+
+    if (selected && typeof selected.scrollIntoView === "function") {
+        selected.scrollIntoView({
+            block: "nearest"
+        });
+    }
+}
+
+function initSearchPalette() {
+    const trigger = document.querySelector(
+        "[data-search-toggle]"
+    );
+
+    if (!trigger) {
+        return;
+    }
+
+    const overlay =
+        document.createElement("div");
+
+    overlay.className =
+        "search-overlay";
+
+    overlay.hidden = true;
+
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.setAttribute("aria-label", "Search TechPulse");
+
+    overlay.innerHTML = `
+        <div class="search-modal">
+            <div class="search-field">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <path d="m20 20-3.5-3.5"/>
+                </svg>
+                <input
+                    type="text"
+                    placeholder="Search CVEs, releases, projects, signals…"
+                    aria-label="Search TechPulse"
+                    autocomplete="off"
+                    spellcheck="false"
+                >
+                <kbd>esc</kbd>
+            </div>
+            <div class="search-results" role="listbox" aria-label="Search results"></div>
+            <div class="search-footer">
+                <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+                <span><kbd>↵</kbd> open</span>
+                <span><kbd>esc</kbd> close</span>
+            </div>
+        </div>`;
+
+    document.body.appendChild(overlay);
+
+    searchState.overlay = overlay;
+
+    searchState.input =
+        overlay.querySelector("input");
+
+    searchState.results =
+        overlay.querySelector(".search-results");
+
+    trigger.addEventListener(
+        "click",
+        openSearchPalette
+    );
+
+    overlay.addEventListener("click", (event) => {
+        if (event.target === overlay) {
+            closeSearchPalette();
+        }
+    });
+
+    if (searchState.input) {
+        searchState.input.addEventListener(
+            "input",
+            () => {
+                renderSearchResults(
+                    searchState.input.value
+                );
+            }
+        );
+    }
+
+    overlay.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            event.preventDefault();
+            closeSearchPalette();
+            return;
+        }
+
+        if (event.key === "ArrowDown") {
+            event.preventDefault();
+            moveSearchSelection(1);
+            return;
+        }
+
+        if (event.key === "ArrowUp") {
+            event.preventDefault();
+            moveSearchSelection(-1);
+            return;
+        }
+
+        if (event.key === "Enter") {
+            const selected = searchState.results.querySelector(
+                `.search-result[data-index="${searchState.selectedIndex}"]`
+            );
+
+            if (selected) {
+                event.preventDefault();
+                selected.click();
+            }
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        const isTypingContext =
+            event.target instanceof HTMLElement &&
+            (
+                event.target.tagName === "INPUT" ||
+                event.target.tagName === "TEXTAREA" ||
+                event.target.tagName === "SELECT" ||
+                event.target.isContentEditable
+            );
+
+        if (
+            (event.metaKey || event.ctrlKey) &&
+            String(event.key).toLowerCase() === "k"
+        ) {
+            event.preventDefault();
+
+            if (overlay.hidden) {
+                openSearchPalette();
+            } else {
+                closeSearchPalette();
+            }
+
+            return;
+        }
+
+        if (
+            event.key === "/" &&
+            !isTypingContext &&
+            overlay.hidden
+        ) {
+            event.preventDefault();
+            openSearchPalette();
+        }
+    });
+}
