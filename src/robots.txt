@@ -1,0 +1,8 @@
+# TechPulse — crawler directives
+# Static GitHub Pages site; every served route is public.
+
+User-agent: *
+Allow: /
+Disallow: /generated/archive.json
+
+Sitemap: https://singhtanishq.github.io/TechPulse/sitemap.xml
