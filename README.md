@@ -216,6 +216,9 @@ src/
   HTML + CSS + vanilla JavaScript
   dark + light themes
   IST-aware date rendering
+  command-palette search (Cmd/Ctrl+K)
+  custom 404 page
+  reduced-motion support
 
 tests/
   offline unit tests
