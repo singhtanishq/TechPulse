@@ -1172,6 +1172,26 @@ pre {
 }
 
 
+/* Printing: reveal-gated content must always be visible, and fixed
+   atmosphere layers must not repeat across printed pages. */
+@media print {
+
+    .reveal,
+    .reveal-item {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .tp-atmosphere,
+    .cursor-spotlight,
+    .scroll-progress,
+    .site-header {
+        display: none !important;
+    }
+
+}
+
+
 /* =========================================================
    RESPONSIVE BASE
    ========================================================= */
