@@ -2822,7 +2822,7 @@
 }
 
 .search-result .search-result-label {
-    flex: 1;
+    flex: 0 1 auto;
 
     min-width: 0;
 
@@ -2837,7 +2837,7 @@
 }
 
 .search-result .search-result-sub {
-    flex: 0 1 auto;
+    flex: 1 1 0%;
 
     min-width: 0;
 
@@ -2845,6 +2845,8 @@
 
     font-family: var(--font-mono);
     font-size: 10.5px;
+
+    text-align: right;
 
     white-space: nowrap;
     overflow: hidden;
