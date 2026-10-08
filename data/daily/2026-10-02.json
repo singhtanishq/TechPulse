@@ -1,0 +1,334 @@
+{
+  "coveredIstDay": "2026-10-01",
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-07T14:32:52.821268+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 0,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200726,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143230,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139309,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128369,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122414,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119674,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 1,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111198,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103834,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97796,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91353,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "rust",
+        "published_at": "2026-10-01T12:41:12Z",
+        "repository": "rust-lang/rust",
+        "url": "https://github.com/rust-lang/rust/releases/tag/1.99.0",
+        "version": "1.99.0"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-09-30T22:58:09Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.11.0",
+        "version": "v1.11.0"
+      },
+      {
+        "project": "pytorch",
+        "published_at": "2026-09-30T19:14:48Z",
+        "repository": "pytorch/pytorch",
+        "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.1",
+        "version": "v2.14.1"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-104286",
+        "date_added": "2026-10-01",
+        "product": "FortiMail",
+        "vendor_project": "Fortinet",
+        "vulnerability_name": "Fortinet FortiMail Path Traversal Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 6.7,
+        "description": "An Improper Isolation or Compartmentalization vulnerability in the kernel of Juniper Networks Junos OS allows a local attacker with high privileges to compromise the integrity of the device.\n\nA local ",
+        "id": "CVE-2025-21590",
+        "known_exploited": true,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-21590"
+      },
+      {
+        "cvss": 5.3,
+        "description": "A stack-based buffer overflow flaw was found in fetchmail when built with NTLM support. A malicious or compromised mail server advertising NTLM authentication can send a crafted Type 2 challenge that ",
+        "id": "CVE-2026-94184",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94184"
+      },
+      {
+        "cvss": 9.8,
+        "description": "OS Command Injection Remote Code Execution Vulnerability in API in Progress ADC Products allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting uns",
+        "id": "CVE-2026-8037",
+        "known_exploited": true,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8037"
+      },
+      {
+        "cvss": 8.8,
+        "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.1 and iPadOS 26.7.1, macOS Sequoia 15.8.1, macOS Tahoe 26.7.1. Processing a maliciously crafte",
+        "id": "CVE-2026-86950",
+        "known_exploited": true,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86950"
+      },
+      {
+        "cvss": 8.2,
+        "description": "Apache Traffic Server drops the per-stream buffer cap when dechunking HTTP/2 or HTTP/3 responses, letting a slow client exhaust server memory.\n\n\n\nThis issue affects Apache Traffic Server: from 8.0.0 t",
+        "id": "CVE-2026-65324",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65324"
+      },
+      {
+        "cvss": 6.3,
+        "description": "Apache Traffic Server updates the HTTP/2 HPACK dynamic table before confirming the header block encoded successfully, so an encode failure leaves the encoder out of sync with the peer decoder and corr",
+        "id": "CVE-2026-65100",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65100"
+      },
+      {
+        "cvss": 8.2,
+        "description": "Apache Traffic Server allows redirect-limit bypass when plugins reset the retry counter, enabling SSRF amplification.\n\n\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.11, from 9.0.0",
+        "id": "CVE-2026-58189",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58189"
+      },
+      {
+        "cvss": 8.4,
+        "description": "Several Apache Traffic Server experimental plugins have memory-safety and limit-bypass errors.\n\n\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.11, from 9.0.0 through 9.2.14, from 1",
+        "id": "CVE-2026-58188",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58188"
+      },
+      {
+        "cvss": 6.3,
+        "description": "The Apache Traffic Server multiplexer plugin overruns its chunk-decode buffer on upstream input, enabling denial of service.\n\n\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.11, fro",
+        "id": "CVE-2026-58187",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58187"
+      },
+      {
+        "cvss": 8.2,
+        "description": "The Apache Traffic Server webp_transform plugin can decode unsafely and serve mislabeled, cacheable responses.\n\n\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.11, from 9.0.0 throug",
+        "id": "CVE-2026-58186",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58186"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 139,
+      "HIGH": 520,
+      "LOW": 144,
+      "MEDIUM": 549,
+      "NONE": 1,
+      "UNSCORED": 9
+    }
+  },
+  "snapshot": {
+    "cves": 1362,
+    "kevAdded": 1,
+    "knownExploited": 6,
+    "projects": 18,
+    "releases": 3,
+    "techEntries": 43
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 1,
+      "status": "success",
+      "total": 1734
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 3,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1362,
+      "status": "success",
+      "total": 1362
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 43,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 12,
+      "tech": 31
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-01T17:49:56+00:00",
+        "source": "Ars Technica",
+        "title": "Memory executives expect RAM shortage to continue through 2028",
+        "url": "https://arstechnica.com/information-technology/2026/10/memory-supplies-are-only-getting-tighter-micron-ceo-says/"
+      },
+      {
+        "published_at": "2026-10-01T17:30:03+00:00",
+        "source": "The Register",
+        "title": "EU’s hodgepodge tech policy exposes members to Chinese vendor risks, says think tank",
+        "url": "https://www.theregister.com/security/2026/10/01/eus-hodgepodge-tech-policy-exposes-members-to-chinese-vendor-risks-says-think-tank/5300599"
+      },
+      {
+        "published_at": "2026-10-01T16:43:30+00:00",
+        "source": "The Register",
+        "title": "Suspected Chinese spies spoofed an Anthropic exec, ex-White House official in AI phishing",
+        "url": "https://www.theregister.com/security/2026/10/01/suspected-chinese-spies-spoofed-an-anthropic-exec-ex-white-house-official-in-ai-phishing/5300595"
+      },
+      {
+        "published_at": "2026-10-01T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Enabling Cloud Storage end-to-end checksums for improved data integrity and durability",
+        "url": "https://cloud.google.com/blog/products/storage-data-transfer/enabling-end-to-end-checksums-in-cloud-storage/"
+      },
+      {
+        "published_at": "2026-10-01T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Accelerating analytics: PayPal’s journey with Managed Service for Apache Spark",
+        "url": "https://cloud.google.com/blog/products/data-analytics/paypals-journey-with-managed-service-for-apache-spark/"
+      },
+      {
+        "published_at": "2026-10-01T15:34:02+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+        "url": "https://blog.cloudflare.com/clef-decision-models/"
+      },
+      {
+        "published_at": "2026-10-01T15:07:16+00:00",
+        "source": "GitHub Blog",
+        "title": "10 technical talks I’m excited about at GitHub Universe 2026",
+        "url": "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026/"
+      },
+      {
+        "published_at": "2026-10-01T14:44:00+00:00",
+        "source": "The Register",
+        "title": "Microsoft catches hackers exploiting Zimbra bug before disclosure",
+        "url": "https://www.theregister.com/security/2026/10/01/microsoft-catches-hackers-exploiting-zimbra-bug-before-disclosure/5300543"
+      },
+      {
+        "published_at": "2026-10-01T14:04:00+00:00",
+        "source": "The Register",
+        "title": "MI5 warns UK academics their research may have helped Chinese spies",
+        "url": "https://www.theregister.com/security/2026/10/01/mi5-warns-uk-academics-their-research-may-have-helped-chinese-spies/5300502"
+      },
+      {
+        "published_at": "2026-10-01T13:32:00+00:00",
+        "source": "The Register",
+        "title": "CISO thought he had a 'r3@lg00dp@$$w0rd' but forgot to patch",
+        "url": "https://www.theregister.com/security/2026/10/01/ciso-thought-he-had-a-r3lg00dpw0rd-but-forgot-to-patch/5300314"
+      }
+    ],
+    "sources": {
+      "AWS": 4,
+      "Ars Technica": 3,
+      "Cloudflare": 7,
+      "GitHub Blog": 3,
+      "Google Cloud": 9,
+      "Microsoft": 2,
+      "The Register": 15
+    }
+  },
+  "window": {
+    "end": "2026-10-01T18:30:00+00:00",
+    "start": "2026-09-30T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

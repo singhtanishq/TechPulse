@@ -1,0 +1,341 @@
+{
+  "coveredIstDay": "2026-10-02",
+  "date": "2026-10-03",
+  "generatedAt": "2026-10-07T14:33:56.067539+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 0,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200726,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143230,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139309,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128369,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122414,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119674,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111198,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103834,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97796,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91353,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-02T15:54:21Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.24.0",
+        "version": "v3.24.0"
+      },
+      {
+        "project": "terraform",
+        "published_at": "2026-10-02T13:04:00Z",
+        "repository": "hashicorp/terraform",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.5",
+        "version": "v1.16.5"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-01T23:02:59Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.23.0",
+        "version": "v3.23.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-102490",
+        "date_added": "2026-10-02",
+        "product": "Zammad",
+        "vendor_project": "Zammad GmbH",
+        "vulnerability_name": "Zammad GmbH Zammad Improper Privilege Management Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-102489",
+        "date_added": "2026-10-02",
+        "product": "Zammad",
+        "vendor_project": "Zammad GmbH",
+        "vulnerability_name": "Zammad GmbH Zammad Session Fixation Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 7.2,
+        "description": "The Customer Reviews for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Author Name in all versions up to, and including, 5.122.0 due to insufficient input s",
+        "id": "CVE-2026-97663",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97663"
+      },
+      {
+        "cvss": 6.5,
+        "description": "The Event Tickets and Registration plugin for WordPress is vulnerable to generic SQL Injection via the 'orderby' parameter in all versions up to, and including, 5.29.5 due to insufficient escaping on ",
+        "id": "CVE-2026-97634",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97634"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The CMB2 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'file_list' Field Type in all versions up to, and including, 2.13.0 due to insufficient input sanitization and output esc",
+        "id": "CVE-2026-97336",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97336"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WP Chill Strong Testimonials strong-testimonials allows Stored XSS.This issue affects Strong Testi",
+        "id": "CVE-2026-97286",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97286"
+      },
+      {
+        "cvss": 5.1,
+        "description": "Aureus ERP through 1.6.0, fixed in commit 53ad76d, stores uploaded SVG files on its public disk and serves them from the application origin, allowing authenticated users to upload malicious SVG files ",
+        "id": "CVE-2026-97062",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97062"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The GSpeech TTS – WordPress Text To Speech Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Content in all versions up to, and including, 3.22.0 due to insufficient",
+        "id": "CVE-2026-96578",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96578"
+      },
+      {
+        "cvss": 8.2,
+        "description": "Inefficient regular expression complexity, Inefficient Algorithmic Complexity vulnerability in Apache Thrift Lua bindings.\n\n\n\nThis issue affects Apache Thrift: before 0.25.0.\n\n\n\nUsers are recommended ",
+        "id": "CVE-2026-96292",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96292"
+      },
+      {
+        "cvss": 8.2,
+        "description": "Inefficient Algorithmic Complexity vulnerability in Apache Thrift Perl bindings.\n\n\n\nThis issue affects Apache Thrift: before 0.25.0.\n\n\n\nUsers are recommended to upgrade to version 0.25.0, which fixes ",
+        "id": "CVE-2026-96287",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96287"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The DoFollow Case by Case plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Content in all versions up to, and including, 3.6.0 due to insufficient input sanitization and o",
+        "id": "CVE-2026-95817",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95817"
+      },
+      {
+        "cvss": 4.8,
+        "description": "Cross-Site Scripting vulnerability in the Repasat application. Successful exploitation of this vulnerability could allow an attacker to trick a user into executing arbitrary code in the victim’s brows",
+        "id": "CVE-2026-95662",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95662"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 75,
+      "HIGH": 302,
+      "LOW": 31,
+      "MEDIUM": 243,
+      "NONE": 0,
+      "UNSCORED": 3
+    }
+  },
+  "snapshot": {
+    "cves": 654,
+    "kevAdded": 2,
+    "knownExploited": 39,
+    "projects": 18,
+    "releases": 3,
+    "techEntries": 64
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 2,
+      "status": "success",
+      "total": 1734
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 3,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 654,
+      "status": "success",
+      "total": 654
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 64,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 18,
+      "tech": 46
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-02T18:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "8 major updates to Cloudflare Observability",
+        "url": "https://blog.cloudflare.com/one-observability-platform/"
+      },
+      {
+        "published_at": "2026-10-02T17:37:05+00:00",
+        "source": "The Register",
+        "title": "OpenAI alerts 100+ orgs that its 'misaligned models' attempted to break in - or worse",
+        "url": "https://www.theregister.com/security/2026/10/02/openai-alerts-100-orgs-that-its-misaligned-models-attempted-to-break-in-or-worse/5300891"
+      },
+      {
+        "published_at": "2026-10-02T16:13:45+00:00",
+        "source": "Cloudflare",
+        "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+        "url": "https://blog.cloudflare.com/streamline/"
+      },
+      {
+        "published_at": "2026-10-02T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-02T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Announcing Spanner queues: Transactional messaging for agentic workloads and beyond",
+        "url": "https://cloud.google.com/blog/products/databases/spanner-queues-provide-native-transactional-messaging/"
+      },
+      {
+        "published_at": "2026-10-02T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "GKE CPU startup boost: Accelerate app starts without over-provisioning",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-cpu-startup-boost-faster-pod-starts-lower-costs/"
+      },
+      {
+        "published_at": "2026-10-02T15:20:00+00:00",
+        "source": "The Register",
+        "title": "Californian accused of shipping $300M worth of Nvidia chips to China without Uncle Sam’s approval",
+        "url": "https://www.theregister.com/security/2026/10/02/californian-accused-of-shipping-300m-worth-of-nvidia-chips-to-china-without-uncle-sams-approval/5300856"
+      },
+      {
+        "published_at": "2026-10-02T15:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "AI is changing developer work. Here are three skills to strengthen.",
+        "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/"
+      },
+      {
+        "published_at": "2026-10-02T14:34:00+00:00",
+        "source": "The Register",
+        "title": "OpenAI's wandering AI agents earn it a California subpoena",
+        "url": "https://www.theregister.com/ai-and-ml/2026/10/02/openais-wandering-ai-agents-earn-it-a-california-subpoena/5300850"
+      },
+      {
+        "published_at": "2026-10-02T13:28:10+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing Web Search API via AI Gateway",
+        "url": "https://blog.cloudflare.com/introducing-web-search-api/"
+      }
+    ],
+    "sources": {
+      "AWS": 5,
+      "Ars Technica": 4,
+      "Cloudflare": 17,
+      "GitHub Blog": 2,
+      "Google Cloud": 13,
+      "Microsoft": 1,
+      "The Register": 22
+    }
+  },
+  "window": {
+    "end": "2026-10-02T18:30:00+00:00",
+    "start": "2026-10-01T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

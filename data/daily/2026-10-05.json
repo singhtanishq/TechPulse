@@ -1,0 +1,263 @@
+{
+  "coveredIstDay": "2026-10-04",
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-07T14:36:05.271958+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 0,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200726,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143230,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139309,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128369,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122414,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119674,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111198,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103834,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97796,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91353,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": []
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-88779",
+        "date_added": "2026-10-04",
+        "product": "NetScaler",
+        "vendor_project": "Citrix",
+        "vulnerability_name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 4.2,
+        "description": "IBM DataPower Gateway 11.0.0.0 through 11.0.0.1 and IBM DataPower Gateway 10.5.0.0 through 10.5.0.21 and IBM DataPower Gateway 10.6.0.0 through 10.6.0.9 allows a race condition that results in imprope",
+        "id": "CVE-2026-7366",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7366"
+      },
+      {
+        "cvss": 5.3,
+        "description": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability that allows page editors to make the server fetch arbitrary URLs via the url parameter of the Bazar valeur action. Attackers c",
+        "id": "CVE-2026-104470",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104470"
+      },
+      {
+        "cvss": 7.6,
+        "description": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.",
+        "id": "CVE-2026-103111",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103111"
+      },
+      {
+        "cvss": 5.1,
+        "description": "AVideo before 29.1.0 contains a stored cross-site scripting vulnerability in the video trailer1 field rendered unsanitized within an inline onclick JavaScript string. Attackers with video upload permi",
+        "id": "CVE-2026-100630",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100630"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "LOW": 0,
+      "MEDIUM": 3,
+      "NONE": 0,
+      "UNSCORED": 0
+    }
+  },
+  "snapshot": {
+    "cves": 4,
+    "kevAdded": 1,
+    "knownExploited": 0,
+    "projects": 18,
+    "releases": 0,
+    "techEntries": 30
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 1,
+      "status": "success",
+      "total": 1734
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 4,
+      "status": "success",
+      "total": 4
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 30,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 8,
+      "tech": 22
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-04T10:30:00+00:00",
+        "source": "The Register",
+        "title": "Revive Raskin's 3 laws of software with humane work that considers a dev's duty of care",
+        "url": "https://www.theregister.com/software/2026/10/04/revive-raskins-3-laws-of-software-with-humane-work-that-considers-a-devs-duty-of-care/5300539"
+      },
+      {
+        "published_at": "2026-10-03T15:27:00+00:00",
+        "source": "The Register",
+        "title": "Anthropic's super bug-hunting model Mythos is hardcore good at math, as latest vuln under attack shows",
+        "url": "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933"
+      },
+      {
+        "published_at": "2026-10-02T23:03:16+00:00",
+        "source": "Ars Technica",
+        "title": "Apple changes full-disk access permissions to curb abuse from AI agents",
+        "url": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/"
+      },
+      {
+        "published_at": "2026-10-02T19:52:40+00:00",
+        "source": "The Register",
+        "title": "Google hearts Apple's Swift so much it's pumping out server-side support",
+        "url": "https://www.theregister.com/software/2026/10/02/google-hearts-apples-swift-so-much-its-pumping-out-server-side-support/5300921"
+      },
+      {
+        "published_at": "2026-10-02T19:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "AI21 achieves an 83% reduction in time-to-start for AI workloads with AI Hypercomputer",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/ai21-trains-its-models-on-ai-hypercomputer/"
+      },
+      {
+        "published_at": "2026-10-02T18:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "8 major updates to Cloudflare Observability",
+        "url": "https://blog.cloudflare.com/one-observability-platform/"
+      },
+      {
+        "published_at": "2026-10-02T17:37:05+00:00",
+        "source": "The Register",
+        "title": "OpenAI alerts 100+ orgs that its 'misaligned models' attempted to break in - or worse",
+        "url": "https://www.theregister.com/security/2026/10/02/openai-alerts-100-orgs-that-its-misaligned-models-attempted-to-break-in-or-worse/5300891"
+      },
+      {
+        "published_at": "2026-10-02T16:13:45+00:00",
+        "source": "Cloudflare",
+        "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+        "url": "https://blog.cloudflare.com/streamline/"
+      },
+      {
+        "published_at": "2026-10-02T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-02T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Announcing Spanner queues: Transactional messaging for agentic workloads and beyond",
+        "url": "https://cloud.google.com/blog/products/databases/spanner-queues-provide-native-transactional-messaging/"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 2,
+      "Cloudflare": 10,
+      "GitHub Blog": 1,
+      "Google Cloud": 5,
+      "The Register": 11
+    }
+  },
+  "window": {
+    "end": "2026-10-04T18:30:00+00:00",
+    "start": "2026-10-03T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

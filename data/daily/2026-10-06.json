@@ -1,0 +1,303 @@
+{
+  "coveredIstDay": "2026-10-05",
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-07T14:37:12.107486+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 0,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200726,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143230,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139309,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128369,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122414,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119674,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111198,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103834,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97796,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91353,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": []
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nASoC: codecs: fs210x: fix possible buffer overflow\n\nIn fs210x_effect_scene_info(), a string was copied like this:\n\n    strscpy(DST,",
+        "id": "CVE-2026-64041",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64041"
+      },
+      {
+        "cvss": 8.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvfio/pci: Check BAR resources before exporting a DMABUF\n\nA DMABUF exports access to BAR resources and, although they are\nrequested ",
+        "id": "CVE-2026-64042",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64042"
+      },
+      {
+        "cvss": 7.5,
+        "description": "Improper handling of property-encoding exceptions in AMQP 1.0-to-AMQP 0-10 message conversion allows authenticated message producers to disrupt delivery to AMQP 0-10 consumers via message properties t",
+        "id": "CVE-2026-92608",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92608"
+      },
+      {
+        "cvss": 7.5,
+        "description": "A pre-authentication attacker could leverage type size/count handling to cause excessive allocation leading to potential denial of service.\n\nThis issue affects Apache Qpid Broker-J: through 10.1.0.\n\nU",
+        "id": "CVE-2026-92550",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92550"
+      },
+      {
+        "cvss": 9.1,
+        "description": "An out-of-bounds read vulnerability in FileMaker Server for Linux allowed an attacker uploading a specially crafted image file to a container field to disclose process memory during thumbnail generati",
+        "id": "CVE-2026-86930",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86930"
+      },
+      {
+        "cvss": 9.1,
+        "description": "An authorization bypass vulnerability in the FileMaker Server Web Publishing Engine allowed requests containing an extended privilege header to bypass the disabled Custom Web Publishing with XML setti",
+        "id": "CVE-2026-86934",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86934"
+      },
+      {
+        "cvss": 8.6,
+        "description": "OAuth2 is a Ruby wrapper for the OAuth 2.0 and 2.1 authorization frameworks, including OpenID Connect (OIDC). From 0.4.0 to 2.0.21, a protocol-relative redirect Location returned to OAuth2::Client#req",
+        "id": "CVE-2026-54603",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54603"
+      },
+      {
+        "cvss": 7.5,
+        "description": "Plane is an open-source project management tool. Prior to 1.4.0, WorkspaceFileAssetEndpoint.get and WorkspaceAssetDownloadEndpoint.get resolve FileAsset records within a workspace without checking mem",
+        "id": "CVE-2026-105631",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105631"
+      },
+      {
+        "cvss": 7.6,
+        "description": "Plane is an open-source project management tool. Prior to 1.4.0, Plane's OAuth avatar synchronization flow fetches avatar_url from provider user data through a server-side HTTP request without interna",
+        "id": "CVE-2026-105628",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105628"
+      },
+      {
+        "cvss": 2.5,
+        "description": "Trivy before 0.71.0 allows directory traversal in Terraform filesystem functions when they try to access pathnames above the scan root. The risk occurs when using misconf scanning on untrusted input (",
+        "id": "CVE-2026-104994",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104994"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 87,
+      "HIGH": 285,
+      "LOW": 16,
+      "MEDIUM": 232,
+      "NONE": 0,
+      "UNSCORED": 2
+    }
+  },
+  "snapshot": {
+    "cves": 622,
+    "kevAdded": 0,
+    "knownExploited": 2,
+    "projects": 18,
+    "releases": 0,
+    "techEntries": 13
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1734
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 622,
+      "status": "success",
+      "total": 622
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 13,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 4,
+      "tech": 9
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-05T17:46:22+00:00",
+        "source": "The Register",
+        "title": "FBI confirms 'multiple' arrests related to ShinyHunters hack",
+        "url": "https://www.theregister.com/security/2026/10/05/fbi-confirms-multiple-arrests-related-to-shinyhunters-hack/5301178"
+      },
+      {
+        "published_at": "2026-10-05T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Introducing Google Cloud Modernize, transforming for (and with) AI",
+        "url": "https://cloud.google.com/blog/products/infrastructure-modernization/google-cloud-modernize-accelerate-transformation-with-ai/"
+      },
+      {
+        "published_at": "2026-10-05T15:59:40+00:00",
+        "source": "GitHub Blog",
+        "title": "ReviewBench: An open benchmark for AI code review",
+        "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+      },
+      {
+        "published_at": "2026-10-05T15:41:19+00:00",
+        "source": "AWS",
+        "title": "AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/"
+      },
+      {
+        "published_at": "2026-10-05T15:35:00+00:00",
+        "source": "The Register",
+        "title": "Debian's latest kernel security update has 1,313 reasons to patch",
+        "url": "https://www.theregister.com/os-platforms/2026/10/05/debians-latest-kernel-security-update-has-1313-reasons-to-patch/5301124"
+      },
+      {
+        "published_at": "2026-10-05T13:30:00+00:00",
+        "source": "The Register",
+        "title": "Games Workshop seeks IT leader to summon the legions in epic saga battling the forces of ERP",
+        "url": "https://www.theregister.com/software/2026/10/05/games-workshop-seeks-it-leader-to-summon-the-legions-in-epic-saga-battling-the-forces-of-erp/5301117"
+      },
+      {
+        "published_at": "2026-10-05T13:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "One year later: the power of 1.1.1.1 interns",
+        "url": "https://blog.cloudflare.com/one-year-later-1111-interns/"
+      },
+      {
+        "published_at": "2026-10-05T13:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "Everything we launched during Birthday Week 2026",
+        "url": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/"
+      },
+      {
+        "published_at": "2026-10-04T10:30:00+00:00",
+        "source": "The Register",
+        "title": "Revive Raskin's 3 laws of software with humane work that considers a dev's duty of care",
+        "url": "https://www.theregister.com/software/2026/10/04/revive-raskins-3-laws-of-software-with-humane-work-that-considers-a-devs-duty-of-care/5300539"
+      },
+      {
+        "published_at": "2026-10-03T15:27:00+00:00",
+        "source": "The Register",
+        "title": "Anthropic's super bug-hunting model Mythos is hardcore good at math, as latest vuln under attack shows",
+        "url": "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 1,
+      "Cloudflare": 2,
+      "GitHub Blog": 1,
+      "Google Cloud": 2,
+      "The Register": 6
+    }
+  },
+  "window": {
+    "end": "2026-10-05T18:30:00+00:00",
+    "start": "2026-10-04T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "coveredIstDay": "2026-10-03",
+  "date": "2026-10-04",
+  "generatedAt": "2026-10-07T14:35:01.020625+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 0,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200726,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143230,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139309,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128369,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122414,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119674,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111198,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103834,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97796,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91353,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": []
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 6.1,
+        "description": "The WP Statistics – Simple, privacy-friendly Google Analytics alternative plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via REQUEST_URI Query-Parameter Key in all versions up to",
+        "id": "CVE-2026-97652",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97652"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The Relevanssi – A Better Search plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Comment Content in all versions up to, and including, 4.28.3 due to insufficient input sanitizati",
+        "id": "CVE-2026-97641",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97641"
+      },
+      {
+        "cvss": 9.8,
+        "description": "The JSON API Auth plugin for WordPress is vulnerable to Authentication Bypass via Cached Session Cookie Disclosure in all versions up to, and including, 3.1.2. The vulnerability exists because the req",
+        "id": "CVE-2026-97637",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97637"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The JetFormBuilder — Dynamic Blocks Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'choice' Post Meta via Insert/Update Post Action in all versions up to, and inclu",
+        "id": "CVE-2026-97342",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97342"
+      },
+      {
+        "cvss": 6.4,
+        "description": "The Download Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Display Name in all versions up to, and including, 3.3.70 due to insufficient input sanitization and output e",
+        "id": "CVE-2026-97338",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97338"
+      },
+      {
+        "cvss": 7.1,
+        "description": "Unauthenticated Cross Site Scripting (XSS) in Premmerce Wishlist for WooCommerce <= 1.1.13 versions.",
+        "id": "CVE-2026-97273",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97273"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Subscriber Broken Access Control in Aruba Migration Tool <= 1.0.4 versions.",
+        "id": "CVE-2026-97258",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97258"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The Mang Board plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'data_type' parameter in all versions up to, and including, 2.4.2 due to insufficient input sanitization and ou",
+        "id": "CVE-2026-96871",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96871"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The Form Maker by 10Web – Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Mark on Map Longitude/Latitude Fields in all versions u",
+        "id": "CVE-2026-96813",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96813"
+      },
+      {
+        "cvss": 6.4,
+        "description": "The Listdom: AI-powered Business Directory with Classifieds Ads Listings plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'lsd[remark]' Parameter in all versions up to, and includ",
+        "id": "CVE-2026-96647",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96647"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 45,
+      "HIGH": 240,
+      "LOW": 6,
+      "MEDIUM": 106,
+      "NONE": 0,
+      "UNSCORED": 263
+    }
+  },
+  "snapshot": {
+    "cves": 660,
+    "kevAdded": 0,
+    "knownExploited": 1,
+    "projects": 18,
+    "releases": 0,
+    "techEntries": 56
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1734
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 660,
+      "status": "success",
+      "total": 660
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 56,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 18,
+      "tech": 38
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-03T15:27:00+00:00",
+        "source": "The Register",
+        "title": "Anthropic's super bug-hunting model Mythos is hardcore good at math, as latest vuln under attack shows",
+        "url": "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933"
+      },
+      {
+        "published_at": "2026-10-02T23:03:16+00:00",
+        "source": "Ars Technica",
+        "title": "Apple changes full-disk access permissions to curb abuse from AI agents",
+        "url": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/"
+      },
+      {
+        "published_at": "2026-10-02T19:52:40+00:00",
+        "source": "The Register",
+        "title": "Google hearts Apple's Swift so much it's pumping out server-side support",
+        "url": "https://www.theregister.com/software/2026/10/02/google-hearts-apples-swift-so-much-its-pumping-out-server-side-support/5300921"
+      },
+      {
+        "published_at": "2026-10-02T19:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "AI21 achieves an 83% reduction in time-to-start for AI workloads with AI Hypercomputer",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/ai21-trains-its-models-on-ai-hypercomputer/"
+      },
+      {
+        "published_at": "2026-10-02T18:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "8 major updates to Cloudflare Observability",
+        "url": "https://blog.cloudflare.com/one-observability-platform/"
+      },
+      {
+        "published_at": "2026-10-02T17:37:05+00:00",
+        "source": "The Register",
+        "title": "OpenAI alerts 100+ orgs that its 'misaligned models' attempted to break in - or worse",
+        "url": "https://www.theregister.com/security/2026/10/02/openai-alerts-100-orgs-that-its-misaligned-models-attempted-to-break-in-or-worse/5300891"
+      },
+      {
+        "published_at": "2026-10-02T16:13:45+00:00",
+        "source": "Cloudflare",
+        "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+        "url": "https://blog.cloudflare.com/streamline/"
+      },
+      {
+        "published_at": "2026-10-02T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-02T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Announcing Spanner queues: Transactional messaging for agentic workloads and beyond",
+        "url": "https://cloud.google.com/blog/products/databases/spanner-queues-provide-native-transactional-messaging/"
+      },
+      {
+        "published_at": "2026-10-02T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "GKE CPU startup boost: Accelerate app starts without over-provisioning",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-cpu-startup-boost-faster-pod-starts-lower-costs/"
+      }
+    ],
+    "sources": {
+      "AWS": 3,
+      "Ars Technica": 4,
+      "Cloudflare": 17,
+      "GitHub Blog": 2,
+      "Google Cloud": 10,
+      "The Register": 20
+    }
+  },
+  "window": {
+    "end": "2026-10-03T18:30:00+00:00",
+    "start": "2026-10-02T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

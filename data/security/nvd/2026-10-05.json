@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "collectedAt": "2026-10-07T14:35:01.916067+00:00",
+    "count": 4,
+    "reportingDate": "2026-10-05",
+    "source": "NVD",
+    "window": {
+      "end": "2026-10-04T18:29:59.999Z",
+      "start": "2026-10-03T18:30:00.000Z"
+    }
+  },
+  "vulnerabilities": [
+    {
+      "cvss": {
+        "score": 5.1,
+        "severity": "MEDIUM",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "AVideo before 29.1.0 contains a stored cross-site scripting vulnerability in the video trailer1 field rendered unsanitized within an inline onclick JavaScript string. Attackers with video upload permission can store HTML entity-encoded payloads that bypass isValidURL() validation and are decoded by the browser to break out of the JavaScript string, executing arbitrary code in any visitor's session including administrators.",
+      "id": "CVE-2026-100630",
+      "lastModified": "2026-10-04T00:16:35.393",
+      "published": "2026-09-26T14:16:44.260",
+      "references": [
+        "https://github.com/WWBN/AVideo/commit/40b3267760924389c626a549bb1c6fd013b3b29c",
+        "https://github.com/WWBN/AVideo/security/advisories/GHSA-v7vx-v9q9-qhw3",
+        "https://www.vulncheck.com/advisories/avideo-stored-xss-via-html-entity-bypass-in-trailer1-field"
+      ],
+      "severity": "MEDIUM",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 7.6,
+        "severity": "HIGH",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+        "version": "3.1"
+      },
+      "description": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an out-of-bounds write with arbitrary data.",
+      "id": "CVE-2026-103111",
+      "lastModified": "2026-10-04T00:16:35.563",
+      "published": "2026-09-30T05:16:45.863",
+      "references": [
+        "https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-r9hj-j2rw-4q3m",
+        "https://lists.debian.org/debian-lts-announce/2026/10/msg00008.html"
+      ],
+      "severity": "HIGH",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 5.3,
+        "severity": "MEDIUM",
+        "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+        "version": "4.0"
+      },
+      "description": "YesWiki before 4.6.7 contains a server-side request forgery vulnerability that allows page editors to make the server fetch arbitrary URLs via the url parameter of the Bazar valeur action. Attackers can embed the action with a champ parameter in wiki markup to reach loopback or internal services and partially read responses rendered into the page.",
+      "id": "CVE-2026-104470",
+      "lastModified": "2026-10-04T16:16:29.807",
+      "published": "2026-10-02T12:17:19.870",
+      "references": [
+        "https://github.com/YesWiki/yeswiki/commit/22a5260b0381824e01d340ce9457c4adb9e18b23",
+        "https://github.com/YesWiki/yeswiki/security/advisories/GHSA-6rvf-7pwm-6j44",
+        "https://www.vulncheck.com/advisories/yeswiki-before-4.6.7-ssrf-via-bazar-valeur-action-url-parameter"
+      ],
+      "severity": "MEDIUM",
+      "source": "NVD"
+    },
+    {
+      "cvss": {
+        "score": 4.2,
+        "severity": "MEDIUM",
+        "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+        "version": "3.1"
+      },
+      "description": "IBM DataPower Gateway 11.0.0.0 through 11.0.0.1 and IBM DataPower Gateway 10.5.0.0 through 10.5.0.21 and IBM DataPower Gateway 10.6.0.0 through 10.6.0.9 allows a race condition that results in improper isolation of request state when handling the built‑in X‑Client‑IP header. Under concurrent request processing, X‑Client‑IP values may be contaminated across requests, enabling IP spoofing and disclosure of other clients’ IP addresses.",
+      "id": "CVE-2026-7366",
+      "lastModified": "2026-10-04T18:16:34.943",
+      "published": "2026-08-12T22:17:17.780",
+      "references": [
+        "https://www.ibm.com/support/pages/node/7282770"
+      ],
+      "severity": "MEDIUM",
+      "source": "NVD"
+    }
+  ]
+}

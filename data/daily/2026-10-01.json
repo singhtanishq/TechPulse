@@ -1,0 +1,326 @@
+{
+  "coveredIstDay": "2026-09-30",
+  "date": "2026-10-01",
+  "generatedAt": "2026-10-07T14:31:45.626485+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 0,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200726,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143230,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 1,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139309,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128369,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 4,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122414,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 2,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119674,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 5,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111197,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 4,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103834,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97796,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91353,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-09-30T18:28:45Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.10.0",
+        "version": "v1.10.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-09-30T00:25:09Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.22.1",
+        "version": "v3.22.1"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-76504",
+        "date_added": "2026-09-30",
+        "product": "Catalyst SD-WAN Manager",
+        "vendor_project": "Cisco",
+        "vulnerability_name": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 7.1,
+        "description": "Heap-based buffer overflow in Microsoft Standard XPS allows an authorized attacker to elevate privileges over a network.",
+        "id": "CVE-2026-69272",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69272"
+      },
+      {
+        "cvss": 9.3,
+        "description": "X-SpringBoot through 6.0 ships with a hardcoded static master login verification code 172839 enabled by default in the database seed. Unauthenticated attackers can authenticate as any user by submitti",
+        "id": "CVE-2026-97064",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97064"
+      },
+      {
+        "cvss": 4.3,
+        "description": "Incorrect authorization in ORB in Google Chrome prior to 153.0.8010.52 allowed a remote attacker to bypass site isolation via a crafted HTML page. (Chromium security severity: Low)",
+        "id": "CVE-2026-93379",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93379"
+      },
+      {
+        "cvss": 5.3,
+        "description": "Bludit CMS through 3.22.0 contains an authorization bypass vulnerability that allows authenticated users with the Author role to enumerate and delete media files belonging to pages owned by other user",
+        "id": "CVE-2026-93366",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93366"
+      },
+      {
+        "cvss": 8.7,
+        "description": "Grav is a flat-file CMS. In Grav 1.7.0 through 1.7.53.2 and 2.0.0 through 2.0.21, when the debugger is enabled (system.debugger.enabled: true, which is not the default), the Clockwork profiler endpoin",
+        "id": "CVE-2026-92916",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92916"
+      },
+      {
+        "cvss": 9.3,
+        "description": "Capgo (capgo.app) fails to restrict direct write access to the public.sso_providers table exposed through Supabase PostgREST. A holder of an ordinary Capgo full API key can insert a row with status='a",
+        "id": "CVE-2026-88864",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88864"
+      },
+      {
+        "cvss": 8.7,
+        "description": "Capgo (capgo.app) backend through 12.242.4 does not validate parent-child delegation when processing the x-limited-key-id header. checkKeyByIdPg() in supabase/functions/_backend/utils/hono_middleware.",
+        "id": "CVE-2026-88862",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88862"
+      },
+      {
+        "cvss": 8.7,
+        "description": "Capgo (Cap-go/capgo.app) contains an authentication bypass affecting all versions (no patched version available at time of publication). The Edge authorization path allows a password-only Supabase aal",
+        "id": "CVE-2026-88861",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88861"
+      },
+      {
+        "cvss": 9.3,
+        "description": "Capgo fails to clean up channel permission overrides when a user's last organization role binding is deleted, leaving stale overrides active. Attackers can retain channel-specific permissions after th",
+        "id": "CVE-2026-88860",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88860"
+      },
+      {
+        "cvss": 7.6,
+        "description": "gitoxide versions from 0.25.4 contain an HTTP credential leak vulnerability in the curl-based transport backend where credentials are sent to attacker-controlled servers after HTTP redirects. The vuln",
+        "id": "CVE-2026-82255",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82255"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 188,
+      "HIGH": 715,
+      "LOW": 98,
+      "MEDIUM": 664,
+      "NONE": 2,
+      "UNSCORED": 56
+    }
+  },
+  "snapshot": {
+    "cves": 1723,
+    "kevAdded": 1,
+    "knownExploited": 5,
+    "projects": 18,
+    "releases": 2,
+    "techEntries": 20
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 1,
+      "status": "success",
+      "total": 1734
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 2,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1723,
+      "status": "success",
+      "total": 1723
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 2,
+      "tech": 18
+    },
+    "recent": [
+      {
+        "published_at": "2026-09-30T18:29:41+00:00",
+        "source": "The Register",
+        "title": "16-year-old researcher found a Microsoft bug, got admin access to databases with 17.3 trillion rows",
+        "url": "https://www.theregister.com/security/2026/09/30/16-year-old-researcher-found-a-microsoft-bug-got-admin-access-to-databases-with-173-trillion-rows/5300240"
+      },
+      {
+        "published_at": "2026-09-30T17:22:31+00:00",
+        "source": "AWS",
+        "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/"
+      },
+      {
+        "published_at": "2026-09-30T17:04:05+00:00",
+        "source": "AWS",
+        "title": "Celebrating Our Newest AWS Heroes – September 2026",
+        "url": "https://aws.amazon.com/blogs/aws/celebrating-our-newest-aws-heroes-september-2026/"
+      },
+      {
+        "published_at": "2026-09-30T16:03:07+00:00",
+        "source": "The Register",
+        "title": "Show colleagues how much you care by sending an AI avatar to your Google Meet call",
+        "url": "https://www.theregister.com/ai-and-ml/2026/09/30/show-colleagues-how-much-you-care-by-sending-an-ai-avatar-to-your-google-meet-call/5300205"
+      },
+      {
+        "published_at": "2026-09-30T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new in AI infrastructure and orchestration in September",
+        "url": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month/"
+      },
+      {
+        "published_at": "2026-09-30T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Cloud CISO Perspectives: How cybersecurity startups can win CISOs",
+        "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-cybersecurity-startups-can-win-cisos/"
+      },
+      {
+        "published_at": "2026-09-30T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Spanner Omni, now GA: A distributed, multi-model database that you can deploy anywhere",
+        "url": "https://cloud.google.com/blog/products/databases/spanner-omni-deploy-anywhere-version-of-spanner-is-now-ga/"
+      },
+      {
+        "published_at": "2026-09-30T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Empower your agents with the Google Cloud CLI remote MCP server",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-cli-remote-mcp-server-in-preview/"
+      },
+      {
+        "published_at": "2026-09-30T13:44:00+00:00",
+        "source": "The Register",
+        "title": "Firefox 157: Could bold new look be just what Mozilla needs?*",
+        "url": "https://www.theregister.com/software/2026/09/30/firefox-157-could-bold-new-look-be-just-what-mozilla-needs/5300059"
+      },
+      {
+        "published_at": "2026-09-30T11:15:14+00:00",
+        "source": "Ars Technica",
+        "title": "Cloudflare plans to issue quantum-safe TLS certificates",
+        "url": "https://arstechnica.com/security/2026/09/cloudflare-plans-to-issue-quantum-safe-tls-certificates/"
+      }
+    ],
+    "sources": {
+      "AWS": 3,
+      "Ars Technica": 1,
+      "GitHub Blog": 3,
+      "Google Cloud": 4,
+      "Microsoft": 3,
+      "The Register": 6
+    }
+  },
+  "window": {
+    "end": "2026-09-30T18:30:00+00:00",
+    "start": "2026-09-29T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

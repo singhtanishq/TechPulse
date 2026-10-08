@@ -1,0 +1,355 @@
+{
+  "coveredIstDay": "2026-10-06",
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-07T14:38:19.544300+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 0,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200726,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143230,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139309,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128369,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122414,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119674,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111198,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 103834,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97796,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91353,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 0,
+      "patch": 5
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-06T17:56:54Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.25.0",
+        "version": "v3.25.0"
+      },
+      {
+        "project": "framework",
+        "published_at": "2026-10-06T13:54:16Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v13.35.0",
+        "version": "v13.35.0"
+      },
+      {
+        "project": "vite",
+        "published_at": "2026-10-06T05:45:15Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/v6.4.4",
+        "version": "v6.4.4"
+      },
+      {
+        "project": "vite",
+        "published_at": "2026-10-06T05:07:26Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/v7.3.7",
+        "version": "v7.3.7"
+      },
+      {
+        "project": "vite",
+        "published_at": "2026-10-06T04:48:45Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/v8.1.6",
+        "version": "v8.1.6"
+      },
+      {
+        "project": "vite",
+        "published_at": "2026-10-06T04:42:58Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/v8.2.4",
+        "version": "v8.2.4"
+      },
+      {
+        "project": "vite",
+        "published_at": "2026-10-06T04:07:42Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/v8.3.3",
+        "version": "v8.3.3"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 7.4,
+        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.13.0 until 2.14.0, PyJWT HMACAlgorithm.prepare_key is affected because HMAC key guard only recognizes top-level public JWK forms an",
+        "id": "CVE-2026-102273",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102273"
+      },
+      {
+        "cvss": 7.5,
+        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.9.0 until 2.14.0, PyJWKSet does not catch the plain ValueError raised for malformed RSA JWK components by RSAAlgorithm.from_jwk in ",
+        "id": "CVE-2026-102274",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102274"
+      },
+      {
+        "cvss": 8.2,
+        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.1.0 until 2.15.0, PyJWT OKPAlgorithm.from_jwk in  jwt/algorithms.py is affected because private-JWK import path does not compare th",
+        "id": "CVE-2026-102275",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102275"
+      },
+      {
+        "cvss": 5.3,
+        "description": "In OpenStack Swift before 2.38.2, the tempurl middleware does not reject the X-Copy-From header on PUT requests. A TempURL signature only covers the method, expiry, and path, and thus the list of disa",
+        "id": "CVE-2026-97149",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97149"
+      },
+      {
+        "cvss": 6.1,
+        "description": "Bacularis 5.4.0 - 6.5.1 is vulnerable to Cross Site Scripting (XSS) in the Organization name field.",
+        "id": "CVE-2026-95165",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95165"
+      },
+      {
+        "cvss": 9.3,
+        "description": "An unauthenticated remote attacker can modify Asset Administration Shell submodel data via PATCH requests and can read all data exposed by the GET endpoints.",
+        "id": "CVE-2026-94293",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94293"
+      },
+      {
+        "cvss": 8.8,
+        "description": "CWE-918: Server-Side Request Forgery in the Progress @progress/sitefinity-nextjs-sdk npm package versions 15.1.8326 through 15.4.8637 may allow a remote attacker to make server-side requests to an att",
+        "id": "CVE-2026-92931",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92931"
+      },
+      {
+        "cvss": 9.8,
+        "description": "MCMS 6.1.1 through 6.2.1 has a SQL injection vulnerability in the custom model/form import feature.",
+        "id": "CVE-2026-88416",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88416"
+      },
+      {
+        "cvss": 9.8,
+        "description": "WookTeam v1.6.6 and before is vulnerable to RCE in the project task export interface /api/project/task/export. The data parameter is base64-decoded and passed directly into the string2array() function",
+        "id": "CVE-2026-88393",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88393"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Mini-XML 4.0.5 contains a memory leak vulnerability in mxml_load_data() during malformed XML parsing. Specially crafted XML input can cause text nodes allocated by mxmlNewText() to become unlinked bef",
+        "id": "CVE-2026-88385",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88385"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 140,
+      "HIGH": 503,
+      "LOW": 102,
+      "MEDIUM": 460,
+      "NONE": 0,
+      "UNSCORED": 154
+    }
+  },
+  "snapshot": {
+    "cves": 1359,
+    "kevAdded": 0,
+    "knownExploited": 0,
+    "projects": 18,
+    "releases": 7,
+    "techEntries": 30
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1734
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 7,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1359,
+      "status": "success",
+      "total": 1359
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 30,
+      "status": "success",
+      "total": 228
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 13,
+      "tech": 17
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-06T17:50:11+00:00",
+        "source": "Cloudflare",
+        "title": "The keys to the Internet change on October 11. Are you ready?",
+        "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/"
+      },
+      {
+        "published_at": "2026-10-06T17:32:25+00:00",
+        "source": "The Register",
+        "title": "Trump Mobile customers' data dumped - and some never even received their gold device",
+        "url": "https://www.theregister.com/security/2026/10/06/trump-mobile-customers-data-dumped-and-some-never-even-received-their-gold-device/5301433"
+      },
+      {
+        "published_at": "2026-10-06T16:09:36+00:00",
+        "source": "AWS",
+        "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
+        "url": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/"
+      },
+      {
+        "published_at": "2026-10-06T16:00:06+00:00",
+        "source": "Meta",
+        "title": "NTS: Authenticated Time at Meta",
+        "url": "https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/"
+      },
+      {
+        "published_at": "2026-10-06T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Managed Apache Iceberg at scale: How Spanner powers Lakehouse runtime catalog",
+        "url": "https://cloud.google.com/blog/products/data-analytics/lakehouse-runtime-catalog-powered-by-spanner/"
+      },
+      {
+        "published_at": "2026-10-06T15:06:00+00:00",
+        "source": "The Register",
+        "title": "Microsoft extends the Outlook naughty step with two more file types",
+        "url": "https://www.theregister.com/software/2026/10/06/microsoft-extends-the-outlook-naughty-step-with-two-more-file-types/5301350"
+      },
+      {
+        "published_at": "2026-10-06T14:10:00+00:00",
+        "source": "The Register",
+        "title": "Classic Outlook clings to stale search results as Microsoft works on a fix",
+        "url": "https://www.theregister.com/software/2026/10/06/classic-outlook-clings-to-stale-search-results-as-microsoft-works-on-a-fix/5301313"
+      },
+      {
+        "published_at": "2026-10-06T13:00:00+00:00",
+        "source": "The Register",
+        "title": "Zombie instructions on carefully constructed web pages could trick GitHub Copilot CLI into sharing secrets",
+        "url": "https://www.theregister.com/ai-and-ml/2026/10/06/zombie-instructions-on-carefully-constructed-web-pages-could-trick-github-copilot-cli-into-sharing-secrets/5301206"
+      },
+      {
+        "published_at": "2026-10-06T12:21:53+00:00",
+        "source": "Ars Technica",
+        "title": "OpenAI agents tried to hack Wikipedia tools and flooded it with traffic",
+        "url": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/"
+      },
+      {
+        "published_at": "2026-10-06T12:00:31+00:00",
+        "source": "Ars Technica",
+        "title": "Licensing costs driving 90 percent of VMware users to explore options: Survey",
+        "url": "https://arstechnica.com/information-technology/2026/10/operational-complexity-a-top-barrier-for-vmware-migrations-survey/"
+      }
+    ],
+    "sources": {
+      "AWS": 2,
+      "Ars Technica": 3,
+      "Cloudflare": 3,
+      "GitHub Blog": 1,
+      "Google Cloud": 5,
+      "Meta": 1,
+      "Microsoft": 1,
+      "The Register": 14
+    }
+  },
+  "window": {
+    "end": "2026-10-06T18:30:00+00:00",
+    "start": "2026-10-05T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
