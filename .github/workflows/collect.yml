@@ -209,30 +209,39 @@ jobs:
 
           # Another workflow/manual push may have landed while this
           # run was collecting. Rebase and retry rather than losing the
-          # generated snapshot.
-          for attempt in 1 2 3; do
+          # generated snapshot. Backoff between attempts absorbs an
+          # active local pusher (e.g. an auto-commit loop) instead of
+          # losing a race between three immediate attempts.
+          push_ok=false
+          for attempt in 1 2 3 4 5; do
             if git push origin HEAD:main; then
               echo "Pushed on attempt $attempt"
-              exit 0
-            fi
-
-            if [[ "$attempt" == "3" ]]; then
+              push_ok=true
               break
             fi
 
-            echo "Push rejected (attempt $attempt); fetching latest origin/main..."
+            echo "Push rejected (attempt $attempt); syncing with origin/main..."
 
             git fetch --prune origin main
 
             if ! git rebase origin/main; then
               echo "::error::Rebase conflict during push retry; aborting rebase"
               git rebase --abort
-              exit 1
+              break
             fi
+
+            case "$attempt" in
+              1) sleep 5 ;;
+              2) sleep 15 ;;
+              3) sleep 30 ;;
+              4) sleep 60 ;;
+            esac
           done
 
-          echo "::error::Could not push after 3 attempts"
-          exit 1
+          if [[ "$push_ok" != "true" ]]; then
+            echo "::error::Could not push after 5 attempts"
+            exit 1
+          fi
 
       # ----------------------------------------------------------------
       # Summary
