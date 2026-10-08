@@ -138,6 +138,10 @@ The pipeline therefore avoids unnecessary commits caused solely by generation-ti
 
 Re-collecting a reporting date with identical records does not intentionally rewrite an unchanged raw collection. Existing collection metadata is preserved where appropriate.
 
+### Snapshot-global RSS identity
+
+RSS/Atom entries are deduplicated by entry identity (GUID, then URL, then title) across the whole snapshot. Publishers commonly syndicate the same story through several configured feeds (for example a general technology feed and a dedicated security feed); a story appears once per edition regardless of how many feeds carried it. The first feed in `scripts/config/rss.json` that carried the story wins, so category-specific feeds are listed before broader ones. This matches the identity rule enforced by `scripts/validate.py`.
+
 ### Honest source health
 
 Each source reports a health state such as:
@@ -333,6 +337,8 @@ checkout
 → validation
 → commit if content changed
 ```
+
+Automated runs use **catch-up mode**: after the resolved edition, the pipeline keeps processing further pending editions (bounded by `MAX_EDITIONS_PER_RUN` in `scripts/run_pipeline.py`) until the archive has caught up with the current IST date. A backlog left by previously failed runs therefore heals within one or two scheduled runs instead of advancing one day per day. A failed edition stops the loop, but editions that already completed are still committed and the failed date is retried on the next run.
 
 The workflow also records the processed India reporting date and source health in the run summary.
 
