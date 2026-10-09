@@ -1,6 +1,239 @@
 {
   "archive": [
     {
+      "date": "2026-10-08",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 7,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200733,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 8,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143238,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 10,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139319,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 6,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128375,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 10,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122424,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 14,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 119688,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 111213,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 24,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103858,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 0,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97796,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 0,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91353,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 4,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-10-07T17:57:07Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
+            "version": "v1.12.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-10-07T14:43:59Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v26.11.0",
+            "version": "v26.11.0"
+          },
+          {
+            "project": "next.js",
+            "published_at": "2026-10-07T10:03:29Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0",
+            "version": "v16.4.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-06T21:29:50Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.26.0",
+            "version": "v3.26.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 248,
+          "HIGH": 968,
+          "LOW": 137,
+          "MEDIUM": 928,
+          "NONE": 1,
+          "UNSCORED": 57
+        }
+      },
+      "snapshot": {
+        "cves": 2339,
+        "kevAdded": 0,
+        "knownExploited": 23,
+        "projects": 18,
+        "releases": 4,
+        "techEntries": 41
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1734
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 4,
+          "status": "partial",
+          "total": 55
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 2339,
+          "status": "success",
+          "total": 2339
+        },
+        "rss": {
+          "failures": 1,
+          "inWindow": 41,
+          "status": "partial",
+          "total": 198
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 20,
+          "tech": 21
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-07T17:45:34+00:00",
+            "source": "GitHub Blog",
+            "title": "Secret protection must scale with software",
+            "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
+          },
+          {
+            "published_at": "2026-10-07T17:42:06+00:00",
+            "source": "The Register",
+            "title": "AWS launches open-source AI agent sandbox to prevent YOLO mode disasters",
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/07/aws-launches-open-source-ai-agent-sandbox-to-prevent-yolo-mode-disasters/5301687"
+          },
+          {
+            "published_at": "2026-10-07T17:30:00+00:00",
+            "source": "The Register",
+            "title": "US states sue popular kitmaker TP-Link over China risks",
+            "url": "https://www.theregister.com/security/2026/10/07/us-states-sue-popular-kitmaker-tp-link-over-china-risks/5301653"
+          },
+          {
+            "published_at": "2026-10-07T16:30:36+00:00",
+            "source": "Cloudflare",
+            "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+            "url": "https://blog.cloudflare.com/agentic-security-operations/"
+          },
+          {
+            "published_at": "2026-10-07T16:01:08+00:00",
+            "source": "The Register",
+            "title": "Poetry is the new AI security threat as PoeLLM malware infects 3K+ servers",
+            "url": "https://www.theregister.com/security/2026/10/07/poetry-is-the-new-ai-security-threat-as-poellm-malware-infects-3k-servers/5301672"
+          },
+          {
+            "published_at": "2026-10-07T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Introducing Google Cloud’s U4 compute: Enabling ultra-low latency trading",
+            "url": "https://cloud.google.com/blog/topics/financial-services/ultra-low-latency-solution-with-u4-enables-high-velocity-trading/"
+          },
+          {
+            "published_at": "2026-10-07T15:00:26+00:00",
+            "source": "Microsoft",
+            "title": "From Spec-First to Enterprise-Ready: Extending GitHub Spec Kit",
+            "url": "https://devblogs.microsoft.com/blog/from-spec-first-to-enterprise-ready-extending-github-spec-kit/"
+          },
+          {
+            "published_at": "2026-10-07T10:52:09+00:00",
+            "source": "The Register",
+            "title": "FortiBleed still a bleeding nuisance as FBI confirms ongoing attacks",
+            "url": "https://www.theregister.com/security/2026/10/07/fortibleed-still-a-bleeding-nuisance-as-fbi-confirms-ongoing-attacks/5301585"
+          },
+          {
+            "published_at": "2026-10-07T03:56:25+00:00",
+            "source": "The Register",
+            "title": "South Korean president calls for creation of tools that stop all cyber-attacks",
+            "url": "https://www.theregister.com/public-sector/2026/10/07/south-korean-president-calls-for-creation-of-tools-that-stop-all-cyber-attacks/5301533"
+          },
+          {
+            "published_at": "2026-10-06T23:29:27+00:00",
+            "source": "The Register",
+            "title": "Anthropic reconfigures its cool kids security program",
+            "url": "https://www.theregister.com/security/2026/10/07/anthropic-reconfigures-its-cool-kids-security-program/5301509"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-07",
       "opensource": {
         "topProjects": [
@@ -4546,8 +4779,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-07T14:38:19.544300+00:00",
-    "totalSnapshots": 21,
+    "generatedAt": "2026-10-07T23:16:46.656087+00:00",
+    "totalSnapshots": 22,
     "warnings": []
   }
 }

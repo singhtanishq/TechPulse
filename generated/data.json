@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 2339,
+      "date": "2026-10-08",
+      "kevAdded": 0,
+      "knownExploited": 23,
+      "projects": 18,
+      "releases": 4,
+      "techEntries": 41
+    },
+    {
       "cves": 1359,
       "date": "2026-10-07",
       "kevAdded": 0,
@@ -191,16 +200,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-06",
-    "date": "2026-10-07",
-    "daysObserved": 21,
-    "generatedAt": "2026-10-07T14:38:19.544300+00:00",
-    "snapshots": 21,
+    "coveredDate": "2026-10-07",
+    "date": "2026-10-08",
+    "daysObserved": 22,
+    "generatedAt": "2026-10-07T23:16:46.656087+00:00",
+    "snapshots": 22,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 0,
+      "daily_growth": 7,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -208,11 +217,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 200726,
+      "stars": 200733,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 8,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -220,11 +229,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143230,
+      "stars": 143238,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 10,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -232,11 +241,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139309,
+      "stars": 139319,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 6,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -244,11 +253,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128369,
+      "stars": 128375,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 10,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -256,11 +265,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122414,
+      "stars": 122424,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 14,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -268,11 +277,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 119674,
+      "stars": 119688,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 15,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -280,11 +289,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111198,
+      "stars": 111213,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 24,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -292,7 +301,7 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 103834,
+      "stars": 103858,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
@@ -323,281 +332,254 @@
   "releases": [
     {
       "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-10-06T17:56:54Z",
-      "repository": "openai/openai-python",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-10-07T17:57:07Z",
+      "repository": "anthropics/anthropic-sdk-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.25.0",
-      "version": "v3.25.0"
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
+      "version": "v1.12.0"
     },
     {
       "kind": "minor",
-      "project": "framework",
-      "publishedAt": "2026-10-06T13:54:16Z",
-      "repository": "laravel/framework",
+      "project": "node",
+      "publishedAt": "2026-10-07T14:43:59Z",
+      "repository": "nodejs/node",
       "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v13.35.0",
-      "version": "v13.35.0"
+      "url": "https://github.com/nodejs/node/releases/tag/v26.11.0",
+      "version": "v26.11.0"
     },
     {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-10-06T05:45:15Z",
-      "repository": "vitejs/vite",
+      "kind": "minor",
+      "project": "next.js",
+      "publishedAt": "2026-10-07T10:03:29Z",
+      "repository": "vercel/next.js",
       "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v6.4.4",
-      "version": "v6.4.4"
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0",
+      "version": "v16.4.0"
     },
     {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-10-06T05:07:26Z",
-      "repository": "vitejs/vite",
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-10-06T21:29:50Z",
+      "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v7.3.7",
-      "version": "v7.3.7"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-10-06T04:48:45Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.1.6",
-      "version": "v8.1.6"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-10-06T04:42:58Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.2.4",
-      "version": "v8.2.4"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-10-06T04:07:42Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.3",
-      "version": "v8.3.3"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.26.0",
+      "version": "v3.26.0"
     }
   ],
   "security": {
-    "critical": 140,
-    "high": 503,
+    "critical": 248,
+    "high": 968,
     "kevCatalogTotal": 1734,
     "latest": [
       {
-        "cvss_score": 7.4,
-        "cvss_version": "3.1",
-        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.13.0 until 2.14.0, PyJWT HMACAlgorithm.prepare_key is affected because HMAC key guard only recognizes top-level public JWK forms and misses container representations. This occurs when an application allows HMAC and asymmetric algorithms and passes a public JWK container as the raw key. As a result, public asymmetric key material…",
-        "id": "CVE-2026-102273",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:29:42.883",
-        "publishedAt": "2026-09-28T21:17:15.497",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "PyJWT is a Python implementation of JSON Web Token standards. From 2.13.0 until 2.14.0, PyJWT HMACAlgorithm.prepare_key is affected because HMAC key guard only…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102273"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.9.0 until 2.14.0, PyJWKSet does not catch the plain ValueError raised for malformed RSA JWK components by RSAAlgorithm.from_jwk in  jwt/api_jwk.py. This occurs when a JWK Set contains a malformed RSA key alongside otherwise usable keys. As a result, one malformed member aborts construction of the entire PyJWKSet. Consequently…",
-        "id": "CVE-2026-102274",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:25:21.003",
-        "publishedAt": "2026-09-28T21:17:15.677",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "PyJWT is a Python implementation of JSON Web Token standards. From 2.9.0 until 2.14.0, PyJWKSet does not catch the plain ValueError raised for malformed RSA…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102274"
-      },
-      {
-        "cvss_score": 8.2,
-        "cvss_version": "3.1",
-        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.1.0 until 2.15.0, PyJWT OKPAlgorithm.from_jwk in  jwt/algorithms.py is affected because private-JWK import path does not compare the public key derived from d with x. This occurs when an OKP private JWK supplies non-corresponding x and d components. As a result, identity derived from x can differ from operations performed with…",
-        "id": "CVE-2026-102275",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:17:51.113",
-        "publishedAt": "2026-09-28T21:17:15.857",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "PyJWT is a Python implementation of JSON Web Token standards. From 2.1.0 until 2.15.0, PyJWT OKPAlgorithm.from_jwk in  jwt/algorithms.py is affected because…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102275"
-      },
-      {
-        "cvss_score": 5.3,
+        "cvss_score": 4.8,
         "cvss_version": "4.0",
-        "description": "In OpenStack Swift before 2.38.2, the tempurl middleware does not reject the X-Copy-From header on PUT requests. A TempURL signature only covers the method, expiry, and path, and thus the list of disallowed headers is the only defense against a signed PUT request changing what the request does. An attacker holding a PUT TempURL for a single object can add an X-Copy-From header naming any object…",
-        "id": "CVE-2026-97149",
+        "description": "Apache YuniKorn 1.9.0 and earlier allows bypassing the check for the user annotation by setting a secondary label on the pod. If the pod has the label 'app=yunikorn' the checks limiting the user annotation content are not run. The label is used to identify the YuniKorn application itself in the deployments.\n\n\nThe bypass allows any user to specify an arbitrary user info annotation. The arbitrary…",
+        "id": "CVE-2026-97146",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:59.117",
-        "publishedAt": "2026-09-24T03:16:59.133",
+        "lastModifiedAt": "2026-10-07T18:17:32.357",
+        "publishedAt": "2026-10-07T10:17:43.693",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "In OpenStack Swift before 2.38.2, the tempurl middleware does not reject the X-Copy-From header on PUT requests. A TempURL signature only covers the method…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97149"
-      },
-      {
-        "cvss_score": 6.1,
-        "cvss_version": "3.1",
-        "description": "Bacularis 5.4.0 - 6.5.1 is vulnerable to Cross Site Scripting (XSS) in the Organization name field.",
-        "id": "CVE-2026-95165",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:58.927",
-        "publishedAt": "2026-10-05T19:17:26.517",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Bacularis 5.4.0 - 6.5.1 is vulnerable to Cross Site Scripting (XSS) in the Organization name field.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95165"
+        "title": "Apache YuniKorn 1.9.0 and earlier allows bypassing the check for the user annotation by setting a secondary label on the pod. If the pod has the label…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97146"
       },
       {
         "cvss_score": 9.3,
         "cvss_version": "4.0",
-        "description": "An unauthenticated remote attacker can modify Asset Administration Shell submodel data via PATCH requests and can read all data exposed by the GET endpoints.",
-        "id": "CVE-2026-94293",
+        "description": "A code injection vulnerability exists in the upgrade script of Movable Type, which may allow an unauthenticated attacker to execute an arbitrary Perl script or an SQL query on the affected product.",
+        "id": "CVE-2026-96408",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:58.550",
-        "publishedAt": "2026-10-06T07:17:00.193",
+        "lastModifiedAt": "2026-10-07T18:17:32.210",
+        "publishedAt": "2026-10-07T11:17:20.620",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "An unauthenticated remote attacker can modify Asset Administration Shell submodel data via PATCH requests and can read all data exposed by the GET endpoints.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94293"
+        "title": "A code injection vulnerability exists in the upgrade script of Movable Type, which may allow an unauthenticated attacker to execute an arbitrary Perl script or…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96408"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "Deserialization of Untrusted Data vulnerability in Liquid Web / StellarWP The Events Calendar allows Object Injection.\n\nThis issue affects The Events Calendar: from n/a through 6.17.4.",
+        "id": "CVE-2026-95606",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-07T18:17:31.910",
+        "publishedAt": "2026-10-07T17:17:04.213",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Deserialization of Untrusted Data vulnerability in Liquid Web / StellarWP The Events Calendar allows Object Injection.\n\nThis issue affects The Events Calendar…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95606"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "CWE-918: Server-Side Request Forgery in the Progress @progress/sitefinity-nextjs-sdk npm package versions 15.1.8326 through 15.4.8637 may allow a remote attacker to make server-side requests to an attacker-controlled host, potentially exposing sensitive information.",
-        "id": "CVE-2026-92931",
+        "description": "Deserialization of Untrusted Data vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free Widgets, Addons, Templates) allows Object Injection.\n\nThis issue affects Unlimited Elements For Elementor (Free Widgets, Addons, Templates): from n/a through 2.0.19.",
+        "id": "CVE-2026-95534",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:58.430",
-        "publishedAt": "2026-10-05T14:17:21.323",
+        "lastModifiedAt": "2026-10-07T18:17:31.777",
+        "publishedAt": "2026-10-07T17:17:03.783",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "CWE-918: Server-Side Request Forgery in the Progress @progress/sitefinity-nextjs-sdk npm package versions 15.1.8326 through 15.4.8637 may allow a remote…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92931"
+        "title": "Deserialization of Untrusted Data vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free Widgets, Addons, Templates) allows Object…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95534"
       },
       {
-        "cvss_score": 9.8,
+        "cvss_score": 7.1,
         "cvss_version": "3.1",
-        "description": "MCMS 6.1.1 through 6.2.1 has a SQL injection vulnerability in the custom model/form import feature.",
-        "id": "CVE-2026-88416",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free Widgets, Addons, Templates) allows Stored XSS.\n\nThis issue affects Unlimited Elements For Elementor (Free Widgets, Addons, Templates): from n/a through 2.0.19.",
+        "id": "CVE-2026-94662",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:58.243",
-        "publishedAt": "2026-09-22T20:17:10.847",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-10-07T18:17:31.650",
+        "publishedAt": "2026-10-07T17:17:03.500",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "MCMS 6.1.1 through 6.2.1 has a SQL injection vulnerability in the custom model/form import feature.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88416"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94662"
       },
       {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "WookTeam v1.6.6 and before is vulnerable to RCE in the project task export interface /api/project/task/export. The data parameter is base64-decoded and passed directly into the string2array() function in app/Module/Base.php, which executes eval(\"\\$array = $data;\") whenever the decoded string starts with array. An attacker can inject arbitrary PHP code into the eval call and achieve RCE.",
-        "id": "CVE-2026-88393",
+        "cvss_score": 7.5,
+        "cvss_version": "4.0",
+        "description": "Unrestricted file upload vulnerability in the BugTracker.NET attachment functionality. An authenticated user with administrator privileges could modify the application configuration to store files in a directory accessible via the web interface. Due to the lack of proper file extension validation, an attacker could upload a malicious ASPX file and subsequently execute it on the server. A…",
+        "id": "CVE-2026-92532",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:58.060",
-        "publishedAt": "2026-10-05T16:17:16.830",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-10-07T18:17:31.510",
+        "publishedAt": "2026-10-07T11:17:20.287",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "WookTeam v1.6.6 and before is vulnerable to RCE in the project task export interface /api/project/task/export. The data parameter is base64-decoded and passed…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88393"
+        "title": "Unrestricted file upload vulnerability in the BugTracker.NET attachment functionality. An authenticated user with administrator privileges could modify the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92532"
       },
       {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Mini-XML 4.0.5 contains a memory leak vulnerability in mxml_load_data() during malformed XML parsing. Specially crafted XML input can cause text nodes allocated by mxmlNewText() to become unlinked before a parse error transfers control to the cleanup path. These orphaned nodes are not released, resulting in a persistent memory leak on each parsing attempt. Repeated attacker-controlled requests…",
-        "id": "CVE-2026-88385",
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "Apache YuniKorn 1.9.0 and earlier does not implement label and user annotation checks for workload UPDATE action bypassing all checks. Workloads in YuniKorn are defined as the following Kubernetes objects: \"deployments\", \"replicasets\", \"statefulsets\", \"daemonsets\", \"jobs\", \"cronjobs\". The CREATE action correctly enforces the checks for all object types.\n\n\nThe bypass allows any user to specify an…",
+        "id": "CVE-2026-92393",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:57.880",
-        "publishedAt": "2026-09-24T17:17:08.023",
+        "lastModifiedAt": "2026-10-07T18:17:31.200",
+        "publishedAt": "2026-10-07T10:17:42.247",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "Apache YuniKorn 1.9.0 and earlier does not implement label and user annotation checks for workload UPDATE action bypassing all checks. Workloads in YuniKorn…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92393"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "3.1",
+        "description": "A vulnerability in an API interface of ClearPass Policy Manager could allow an unauthenticated remote attacker to circumvent existing authentication controls. Successful exploitation could allow an attacker to obtain sensitive information from the affected system.",
+        "id": "CVE-2026-79818",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-07T18:17:31.053",
+        "publishedAt": "2026-10-06T20:17:33.550",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Mini-XML 4.0.5 contains a memory leak vulnerability in mxml_load_data() during malformed XML parsing. Specially crafted XML input can cause text nodes…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88385"
-      },
-      {
-        "cvss_score": 6.2,
-        "cvss_version": "3.1",
-        "description": "libical 4.0.6 contains an incompatible function pointer in icalparameter_string_to_kind(). When parsing iCalendar data containing a parameterized property, the function passes icalparameter_compare_kind_map() to bsearch() through an incompatible comparator function pointer type. bsearch() invokes the callback through the mismatched type, resulting in undefined behavior and process termination…",
-        "id": "CVE-2026-88383",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:57.693",
-        "publishedAt": "2026-09-24T17:17:07.787",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "libical 4.0.6 contains an incompatible function pointer in icalparameter_string_to_kind(). When parsing iCalendar data containing a parameterized property, the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88383"
+        "title": "A vulnerability in an API interface of ClearPass Policy Manager could allow an unauthenticated remote attacker to circumvent existing authentication controls…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79818"
       },
       {
         "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "ZBar commit 2ea2ca58 contains an undefined-behavior vulnerability in the Code 128 decode6() function. When processing specially crafted Code 128 input, decode_e() can return -1 for an invalid edge pattern, and decode6() subsequently left-shifts this negative signed value while constructing the edge signature. The operation invokes undefined behavior and can terminate trap-mode UBSan builds with…",
-        "id": "CVE-2026-88371",
+        "description": "A sensitive information disclosure vulnerability exists in the client software of HPE Networking ClearPass Policy Manager. Successful exploitation could allow an attacker with local access to the affected system to obtain sensitive information.",
+        "id": "CVE-2026-79817",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:57.523",
-        "publishedAt": "2026-09-24T16:17:14.100",
+        "lastModifiedAt": "2026-10-07T18:17:30.923",
+        "publishedAt": "2026-10-06T20:17:33.430",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "ZBar commit 2ea2ca58 contains an undefined-behavior vulnerability in the Code 128 decode6() function. When processing specially crafted Code 128 input…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88371"
+        "title": "A sensitive information disclosure vulnerability exists in the client software of HPE Networking ClearPass Policy Manager. Successful exploitation could allow…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79817"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 6.3,
         "cvss_version": "3.1",
-        "description": "NanoSVG commit 239e102ec contains an incorrect numeric conversion vulnerability in nsvg__pathArcTo() when parsing SVG arc commands. A specially crafted SVG document containing extreme arc radius values can cause intermediate arc calculations to produce a NaN delta angle. The function subsequently converts this NaN value to int without validating that it is finite and representable, resulting in…",
-        "id": "CVE-2026-88366",
+        "description": "A vulnerability in a client interface of HPE Networking ClearPass Policy Manager could allow an unauthenticated remote attacker to conduct a DOM-based cross-site scripting (XSS) attack against a user of the affected client interface. Successful exploitation could allow an attacker to execute arbitrary script code in a victim's browser context within the affected client interface.",
+        "id": "CVE-2026-79816",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:57.353",
-        "publishedAt": "2026-09-24T16:17:13.607",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-10-07T18:17:30.783",
+        "publishedAt": "2026-10-06T20:17:33.317",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "NanoSVG commit 239e102ec contains an incorrect numeric conversion vulnerability in nsvg__pathArcTo() when parsing SVG arc commands. A specially crafted SVG…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88366"
+        "title": "A vulnerability in a client interface of HPE Networking ClearPass Policy Manager could allow an unauthenticated remote attacker to conduct a DOM-based…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79816"
       },
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "libvips 8.19.0 contains a memory access vulnerability when processing little-endian PFM images. If the PFM text header length is not a multiple of four bytes, the mmap-based loader can expose pixel data at an address that is not properly aligned for float access. vips_avg_scan() subsequently dereferences the buffer through a float pointer, resulting in undefined behavior and process termination…",
-        "id": "CVE-2026-88360",
+        "cvss_score": 2.1,
+        "cvss_version": "4.0",
+        "description": "Apache YuniKorn 1.8.0 and later, if configured with the LDAP group resolver, crashes due to an out of bounds read processing group membership entries.If the LDAP server returns a group membership entry, memberOf attribute, for a user specified in the pod the server crashes if a membership record does not start with \"CN=\".\n\n\n\n\nThis only affects install that have the non default LDAP group provider…",
+        "id": "CVE-2026-78243",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:57.183",
-        "publishedAt": "2026-09-24T14:18:18.440",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-10-07T18:17:30.637",
+        "publishedAt": "2026-10-07T10:17:36.017",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "libvips 8.19.0 contains a memory access vulnerability when processing little-endian PFM images. If the PFM text header length is not a multiple of four bytes…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88360"
+        "title": "Apache YuniKorn 1.8.0 and later, if configured with the LDAP group resolver, crashes due to an out of bounds read processing group membership entries.If the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78243"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "An incorrect buffer size calculation vulnerability exists in tinyexpr commit 4a7456e in new_expr(). For arity-0 expression nodes, including constants, variables, and zero-argument functions, the function allocates less memory than sizeof(te_expr) but treats the returned allocation as a complete te_expr object. This results in undefined behavior and can cause deterministic process termination in…",
-        "id": "CVE-2026-88355",
+        "description": "Buffer overflow vulnerabilities exist in the affected interface of AOS-S. Successful exploitation could allow an authenticated remote attacker to cause a denial-of-service condition on the affected system.",
+        "id": "CVE-2026-76741",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-06T18:16:57.013",
-        "publishedAt": "2026-09-24T16:17:12.833",
+        "lastModifiedAt": "2026-10-07T18:17:30.483",
+        "publishedAt": "2026-10-06T20:17:29.377",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Buffer overflow vulnerabilities exist in the affected interface of AOS-S. Successful exploitation could allow an authenticated remote attacker to cause a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76741"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76499 are related to…",
+        "id": "CVE-2026-76499",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-07T18:17:30.330",
+        "publishedAt": "2026-10-07T17:17:01.820",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76499"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the engineering team for Cisco License On-Prem, formerly Cisco Smart Software Manager On-Prem (SSM On-Prem), has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by…",
+        "id": "CVE-2026-76484",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-07T18:17:30.197",
+        "publishedAt": "2026-10-07T17:17:01.047",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "An incorrect buffer size calculation vulnerability exists in tinyexpr commit 4a7456e in new_expr(). For arity-0 expression nodes, including constants…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88355"
+        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the engineering team for Cisco License On-Prem, formerly Cisco Smart Software…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76484"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "A vulnerability in the NX-API feature of Cisco NX-OS Software could allow an unauthenticated, remote attacker to execute arbitrary code with root privileges or cause a denial of service (DoS) condition on an affected device.&nbsp;\r\n\r\nThe vulnerability is due to insufficient input validation of data that is sent to the NX-API. An attacker could exploit this vulnerability by sending a crafted HTTP…",
+        "id": "CVE-2026-76471",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-07T18:17:30.003",
+        "publishedAt": "2026-10-07T17:17:00.230",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "A vulnerability in the NX-API feature of Cisco NX-OS Software could allow an unauthenticated, remote attacker to execute arbitrary code with root privileges or…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76471"
       }
     ],
-    "low": 102,
-    "medium": 460,
-    "none": 0,
-    "unscored": 154
+    "low": 137,
+    "medium": 928,
+    "none": 1,
+    "unscored": 57
   },
   "snapshot": {
-    "cves": 1359,
+    "cves": 2339,
     "kevAdded": 0,
-    "knownExploited": 0,
+    "knownExploited": 23,
     "projects": 18,
-    "releases": 7,
-    "techEntries": 30
+    "releases": 4,
+    "techEntries": 41
   },
   "sources": {
     "opensource": {
@@ -611,9 +593,9 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 7,
+        "inWindow": 4,
         "status": "partial",
-        "total": 56
+        "total": 55
       }
     },
     "security": {
@@ -625,21 +607,133 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1359,
+        "inWindow": 2339,
         "status": "success",
-        "total": 1359
+        "total": 2339
       }
     },
     "technology": {
       "rss": {
-        "failures": 0,
-        "inWindow": 30,
-        "status": "success",
-        "total": 228
+        "failures": 1,
+        "inWindow": 41,
+        "status": "partial",
+        "total": 198
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-07T17:45:34+00:00",
+      "source": "GitHub Blog",
+      "summary": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it. The post Secret protection must scale with software appeared first on The GitHub Blog .",
+      "title": "Secret protection must scale with software",
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-07T17:42:06+00:00",
+      "source": "The Register",
+      "summary": "Strands Box is the latest open source AI control tool from the cloud giant; like its predecessors, it promises tighter reins on autonomous agents",
+      "title": "AWS launches open-source AI agent sandbox to prevent YOLO mode disasters",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/07/aws-launches-open-source-ai-agent-sandbox-to-prevent-yolo-mode-disasters/5301687"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-07T17:30:00+00:00",
+      "source": "The Register",
+      "summary": "Router maker rejects allegations it misled buyers about protection and its reliance on Chinese suppliers",
+      "title": "US states sue popular kitmaker TP-Link over China risks",
+      "url": "https://www.theregister.com/security/2026/10/07/us-states-sue-popular-kitmaker-tp-link-over-china-risks/5301653"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-07T16:30:36+00:00",
+      "source": "Cloudflare",
+      "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers grounded recommendations to Managed Defense…",
+      "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
+      "url": "https://blog.cloudflare.com/agentic-security-operations/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-07T16:01:08+00:00",
+      "source": "The Register",
+      "summary": "Quoth the LLM, 'More and more'",
+      "title": "Poetry is the new AI security threat as PoeLLM malware infects 3K+ servers",
+      "url": "https://www.theregister.com/security/2026/10/07/poetry-is-the-new-ai-security-threat-as-poellm-malware-infects-3k-servers/5301672"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-07T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "In capital markets, operational success is built on predictable performance and low latency, where even tiny variations in packet timing alter queue priority and trade execution. At the same time, both exchange venues and their participants face mounting constraints in…",
+      "title": "Introducing Google Cloud’s U4 compute: Enabling ultra-low latency trading",
+      "url": "https://cloud.google.com/blog/topics/financial-services/ultra-low-latency-solution-with-u4-enables-high-velocity-trading/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-07T15:00:26+00:00",
+      "source": "Microsoft",
+      "summary": "How presets, extensions, bundles, workflows, and governed catalogs make Spec-Driven Development adaptable at scale This article continues Spec-Driven Development: A Spec-First Approach to AI-Native Engineering, which introduced the principles and lifecycle of SDD. Here, we focus…",
+      "title": "From Spec-First to Enterprise-Ready: Extending GitHub Spec Kit",
+      "url": "https://devblogs.microsoft.com/blog/from-spec-first-to-enterprise-ready-extending-github-spec-kit/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-07T10:52:09+00:00",
+      "source": "The Register",
+      "summary": "Tens of thousands more victims and more ransomware groups getting in on the act",
+      "title": "FortiBleed still a bleeding nuisance as FBI confirms ongoing attacks",
+      "url": "https://www.theregister.com/security/2026/10/07/fortibleed-still-a-bleeding-nuisance-as-fbi-confirms-ongoing-attacks/5301585"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-07T03:56:25+00:00",
+      "source": "The Register",
+      "summary": "'Complete security paradigm refresh' needed for the AI era",
+      "title": "South Korean president calls for creation of tools that stop all cyber-attacks",
+      "url": "https://www.theregister.com/public-sector/2026/10/07/south-korean-president-calls-for-creation-of-tools-that-stop-all-cyber-attacks/5301533"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-06T23:29:27+00:00",
+      "source": "The Register",
+      "summary": "Company's Project Glasswing and Cyber Verification Program metamorphose into triple tier threat hunting club",
+      "title": "Anthropic reconfigures its cool kids security program",
+      "url": "https://www.theregister.com/security/2026/10/07/anthropic-reconfigures-its-cool-kids-security-program/5301509"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-06T20:57:56+00:00",
+      "source": "GitHub Blog",
+      "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. The post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog .",
+      "title": "Building Git infrastructure for agent-scale development",
+      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-06T19:21:14+00:00",
+      "source": "Ars Technica",
+      "summary": "Compromise of 3 domain registries allows hackers to walk off with unauthorized certs.",
+      "title": "Hackers obtain counterfeit TLS certificates for Google and other large services",
+      "url": "https://arstechnica.com/security/2026/10/hackers-obtain-counterfeit-tls-certificates-for-google-and-other-large-services/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-06T19:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Co-authors: Stenal Jolly , Strategic Cloud Engineer, Google Anubhav Dhawan , Software Engineer, Google Following the landmark announcement of MCP Toolbox v1.0, we're thrilled to announce that the MCP Toolbox Java SDK has officially reached version 1.0. This release brings…",
+      "title": "Announcing MCP Toolbox Java SDK v1.0: Agentic data access for the enterprise",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-06T18:30:00+00:00",
+      "source": "Microsoft",
+      "summary": "Learn how the Canvas authoring plugin helps you build Azure canvases with Microsoft Canvas Toolkit, from a read-only starter to a working app you can inspect, test, and adapt. The post Build Azure canvases with the Canvas authoring plugin appeared first on Microsoft for…",
+      "title": "Build Azure canvases with the Canvas authoring plugin",
+      "url": "https://devblogs.microsoft.com/blog/build-azure-canvases-with-canvas-authoring/"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-10-06T17:50:11+00:00",
@@ -647,118 +741,6 @@
       "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
       "title": "The keys to the Internet change on October 11. Are you ready?",
       "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T17:32:25+00:00",
-      "source": "The Register",
-      "summary": "All that glitters …",
-      "title": "Trump Mobile customers' data dumped - and some never even received their gold device",
-      "url": "https://www.theregister.com/security/2026/10/06/trump-mobile-customers-data-dumped-and-some-never-even-received-their-gold-device/5301433"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T16:09:36+00:00",
-      "source": "AWS",
-      "summary": "Amazon Prime Day 2026 was exclusively for Prime members and ran June 23–26, 2026 with millions of deals across more than 35 categories. As part of our annual tradition of sharing how AWS powered Prime Day (2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, and 2025), I want to…",
-      "title": "All the numbers: Amazon Prime Day 2026 powered by AWS",
-      "url": "https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T16:00:06+00:00",
-      "source": "Meta",
-      "summary": "Meta’s public time service now speaks NTS (Network Time Security, RFC 8915) at nts.meta.com. Packets are authenticated, so a device can verify the time came from us and was not modified on the way. Our NTS servers hold no per-client state. Cookie keys are derived, not stored and…",
-      "title": "NTS: Authenticated Time at Meta",
-      "url": "https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "As customers modernize to lakehouse architectures, they are standardizing on open formats such as Apache Iceberg to create a shared data estate across compatible engines. This enables you to build AI-native lakehouses that turn data to semantic knowledge, enable proactive…",
-      "title": "Managed Apache Iceberg at scale: How Spanner powers Lakehouse runtime catalog",
-      "url": "https://cloud.google.com/blog/products/data-analytics/lakehouse-runtime-catalog-powered-by-spanner/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T15:06:00+00:00",
-      "source": "The Register",
-      "summary": "You didn't really want to be sending around .msix and .msixbundle files, did you?",
-      "title": "Microsoft extends the Outlook naughty step with two more file types",
-      "url": "https://www.theregister.com/software/2026/10/06/microsoft-extends-the-outlook-naughty-step-with-two-more-file-types/5301350"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T14:10:00+00:00",
-      "source": "The Register",
-      "summary": "Moved messages linger and throw errors when clicked, leaving Windows Desktop Search as the workaround",
-      "title": "Classic Outlook clings to stale search results as Microsoft works on a fix",
-      "url": "https://www.theregister.com/software/2026/10/06/classic-outlook-clings-to-stale-search-results-as-microsoft-works-on-a-fix/5301313"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T13:00:00+00:00",
-      "source": "The Register",
-      "summary": "Run the CLI in autopilot mode and take your chances",
-      "title": "Zombie instructions on carefully constructed web pages could trick GitHub Copilot CLI into sharing secrets",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/06/zombie-instructions-on-carefully-constructed-web-pages-could-trick-github-copilot-cli-into-sharing-secrets/5301206"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T12:21:53+00:00",
-      "source": "Ars Technica",
-      "summary": "The reports of OpenAI agents harming third-party sites keep coming.",
-      "title": "OpenAI agents tried to hack Wikipedia tools and flooded it with traffic",
-      "url": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T12:00:31+00:00",
-      "source": "Ars Technica",
-      "summary": "Users want to \"reduce risk and avoid unnecessary disruption\" while making changes.",
-      "title": "Licensing costs driving 90 percent of VMware users to explore options: Survey",
-      "url": "https://arstechnica.com/information-technology/2026/10/operational-complexity-a-top-barrier-for-vmware-migrations-survey/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T12:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Enterprises and individual developers frequently run multiple AI inference models. The right architecture can simplify how the models are called while also providing centralized governance. In this post, we'll look at two reference architectures focused on networking AI…",
-      "title": "Networking for AI inference model serving - GKE only and for all other backends",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/networking-for-ai-inference-model-serving-gke-only-and-for-all-other-backends/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T11:51:36+00:00",
-      "source": "The Register",
-      "summary": "Rogue notification claims Snowflake instance compromised, but customer info theft remains unverified",
-      "title": "Asos app delivers a data leak threat instead of fast fashion",
-      "url": "https://www.theregister.com/security/2026/10/06/asos-app-delivers-a-data-leak-threat-instead-of-fast-fashion/5301332"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T11:46:48+00:00",
-      "source": "The Register",
-      "summary": "Abuse of private firm's access exposed 8.8M records, including those of people who had died or moved abroad",
-      "title": "Denmark's ID register spills more people's details than the country has residents",
-      "url": "https://www.theregister.com/security/2026/10/06/denmarks-id-register-spills-more-peoples-details-than-the-country-has-residents/5301307"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T09:30:00+00:00",
-      "source": "The Register",
-      "summary": "Intruders retrieved email addresses from superseded tech kept running for an internal system",
-      "title": "Legacy sign-on service comes back to bite school software provider Bromcom",
-      "url": "https://www.theregister.com/security/2026/10/06/legacy-sign-on-service-comes-back-to-bite-school-software-provider-bromcom/5301156"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T09:18:05+00:00",
-      "source": "Microsoft",
-      "summary": "Your agent says it's done, and the code compiles, but did it pick your technology? Did it use it correctly? Learn what Agent Experience (AX) is, how to measure it, and why the obvious fix isn't always the right one. The post What is Agent Experience (AX)? appeared first on…",
-      "title": "What is Agent Experience (AX)?",
-      "url": "https://devblogs.microsoft.com/blog/what-is-agent-experience-ax/"
     }
   ]
 }
