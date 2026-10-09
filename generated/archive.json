@@ -1,6 +1,239 @@
 {
   "archive": [
     {
+      "date": "2026-10-09",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": -179,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200554,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": -209,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143029,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -184,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139135,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -180,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128195,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": -172,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122252,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": -177,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 119511,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 28,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 111241,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 49,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 103907,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 6,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97802,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -2,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91351,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 4
+        },
+        "recent": [
+          {
+            "project": "vite",
+            "published_at": "2026-10-08T12:03:54Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v8.3.4",
+            "version": "v8.3.4"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-08T08:53:32Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.26.1",
+            "version": "v3.26.1"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-10-08T03:41:38Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.1",
+            "version": "v1.12.1"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-10-07T23:55:23Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v26.11.1",
+            "version": "v26.11.1"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 343,
+          "HIGH": 1504,
+          "LOW": 380,
+          "MEDIUM": 2169,
+          "NONE": 1,
+          "UNSCORED": 14
+        }
+      },
+      "snapshot": {
+        "cves": 4411,
+        "kevAdded": 5,
+        "knownExploited": 43,
+        "projects": 18,
+        "releases": 4,
+        "techEntries": 51
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 5,
+          "status": "success",
+          "total": 1739
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 4,
+          "status": "partial",
+          "total": 54
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 4411,
+          "status": "success",
+          "total": 4411
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 51,
+          "status": "success",
+          "total": 228
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 25,
+          "tech": 26
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-08T18:17:08+00:00",
+            "source": "The Register",
+            "title": "High-severity Nvidia bug could crash GPU monitoring on exposed servers",
+            "url": "https://www.theregister.com/security/2026/10/08/high-severity-nvidia-bug-could-crash-gpu-monitoring-on-exposed-servers/5302077"
+          },
+          {
+            "published_at": "2026-10-08T17:02:52+00:00",
+            "source": "GitHub Blog",
+            "title": "How one bug bounty researcher chooses the features they investigate",
+            "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/"
+          },
+          {
+            "published_at": "2026-10-08T16:54:48+00:00",
+            "source": "The Register",
+            "title": "Shai-Hulud worm makes jump to AI infrastructure with Tensorlake compromise",
+            "url": "https://www.theregister.com/security/2026/10/08/shai-hulud-worm-makes-jump-to-ai-infrastructure-with-tensorlake-compromise/5302054"
+          },
+          {
+            "published_at": "2026-10-08T15:00:00+00:00",
+            "source": "The Register",
+            "title": "Fighting GenAI with GenAI: The New Email Security Landscape",
+            "url": "https://www.theregister.com/security/2026/10/08/sponsored-fighting-genai-with-genai-the-new-email-security-landscape/5301063"
+          },
+          {
+            "published_at": "2026-10-08T14:54:00+00:00",
+            "source": "The Register",
+            "title": "Margaret Hamilton, software pioneer who helped put humans on the Moon, dies at 90",
+            "url": "https://www.theregister.com/software/2026/10/08/margaret-hamilton-software-pioneer-who-helped-put-humans-on-the-moon-dies-at-90/5301988"
+          },
+          {
+            "published_at": "2026-10-08T13:57:00+00:00",
+            "source": "The Register",
+            "title": "Rust upstart reveals 'reimplementation' of Microsoft Office – with Claude on coding duty",
+            "url": "https://www.theregister.com/software/2026/10/08/rust-upstart-reveals-reimplementation-of-microsoft-office-with-claude-on-coding-duty/5301952"
+          },
+          {
+            "published_at": "2026-10-08T13:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+            "url": "https://blog.cloudflare.com/radar-redesign/"
+          },
+          {
+            "published_at": "2026-10-08T12:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Empowering SMBs to do more with Gemini",
+            "url": "https://cloud.google.com/blog/topics/startups/how-to-grow-your-small-business-using-google-gemini/"
+          },
+          {
+            "published_at": "2026-10-08T12:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Google Public Sector and SUNY launch AI-enabled platform to accelerate university research",
+            "url": "https://cloud.google.com/blog/topics/public-sector/gps-suny-launch-ai-enabled-platform-to-accelerate-university-research/"
+          },
+          {
+            "published_at": "2026-10-08T12:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Innovation in Ireland: How Irish brands scale with Gemini Enterprise",
+            "url": "https://cloud.google.com/blog/topics/customers/ireland-innovation-companies-startups-governments-scale-with-gemini/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-08",
       "opensource": {
         "topProjects": [
@@ -4779,8 +5012,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-07T23:16:46.656087+00:00",
-    "totalSnapshots": 22,
+    "generatedAt": "2026-10-08T23:31:57.633342+00:00",
+    "totalSnapshots": 23,
     "warnings": []
   }
 }

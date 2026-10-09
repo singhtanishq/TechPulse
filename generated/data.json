@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 4411,
+      "date": "2026-10-09",
+      "kevAdded": 5,
+      "knownExploited": 43,
+      "projects": 18,
+      "releases": 4,
+      "techEntries": 51
+    },
+    {
       "cves": 2339,
       "date": "2026-10-08",
       "kevAdded": 0,
@@ -200,16 +209,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-07",
-    "date": "2026-10-08",
-    "daysObserved": 22,
-    "generatedAt": "2026-10-07T23:16:46.656087+00:00",
-    "snapshots": 22,
+    "coveredDate": "2026-10-08",
+    "date": "2026-10-09",
+    "daysObserved": 23,
+    "generatedAt": "2026-10-08T23:31:57.633342+00:00",
+    "snapshots": 23,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 7,
+      "daily_growth": -179,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -217,11 +226,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 200733,
+      "stars": 200554,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 8,
+      "daily_growth": -209,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -229,11 +238,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143238,
+      "stars": 143029,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": -184,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -241,11 +250,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139319,
+      "stars": 139135,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 6,
+      "daily_growth": -180,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -253,11 +262,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128375,
+      "stars": 128195,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": -172,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -265,11 +274,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122424,
+      "stars": 122252,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": -177,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -277,11 +286,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 119688,
+      "stars": 119511,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 28,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -289,11 +298,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111213,
+      "stars": 111241,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 24,
+      "daily_growth": 49,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -301,11 +310,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 103858,
+      "stars": 103907,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 6,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -313,11 +322,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97796,
+      "stars": 97802,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": -2,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -325,261 +334,261 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91353,
+      "stars": 91351,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-07T17:57:07Z",
-      "repository": "anthropics/anthropic-sdk-python",
+      "kind": "patch",
+      "project": "vite",
+      "publishedAt": "2026-10-08T12:03:54Z",
+      "repository": "vitejs/vite",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
-      "version": "v1.12.0"
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.4",
+      "version": "v8.3.4"
     },
     {
-      "kind": "minor",
-      "project": "node",
-      "publishedAt": "2026-10-07T14:43:59Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v26.11.0",
-      "version": "v26.11.0"
-    },
-    {
-      "kind": "minor",
-      "project": "next.js",
-      "publishedAt": "2026-10-07T10:03:29Z",
-      "repository": "vercel/next.js",
-      "source": "GitHub",
-      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0",
-      "version": "v16.4.0"
-    },
-    {
-      "kind": "minor",
+      "kind": "patch",
       "project": "openai-python",
-      "publishedAt": "2026-10-06T21:29:50Z",
+      "publishedAt": "2026-10-08T08:53:32Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.26.0",
-      "version": "v3.26.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.26.1",
+      "version": "v3.26.1"
+    },
+    {
+      "kind": "patch",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-10-08T03:41:38Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.1",
+      "version": "v1.12.1"
+    },
+    {
+      "kind": "patch",
+      "project": "node",
+      "publishedAt": "2026-10-07T23:55:23Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.11.1",
+      "version": "v26.11.1"
     }
   ],
   "security": {
-    "critical": 248,
-    "high": 968,
-    "kevCatalogTotal": 1734,
+    "critical": 343,
+    "high": 1504,
+    "kevCatalogTotal": 1739,
     "latest": [
-      {
-        "cvss_score": 4.8,
-        "cvss_version": "4.0",
-        "description": "Apache YuniKorn 1.9.0 and earlier allows bypassing the check for the user annotation by setting a secondary label on the pod. If the pod has the label 'app=yunikorn' the checks limiting the user annotation content are not run. The label is used to identify the YuniKorn application itself in the deployments.\n\n\nThe bypass allows any user to specify an arbitrary user info annotation. The arbitrary…",
-        "id": "CVE-2026-97146",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:32.357",
-        "publishedAt": "2026-10-07T10:17:43.693",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Apache YuniKorn 1.9.0 and earlier allows bypassing the check for the user annotation by setting a secondary label on the pod. If the pod has the label…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97146"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "4.0",
-        "description": "A code injection vulnerability exists in the upgrade script of Movable Type, which may allow an unauthenticated attacker to execute an arbitrary Perl script or an SQL query on the affected product.",
-        "id": "CVE-2026-96408",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:32.210",
-        "publishedAt": "2026-10-07T11:17:20.620",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "A code injection vulnerability exists in the upgrade script of Movable Type, which may allow an unauthenticated attacker to execute an arbitrary Perl script or…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96408"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "Deserialization of Untrusted Data vulnerability in Liquid Web / StellarWP The Events Calendar allows Object Injection.\n\nThis issue affects The Events Calendar: from n/a through 6.17.4.",
-        "id": "CVE-2026-95606",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:31.910",
-        "publishedAt": "2026-10-07T17:17:04.213",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Deserialization of Untrusted Data vulnerability in Liquid Web / StellarWP The Events Calendar allows Object Injection.\n\nThis issue affects The Events Calendar…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95606"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Deserialization of Untrusted Data vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free Widgets, Addons, Templates) allows Object Injection.\n\nThis issue affects Unlimited Elements For Elementor (Free Widgets, Addons, Templates): from n/a through 2.0.19.",
-        "id": "CVE-2026-95534",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:31.777",
-        "publishedAt": "2026-10-07T17:17:03.783",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Deserialization of Untrusted Data vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free Widgets, Addons, Templates) allows Object…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95534"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free Widgets, Addons, Templates) allows Stored XSS.\n\nThis issue affects Unlimited Elements For Elementor (Free Widgets, Addons, Templates): from n/a through 2.0.19.",
-        "id": "CVE-2026-94662",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:31.650",
-        "publishedAt": "2026-10-07T17:17:03.500",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94662"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "4.0",
-        "description": "Unrestricted file upload vulnerability in the BugTracker.NET attachment functionality. An authenticated user with administrator privileges could modify the application configuration to store files in a directory accessible via the web interface. Due to the lack of proper file extension validation, an attacker could upload a malicious ASPX file and subsequently execute it on the server. A…",
-        "id": "CVE-2026-92532",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:31.510",
-        "publishedAt": "2026-10-07T11:17:20.287",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Unrestricted file upload vulnerability in the BugTracker.NET attachment functionality. An authenticated user with administrator privileges could modify the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92532"
-      },
-      {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "Apache YuniKorn 1.9.0 and earlier does not implement label and user annotation checks for workload UPDATE action bypassing all checks. Workloads in YuniKorn are defined as the following Kubernetes objects: \"deployments\", \"replicasets\", \"statefulsets\", \"daemonsets\", \"jobs\", \"cronjobs\". The CREATE action correctly enforces the checks for all object types.\n\n\nThe bypass allows any user to specify an…",
-        "id": "CVE-2026-92393",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:31.200",
-        "publishedAt": "2026-10-07T10:17:42.247",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Apache YuniKorn 1.9.0 and earlier does not implement label and user annotation checks for workload UPDATE action bypassing all checks. Workloads in YuniKorn…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92393"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "3.1",
-        "description": "A vulnerability in an API interface of ClearPass Policy Manager could allow an unauthenticated remote attacker to circumvent existing authentication controls. Successful exploitation could allow an attacker to obtain sensitive information from the affected system.",
-        "id": "CVE-2026-79818",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:31.053",
-        "publishedAt": "2026-10-06T20:17:33.550",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A vulnerability in an API interface of ClearPass Policy Manager could allow an unauthenticated remote attacker to circumvent existing authentication controls…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79818"
-      },
       {
         "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "A sensitive information disclosure vulnerability exists in the client software of HPE Networking ClearPass Policy Manager. Successful exploitation could allow an attacker with local access to the affected system to obtain sensitive information.",
-        "id": "CVE-2026-79817",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nntfs: leave HasEA flag untouched on setxattr failure\n\nIn ntfs_set_ea(), the exit path unconditionally updates the HasEA\nflag based on ea_info_qsize. When an error occurs before\nea_info_qsize is updated, NInoClearHasEA() hides existing on-disk\nEAs until the inode is evicted.\n\nOnly update the flag on success.",
+        "id": "CVE-2026-98133",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:30.923",
-        "publishedAt": "2026-10-06T20:17:33.430",
+        "lastModifiedAt": "2026-10-08T18:29:31.743",
+        "publishedAt": "2026-09-25T11:17:44.710",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A sensitive information disclosure vulnerability exists in the client software of HPE Networking ClearPass Policy Manager. Successful exploitation could allow…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79817"
-      },
-      {
-        "cvss_score": 6.3,
-        "cvss_version": "3.1",
-        "description": "A vulnerability in a client interface of HPE Networking ClearPass Policy Manager could allow an unauthenticated remote attacker to conduct a DOM-based cross-site scripting (XSS) attack against a user of the affected client interface. Successful exploitation could allow an attacker to execute arbitrary script code in a victim's browser context within the affected client interface.",
-        "id": "CVE-2026-79816",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:30.783",
-        "publishedAt": "2026-10-06T20:17:33.317",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A vulnerability in a client interface of HPE Networking ClearPass Policy Manager could allow an unauthenticated remote attacker to conduct a DOM-based…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79816"
-      },
-      {
-        "cvss_score": 2.1,
-        "cvss_version": "4.0",
-        "description": "Apache YuniKorn 1.8.0 and later, if configured with the LDAP group resolver, crashes due to an out of bounds read processing group membership entries.If the LDAP server returns a group membership entry, memberOf attribute, for a user specified in the pod the server crashes if a membership record does not start with \"CN=\".\n\n\n\n\nThis only affects install that have the non default LDAP group provider…",
-        "id": "CVE-2026-78243",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:30.637",
-        "publishedAt": "2026-10-07T10:17:36.017",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Apache YuniKorn 1.8.0 and later, if configured with the LDAP group resolver, crashes due to an out of bounds read processing group membership entries.If the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78243"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nntfs: leave HasEA flag untouched on setxattr failure\n\nIn ntfs_set_ea(), the exit path…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98133"
       },
       {
         "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "Buffer overflow vulnerabilities exist in the affected interface of AOS-S. Successful exploitation could allow an authenticated remote attacker to cause a denial-of-service condition on the affected system.",
-        "id": "CVE-2026-76741",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper access control.",
+        "id": "CVE-2026-101329",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:30.483",
-        "publishedAt": "2026-10-06T20:17:29.377",
+        "lastModifiedAt": "2026-10-08T18:29:28.400",
+        "publishedAt": "2026-10-07T01:16:32.837",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Buffer overflow vulnerabilities exist in the affected interface of AOS-S. Successful exploitation could allow an authenticated remote attacker to cause a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76741"
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper access control.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101329"
       },
       {
         "cvss_score": 9.8,
         "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76499 are related to…",
-        "id": "CVE-2026-76499",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+        "id": "CVE-2026-93674",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:30.330",
-        "publishedAt": "2026-10-07T17:17:01.820",
+        "lastModifiedAt": "2026-10-08T18:29:00.377",
+        "publishedAt": "2026-10-07T01:16:35.187",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76499"
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93674"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the engineering team for Cisco License On-Prem, formerly Cisco Smart Software Manager On-Prem (SSM On-Prem), has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by…",
-        "id": "CVE-2026-76484",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code.",
+        "id": "CVE-2026-93443",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:30.197",
-        "publishedAt": "2026-10-07T17:17:01.047",
+        "lastModifiedAt": "2026-10-08T18:28:44.900",
+        "publishedAt": "2026-10-07T01:16:34.523",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the engineering team for Cisco License On-Prem, formerly Cisco Smart Software…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76484"
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93443"
       },
       {
         "cvss_score": 9.8,
         "cvss_version": "3.1",
-        "description": "A vulnerability in the NX-API feature of Cisco NX-OS Software could allow an unauthenticated, remote attacker to execute arbitrary code with root privileges or cause a denial of service (DoS) condition on an affected device.&nbsp;\r\n\r\nThe vulnerability is due to insufficient input validation of data that is sent to the NX-API. An attacker could exploit this vulnerability by sending a crafted HTTP…",
-        "id": "CVE-2026-76471",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+        "id": "CVE-2026-104334",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-07T18:17:30.003",
-        "publishedAt": "2026-10-07T17:17:00.230",
+        "lastModifiedAt": "2026-10-08T18:25:32.700",
+        "publishedAt": "2026-10-07T01:16:34.223",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "A vulnerability in the NX-API feature of Cisco NX-OS Software could allow an unauthenticated, remote attacker to execute arbitrary code with root privileges or…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76471"
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104334"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to an expected dependency confusion.",
+        "id": "CVE-2026-93675",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:25:15.810",
+        "publishedAt": "2026-10-07T01:16:35.320",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to an expected dependency confusion.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93675"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+        "id": "CVE-2026-93449",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:24:54.803",
+        "publishedAt": "2026-10-07T01:16:35.057",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93449"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow an attacker with access to the server secret and Redis write access to submit a malicious serialized cache value. When the value was retrieved, deserialization could have executed attacker-controlled code with the privileges of the service process.",
+        "id": "CVE-2026-93447",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:24:12.540",
+        "publishedAt": "2026-10-07T01:16:34.787",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow an attacker with access to the server secret and Redis write access to submit a malicious serialized cache…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93447"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "A buffer overflow vulnerability in stm32_mw_usb_host of STMicroelectronics in versions before 3.5.1 allows an attacker to execute arbitrary code when the descriptor contains more endpoints than USBH_MAX_NUM_ENDPOINTS. The library is typically integrated when using a RTOS such as FreeRTOS on STM32 MCUs.",
+        "id": "CVE-2021-42553",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:23:29.090",
+        "publishedAt": "2022-10-21T10:15:12.470",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "A buffer overflow vulnerability in stm32_mw_usb_host of STMicroelectronics in versions before 3.5.1 allows an attacker to execute arbitrary code when the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-42553"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of generation of code.",
+        "id": "CVE-2026-93445",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:23:20.317",
+        "publishedAt": "2026-10-07T01:16:34.657",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of generation of code.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93445"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+        "id": "CVE-2026-88962",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:22:28.333",
+        "publishedAt": "2026-10-07T01:16:34.377",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88962"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: cfg80211: check A-MSDU format more carefully\n\nIf it looks like there's another subframe in the A-MSDU\nbut the header isn't fully there, we can end up reading\ndata out of bounds, only to discard later. Make this a\nbit more careful and check if the subframe header can\neven be present.",
+        "id": "CVE-2024-35937",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:21:56.640",
+        "publishedAt": "2024-05-19T11:15:49.553",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: cfg80211: check A-MSDU format more carefully\n\nIf it looks like there's another…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-35937"
+      },
+      {
+        "cvss_score": 8.2,
+        "cvss_version": "3.1",
+        "description": "Dell System Update, versions prior to 2.3.0.0, contains an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Elevation of privileges.",
+        "id": "CVE-2026-86361",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:18:28.720",
+        "publishedAt": "2026-10-06T19:18:16.567",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Dell System Update, versions prior to 2.3.0.0, contains an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86361"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "The Uncanny Automator – AI + Automation for WordPress | AI Agent, AI Page Builder, Free AI Usage Included plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.6.1.1 via deserialization of untrusted input. This makes it possible for authenticated attackers, with Subscriber-level access and above, to inject a PHP Object when a third-party integration…",
+        "id": "CVE-2026-82627",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:18:27.190",
+        "publishedAt": "2026-10-08T02:16:54.263",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The Uncanny Automator – AI + Automation for WordPress | AI Agent, AI Page Builder, Free AI Usage Included plugin for WordPress is vulnerable to PHP Object…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82627"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Dell Container Storage Modules (CSM), versions prior to 1.18.0, contains a Missing Authentication for Critical Function vulnerability in the csm-authorization-tenant gRPC service (TenantService). An unauthenticated adjacent network attacker could potentially exploit this vulnerability, leading to unauthorized creation of tenant entities, cross-tenant role injection, and modification of storage…",
+        "id": "CVE-2026-70411",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-08T18:18:25.797",
+        "publishedAt": "2026-10-06T16:17:09.877",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Dell Container Storage Modules (CSM), versions prior to 1.18.0, contains a Missing Authentication for Critical Function vulnerability in the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70411"
       }
     ],
-    "low": 137,
-    "medium": 928,
+    "low": 380,
+    "medium": 2169,
     "none": 1,
-    "unscored": 57
+    "unscored": 14
   },
   "snapshot": {
-    "cves": 2339,
-    "kevAdded": 0,
-    "knownExploited": 23,
+    "cves": 4411,
+    "kevAdded": 5,
+    "knownExploited": 43,
     "projects": 18,
     "releases": 4,
-    "techEntries": 41
+    "techEntries": 51
   },
   "sources": {
     "opensource": {
@@ -595,152 +604,152 @@
         "failures": 2,
         "inWindow": 4,
         "status": "partial",
-        "total": 55
+        "total": 54
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1734
+        "inWindow": 5,
+        "status": "success",
+        "total": 1739
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2339,
+        "inWindow": 4411,
         "status": "success",
-        "total": 2339
+        "total": 4411
       }
     },
     "technology": {
       "rss": {
-        "failures": 1,
-        "inWindow": 41,
-        "status": "partial",
-        "total": 198
+        "failures": 0,
+        "inWindow": 51,
+        "status": "success",
+        "total": 228
       }
     }
   },
   "technology": [
     {
+      "category": "security",
+      "publishedAt": "2026-10-08T18:17:08+00:00",
+      "source": "The Register",
+      "summary": "The GPU giant released a fix for the flaw, tracked as CVE-2026-47483",
+      "title": "High-severity Nvidia bug could crash GPU monitoring on exposed servers",
+      "url": "https://www.theregister.com/security/2026/10/08/high-severity-nvidia-bug-could-crash-gpu-monitoring-on-exposed-servers/5302077"
+    },
+    {
       "category": "tech",
-      "publishedAt": "2026-10-07T17:45:34+00:00",
+      "publishedAt": "2026-10-08T17:02:52+00:00",
       "source": "GitHub Blog",
-      "summary": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it. The post Secret protection must scale with software appeared first on The GitHub Blog .",
-      "title": "Secret protection must scale with software",
-      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
+      "summary": "As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team spotlights @vaib25vicky, exploring their methodology, techniques, and experiences hacking on GitHub. The post How one bug bounty researcher chooses the features they investigate appeared first on The GitHub…",
+      "title": "How one bug bounty researcher chooses the features they investigate",
+      "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-07T17:42:06+00:00",
+      "publishedAt": "2026-10-08T16:54:48+00:00",
       "source": "The Register",
-      "summary": "Strands Box is the latest open source AI control tool from the cloud giant; like its predecessors, it promises tighter reins on autonomous agents",
-      "title": "AWS launches open-source AI agent sandbox to prevent YOLO mode disasters",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/07/aws-launches-open-source-ai-agent-sandbox-to-prevent-yolo-mode-disasters/5301687"
+      "summary": "Credential-stealing malware detected within minutes of npm release, but impact remains unknown",
+      "title": "Shai-Hulud worm makes jump to AI infrastructure with Tensorlake compromise",
+      "url": "https://www.theregister.com/security/2026/10/08/shai-hulud-worm-makes-jump-to-ai-infrastructure-with-tensorlake-compromise/5302054"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-07T17:30:00+00:00",
+      "publishedAt": "2026-10-08T15:00:00+00:00",
       "source": "The Register",
-      "summary": "Router maker rejects allegations it misled buyers about protection and its reliance on Chinese suppliers",
-      "title": "US states sue popular kitmaker TP-Link over China risks",
-      "url": "https://www.theregister.com/security/2026/10/07/us-states-sue-popular-kitmaker-tp-link-over-china-risks/5301653"
+      "summary": "SPONSORED FEATURE: Old attack, new protections",
+      "title": "Fighting GenAI with GenAI: The New Email Security Landscape",
+      "url": "https://www.theregister.com/security/2026/10/08/sponsored-fighting-genai-with-genai-the-new-email-security-landscape/5301063"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-07T16:30:36+00:00",
+      "publishedAt": "2026-10-08T14:54:00+00:00",
+      "source": "The Register",
+      "summary": "Her team's code kept Apollo 11's landing on course when the guidance computer became overloaded",
+      "title": "Margaret Hamilton, software pioneer who helped put humans on the Moon, dies at 90",
+      "url": "https://www.theregister.com/software/2026/10/08/margaret-hamilton-software-pioneer-who-helped-put-humans-on-the-moon-dies-at-90/5301988"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-08T13:57:00+00:00",
+      "source": "The Register",
+      "summary": "ArtCraft adds Word, Excel, and PowerPoint lookalikes to its open source lineup, but they're not ready for production",
+      "title": "Rust upstart reveals 'reimplementation' of Microsoft Office – with Claude on coding duty",
+      "url": "https://www.theregister.com/software/2026/10/08/rust-upstart-reveals-reimplementation-of-microsoft-office-with-claude-on-coding-duty/5301952"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-08T13:00:00+00:00",
       "source": "Cloudflare",
-      "summary": "Cloudflare Managed Defense uses a team of specialized AI agents built on Workers and global network telemetry to analyze security alerts. By separating deterministic evidence collection from model inference, the system delivers grounded recommendations to Managed Defense…",
-      "title": "Building an evidence-grounded agentic security operations harness on Cloudflare",
-      "url": "https://blog.cloudflare.com/agentic-security-operations/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-07T16:01:08+00:00",
-      "source": "The Register",
-      "summary": "Quoth the LLM, 'More and more'",
-      "title": "Poetry is the new AI security threat as PoeLLM malware infects 3K+ servers",
-      "url": "https://www.theregister.com/security/2026/10/07/poetry-is-the-new-ai-security-threat-as-poellm-malware-infects-3k-servers/5301672"
+      "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standardized components, we simplified navigation while…",
+      "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+      "url": "https://blog.cloudflare.com/radar-redesign/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-07T16:00:00+00:00",
+      "publishedAt": "2026-10-08T12:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "In capital markets, operational success is built on predictable performance and low latency, where even tiny variations in packet timing alter queue priority and trade execution. At the same time, both exchange venues and their participants face mounting constraints in…",
-      "title": "Introducing Google Cloud’s U4 compute: Enabling ultra-low latency trading",
-      "url": "https://cloud.google.com/blog/topics/financial-services/ultra-low-latency-solution-with-u4-enables-high-velocity-trading/"
+      "summary": "Today, we announced the new Gemini agent, your single, universal agent for work. For small and midsize businesses, with lean teams and margins, Gemini will be a critical tool for you to operate efficiently, deliver excellent customer experiences, and grow. Millions of small and…",
+      "title": "Empowering SMBs to do more with Gemini",
+      "url": "https://cloud.google.com/blog/topics/startups/how-to-grow-your-small-business-using-google-gemini/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-07T15:00:26+00:00",
-      "source": "Microsoft",
-      "summary": "How presets, extensions, bundles, workflows, and governed catalogs make Spec-Driven Development adaptable at scale This article continues Spec-Driven Development: A Spec-First Approach to AI-Native Engineering, which introduced the principles and lifecycle of SDD. Here, we focus…",
-      "title": "From Spec-First to Enterprise-Ready: Extending GitHub Spec Kit",
-      "url": "https://devblogs.microsoft.com/blog/from-spec-first-to-enterprise-ready-extending-github-spec-kit/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-07T10:52:09+00:00",
-      "source": "The Register",
-      "summary": "Tens of thousands more victims and more ransomware groups getting in on the act",
-      "title": "FortiBleed still a bleeding nuisance as FBI confirms ongoing attacks",
-      "url": "https://www.theregister.com/security/2026/10/07/fortibleed-still-a-bleeding-nuisance-as-fbi-confirms-ongoing-attacks/5301585"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-07T03:56:25+00:00",
-      "source": "The Register",
-      "summary": "'Complete security paradigm refresh' needed for the AI era",
-      "title": "South Korean president calls for creation of tools that stop all cyber-attacks",
-      "url": "https://www.theregister.com/public-sector/2026/10/07/south-korean-president-calls-for-creation-of-tools-that-stop-all-cyber-attacks/5301533"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T23:29:27+00:00",
-      "source": "The Register",
-      "summary": "Company's Project Glasswing and Cyber Verification Program metamorphose into triple tier threat hunting club",
-      "title": "Anthropic reconfigures its cool kids security program",
-      "url": "https://www.theregister.com/security/2026/10/07/anthropic-reconfigures-its-cool-kids-security-program/5301509"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T20:57:56+00:00",
-      "source": "GitHub Blog",
-      "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. The post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog .",
-      "title": "Building Git infrastructure for agent-scale development",
-      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-06T19:21:14+00:00",
-      "source": "Ars Technica",
-      "summary": "Compromise of 3 domain registries allows hackers to walk off with unauthorized certs.",
-      "title": "Hackers obtain counterfeit TLS certificates for Google and other large services",
-      "url": "https://arstechnica.com/security/2026/10/hackers-obtain-counterfeit-tls-certificates-for-google-and-other-large-services/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-06T19:00:00+00:00",
+      "publishedAt": "2026-10-08T12:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Co-authors: Stenal Jolly , Strategic Cloud Engineer, Google Anubhav Dhawan , Software Engineer, Google Following the landmark announcement of MCP Toolbox v1.0, we're thrilled to announce that the MCP Toolbox Java SDK has officially reached version 1.0. This release brings…",
-      "title": "Announcing MCP Toolbox Java SDK v1.0: Agentic data access for the enterprise",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise/"
+      "summary": "Public research universities solve some of society’s most urgent challenges, but turning ideas into breakthroughs requires fast, secure access to cutting edge technology. In the agentic AI era institutions have an unprecedented opportunity to harness intelligent systems that can…",
+      "title": "Google Public Sector and SUNY launch AI-enabled platform to accelerate university research",
+      "url": "https://cloud.google.com/blog/topics/public-sector/gps-suny-launch-ai-enabled-platform-to-accelerate-university-research/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-06T18:30:00+00:00",
-      "source": "Microsoft",
-      "summary": "Learn how the Canvas authoring plugin helps you build Azure canvases with Microsoft Canvas Toolkit, from a read-only starter to a working app you can inspect, test, and adapt. The post Build Azure canvases with the Canvas authoring plugin appeared first on Microsoft for…",
-      "title": "Build Azure canvases with the Canvas authoring plugin",
-      "url": "https://devblogs.microsoft.com/blog/build-azure-canvases-with-canvas-authoring/"
+      "publishedAt": "2026-10-08T12:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "In recent decades, Ireland has grown into a vibrant hub for global technology. As modernization accelerates, Irish organizations — spanning government agencies, established enterprise brands, and growing startups in AI and other areas — are all advancing their technical…",
+      "title": "Innovation in Ireland: How Irish brands scale with Gemini Enterprise",
+      "url": "https://cloud.google.com/blog/topics/customers/ireland-innovation-companies-startups-governments-scale-with-gemini/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-06T17:50:11+00:00",
-      "source": "Cloudflare",
-      "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
-      "title": "The keys to the Internet change on October 11. Are you ready?",
-      "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/"
+      "publishedAt": "2026-10-08T12:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Editor’s note: This article is adapted from Thomas Kurian’s keynote address at Gemini at Work 2026. It includes a number of announcements: Gemini , a single, universal agent for work that answers your questions, handles your knowledge work, creates your images and media, and…",
+      "title": "Welcome to Gemini at Work 2026: Introducing the Gemini agent",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-08T11:22:01+00:00",
+      "source": "The Register",
+      "summary": "Security pact promises information-sharing and coordinated disruption, but offers little detail on agencies or funding",
+      "title": "UK and Germany team up against Russian cyberattacks as Brexit rethink looms",
+      "url": "https://www.theregister.com/security/2026/10/08/uk-and-germany-team-up-against-russian-cyberattacks-as-brexit-rethink-looms/5301914"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-08T08:15:00+00:00",
+      "source": "The Register",
+      "summary": "The owner knew a guy...",
+      "title": "Cheapskates wouldn't pay for security help, got hit by ransomware, and went bust months later",
+      "url": "https://www.theregister.com/security/2026/10/08/cheapskates-wouldnt-pay-for-security-help-got-hit-by-ransomware-and-went-bust-months-later/5301757"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-08T02:29:55+00:00",
+      "source": "The Register",
+      "summary": "Feds claim he charged clients more than ransoms, paid up, pocketed the difference",
+      "title": "Ransomware fixer claimed he could decrypt files, allegedly defrauded clients instead",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/08/ransomware-fixer-claimed-he-could-decrypt-files-allegedly-defrauded-clients-instead/5301831"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-07T19:38:06+00:00",
+      "source": "The Register",
+      "summary": "Trusted brand impersonation without the usual browser certificate warnings spells trouble",
+      "title": "Attackers hijacked top-level domains, minted fake security certs for Google and other orgs",
+      "url": "https://www.theregister.com/security/2026/10/07/attackers-hijacked-top-level-domains-minted-fake-security-certs-for-google-and-other-orgs/5301718"
     }
   ]
 }
