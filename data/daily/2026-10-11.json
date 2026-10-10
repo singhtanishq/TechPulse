@@ -1,0 +1,311 @@
+{
+  "coveredIstDay": "2026-10-10",
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-10T21:56:57.637726+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 134,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200706,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 29,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143107,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 9,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139174,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 29,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128256,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 11,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122271,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 59,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119649,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 34,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111316,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 135,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104123,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 18,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97851,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 8,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91364,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-09T20:49:22Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.28.0",
+        "version": "v3.28.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themeStek ThemeStek Extras for LabtechCO Theme themestek-labtechco-extras allows Reflected XSS.Thi",
+        "id": "CVE-2026-94160",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94160"
+      },
+      {
+        "cvss": 7.2,
+        "description": "Deserialization of Untrusted Data vulnerability in bPlugins Super Video Player super-video-player allows Object Injection.This issue affects Super Video Player: from n/a through 1.8.13.",
+        "id": "CVE-2026-62044",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62044"
+      },
+      {
+        "cvss": 5.3,
+        "description": "1MCP Agent (@1mcp/agent) 0.20.0 through 0.39.0 contains an incorrect authorization vulnerability that allows authenticated clients to bypass OAuth tag-scope enforcement using negated advanced tag-filt",
+        "id": "CVE-2026-108586",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108586"
+      },
+      {
+        "cvss": 5.3,
+        "description": "argocd-mcp (Argo CD MCP Server) through 0.9.0 contains a path traversal vulnerability in the delete_application tool that allows MCP clients to reach unintended API endpoints via unvalidated applicati",
+        "id": "CVE-2026-108585",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108585"
+      },
+      {
+        "cvss": 7.5,
+        "description": "Missing Authorization vulnerability in Web Impian Bayarcash WooCommerce bayarcash-wc allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Bayarcash WooCommerce: f",
+        "id": "CVE-2026-106609",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106609"
+      },
+      {
+        "cvss": 7.2,
+        "description": "Incorrect Privilege Assignment vulnerability in Automattic WooCommerce woocommerce allows Privilege Escalation.This issue affects WooCommerce: from 9.8.0 through 11.1.2.",
+        "id": "CVE-2026-106608",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106608"
+      },
+      {
+        "cvss": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Tickera Tickera tickera-event-ticketing-system allows Blind SQL Injection.This issue affects Ticke",
+        "id": "CVE-2026-105889",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105889"
+      },
+      {
+        "cvss": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in VillaTheme AFFI – Affiliate Marketing for WooCommerce affi-affiliate-marketing-for-woo allows Object Injection.This issue affects AFFI – Affiliate Ma",
+        "id": "CVE-2026-104398",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104398"
+      },
+      {
+        "cvss": 6.9,
+        "description": "Missing Authorization vulnerability in VillaTheme GIFT4U gift4u-gift-cards-all-in-one-for-woo allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects GIFT4U: from n/",
+        "id": "CVE-2026-103357",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103357"
+      },
+      {
+        "cvss": 7.5,
+        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in VillaTheme Thank You Page Customizer for WooCommerce woo-thank-you-page-customizer allows Code Injection.This issue affects T",
+        "id": "CVE-2026-103071",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103071"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 72,
+      "HIGH": 144,
+      "LOW": 19,
+      "MEDIUM": 154,
+      "NONE": 0,
+      "UNSCORED": 50
+    }
+  },
+  "snapshot": {
+    "cves": 439,
+    "kevAdded": 0,
+    "knownExploited": 2,
+    "projects": 18,
+    "releases": 1,
+    "techEntries": 30
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1739
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 1,
+      "status": "partial",
+      "total": 54
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 439,
+      "status": "success",
+      "total": 439
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 30,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 12,
+      "tech": 18
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-10T10:15:00+00:00",
+        "source": "The Register",
+        "title": "Two characters open up a world of typosquatting opportunities in Chromium browsers",
+        "url": "https://www.theregister.com/security/2026/10/10/two-characters-open-up-a-world-of-typosquatting-opportunities-in-chromium-browsers/5302383"
+      },
+      {
+        "published_at": "2026-10-10T08:14:00+00:00",
+        "source": "The Register",
+        "title": "Stack Overflow survey finds devs hooked on AI, but not totally sold on its judgment",
+        "url": "https://www.theregister.com/software/2026/10/10/stack-overflow-survey-finds-devs-hooked-on-ai-but-not-totally-sold-on-its-judgment/5301662"
+      },
+      {
+        "published_at": "2026-10-09T19:15:48+00:00",
+        "source": "The Register",
+        "title": "AWS AgentCore security undone by prompt requesting credentials",
+        "url": "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436"
+      },
+      {
+        "published_at": "2026-10-09T18:54:52+00:00",
+        "source": "Ars Technica",
+        "title": "PC shipments fall 20.1 percent in “sharpest decline” since Q1 2023",
+        "url": "https://arstechnica.com/information-technology/2026/10/pc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023/"
+      },
+      {
+        "published_at": "2026-10-09T18:27:34+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+        "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/"
+      },
+      {
+        "published_at": "2026-10-09T16:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "Hack the World: Why hackathons are still the best place to learn to build",
+        "url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/"
+      },
+      {
+        "published_at": "2026-10-09T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Data Cloud",
+        "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+      },
+      {
+        "published_at": "2026-10-09T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Modernizing Unstructured Data Workflows: Alteryx Live Query meets Google Cloud BigQuery",
+        "url": "https://cloud.google.com/blog/products/data-analytics/modernize-unstructured-data-workloads-with-alteryx-and-bigquery/"
+      },
+      {
+        "published_at": "2026-10-09T13:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+        "url": "https://blog.cloudflare.com/workers-on-demand-profiling/"
+      },
+      {
+        "published_at": "2026-10-09T12:50:00+00:00",
+        "source": "Cloudflare",
+        "title": "Deno is joining Cloudflare",
+        "url": "https://blog.cloudflare.com/deno-joins-cloudflare/"
+      }
+    ],
+    "sources": {
+      "Ars Technica": 2,
+      "Cloudflare": 4,
+      "GitHub Blog": 2,
+      "Google Cloud": 6,
+      "Microsoft": 1,
+      "The Register": 15
+    }
+  },
+  "window": {
+    "end": "2026-10-10T18:30:00+00:00",
+    "start": "2026-10-09T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

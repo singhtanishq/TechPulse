@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 439,
+      "date": "2026-10-11",
+      "kevAdded": 0,
+      "knownExploited": 2,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 30
+    },
+    {
       "cves": 2196,
       "date": "2026-10-10",
       "kevAdded": 0,
@@ -218,16 +227,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-09",
-    "date": "2026-10-10",
-    "daysObserved": 24,
-    "generatedAt": "2026-10-09T22:49:43.860054+00:00",
-    "snapshots": 24,
+    "coveredDate": "2026-10-10",
+    "date": "2026-10-11",
+    "daysObserved": 25,
+    "generatedAt": "2026-10-10T21:56:57.637726+00:00",
+    "snapshots": 25,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 18,
+      "daily_growth": 134,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -235,11 +244,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 200572,
+      "stars": 200706,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 49,
+      "daily_growth": 29,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -247,11 +256,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143078,
+      "stars": 143107,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 30,
+      "daily_growth": 9,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -259,11 +268,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139165,
+      "stars": 139174,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 32,
+      "daily_growth": 29,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -271,11 +280,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128227,
+      "stars": 128256,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 8,
+      "daily_growth": 11,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -283,11 +292,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122260,
+      "stars": 122271,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 79,
+      "daily_growth": 59,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -295,11 +304,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 119590,
+      "stars": 119649,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 41,
+      "daily_growth": 34,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -307,11 +316,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111282,
+      "stars": 111316,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 81,
+      "daily_growth": 135,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -319,11 +328,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 103988,
+      "stars": 104123,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 31,
+      "daily_growth": 18,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -331,11 +340,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97833,
+      "stars": 97851,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 5,
+      "daily_growth": 8,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -343,243 +352,234 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91356,
+      "stars": 91364,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
       "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-09T15:28:52Z",
-      "repository": "anthropics/anthropic-sdk-python",
-      "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.13.0",
-      "version": "v1.13.0"
-    },
-    {
-      "kind": "minor",
       "project": "openai-python",
-      "publishedAt": "2026-10-09T13:46:41Z",
+      "publishedAt": "2026-10-09T20:49:22Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.27.0",
-      "version": "v3.27.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.28.0",
+      "version": "v3.28.0"
     }
   ],
   "security": {
-    "critical": 198,
-    "high": 820,
+    "critical": 72,
+    "high": 144,
     "kevCatalogTotal": 1739,
     "latest": [
       {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themeStek ThemeStek Extras for LabtechCO Theme themestek-labtechco-extras allows Reflected XSS.This issue affects ThemeStek Extras for LabtechCO Theme: from n/a through 8.4.",
+        "id": "CVE-2026-94160",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-10T17:17:01.090",
+        "publishedAt": "2026-10-10T17:17:01.090",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themeStek ThemeStek Extras for LabtechCO Theme…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94160"
+      },
+      {
+        "cvss_score": 7.2,
+        "cvss_version": "3.1",
+        "description": "Deserialization of Untrusted Data vulnerability in bPlugins Super Video Player super-video-player allows Object Injection.This issue affects Super Video Player: from n/a through 1.8.13.",
+        "id": "CVE-2026-62044",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-10T17:17:00.803",
+        "publishedAt": "2026-10-10T17:17:00.803",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Deserialization of Untrusted Data vulnerability in bPlugins Super Video Player super-video-player allows Object Injection.This issue affects Super Video…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62044"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "1MCP Agent (@1mcp/agent) 0.20.0 through 0.39.0 contains an incorrect authorization vulnerability that allows authenticated clients to bypass OAuth tag-scope enforcement using negated advanced tag-filter expressions. Attackers holding a single-tag token can send a filter like not <granted-tag> to list and invoke tools on backend MCP servers outside their granted scopes.",
+        "id": "CVE-2026-108586",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-10T17:17:00.593",
+        "publishedAt": "2026-10-10T17:17:00.593",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "1MCP Agent (@1mcp/agent) 0.20.0 through 0.39.0 contains an incorrect authorization vulnerability that allows authenticated clients to bypass OAuth tag-scope…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108586"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "argocd-mcp (Argo CD MCP Server) through 0.9.0 contains a path traversal vulnerability in the delete_application tool that allows MCP clients to reach unintended API endpoints via unvalidated applicationName values. Attackers or prompt-injected models can supply dot-segment values like ../repositories/ to send authenticated DELETE requests deleting repositories, clusters, or projects within the…",
+        "id": "CVE-2026-108585",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-10T17:17:00.550",
+        "publishedAt": "2026-10-10T17:17:00.437",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "argocd-mcp (Argo CD MCP Server) through 0.9.0 contains a path traversal vulnerability in the delete_application tool that allows MCP clients to reach…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108585"
+      },
+      {
         "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "The RabbitMQ Java client library allows Java and JVM-based applications to connect to and interact with RabbitMQ nodes. Prior to 5.37.0, com.rabbitmq.tools.json.JSONReader.read() fails to terminate when input ends inside a quoted string or a line comment because its string and whitespace scanners do not stop at CharacterIterator.DONE. The default DefaultJsonRpcMapper passes JSON-RPC message…",
-        "id": "CVE-2026-106121",
+        "description": "Missing Authorization vulnerability in Web Impian Bayarcash WooCommerce bayarcash-wc allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Bayarcash WooCommerce: from n/a through 4.4.2.",
+        "id": "CVE-2026-106609",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:26:02.737",
-        "publishedAt": "2026-10-06T19:17:43.193",
+        "lastModifiedAt": "2026-10-10T17:17:00.310",
+        "publishedAt": "2026-10-10T17:17:00.310",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "The RabbitMQ Java client library allows Java and JVM-based applications to connect to and interact with RabbitMQ nodes. Prior to 5.37.0…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106121"
+        "title": "Missing Authorization vulnerability in Web Impian Bayarcash WooCommerce bayarcash-wc allows Exploiting Incorrectly Configured Access Control Security…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106609"
       },
       {
-        "cvss_score": 6.0,
-        "cvss_version": "4.0",
-        "description": "The RabbitMQ Java client library allows Java and JVM-based applications to connect to and interact with RabbitMQ nodes. Prior to 5.36.0, ValueReader.readShortstr decodes malformed UTF-8 bytes into replacement characters that can re-encode beyond the AMQP shortstr limit enforced by ValueWriter.writeShortstr. An attacker who can submit an RPC message with a malformed echoed property can cause reply…",
-        "id": "CVE-2026-106122",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:21:32.203",
-        "publishedAt": "2026-10-06T19:17:43.467",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "The RabbitMQ Java client library allows Java and JVM-based applications to connect to and interact with RabbitMQ nodes. Prior to 5.36.0…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106122"
-      },
-      {
-        "cvss_score": 7.1,
+        "cvss_score": 7.2,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ExpressTech Quiz And Survey Master quiz-master-next allows DOM-Based XSS.This issue affects Quiz And Survey Master: from n/a through 11.2.6.",
-        "id": "CVE-2026-97289",
+        "description": "Incorrect Privilege Assignment vulnerability in Automattic WooCommerce woocommerce allows Privilege Escalation.This issue affects WooCommerce: from 9.8.0 through 11.1.2.",
+        "id": "CVE-2026-106608",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:16.717",
-        "publishedAt": "2026-09-30T13:17:39.210",
+        "lastModifiedAt": "2026-10-10T17:17:00.190",
+        "publishedAt": "2026-10-10T17:17:00.190",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ExpressTech Quiz And Survey Master quiz-master-next…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97289"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Missing Authorization vulnerability in WP Media WP Rocket wp-rocket allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Rocket: from n/a before 3.23.5.",
-        "id": "CVE-2026-97075",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:16.600",
-        "publishedAt": "2026-10-09T08:16:55.683",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Missing Authorization vulnerability in WP Media WP Rocket wp-rocket allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97075"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Basix NEX-Forms nex-forms-express-wp-form-builder allows Reflected XSS.This issue affects NEX-Forms: from n/a through 9.3.1.",
-        "id": "CVE-2026-96607",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:16.483",
-        "publishedAt": "2026-10-09T10:16:45.557",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Basix NEX-Forms nex-forms-express-wp-form-builder allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96607"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Missing Authorization vulnerability in properfraction ProfilePress wp-user-avatar allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects ProfilePress: from n/a through 4.17.3.",
-        "id": "CVE-2026-96337",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:16.370",
-        "publishedAt": "2026-10-09T10:16:44.863",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Missing Authorization vulnerability in properfraction ProfilePress wp-user-avatar allows Exploiting Incorrectly Configured Access Control Security Levels.This…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96337"
+        "title": "Incorrect Privilege Assignment vulnerability in Automattic WooCommerce woocommerce allows Privilege Escalation.This issue affects WooCommerce: from 9.8.0…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106608"
       },
       {
         "cvss_score": 9.3,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in wpdreams Ajax Search Pro ajax-search-pro allows Blind SQL Injection.This issue affects Ajax Search Pro: from n/a through 4.29.1.",
-        "id": "CVE-2026-96331",
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Tickera Tickera tickera-event-ticketing-system allows Blind SQL Injection.This issue affects Tickera: from n/a through 3.6.0.6.",
+        "id": "CVE-2026-105889",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:16.250",
-        "publishedAt": "2026-10-09T10:16:44.167",
+        "lastModifiedAt": "2026-10-10T17:17:00.063",
+        "publishedAt": "2026-10-10T17:17:00.063",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in wpdreams Ajax Search Pro ajax-search-pro allows Blind SQL…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96331"
+        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Tickera Tickera tickera-event-ticketing-system allows…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105889"
       },
       {
-        "cvss_score": 8.5,
+        "cvss_score": 9.8,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in UpSolution UpSolution Core us-core allows Blind SQL Injection.This issue affects UpSolution Core: from n/a through 9.3.",
-        "id": "CVE-2026-95610",
+        "description": "Deserialization of Untrusted Data vulnerability in VillaTheme AFFI – Affiliate Marketing for WooCommerce affi-affiliate-marketing-for-woo allows Object Injection.This issue affects AFFI – Affiliate Marketing for WooCommerce: from n/a through 1.0.10.",
+        "id": "CVE-2026-104398",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:16.137",
-        "publishedAt": "2026-10-09T10:16:43.330",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in UpSolution UpSolution Core us-core allows Blind SQL…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95610"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in codepeople Search in Place search-in-place allows Reflected XSS.This issue affects Search in Place: from n/a through 1.5.5.",
-        "id": "CVE-2026-95598",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:16.020",
-        "publishedAt": "2026-10-09T10:16:42.643",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in codepeople Search in Place search-in-place allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95598"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Dimitri Grassi Salon booking system salon-booking-system allows Reflected XSS.This issue affects Salon booking system: from n/a through 10.31.5.",
-        "id": "CVE-2026-94668",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:15.910",
-        "publishedAt": "2026-10-09T10:16:41.957",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Dimitri Grassi Salon booking system salon-booking-system…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94668"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows Blind SQL Injection.This issue affects ProfileGrid: from n/a through 6.0.0.2.",
-        "id": "CVE-2026-94663",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:15.790",
-        "publishedAt": "2026-10-09T10:16:41.283",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Metagauss ProfileGrid…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94663"
-      },
-      {
-        "cvss_score": 10.0,
-        "cvss_version": "3.1",
-        "description": "Unrestricted Upload of File with Dangerous Type vulnerability in PX-lab Zombify zombify allows Upload a Web Shell to a Web Server.This issue affects Zombify: from n/a through 1.7.7.",
-        "id": "CVE-2026-94503",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:15.677",
-        "publishedAt": "2026-10-09T10:16:40.607",
+        "lastModifiedAt": "2026-10-10T17:16:59.937",
+        "publishedAt": "2026-10-10T17:16:59.937",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Unrestricted Upload of File with Dangerous Type vulnerability in PX-lab Zombify zombify allows Upload a Web Shell to a Web Server.This issue affects Zombify…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94503"
+        "title": "Deserialization of Untrusted Data vulnerability in VillaTheme AFFI – Affiliate Marketing for WooCommerce affi-affiliate-marketing-for-woo allows Object…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104398"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "Missing Authorization vulnerability in VillaTheme GIFT4U gift4u-gift-cards-all-in-one-for-woo allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects GIFT4U: from n/a through 1.1.3.",
+        "id": "CVE-2026-103357",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-10T17:16:59.813",
+        "publishedAt": "2026-10-10T17:16:59.813",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Missing Authorization vulnerability in VillaTheme GIFT4U gift4u-gift-cards-all-in-one-for-woo allows Exploiting Incorrectly Configured Access Control Security…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103357"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in VillaTheme Thank You Page Customizer for WooCommerce woo-thank-you-page-customizer allows Code Injection.This issue affects Thank You Page Customizer for WooCommerce: from n/a through 1.2.3.",
+        "id": "CVE-2026-103071",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-10T17:16:59.673",
+        "publishedAt": "2026-10-10T17:16:59.673",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper Control of Generation of Code ('Code Injection') vulnerability in VillaTheme Thank You Page Customizer for WooCommerce woo-thank-you-page-customizer…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103071"
+      },
+      {
+        "cvss_score": 2.3,
+        "cvss_version": "4.0",
+        "description": "zotero-mcp 0.10.0 through 0.14.1 contains a server-side request forgery vulnerability that allows attackers to reach internal services because _fetch_embedded_metadata fetches URLs without destination validation. Attackers can steer the agent via prompt injection into calling zotero_add_by_url, causing requests to loopback, private, or link-local hosts directly or via redirects, leaking citation…",
+        "id": "CVE-2026-108583",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-10T16:16:31.667",
+        "publishedAt": "2026-10-10T16:16:31.667",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "zotero-mcp 0.10.0 through 0.14.1 contains a server-side request forgery vulnerability that allows attackers to reach internal services because…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108583"
+      },
+      {
+        "cvss_score": 6.8,
+        "cvss_version": "4.0",
+        "description": "GenOffice through 0.11.505 contains an incorrect permissions vulnerability in its HTTP MCP server file store that allows local unprivileged users to read uploaded and generated documents. Attackers can list the world-readable genoffice-mcp-http directory under the system temporary directory to read client uploads and converted outputs, bypassing the HTTP bearer token.",
+        "id": "CVE-2026-108582",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-10T16:16:31.520",
+        "publishedAt": "2026-10-10T16:16:31.520",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "GenOffice through 0.11.505 contains an incorrect permissions vulnerability in its HTTP MCP server file store that allows local unprivileged users to read…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108582"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ThemeGoods Grand Restaurant grandrestaurant allows Reflected XSS.This issue affects Grand Restaurant: from n/a before 7.0.11.",
-        "id": "CVE-2026-94161",
+        "cvss_version": "4.0",
+        "description": "TencentCloud Octop through 1.0.2b6 contains a missing authorization vulnerability that allows authenticated low-privileged users to read stored provider API keys via GET /api/providers and GET /api/voice/providers. Attackers can query these endpoints, which only validate the JWT, to obtain plaintext LLM and voice provider API keys and abuse the upstream provider accounts.",
+        "id": "CVE-2026-108581",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:15.563",
-        "publishedAt": "2026-10-09T10:16:39.923",
+        "lastModifiedAt": "2026-10-10T16:16:31.380",
+        "publishedAt": "2026-10-10T16:16:31.380",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ThemeGoods Grand Restaurant grandrestaurant allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94161"
+        "title": "TencentCloud Octop through 1.0.2b6 contains a missing authorization vulnerability that allows authenticated low-privileged users to read stored provider API…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108581"
       },
       {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in SpabRice Pond pond allows Reflected XSS.This issue affects Pond: from n/a through 2.6.1.",
-        "id": "CVE-2026-94066",
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "AniWorld Downloader before 5.3.0 contains an improper restriction of authentication attempts vulnerability in the WebUI /login POST handler that allows unauthenticated attackers to guess passwords without throttling. Attackers can enumerate usernames through verify_user response timing and brute-force passwords on exposed WebUI instances to take over accounts.",
+        "id": "CVE-2026-108580",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:15.440",
-        "publishedAt": "2026-10-09T14:17:25.747",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-10-10T16:16:31.240",
+        "publishedAt": "2026-10-10T16:16:31.240",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in SpabRice Pond pond allows Reflected XSS.This issue…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94066"
+        "title": "AniWorld Downloader before 5.3.0 contains an improper restriction of authentication attempts vulnerability in the WebUI /login POST handler that allows…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108580"
       },
       {
-        "cvss_score": 8.1,
-        "cvss_version": "3.1",
-        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Fuelthemes Werkstatt werkstatt allows PHP Local File Inclusion.This issue affects Werkstatt: from n/a through 4.8.3.",
-        "id": "CVE-2026-94062",
+        "cvss_score": 2.3,
+        "cvss_version": "4.0",
+        "description": "OpenPanel through 2.3.0 contains a CSV formula injection vulnerability that allows unauthenticated attackers to embed spreadsheet formulas by supplying crafted profile IDs to the /track endpoint. Attackers can send tracking events with profile IDs like =HYPERLINK(...) matching a cohort, so exported cohort CSVs execute formulas that exfiltrate adjacent cell data.",
+        "id": "CVE-2026-108579",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-09T18:17:15.320",
-        "publishedAt": "2026-10-09T13:17:12.423",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-10-10T16:16:31.193",
+        "publishedAt": "2026-10-10T16:16:31.080",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Fuelthemes Werkstatt werkstatt allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94062"
+        "title": "OpenPanel through 2.3.0 contains a CSV formula injection vulnerability that allows unauthenticated attackers to embed spreadsheet formulas by supplying crafted…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108579"
       }
     ],
-    "low": 197,
-    "medium": 931,
+    "low": 19,
+    "medium": 154,
     "none": 0,
     "unscored": 50
   },
   "snapshot": {
-    "cves": 2196,
+    "cves": 439,
     "kevAdded": 0,
-    "knownExploited": 8,
+    "knownExploited": 2,
     "projects": 18,
-    "releases": 2,
-    "techEntries": 41
+    "releases": 1,
+    "techEntries": 30
   },
   "sources": {
     "opensource": {
@@ -593,7 +593,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 2,
+        "inWindow": 1,
         "status": "partial",
         "total": 54
       }
@@ -607,21 +607,53 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2196,
+        "inWindow": 439,
         "status": "success",
-        "total": 2196
+        "total": 439
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 41,
+        "inWindow": 30,
         "status": "success",
         "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-10-10T10:15:00+00:00",
+      "source": "The Register",
+      "summary": "Attackers abusing rare Cyrillic and Latin letters to impersonate popular websites",
+      "title": "Two characters open up a world of typosquatting opportunities in Chromium browsers",
+      "url": "https://www.theregister.com/security/2026/10/10/two-characters-open-up-a-world-of-typosquatting-opportunities-in-chromium-browsers/5302383"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-10T08:14:00+00:00",
+      "source": "The Register",
+      "summary": "Source attribution matters to 79% of respondents – handy for a company licensing its Q&A archive to model builders",
+      "title": "Stack Overflow survey finds devs hooked on AI, but not totally sold on its judgment",
+      "url": "https://www.theregister.com/software/2026/10/10/stack-overflow-survey-finds-devs-hooked-on-ai-but-not-totally-sold-on-its-judgment/5301662"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-09T19:15:48+00:00",
+      "source": "The Register",
+      "summary": "Tokens transmitted in metadata, weak VM isolation, and expansive permissions make hacking a lot easier",
+      "title": "AWS AgentCore security undone by prompt requesting credentials",
+      "url": "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-09T18:54:52+00:00",
+      "source": "Ars Technica",
+      "summary": "\"The current decline may be just the beginning of a new downward cycle.\"",
+      "title": "PC shipments fall 20.1 percent in “sharpest decline” since Q1 2023",
+      "url": "https://arstechnica.com/information-technology/2026/10/pc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023/"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-10-09T18:27:34+00:00",
@@ -709,38 +741,6 @@
       "summary": "Free SSL/TLS certificate lifetimes reduce to 64 days in February.",
       "title": "Let's Encrypt cuts certificate lifetimes to 64 days starting February 2027",
       "url": "https://arstechnica.com/gadgets/2026/10/lets-encrypt-cuts-certificate-lifetimes-to-64-days-starting-february-2027/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-08T18:17:08+00:00",
-      "source": "The Register",
-      "summary": "The GPU giant released a fix for the flaw, tracked as CVE-2026-47483",
-      "title": "High-severity Nvidia bug could crash GPU monitoring on exposed servers",
-      "url": "https://www.theregister.com/security/2026/10/08/high-severity-nvidia-bug-could-crash-gpu-monitoring-on-exposed-servers/5302077"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-08T17:02:52+00:00",
-      "source": "GitHub Blog",
-      "summary": "As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team spotlights @vaib25vicky, exploring their methodology, techniques, and experiences hacking on GitHub. The post How one bug bounty researcher chooses the features they investigate appeared first on The GitHub…",
-      "title": "How one bug bounty researcher chooses the features they investigate",
-      "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-08T16:54:48+00:00",
-      "source": "The Register",
-      "summary": "Credential-stealing malware detected within minutes of npm release, but impact remains unknown",
-      "title": "Shai-Hulud worm makes jump to AI infrastructure with Tensorlake compromise",
-      "url": "https://www.theregister.com/security/2026/10/08/shai-hulud-worm-makes-jump-to-ai-infrastructure-with-tensorlake-compromise/5302054"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-08T15:00:00+00:00",
-      "source": "The Register",
-      "summary": "SPONSORED FEATURE: Old attack, new protections",
-      "title": "Fighting GenAI with GenAI: The New Email Security Landscape",
-      "url": "https://www.theregister.com/security/2026/10/08/sponsored-fighting-genai-with-genai-the-new-email-security-landscape/5301063"
     }
   ]
 }
