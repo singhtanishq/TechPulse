@@ -1,0 +1,311 @@
+{
+  "coveredIstDay": "2026-10-11",
+  "date": "2026-10-12",
+  "generatedAt": "2026-10-11T22:18:56.665079+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 164,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200870,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 33,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143140,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 35,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139209,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 24,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128280,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 44,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122315,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 60,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119709,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 51,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111367,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 321,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104444,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 34,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97885,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 16,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91380,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-11T17:38:54Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.29.0",
+        "version": "v3.29.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 5.9,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Interuse i-Bos.\n\nThis issue affects i-Bos: 3.0.",
+        "id": "CVE-2026-59508",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59508"
+      },
+      {
+        "cvss": 7.5,
+        "description": "The Bluetooth LE host queues received L2CAP connection-oriented channel (CoC) data for deferred processing through a struct k_work embedded in the channel object (le_chan->rx_work, handler l2cap_rx_pr",
+        "id": "CVE-2026-19935",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19935"
+      },
+      {
+        "cvss": 6.5,
+        "description": "The Link Layer Control Procedure (LLCP) implementation of the Zephyr software Bluetooth LE Controller retains the receive node that carried an accepted LL_PHY_UPDATE_IND so that it can later be reused",
+        "id": "CVE-2026-19740",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19740"
+      },
+      {
+        "cvss": 6.5,
+        "description": "The Bluetooth Link Layer control procedure code in subsys/bluetooth/controller/ll_sw/ull_llcp_conn_upd.c retains the received RX node while a Connection Update / Connection Parameter procedure waits f",
+        "id": "CVE-2026-19739",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19739"
+      },
+      {
+        "cvss": 6.5,
+        "description": "The Bluetooth Link Layer Control Procedure (LLCP) implementation for Connected Isochronous Stream (CIS) creation retains an RX node (ctx->node_ref.rx, marked NODE_RX_TYPE_RETAIN) so it can later be re",
+        "id": "CVE-2026-19738",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19738"
+      },
+      {
+        "cvss": 5.5,
+        "description": "i2s_esp32_trigger_check() in drivers/i2s/i2s_esp32.c validates the requested direction only for I2S_DIR_BOTH. The I2S_DIR_RX and I2S_DIR_TX branches read dev_cfg->rx.data->configured / dev_cfg->tx.dat",
+        "id": "CVE-2026-19737",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19737"
+      },
+      {
+        "cvss": 7.8,
+        "description": "The NXP MCUX TRNG entropy driver in drivers/entropy/entropy_mcux_trng.c passed the caller's byte count straight to the vendor SDK routine TRNG_GetRandomData(). On i.MX RT5xx and RT6xx parts the SDK co",
+        "id": "CVE-2026-19736",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19736"
+      },
+      {
+        "cvss": 4.8,
+        "description": "The RFC 6528 initial-sequence-number implementation in subsys/net/ip/tcp.c derived every TCP ISN from SHA-256(unique_key || four-tuple) plus a uptime-derived offset, where unique_key is a 128-bit secr",
+        "id": "CVE-2026-19735",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19735"
+      },
+      {
+        "cvss": 7.8,
+        "description": "The user-mode syscall verifiers z_vrfy_fuel_gauge_get_props() and z_vrfy_fuel_gauge_set_props() in drivers/fuel_gauge/fuel_gauge_syscall_handlers.c declared two variable-length arrays, union fuel_gaug",
+        "id": "CVE-2026-19669",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19669"
+      },
+      {
+        "cvss": 7.1,
+        "description": "net_route_ipv6_packet() in subsys/net/ip/route_ipv6.c resolved the nexthop's link-layer address with net_nbr_get_lladdr(nbr->idx) without first checking whether the neighbor cache entry actually had a",
+        "id": "CVE-2026-19577",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19577"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 97,
+      "HIGH": 224,
+      "LOW": 43,
+      "MEDIUM": 277,
+      "NONE": 0,
+      "UNSCORED": 6
+    }
+  },
+  "snapshot": {
+    "cves": 647,
+    "kevAdded": 0,
+    "knownExploited": 0,
+    "projects": 18,
+    "releases": 1,
+    "techEntries": 16
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1739
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 1,
+      "status": "partial",
+      "total": 54
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 647,
+      "status": "success",
+      "total": 647
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 16,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 6,
+      "tech": 10
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-11T11:30:00+00:00",
+        "source": "The Register",
+        "title": "AI systems are fully capable of carrying out nightmare attacks against infrastructure and nobody's ready",
+        "url": "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450"
+      },
+      {
+        "published_at": "2026-10-10T10:15:00+00:00",
+        "source": "The Register",
+        "title": "Two characters open up a world of typosquatting opportunities in Chromium browsers",
+        "url": "https://www.theregister.com/security/2026/10/10/two-characters-open-up-a-world-of-typosquatting-opportunities-in-chromium-browsers/5302383"
+      },
+      {
+        "published_at": "2026-10-10T08:14:00+00:00",
+        "source": "The Register",
+        "title": "Stack Overflow survey finds devs hooked on AI, but not totally sold on its judgment",
+        "url": "https://www.theregister.com/software/2026/10/10/stack-overflow-survey-finds-devs-hooked-on-ai-but-not-totally-sold-on-its-judgment/5301662"
+      },
+      {
+        "published_at": "2026-10-09T19:15:48+00:00",
+        "source": "The Register",
+        "title": "AWS AgentCore security undone by prompt requesting credentials",
+        "url": "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436"
+      },
+      {
+        "published_at": "2026-10-09T18:54:52+00:00",
+        "source": "Ars Technica",
+        "title": "PC shipments fall 20.1 percent in “sharpest decline” since Q1 2023",
+        "url": "https://arstechnica.com/information-technology/2026/10/pc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023/"
+      },
+      {
+        "published_at": "2026-10-09T18:27:34+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
+        "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/"
+      },
+      {
+        "published_at": "2026-10-09T16:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "Hack the World: Why hackathons are still the best place to learn to build",
+        "url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/"
+      },
+      {
+        "published_at": "2026-10-09T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Data Cloud",
+        "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+      },
+      {
+        "published_at": "2026-10-09T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Modernizing Unstructured Data Workflows: Alteryx Live Query meets Google Cloud BigQuery",
+        "url": "https://cloud.google.com/blog/products/data-analytics/modernize-unstructured-data-workloads-with-alteryx-and-bigquery/"
+      },
+      {
+        "published_at": "2026-10-09T13:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+        "url": "https://blog.cloudflare.com/workers-on-demand-profiling/"
+      }
+    ],
+    "sources": {
+      "Ars Technica": 2,
+      "Cloudflare": 3,
+      "GitHub Blog": 1,
+      "Google Cloud": 2,
+      "Microsoft": 1,
+      "The Register": 7
+    }
+  },
+  "window": {
+    "end": "2026-10-11T18:30:00+00:00",
+    "start": "2026-10-10T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

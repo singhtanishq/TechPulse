@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 647,
+      "date": "2026-10-12",
+      "kevAdded": 0,
+      "knownExploited": 0,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 16
+    },
+    {
       "cves": 439,
       "date": "2026-10-11",
       "kevAdded": 0,
@@ -227,16 +236,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-10",
-    "date": "2026-10-11",
-    "daysObserved": 25,
-    "generatedAt": "2026-10-10T21:56:57.637726+00:00",
-    "snapshots": 25,
+    "coveredDate": "2026-10-11",
+    "date": "2026-10-12",
+    "daysObserved": 26,
+    "generatedAt": "2026-10-11T22:18:56.665079+00:00",
+    "snapshots": 26,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 134,
+      "daily_growth": 164,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -244,11 +253,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 200706,
+      "stars": 200870,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 29,
+      "daily_growth": 33,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -256,11 +265,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143107,
+      "stars": 143140,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 9,
+      "daily_growth": 35,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -268,11 +277,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139174,
+      "stars": 139209,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 29,
+      "daily_growth": 24,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -280,11 +289,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128256,
+      "stars": 128280,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 11,
+      "daily_growth": 44,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -292,11 +301,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122271,
+      "stars": 122315,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 59,
+      "daily_growth": 60,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -304,11 +313,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 119649,
+      "stars": 119709,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 34,
+      "daily_growth": 51,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -316,11 +325,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111316,
+      "stars": 111367,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 135,
+      "daily_growth": 321,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -328,11 +337,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104123,
+      "stars": 104444,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 18,
+      "daily_growth": 34,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -340,11 +349,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97851,
+      "stars": 97885,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 8,
+      "daily_growth": 16,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -352,7 +361,7 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91364,
+      "stars": 91380,
       "url": "https://github.com/django/django"
     }
   ],
@@ -360,226 +369,226 @@
     {
       "kind": "minor",
       "project": "openai-python",
-      "publishedAt": "2026-10-09T20:49:22Z",
+      "publishedAt": "2026-10-11T17:38:54Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.28.0",
-      "version": "v3.28.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.29.0",
+      "version": "v3.29.0"
     }
   ],
   "security": {
-    "critical": 72,
-    "high": 144,
+    "critical": 97,
+    "high": 224,
     "kevCatalogTotal": 1739,
     "latest": [
       {
+        "cvss_score": 5.9,
+        "cvss_version": "3.1",
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Interuse i-Bos.\n\nThis issue affects i-Bos: 3.0.",
+        "id": "CVE-2026-59508",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:59.543",
+        "publishedAt": "2026-10-11T18:16:59.543",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Interuse i-Bos.\n\nThis issue affects i-Bos: 3.0.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59508"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "The Bluetooth LE host queues received L2CAP connection-oriented channel (CoC) data for deferred processing through a struct k_work embedded in the channel object (le_chan->rx_work, handler l2cap_rx_process()) whenever the channel uses a dynamic PSM (0x0080-0x00FF). Channel teardown in l2cap_chan_destroy() in subsys/bluetooth/host/l2cap.c cancels the retransmission-timeout work and drains the RX…",
+        "id": "CVE-2026-19935",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:59.410",
+        "publishedAt": "2026-10-11T18:16:59.410",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The Bluetooth LE host queues received L2CAP connection-oriented channel (CoC) data for deferred processing through a struct k_work embedded in the channel…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19935"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "The Link Layer Control Procedure (LLCP) implementation of the Zephyr software Bluetooth LE Controller retains the receive node that carried an accepted LL_PHY_UPDATE_IND so that it can later be reused for the host notification when the update instant is reached (llcp_rx_node_retain() in subsys/bluetooth/controller/ll_sw/ull_llcp.c, and the node is deliberately not recycled while marked…",
+        "id": "CVE-2026-19740",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:59.290",
+        "publishedAt": "2026-10-11T18:16:59.290",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The Link Layer Control Procedure (LLCP) implementation of the Zephyr software Bluetooth LE Controller retains the receive node that carried an accepted…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19740"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "The Bluetooth Link Layer control procedure code in subsys/bluetooth/controller/ll_sw/ull_llcp_conn_upd.c retains the received RX node while a Connection Update / Connection Parameter procedure waits for its instant, so the node can later carry the host notification (llcp_rx_node_retain(), which marks it NODE_RX_TYPE_RETAIN and thereby suppresses the normal recycling in ull.c). The default: arm of…",
+        "id": "CVE-2026-19739",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:59.170",
+        "publishedAt": "2026-10-11T18:16:59.170",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The Bluetooth Link Layer control procedure code in subsys/bluetooth/controller/ll_sw/ull_llcp_conn_upd.c retains the received RX node while a Connection Update…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19739"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "The Bluetooth Link Layer Control Procedure (LLCP) implementation for Connected Isochronous Stream (CIS) creation retains an RX node (ctx->node_ref.rx, marked NODE_RX_TYPE_RETAIN) so it can later be reused as the host notification — on the peripheral while awaiting the Host's reply to an LL_CIS_REQ, and on the central for the whole duration of a locally initiated CIS Create. In…",
+        "id": "CVE-2026-19738",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:59.050",
+        "publishedAt": "2026-10-11T18:16:59.050",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The Bluetooth Link Layer Control Procedure (LLCP) implementation for Connected Isochronous Stream (CIS) creation retains an RX node (ctx->node_ref.rx, marked…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19738"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "i2s_esp32_trigger_check() in drivers/i2s/i2s_esp32.c validates the requested direction only for I2S_DIR_BOTH. The I2S_DIR_RX and I2S_DIR_TX branches read dev_cfg->rx.data->configured / dev_cfg->tx.data->configured without first checking the stream pointers. The device instantiation macro I2S_ESP32_STREAM_INIT() sets both .conf and .data to NULL for a direction the devicetree does not describe, so…",
+        "id": "CVE-2026-19737",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:58.930",
+        "publishedAt": "2026-10-11T18:16:58.930",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "i2s_esp32_trigger_check() in drivers/i2s/i2s_esp32.c validates the requested direction only for I2S_DIR_BOTH. The I2S_DIR_RX and I2S_DIR_TX branches read…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19737"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "The NXP MCUX TRNG entropy driver in drivers/entropy/entropy_mcux_trng.c passed the caller's byte count straight to the vendor SDK routine TRNG_GetRandomData(). On i.MX RT5xx and RT6xx parts the SDK compiles its TRNG_SW_HEALTH_TESTS variant, which always copies whole 32-bit words and draws entropy rounded up to a multiple of 128 bytes. Its \"caller buffer is full\" guard tests dataSize == 0, so a…",
+        "id": "CVE-2026-19736",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:58.810",
+        "publishedAt": "2026-10-11T18:16:58.810",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The NXP MCUX TRNG entropy driver in drivers/entropy/entropy_mcux_trng.c passed the caller's byte count straight to the vendor SDK routine TRNG_GetRandomData()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19736"
+      },
+      {
+        "cvss_score": 4.8,
+        "cvss_version": "3.1",
+        "description": "The RFC 6528 initial-sequence-number implementation in subsys/net/ip/tcp.c derived every TCP ISN from SHA-256(unique_key || four-tuple) plus a uptime-derived offset, where unique_key is a 128-bit secret filled once by sys_csrand_get(). The return value of that call was discarded and the once guard was latched to true even when the call failed. Because sys_csrand_get() leaves the destination…",
+        "id": "CVE-2026-19735",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:58.683",
+        "publishedAt": "2026-10-11T18:16:58.683",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The RFC 6528 initial-sequence-number implementation in subsys/net/ip/tcp.c derived every TCP ISN from SHA-256(unique_key || four-tuple) plus a uptime-derived…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19735"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "The user-mode syscall verifiers z_vrfy_fuel_gauge_get_props() and z_vrfy_fuel_gauge_set_props() in drivers/fuel_gauge/fuel_gauge_syscall_handlers.c declared two variable-length arrays, union fuel_gauge_prop_val k_vals[len] and fuel_gauge_prop_t k_props[len], sized directly by the caller-supplied len argument. len is an unvalidated size_t taken straight from the syscall ABI, and the VLAs were…",
+        "id": "CVE-2026-19669",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T18:16:58.563",
+        "publishedAt": "2026-10-11T18:16:58.563",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The user-mode syscall verifiers z_vrfy_fuel_gauge_get_props() and z_vrfy_fuel_gauge_set_props() in drivers/fuel_gauge/fuel_gauge_syscall_handlers.c declared…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19669"
+      },
+      {
         "cvss_score": 7.1,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themeStek ThemeStek Extras for LabtechCO Theme themestek-labtechco-extras allows Reflected XSS.This issue affects ThemeStek Extras for LabtechCO Theme: from n/a through 8.4.",
-        "id": "CVE-2026-94160",
+        "description": "net_route_ipv6_packet() in subsys/net/ip/route_ipv6.c resolved the nexthop's link-layer address with net_nbr_get_lladdr(nbr->idx) without first checking whether the neighbor cache entry actually had a linked link-layer address. An unresolved neighbor carries idx == NET_NBR_LLADDR_UNKNOWN (0xff), and net_nbr_get_lladdr() in subsys/net/ip/nbr.c performs no runtime bounds check beyond a NET_ASSERT…",
+        "id": "CVE-2026-19577",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:17:01.090",
-        "publishedAt": "2026-10-10T17:17:01.090",
+        "lastModifiedAt": "2026-10-11T18:16:58.433",
+        "publishedAt": "2026-10-11T18:16:58.433",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themeStek ThemeStek Extras for LabtechCO Theme…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94160"
-      },
-      {
-        "cvss_score": 7.2,
-        "cvss_version": "3.1",
-        "description": "Deserialization of Untrusted Data vulnerability in bPlugins Super Video Player super-video-player allows Object Injection.This issue affects Super Video Player: from n/a through 1.8.13.",
-        "id": "CVE-2026-62044",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:17:00.803",
-        "publishedAt": "2026-10-10T17:17:00.803",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Deserialization of Untrusted Data vulnerability in bPlugins Super Video Player super-video-player allows Object Injection.This issue affects Super Video…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62044"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "1MCP Agent (@1mcp/agent) 0.20.0 through 0.39.0 contains an incorrect authorization vulnerability that allows authenticated clients to bypass OAuth tag-scope enforcement using negated advanced tag-filter expressions. Attackers holding a single-tag token can send a filter like not <granted-tag> to list and invoke tools on backend MCP servers outside their granted scopes.",
-        "id": "CVE-2026-108586",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:17:00.593",
-        "publishedAt": "2026-10-10T17:17:00.593",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "1MCP Agent (@1mcp/agent) 0.20.0 through 0.39.0 contains an incorrect authorization vulnerability that allows authenticated clients to bypass OAuth tag-scope…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108586"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "argocd-mcp (Argo CD MCP Server) through 0.9.0 contains a path traversal vulnerability in the delete_application tool that allows MCP clients to reach unintended API endpoints via unvalidated applicationName values. Attackers or prompt-injected models can supply dot-segment values like ../repositories/ to send authenticated DELETE requests deleting repositories, clusters, or projects within the…",
-        "id": "CVE-2026-108585",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:17:00.550",
-        "publishedAt": "2026-10-10T17:17:00.437",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "argocd-mcp (Argo CD MCP Server) through 0.9.0 contains a path traversal vulnerability in the delete_application tool that allows MCP clients to reach…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108585"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "Missing Authorization vulnerability in Web Impian Bayarcash WooCommerce bayarcash-wc allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Bayarcash WooCommerce: from n/a through 4.4.2.",
-        "id": "CVE-2026-106609",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:17:00.310",
-        "publishedAt": "2026-10-10T17:17:00.310",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Missing Authorization vulnerability in Web Impian Bayarcash WooCommerce bayarcash-wc allows Exploiting Incorrectly Configured Access Control Security…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106609"
-      },
-      {
-        "cvss_score": 7.2,
-        "cvss_version": "3.1",
-        "description": "Incorrect Privilege Assignment vulnerability in Automattic WooCommerce woocommerce allows Privilege Escalation.This issue affects WooCommerce: from 9.8.0 through 11.1.2.",
-        "id": "CVE-2026-106608",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:17:00.190",
-        "publishedAt": "2026-10-10T17:17:00.190",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Incorrect Privilege Assignment vulnerability in Automattic WooCommerce woocommerce allows Privilege Escalation.This issue affects WooCommerce: from 9.8.0…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106608"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Tickera Tickera tickera-event-ticketing-system allows Blind SQL Injection.This issue affects Tickera: from n/a through 3.6.0.6.",
-        "id": "CVE-2026-105889",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:17:00.063",
-        "publishedAt": "2026-10-10T17:17:00.063",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Tickera Tickera tickera-event-ticketing-system allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105889"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "Deserialization of Untrusted Data vulnerability in VillaTheme AFFI – Affiliate Marketing for WooCommerce affi-affiliate-marketing-for-woo allows Object Injection.This issue affects AFFI – Affiliate Marketing for WooCommerce: from n/a through 1.0.10.",
-        "id": "CVE-2026-104398",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:16:59.937",
-        "publishedAt": "2026-10-10T17:16:59.937",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Deserialization of Untrusted Data vulnerability in VillaTheme AFFI – Affiliate Marketing for WooCommerce affi-affiliate-marketing-for-woo allows Object…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104398"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "Missing Authorization vulnerability in VillaTheme GIFT4U gift4u-gift-cards-all-in-one-for-woo allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects GIFT4U: from n/a through 1.1.3.",
-        "id": "CVE-2026-103357",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:16:59.813",
-        "publishedAt": "2026-10-10T17:16:59.813",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Missing Authorization vulnerability in VillaTheme GIFT4U gift4u-gift-cards-all-in-one-for-woo allows Exploiting Incorrectly Configured Access Control Security…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103357"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in VillaTheme Thank You Page Customizer for WooCommerce woo-thank-you-page-customizer allows Code Injection.This issue affects Thank You Page Customizer for WooCommerce: from n/a through 1.2.3.",
-        "id": "CVE-2026-103071",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T17:16:59.673",
-        "publishedAt": "2026-10-10T17:16:59.673",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Control of Generation of Code ('Code Injection') vulnerability in VillaTheme Thank You Page Customizer for WooCommerce woo-thank-you-page-customizer…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103071"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "zotero-mcp 0.10.0 through 0.14.1 contains a server-side request forgery vulnerability that allows attackers to reach internal services because _fetch_embedded_metadata fetches URLs without destination validation. Attackers can steer the agent via prompt injection into calling zotero_add_by_url, causing requests to loopback, private, or link-local hosts directly or via redirects, leaking citation…",
-        "id": "CVE-2026-108583",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T16:16:31.667",
-        "publishedAt": "2026-10-10T16:16:31.667",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "zotero-mcp 0.10.0 through 0.14.1 contains a server-side request forgery vulnerability that allows attackers to reach internal services because…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108583"
+        "title": "net_route_ipv6_packet() in subsys/net/ip/route_ipv6.c resolved the nexthop's link-layer address with net_nbr_get_lladdr(nbr->idx) without first checking…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19577"
       },
       {
         "cvss_score": 6.8,
-        "cvss_version": "4.0",
-        "description": "GenOffice through 0.11.505 contains an incorrect permissions vulnerability in its HTTP MCP server file store that allows local unprivileged users to read uploaded and generated documents. Attackers can list the world-readable genoffice-mcp-http directory under the system temporary directory to read client uploads and converted outputs, bypassing the HTTP bearer token.",
-        "id": "CVE-2026-108582",
+        "cvss_version": "3.1",
+        "description": "The Goodix GT9xx input driver in drivers/input/input_gt911.c reads the touch point count from the controller's status register and masks it with GT911_TOUCH_POINTS_MSK (0x0F), yielding a value of 0..15. In gt911_process() that value is used directly as the loop bound for filling point_reg[], a stack array sized to CONFIG_INPUT_GT911_MAX_TOUCH_POINTS, whose Kconfig range is 1..5 with a default of…",
+        "id": "CVE-2026-19576",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T16:16:31.520",
-        "publishedAt": "2026-10-10T16:16:31.520",
+        "lastModifiedAt": "2026-10-11T18:16:58.300",
+        "publishedAt": "2026-10-11T18:16:58.300",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "GenOffice through 0.11.505 contains an incorrect permissions vulnerability in its HTTP MCP server file store that allows local unprivileged users to read…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108582"
+        "title": "The Goodix GT9xx input driver in drivers/input/input_gt911.c reads the touch point count from the controller's status register and masks it with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19576"
       },
       {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "TencentCloud Octop through 1.0.2b6 contains a missing authorization vulnerability that allows authenticated low-privileged users to read stored provider API keys via GET /api/providers and GET /api/voice/providers. Attackers can query these endpoints, which only validate the JWT, to obtain plaintext LLM and voice provider API keys and abuse the upstream provider accounts.",
-        "id": "CVE-2026-108581",
+        "cvss_score": 3.4,
+        "cvss_version": "3.1",
+        "description": "The zbus proxy agent IPC backend in subsys/zbus/proxy_agent/zbus_proxy_agent_ipc.c logged the channel name of a rejected inter-domain frame with a plain %s conversion. The frame type struct zbus_proxy_msg carries a fixed-size channel_name[] array as its last member, and nothing in the transport guarantees the array is NUL-terminated. The only code that verifies termination is…",
+        "id": "CVE-2026-18418",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T16:16:31.380",
-        "publishedAt": "2026-10-10T16:16:31.380",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "TencentCloud Octop through 1.0.2b6 contains a missing authorization vulnerability that allows authenticated low-privileged users to read stored provider API…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108581"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "AniWorld Downloader before 5.3.0 contains an improper restriction of authentication attempts vulnerability in the WebUI /login POST handler that allows unauthenticated attackers to guess passwords without throttling. Attackers can enumerate usernames through verify_user response timing and brute-force passwords on exposed WebUI instances to take over accounts.",
-        "id": "CVE-2026-108580",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T16:16:31.240",
-        "publishedAt": "2026-10-10T16:16:31.240",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "AniWorld Downloader before 5.3.0 contains an improper restriction of authentication attempts vulnerability in the WebUI /login POST handler that allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108580"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "OpenPanel through 2.3.0 contains a CSV formula injection vulnerability that allows unauthenticated attackers to embed spreadsheet formulas by supplying crafted profile IDs to the /track endpoint. Attackers can send tracking events with profile IDs like =HYPERLINK(...) matching a cohort, so exported cohort CSVs execute formulas that exfiltrate adjacent cell data.",
-        "id": "CVE-2026-108579",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-10T16:16:31.193",
-        "publishedAt": "2026-10-10T16:16:31.080",
+        "lastModifiedAt": "2026-10-11T18:16:58.113",
+        "publishedAt": "2026-10-11T18:16:58.113",
         "severity": "LOW",
         "source": "NVD",
-        "title": "OpenPanel through 2.3.0 contains a CSV formula injection vulnerability that allows unauthenticated attackers to embed spreadsheet formulas by supplying crafted…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108579"
+        "title": "The zbus proxy agent IPC backend in subsys/zbus/proxy_agent/zbus_proxy_agent_ipc.c logged the channel name of a rejected inter-domain frame with a plain %s…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18418"
+      },
+      {
+        "cvss_score": 9.1,
+        "cvss_version": "3.1",
+        "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 7.16.1. This is due to the plugin not properly verifying authorization before dispatching a WordPress action hook whose name is taken from an attacker-supplied form-field value (via the notification email_message [field] placeholder and the {action_hook,...} dynamic-data…",
+        "id": "CVE-2026-97670",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T17:17:08.290",
+        "publishedAt": "2026-10-10T05:16:40.850",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 7.16.1. This is due to the plugin…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97670"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "The SiteOrigin Widgets Bundle plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.74.3 via the get_instance_css function. This makes it possible for authenticated attackers, with contributor-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information. The widget's normal…",
+        "id": "CVE-2026-97348",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T17:17:08.147",
+        "publishedAt": "2026-10-10T07:16:42.900",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The SiteOrigin Widgets Bundle plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.74.3 via the get_instance_css…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97348"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to generic SQL Injection via 'booking[service_id]' Parameter in all versions up to, and including, 5.7.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to…",
+        "id": "CVE-2026-96662",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-11T17:17:08.007",
+        "publishedAt": "2026-10-10T08:17:08.033",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to generic SQL Injection via…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96662"
       }
     ],
-    "low": 19,
-    "medium": 154,
+    "low": 43,
+    "medium": 277,
     "none": 0,
-    "unscored": 50
+    "unscored": 6
   },
   "snapshot": {
-    "cves": 439,
+    "cves": 647,
     "kevAdded": 0,
-    "knownExploited": 2,
+    "knownExploited": 0,
     "projects": 18,
     "releases": 1,
-    "techEntries": 30
+    "techEntries": 16
   },
   "sources": {
     "opensource": {
@@ -607,21 +616,29 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 439,
+        "inWindow": 647,
         "status": "success",
-        "total": 439
+        "total": 647
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 30,
+        "inWindow": 16,
         "status": "success",
         "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-10-11T11:30:00+00:00",
+      "source": "The Register",
+      "summary": "Meanwhile, AI agents move robotic arms, 'make OT device operator screens lie'",
+      "title": "AI systems are fully capable of carrying out nightmare attacks against infrastructure and nobody's ready",
+      "url": "https://www.theregister.com/security/2026/10/11/ai-systems-are-fully-capable-of-carrying-out-nightmare-attacks-against-infrastructure-and-nobodys-ready/5302450"
+    },
     {
       "category": "security",
       "publishedAt": "2026-10-10T10:15:00+00:00",
@@ -733,14 +750,6 @@
       "summary": "Infecting devices from 2021 until the FBI stepped in",
       "title": "US disrupts Chinese hacking tools as 7 govts warn of PRC spies stealing sensitive data worldwide",
       "url": "https://www.theregister.com/security/2026/10/08/us-disrupts-chinese-hacking-tools-as-7-govts-warn-of-prc-spies-stealing-sensitive-data-worldwide/5302107"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-08T19:57:17+00:00",
-      "source": "Ars Technica",
-      "summary": "Free SSL/TLS certificate lifetimes reduce to 64 days in February.",
-      "title": "Let's Encrypt cuts certificate lifetimes to 64 days starting February 2027",
-      "url": "https://arstechnica.com/gadgets/2026/10/lets-encrypt-cuts-certificate-lifetimes-to-64-days-starting-february-2027/"
     }
   ]
 }
