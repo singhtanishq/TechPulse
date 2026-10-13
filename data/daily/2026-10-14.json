@@ -1,0 +1,340 @@
+{
+  "coveredIstDay": "2026-10-13",
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-13T23:01:43.941065+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 32,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200934,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 65,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143216,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 104,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139336,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 25,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128333,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 118,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122456,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 151,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119912,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 56,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111492,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 110,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104851,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": -10,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97887,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 18,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91424,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "framework",
+        "published_at": "2026-10-13T13:25:30Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v12.70.0",
+        "version": "v12.70.0"
+      },
+      {
+        "project": "framework",
+        "published_at": "2026-10-13T13:22:37Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v13.36.0",
+        "version": "v13.36.0"
+      },
+      {
+        "project": "core",
+        "published_at": "2026-10-13T07:43:25Z",
+        "repository": "vuejs/core",
+        "url": "https://github.com/vuejs/core/releases/tag/v3.5.44",
+        "version": "v3.5.44"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-96951",
+        "date_added": "2026-10-13",
+        "product": "Windows",
+        "vendor_project": "Microsoft",
+        "vulnerability_name": "Microsoft Windows Command Injection Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-104935",
+        "date_added": "2026-10-13",
+        "product": "Connect Secure",
+        "vendor_project": "Ivanti",
+        "vulnerability_name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 6.5,
+        "description": "Missing authorization in Network in Google Chrome prior to 155.0.8059.39 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium ",
+        "id": "CVE-2026-106267",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106267"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Confused deputy in Omnibox in Google Chrome prior to 155.0.8059.39 allowed a remote attacker to bypass web origin policy via crafted network traffic. (Chromium security severity: Medium)",
+        "id": "CVE-2026-106286",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106286"
+      },
+      {
+        "cvss": 9.8,
+        "description": "A vulnerability in Brocade Fabric OS software v9.1.1, v9.0.1e, v8.2.3c, v7.4.2j, and earlier versions could allow a remote unauthenticated attacker to execute on a Brocade Fabric OS switch commands ca",
+        "id": "CVE-2022-33186",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-33186"
+      },
+      {
+        "cvss": 6.5,
+        "description": "A insufficiently protected credentials vulnerability in fixed in curl 7.83.0 might leak authentication or cookie header data on HTTP redirects to the same host but another port number.",
+        "id": "CVE-2022-27776",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-27776"
+      },
+      {
+        "cvss": 7.5,
+        "description": "An information disclosure vulnerability exists in curl 7.65.0 to 7.82.0 are vulnerable that by using an IPv6 address that was in the connection pool but with a different zone id it could reuse a conne",
+        "id": "CVE-2022-27775",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-27775"
+      },
+      {
+        "cvss": 5.7,
+        "description": "An insufficiently protected credentials vulnerability exists in curl 4.9 to and include curl 7.82.0 are affected that could allow an attacker to extract credentials when follows HTTP(S) redirects is u",
+        "id": "CVE-2022-27774",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-27774"
+      },
+      {
+        "cvss": 8.1,
+        "description": "An improper authentication vulnerability exists in curl 7.33.0 to and including 7.82.0 which might allow reuse OAUTH2-authenticated connections without properly making sure that the connection was aut",
+        "id": "CVE-2022-22576",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-22576"
+      },
+      {
+        "cvss": 7.8,
+        "description": "A heap out-of-bounds write affecting Linux since v2.6.19-rc1 was discovered in net/netfilter/x_tables.c. This allows an attacker to gain privileges or cause a DoS (via heap memory corruption) through ",
+        "id": "CVE-2021-22555",
+        "known_exploited": true,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22555"
+      },
+      {
+        "cvss": 5.5,
+        "description": "ext/fts3/fts3_snippet.c in SQLite before 3.32.0 has a NULL pointer dereference via a crafted matchinfo() query.",
+        "id": "CVE-2020-13632",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13632"
+      },
+      {
+        "cvss": 5.5,
+        "description": "SQLite before 3.32.0 allows a virtual table to be renamed to the name of one of its shadow tables, related to alter.c and build.c.",
+        "id": "CVE-2020-13631",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13631"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 251,
+      "HIGH": 840,
+      "LOW": 168,
+      "MEDIUM": 714,
+      "NONE": 0,
+      "UNSCORED": 87
+    }
+  },
+  "snapshot": {
+    "cves": 2060,
+    "kevAdded": 2,
+    "knownExploited": 2,
+    "projects": 18,
+    "releases": 3,
+    "techEntries": 28
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 2,
+      "status": "success",
+      "total": 1741
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 3,
+      "status": "partial",
+      "total": 55
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 2060,
+      "status": "success",
+      "total": 2060
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 28,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 10,
+      "tech": 18
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-13T17:56:33+00:00",
+        "source": "GitHub Blog",
+        "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+        "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/"
+      },
+      {
+        "published_at": "2026-10-13T17:18:00+00:00",
+        "source": "The Register",
+        "title": "Claude submitted fake murder tip to Philly police during summertime testing",
+        "url": "https://www.theregister.com/security/2026/10/13/claude-submitted-fake-murder-tip-to-philly-police-during-summertime-testing/5302842"
+      },
+      {
+        "published_at": "2026-10-13T16:49:00+00:00",
+        "source": "The Register",
+        "title": "Anthropic conjures another threat that doesn't exist yet to stoke fears of AI apocalypse",
+        "url": "https://www.theregister.com/ai-and-ml/2026/10/13/anthropic-conjures-another-threat-that-doesnt-exist-yet-to-stoke-fears-of-ai-apocalypse/5302866"
+      },
+      {
+        "published_at": "2026-10-13T16:20:18+00:00",
+        "source": "Cloudflare",
+        "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
+        "url": "https://blog.cloudflare.com/d1-control-plane/"
+      },
+      {
+        "published_at": "2026-10-13T16:01:00+00:00",
+        "source": "Meta",
+        "title": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
+        "url": "https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai/"
+      },
+      {
+        "published_at": "2026-10-13T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Cross-cloud conversational analytics made simple with open standards",
+        "url": "https://cloud.google.com/blog/products/data-analytics/cross-cloud-conversational-analytics-with-borderless-lakehouse/"
+      },
+      {
+        "published_at": "2026-10-13T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Gemini 4 Argon available on Google Cloud, built to help solve your business’ hardest problems",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-13T15:59:06+00:00",
+        "source": "AWS",
+        "title": "AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/"
+      },
+      {
+        "published_at": "2026-10-13T15:51:41+00:00",
+        "source": "Cloudflare",
+        "title": "Rewinding the exponential: How we keep hardware usage down",
+        "url": "https://blog.cloudflare.com/rewinding-the-exponential/"
+      },
+      {
+        "published_at": "2026-10-13T12:22:00+00:00",
+        "source": "Google Cloud",
+        "title": "One Agent Development Kit, five languages",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/one-agent-development-kit-five-languages/"
+      }
+    ],
+    "sources": {
+      "AWS": 2,
+      "Cloudflare": 3,
+      "GitHub Blog": 2,
+      "Google Cloud": 7,
+      "Meta": 4,
+      "The Register": 10
+    }
+  },
+  "window": {
+    "end": "2026-10-13T18:30:00+00:00",
+    "start": "2026-10-12T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
