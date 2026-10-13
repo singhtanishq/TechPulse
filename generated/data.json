@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1439,
+      "date": "2026-10-13",
+      "kevAdded": 0,
+      "knownExploited": 1,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 16
+    },
+    {
       "cves": 647,
       "date": "2026-10-12",
       "kevAdded": 0,
@@ -236,16 +245,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-11",
-    "date": "2026-10-12",
-    "daysObserved": 26,
-    "generatedAt": "2026-10-11T22:18:56.665079+00:00",
-    "snapshots": 26,
+    "coveredDate": "2026-10-12",
+    "date": "2026-10-13",
+    "daysObserved": 27,
+    "generatedAt": "2026-10-13T00:56:05.299378+00:00",
+    "snapshots": 27,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 164,
+      "daily_growth": 32,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -253,11 +262,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 200870,
+      "stars": 200902,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 33,
+      "daily_growth": 11,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -265,11 +274,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143140,
+      "stars": 143151,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 35,
+      "daily_growth": 23,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -277,11 +286,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139209,
+      "stars": 139232,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 24,
+      "daily_growth": 28,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -289,11 +298,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128280,
+      "stars": 128308,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 44,
+      "daily_growth": 23,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -301,11 +310,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122315,
+      "stars": 122338,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 60,
+      "daily_growth": 52,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -313,11 +322,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 119709,
+      "stars": 119761,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 51,
+      "daily_growth": 69,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -325,11 +334,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111367,
+      "stars": 111436,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 321,
+      "daily_growth": 297,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -337,11 +346,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104444,
+      "stars": 104741,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 34,
+      "daily_growth": 12,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -349,11 +358,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97885,
+      "stars": 97897,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 26,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -361,233 +370,223 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91380,
+      "stars": 91406,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-10-11T17:38:54Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.29.0",
-      "version": "v3.29.0"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 97,
-    "high": 224,
+    "critical": 128,
+    "high": 454,
     "kevCatalogTotal": 1739,
     "latest": [
       {
-        "cvss_score": 5.9,
-        "cvss_version": "3.1",
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Interuse i-Bos.\n\nThis issue affects i-Bos: 3.0.",
-        "id": "CVE-2026-59508",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "ExLlamaV3’s EXL3 loader uses an untrusted, model-supplied index to select a CUDA kernel without first verifying that the index is within bounds. A malicious model can force the code to read and invoke an out‑of‑range function pointer, resulting in a reproducible crash. Under specific conditions involving certain host memory layouts, it may be possible for an attacker to exploit this vulnerability…",
+        "id": "CVE-2026-84286",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:59.543",
-        "publishedAt": "2026-10-11T18:16:59.543",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-12T18:17:24.160",
+        "publishedAt": "2026-10-12T17:17:35.873",
+        "severity": null,
         "source": "NVD",
-        "title": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Interuse i-Bos.\n\nThis issue affects i-Bos: 3.0.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59508"
+        "title": "ExLlamaV3’s EXL3 loader uses an untrusted, model-supplied index to select a CUDA kernel without first verifying that the index is within bounds. A malicious…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84286"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 9.9,
         "cvss_version": "3.1",
-        "description": "The Bluetooth LE host queues received L2CAP connection-oriented channel (CoC) data for deferred processing through a struct k_work embedded in the channel object (le_chan->rx_work, handler l2cap_rx_process()) whenever the channel uses a dynamic PSM (0x0080-0x00FF). Channel teardown in l2cap_chan_destroy() in subsys/bluetooth/host/l2cap.c cancels the retransmission-timeout work and drains the RX…",
-        "id": "CVE-2026-19935",
+        "description": "obsidian-tc is a governed, agent-ready Model Context Protocol server for Obsidian vaults. Prior to 1.3.1, tool dispatch does not compare the caller-controlled input.vault value with the vault bound to the caller, the JSON Web Token (JWT) has no vault claim, and the folder access-control list is shared globally. Any valid token can therefore select another configured vault and read, write, or…",
+        "id": "CVE-2026-77366",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:59.410",
-        "publishedAt": "2026-10-11T18:16:59.410",
+        "lastModifiedAt": "2026-10-12T18:17:23.830",
+        "publishedAt": "2026-10-12T18:17:23.830",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "obsidian-tc is a governed, agent-ready Model Context Protocol server for Obsidian vaults. Prior to 1.3.1, tool dispatch does not compare the caller-controlled…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77366"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "obsidian-tc is a governed, agent-ready Model Context Protocol server for Obsidian vaults. Prior to 1.3.1, undefined readPaths and writePaths settings allow all paths, strictReadDefault does not protect direct requests, and the .obsidian, .git, and .trash control directories are excluded only during enumeration. An authenticated caller can directly read sensitive files such as…",
+        "id": "CVE-2026-77364",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-12T18:17:23.677",
+        "publishedAt": "2026-10-12T18:17:23.677",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "obsidian-tc is a governed, agent-ready Model Context Protocol server for Obsidian vaults. Prior to 1.3.1, undefined readPaths and writePaths settings allow all…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77364"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "obsidian-tc is a governed, agent-ready Model Context Protocol server for Obsidian vaults. Prior to 1.3.1, the Streamable HTTP transport does not validate the Host or Origin header or enable DNS-rebinding protection. When the documented loopback configuration uses auth.mode set to none, a malicious web page can send requests to the local MCP endpoint and receive unrestricted vault access through…",
+        "id": "CVE-2026-77363",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-12T18:17:23.513",
+        "publishedAt": "2026-10-12T18:17:23.513",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "The Bluetooth LE host queues received L2CAP connection-oriented channel (CoC) data for deferred processing through a struct k_work embedded in the channel…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19935"
+        "title": "obsidian-tc is a governed, agent-ready Model Context Protocol server for Obsidian vaults. Prior to 1.3.1, the Streamable HTTP transport does not validate the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77363"
       },
       {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "The Link Layer Control Procedure (LLCP) implementation of the Zephyr software Bluetooth LE Controller retains the receive node that carried an accepted LL_PHY_UPDATE_IND so that it can later be reused for the host notification when the update instant is reached (llcp_rx_node_retain() in subsys/bluetooth/controller/ll_sw/ull_llcp.c, and the node is deliberately not recycled while marked…",
-        "id": "CVE-2026-19740",
+        "cvss_score": 5.2,
+        "cvss_version": "4.0",
+        "description": "An out-of-bounds write vulnerability in the SPI host command interface of Semtech's LR11xx transceiver firmware where a crafted SPI host command with an oversized length field can cause the firmware to write up to 254 arbitrary bytes past the bounds of an internal, non-persistent memory buffer. Exploitation requires physical access to the device and logical access to the SPI bus.",
+        "id": "CVE-2026-6232",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:59.290",
-        "publishedAt": "2026-10-11T18:16:59.290",
+        "lastModifiedAt": "2026-10-12T18:17:23.333",
+        "publishedAt": "2026-10-12T18:17:23.333",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "The Link Layer Control Procedure (LLCP) implementation of the Zephyr software Bluetooth LE Controller retains the receive node that carried an accepted…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19740"
+        "title": "An out-of-bounds write vulnerability in the SPI host command interface of Semtech's LR11xx transceiver firmware where a crafted SPI host command with an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6232"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 7.8,
         "cvss_version": "3.1",
-        "description": "The Bluetooth Link Layer control procedure code in subsys/bluetooth/controller/ll_sw/ull_llcp_conn_upd.c retains the received RX node while a Connection Update / Connection Parameter procedure waits for its instant, so the node can later carry the host notification (llcp_rx_node_retain(), which marks it NODE_RX_TYPE_RETAIN and thereby suppresses the normal recycling in ull.c). The default: arm of…",
-        "id": "CVE-2026-19739",
+        "description": "A command injection flaw in PCP's linux_sockets PMDA allows malicious shell metacharacters via the network.persocket.filter metric.\nThis failed validation lets attackers execute arbitrary commands as the PMDA user when metrics refresh.",
+        "id": "CVE-2026-16524",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:59.170",
-        "publishedAt": "2026-10-11T18:16:59.170",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-12T18:17:22.787",
+        "publishedAt": "2026-07-30T06:25:02.460",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "The Bluetooth Link Layer control procedure code in subsys/bluetooth/controller/ll_sw/ull_llcp_conn_upd.c retains the received RX node while a Connection Update…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19739"
+        "title": "A command injection flaw in PCP's linux_sockets PMDA allows malicious shell metacharacters via the network.persocket.filter metric.\nThis failed validation lets…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16524"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 5.9,
         "cvss_version": "3.1",
-        "description": "The Bluetooth Link Layer Control Procedure (LLCP) implementation for Connected Isochronous Stream (CIS) creation retains an RX node (ctx->node_ref.rx, marked NODE_RX_TYPE_RETAIN) so it can later be reused as the host notification — on the peripheral while awaiting the Host's reply to an LL_CIS_REQ, and on the central for the whole duration of a locally initiated CIS Create. In…",
-        "id": "CVE-2026-19738",
+        "description": "Integer wraparound in psqlODBC SQLBindParameter allows an application, or an attacker who controls how many parameters the application binds on one statement, to corrupt heap memory. psqlODBC stores the binding count in a signed 16-bit field. Binding parameter number 32768 wraps that count to -32768. Binding parameter 32769 then writes about 2.5 MB of zeros starting 1.25 MB before the binding…",
+        "id": "CVE-2026-109448",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:59.050",
-        "publishedAt": "2026-10-11T18:16:59.050",
+        "lastModifiedAt": "2026-10-12T18:17:22.633",
+        "publishedAt": "2026-10-12T18:17:22.633",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "The Bluetooth Link Layer Control Procedure (LLCP) implementation for Connected Isochronous Stream (CIS) creation retains an RX node (ctx->node_ref.rx, marked…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19738"
+        "title": "Integer wraparound in psqlODBC SQLBindParameter allows an application, or an attacker who controls how many parameters the application binds on one statement…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109448"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this candidate have been removed to prevent accidental usage.",
+        "id": "CVE-2026-109222",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-12T18:17:22.543",
+        "publishedAt": "2026-10-12T18:17:22.543",
+        "severity": null,
+        "source": "NVD",
+        "title": "Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109222"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was identified in Edimax BR-6208AC 1.32. Impacted is an unknown function of the file /goform/formWlanMP. The manipulation of the argument readE2P leads to command injection. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only…",
+        "id": "CVE-2026-108918",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-12T18:17:22.353",
+        "publishedAt": "2026-10-12T18:17:22.353",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "A vulnerability was identified in Edimax BR-6208AC 1.32. Impacted is an unknown function of the file /goform/formWlanMP. The manipulation of the argument…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108918"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was determined in Edimax BR-6208AC 1.32. This issue affects some unknown processing of the file /goform/formAutoFWupgrade. Executing a manipulation of the argument tftpsIP can lead to command injection. The attack may be performed from remote. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in…",
+        "id": "CVE-2026-108917",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-12T18:17:22.163",
+        "publishedAt": "2026-10-12T18:17:22.163",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "A vulnerability was determined in Edimax BR-6208AC 1.32. This issue affects some unknown processing of the file /goform/formAutoFWupgrade. Executing a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108917"
       },
       {
         "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "i2s_esp32_trigger_check() in drivers/i2s/i2s_esp32.c validates the requested direction only for I2S_DIR_BOTH. The I2S_DIR_RX and I2S_DIR_TX branches read dev_cfg->rx.data->configured / dev_cfg->tx.data->configured without first checking the stream pointers. The device instantiation macro I2S_ESP32_STREAM_INIT() sets both .conf and .data to NULL for a direction the devicetree does not describe, so…",
-        "id": "CVE-2026-19737",
+        "cvss_version": "4.0",
+        "description": "A vulnerability was found in Edimax BR-6208AC 1.32. This vulnerability affects unknown code of the file /goform/formAccept. Performing a manipulation of the argument submit-url results in command injection. The attack is possible to be carried out remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way. This…",
+        "id": "CVE-2026-108916",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:58.930",
-        "publishedAt": "2026-10-11T18:16:58.930",
+        "lastModifiedAt": "2026-10-12T18:17:21.967",
+        "publishedAt": "2026-10-12T18:17:21.967",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "i2s_esp32_trigger_check() in drivers/i2s/i2s_esp32.c validates the requested direction only for I2S_DIR_BOTH. The I2S_DIR_RX and I2S_DIR_TX branches read…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19737"
+        "title": "A vulnerability was found in Edimax BR-6208AC 1.32. This vulnerability affects unknown code of the file /goform/formAccept. Performing a manipulation of the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108916"
+      },
+      {
+        "cvss_score": 8.6,
+        "cvss_version": "4.0",
+        "description": "A vulnerability has been found in Edimax BR-6208AC 1.32. This affects an unknown part of the file /goform/formWlanMP. Such manipulation of the argument ateBW leads to buffer overflow. The attack can be executed remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way. This vulnerability only affects…",
+        "id": "CVE-2026-108915",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-12T18:17:21.770",
+        "publishedAt": "2026-10-12T18:17:21.770",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A vulnerability has been found in Edimax BR-6208AC 1.32. This affects an unknown part of the file /goform/formWlanMP. Such manipulation of the argument ateBW…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108915"
       },
       {
         "cvss_score": 7.8,
         "cvss_version": "3.1",
-        "description": "The NXP MCUX TRNG entropy driver in drivers/entropy/entropy_mcux_trng.c passed the caller's byte count straight to the vendor SDK routine TRNG_GetRandomData(). On i.MX RT5xx and RT6xx parts the SDK compiles its TRNG_SW_HEALTH_TESTS variant, which always copies whole 32-bit words and draws entropy rounded up to a multiple of 128 bytes. Its \"caller buffer is full\" guard tests dataSize == 0, so a…",
-        "id": "CVE-2026-19736",
+        "description": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as the key() process, result in tree fragments, this corruption prevents the proper cleanup of ID attributes. As a result, the system may access freed memory, causing crashes or enabling attackers to trigger heap corruption.",
+        "id": "CVE-2025-7425",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:58.810",
-        "publishedAt": "2026-10-11T18:16:58.810",
+        "lastModifiedAt": "2026-10-12T18:17:20.120",
+        "publishedAt": "2025-07-10T14:15:27.877",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "The NXP MCUX TRNG entropy driver in drivers/entropy/entropy_mcux_trng.c passed the caller's byte count straight to the vendor SDK routine TRNG_GetRandomData()…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19736"
-      },
-      {
-        "cvss_score": 4.8,
-        "cvss_version": "3.1",
-        "description": "The RFC 6528 initial-sequence-number implementation in subsys/net/ip/tcp.c derived every TCP ISN from SHA-256(unique_key || four-tuple) plus a uptime-derived offset, where unique_key is a 128-bit secret filled once by sys_csrand_get(). The return value of that call was discarded and the once guard was latched to true even when the call failed. Because sys_csrand_get() leaves the destination…",
-        "id": "CVE-2026-19735",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:58.683",
-        "publishedAt": "2026-10-11T18:16:58.683",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "The RFC 6528 initial-sequence-number implementation in subsys/net/ip/tcp.c derived every TCP ISN from SHA-256(unique_key || four-tuple) plus a uptime-derived…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19735"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "The user-mode syscall verifiers z_vrfy_fuel_gauge_get_props() and z_vrfy_fuel_gauge_set_props() in drivers/fuel_gauge/fuel_gauge_syscall_handlers.c declared two variable-length arrays, union fuel_gauge_prop_val k_vals[len] and fuel_gauge_prop_t k_props[len], sized directly by the caller-supplied len argument. len is an unvalidated size_t taken straight from the syscall ABI, and the VLAs were…",
-        "id": "CVE-2026-19669",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:58.563",
-        "publishedAt": "2026-10-11T18:16:58.563",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The user-mode syscall verifiers z_vrfy_fuel_gauge_get_props() and z_vrfy_fuel_gauge_set_props() in drivers/fuel_gauge/fuel_gauge_syscall_handlers.c declared…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19669"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "net_route_ipv6_packet() in subsys/net/ip/route_ipv6.c resolved the nexthop's link-layer address with net_nbr_get_lladdr(nbr->idx) without first checking whether the neighbor cache entry actually had a linked link-layer address. An unresolved neighbor carries idx == NET_NBR_LLADDR_UNKNOWN (0xff), and net_nbr_get_lladdr() in subsys/net/ip/nbr.c performs no runtime bounds check beyond a NET_ASSERT…",
-        "id": "CVE-2026-19577",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:58.433",
-        "publishedAt": "2026-10-11T18:16:58.433",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "net_route_ipv6_packet() in subsys/net/ip/route_ipv6.c resolved the nexthop's link-layer address with net_nbr_get_lladdr(nbr->idx) without first checking…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19577"
-      },
-      {
-        "cvss_score": 6.8,
-        "cvss_version": "3.1",
-        "description": "The Goodix GT9xx input driver in drivers/input/input_gt911.c reads the touch point count from the controller's status register and masks it with GT911_TOUCH_POINTS_MSK (0x0F), yielding a value of 0..15. In gt911_process() that value is used directly as the loop bound for filling point_reg[], a stack array sized to CONFIG_INPUT_GT911_MAX_TOUCH_POINTS, whose Kconfig range is 1..5 with a default of…",
-        "id": "CVE-2026-19576",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:58.300",
-        "publishedAt": "2026-10-11T18:16:58.300",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "The Goodix GT9xx input driver in drivers/input/input_gt911.c reads the touch point count from the controller's status register and masks it with…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19576"
-      },
-      {
-        "cvss_score": 3.4,
-        "cvss_version": "3.1",
-        "description": "The zbus proxy agent IPC backend in subsys/zbus/proxy_agent/zbus_proxy_agent_ipc.c logged the channel name of a rejected inter-domain frame with a plain %s conversion. The frame type struct zbus_proxy_msg carries a fixed-size channel_name[] array as its last member, and nothing in the transport guarantees the array is NUL-terminated. The only code that verifies termination is…",
-        "id": "CVE-2026-18418",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T18:16:58.113",
-        "publishedAt": "2026-10-11T18:16:58.113",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "The zbus proxy agent IPC backend in subsys/zbus/proxy_agent/zbus_proxy_agent_ipc.c logged the channel name of a rejected inter-domain frame with a plain %s…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18418"
-      },
-      {
-        "cvss_score": 9.1,
-        "cvss_version": "3.1",
-        "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 7.16.1. This is due to the plugin not properly verifying authorization before dispatching a WordPress action hook whose name is taken from an attacker-supplied form-field value (via the notification email_message [field] placeholder and the {action_hook,...} dynamic-data…",
-        "id": "CVE-2026-97670",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T17:17:08.290",
-        "publishedAt": "2026-10-10T05:16:40.850",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 7.16.1. This is due to the plugin…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97670"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "The SiteOrigin Widgets Bundle plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.74.3 via the get_instance_css function. This makes it possible for authenticated attackers, with contributor-level access and above, to read the contents of arbitrary files on the server, which can contain sensitive information. The widget's normal…",
-        "id": "CVE-2026-97348",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T17:17:08.147",
-        "publishedAt": "2026-10-10T07:16:42.900",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "The SiteOrigin Widgets Bundle plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.74.3 via the get_instance_css…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97348"
+        "title": "A flaw was found in libxslt where the attribute type, atype, flags are modified in a way that corrupts internal memory management. When XSLT functions, such as…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-7425"
       },
       {
         "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to generic SQL Injection via 'booking[service_id]' Parameter in all versions up to, and including, 5.7.2 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to…",
-        "id": "CVE-2026-96662",
+        "description": "A flaw was found in the libxslt library. The same memory field, psvi, is used for both stylesheet and input data, which can lead to type confusion during XML transformations. This vulnerability allows an attacker to crash the application or corrupt memory. In some cases, it may lead to denial of service or unexpected behavior.",
+        "id": "CVE-2025-7424",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-11T17:17:08.007",
-        "publishedAt": "2026-10-10T08:17:08.033",
+        "lastModifiedAt": "2026-10-12T18:17:19.843",
+        "publishedAt": "2025-07-10T14:15:27.573",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "The Appointment Booking Plugin – LatePoint | Calendar & Scheduling for WordPress plugin for WordPress is vulnerable to generic SQL Injection via…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96662"
+        "title": "A flaw was found in the libxslt library. The same memory field, psvi, is used for both stylesheet and input data, which can lead to type confusion during XML…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-7424"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "CodeAstro Membership Management System 1.0 is vulnerable to SQL Injection in /memberProfile.php?id=1.",
+        "id": "CVE-2025-69933",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-12T18:10:00.213",
+        "publishedAt": "2026-07-30T21:16:52.120",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "CodeAstro Membership Management System 1.0 is vulnerable to SQL Injection in /memberProfile.php?id=1.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-69933"
       }
     ],
-    "low": 43,
-    "medium": 277,
-    "none": 0,
-    "unscored": 6
+    "low": 144,
+    "medium": 696,
+    "none": 1,
+    "unscored": 16
   },
   "snapshot": {
-    "cves": 647,
+    "cves": 1439,
     "kevAdded": 0,
-    "knownExploited": 0,
+    "knownExploited": 1,
     "projects": 18,
-    "releases": 1,
+    "releases": 0,
     "techEntries": 16
   },
   "sources": {
@@ -602,7 +601,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 1,
+        "inWindow": 0,
         "status": "partial",
         "total": 54
       }
@@ -616,9 +615,9 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 647,
+        "inWindow": 1439,
         "status": "success",
-        "total": 647
+        "total": 1439
       }
     },
     "technology": {
@@ -631,6 +630,94 @@
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-12T17:43:59+00:00",
+      "source": "GitHub Blog",
+      "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog .",
+      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-12T17:13:33+00:00",
+      "source": "The Register",
+      "summary": "Pew Research Center finds 51% of Americans say no, cite lack of interest - not know-how - as the top reason",
+      "title": "Chatbot refuseniks edge out users in the US, and they’re not for turning",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/12/chatbot-refuseniks-edge-out-users-in-the-us-and-theyre-not-for-turning/5302690"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-12T16:01:32+00:00",
+      "source": "Meta",
+      "summary": "Meta has begun deploying Media over QUIC (MoQ), an emerging open protocol for real-time video streaming at scale. MoQ will help simplify our protocol stack for live streaming video and enhance overall user experience for live video. We’re sharing how we shipped MoQ on Instagram…",
+      "title": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
+      "url": "https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-12T16:00:50+00:00",
+      "source": "Meta",
+      "summary": "At Meta, we’ve built a system that enhances ads recommendations by leveraging idle inference capacity in our fleet. Two elasticity levers in the system allow ads recommendation work to expand across opportunistic capacity, without compromising baseline performance. This post…",
+      "title": "Turning Opportunistic AI Inference Capacity Into Better Ads Recommendations",
+      "url": "https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-12T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "A decade ago, Google released Site Reliability Engineering: How Google Runs Production Systems with O'Reilly Media. What began as a collection of our practices for managing large-scale infrastructure became a bestselling book, and inspired many organizations to adopt the…",
+      "title": "10 Years of the SRE book: Announcing the second edition of \"Site Reliability Engineering”",
+      "url": "https://cloud.google.com/blog/products/devops-sre/sre-book-second-edition/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-12T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Imagine your compliance team notices that payments are taking longer than expected to clear. They suspect fraud, and you’re the data scientist helping figure out which transactions to investigate first. Assembling that shortlist requires ingesting and cleaning raw transaction…",
+      "title": "Agentic data science with the Data Agent Kit",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bringing-you-the-data-agent-kit/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-12T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Overview Since introducing zero-shot time-series forecasting in BigQuery with AI.FORECAST — initially powered by TimesFM 2.0 and later upgraded to TimesFM 2.5 — you have been able to generate forecasts directly in SQL without training or managing custom models. However, up until…",
+      "title": "Introducing TimesFM 3.0 with multivariate time-series forecasting in BigQuery",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-timesfm-3-0-with-multivariate-time-series-forecasting/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-12T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "As a business intelligence user, this probably sounds familiar: Most dashboards only provide you with a standardized canvas and a fixed library of charts, and the “analysis” consists of a CSV export that takes you to another system. Or sometimes it's designing the dashboard…",
+      "title": "Trusted Data Apps for the Agentic Data Cloud, powered by Looker",
+      "url": "https://cloud.google.com/blog/products/business-intelligence/introducing-looker-data-apps/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-12T14:44:59+00:00",
+      "source": "Cloudflare",
+      "summary": "Logpush now supports Transformers, allowing teams to filter, redact, and reshape log streams using SQL before export. Powered by Apache DataFusion and Apache Arrow, Transformers apply those changes directly to log data before it reaches the destination.",
+      "title": "Filter, reshape, and redact logs before export with Transformers",
+      "url": "https://blog.cloudflare.com/transformers-on-logpush/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-12T13:45:00+00:00",
+      "source": "The Register",
+      "summary": "Techies at 'Russia's Google' work around the clock as users await access to funds and network connectivity falls to 30% of normal",
+      "title": "Ukrainian drone strikes on Yandex datacenters knock cloud and payments offline",
+      "url": "https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-12T10:27:00+00:00",
+      "source": "The Register",
+      "summary": "This week on The Kettle, we discuss some arrests and how Mythos' mathematical expertise has led to a second exploited bug that no human would have found",
+      "title": "Imagine there's no Shiny Hunters – AI could make human hacking crews obsolete",
+      "url": "https://www.theregister.com/security/2026/10/12/imagine-theres-no-shiny-hunters-ai-could-make-human-hacking-crews-obsolete/5302430"
+    },
     {
       "category": "security",
       "publishedAt": "2026-10-11T11:30:00+00:00",
@@ -662,94 +749,6 @@
       "summary": "Tokens transmitted in metadata, weak VM isolation, and expansive permissions make hacking a lot easier",
       "title": "AWS AgentCore security undone by prompt requesting credentials",
       "url": "https://www.theregister.com/security/2026/10/09/aws-agentcore-security-undone-by-prompt-requesting-credentials/5302436"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T18:54:52+00:00",
-      "source": "Ars Technica",
-      "summary": "\"The current decline may be just the beginning of a new downward cycle.\"",
-      "title": "PC shipments fall 20.1 percent in “sharpest decline” since Q1 2023",
-      "url": "https://arstechnica.com/information-technology/2026/10/pc-shipments-fall-20-1-percent-in-sharpest-decline-since-q1-2023/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T18:27:34+00:00",
-      "source": "Cloudflare",
-      "summary": "We are expanding the Clef decision model family with Clef-omni, natively processing audio, video, images, and text in a single pipeline. We’ve also lowered Clef-flash pricing and boosted Clef inference speeds by up to 2.0x.",
-      "title": "Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash",
-      "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T16:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "The barriers to building software have collapsed. Today, anyone can build. Hackathons are a great place to start learning. The post Hack the World: Why hackathons are still the best place to learn to build appeared first on The GitHub Blog .",
-      "title": "Hack the World: Why hackathons are still the best place to learn to build",
-      "url": "https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "October 5 - October 9 Data Agent Kit is now generally available to bring Google Data Cloud to any coding agent Data Agent Kit provides a free collection of Model Context Protocol (MCP) tools and Google-authored agent skills that connect more than 15 Google Data Cloud services…",
-      "title": "What’s new with Google Data Cloud",
-      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Alteryx One Live Query and Google Cloud BigQuery redefine how enterprises handle complex, unstructured data at scale by reducing reliance on disconnected tools, minimizing data movement, and enabling warehouse-native execution. Live Query provides an intuitive, browser-based…",
-      "title": "Modernizing Unstructured Data Workflows: Alteryx Live Query meets Google Cloud BigQuery",
-      "url": "https://cloud.google.com/blog/products/data-analytics/modernize-unstructured-data-workloads-with-alteryx-and-bigquery/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T13:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks.",
-      "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
-      "url": "https://blog.cloudflare.com/workers-on-demand-profiling/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T12:50:00+00:00",
-      "source": "Cloudflare",
-      "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places.",
-      "title": "Deno is joining Cloudflare",
-      "url": "https://blog.cloudflare.com/deno-joins-cloudflare/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-09T11:43:00+00:00",
-      "source": "The Register",
-      "summary": "No word on exploitation status, but a 9.5 severity score suggests time is of the essence",
-      "title": "Citrix gives NetScaler admins another critical reason to patch",
-      "url": "https://www.theregister.com/security/2026/10/09/citrix-gives-netscaler-admins-another-critical-reason-to-patch/5302212"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T09:44:25+00:00",
-      "source": "Microsoft",
-      "summary": "AI coding agents now pick the SDK, the version, and the pattern for your developers. The AX Practitioner Playbook is our method for finding out whether they get your technology right, and for fixing the sources they rely on when they don't. The post Introducing the Agent…",
-      "title": "Introducing the Agent Experience (AX) Practitioner Playbook",
-      "url": "https://devblogs.microsoft.com/blog/introducing-the-agent-experience-ax-practitioner-playbook/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-09T08:00:00+00:00",
-      "source": "The Register",
-      "summary": "SPONSORED POST: Vendor roadmaps set the pace of change in most enterprise software estates. Origina argues the business should.",
-      "title": "Whose roadmap is your software estate running on?",
-      "url": "https://www.theregister.com/software/2026/10/09/sponsored-whose-roadmap-is-your-software-estate-running-on/5301111"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-08T21:59:00+00:00",
-      "source": "The Register",
-      "summary": "Infecting devices from 2021 until the FBI stepped in",
-      "title": "US disrupts Chinese hacking tools as 7 govts warn of PRC spies stealing sensitive data worldwide",
-      "url": "https://www.theregister.com/security/2026/10/08/us-disrupts-chinese-hacking-tools-as-7-govts-warn-of-prc-spies-stealing-sensitive-data-worldwide/5302107"
     }
   ]
 }

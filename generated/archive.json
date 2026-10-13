@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-10-13",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 32,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200902,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 11,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143151,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 23,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139232,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 28,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128308,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 23,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122338,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 52,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 119761,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 69,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 111436,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 297,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 104741,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 12,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97897,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91406,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 128,
+          "HIGH": 454,
+          "LOW": 144,
+          "MEDIUM": 696,
+          "NONE": 1,
+          "UNSCORED": 16
+        }
+      },
+      "snapshot": {
+        "cves": 1439,
+        "kevAdded": 0,
+        "knownExploited": 1,
+        "projects": 18,
+        "releases": 0,
+        "techEntries": 16
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1739
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 54
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1439,
+          "status": "success",
+          "total": 1439
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 16,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 6,
+          "tech": 10
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-12T17:43:59+00:00",
+            "source": "GitHub Blog",
+            "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+            "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/"
+          },
+          {
+            "published_at": "2026-10-12T17:13:33+00:00",
+            "source": "The Register",
+            "title": "Chatbot refuseniks edge out users in the US, and they’re not for turning",
+            "url": "https://www.theregister.com/ai-and-ml/2026/10/12/chatbot-refuseniks-edge-out-users-in-the-us-and-theyre-not-for-turning/5302690"
+          },
+          {
+            "published_at": "2026-10-12T16:01:32+00:00",
+            "source": "Meta",
+            "title": "Shipping Media Over QUIC at Meta Scale for Instagram Live Ingest",
+            "url": "https://engineering.fb.com/2026/10/12/video-engineering/shipping-media-over-quic-at-meta-scale-for-instagram-live-ingest/"
+          },
+          {
+            "published_at": "2026-10-12T16:00:50+00:00",
+            "source": "Meta",
+            "title": "Turning Opportunistic AI Inference Capacity Into Better Ads Recommendations",
+            "url": "https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/"
+          },
+          {
+            "published_at": "2026-10-12T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "10 Years of the SRE book: Announcing the second edition of \"Site Reliability Engineering”",
+            "url": "https://cloud.google.com/blog/products/devops-sre/sre-book-second-edition/"
+          },
+          {
+            "published_at": "2026-10-12T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Agentic data science with the Data Agent Kit",
+            "url": "https://cloud.google.com/blog/products/data-analytics/bringing-you-the-data-agent-kit/"
+          },
+          {
+            "published_at": "2026-10-12T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Introducing TimesFM 3.0 with multivariate time-series forecasting in BigQuery",
+            "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-timesfm-3-0-with-multivariate-time-series-forecasting/"
+          },
+          {
+            "published_at": "2026-10-12T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Trusted Data Apps for the Agentic Data Cloud, powered by Looker",
+            "url": "https://cloud.google.com/blog/products/business-intelligence/introducing-looker-data-apps/"
+          },
+          {
+            "published_at": "2026-10-12T14:44:59+00:00",
+            "source": "Cloudflare",
+            "title": "Filter, reshape, and redact logs before export with Transformers",
+            "url": "https://blog.cloudflare.com/transformers-on-logpush/"
+          },
+          {
+            "published_at": "2026-10-12T13:45:00+00:00",
+            "source": "The Register",
+            "title": "Ukrainian drone strikes on Yandex datacenters knock cloud and payments offline",
+            "url": "https://www.theregister.com/security/2026/10/12/ukrainian-drone-strikes-on-yandex-datacenters-knock-cloud-and-payments-offline/5302577"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-12",
       "opensource": {
         "topProjects": [
@@ -5655,8 +5859,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-11T22:18:56.665079+00:00",
-    "totalSnapshots": 26,
+    "generatedAt": "2026-10-13T00:56:05.299378+00:00",
+    "totalSnapshots": 27,
     "warnings": []
   }
 }
