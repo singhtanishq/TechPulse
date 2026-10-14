@@ -1,6 +1,267 @@
 {
   "archive": [
     {
+      "date": "2026-10-15",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 33,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 200967,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": -210,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143006,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -163,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139173,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -113,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128220,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": -178,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122278,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 60,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 119972,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 62,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 111554,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": -169,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 104682,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": -22,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97865,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -96,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91328,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 5,
+          "other": 0,
+          "patch": 3
+        },
+        "recent": [
+          {
+            "project": "next.js",
+            "published_at": "2026-10-14T17:47:59Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v16.4.1",
+            "version": "v16.4.1"
+          },
+          {
+            "project": "next.js",
+            "published_at": "2026-10-14T17:47:49Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v15.5.28",
+            "version": "v15.5.28"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-10-14T17:13:08Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.14.0",
+            "version": "v1.14.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-10-14T15:22:04Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v26.12.0",
+            "version": "v26.12.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-10-14T15:12:46Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v24.22.0",
+            "version": "v24.22.0"
+          },
+          {
+            "project": "terraform",
+            "published_at": "2026-10-14T09:31:54Z",
+            "repository": "hashicorp/terraform",
+            "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.6",
+            "version": "v1.16.6"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-14T05:38:46Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.31.0",
+            "version": "v3.31.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-14T04:00:19Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.30.0",
+            "version": "v3.30.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 355,
+          "HIGH": 1943,
+          "LOW": 137,
+          "MEDIUM": 1293,
+          "NONE": 0,
+          "UNSCORED": 278
+        }
+      },
+      "snapshot": {
+        "cves": 4006,
+        "kevAdded": 4,
+        "knownExploited": 3,
+        "projects": 18,
+        "releases": 8,
+        "techEntries": 38
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 4,
+          "status": "success",
+          "total": 1745
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 8,
+          "status": "partial",
+          "total": 56
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 4006,
+          "status": "success",
+          "total": 4006
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 38,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 13,
+          "tech": 25
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-14T17:15:00+00:00",
+            "source": "The Register",
+            "title": "Ivanti patches Connect Secure zero-day after researchers confirm in-the-wild attacks",
+            "url": "https://www.theregister.com/security/2026/10/14/ivanti-patches-connect-secure-zero-day-after-researchers-confirm-in-the-wild-attacks/5303095"
+          },
+          {
+            "published_at": "2026-10-14T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Cloud CISO Perspectives: New Gemini Notebook can help CISOs and policymakers prepare for PQC",
+            "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-new-gemini-notebook-can-help-cisos-policymakers-prepare-for-pqc/"
+          },
+          {
+            "published_at": "2026-10-14T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Predictable AI spend in BigQuery: Introducing cost management for generative AI functions",
+            "url": "https://cloud.google.com/blog/products/data-analytics/using-bigquerys-generative-ai-cost-management-features/"
+          },
+          {
+            "published_at": "2026-10-14T15:45:00+00:00",
+            "source": "The Register",
+            "title": "Fire up that iPhone 1 emulation and party like it's 2007",
+            "url": "https://www.theregister.com/offbeat/2026/10/14/fire-up-that-iphone-1-emulation-and-party-like-its-2007/5303067"
+          },
+          {
+            "published_at": "2026-10-14T14:15:00+00:00",
+            "source": "The Register",
+            "title": "Tiny11 puts Windows 11 on a diet without the PowerShell workout",
+            "url": "https://www.theregister.com/os-platforms/2026/10/14/tiny11-puts-windows-11-on-a-diet-without-the-powershell-workout/5303034"
+          },
+          {
+            "published_at": "2026-10-14T13:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+            "url": "https://blog.cloudflare.com/hyperdrive-mysql/"
+          },
+          {
+            "published_at": "2026-10-14T12:55:06+00:00",
+            "source": "Ars Technica",
+            "title": "Anthropic warns small AI models could self-replicate through IoT devices",
+            "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/"
+          },
+          {
+            "published_at": "2026-10-14T12:45:00+00:00",
+            "source": "The Register",
+            "title": "US tech giants warn Europe that ditching US tech giants could cost €115B",
+            "url": "https://www.theregister.com/paas-and-iaas/2026/10/14/us-tech-giants-warn-europe-that-ditching-us-tech-giants-could-cost-115b/5303031"
+          },
+          {
+            "published_at": "2026-10-14T09:55:00+00:00",
+            "source": "The Register",
+            "title": "OpenAI engineer charged after boardroom bug found wrapped in toilet paper",
+            "url": "https://www.theregister.com/security/2026/10/14/openai-engineer-charged-after-boardroom-bug-found-wrapped-in-toilet-paper/5303000"
+          },
+          {
+            "published_at": "2026-10-14T05:00:00+00:00",
+            "source": "The Register",
+            "title": "Ransomware gets personal: 'We-know-where-you-are kind of stuff'",
+            "url": "https://www.theregister.com/cyber-crime/2026/10/14/ransomware-gets-personal-we-know-where-you-are-kind-of-stuff/5302939"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-14",
       "opensource": {
         "topProjects": [
@@ -6085,8 +6346,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-13T23:01:43.941065+00:00",
-    "totalSnapshots": 28,
+    "generatedAt": "2026-10-14T21:54:57.189916+00:00",
+    "totalSnapshots": 29,
     "warnings": []
   }
 }

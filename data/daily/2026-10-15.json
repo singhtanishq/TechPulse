@@ -1,0 +1,390 @@
+{
+  "coveredIstDay": "2026-10-14",
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-14T21:54:57.189916+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 33,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200967,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": -210,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143006,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": -163,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139173,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": -113,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128220,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": -178,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122278,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 60,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 119972,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 62,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111554,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": -169,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104682,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": -22,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97865,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": -96,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91328,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 5,
+      "other": 0,
+      "patch": 3
+    },
+    "recent": [
+      {
+        "project": "next.js",
+        "published_at": "2026-10-14T17:47:59Z",
+        "repository": "vercel/next.js",
+        "url": "https://github.com/vercel/next.js/releases/tag/v16.4.1",
+        "version": "v16.4.1"
+      },
+      {
+        "project": "next.js",
+        "published_at": "2026-10-14T17:47:49Z",
+        "repository": "vercel/next.js",
+        "url": "https://github.com/vercel/next.js/releases/tag/v15.5.28",
+        "version": "v15.5.28"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-10-14T17:13:08Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.14.0",
+        "version": "v1.14.0"
+      },
+      {
+        "project": "node",
+        "published_at": "2026-10-14T15:22:04Z",
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.12.0",
+        "version": "v26.12.0"
+      },
+      {
+        "project": "node",
+        "published_at": "2026-10-14T15:12:46Z",
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node/releases/tag/v24.22.0",
+        "version": "v24.22.0"
+      },
+      {
+        "project": "terraform",
+        "published_at": "2026-10-14T09:31:54Z",
+        "repository": "hashicorp/terraform",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.6",
+        "version": "v1.16.6"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-14T05:38:46Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.31.0",
+        "version": "v3.31.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-14T04:00:19Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.30.0",
+        "version": "v3.30.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-76519",
+        "date_added": "2026-10-14",
+        "product": "Secure Email Gateway",
+        "vendor_project": "Cisco",
+        "vulnerability_name": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-105134",
+        "date_added": "2026-10-14",
+        "product": "AhsayCBS",
+        "vendor_project": "Ahsay",
+        "vulnerability_name": "Ahsay AhsayCBS Command Injection Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-105133",
+        "date_added": "2026-10-14",
+        "product": "AhsayCBS",
+        "vendor_project": "Ahsay",
+        "vulnerability_name": "Ahsay AhsayCBS Improper Authentication Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-0322",
+        "date_added": "2026-10-14",
+        "product": "PAN-OS",
+        "vendor_project": "Palo Alto Networks",
+        "vulnerability_name": "Palo Alto Networks PAN-OS Code Injection Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 7.8,
+        "description": "It was discovered that a nft object or expression could reference a nft set on a different nft table, leading to a use-after-free once that table was deleted.",
+        "id": "CVE-2022-2586",
+        "known_exploited": true,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2586"
+      },
+      {
+        "cvss": 10.0,
+        "description": "Missing authentication for critical function in Azure AI Language allows an unauthorized attacker to elevate privileges over a network.",
+        "id": "CVE-2026-70352",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70352"
+      },
+      {
+        "cvss": 7.1,
+        "description": "FFmpeg before 9.0 has an out-of-bounds read because of missing required padding in WMA extradata allocation paths in libavcodec/wmaenc.c.",
+        "id": "CVE-2026-52296",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52296"
+      },
+      {
+        "cvss": 8.8,
+        "description": "Improper neutralization of special elements used in a command ('command injection') in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.",
+        "id": "CVE-2026-96951",
+        "known_exploited": true,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
+      },
+      {
+        "cvss": 7.5,
+        "description": "The Gmedia Photo Gallery plugin for WordPress is vulnerable to time-based SQL Injection via the 'gmedia__in' parameter in all versions up to, and including, 1.25.1 due to insufficient escaping on the ",
+        "id": "CVE-2026-96661",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96661"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The Verified Reviews (Avis Vérifiés) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'moderation' parameter in all versions up to, and including, 2.4.6 due to insufficient in",
+        "id": "CVE-2026-94377",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94377"
+      },
+      {
+        "cvss": 6.1,
+        "description": "Dell PowerScale InsightIQ, versions 5.2.0 through 6.3.0, contains an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with ",
+        "id": "CVE-2026-94348",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94348"
+      },
+      {
+        "cvss": 9.8,
+        "description": "The Printcart Store (PCDesigner / NB Designer) plugin for WooCommerce is vulnerable to unauthenticated arbitrary file upload leading to remote code execution in all versions up to, and including, 2.9.",
+        "id": "CVE-2026-93388",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93388"
+      },
+      {
+        "cvss": 8.7,
+        "description": "The Ignition Perspective module does not properly validate session privileges when determining Designer-level access. An authenticated user with access to a Vision project could provide their valid Vi",
+        "id": "CVE-2026-92817",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92817"
+      },
+      {
+        "cvss": 6.5,
+        "description": "F´ (F Prime) is a framework that enables development and deployment of spaceflight and other embedded software applications. Prior to 4.3.0, Svc::FileDownlink SendPartial range validation is vulnerabl",
+        "id": "CVE-2026-92160",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92160"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 355,
+      "HIGH": 1943,
+      "LOW": 137,
+      "MEDIUM": 1293,
+      "NONE": 0,
+      "UNSCORED": 278
+    }
+  },
+  "snapshot": {
+    "cves": 4006,
+    "kevAdded": 4,
+    "knownExploited": 3,
+    "projects": 18,
+    "releases": 8,
+    "techEntries": 38
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 4,
+      "status": "success",
+      "total": 1745
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 8,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 4006,
+      "status": "success",
+      "total": 4006
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 38,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 13,
+      "tech": 25
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-14T17:15:00+00:00",
+        "source": "The Register",
+        "title": "Ivanti patches Connect Secure zero-day after researchers confirm in-the-wild attacks",
+        "url": "https://www.theregister.com/security/2026/10/14/ivanti-patches-connect-secure-zero-day-after-researchers-confirm-in-the-wild-attacks/5303095"
+      },
+      {
+        "published_at": "2026-10-14T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Cloud CISO Perspectives: New Gemini Notebook can help CISOs and policymakers prepare for PQC",
+        "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-new-gemini-notebook-can-help-cisos-policymakers-prepare-for-pqc/"
+      },
+      {
+        "published_at": "2026-10-14T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Predictable AI spend in BigQuery: Introducing cost management for generative AI functions",
+        "url": "https://cloud.google.com/blog/products/data-analytics/using-bigquerys-generative-ai-cost-management-features/"
+      },
+      {
+        "published_at": "2026-10-14T15:45:00+00:00",
+        "source": "The Register",
+        "title": "Fire up that iPhone 1 emulation and party like it's 2007",
+        "url": "https://www.theregister.com/offbeat/2026/10/14/fire-up-that-iphone-1-emulation-and-party-like-its-2007/5303067"
+      },
+      {
+        "published_at": "2026-10-14T14:15:00+00:00",
+        "source": "The Register",
+        "title": "Tiny11 puts Windows 11 on a diet without the PowerShell workout",
+        "url": "https://www.theregister.com/os-platforms/2026/10/14/tiny11-puts-windows-11-on-a-diet-without-the-powershell-workout/5303034"
+      },
+      {
+        "published_at": "2026-10-14T13:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+        "url": "https://blog.cloudflare.com/hyperdrive-mysql/"
+      },
+      {
+        "published_at": "2026-10-14T12:55:06+00:00",
+        "source": "Ars Technica",
+        "title": "Anthropic warns small AI models could self-replicate through IoT devices",
+        "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/"
+      },
+      {
+        "published_at": "2026-10-14T12:45:00+00:00",
+        "source": "The Register",
+        "title": "US tech giants warn Europe that ditching US tech giants could cost €115B",
+        "url": "https://www.theregister.com/paas-and-iaas/2026/10/14/us-tech-giants-warn-europe-that-ditching-us-tech-giants-could-cost-115b/5303031"
+      },
+      {
+        "published_at": "2026-10-14T09:55:00+00:00",
+        "source": "The Register",
+        "title": "OpenAI engineer charged after boardroom bug found wrapped in toilet paper",
+        "url": "https://www.theregister.com/security/2026/10/14/openai-engineer-charged-after-boardroom-bug-found-wrapped-in-toilet-paper/5303000"
+      },
+      {
+        "published_at": "2026-10-14T05:00:00+00:00",
+        "source": "The Register",
+        "title": "Ransomware gets personal: 'We-know-where-you-are kind of stuff'",
+        "url": "https://www.theregister.com/cyber-crime/2026/10/14/ransomware-gets-personal-we-know-where-you-are-kind-of-stuff/5302939"
+      }
+    ],
+    "sources": {
+      "AWS": 2,
+      "Ars Technica": 2,
+      "Cloudflare": 4,
+      "GitHub Blog": 2,
+      "Google Cloud": 9,
+      "Meta": 4,
+      "The Register": 15
+    }
+  },
+  "window": {
+    "end": "2026-10-14T18:30:00+00:00",
+    "start": "2026-10-13T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
