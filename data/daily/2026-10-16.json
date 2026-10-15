@@ -1,0 +1,313 @@
+{
+  "coveredIstDay": "2026-10-15",
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-15T21:40:05.813172+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 18,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 200985,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 15,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143021,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 26,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139199,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 18,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128238,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 17,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122295,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 325,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120297,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 54,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111608,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 22,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104704,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 10,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97875,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 5,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91333,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": []
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-21589",
+        "date_added": "2026-10-15",
+        "product": "Multiple Products",
+        "vendor_project": "Atlassian",
+        "vulnerability_name": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 7.5,
+        "description": "CAI Content Credentials is affected by an Uncontrolled Resource Consumption vulnerability that could lead to application denial-of-service. An attacker could exploit this vulnerability to exhaust syst",
+        "id": "CVE-2026-100137",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100137"
+      },
+      {
+        "cvss": 7.5,
+        "description": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security",
+        "id": "CVE-2026-100123",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100123"
+      },
+      {
+        "cvss": 7.5,
+        "description": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security",
+        "id": "CVE-2026-100118",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100118"
+      },
+      {
+        "cvss": 7.5,
+        "description": "CAI Content Credentials is affected by an Improper Input Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measu",
+        "id": "CVE-2026-100113",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100113"
+      },
+      {
+        "cvss": 7.5,
+        "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose sensitive information. E",
+        "id": "CVE-2026-106623",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106623"
+      },
+      {
+        "cvss": 10.0,
+        "description": "ColdFusion is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could",
+        "id": "CVE-2026-106624",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106624"
+      },
+      {
+        "cvss": 7.5,
+        "description": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security",
+        "id": "CVE-2026-100122",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100122"
+      },
+      {
+        "cvss": 6.0,
+        "description": "An authenticated Ops Manager organization member can retrieve another member's pending authenticator enrollment seed through user-listing endpoints while that member's enrollment is unconfirmed. This ",
+        "id": "CVE-2026-87109",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87109"
+      },
+      {
+        "cvss": 6.9,
+        "description": "An unauthenticated user with network access to the Ops Manager web port can repeatedly request monitoring endpoints that perform costly work without rate limiting. This can temporarily slow other traf",
+        "id": "CVE-2026-87110",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87110"
+      },
+      {
+        "cvss": 7.1,
+        "description": "IBM Planning Analytics 2.0, and 2.1 could allow a remote authenticated attacker to delete folders and applications belonging to other users due to improper functional level access control.",
+        "id": "CVE-2026-17475",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17475"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 318,
+      "HIGH": 1768,
+      "LOW": 162,
+      "MEDIUM": 1639,
+      "NONE": 0,
+      "UNSCORED": 261
+    }
+  },
+  "snapshot": {
+    "cves": 4148,
+    "kevAdded": 1,
+    "knownExploited": 11,
+    "projects": 18,
+    "releases": 0,
+    "techEntries": 65
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 1,
+      "status": "success",
+      "total": 1746
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 0,
+      "status": "partial",
+      "total": 55
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 4148,
+      "status": "success",
+      "total": 4148
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 65,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 21,
+      "tech": 44
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-15T17:11:12+00:00",
+        "source": "Cloudflare",
+        "title": "A fully programmable secure web gateway",
+        "url": "https://blog.cloudflare.com/programmable-gateway-dlp/"
+      },
+      {
+        "published_at": "2026-10-15T16:00:59+00:00",
+        "source": "Meta",
+        "title": "Sapienz Receives ISSTA 2026 Impact Paper Award",
+        "url": "https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/"
+      },
+      {
+        "published_at": "2026-10-15T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What the Gemini agent means for startups",
+        "url": "https://cloud.google.com/blog/topics/startups/what-the-gemini-agent-means-for-startups/"
+      },
+      {
+        "published_at": "2026-10-15T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Temporal Serverless Workers on Cloud Run: Scale workers ahead of demand",
+        "url": "https://cloud.google.com/blog/products/serverless/temporal-serverless-workers-on-cloud-run-worker-pools/"
+      },
+      {
+        "published_at": "2026-10-15T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "How Visko streams real-time world models on Google Cloud TPUs",
+        "url": "https://cloud.google.com/blog/products/media-entertainment/how-visko-streams-real-time-world-models-on-google-cloud-tpus/"
+      },
+      {
+        "published_at": "2026-10-15T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Modernizing perimeter security: Scalable perimeters with VPC Service Controls",
+        "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-scalable-perimeter-options-with-vpc-service-controls/"
+      },
+      {
+        "published_at": "2026-10-15T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Data Cloud",
+        "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+      },
+      {
+        "published_at": "2026-10-15T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Bringing the borderless Lakehouse into the agentic era with innovations for Gemini",
+        "url": "https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-integrates-with-gemini/"
+      },
+      {
+        "published_at": "2026-10-15T15:45:00+00:00",
+        "source": "The Register",
+        "title": "TinyLittleOffice, where the link is the document",
+        "url": "https://www.theregister.com/software/2026/10/15/tinylittleoffice-where-the-link-is-the-document/5303328"
+      },
+      {
+        "published_at": "2026-10-15T15:13:00+00:00",
+        "source": "The Register",
+        "title": "KDE hits 30, decides it's time to move out of the X11 era",
+        "url": "https://www.theregister.com/software/2026/10/15/kde-hits-30-decides-its-time-to-move-out-of-the-x11-era/5303293"
+      }
+    ],
+    "sources": {
+      "AWS": 3,
+      "Ars Technica": 3,
+      "Cloudflare": 7,
+      "GitHub Blog": 3,
+      "Google Cloud": 12,
+      "Meta": 3,
+      "Netflix": 10,
+      "The Register": 24
+    }
+  },
+  "window": {
+    "end": "2026-10-15T18:30:00+00:00",
+    "start": "2026-10-14T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
