@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 8432,
+      "date": "2026-10-17",
+      "kevAdded": 2,
+      "knownExploited": 2,
+      "projects": 18,
+      "releases": 4,
+      "techEntries": 70
+    },
+    {
       "cves": 4148,
       "date": "2026-10-16",
       "kevAdded": 1,
@@ -272,16 +281,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-15",
-    "date": "2026-10-16",
-    "daysObserved": 30,
-    "generatedAt": "2026-10-15T21:40:05.813172+00:00",
-    "snapshots": 30,
+    "coveredDate": "2026-10-16",
+    "date": "2026-10-17",
+    "daysObserved": 31,
+    "generatedAt": "2026-10-16T21:34:16.983069+00:00",
+    "snapshots": 31,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 18,
+      "daily_growth": 73,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -289,11 +298,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 200985,
+      "stars": 201058,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 17,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -301,11 +310,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143021,
+      "stars": 143038,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 73,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -313,11 +322,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139199,
+      "stars": 139272,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 18,
+      "daily_growth": 72,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -325,11 +334,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128238,
+      "stars": 128310,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 17,
+      "daily_growth": 79,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -337,11 +346,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122295,
+      "stars": 122374,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 325,
+      "daily_growth": 116,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -349,11 +358,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120297,
+      "stars": 120413,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 54,
+      "daily_growth": 51,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -361,11 +370,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111608,
+      "stars": 111659,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 100,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -373,7 +382,7 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104704,
+      "stars": 104804,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
@@ -385,11 +394,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97875,
+      "stars": 97885,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 5,
+      "daily_growth": 65,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -397,224 +406,261 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91333,
+      "stars": 91398,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-10-16T05:00:57Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.37.0",
+      "version": "v13.37.0"
+    },
+    {
+      "kind": "patch",
+      "project": "rust",
+      "publishedAt": "2026-10-16T04:47:44Z",
+      "repository": "rust-lang/rust",
+      "source": "GitHub",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.99.1",
+      "version": "1.99.1"
+    },
+    {
+      "kind": "patch",
+      "project": "next.js",
+      "publishedAt": "2026-10-15T20:44:37Z",
+      "repository": "vercel/next.js",
+      "source": "GitHub",
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.2",
+      "version": "v16.4.2"
+    },
+    {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-10-15T19:45:15Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.15.0",
+      "version": "v1.15.0"
+    }
+  ],
   "security": {
-    "critical": 318,
-    "high": 1768,
-    "kevCatalogTotal": 1746,
+    "critical": 386,
+    "high": 2343,
+    "kevCatalogTotal": 1748,
     "latest": [
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "CAI Content Credentials is affected by an Uncontrolled Resource Consumption vulnerability that could lead to application denial-of-service. An attacker could exploit this vulnerability to exhaust system resources, resulting in an application denial-of-service condition. Exploitation of this issue does not require user interaction.",
-        "id": "CVE-2026-100137",
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "MoviePilot through 3.1.5 contains a command injection vulnerability that allows attackers to execute arbitrary OS commands by embedding malicious instructions in untrusted content processed through tools like browse_webpage, search_web, and torrent metadata parsers, which then get passed to the unrestricted ExecuteCommandTool via asyncio.create_subprocess_shell. Attackers can craft content that…",
+        "id": "CVE-2026-77931",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:29:59.833",
-        "publishedAt": "2026-10-13T22:17:12.150",
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T02:20:16.277",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "CAI Content Credentials is affected by an Uncontrolled Resource Consumption vulnerability that could lead to application denial-of-service. An attacker could…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100137"
+        "title": "MoviePilot through 3.1.5 contains a command injection vulnerability that allows attackers to execute arbitrary OS commands by embedding malicious instructions…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77931"
       },
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized write access. Exploitation of this issue does not require user interaction.",
-        "id": "CVE-2026-100123",
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "IntentKit through 2.6.3 contains an authorization bypass vulnerability where the executor validates tool calls against the full tool registry rather than the per-request narrowed tool advertisement enforced by ToolBindingMiddleware, allowing owner-only state-changing tools such as wallet transfer, posting, memory-write, and call-agent to execute without any human-in-the-loop or approval gate. An…",
+        "id": "CVE-2026-76066",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:29:57.110",
-        "publishedAt": "2026-10-13T22:17:11.543",
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T02:20:15.603",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100123"
+        "title": "IntentKit through 2.6.3 contains an authorization bypass vulnerability where the executor validates tool calls against the full tool registry rather than the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76066"
       },
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized write access. Exploitation of this issue does not require user interaction.",
-        "id": "CVE-2026-100118",
+        "cvss_score": 9.1,
+        "cvss_version": "4.0",
+        "description": "Netherman Portal del Hermano (portaldelhermano.es) before 2026-10-06 contains a broken authentication vulnerability in its password-recovery flow at the POST /password/create-access and POST /password/email endpoints, allowing unauthenticated attackers to take over any member account across all tenants by exploiting the lack of rate limiting and distinct error messages that act as oracles for…",
+        "id": "CVE-2026-53997",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:29:53.753",
-        "publishedAt": "2026-10-13T22:17:10.870",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100118"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "CAI Content Credentials is affected by an Improper Input Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized write access. Exploitation of this issue does not require user interaction.",
-        "id": "CVE-2026-100113",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:29:49.390",
-        "publishedAt": "2026-10-13T22:17:09.967",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "CAI Content Credentials is affected by an Improper Input Validation vulnerability that could result in a Security feature bypass. An attacker could leverage…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100113"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose sensitive information. Exploitation of this issue does not require user interaction.",
-        "id": "CVE-2026-106623",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:29:44.750",
-        "publishedAt": "2026-10-13T21:17:31.597",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "ColdFusion is affected by an Incorrect Authorization vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106623"
-      },
-      {
-        "cvss_score": 10.0,
-        "cvss_version": "3.1",
-        "description": "ColdFusion is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
-        "id": "CVE-2026-106624",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:29:41.370",
-        "publishedAt": "2026-10-13T21:17:31.703",
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-12T21:17:17.400",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "ColdFusion is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106624"
+        "title": "Netherman Portal del Hermano (portaldelhermano.es) before 2026-10-06 contains a broken authentication vulnerability in its password-recovery flow at the POST…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53997"
       },
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorized write access. Exploitation of this issue does not require user interaction.",
-        "id": "CVE-2026-100122",
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "Xorbits Xoscar through 0.11.2 contains an unauthenticated deserialization vulnerability that allows remote attackers to execute arbitrary code by sending crafted data over the actor-pool TCP channel. Attackers can exploit SocketChannel.recv() passing unvalidated data to cloudpickle.loads(), which triggers pickle __reduce__ gadget execution before message type validation, achieving remote code…",
+        "id": "CVE-2026-49950",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:29:17.457",
-        "publishedAt": "2026-10-13T22:17:11.420",
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-13T21:17:39.007",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Xorbits Xoscar through 0.11.2 contains an unauthenticated deserialization vulnerability that allows remote attackers to execute arbitrary code by sending…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49950"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "OpenS100 through commit 2b1dafc contains an integer overflow vulnerability in the S-102 Bathymetric Surface parser. An attacker can supply a crafted S-102 HDF5 file with malicious grid dimension metadata that causes memory corruption when a user opens it. In the S102_VG_BathymetryCoverage::Read() function, the numPointsLatitudinal and numPointsLongitudinal values are multiplied without…",
+        "id": "CVE-2026-35001",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-13T02:16:59.010",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100122"
+        "title": "OpenS100 through commit 2b1dafc contains an integer overflow vulnerability in the S-102 Bathymetric Surface parser. An attacker can supply a crafted S-102 HDF5…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35001"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "Seanime v3.7.0 to v3.10.3 contains an argument injection vulnerability reachable through improper authorization, allowing unauthenticated LAN or Tailnet clients to bypass the privileged mediastream settings guard by setting transcodeHwAccel to custom and supplying attacker-controlled decodeFlags and encodeFlags via the transcodeHwAccelCustomSettings field, which are appended verbatim to the…",
+        "id": "CVE-2026-111728",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-16T15:17:15.190",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Seanime v3.7.0 to v3.10.3 contains an argument injection vulnerability reachable through improper authorization, allowing unauthenticated LAN or Tailnet…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111728"
       },
       {
         "cvss_score": 6.0,
         "cvss_version": "4.0",
-        "description": "An authenticated Ops Manager organization member can retrieve another member's pending authenticator enrollment seed through user-listing endpoints while that member's enrollment is unconfirmed. This results in disclosure of secret authentication material to another member of the same organization or project.",
-        "id": "CVE-2026-87109",
+        "description": "Erupt through 2.3.0 contains an HQL injection vulnerability that allows authenticated users to bypass tree-scoped data filters by injecting unescaped quotes into the linkTreeVal parameter of POST /erupt-api/data/table/{erupt}. Attackers holding query permission on entities with String-keyed linkTree targets can append always-true OR clauses or boolean subqueries to read data from other mapped…",
+        "id": "CVE-2026-111390",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:28:27.247",
-        "publishedAt": "2026-10-09T06:17:13.140",
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-16T12:16:33.050",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "An authenticated Ops Manager organization member can retrieve another member's pending authenticator enrollment seed through user-listing endpoints while that…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87109"
+        "title": "Erupt through 2.3.0 contains an HQL injection vulnerability that allows authenticated users to bypass tree-scoped data filters by injecting unescaped quotes…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111390"
+      },
+      {
+        "cvss_score": 8.3,
+        "cvss_version": "4.0",
+        "description": "Frappe HRMS 14.x before 14.38.2, 15.x before 15.64.0, and 16.x before 16.18.0 contains a SQL injection vulnerability in some endpoints caused by missing input validation. Any authenticated attacker, including a low-privilege account, can send specially crafted requests to these endpoints to extract sensitive information from the database.",
+        "id": "CVE-2026-111389",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-16T03:18:06.540",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Frappe HRMS 14.x before 14.38.2, 15.x before 15.64.0, and 16.x before 16.18.0 contains a SQL injection vulnerability in some endpoints caused by missing input…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111389"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "ClassroomIO through 1.0.0 contains an incorrect authorization vulnerability in the PUT and DELETE /:lessonId lesson routes that allows any course member, including students, to modify lessons. Authenticated students can supply arbitrary lesson ids to change titles and stored HTML content or delete lessons in their course and in other courses and organizations.",
+        "id": "CVE-2026-111369",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T22:19:35.013",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "ClassroomIO through 1.0.0 contains an incorrect authorization vulnerability in the PUT and DELETE /:lessonId lesson routes that allows any course member…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111369"
+      },
+      {
+        "cvss_score": 6.1,
+        "cvss_version": "4.0",
+        "description": "ClassroomIO through 1.0.0 contains an insecure direct object reference vulnerability in the Hono API course submission routes that allows course tutors or admins to modify submissions in other courses. Attackers can supply their own course id with another course's submission UUID to PUT or DELETE handlers to overwrite answers, grades, feedback, and grading status or delete submissions.",
+        "id": "CVE-2026-111368",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T22:19:34.847",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "ClassroomIO through 1.0.0 contains an insecure direct object reference vulnerability in the Hono API course submission routes that allows course tutors or…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111368"
       },
       {
         "cvss_score": 6.9,
         "cvss_version": "4.0",
-        "description": "An unauthenticated user with network access to the Ops Manager web port can repeatedly request monitoring endpoints that perform costly work without rate limiting. This can temporarily slow other traffic served by the same process while requests continue.",
-        "id": "CVE-2026-87110",
+        "description": "BillionMail through 4.9 contains a hard-coded cryptographic key vulnerability that allows unauthenticated attackers to forge unsubscribe and subscribe-confirm JWTs by computing the key from shipped configuration constants. Attackers can submit forged tokens to /api/unsubscribe, /api/unsubscribe_new, or /api/subscribe/confirm to deactivate any contact or force confirmed subscriptions.",
+        "id": "CVE-2026-111367",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:25:47.307",
-        "publishedAt": "2026-10-09T06:17:13.280",
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T22:19:34.703",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "An unauthenticated user with network access to the Ops Manager web port can repeatedly request monitoring endpoints that perform costly work without rate…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87110"
+        "title": "BillionMail through 4.9 contains a hard-coded cryptographic key vulnerability that allows unauthenticated attackers to forge unsubscribe and subscribe-confirm…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111367"
+      },
+      {
+        "cvss_score": 8.6,
+        "cvss_version": "4.0",
+        "description": "cool-admin-midway through 8.0.0 contains an authorization bypass vulnerability that allows department-limited admins to manage users outside their departments by supplying arbitrary user ids. Attackers holding sys:user:* permissions can call /admin/sys/user/info, update, or delete to read records, reset passwords and roles, or delete accounts.",
+        "id": "CVE-2026-111366",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T22:19:34.557",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "cool-admin-midway through 8.0.0 contains an authorization bypass vulnerability that allows department-limited admins to manage users outside their departments…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111366"
+      },
+      {
+        "cvss_score": 7.0,
+        "cvss_version": "4.0",
+        "description": "cool-admin-midway through 8.0.0 contains an authorization bypass vulnerability that allows non-superadmin admins to read, modify, or delete other admins' roles by supplying arbitrary role ids. Attackers holding ordinary sys:role permissions can call /admin/sys/role/info, update, or delete with another admin's role id to rewrite menu and department grants, changing other users' effective access.",
+        "id": "CVE-2026-111365",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T22:19:34.407",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "cool-admin-midway through 8.0.0 contains an authorization bypass vulnerability that allows non-superadmin admins to read, modify, or delete other admins' roles…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111365"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "IBM Planning Analytics 2.0, and 2.1 could allow a remote authenticated attacker to delete folders and applications belonging to other users due to improper functional level access control.",
-        "id": "CVE-2026-17475",
+        "cvss_version": "4.0",
+        "description": "MinDoc through 2.2-beta.2 contains an insecure direct object reference vulnerability in DocumentController.Content that allows authenticated users to read documents from unauthorized books. Attackers holding a non-observer role on any book can name that book and iterate sequential document ids to read markdown and HTML from private books.",
+        "id": "CVE-2026-111364",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:23:00.120",
-        "publishedAt": "2026-10-12T23:17:36.443",
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T22:19:34.260",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "IBM Planning Analytics 2.0, and 2.1 could allow a remote authenticated attacker to delete folders and applications belonging to other users due to improper…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17475"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "IBM Planning Analytics 2.0, and 2.1 is vulnerable to stored cross-site scripting. This vulnerability allows an authenticated user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",
-        "id": "CVE-2026-18541",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:20:55.567",
-        "publishedAt": "2026-10-12T23:17:36.710",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM Planning Analytics 2.0, and 2.1 is vulnerable to stored cross-site scripting. This vulnerability allows an authenticated user to embed arbitrary JavaScript…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18541"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "In Apache CXF, STSTokenValidator checks whether a SAML assertion is signed by a trusted certificate before deciding to send it to the STS. That result was stored in one object shared by all requests, so one request could read another's result. A remote, unauthenticated attacker could send a forged assertion signed with an untrusted certificate while legitimate requests were being processed, and…",
-        "id": "CVE-2026-97791",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:17:30.833",
-        "publishedAt": "2026-10-09T11:17:03.380",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In Apache CXF, STSTokenValidator checks whether a SAML assertion is signed by a trusted certificate before deciding to send it to the STS. That result was…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97791"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "An issue in Justson agentweb-core v5.1.6-androidx and earlier allows a local attacker to obtain sensitive information and launch non-exported host application components via incorrect access control in the handling of intent:// URLS in DefaultWebClient",
-        "id": "CVE-2026-95180",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:17:30.663",
-        "publishedAt": "2026-10-15T15:17:38.930",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "An issue in Justson agentweb-core v5.1.6-androidx and earlier allows a local attacker to obtain sensitive information and launch non-exported host application…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95180"
-      },
-      {
-        "cvss_score": 5.0,
-        "cvss_version": "3.1",
-        "description": "An issue in Matomo v.5.11.2 allows a remote attacker to obtain sensitive information via the SiteContentDetector / SitesManager component",
-        "id": "CVE-2026-78850",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:17:29.350",
-        "publishedAt": "2026-10-15T17:17:28.513",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "An issue in Matomo v.5.11.2 allows a remote attacker to obtain sensitive information via the SiteContentDetector / SitesManager component",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78850"
+        "title": "MinDoc through 2.2-beta.2 contains an insecure direct object reference vulnerability in DocumentController.Content that allows authenticated users to read…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111364"
       },
       {
         "cvss_score": 5.3,
-        "cvss_version": "3.1",
-        "description": "OpenPrinting CUPS is an open source printing system for Linux and other Unix-like operating systems. Prior to 2.4.20, copy_banner() in scheduler/ipp.c uses the attacker-controlled IPP attributes-natural-language value as a directory component beneath DataDir/banners when processing a job-sheets banner. The job-sheets value must first match a registered banner basename, and the traversed path must…",
-        "id": "CVE-2026-61702",
+        "cvss_version": "4.0",
+        "description": "SendPortal sendportal-core through 4.0.1 contains an authorization bypass vulnerability that allows authenticated workspace members to attach subscribers to other workspaces' tags by supplying unvalidated tag IDs. Attackers can submit sequential tag IDs via the web subscriber form or CSV import to receive victim campaign content and skew victim reports.",
+        "id": "CVE-2026-111358",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-15T18:17:28.580",
-        "publishedAt": "2026-10-15T18:17:28.580",
+        "lastModifiedAt": "2026-10-16T18:25:45.343",
+        "publishedAt": "2026-10-15T22:19:33.793",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "OpenPrinting CUPS is an open source printing system for Linux and other Unix-like operating systems. Prior to 2.4.20, copy_banner() in scheduler/ipp.c uses the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61702"
+        "title": "SendPortal sendportal-core through 4.0.1 contains an authorization bypass vulnerability that allows authenticated workspace members to attach subscribers to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111358"
       }
     ],
-    "low": 162,
-    "medium": 1639,
+    "low": 64,
+    "medium": 1149,
     "none": 0,
-    "unscored": 261
+    "unscored": 4490
   },
   "snapshot": {
-    "cves": 4148,
-    "kevAdded": 1,
-    "knownExploited": 11,
+    "cves": 8432,
+    "kevAdded": 2,
+    "knownExploited": 2,
     "projects": 18,
-    "releases": 0,
-    "techEntries": 65
+    "releases": 4,
+    "techEntries": 70
   },
   "sources": {
     "opensource": {
@@ -628,29 +674,29 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 0,
+        "inWindow": 4,
         "status": "partial",
-        "total": 55
+        "total": 54
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 1,
+        "inWindow": 2,
         "status": "success",
-        "total": 1746
+        "total": 1748
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 4148,
+        "inWindow": 8432,
         "status": "success",
-        "total": 4148
+        "total": 8432
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 65,
+        "inWindow": 70,
         "status": "success",
         "total": 229
       }
@@ -659,123 +705,123 @@
   "technology": [
     {
       "category": "tech",
-      "publishedAt": "2026-10-15T17:11:12+00:00",
-      "source": "Cloudflare",
-      "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform.",
-      "title": "A fully programmable secure web gateway",
-      "url": "https://blog.cloudflare.com/programmable-gateway-dlp/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-15T16:00:59+00:00",
-      "source": "Meta",
-      "summary": "Ke Mao, Mark Harman, and Yue Jia have been recognized with the ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) 2026 Most Influential Paper Award for their 2016 research, “Sapienz: multi-objective automated testing for Android applications.” The…",
-      "title": "Sapienz Receives ISSTA 2026 Impact Paper Award",
-      "url": "https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-15T16:00:00+00:00",
+      "publishedAt": "2026-10-16T17:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Small teams, short runway, and constant pressure to ship faster — it’s the reality we see every day among the founders we work with at Google for Startups. When you are building a company from the ground up, every hour spent on operational overhead or infrastructure plumbing is…",
-      "title": "What the Gemini agent means for startups",
-      "url": "https://cloud.google.com/blog/topics/startups/what-the-gemini-agent-means-for-startups/"
+      "summary": "Today, Reflection released Beam , its first open-weight model built to give developers, researchers, and enterprises open control and customization for frontier software engineering and long-horizon agentic tasks. Released under a permissive Apache 2.0 license with BF16 , FP8 …",
+      "title": "Day 0 support for Reflection’s Beam on Google Cloud: 5x faster perf with llm-d and NVIDIA Dynamo",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/day-0-support-with-5x-perf-for-reflection-beam-on-google-cloud/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-15T16:00:00+00:00",
+      "publishedAt": "2026-10-16T16:01:02+00:00",
+      "source": "Netflix",
+      "summary": "",
+      "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
+      "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-16T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "The open-source Temporal execution platform is rapidly becoming a foundational layer of modern software infrastructure — especially for orchestration in distributed systems and AI agent workloads. However, deploying and scaling workers in Temporal comes with unique challenges…",
-      "title": "Temporal Serverless Workers on Cloud Run: Scale workers ahead of demand",
-      "url": "https://cloud.google.com/blog/products/serverless/temporal-serverless-workers-on-cloud-run-worker-pools/"
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-15T16:00:00+00:00",
+      "publishedAt": "2026-10-16T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Editor's note: Generative AI startups are moving rapidly beyond static clip generation to build interactive, real-time worlds. In this technical deep dive, we explore how AI startup Visko collaborated with Google Cloud TPU engineers to deploy Orbis — its continuously streaming…",
-      "title": "How Visko streams real-time world models on Google Cloud TPUs",
-      "url": "https://cloud.google.com/blog/products/media-entertainment/how-visko-streams-real-time-world-models-on-google-cloud-tpus/"
+      "summary": "In production systems today, most AI agents operate as lightweight dispatchers. They parse a prompt, make an API call, retrieve a record, and hand back control. Their execution is fast, stateless and cheap. Biotechnology does not work this way. Folding a protein target…",
+      "title": "Architecting autonomy: A design pattern for high-compute, governed agents in biotech",
+      "url": "https://cloud.google.com/blog/topics/healthcare-life-sciences/architecting-scalable-agentic-biotech-workloads/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-15T16:00:00+00:00",
+      "publishedAt": "2026-10-16T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Agents represent a fundamental shift in cloud operations. They can act on behalf of users or autonomously, make non-deterministic decisions, and request data across projects at unprecedented speed and scale. Because agents are a distinct category of non-human identity (NHI)…",
-      "title": "Modernizing perimeter security: Scalable perimeters with VPC Service Controls",
-      "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-scalable-perimeter-options-with-vpc-service-controls/"
+      "summary": "The real challenge of building an agentic system isn't the construction, it's the measurement. Evaluation engineering is a critical foundation for building reliable AI systems. Setting up systematic, repeatable tests to measure your agent’s true behavior can be the difference…",
+      "title": "Four evaluation engineering lessons learned from building agent plugins",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/four-eval-engineering-lessons/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-15T16:00:00+00:00",
+      "publishedAt": "2026-10-16T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "October 12 - October 16 Looker Data Apps are now in Preview to build and host interactive, agent-generated applications natively inside Looker Generated using natural language prompts, the Antigravity CLI, or Claude Code, these interactive web applications, natively hosted…",
-      "title": "What’s new with Google Data Cloud",
-      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+      "summary": "Google Cloud Consulting works with organizations every day to build generative media that’s trustworthy, brand-aligned, and stands out. Instead of relying on clever or complicated prompting, we’ve identified four recurring basics to generate consistent results, what we call the…",
+      "title": "The SAVE method: Learn the fundamentals to engineer trustworthy generative media",
+      "url": "https://cloud.google.com/blog/topics/consulting/fundamentals-to-engineer-trustworthy-gen-media/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-15T16:00:00+00:00",
+      "publishedAt": "2026-10-16T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "As enterprises shift their AI usage from experimental chatbots to autonomous agents, teams are hitting a critical bottleneck: accessing and reasoning over data scattered across multiple clouds, SaaS platforms, and on-premises systems. To turn AI agents into true systems of…",
-      "title": "Bringing the borderless Lakehouse into the agentic era with innovations for Gemini",
-      "url": "https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-integrates-with-gemini/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-15T15:45:00+00:00",
-      "source": "The Register",
-      "summary": "For those times when a full-fat editor is overkill",
-      "title": "TinyLittleOffice, where the link is the document",
-      "url": "https://www.theregister.com/software/2026/10/15/tinylittleoffice-where-the-link-is-the-document/5303328"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-15T15:13:00+00:00",
-      "source": "The Register",
-      "summary": "Wayland-only Plasma 6.8 heads for Kubuntu 'Tenacious T-Rex' early next year",
-      "title": "KDE hits 30, decides it's time to move out of the X11 era",
-      "url": "https://www.theregister.com/software/2026/10/15/kde-hits-30-decides-its-time-to-move-out-of-the-x11-era/5303293"
+      "summary": "Everything is moving faster in the age of AI, and that includes security threats. What used to take attackers weeks to exploit can now happen in just a few minutes. Standard vulnerability scans that run on artifacts at rest can catch basic setup issues, but to detect an attack…",
+      "title": "Announcing Wiz Runtime Sensor add-on for GKE: Turnkey threat detection for Kubernetes",
+      "url": "https://cloud.google.com/blog/products/identity-security/wiz-sensor-for-gke-turnkey-threat-detection-for-kubernetes/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-15T14:31:27+00:00",
+      "publishedAt": "2026-10-16T15:30:00+00:00",
       "source": "The Register",
-      "summary": "Israeli adtech outfit allegedly helped spyware vendors infect phones while enjoying Google's seal of approval",
-      "title": "Spyware vendors found a way to make targeted ads even worse",
-      "url": "https://www.theregister.com/security/2026/10/15/spyware-vendors-found-a-way-to-make-targeted-ads-even-worse/5303334"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-15T14:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Written by: Jayson Frost, Bryce Greathouse, Brian Meyer, John Palmisano, Rajesh Rajeshirke, Steve Rasch, John Wolfram Introduction On October 15, BeyondTrust disclosed a vulnerability, CVE-2026-102764, impacting BeyondTrust Remote Support (formerly Bomgar) appliances…",
-      "title": "ARMORY CASTLE Exploits BeyondTrust",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-beyondtrust/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-15T14:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Introducing Void: an open-source SDK, CLI, and self-hosted platform for building full-stack Vite apps and deploying them to Cloudflare.",
-      "title": "Deploy with Void",
-      "url": "https://blog.cloudflare.com/deploy-with-void/"
+      "summary": "Legacy protocol is going to be axed, and enforcement by default will highlight how migration is going",
+      "title": "Networking problems after the October 2026 Windows update? NTLM might be to blame",
+      "url": "https://www.theregister.com/security/2026/10/16/networking-problems-after-the-october-2026-windows-update-ntlm-might-be-to-blame/5303503"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-15T13:45:00+00:00",
+      "publishedAt": "2026-10-16T13:29:00+00:00",
       "source": "The Register",
-      "summary": "CEO said the workers were hired in Q2 and are still helping today",
-      "title": "Bank of America had to bring in 1,000 contractors to patch all the bugs Mythos identified",
-      "url": "https://www.theregister.com/security/2026/10/15/bank-of-america-had-to-bring-in-1000-contractors-to-patch-all-the-bugs-mythos-identified/5303275"
+      "summary": "Legal eagles still plodding along with some operations, but paper and e-notices delayed until further notice",
+      "title": "Attack on BAE-managed system disrupts US bankruptcy courts",
+      "url": "https://www.theregister.com/security/2026/10/16/attack-on-bae-managed-system-disrupts-us-bankruptcy-courts/5303487"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-15T13:00:00+00:00",
+      "publishedAt": "2026-10-16T13:00:00+00:00",
       "source": "Cloudflare",
-      "summary": "How Cloudflare and OpenAI are working together to help AI find useful content, keep up with changes, and make fewer wasted requests — making the experience better for users and website owners alike.",
-      "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
-      "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/"
+      "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable over time.",
+      "title": "Continuous accountability for Verified bots",
+      "url": "https://blog.cloudflare.com/verified-bots-accountability/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-16T12:44:16+00:00",
+      "source": "The Register",
+      "summary": "Another reason for Donald Trump to hate British regulation",
+      "title": "British watchdog seeks tougher terms around Microsoft's dominance of business software",
+      "url": "https://www.theregister.com/software/2026/10/16/british-watchdog-seeks-tougher-terms-around-microsofts-dominance-of-business-software/5303520"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-16T09:15:00+00:00",
+      "source": "The Register",
+      "summary": "UK school admits data protection bungle as children's data at risk",
+      "title": "Thief snatches school snapper's SD cards in smash & grab",
+      "url": "https://www.theregister.com/security/2026/10/16/thief-snatches-school-snappers-sd-cards-in-smash-grab/5303379"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-16T08:30:00+00:00",
+      "source": "The Register",
+      "summary": "Migration targets, security rules, and management metrics take center stage at this year's event",
+      "title": "Open source sovereignty gets down to the boring business of making it work",
+      "url": "https://www.theregister.com/software/2026/10/16/open-source-sovereignty-gets-down-to-the-boring-business-of-making-it-work/5303206"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-16T07:28:00+00:00",
+      "source": "The Register",
+      "summary": "School staff seemed to be trying to get ransomware – for a second time",
+      "title": "User refused to change her password because everyone already knew it",
+      "url": "https://www.theregister.com/security/2026/10/16/user-refused-to-change-her-password-because-everyone-already-knew-it/5301864"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-15T20:32:41+00:00",
+      "source": "Ars Technica",
+      "summary": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
+      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
+      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/"
     }
   ]
 }
