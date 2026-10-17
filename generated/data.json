@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1767,
+      "date": "2026-10-18",
+      "kevAdded": 0,
+      "knownExploited": 3,
+      "projects": 18,
+      "releases": 2,
+      "techEntries": 61
+    },
+    {
       "cves": 8432,
       "date": "2026-10-17",
       "kevAdded": 2,
@@ -281,16 +290,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-16",
-    "date": "2026-10-17",
-    "daysObserved": 31,
-    "generatedAt": "2026-10-16T21:34:16.983069+00:00",
-    "snapshots": 31,
+    "coveredDate": "2026-10-17",
+    "date": "2026-10-18",
+    "daysObserved": 32,
+    "generatedAt": "2026-10-17T20:51:17.461635+00:00",
+    "snapshots": 32,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 73,
+      "daily_growth": 25,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -298,11 +307,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201058,
+      "stars": 201083,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 17,
+      "daily_growth": 15,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -310,11 +319,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143038,
+      "stars": 143053,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 73,
+      "daily_growth": 17,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -322,11 +331,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139272,
+      "stars": 139289,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 72,
+      "daily_growth": 22,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -334,11 +343,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128310,
+      "stars": 128332,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 79,
+      "daily_growth": 15,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -346,11 +355,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122374,
+      "stars": 122389,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 116,
+      "daily_growth": 42,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -358,11 +367,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120413,
+      "stars": 120455,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 51,
+      "daily_growth": 30,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -370,11 +379,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111659,
+      "stars": 111689,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 100,
+      "daily_growth": 27,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -382,11 +391,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104804,
+      "stars": 104831,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 13,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -394,11 +403,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97885,
+      "stars": 97898,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 65,
+      "daily_growth": 18,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -406,261 +415,243 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91398,
+      "stars": 91416,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
       "kind": "minor",
-      "project": "framework",
-      "publishedAt": "2026-10-16T05:00:57Z",
-      "repository": "laravel/framework",
+      "project": "openai-python",
+      "publishedAt": "2026-10-17T00:29:04Z",
+      "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v13.37.0",
-      "version": "v13.37.0"
-    },
-    {
-      "kind": "patch",
-      "project": "rust",
-      "publishedAt": "2026-10-16T04:47:44Z",
-      "repository": "rust-lang/rust",
-      "source": "GitHub",
-      "url": "https://github.com/rust-lang/rust/releases/tag/1.99.1",
-      "version": "1.99.1"
-    },
-    {
-      "kind": "patch",
-      "project": "next.js",
-      "publishedAt": "2026-10-15T20:44:37Z",
-      "repository": "vercel/next.js",
-      "source": "GitHub",
-      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.2",
-      "version": "v16.4.2"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.33.0",
+      "version": "v3.33.0"
     },
     {
       "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-15T19:45:15Z",
-      "repository": "anthropics/anthropic-sdk-python",
+      "project": "openai-python",
+      "publishedAt": "2026-10-16T20:17:26Z",
+      "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.15.0",
-      "version": "v1.15.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.32.0",
+      "version": "v3.32.0"
     }
   ],
   "security": {
-    "critical": 386,
-    "high": 2343,
+    "critical": 271,
+    "high": 886,
     "kevCatalogTotal": 1748,
     "latest": [
       {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "MoviePilot through 3.1.5 contains a command injection vulnerability that allows attackers to execute arbitrary OS commands by embedding malicious instructions in untrusted content processed through tools like browse_webpage, search_web, and torrent metadata parsers, which then get passed to the unrestricted ExecuteCommandTool via asyncio.create_subprocess_shell. Attackers can craft content that…",
-        "id": "CVE-2026-77931",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "A heap buffer overflow in the stbl_AddSize function (isomedia/stbl_write.c) of GPAC MP4Box v2.4 allows attackers to cause a Denial of Service (DoS) via supplying a crafted MP4 file.",
+        "id": "CVE-2025-55640",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T02:20:16.277",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-10-17T18:16:28.277",
+        "publishedAt": "2026-10-16T19:16:56.243",
+        "severity": null,
         "source": "NVD",
-        "title": "MoviePilot through 3.1.5 contains a command injection vulnerability that allows attackers to execute arbitrary OS commands by embedding malicious instructions…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77931"
+        "title": "A heap buffer overflow in the stbl_AddSize function (isomedia/stbl_write.c) of GPAC MP4Box v2.4 allows attackers to cause a Denial of Service (DoS) via…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55640"
       },
       {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "IntentKit through 2.6.3 contains an authorization bypass vulnerability where the executor validates tool calls against the full tool registry rather than the per-request narrowed tool advertisement enforced by ToolBindingMiddleware, allowing owner-only state-changing tools such as wallet transfer, posting, memory-write, and call-agent to execute without any human-in-the-loop or approval gate. An…",
-        "id": "CVE-2026-76066",
+        "cvss_score": 3.6,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in libarchive. An attacker can cause a Denial of Service (DoS) or potential information disclosure due to a use-after-free vulnerability, which occurs when a program reads memory that has already been released. This issue arises when the archive_entry_copy_mac_metadata() function deallocates an internal buffer before completing a data copy. An attacker who can supply input to an…",
+        "id": "CVE-2026-17591",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T02:20:15.603",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-10-17T17:16:29.753",
+        "publishedAt": "2026-10-16T23:17:01.420",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "IntentKit through 2.6.3 contains an authorization bypass vulnerability where the executor validates tool calls against the full tool registry rather than the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76066"
-      },
-      {
-        "cvss_score": 9.1,
-        "cvss_version": "4.0",
-        "description": "Netherman Portal del Hermano (portaldelhermano.es) before 2026-10-06 contains a broken authentication vulnerability in its password-recovery flow at the POST /password/create-access and POST /password/email endpoints, allowing unauthenticated attackers to take over any member account across all tenants by exploiting the lack of rate limiting and distinct error messages that act as oracles for…",
-        "id": "CVE-2026-53997",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-12T21:17:17.400",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Netherman Portal del Hermano (portaldelhermano.es) before 2026-10-06 contains a broken authentication vulnerability in its password-recovery flow at the POST…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53997"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "4.0",
-        "description": "Xorbits Xoscar through 0.11.2 contains an unauthenticated deserialization vulnerability that allows remote attackers to execute arbitrary code by sending crafted data over the actor-pool TCP channel. Attackers can exploit SocketChannel.recv() passing unvalidated data to cloudpickle.loads(), which triggers pickle __reduce__ gadget execution before message type validation, achieving remote code…",
-        "id": "CVE-2026-49950",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-13T21:17:39.007",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Xorbits Xoscar through 0.11.2 contains an unauthenticated deserialization vulnerability that allows remote attackers to execute arbitrary code by sending…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49950"
+        "title": "A flaw was found in libarchive. An attacker can cause a Denial of Service (DoS) or potential information disclosure due to a use-after-free vulnerability…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17591"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "OpenS100 through commit 2b1dafc contains an integer overflow vulnerability in the S-102 Bathymetric Surface parser. An attacker can supply a crafted S-102 HDF5 file with malicious grid dimension metadata that causes memory corruption when a user opens it. In the S102_VG_BathymetryCoverage::Read() function, the numPointsLatitudinal and numPointsLongitudinal values are multiplied without…",
-        "id": "CVE-2026-35001",
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PAYCOMET PAYCOMET for WooCommerce paytpv-for-woocommerce allows Reflected XSS.This issue affects PAYCOMET for WooCommerce: from n/a through 5.45.",
+        "id": "CVE-2026-109701",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-13T02:16:59.010",
+        "lastModifiedAt": "2026-10-17T17:16:28.973",
+        "publishedAt": "2026-10-17T17:16:28.973",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "OpenS100 through commit 2b1dafc contains an integer overflow vulnerability in the S-102 Bathymetric Surface parser. An attacker can supply a crafted S-102 HDF5…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35001"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PAYCOMET PAYCOMET for WooCommerce paytpv-for-woocommerce…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109701"
       },
       {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Seanime v3.7.0 to v3.10.3 contains an argument injection vulnerability reachable through improper authorization, allowing unauthenticated LAN or Tailnet clients to bypass the privileged mediastream settings guard by setting transcodeHwAccel to custom and supplying attacker-controlled decodeFlags and encodeFlags via the transcodeHwAccelCustomSettings field, which are appended verbatim to the…",
-        "id": "CVE-2026-111728",
+        "cvss_score": 7.4,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in the internal WebAssembly (WASM) shim used by the Kuadrant operator. When generating the CEL predicate that determines whether Gateway-level authentication and rate limiting should run, the shim does not correctly escape values from HTTPRoute match fields. A user who can create or modify an HTTPRoute attached to a shared Gateway can provide a crafted path, header, or query…",
+        "id": "CVE-2026-108334",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-16T15:17:15.190",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Seanime v3.7.0 to v3.10.3 contains an argument injection vulnerability reachable through improper authorization, allowing unauthenticated LAN or Tailnet…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111728"
-      },
-      {
-        "cvss_score": 6.0,
-        "cvss_version": "4.0",
-        "description": "Erupt through 2.3.0 contains an HQL injection vulnerability that allows authenticated users to bypass tree-scoped data filters by injecting unescaped quotes into the linkTreeVal parameter of POST /erupt-api/data/table/{erupt}. Attackers holding query permission on entities with String-keyed linkTree targets can append always-true OR clauses or boolean subqueries to read data from other mapped…",
-        "id": "CVE-2026-111390",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-16T12:16:33.050",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Erupt through 2.3.0 contains an HQL injection vulnerability that allows authenticated users to bypass tree-scoped data filters by injecting unescaped quotes…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111390"
-      },
-      {
-        "cvss_score": 8.3,
-        "cvss_version": "4.0",
-        "description": "Frappe HRMS 14.x before 14.38.2, 15.x before 15.64.0, and 16.x before 16.18.0 contains a SQL injection vulnerability in some endpoints caused by missing input validation. Any authenticated attacker, including a low-privilege account, can send specially crafted requests to these endpoints to extract sensitive information from the database.",
-        "id": "CVE-2026-111389",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-16T03:18:06.540",
+        "lastModifiedAt": "2026-10-17T12:16:28.720",
+        "publishedAt": "2026-10-15T19:17:20.187",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Frappe HRMS 14.x before 14.38.2, 15.x before 15.64.0, and 16.x before 16.18.0 contains a SQL injection vulnerability in some endpoints caused by missing input…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111389"
+        "title": "A flaw was found in the internal WebAssembly (WASM) shim used by the Kuadrant operator. When generating the CEL predicate that determines whether Gateway-level…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108334"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This issue affects Gantry 5 Framework: from n/a through 5.6.4.",
+        "id": "CVE-2026-110889",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-17T11:16:32.017",
+        "publishedAt": "2026-10-17T11:16:32.017",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110889"
+      },
+      {
+        "cvss_score": 8.5,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ruben Garcia GamiPress gamipress allows Blind SQL Injection.This issue affects GamiPress: from n/a through 8.0.2.",
+        "id": "CVE-2026-94177",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-17T09:16:29.220",
+        "publishedAt": "2026-09-30T13:17:25.583",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ruben Garcia GamiPress gamipress allows Blind SQL…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94177"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "ClassroomIO through 1.0.0 contains an incorrect authorization vulnerability in the PUT and DELETE /:lessonId lesson routes that allows any course member, including students, to modify lessons. Authenticated students can supply arbitrary lesson ids to change titles and stored HTML content or delete lessons in their course and in other courses and organizations.",
-        "id": "CVE-2026-111369",
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Automattic WordPress wordpress allows DOM-Based XSS.This issue affects WordPress: from n/a through 7.1.",
+        "id": "CVE-2026-93485",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T22:19:35.013",
+        "lastModifiedAt": "2026-10-17T09:16:29.070",
+        "publishedAt": "2026-09-18T06:16:41.970",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "ClassroomIO through 1.0.0 contains an incorrect authorization vulnerability in the PUT and DELETE /:lessonId lesson routes that allows any course member…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111369"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Automattic WordPress wordpress allows DOM-Based XSS.This…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93485"
       },
       {
-        "cvss_score": 6.1,
+        "cvss_score": 8.4,
         "cvss_version": "4.0",
-        "description": "ClassroomIO through 1.0.0 contains an insecure direct object reference vulnerability in the Hono API course submission routes that allows course tutors or admins to modify submissions in other courses. Attackers can supply their own course id with another course's submission UUID to PUT or DELETE handlers to overwrite answers, grades, feedback, and grading status or delete submissions.",
-        "id": "CVE-2026-111368",
+        "description": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+        "id": "CVE-2026-110936",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T22:19:34.847",
+        "lastModifiedAt": "2026-10-17T09:16:28.893",
+        "publishedAt": "2026-10-15T15:17:30.383",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936"
+      },
+      {
+        "cvss_score": 7.2,
+        "cvss_version": "3.1",
+        "description": "The Payment forms, Buy now buttons, and Invoicing System | GetPaid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mmdwqzpoxadd' parameter in all versions up to, and including, 2.8.61 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user…",
+        "id": "CVE-2026-111110",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-17T08:16:28.310",
+        "publishedAt": "2026-10-17T08:16:28.310",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The Payment forms, Buy now buttons, and Invoicing System | GetPaid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mmdwqzpoxadd'…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111110"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "3.1",
+        "description": "The weForms – Easy Drag & Drop Contact Form Builder For WordPress plugin for WordPress is vulnerable to limited media file deletion due to insufficient file path validation in the weforms_delete_entry_attachments function in all versions up to, and including, 1.6.28 This makes it possible for unauthenticated attackers to delete arbitrary media files on the server. This requires an administrator…",
+        "id": "CVE-2026-110253",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-17T08:16:28.167",
+        "publishedAt": "2026-10-17T08:16:28.167",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "ClassroomIO through 1.0.0 contains an insecure direct object reference vulnerability in the Hono API course submission routes that allows course tutors or…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111368"
+        "title": "The weForms – Easy Drag & Drop Contact Form Builder For WordPress plugin for WordPress is vulnerable to limited media file deletion due to insufficient file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110253"
       },
       {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "BillionMail through 4.9 contains a hard-coded cryptographic key vulnerability that allows unauthenticated attackers to forge unsubscribe and subscribe-confirm JWTs by computing the key from shipped configuration constants. Attackers can submit forged tokens to /api/unsubscribe, /api/unsubscribe_new, or /api/subscribe/confirm to deactivate any contact or force confirmed subscriptions.",
-        "id": "CVE-2026-111367",
+        "cvss_score": 6.4,
+        "cvss_version": "3.1",
+        "description": "The YMC Filter plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'post_title' parameter in all versions up to, and including, 3.12.19 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses…",
+        "id": "CVE-2026-109983",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T22:19:34.703",
+        "lastModifiedAt": "2026-10-17T08:16:28.020",
+        "publishedAt": "2026-10-17T08:16:28.020",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "BillionMail through 4.9 contains a hard-coded cryptographic key vulnerability that allows unauthenticated attackers to forge unsubscribe and subscribe-confirm…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111367"
+        "title": "The YMC Filter plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'post_title' parameter in all versions up to, and including…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109983"
       },
       {
-        "cvss_score": 8.6,
-        "cvss_version": "4.0",
-        "description": "cool-admin-midway through 8.0.0 contains an authorization bypass vulnerability that allows department-limited admins to manage users outside their departments by supplying arbitrary user ids. Attackers holding sys:user:* permissions can call /admin/sys/user/info, update, or delete to read records, reset passwords and roles, or delete accounts.",
-        "id": "CVE-2026-111366",
+        "cvss_score": 7.2,
+        "cvss_version": "3.1",
+        "description": "The European VAT Compliance Assistant for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via CF-IPCountry Header in all versions up to, and including, 1.36.10 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected…",
+        "id": "CVE-2026-100316",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T22:19:34.557",
+        "lastModifiedAt": "2026-10-17T08:16:26.950",
+        "publishedAt": "2026-10-17T08:16:26.950",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "cool-admin-midway through 8.0.0 contains an authorization bypass vulnerability that allows department-limited admins to manage users outside their departments…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111366"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "4.0",
-        "description": "cool-admin-midway through 8.0.0 contains an authorization bypass vulnerability that allows non-superadmin admins to read, modify, or delete other admins' roles by supplying arbitrary role ids. Attackers holding ordinary sys:role permissions can call /admin/sys/role/info, update, or delete with another admin's role id to rewrite menu and department grants, changing other users' effective access.",
-        "id": "CVE-2026-111365",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T22:19:34.407",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "cool-admin-midway through 8.0.0 contains an authorization bypass vulnerability that allows non-superadmin admins to read, modify, or delete other admins' roles…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111365"
+        "title": "The European VAT Compliance Assistant for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via CF-IPCountry Header in all versions…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100316"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "MinDoc through 2.2-beta.2 contains an insecure direct object reference vulnerability in DocumentController.Content that allows authenticated users to read documents from unauthorized books. Attackers holding a non-observer role on any book can name that book and iterate sequential document ids to read markdown and HTML from private books.",
-        "id": "CVE-2026-111364",
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Heateor Support Fancy Comments WordPress fancy-facebook-comments allows Reflected XSS.This issue affects Fancy Comments WordPress: from n/a through 1.2.21.",
+        "id": "CVE-2026-110384",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T22:19:34.260",
+        "lastModifiedAt": "2026-10-17T07:16:50.350",
+        "publishedAt": "2026-10-17T07:16:50.350",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "MinDoc through 2.2-beta.2 contains an insecure direct object reference vulnerability in DocumentController.Content that allows authenticated users to read…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111364"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Heateor Support Fancy Comments WordPress…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110384"
       },
       {
-        "cvss_score": 5.3,
+        "cvss_score": 1.1,
         "cvss_version": "4.0",
-        "description": "SendPortal sendportal-core through 4.0.1 contains an authorization bypass vulnerability that allows authenticated workspace members to attach subscribers to other workspaces' tags by supplying unvalidated tag IDs. Attackers can submit sequential tag IDs via the web subscriber form or CSV import to receive victim campaign content and skew victim reports.",
-        "id": "CVE-2026-111358",
+        "description": "A flaw has been found in LMCache up to 0.5.4. This affects the function hex_hash_to_int16 of the file lmcache/integration/vllm/utils.py of the component KV Cache Handler. Executing a manipulation can lead to use of weak hash. The attack needs to be launched locally. The attack requires a high level of complexity. It is indicated that the exploitability is difficult. The exploit has been published…",
+        "id": "CVE-2026-10813",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-16T18:25:45.343",
-        "publishedAt": "2026-10-15T22:19:33.793",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-17T07:16:49.720",
+        "publishedAt": "2026-06-04T16:16:32.883",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "SendPortal sendportal-core through 4.0.1 contains an authorization bypass vulnerability that allows authenticated workspace members to attach subscribers to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111358"
+        "title": "A flaw has been found in LMCache up to 0.5.4. This affects the function hex_hash_to_int16 of the file lmcache/integration/vllm/utils.py of the component KV…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10813"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "The ThirstyAffiliates  WordPress plugin before 3.12.1 does not check the status or type of the object requested by its link redirect tracking handler, allowing unauthenticated attackers to disclose the destination URLs of unpublished affiliate links and to record fabricated click statistics.",
+        "id": "CVE-2026-97314",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-17T06:16:34.553",
+        "publishedAt": "2026-10-17T06:16:34.553",
+        "severity": null,
+        "source": "NVD",
+        "title": "The ThirstyAffiliates  WordPress plugin before 3.12.1 does not check the status or type of the object requested by its link redirect tracking handler, allowing…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97314"
       }
     ],
-    "low": 64,
-    "medium": 1149,
+    "low": 45,
+    "medium": 430,
     "none": 0,
-    "unscored": 4490
+    "unscored": 135
   },
   "snapshot": {
-    "cves": 8432,
-    "kevAdded": 2,
-    "knownExploited": 2,
+    "cves": 1767,
+    "kevAdded": 0,
+    "knownExploited": 3,
     "projects": 18,
-    "releases": 4,
-    "techEntries": 70
+    "releases": 2,
+    "techEntries": 61
   },
   "sources": {
     "opensource": {
@@ -674,7 +665,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 4,
+        "inWindow": 2,
         "status": "partial",
         "total": 54
       }
@@ -682,27 +673,43 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 2,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1748
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 8432,
+        "inWindow": 1767,
         "status": "success",
-        "total": 8432
+        "total": 1767
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 70,
+        "inWindow": 61,
         "status": "success",
         "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-10-17T11:30:00+00:00",
+      "source": "The Register",
+      "summary": "'Hold my beer, have fun getting into your offices'",
+      "title": "Cybercrims go beyond stealing data to attack physical building systems",
+      "url": "https://www.theregister.com/security/2026/10/17/cybercrims-go-beyond-stealing-data-to-attack-physical-building-systems/5303677"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-16T20:59:01+00:00",
+      "source": "Ars Technica",
+      "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-10-16T17:00:00+00:00",
@@ -806,22 +813,6 @@
       "summary": "Migration targets, security rules, and management metrics take center stage at this year's event",
       "title": "Open source sovereignty gets down to the boring business of making it work",
       "url": "https://www.theregister.com/software/2026/10/16/open-source-sovereignty-gets-down-to-the-boring-business-of-making-it-work/5303206"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-16T07:28:00+00:00",
-      "source": "The Register",
-      "summary": "School staff seemed to be trying to get ransomware – for a second time",
-      "title": "User refused to change her password because everyone already knew it",
-      "url": "https://www.theregister.com/security/2026/10/16/user-refused-to-change-her-password-because-everyone-already-knew-it/5301864"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-15T20:32:41+00:00",
-      "source": "Ars Technica",
-      "summary": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
-      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
-      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/"
     }
   ]
 }

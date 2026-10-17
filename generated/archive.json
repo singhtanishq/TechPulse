@@ -1,6 +1,225 @@
 {
   "archive": [
     {
+      "date": "2026-10-18",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 25,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201083,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143053,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 17,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139289,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128332,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122389,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 42,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120455,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 30,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 111689,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 27,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 104831,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 13,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97898,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 18,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91416,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 2,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-17T00:29:04Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.33.0",
+            "version": "v3.33.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-16T20:17:26Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.32.0",
+            "version": "v3.32.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 271,
+          "HIGH": 886,
+          "LOW": 45,
+          "MEDIUM": 430,
+          "NONE": 0,
+          "UNSCORED": 135
+        }
+      },
+      "snapshot": {
+        "cves": 1767,
+        "kevAdded": 0,
+        "knownExploited": 3,
+        "projects": 18,
+        "releases": 2,
+        "techEntries": 61
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1748
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 2,
+          "status": "partial",
+          "total": 54
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1767,
+          "status": "success",
+          "total": 1767
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 61,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 20,
+          "tech": 41
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-17T11:30:00+00:00",
+            "source": "The Register",
+            "title": "Cybercrims go beyond stealing data to attack physical building systems",
+            "url": "https://www.theregister.com/security/2026/10/17/cybercrims-go-beyond-stealing-data-to-attack-physical-building-systems/5303677"
+          },
+          {
+            "published_at": "2026-10-16T20:59:01+00:00",
+            "source": "Ars Technica",
+            "title": "OpenAI models hacked a crypto wallet and breached more websites",
+            "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
+          },
+          {
+            "published_at": "2026-10-16T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Day 0 support for Reflection’s Beam on Google Cloud: 5x faster perf with llm-d and NVIDIA Dynamo",
+            "url": "https://cloud.google.com/blog/topics/ai-infrastructure/day-0-support-with-5x-perf-for-reflection-beam-on-google-cloud/"
+          },
+          {
+            "published_at": "2026-10-16T16:01:02+00:00",
+            "source": "Netflix",
+            "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
+            "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
+          },
+          {
+            "published_at": "2026-10-16T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-10-16T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Architecting autonomy: A design pattern for high-compute, governed agents in biotech",
+            "url": "https://cloud.google.com/blog/topics/healthcare-life-sciences/architecting-scalable-agentic-biotech-workloads/"
+          },
+          {
+            "published_at": "2026-10-16T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Four evaluation engineering lessons learned from building agent plugins",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/four-eval-engineering-lessons/"
+          },
+          {
+            "published_at": "2026-10-16T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "The SAVE method: Learn the fundamentals to engineer trustworthy generative media",
+            "url": "https://cloud.google.com/blog/topics/consulting/fundamentals-to-engineer-trustworthy-gen-media/"
+          },
+          {
+            "published_at": "2026-10-16T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Announcing Wiz Runtime Sensor add-on for GKE: Turnkey threat detection for Kubernetes",
+            "url": "https://cloud.google.com/blog/products/identity-security/wiz-sensor-for-gke-turnkey-threat-detection-for-kubernetes/"
+          },
+          {
+            "published_at": "2026-10-16T15:30:00+00:00",
+            "source": "The Register",
+            "title": "Networking problems after the October 2026 Windows update? NTLM might be to blame",
+            "url": "https://www.theregister.com/security/2026/10/16/networking-problems-after-the-october-2026-windows-update-ntlm-might-be-to-blame/5303503"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-17",
       "opensource": {
         "topProjects": [
@@ -6783,8 +7002,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-16T21:34:16.983069+00:00",
-    "totalSnapshots": 31,
+    "generatedAt": "2026-10-17T20:51:17.461635+00:00",
+    "totalSnapshots": 32,
     "warnings": []
   }
 }

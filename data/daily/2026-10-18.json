@@ -1,0 +1,320 @@
+{
+  "coveredIstDay": "2026-10-17",
+  "date": "2026-10-18",
+  "generatedAt": "2026-10-17T20:51:17.461635+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 25,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201083,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 15,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143053,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 17,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139289,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 22,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128332,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 15,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122389,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 42,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120455,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 30,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111689,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 27,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104831,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 13,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97898,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 18,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91416,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-17T00:29:04Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.33.0",
+        "version": "v3.33.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-16T20:17:26Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.32.0",
+        "version": "v3.32.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": null,
+        "description": "A heap buffer overflow in the stbl_AddSize function (isomedia/stbl_write.c) of GPAC MP4Box v2.4 allows attackers to cause a Denial of Service (DoS) via supplying a crafted MP4 file.",
+        "id": "CVE-2025-55640",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55640"
+      },
+      {
+        "cvss": 3.6,
+        "description": "A flaw was found in libarchive. An attacker can cause a Denial of Service (DoS) or potential information disclosure due to a use-after-free vulnerability, which occurs when a program reads memory that",
+        "id": "CVE-2026-17591",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17591"
+      },
+      {
+        "cvss": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PAYCOMET PAYCOMET for WooCommerce paytpv-for-woocommerce allows Reflected XSS.This issue affects P",
+        "id": "CVE-2026-109701",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109701"
+      },
+      {
+        "cvss": 7.4,
+        "description": "A flaw was found in the internal WebAssembly (WASM) shim used by the Kuadrant operator. When generating the CEL predicate that determines whether Gateway-level authentication and rate limiting should ",
+        "id": "CVE-2026-108334",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108334"
+      },
+      {
+        "cvss": 7.5,
+        "description": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This issue affects Gantry 5 Framework: from n/a ",
+        "id": "CVE-2026-110889",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110889"
+      },
+      {
+        "cvss": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ruben Garcia GamiPress gamipress allows Blind SQL Injection.This issue affects GamiPress: from n/a",
+        "id": "CVE-2026-94177",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94177"
+      },
+      {
+        "cvss": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Automattic WordPress wordpress allows DOM-Based XSS.This issue affects WordPress: from n/a through",
+        "id": "CVE-2026-93485",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93485"
+      },
+      {
+        "cvss": 8.4,
+        "description": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allo",
+        "id": "CVE-2026-110936",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936"
+      },
+      {
+        "cvss": 7.2,
+        "description": "The Payment forms, Buy now buttons, and Invoicing System | GetPaid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mmdwqzpoxadd' parameter in all versions up to, and includi",
+        "id": "CVE-2026-111110",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111110"
+      },
+      {
+        "cvss": 5.4,
+        "description": "The weForms – Easy Drag & Drop Contact Form Builder For WordPress plugin for WordPress is vulnerable to limited media file deletion due to insufficient file path validation in the weforms_delete_entry",
+        "id": "CVE-2026-110253",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110253"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 271,
+      "HIGH": 886,
+      "LOW": 45,
+      "MEDIUM": 430,
+      "NONE": 0,
+      "UNSCORED": 135
+    }
+  },
+  "snapshot": {
+    "cves": 1767,
+    "kevAdded": 0,
+    "knownExploited": 3,
+    "projects": 18,
+    "releases": 2,
+    "techEntries": 61
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1748
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 2,
+      "status": "partial",
+      "total": 54
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1767,
+      "status": "success",
+      "total": 1767
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 61,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 20,
+      "tech": 41
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-17T11:30:00+00:00",
+        "source": "The Register",
+        "title": "Cybercrims go beyond stealing data to attack physical building systems",
+        "url": "https://www.theregister.com/security/2026/10/17/cybercrims-go-beyond-stealing-data-to-attack-physical-building-systems/5303677"
+      },
+      {
+        "published_at": "2026-10-16T20:59:01+00:00",
+        "source": "Ars Technica",
+        "title": "OpenAI models hacked a crypto wallet and breached more websites",
+        "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
+      },
+      {
+        "published_at": "2026-10-16T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Day 0 support for Reflection’s Beam on Google Cloud: 5x faster perf with llm-d and NVIDIA Dynamo",
+        "url": "https://cloud.google.com/blog/topics/ai-infrastructure/day-0-support-with-5x-perf-for-reflection-beam-on-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-16T16:01:02+00:00",
+        "source": "Netflix",
+        "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
+        "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Architecting autonomy: A design pattern for high-compute, governed agents in biotech",
+        "url": "https://cloud.google.com/blog/topics/healthcare-life-sciences/architecting-scalable-agentic-biotech-workloads/"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Four evaluation engineering lessons learned from building agent plugins",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/four-eval-engineering-lessons/"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "The SAVE method: Learn the fundamentals to engineer trustworthy generative media",
+        "url": "https://cloud.google.com/blog/topics/consulting/fundamentals-to-engineer-trustworthy-gen-media/"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Announcing Wiz Runtime Sensor add-on for GKE: Turnkey threat detection for Kubernetes",
+        "url": "https://cloud.google.com/blog/products/identity-security/wiz-sensor-for-gke-turnkey-threat-detection-for-kubernetes/"
+      },
+      {
+        "published_at": "2026-10-16T15:30:00+00:00",
+        "source": "The Register",
+        "title": "Networking problems after the October 2026 Windows update? NTLM might be to blame",
+        "url": "https://www.theregister.com/security/2026/10/16/networking-problems-after-the-october-2026-windows-update-ntlm-might-be-to-blame/5303503"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 3,
+      "Cloudflare": 5,
+      "GitHub Blog": 4,
+      "Google Cloud": 14,
+      "Meta": 3,
+      "Netflix": 10,
+      "The Register": 21
+    }
+  },
+  "window": {
+    "end": "2026-10-17T18:30:00+00:00",
+    "start": "2026-10-16T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
