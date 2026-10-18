@@ -1,0 +1,326 @@
+{
+  "coveredIstDay": "2026-10-18",
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-18T20:59:02.136846+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 10,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201093,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 21,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143074,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 28,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139317,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 27,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128359,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 20,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122409,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 34,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120489,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 45,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111734,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 13,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104844,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 22,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97920,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 18,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91434,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-18T01:05:46Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.35.1",
+        "version": "v3.35.1"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-17T23:13:52Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.35.0",
+        "version": "v3.35.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-17T20:34:04Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.34.0",
+        "version": "v3.34.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": null,
+        "description": "JQ::Lite versions before 2.51 for Perl execute Perl code embedded in a query's regular expression by compiling it with string eval.\n\nThe pattern given to test(), match(), or the match and =~ condition",
+        "id": "CVE-2026-78497",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78497"
+      },
+      {
+        "cvss": null,
+        "description": "The Management Console fails to properly validate input related to the configuration of JDBC user stores. This weakness allows an attacker to supply specially crafted input that can lead to the execut",
+        "id": "CVE-2024-4457",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-4457"
+      },
+      {
+        "cvss": 9.9,
+        "description": "Cal.com is open-source scheduling software. Prior to 5.9.8, A flaw in the login credentials provider allows an attacker to bypass password verification when a TOTP code is provided, potentially gainin",
+        "id": "CVE-2025-66489",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66489"
+      },
+      {
+        "cvss": 7.8,
+        "description": "Vim is an open source, command line text editor. Prior to version 9.1.1947, an uncontrolled search path vulnerability on Windows allows Vim to execute malicious executables placed in the current worki",
+        "id": "CVE-2025-66476",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66476"
+      },
+      {
+        "cvss": 6.1,
+        "description": "The Aimeos GrapesJS CMS extension provides page editor for creating content pages based on extensible components. Prior to 2021.10.8, 2022.10.8, 2023.10.8, 2024.10.8, and 2025.10.8, Javascript code ca",
+        "id": "CVE-2025-66468",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66468"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Arcade MCP allows you to to create, deploy, and share MCP Servers. Prior to 1.5.4, the arcade-mcp HTTP server uses a hardcoded default worker secret (\"dev\") that is never validated or overridden durin",
+        "id": "CVE-2025-66454",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66454"
+      },
+      {
+        "cvss": 8.8,
+        "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.11.1, vllm has a critical remote code execution vector in a config class named Nemotron_Nano_VL_Config. When vllm l",
+        "id": "CVE-2025-66448",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66448"
+      },
+      {
+        "cvss": 4.2,
+        "description": "HTCondor Access Point before 25.3.1 allows an authenticated user to impersonate other users on the local machine by submitting a batch job. This is fixed in 24.12.14, 25.0.3, and 25.3.1. The earliest ",
+        "id": "CVE-2025-66433",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66433"
+      },
+      {
+        "cvss": 5.0,
+        "description": "In Oxide control plane 15 through 17 before 17.1, API tokens can be renewed past their expiration date.",
+        "id": "CVE-2025-66432",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66432"
+      },
+      {
+        "cvss": 7.8,
+        "description": "WebPros Plesk before 18.0.73.5 and 18.0.74 before 18.0.74.2 on Linux allows remote authenticated users to execute arbitrary code as root via domain creation. The attacker needs \"Create and manage site",
+        "id": "CVE-2025-66431",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66431"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 42,
+      "HIGH": 190,
+      "LOW": 54,
+      "MEDIUM": 337,
+      "NONE": 0,
+      "UNSCORED": 5370
+    }
+  },
+  "snapshot": {
+    "cves": 5993,
+    "kevAdded": 0,
+    "knownExploited": 1,
+    "projects": 18,
+    "releases": 3,
+    "techEntries": 20
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1748
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 3,
+      "status": "partial",
+      "total": 53
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 5993,
+      "status": "success",
+      "total": 5993
+    },
+    "rss": {
+      "failures": 1,
+      "inWindow": 20,
+      "status": "partial",
+      "total": 199
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 9,
+      "tech": 11
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-17T11:30:00+00:00",
+        "source": "The Register",
+        "title": "Cybercrims go beyond stealing data to attack physical building systems",
+        "url": "https://www.theregister.com/security/2026/10/17/cybercrims-go-beyond-stealing-data-to-attack-physical-building-systems/5303677"
+      },
+      {
+        "published_at": "2026-10-16T20:59:01+00:00",
+        "source": "Ars Technica",
+        "title": "OpenAI models hacked a crypto wallet and breached more websites",
+        "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
+      },
+      {
+        "published_at": "2026-10-16T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Day 0 support for Reflection’s Beam on Google Cloud: 5x faster perf with llm-d and NVIDIA Dynamo",
+        "url": "https://cloud.google.com/blog/topics/ai-infrastructure/day-0-support-with-5x-perf-for-reflection-beam-on-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-16T16:01:02+00:00",
+        "source": "Netflix",
+        "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
+        "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Architecting autonomy: A design pattern for high-compute, governed agents in biotech",
+        "url": "https://cloud.google.com/blog/topics/healthcare-life-sciences/architecting-scalable-agentic-biotech-workloads/"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Four evaluation engineering lessons learned from building agent plugins",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/four-eval-engineering-lessons/"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "The SAVE method: Learn the fundamentals to engineer trustworthy generative media",
+        "url": "https://cloud.google.com/blog/topics/consulting/fundamentals-to-engineer-trustworthy-gen-media/"
+      },
+      {
+        "published_at": "2026-10-16T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Announcing Wiz Runtime Sensor add-on for GKE: Turnkey threat detection for Kubernetes",
+        "url": "https://cloud.google.com/blog/products/identity-security/wiz-sensor-for-gke-turnkey-threat-detection-for-kubernetes/"
+      },
+      {
+        "published_at": "2026-10-16T15:30:00+00:00",
+        "source": "The Register",
+        "title": "Networking problems after the October 2026 Windows update? NTLM might be to blame",
+        "url": "https://www.theregister.com/security/2026/10/16/networking-problems-after-the-october-2026-windows-update-ntlm-might-be-to-blame/5303503"
+      }
+    ],
+    "sources": {
+      "Ars Technica": 2,
+      "Cloudflare": 1,
+      "GitHub Blog": 1,
+      "Google Cloud": 6,
+      "Meta": 2,
+      "Netflix": 1,
+      "The Register": 7
+    }
+  },
+  "window": {
+    "end": "2026-10-18T18:30:00+00:00",
+    "start": "2026-10-17T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

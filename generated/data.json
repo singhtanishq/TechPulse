@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 5993,
+      "date": "2026-10-19",
+      "kevAdded": 0,
+      "knownExploited": 1,
+      "projects": 18,
+      "releases": 3,
+      "techEntries": 20
+    },
+    {
       "cves": 1767,
       "date": "2026-10-18",
       "kevAdded": 0,
@@ -290,16 +299,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-17",
-    "date": "2026-10-18",
-    "daysObserved": 32,
-    "generatedAt": "2026-10-17T20:51:17.461635+00:00",
-    "snapshots": 32,
+    "coveredDate": "2026-10-18",
+    "date": "2026-10-19",
+    "daysObserved": 33,
+    "generatedAt": "2026-10-18T20:59:02.136846+00:00",
+    "snapshots": 33,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 25,
+      "daily_growth": 10,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -307,11 +316,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201083,
+      "stars": 201093,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 21,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -319,11 +328,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143053,
+      "stars": 143074,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 17,
+      "daily_growth": 28,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -331,11 +340,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139289,
+      "stars": 139317,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 27,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -343,11 +352,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128332,
+      "stars": 128359,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 20,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -355,11 +364,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122389,
+      "stars": 122409,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 42,
+      "daily_growth": 34,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -367,11 +376,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120455,
+      "stars": 120489,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 30,
+      "daily_growth": 45,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -379,11 +388,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111689,
+      "stars": 111734,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 27,
+      "daily_growth": 13,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -391,11 +400,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104831,
+      "stars": 104844,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 13,
+      "daily_growth": 22,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -403,7 +412,7 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97898,
+      "stars": 97920,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
@@ -415,243 +424,252 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91416,
+      "stars": 91434,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "minor",
+      "kind": "patch",
       "project": "openai-python",
-      "publishedAt": "2026-10-17T00:29:04Z",
+      "publishedAt": "2026-10-18T01:05:46Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.33.0",
-      "version": "v3.33.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.35.1",
+      "version": "v3.35.1"
     },
     {
       "kind": "minor",
       "project": "openai-python",
-      "publishedAt": "2026-10-16T20:17:26Z",
+      "publishedAt": "2026-10-17T23:13:52Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.32.0",
-      "version": "v3.32.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.35.0",
+      "version": "v3.35.0"
+    },
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-10-17T20:34:04Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.34.0",
+      "version": "v3.34.0"
     }
   ],
   "security": {
-    "critical": 271,
-    "high": 886,
+    "critical": 42,
+    "high": 190,
     "kevCatalogTotal": 1748,
     "latest": [
       {
         "cvss_score": null,
         "cvss_version": null,
-        "description": "A heap buffer overflow in the stbl_AddSize function (isomedia/stbl_write.c) of GPAC MP4Box v2.4 allows attackers to cause a Denial of Service (DoS) via supplying a crafted MP4 file.",
-        "id": "CVE-2025-55640",
+        "description": "JQ::Lite versions before 2.51 for Perl execute Perl code embedded in a query's regular expression by compiling it with string eval.\n\nThe pattern given to test(), match(), or the match and =~ conditions of select() is placed in a `qr'...'` literal and compiled as source text, so a `(?{ ... })` code block in it runs without `use re 'eval'`. Single quotes in the pattern are escaped, but a code block…",
+        "id": "CVE-2026-78497",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T18:16:28.277",
-        "publishedAt": "2026-10-16T19:16:56.243",
+        "lastModifiedAt": "2026-10-18T18:16:28.700",
+        "publishedAt": "2026-10-18T12:17:15.350",
         "severity": null,
         "source": "NVD",
-        "title": "A heap buffer overflow in the stbl_AddSize function (isomedia/stbl_write.c) of GPAC MP4Box v2.4 allows attackers to cause a Denial of Service (DoS) via…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55640"
-      },
-      {
-        "cvss_score": 3.6,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in libarchive. An attacker can cause a Denial of Service (DoS) or potential information disclosure due to a use-after-free vulnerability, which occurs when a program reads memory that has already been released. This issue arises when the archive_entry_copy_mac_metadata() function deallocates an internal buffer before completing a data copy. An attacker who can supply input to an…",
-        "id": "CVE-2026-17591",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T17:16:29.753",
-        "publishedAt": "2026-10-16T23:17:01.420",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A flaw was found in libarchive. An attacker can cause a Denial of Service (DoS) or potential information disclosure due to a use-after-free vulnerability…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17591"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PAYCOMET PAYCOMET for WooCommerce paytpv-for-woocommerce allows Reflected XSS.This issue affects PAYCOMET for WooCommerce: from n/a through 5.45.",
-        "id": "CVE-2026-109701",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T17:16:28.973",
-        "publishedAt": "2026-10-17T17:16:28.973",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PAYCOMET PAYCOMET for WooCommerce paytpv-for-woocommerce…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109701"
-      },
-      {
-        "cvss_score": 7.4,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in the internal WebAssembly (WASM) shim used by the Kuadrant operator. When generating the CEL predicate that determines whether Gateway-level authentication and rate limiting should run, the shim does not correctly escape values from HTTPRoute match fields. A user who can create or modify an HTTPRoute attached to a shared Gateway can provide a crafted path, header, or query…",
-        "id": "CVE-2026-108334",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T12:16:28.720",
-        "publishedAt": "2026-10-15T19:17:20.187",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A flaw was found in the internal WebAssembly (WASM) shim used by the Kuadrant operator. When generating the CEL predicate that determines whether Gateway-level…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108334"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This issue affects Gantry 5 Framework: from n/a through 5.6.4.",
-        "id": "CVE-2026-110889",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T11:16:32.017",
-        "publishedAt": "2026-10-17T11:16:32.017",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110889"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ruben Garcia GamiPress gamipress allows Blind SQL Injection.This issue affects GamiPress: from n/a through 8.0.2.",
-        "id": "CVE-2026-94177",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T09:16:29.220",
-        "publishedAt": "2026-09-30T13:17:25.583",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ruben Garcia GamiPress gamipress allows Blind SQL…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94177"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Automattic WordPress wordpress allows DOM-Based XSS.This issue affects WordPress: from n/a through 7.1.",
-        "id": "CVE-2026-93485",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T09:16:29.070",
-        "publishedAt": "2026-09-18T06:16:41.970",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Automattic WordPress wordpress allows DOM-Based XSS.This…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93485"
-      },
-      {
-        "cvss_score": 8.4,
-        "cvss_version": "4.0",
-        "description": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
-        "id": "CVE-2026-110936",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T09:16:28.893",
-        "publishedAt": "2026-10-15T15:17:30.383",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936"
-      },
-      {
-        "cvss_score": 7.2,
-        "cvss_version": "3.1",
-        "description": "The Payment forms, Buy now buttons, and Invoicing System | GetPaid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mmdwqzpoxadd' parameter in all versions up to, and including, 2.8.61 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user…",
-        "id": "CVE-2026-111110",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T08:16:28.310",
-        "publishedAt": "2026-10-17T08:16:28.310",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The Payment forms, Buy now buttons, and Invoicing System | GetPaid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mmdwqzpoxadd'…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111110"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "The weForms – Easy Drag & Drop Contact Form Builder For WordPress plugin for WordPress is vulnerable to limited media file deletion due to insufficient file path validation in the weforms_delete_entry_attachments function in all versions up to, and including, 1.6.28 This makes it possible for unauthenticated attackers to delete arbitrary media files on the server. This requires an administrator…",
-        "id": "CVE-2026-110253",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T08:16:28.167",
-        "publishedAt": "2026-10-17T08:16:28.167",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "The weForms – Easy Drag & Drop Contact Form Builder For WordPress plugin for WordPress is vulnerable to limited media file deletion due to insufficient file…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110253"
-      },
-      {
-        "cvss_score": 6.4,
-        "cvss_version": "3.1",
-        "description": "The YMC Filter plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'post_title' parameter in all versions up to, and including, 3.12.19 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses…",
-        "id": "CVE-2026-109983",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T08:16:28.020",
-        "publishedAt": "2026-10-17T08:16:28.020",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "The YMC Filter plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'post_title' parameter in all versions up to, and including…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109983"
-      },
-      {
-        "cvss_score": 7.2,
-        "cvss_version": "3.1",
-        "description": "The European VAT Compliance Assistant for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via CF-IPCountry Header in all versions up to, and including, 1.36.10 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected…",
-        "id": "CVE-2026-100316",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T08:16:26.950",
-        "publishedAt": "2026-10-17T08:16:26.950",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The European VAT Compliance Assistant for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via CF-IPCountry Header in all versions…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100316"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Heateor Support Fancy Comments WordPress fancy-facebook-comments allows Reflected XSS.This issue affects Fancy Comments WordPress: from n/a through 1.2.21.",
-        "id": "CVE-2026-110384",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T07:16:50.350",
-        "publishedAt": "2026-10-17T07:16:50.350",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Heateor Support Fancy Comments WordPress…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110384"
-      },
-      {
-        "cvss_score": 1.1,
-        "cvss_version": "4.0",
-        "description": "A flaw has been found in LMCache up to 0.5.4. This affects the function hex_hash_to_int16 of the file lmcache/integration/vllm/utils.py of the component KV Cache Handler. Executing a manipulation can lead to use of weak hash. The attack needs to be launched locally. The attack requires a high level of complexity. It is indicated that the exploitability is difficult. The exploit has been published…",
-        "id": "CVE-2026-10813",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T07:16:49.720",
-        "publishedAt": "2026-06-04T16:16:32.883",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A flaw has been found in LMCache up to 0.5.4. This affects the function hex_hash_to_int16 of the file lmcache/integration/vllm/utils.py of the component KV…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10813"
+        "title": "JQ::Lite versions before 2.51 for Perl execute Perl code embedded in a query's regular expression by compiling it with string eval.\n\nThe pattern given to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78497"
       },
       {
         "cvss_score": null,
         "cvss_version": null,
-        "description": "The ThirstyAffiliates  WordPress plugin before 3.12.1 does not check the status or type of the object requested by its link redirect tracking handler, allowing unauthenticated attackers to disclose the destination URLs of unpublished affiliate links and to record fabricated click statistics.",
-        "id": "CVE-2026-97314",
+        "description": "The Management Console fails to properly validate input related to the configuration of JDBC user stores. This weakness allows an attacker to supply specially crafted input that can lead to the execution of arbitrary code on the affected server.\n\nSuccessful exploitation of this vulnerability enables an attacker to execute arbitrary code on the server with the privileges of the WSO2 product. This…",
+        "id": "CVE-2024-4457",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-17T06:16:34.553",
-        "publishedAt": "2026-10-17T06:16:34.553",
+        "lastModifiedAt": "2026-10-18T18:16:28.467",
+        "publishedAt": "2026-10-18T18:16:28.467",
         "severity": null,
         "source": "NVD",
-        "title": "The ThirstyAffiliates  WordPress plugin before 3.12.1 does not check the status or type of the object requested by its link redirect tracking handler, allowing…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97314"
+        "title": "The Management Console fails to properly validate input related to the configuration of JDBC user stores. This weakness allows an attacker to supply specially…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-4457"
+      },
+      {
+        "cvss_score": 9.9,
+        "cvss_version": "4.0",
+        "description": "Cal.com is open-source scheduling software. Prior to 5.9.8, A flaw in the login credentials provider allows an attacker to bypass password verification when a TOTP code is provided, potentially gaining unauthorized access to user accounts. This issue exists due to problematic conditional logic in the authentication flow. This vulnerability is fixed in 5.9.8.",
+        "id": "CVE-2025-66489",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-03T20:16:27.057",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Cal.com is open-source scheduling software. Prior to 5.9.8, A flaw in the login credentials provider allows an attacker to bypass password verification when a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66489"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "Vim is an open source, command line text editor. Prior to version 9.1.1947, an uncontrolled search path vulnerability on Windows allows Vim to execute malicious executables placed in the current working directory for the current edited file. On Windows, when using cmd.exe as a shell, Vim resolves external commands by searching the current working directory before system paths. When Vim invokes…",
+        "id": "CVE-2025-66476",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-02T22:16:09.940",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Vim is an open source, command line text editor. Prior to version 9.1.1947, an uncontrolled search path vulnerability on Windows allows Vim to execute…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66476"
+      },
+      {
+        "cvss_score": 6.1,
+        "cvss_version": "3.1",
+        "description": "The Aimeos GrapesJS CMS extension provides page editor for creating content pages based on extensible components. Prior to 2021.10.8, 2022.10.8, 2023.10.8, 2024.10.8, and 2025.10.8, Javascript code can be injected by malicious editors for a stored XSS attack if the standard Content Security Policy is disabled. This vulnerability is fixed in 2021.10.8, 2022.10.8, 2023.10.8, 2024.10.8, and…",
+        "id": "CVE-2025-66468",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-02T19:15:53.310",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The Aimeos GrapesJS CMS extension provides page editor for creating content pages based on extensible components. Prior to 2021.10.8, 2022.10.8, 2023.10.8…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66468"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "Arcade MCP allows you to to create, deploy, and share MCP Servers. Prior to 1.5.4, the arcade-mcp HTTP server uses a hardcoded default worker secret (\"dev\") that is never validated or overridden during normal server startup. As a result, any unauthenticated attacker who knows this default key can forge valid JWTs and fully bypass the FastAPI authentication layer. This grants remote access to all…",
+        "id": "CVE-2025-66454",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-02T19:15:52.683",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Arcade MCP allows you to to create, deploy, and share MCP Servers. Prior to 1.5.4, the arcade-mcp HTTP server uses a hardcoded default worker secret (\"dev\")…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66454"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.11.1, vllm has a critical remote code execution vector in a config class named Nemotron_Nano_VL_Config. When vllm loads a model config that contains an auto_map entry, the config class resolves that mapping with get_class_from_dynamic_module(...) and immediately instantiates the returned class. This fetches and…",
+        "id": "CVE-2025-66448",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-01T23:15:54.213",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.11.1, vllm has a critical remote code execution vector in a config class…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66448"
+      },
+      {
+        "cvss_score": 4.2,
+        "cvss_version": "3.1",
+        "description": "HTCondor Access Point before 25.3.1 allows an authenticated user to impersonate other users on the local machine by submitting a batch job. This is fixed in 24.12.14, 25.0.3, and 25.3.1. The earliest affected version is 24.7.3.",
+        "id": "CVE-2025-66433",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-11-30T05:16:12.110",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "HTCondor Access Point before 25.3.1 allows an authenticated user to impersonate other users on the local machine by submitting a batch job. This is fixed in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66433"
+      },
+      {
+        "cvss_score": 5.0,
+        "cvss_version": "3.1",
+        "description": "In Oxide control plane 15 through 17 before 17.1, API tokens can be renewed past their expiration date.",
+        "id": "CVE-2025-66432",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-11-30T05:16:08.353",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "In Oxide control plane 15 through 17 before 17.1, API tokens can be renewed past their expiration date.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66432"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "WebPros Plesk before 18.0.73.5 and 18.0.74 before 18.0.74.2 on Linux allows remote authenticated users to execute arbitrary code as root via domain creation. The attacker needs \"Create and manage sites\" with \"Domains management\" and \"Subdomains management.\"",
+        "id": "CVE-2025-66431",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-03T17:15:54.810",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "WebPros Plesk before 18.0.73.5 and 18.0.74 before 18.0.74.2 on Linux allows remote authenticated users to execute arbitrary code as root via domain creation…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66431"
+      },
+      {
+        "cvss_score": 7.6,
+        "cvss_version": "4.0",
+        "description": "The MCP Python SDK, called `mcp` on PyPI, is a Python implementation of the Model Context Protocol (MCP). Prior to version 1.23.0, tThe Model Context Protocol (MCP) Python SDK does not enable DNS rebinding protection by default for HTTP-based servers. When an HTTP-based MCP server is run on localhost without authentication using FastMCP with streamable HTTP or SSE transport, and has not…",
+        "id": "CVE-2025-66416",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-02T19:15:52.520",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The MCP Python SDK, called `mcp` on PyPI, is a Python implementation of the Model Context Protocol (MCP). Prior to version 1.23.0, tThe Model Context Protocol…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66416"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "fastify-reply-from is a Fastify plugin to forward the current HTTP request to another server. Prior to 12.5.0, by crafting a malicious URL, an attacker could access routes that are not allowed, even though the reply.from is defined for specific routes in @fastify/reply-from. This vulnerability is fixed in 12.5.0.",
+        "id": "CVE-2025-66415",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-01T23:15:54.053",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "fastify-reply-from is a Fastify plugin to forward the current HTTP request to another server. Prior to 12.5.0, by crafting a malicious URL, an attacker could…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66415"
+      },
+      {
+        "cvss_score": 7.6,
+        "cvss_version": "4.0",
+        "description": "MCP TypeScript SDK is the official TypeScript SDK for Model Context Protocol servers and clients. Prior to 1.24.0, The Model Context Protocol (MCP) TypeScript SDK does not enable DNS rebinding protection by default for HTTP-based servers. When an HTTP-based MCP server is run on localhost without authentication with StreamableHTTPServerTransport or SSEServerTransport and has not enabled…",
+        "id": "CVE-2025-66414",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-02T19:15:52.347",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "MCP TypeScript SDK is the official TypeScript SDK for Model Context Protocol servers and clients. Prior to 1.24.0, The Model Context Protocol (MCP) TypeScript…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66414"
+      },
+      {
+        "cvss_score": 8.5,
+        "cvss_version": "4.0",
+        "description": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Prior to 21.0.2, 20.3.15, and 19.2.17, A Stored Cross-Site Scripting (XSS) vulnerability has been identified in the Angular Template Compiler. It occurs because the compiler's internal security schema is incomplete, allowing attackers to bypass Angular's built-in…",
+        "id": "CVE-2025-66412",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-01T23:15:53.890",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Prior to 21.0.2, 20.3.15…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66412"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "Gin-vue-admin is a backstage management system based on vue and gin. In 2.8.6 and earlier, attackers can delete any file on the server at will, causing damage or unavailability of server resources. Attackers can control the 'FileMd5' parameter to delete any file and folder.",
+        "id": "CVE-2025-66410",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-18T18:10:00.100",
+        "publishedAt": "2025-12-01T23:15:53.730",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Gin-vue-admin is a backstage management system based on vue and gin. In 2.8.6 and earlier, attackers can delete any file on the server at will, causing damage…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66410"
       }
     ],
-    "low": 45,
-    "medium": 430,
+    "low": 54,
+    "medium": 337,
     "none": 0,
-    "unscored": 135
+    "unscored": 5370
   },
   "snapshot": {
-    "cves": 1767,
+    "cves": 5993,
     "kevAdded": 0,
-    "knownExploited": 3,
+    "knownExploited": 1,
     "projects": 18,
-    "releases": 2,
-    "techEntries": 61
+    "releases": 3,
+    "techEntries": 20
   },
   "sources": {
     "opensource": {
@@ -665,9 +683,9 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 2,
+        "inWindow": 3,
         "status": "partial",
-        "total": 54
+        "total": 53
       }
     },
     "security": {
@@ -679,17 +697,17 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1767,
+        "inWindow": 5993,
         "status": "success",
-        "total": 1767
+        "total": 5993
       }
     },
     "technology": {
       "rss": {
-        "failures": 0,
-        "inWindow": 61,
-        "status": "success",
-        "total": 229
+        "failures": 1,
+        "inWindow": 20,
+        "status": "partial",
+        "total": 199
       }
     }
   },
@@ -791,14 +809,6 @@
       "url": "https://blog.cloudflare.com/verified-bots-accountability/"
     },
     {
-      "category": "tech",
-      "publishedAt": "2026-10-16T12:44:16+00:00",
-      "source": "The Register",
-      "summary": "Another reason for Donald Trump to hate British regulation",
-      "title": "British watchdog seeks tougher terms around Microsoft's dominance of business software",
-      "url": "https://www.theregister.com/software/2026/10/16/british-watchdog-seeks-tougher-terms-around-microsofts-dominance-of-business-software/5303520"
-    },
-    {
       "category": "security",
       "publishedAt": "2026-10-16T09:15:00+00:00",
       "source": "The Register",
@@ -807,12 +817,20 @@
       "url": "https://www.theregister.com/security/2026/10/16/thief-snatches-school-snappers-sd-cards-in-smash-grab/5303379"
     },
     {
-      "category": "tech",
-      "publishedAt": "2026-10-16T08:30:00+00:00",
+      "category": "security",
+      "publishedAt": "2026-10-16T07:28:00+00:00",
       "source": "The Register",
-      "summary": "Migration targets, security rules, and management metrics take center stage at this year's event",
-      "title": "Open source sovereignty gets down to the boring business of making it work",
-      "url": "https://www.theregister.com/software/2026/10/16/open-source-sovereignty-gets-down-to-the-boring-business-of-making-it-work/5303206"
+      "summary": "School staff seemed to be trying to get ransomware – for a second time",
+      "title": "User refused to change her password because everyone already knew it",
+      "url": "https://www.theregister.com/security/2026/10/16/user-refused-to-change-her-password-because-everyone-already-knew-it/5301864"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-15T20:32:41+00:00",
+      "source": "Ars Technica",
+      "summary": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
+      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
+      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/"
     }
   ]
 }
