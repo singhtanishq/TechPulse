@@ -1,6 +1,218 @@
 {
   "archive": [
     {
+      "date": "2026-10-20",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 107,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201200,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143096,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 90,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139407,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 124,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128483,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 111,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122520,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 122,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120611,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 42,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 111776,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 78,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 104922,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 19,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97939,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 95,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91529,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 1,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "vite",
+            "published_at": "2026-10-19T08:05:45Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.0",
+            "version": "create-vite@9.3.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 479,
+          "HIGH": 1812,
+          "LOW": 437,
+          "MEDIUM": 1563,
+          "NONE": 1,
+          "UNSCORED": 1869
+        }
+      },
+      "snapshot": {
+        "cves": 6161,
+        "kevAdded": 0,
+        "knownExploited": 13,
+        "projects": 18,
+        "releases": 1,
+        "techEntries": 18
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1748
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 1,
+          "status": "partial",
+          "total": 53
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 6161,
+          "status": "success",
+          "total": 6161
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 18,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 5,
+          "tech": 13
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-19T18:23:40+00:00",
+            "source": "The Register",
+            "title": "Security patches need patches now that attackers have AI",
+            "url": "https://www.theregister.com/patches/2026/10/19/security-patches-need-patches-now-that-attackers-have-ai/5303927"
+          },
+          {
+            "published_at": "2026-10-19T17:48:26+00:00",
+            "source": "Cloudflare",
+            "title": "Introducing Clairic, a new System One class of extraction models",
+            "url": "https://blog.cloudflare.com/clairic-extraction-model/"
+          },
+          {
+            "published_at": "2026-10-19T16:00:47+00:00",
+            "source": "Meta",
+            "title": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+            "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/"
+          },
+          {
+            "published_at": "2026-10-19T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Building full virtual vehicles on Google Cloud: From AAOS to the smallest MCU",
+            "url": "https://cloud.google.com/blog/topics/manufacturing/building-full-virtual-vehicles-on-google-cloud-from-aaos-to-the-smallest-mcu/"
+          },
+          {
+            "published_at": "2026-10-19T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Developer’s guide to implementing MCP apps in Gemini",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/devs-guide-to-mcp-apps-in-gemini/"
+          },
+          {
+            "published_at": "2026-10-19T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Who judges the judge? Three helpful ways to audit your LLM evaluators",
+            "url": "https://cloud.google.com/blog/topics/consulting/three-ways-to-audit-your-llm-evaluators/"
+          },
+          {
+            "published_at": "2026-10-19T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How to Use Python UDF Logging for Pipeline Observability",
+            "url": "https://cloud.google.com/blog/products/data-analytics/python-udf-logging-for-pipeline-observability-in-bigquery/"
+          },
+          {
+            "published_at": "2026-10-19T15:34:59+00:00",
+            "source": "AWS",
+            "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
+            "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/"
+          },
+          {
+            "published_at": "2026-10-19T15:30:37+00:00",
+            "source": "Meta",
+            "title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+            "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+          },
+          {
+            "published_at": "2026-10-19T13:00:10+00:00",
+            "source": "Meta",
+            "title": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
+            "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-19",
       "opensource": {
         "topProjects": [
@@ -7228,8 +7440,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-18T20:59:02.136846+00:00",
-    "totalSnapshots": 33,
+    "generatedAt": "2026-10-19T22:37:25.716130+00:00",
+    "totalSnapshots": 34,
     "warnings": []
   }
 }

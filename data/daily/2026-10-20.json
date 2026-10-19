@@ -1,0 +1,311 @@
+{
+  "coveredIstDay": "2026-10-19",
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-19T22:37:25.716130+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 107,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201200,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 22,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143096,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 90,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139407,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 124,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128483,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 111,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122520,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 122,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120611,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 42,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 111776,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 78,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104922,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 19,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97939,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 95,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91529,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 0,
+      "other": 1,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "vite",
+        "published_at": "2026-10-19T08:05:45Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.0",
+        "version": "create-vite@9.3.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 8.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: ath6kl: fix use-after-free in aggr_reset_state()\n\nThe aggr_reset_state() function uses timer_delete() (non-synchronous)\nfor t",
+        "id": "CVE-2026-68198",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68198"
+      },
+      {
+        "cvss": 9.1,
+        "description": "A flaw was found in submariner. In cert-auth mode, the connection configuration is built using free-form strings from the Custom Resource Definition (CRD) without proper validation. A malicious cluste",
+        "id": "CVE-2026-66786",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66786"
+      },
+      {
+        "cvss": 8.7,
+        "description": "A flaw was found in Submariner. This vulnerability allows a malicious cluster (spoke) to redirect network traffic from other connected clusters (peer clusters) by publishing a specially crafted networ",
+        "id": "CVE-2026-66785",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66785"
+      },
+      {
+        "cvss": 8.7,
+        "description": "Semaphore UI through 2.19.16 contains a remote code execution vulnerability that allows users with the task_runner role to override protected Ansible variables by supplying arbitrary keys in the task ",
+        "id": "CVE-2026-112305",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112305"
+      },
+      {
+        "cvss": 5.3,
+        "description": "MISP contains a vulnerability in the handling of module plugin settings. When the server rebuilds module-supplied settings for API consumption, it drops the redacted and cli_only flags that a module d",
+        "id": "CVE-2026-112192",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112192"
+      },
+      {
+        "cvss": 4.8,
+        "description": "MISP contains a reflected cross-site scripting (XSS) vulnerability in the workflow module interface. Parameter names returned by the misp-modules service are rendered as raw HTML form labels on the wo",
+        "id": "CVE-2026-112184",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112184"
+      },
+      {
+        "cvss": 4.8,
+        "description": "MISP contains a CSS injection vulnerability in the remote event preview feature. When a user previews an event from a linked MISP server, the colour value associated with each remote tag is written di",
+        "id": "CVE-2026-112183",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112183"
+      },
+      {
+        "cvss": 5.1,
+        "description": "MISP contains a data integrity flaw in its event deletion logic. When a user deletes an event, several associated records are not removed from the database, leaving them as orphaned entries. The affec",
+        "id": "CVE-2026-112180",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112180"
+      },
+      {
+        "cvss": 7.1,
+        "description": "MISP contains an access control flaw in the proposal (shadow attribute) visibility logic. The authorization check accepted any attribute or object carrying one of the user's sharing groups without ver",
+        "id": "CVE-2026-112178",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112178"
+      },
+      {
+        "cvss": 2.1,
+        "description": "A vulnerability was detected in D-Link E15, M32, R15 and R32. This issue affects some unknown processing of the file /etc/emDaemon/passwd of the component MQTT Broker. The manipulation results in hard",
+        "id": "CVE-2026-112146",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112146"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 479,
+      "HIGH": 1812,
+      "LOW": 437,
+      "MEDIUM": 1563,
+      "NONE": 1,
+      "UNSCORED": 1869
+    }
+  },
+  "snapshot": {
+    "cves": 6161,
+    "kevAdded": 0,
+    "knownExploited": 13,
+    "projects": 18,
+    "releases": 1,
+    "techEntries": 18
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1748
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 1,
+      "status": "partial",
+      "total": 53
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 6161,
+      "status": "success",
+      "total": 6161
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 18,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 5,
+      "tech": 13
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-19T18:23:40+00:00",
+        "source": "The Register",
+        "title": "Security patches need patches now that attackers have AI",
+        "url": "https://www.theregister.com/patches/2026/10/19/security-patches-need-patches-now-that-attackers-have-ai/5303927"
+      },
+      {
+        "published_at": "2026-10-19T17:48:26+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing Clairic, a new System One class of extraction models",
+        "url": "https://blog.cloudflare.com/clairic-extraction-model/"
+      },
+      {
+        "published_at": "2026-10-19T16:00:47+00:00",
+        "source": "Meta",
+        "title": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
+        "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/"
+      },
+      {
+        "published_at": "2026-10-19T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Building full virtual vehicles on Google Cloud: From AAOS to the smallest MCU",
+        "url": "https://cloud.google.com/blog/topics/manufacturing/building-full-virtual-vehicles-on-google-cloud-from-aaos-to-the-smallest-mcu/"
+      },
+      {
+        "published_at": "2026-10-19T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Developer’s guide to implementing MCP apps in Gemini",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/devs-guide-to-mcp-apps-in-gemini/"
+      },
+      {
+        "published_at": "2026-10-19T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Who judges the judge? Three helpful ways to audit your LLM evaluators",
+        "url": "https://cloud.google.com/blog/topics/consulting/three-ways-to-audit-your-llm-evaluators/"
+      },
+      {
+        "published_at": "2026-10-19T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "How to Use Python UDF Logging for Pipeline Observability",
+        "url": "https://cloud.google.com/blog/products/data-analytics/python-udf-logging-for-pipeline-observability-in-bigquery/"
+      },
+      {
+        "published_at": "2026-10-19T15:34:59+00:00",
+        "source": "AWS",
+        "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/"
+      },
+      {
+        "published_at": "2026-10-19T15:30:37+00:00",
+        "source": "Meta",
+        "title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
+        "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+      },
+      {
+        "published_at": "2026-10-19T13:00:10+00:00",
+        "source": "Meta",
+        "title": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
+        "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 1,
+      "Cloudflare": 2,
+      "Google Cloud": 5,
+      "Meta": 3,
+      "The Register": 6
+    }
+  },
+  "window": {
+    "end": "2026-10-19T18:30:00+00:00",
+    "start": "2026-10-18T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
