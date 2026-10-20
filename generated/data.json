@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 3479,
+      "date": "2026-10-21",
+      "kevAdded": 6,
+      "knownExploited": 3,
+      "projects": 18,
+      "releases": 3,
+      "techEntries": 43
+    },
+    {
       "cves": 6161,
       "date": "2026-10-20",
       "kevAdded": 0,
@@ -308,16 +317,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-19",
-    "date": "2026-10-20",
-    "daysObserved": 34,
-    "generatedAt": "2026-10-19T22:37:25.716130+00:00",
-    "snapshots": 34,
+    "coveredDate": "2026-10-20",
+    "date": "2026-10-21",
+    "daysObserved": 35,
+    "generatedAt": "2026-10-20T21:49:34.813793+00:00",
+    "snapshots": 35,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 107,
+      "daily_growth": -39,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -325,11 +334,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201200,
+      "stars": 201161,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": -4,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -337,11 +346,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143096,
+      "stars": 143092,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 90,
+      "daily_growth": -21,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -349,11 +358,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139407,
+      "stars": 139386,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 124,
+      "daily_growth": -23,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -361,11 +370,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128483,
+      "stars": 128460,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 111,
+      "daily_growth": -32,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -373,11 +382,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122520,
+      "stars": 122488,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 122,
+      "daily_growth": 16,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -385,11 +394,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120611,
+      "stars": 120627,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 42,
+      "daily_growth": 641,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -397,11 +406,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 111776,
+      "stars": 112417,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 78,
+      "daily_growth": 25,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -409,11 +418,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104922,
+      "stars": 104947,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 19,
+      "daily_growth": 6,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -421,11 +430,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97939,
+      "stars": 97945,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 95,
+      "daily_growth": -47,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -433,234 +442,252 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91529,
+      "stars": 91482,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-10-20T17:49:46Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
+      "version": "v1.16.0"
+    },
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-10-20T10:47:31Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.38.0",
+      "version": "v13.38.0"
+    },
+    {
       "kind": "other",
       "project": "vite",
-      "publishedAt": "2026-10-19T08:05:45Z",
+      "publishedAt": "2026-10-20T03:01:54Z",
       "repository": "vitejs/vite",
       "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.0",
-      "version": "create-vite@9.3.0"
+      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.1",
+      "version": "create-vite@9.3.1"
     }
   ],
   "security": {
-    "critical": 479,
-    "high": 1812,
-    "kevCatalogTotal": 1748,
+    "critical": 286,
+    "high": 1531,
+    "kevCatalogTotal": 1754,
     "latest": [
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: ath6kl: fix use-after-free in aggr_reset_state()\n\nThe aggr_reset_state() function uses timer_delete() (non-synchronous)\nfor the aggregation timer before proceeding to delete TID state and\nbefore the structure is freed by callers like aggr_module_destroy().\n\nIf the timer callback (aggr_timeout) is executing when…",
-        "id": "CVE-2026-68198",
+        "description": "Access of resource using incompatible type ('type confusion') in RPC Runtime allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-102203",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:08.517",
-        "publishedAt": "2026-08-10T13:20:07.277",
+        "lastModifiedAt": "2026-10-20T18:29:10.303",
+        "publishedAt": "2026-10-13T19:17:45.333",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: ath6kl: fix use-after-free in aggr_reset_state()\n\nThe aggr_reset_state() function…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68198"
+        "title": "Access of resource using incompatible type ('type confusion') in RPC Runtime allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102203"
       },
       {
-        "cvss_score": 9.1,
+        "cvss_score": 7.8,
         "cvss_version": "3.1",
-        "description": "A flaw was found in submariner. In cert-auth mode, the connection configuration is built using free-form strings from the Custom Resource Definition (CRD) without proper validation. A malicious cluster can exploit this by publishing a CableName that includes newlines and ipsec.conf directives. This allows an attacker to inject arbitrary configuration parameters or execute commands through…",
-        "id": "CVE-2026-66786",
+        "description": "Heap-based buffer overflow in Windows Universal Disk Format File System Driver (UDFS) allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-102205",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:08.327",
-        "publishedAt": "2026-09-02T18:21:10.517",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-10-20T18:27:52.003",
+        "publishedAt": "2026-10-13T19:17:45.660",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A flaw was found in submariner. In cert-auth mode, the connection configuration is built using free-form strings from the Custom Resource Definition (CRD)…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66786"
+        "title": "Heap-based buffer overflow in Windows Universal Disk Format File System Driver (UDFS) allows an authorized attacker to elevate privileges locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102205"
       },
       {
-        "cvss_score": 8.7,
+        "cvss_score": 6.8,
         "cvss_version": "3.1",
-        "description": "A flaw was found in Submariner. This vulnerability allows a malicious cluster (spoke) to redirect network traffic from other connected clusters (peer clusters) by publishing a specially crafted network endpoint. The system fails to properly validate the network subnets provided by the malicious cluster, enabling it to declare arbitrary network ranges. Consequently, all network traffic intended…",
-        "id": "CVE-2026-66785",
+        "description": "Heap-based buffer overflow in Windows Portable Device MTP Driver allows an unauthorized attacker to elevate privileges with a physical attack.",
+        "id": "CVE-2026-102206",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:08.157",
-        "publishedAt": "2026-08-20T19:16:58.463",
+        "lastModifiedAt": "2026-10-20T18:26:49.407",
+        "publishedAt": "2026-10-13T19:17:45.843",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Heap-based buffer overflow in Windows Portable Device MTP Driver allows an unauthorized attacker to elevate privileges with a physical attack.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102206"
+      },
+      {
+        "cvss_score": 7.0,
+        "cvss_version": "3.1",
+        "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-102207",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-20T18:25:30.877",
+        "publishedAt": "2026-10-13T19:17:46.027",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "A flaw was found in Submariner. This vulnerability allows a malicious cluster (spoke) to redirect network traffic from other connected clusters (peer clusters)…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66785"
+        "title": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102207"
       },
       {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "Semaphore UI through 2.19.16 contains a remote code execution vulnerability that allows users with the task_runner role to override protected Ansible variables by supplying arbitrary keys in the task environment JSON. Attackers can POST tasks setting ansible_ssh_common_args with a ProxyCommand or ansible_connection=local to execute commands as the Semaphore server user, exposing encryption keys…",
-        "id": "CVE-2026-112305",
+        "cvss_score": 7.0,
+        "cvss_version": "3.1",
+        "description": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-102208",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:05.250",
-        "publishedAt": "2026-10-19T16:17:06.400",
+        "lastModifiedAt": "2026-10-20T18:24:10.370",
+        "publishedAt": "2026-10-13T19:17:46.230",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Semaphore UI through 2.19.16 contains a remote code execution vulnerability that allows users with the task_runner role to override protected Ansible variables…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112305"
+        "title": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102208"
       },
       {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "MISP contains a vulnerability in the handling of module plugin settings. When the server rebuilds module-supplied settings for API consumption, it drops the redacted and cli_only flags that a module declares in its own configuration metadata.\n\nAs a result:\n\n- A module that marks a setting (such as an API key) as redacted still has its value returned in full by the servers/getSetting and…",
-        "id": "CVE-2026-112192",
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_nat_sip: rewind offset when NAT shrinks the packet\n\nsashiko says:\n If map_addr() changes the packet length, such as when the public NAT IP\n string is shorter or longer than the internal IP, coff will still point to\n the offset relative to the pre-mangled packet.\n If the packet shrinks, coff could overshoot the…",
+        "id": "CVE-2026-100070",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:04.063",
-        "publishedAt": "2026-10-19T10:16:47.563",
+        "lastModifiedAt": "2026-10-20T18:19:31.813",
+        "publishedAt": "2026-09-25T14:17:13.400",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "MISP contains a vulnerability in the handling of module plugin settings. When the server rebuilds module-supplied settings for API consumption, it drops the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112192"
-      },
-      {
-        "cvss_score": 4.8,
-        "cvss_version": "4.0",
-        "description": "MISP contains a reflected cross-site scripting (XSS) vulnerability in the workflow module interface. Parameter names returned by the misp-modules service are rendered as raw HTML form labels on the workflow module page without output encoding. An attacker who can influence the parameter names reported by the misp-modules service can inject arbitrary HTML or JavaScript that executes in the context…",
-        "id": "CVE-2026-112184",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:03.870",
-        "publishedAt": "2026-10-19T10:16:47.210",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "MISP contains a reflected cross-site scripting (XSS) vulnerability in the workflow module interface. Parameter names returned by the misp-modules service are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112184"
-      },
-      {
-        "cvss_score": 4.8,
-        "cvss_version": "4.0",
-        "description": "MISP contains a CSS injection vulnerability in the remote event preview feature. When a user previews an event from a linked MISP server, the colour value associated with each remote tag is written directly into an inline CSS style attribute without sufficient validation. Although HTML entity encoding is applied, the value is interpreted as CSS within the style attribute, allowing a malicious or…",
-        "id": "CVE-2026-112183",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:03.687",
-        "publishedAt": "2026-10-19T10:16:46.970",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "MISP contains a CSS injection vulnerability in the remote event preview feature. When a user previews an event from a linked MISP server, the colour value…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112183"
-      },
-      {
-        "cvss_score": 5.1,
-        "cvss_version": "4.0",
-        "description": "MISP contains a data integrity flaw in its event deletion logic. When a user deletes an event, several associated records are not removed from the database, leaving them as orphaned entries. The affected record types include event report tags, event graph entries, proposal (shadow attribute) correlations, fuzzy ssdeep correlation chunks, and attachment scan results.\n\nThese orphaned records may…",
-        "id": "CVE-2026-112180",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:03.490",
-        "publishedAt": "2026-10-19T09:17:08.660",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "MISP contains a data integrity flaw in its event deletion logic. When a user deletes an event, several associated records are not removed from the database…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112180"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_nat_sip: rewind offset when NAT shrinks the packet\n\nsashiko says:\n If…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100070"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "MISP contains an access control flaw in the proposal (shadow attribute) visibility logic. The authorization check accepted any attribute or object carrying one of the user's sharing groups without verifying the distribution level, and denied the owning organisation access to proposals on its own organisation-only attributes.\n\n- A user belonging to a sharing group could view proposals on…",
-        "id": "CVE-2026-112178",
+        "cvss_version": "3.1",
+        "description": "ColdFusion is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated access to internal resources. Exploit depends on conditions beyond the attacker's control. Exploitation of this issue does not require user interaction. Scope is changed.",
+        "id": "CVE-2026-76001",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:03.310",
-        "publishedAt": "2026-10-19T09:17:08.240",
+        "lastModifiedAt": "2026-10-20T18:19:19.807",
+        "publishedAt": "2026-10-13T21:18:20.730",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "MISP contains an access control flaw in the proposal (shadow attribute) visibility logic. The authorization check accepted any attribute or object carrying one…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112178"
+        "title": "ColdFusion is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. A low-privileged attacker could exploit…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76001"
       },
       {
-        "cvss_score": 2.1,
+        "cvss_score": 8.6,
         "cvss_version": "4.0",
-        "description": "A vulnerability was detected in D-Link E15, M32, R15 and R32. This issue affects some unknown processing of the file /etc/emDaemon/passwd of the component MQTT Broker. The manipulation results in hard-coded credentials. It is possible to launch the attack remotely. The exploit is now public and may be used.",
-        "id": "CVE-2026-112146",
+        "description": "In Eclipse Vert.x versions [4.0.0, 4.5.34] or [5.0.0,5.0.12] or [5.1.0,5.1.9] or [5.2.0, 5.2.0], a scope bypass vulnerability exists in Eclipse Vert.x Web's ChainAuthHandler when used with scope-requiring authentication handlers such as JWTAuthHandler or OAuth2AuthHandler. When a user is already authenticated on the routing context by a preceding handler in the request pipeline, ChainAuthHandler…",
+        "id": "CVE-2026-102460",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:03.040",
-        "publishedAt": "2026-10-19T14:17:02.317",
-        "severity": "LOW",
+        "lastModifiedAt": "2026-10-20T18:19:05.937",
+        "publishedAt": "2026-10-14T19:17:05.050",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A vulnerability was detected in D-Link E15, M32, R15 and R32. This issue affects some unknown processing of the file /etc/emDaemon/passwd of the component MQTT…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112146"
+        "title": "In Eclipse Vert.x versions [4.0.0, 4.5.34] or [5.0.0,5.0.12] or [5.1.0,5.1.9] or [5.2.0, 5.2.0], a scope bypass vulnerability exists in Eclipse Vert.x Web's…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102460"
       },
       {
-        "cvss_score": 2.1,
-        "cvss_version": "4.0",
-        "description": "A security flaw has been discovered in DeepPavlov up to 1.7.0. Impacted is the function resolve of the file deeppavlov/core/common/params.py of the component Config Reference Resolver. The manipulation results in code injection. The attack can be launched remotely. The exploit has been released to the public and may be used for attacks. The project was informed of the problem early through an…",
-        "id": "CVE-2026-112098",
+        "cvss_score": 7.0,
+        "cvss_version": "3.1",
+        "description": "Heap-based buffer overflow in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-102209",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:02.897",
-        "publishedAt": "2026-10-19T09:17:07.917",
-        "severity": "LOW",
+        "lastModifiedAt": "2026-10-20T18:18:52.743",
+        "publishedAt": "2026-10-13T19:17:46.390",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A security flaw has been discovered in DeepPavlov up to 1.7.0. Impacted is the function resolve of the file deeppavlov/core/common/params.py of the component…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112098"
+        "title": "Heap-based buffer overflow in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102209"
       },
       {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "A security vulnerability has been detected in michaelrsweet mxml 4.0.5/4.0.6. This affects the function mxml_load_data of the file mxml-file.c. The manipulation leads to use after free. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.",
-        "id": "CVE-2026-112094",
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "Heap-based buffer overflow in Windows Text Shaping allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-102210",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:02.750",
-        "publishedAt": "2026-10-19T08:17:03.623",
-        "severity": "LOW",
+        "lastModifiedAt": "2026-10-20T18:18:23.497",
+        "publishedAt": "2026-10-13T19:17:46.520",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "A security vulnerability has been detected in michaelrsweet mxml 4.0.5/4.0.6. This affects the function mxml_load_data of the file mxml-file.c. The…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112094"
+        "title": "Heap-based buffer overflow in Windows Text Shaping allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102210"
       },
       {
-        "cvss_score": 2.1,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was detected in Dav-ee dairy-management-system 31ace9692d1e1e6d64339a42c463b361319c615c/f31a584c3330c013b61f8b0306d9e0849c6d693d. This issue affects the function mysqli_real_escape_string of the file payment/pay.php. The manipulation of the argument f_no/farmer results in sql injection. The attack may be launched remotely. The exploit is now public and may be used. This product…",
-        "id": "CVE-2026-112090",
+        "cvss_score": 5.3,
+        "cvss_version": "3.1",
+        "description": "A stack-based buffer overflow flaw was found in fetchmail when built with NTLM support. A malicious or compromised mail server advertising NTLM authentication can send a crafted Type 2 challenge that causes fetchmail to write past a fixed stack buffer while building the NTLM authenticate response. This may lead to remote code execution depending on stack-frame layout, or to authentication failure…",
+        "id": "CVE-2026-94184",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:02.610",
-        "publishedAt": "2026-10-19T08:17:02.813",
-        "severity": "LOW",
+        "lastModifiedAt": "2026-10-20T18:17:23.510",
+        "publishedAt": "2026-09-21T15:17:38.547",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A vulnerability was detected in Dav-ee dairy-management-system 31ace9692d1e1e6d64339a42c463b361319c615c/f31a584c3330c013b61f8b0306d9e0849c6d693d. This issue…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112090"
+        "title": "A stack-based buffer overflow flaw was found in fetchmail when built with NTLM support. A malicious or compromised mail server advertising NTLM authentication…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94184"
       },
       {
-        "cvss_score": 2.1,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was found in ESPnet up to 202610.post2. This affects the function build_model of the file espnet3/publication/inference_model.py of the component Inference Model Handler. The manipulation of the argument _target_ results in deserialization. It is possible to launch the attack remotely. The exploit has been made public and could be used. The patch is identified as…",
-        "id": "CVE-2026-112086",
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "For XSA-308 logic was introduced, as VMX VMEntry checks do not like the\nexact combination of state which occurs when #DB in intercepted, Single\nStepping is active, and blocked by STI/MovSS is active, despite this being\na legitimate state to be in.  The resulting VMEntry failure is fatal to\nthe guest.\n\nSadly there is another special sub-case of the above, with branch tracing\nenabled.  In that case…",
+        "id": "CVE-2026-79611",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:02.463",
-        "publishedAt": "2026-10-19T06:17:23.667",
-        "severity": "LOW",
+        "lastModifiedAt": "2026-10-20T18:17:22.447",
+        "publishedAt": "2026-10-13T16:17:23.347",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A vulnerability was found in ESPnet up to 202610.post2. This affects the function build_model of the file espnet3/publication/inference_model.py of the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112086"
+        "title": "For XSA-308 logic was introduced, as VMX VMEntry checks do not like the\nexact combination of state which occurs when #DB in intercepted, Single\nStepping is…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79611"
       },
       {
-        "cvss_score": 2.1,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was found in LlamaChinese Llama-Chinese up to 6fa0fffb0dd82fe3cfaa1449ee54a5806d26ae9b. The impacted element is the function get_class_from_dynamic_module of the file examples/chat_gradio_no_merge.py of the component Adapter Config. The manipulation of the argument base_model_name_or_path results in code injection. The attack may be performed from remote. The exploit has been made…",
-        "id": "CVE-2026-112080",
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "XSA-501 was about issues with v1 -> v2 and v2 -> v1 changes racing certain\nother grant table operations.  Sadly a v2 -> v1 -> v2 change has yet\nanother effect which wasn't accounted for: During the first change, status\npages would be freed.  During the second change they would be allocated\nagain.  Hence across the full pair of change the addresses of the status\npages may change, rendering stale…",
+        "id": "CVE-2026-79610",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-19T18:17:02.310",
-        "publishedAt": "2026-10-19T05:17:04.993",
-        "severity": "LOW",
+        "lastModifiedAt": "2026-10-20T18:17:22.290",
+        "publishedAt": "2026-10-13T16:17:23.247",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A vulnerability was found in LlamaChinese Llama-Chinese up to 6fa0fffb0dd82fe3cfaa1449ee54a5806d26ae9b. The impacted element is the function…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112080"
+        "title": "XSA-501 was about issues with v1 -> v2 and v2 -> v1 changes racing certain\nother grant table operations.  Sadly a v2 -> v1 -> v2 change has yet\nanother effect…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79610"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "XPTI (Xen Page Table Isolation) was introduced to mitigate Meltdown\n(CVE-2017-5754, one aspect of XSA-254).  This involves copying 64-bit PV\nguest page table entries from guest-chosen root page tables to the Xen-\nchosen one which is in actual use by hardware.  To read the guest root\npage table, the directmap is used.  PV guests, however, have a directmap\nwhich may not cover all memory; in…",
+        "id": "CVE-2026-79609",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-20T18:17:22.137",
+        "publishedAt": "2026-10-13T16:17:23.147",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "XPTI (Xen Page Table Isolation) was introduced to mitigate Meltdown\n(CVE-2017-5754, one aspect of XSA-254).  This involves copying 64-bit PV\nguest page table…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79609"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "The workaround for XSA-433 (Zenbleed, CVE-2023-20593) was later\nre-worked to better integrate with other manipulations of the same MSR.\nIn this rework an inverted conditional was introduced, resulting in the\nworkaround to not be applied when needed and vice versa.\n\nFor more details, see:\n  http://xenbits.xen.org/xsa/advisory-433.html",
+        "id": "CVE-2026-79608",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-20T18:17:21.973",
+        "publishedAt": "2026-10-13T16:17:23.040",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "The workaround for XSA-433 (Zenbleed, CVE-2023-20593) was later\nre-worked to better integrate with other manipulations of the same MSR.\nIn this rework an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79608"
       }
     ],
-    "low": 437,
-    "medium": 1563,
-    "none": 1,
-    "unscored": 1869
+    "low": 79,
+    "medium": 840,
+    "none": 0,
+    "unscored": 743
   },
   "snapshot": {
-    "cves": 6161,
-    "kevAdded": 0,
-    "knownExploited": 13,
+    "cves": 3479,
+    "kevAdded": 6,
+    "knownExploited": 3,
     "projects": 18,
-    "releases": 1,
-    "techEntries": 18
+    "releases": 3,
+    "techEntries": 43
   },
   "sources": {
     "opensource": {
@@ -674,7 +701,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 1,
+        "inWindow": 3,
         "status": "partial",
         "total": 53
       }
@@ -682,21 +709,21 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1748
+        "inWindow": 6,
+        "status": "success",
+        "total": 1754
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 6161,
+        "inWindow": 3479,
         "status": "success",
-        "total": 6161
+        "total": 3479
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 18,
+        "inWindow": 43,
         "status": "success",
         "total": 229
       }
@@ -705,123 +732,123 @@
   "technology": [
     {
       "category": "security",
-      "publishedAt": "2026-10-19T18:23:40+00:00",
+      "publishedAt": "2026-10-20T17:33:26+00:00",
       "source": "The Register",
-      "summary": "Terra finds sharp rise in GitHub security fixes reported broken within 90 days",
-      "title": "Security patches need patches now that attackers have AI",
-      "url": "https://www.theregister.com/patches/2026/10/19/security-patches-need-patches-now-that-attackers-have-ai/5303927"
+      "summary": "Unit 42 investigates network compromises across numerous industries",
+      "title": "Palo Alto's firewall OS has been under attack from multiple ransomware groups since June",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/20/palo-altos-firewall-os-has-been-under-attack-from-multiple-ransomware-groups-since-june/5304226"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-19T17:48:26+00:00",
-      "source": "Cloudflare",
-      "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs.",
-      "title": "Introducing Clairic, a new System One class of extraction models",
-      "url": "https://blog.cloudflare.com/clairic-extraction-model/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T16:00:47+00:00",
-      "source": "Meta",
-      "summary": "Generative Recommenders (GenRecs) represent a paradigm shift from scoring every ad to reasoning about ad content and user preferences together in order to predict the best outcome for advertisers. Leveraging the world knowledge built into LLMs makes ad matching more intelligent…",
-      "title": "GenRecs Tokenization: Transforming Ads Recommendation at Meta with Stable Model Vocabulary",
-      "url": "https://engineering.fb.com/2026/10/19/ml-applications/genrecs-tokenization-transforming-ads-recommendation-at-meta-with-stable-model-vocabulary/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Imagining traditional gearheads getting their hands on software-defined vehicles is an amusing thought experiment. With their socket wrenches and air compressors at the ready, they might be confused to encounter core functions more likely to run on 1s and 0s than oil and belts…",
-      "title": "Building full virtual vehicles on Google Cloud: From AAOS to the smallest MCU",
-      "url": "https://cloud.google.com/blog/topics/manufacturing/building-full-virtual-vehicles-on-google-cloud-from-aaos-to-the-smallest-mcu/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Enterprise assistants still respond mostly in text. However, that can break down for visual, multi-step work, where every adjustment costs another slow chat turn. MCP Apps ( SEP-1865 ) solves this. This open Model Context Protocol (MCP) extension pairs a tool with a live UI. In…",
-      "title": "Developer’s guide to implementing MCP apps in Gemini",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/devs-guide-to-mcp-apps-in-gemini/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Is your LLM-as-a-judge truly objective? There’s a common misconception in tech that humans are subjective, so we should rely on AI for objective evaluation. But the reality is that LLMs are also subjective. Just like human reviewers, they can carry biases: Verbosity bias : LLM…",
-      "title": "Who judges the judge? Three helpful ways to audit your LLM evaluators",
-      "url": "https://cloud.google.com/blog/topics/consulting/three-ways-to-audit-your-llm-evaluators/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "We are announcing a new logging feature that is now available in Python User-Defined Function (UDF) in BigQuery. Developers can now use Python’s standard logging library directly inside BigQuery UDFs to emit structured logs seamlessly into Cloud Logging—with zero external…",
-      "title": "How to Use Python UDF Logging for Pipeline Observability",
-      "url": "https://cloud.google.com/blog/products/data-analytics/python-udf-logging-for-pipeline-observability-in-bigquery/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T15:34:59+00:00",
+      "publishedAt": "2026-10-20T17:03:38+00:00",
       "source": "AWS",
-      "summary": "Nothing last week added a new kind of compute. What it did instead was shorten the distance between the code you already have and that code being live. AWS Lambda learned to run a plain HTTP server with no adapter in front of it, and Amazon S3 became something you can provision…",
-      "title": "AWS Weekly Roundup: AWS Lambda Web Functions, Amazon S3 on the Vercel Marketplace, and more (October 19, 2026)",
-      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T15:30:37+00:00",
-      "source": "Meta",
-      "summary": "Sometimes, giving an AI agent all of the knowledge it needs is the wrong approach. At Meta, we’ve seen notable improvements in efficiency and accuracy by keeping the orchestration layer of our data pipeline agents deliberately thin: It routes work and enforces reliability…",
-      "title": "The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do",
-      "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T13:00:10+00:00",
-      "source": "Meta",
-      "summary": "With the recent release of the Muse family of foundational models, we want to take you inside the infrastructure that has made it all possible. The first phase of Prometheus, our gigawatt-scale supercluster, is already complete and we’re working toward scaling it to comprise ~1…",
-      "title": "Inside Prometheus: Meta’s Journey to a Gigawatt-Scale Supercluster",
-      "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T13:00:00+00:00",
-      "source": "The Register",
-      "summary": "OWA borked and lengthy email queues reported on busy servers after Microsoft tweaks a Server default",
-      "title": "Admin: 'I spent all weekend on my servers' after Microsoft breaks Exchange Server with October updates",
-      "url": "https://www.theregister.com/software/2026/10/19/admin-i-spent-all-weekend-on-my-servers-after-microsoft-breaks-exchange-server-with-october-updates/5303724"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T13:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code.",
-      "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
-      "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T07:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "As organizations work to leverage AI to transform their businesses, it is clear that the raw model intelligence is not the key challenge. Consistently, we hear that the challenges lie in how the agents can be deployed across the company while meeting key requirements for…",
-      "title": "Google named a Leader in the 2026 IDC MarketScape for Agentic AI Platforms",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-named-leader-in-2026-idc-marketscape-for-agentic-ai-platforms/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-19T05:30:00+00:00",
-      "source": "The Register",
-      "summary": "Revenge is a dish best served by autoexec.bat",
-      "title": "Engineer was so sick of office pranks, he 'wiped' his antagonist's disk",
-      "url": "https://www.theregister.com/software/2026/10/19/engineer-was-so-sick-of-office-pranks-he-wiped-his-antagonists-disk/5302162"
+      "summary": "Try Amazon ECS Gateway, a new account-level resource that simplifies ingress networking for containerized workloads by dynamically provisioning and managing the necessary infrastructure on your behalf, with all resources created directly in your account.",
+      "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
+      "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-19T04:31:00+00:00",
+      "publishedAt": "2026-10-20T16:30:00+00:00",
       "source": "The Register",
-      "summary": "Huntress alleges takeover of M365 accounts",
-      "title": "ConnectWise turns off its SaaS-y backup, security, and management services to probe security SNAFU",
-      "url": "https://www.theregister.com/security/2026/10/19/connectwise-turns-off-its-saas-y-backup-security-and-management-services-to-probe-security-snafu/5303758"
+      "summary": "From October 26, only high and critical cases stay private as project seeks help sharing the workload",
+      "title": "Swamped curl maintainers take low-level flaws public to survive vulnerability 'avalanche'",
+      "url": "https://www.theregister.com/security/2026/10/20/swamped-curl-maintainers-take-low-level-flaws-public-to-survive-vulnerability-avalanche/5304198"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-20T16:05:03+00:00",
+      "source": "GitHub Blog",
+      "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog .",
+      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-20T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Whether you are iterating on a quick bug fix or planning a complex migration, different tasks call for different models. In keeping with Google Cloud's commitment to an open ecosystem and to give developers the right model for every job, Claude Opus 5.5 and Claude Sonnet 5.5 are…",
+      "title": "Claude Opus 5.5 and Claude Sonnet 5.5 are now available in Google Antigravity",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-opus-55-and-claude-sonnet-55-available-in-antigravity/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-20T15:30:00+00:00",
+      "source": "The Register",
+      "summary": "CentOS roots give way to homegrown containers, AI tools, and a workstation edition we took for a spin",
+      "title": "openEuler brings China's enterprise Linux ambitions to the desktop",
+      "url": "https://www.theregister.com/os-platforms/2026/10/20/openeuler-brings-chinas-enterprise-linux-ambitions-to-the-desktop/5304145"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-20T14:53:27+00:00",
+      "source": "Microsoft",
+      "summary": "We swapped GitHub for a local git remote in our agent evals. Rebasing and pushing on request were unaffected, but the agent pushed on its own 11 points less often. Here's when a local remote is a safe shortcut, and when it isn't. The post Can a local git remote replace GitHub in…",
+      "title": "Can a local git remote replace GitHub in your agent eval?",
+      "url": "https://devblogs.microsoft.com/blog/can-a-local-git-remote-replace-github-in-your-agent-eval/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-20T14:43:00+00:00",
+      "source": "The Register",
+      "summary": "Keeping vendors happy is costing businesses millions, even when everything was working fine in the first place",
+      "title": "Enterprises blow nearly a third of software budgets on upgrades they never asked for",
+      "url": "https://www.theregister.com/software/2026/10/20/enterprises-blow-nearly-a-third-of-software-budgets-on-upgrades-they-never-asked-for/5304181"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-20T13:35:00+00:00",
+      "source": "The Register",
+      "summary": "ICO reprimands Ogi Networks and Data Cymru after ransomware breach exposes info of 3,300 people, mostly children",
+      "title": "'Password1' and a forgotten test account land Welsh outfits in hot water",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/20/password1-and-a-forgotten-test-account-land-welsh-outfits-in-hot-water/5304139"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-20T13:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory.",
+      "title": "Introducing tsrs: A port of TypeScript to Rust",
+      "url": "https://blog.cloudflare.com/typescript-rust-port/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-20T12:33:13+00:00",
+      "source": "Ars Technica",
+      "summary": "Meta is suspending the sharing feature while it investigates its privacy.",
+      "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
+      "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-20T12:15:00+00:00",
+      "source": "The Register",
+      "summary": "Staffing software giant calls in CrowdStrike as customers face login headaches and questions remain over possible data theft",
+      "title": "Bullhorn sees red after cyberattack knocks recruitment platform offline",
+      "url": "https://www.theregister.com/security/2026/10/20/bullhorn-sees-red-after-cyberattack-knocks-recruitment-platform-offline/5304114"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-20T11:30:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Today at PyTorch Conference 2026, we announced a range of new products and integrations designed to help you run PyTorch effectively on Google Cloud or in your own infrastructure. Notably, TorchTPU, our native PyTorch stack for Google TPUs, is now available as open source on…",
+      "title": "TorchTPU is now open source: Run native PyTorch on TPUs",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-20T11:30:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Today at the PyTorch Conference, we released llm-d 1.0, an open-source, Kubernetes-native stack for distributed LLM inference. Co-founded by Google with Red Hat, IBM and others, we worked with a community of more than 500 contributors over 25 organizations on this Cloud Native…",
+      "title": "Announcing llm-d 1.0: Open distributed inference for agents on Google Cloud TPUs and GPUs",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/llm-d-1-0-an-open-source-stack-for-distributed-inference/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-20T10:45:00+00:00",
+      "source": "The Register",
+      "summary": "Ministers may have scrapped the national scheme, but One Login, digital wallets and 80-plus planned credentials are still very much alive",
+      "title": "Whitehall shuts the front door on digital ID but leaves the back open",
+      "url": "https://www.theregister.com/public-sector/2026/10/20/whitehall-shuts-the-front-door-on-digital-id-but-leaves-the-back-open/5304100"
     }
   ]
 }

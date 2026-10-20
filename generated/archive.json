@@ -1,6 +1,232 @@
 {
   "archive": [
     {
+      "date": "2026-10-21",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": -39,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201161,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": -4,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143092,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -21,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139386,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -23,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128460,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": -32,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122488,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 16,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120627,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 641,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 112417,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 25,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 104947,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 6,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97945,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -47,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91482,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 2,
+          "other": 1,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-10-20T17:49:46Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
+            "version": "v1.16.0"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-10-20T10:47:31Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v13.38.0",
+            "version": "v13.38.0"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-10-20T03:01:54Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.1",
+            "version": "create-vite@9.3.1"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 286,
+          "HIGH": 1531,
+          "LOW": 79,
+          "MEDIUM": 840,
+          "NONE": 0,
+          "UNSCORED": 743
+        }
+      },
+      "snapshot": {
+        "cves": 3479,
+        "kevAdded": 6,
+        "knownExploited": 3,
+        "projects": 18,
+        "releases": 3,
+        "techEntries": 43
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 6,
+          "status": "success",
+          "total": 1754
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 3,
+          "status": "partial",
+          "total": 53
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 3479,
+          "status": "success",
+          "total": 3479
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 43,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 15,
+          "tech": 28
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-20T17:33:26+00:00",
+            "source": "The Register",
+            "title": "Palo Alto's firewall OS has been under attack from multiple ransomware groups since June",
+            "url": "https://www.theregister.com/cyber-crime/2026/10/20/palo-altos-firewall-os-has-been-under-attack-from-multiple-ransomware-groups-since-june/5304226"
+          },
+          {
+            "published_at": "2026-10-20T17:03:38+00:00",
+            "source": "AWS",
+            "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
+            "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/"
+          },
+          {
+            "published_at": "2026-10-20T16:30:00+00:00",
+            "source": "The Register",
+            "title": "Swamped curl maintainers take low-level flaws public to survive vulnerability 'avalanche'",
+            "url": "https://www.theregister.com/security/2026/10/20/swamped-curl-maintainers-take-low-level-flaws-public-to-survive-vulnerability-avalanche/5304198"
+          },
+          {
+            "published_at": "2026-10-20T16:05:03+00:00",
+            "source": "GitHub Blog",
+            "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+            "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/"
+          },
+          {
+            "published_at": "2026-10-20T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Claude Opus 5.5 and Claude Sonnet 5.5 are now available in Google Antigravity",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-opus-55-and-claude-sonnet-55-available-in-antigravity/"
+          },
+          {
+            "published_at": "2026-10-20T15:30:00+00:00",
+            "source": "The Register",
+            "title": "openEuler brings China's enterprise Linux ambitions to the desktop",
+            "url": "https://www.theregister.com/os-platforms/2026/10/20/openeuler-brings-chinas-enterprise-linux-ambitions-to-the-desktop/5304145"
+          },
+          {
+            "published_at": "2026-10-20T14:53:27+00:00",
+            "source": "Microsoft",
+            "title": "Can a local git remote replace GitHub in your agent eval?",
+            "url": "https://devblogs.microsoft.com/blog/can-a-local-git-remote-replace-github-in-your-agent-eval/"
+          },
+          {
+            "published_at": "2026-10-20T14:43:00+00:00",
+            "source": "The Register",
+            "title": "Enterprises blow nearly a third of software budgets on upgrades they never asked for",
+            "url": "https://www.theregister.com/software/2026/10/20/enterprises-blow-nearly-a-third-of-software-budgets-on-upgrades-they-never-asked-for/5304181"
+          },
+          {
+            "published_at": "2026-10-20T13:35:00+00:00",
+            "source": "The Register",
+            "title": "'Password1' and a forgotten test account land Welsh outfits in hot water",
+            "url": "https://www.theregister.com/cyber-crime/2026/10/20/password1-and-a-forgotten-test-account-land-welsh-outfits-in-hot-water/5304139"
+          },
+          {
+            "published_at": "2026-10-20T13:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Introducing tsrs: A port of TypeScript to Rust",
+            "url": "https://blog.cloudflare.com/typescript-rust-port/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-20",
       "opensource": {
         "topProjects": [
@@ -7440,8 +7666,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-19T22:37:25.716130+00:00",
-    "totalSnapshots": 34,
+    "generatedAt": "2026-10-20T21:49:34.813793+00:00",
+    "totalSnapshots": 35,
     "warnings": []
   }
 }

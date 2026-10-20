@@ -1,0 +1,363 @@
+{
+  "coveredIstDay": "2026-10-20",
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-20T21:49:34.813793+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": -39,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201161,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": -4,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143092,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": -21,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139386,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": -23,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128460,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": -32,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122488,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 16,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120627,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 641,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 112417,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 25,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104947,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 6,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97945,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": -47,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91482,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 1,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-10-20T17:49:46Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
+        "version": "v1.16.0"
+      },
+      {
+        "project": "framework",
+        "published_at": "2026-10-20T10:47:31Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v13.38.0",
+        "version": "v13.38.0"
+      },
+      {
+        "project": "vite",
+        "published_at": "2026-10-20T03:01:54Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.1",
+        "version": "create-vite@9.3.1"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-96656",
+        "date_added": "2026-10-20",
+        "product": "Media Server",
+        "vendor_project": "Plex",
+        "vulnerability_name": "Plex Media Server External Control of File Name or Path Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-96655",
+        "date_added": "2026-10-20",
+        "product": "Media Server",
+        "vendor_project": "Plex",
+        "vulnerability_name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-96654",
+        "date_added": "2026-10-20",
+        "product": "Media Server",
+        "vendor_project": "Plex",
+        "vulnerability_name": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-96652",
+        "date_added": "2026-10-20",
+        "product": "Media Server",
+        "vendor_project": "Plex",
+        "vulnerability_name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-110936",
+        "date_added": "2026-10-20",
+        "product": "Software Center",
+        "vendor_project": "Siemens",
+        "vulnerability_name": "Siemens Software Center Uncontrolled Search Path Element Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 8.8,
+        "description": "Access of resource using incompatible type ('type confusion') in RPC Runtime allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-102203",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102203"
+      },
+      {
+        "cvss": 7.8,
+        "description": "Heap-based buffer overflow in Windows Universal Disk Format File System Driver (UDFS) allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-102205",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102205"
+      },
+      {
+        "cvss": 6.8,
+        "description": "Heap-based buffer overflow in Windows Portable Device MTP Driver allows an unauthorized attacker to elevate privileges with a physical attack.",
+        "id": "CVE-2026-102206",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102206"
+      },
+      {
+        "cvss": 7.0,
+        "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-102207",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102207"
+      },
+      {
+        "cvss": 7.0,
+        "description": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-102208",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102208"
+      },
+      {
+        "cvss": 5.5,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_nat_sip: rewind offset when NAT shrinks the packet\n\nsashiko says:\n If map_addr() changes the packet length, such as w",
+        "id": "CVE-2026-100070",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100070"
+      },
+      {
+        "cvss": 7.1,
+        "description": "ColdFusion is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated acce",
+        "id": "CVE-2026-76001",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76001"
+      },
+      {
+        "cvss": 8.6,
+        "description": "In Eclipse Vert.x versions [4.0.0, 4.5.34] or [5.0.0,5.0.12] or [5.1.0,5.1.9] or [5.2.0, 5.2.0], a scope bypass vulnerability exists in Eclipse Vert.x Web's ChainAuthHandler when used with scope-requi",
+        "id": "CVE-2026-102460",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102460"
+      },
+      {
+        "cvss": 7.0,
+        "description": "Heap-based buffer overflow in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-102209",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102209"
+      },
+      {
+        "cvss": 9.8,
+        "description": "Heap-based buffer overflow in Windows Text Shaping allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-102210",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102210"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 286,
+      "HIGH": 1531,
+      "LOW": 79,
+      "MEDIUM": 840,
+      "NONE": 0,
+      "UNSCORED": 743
+    }
+  },
+  "snapshot": {
+    "cves": 3479,
+    "kevAdded": 6,
+    "knownExploited": 3,
+    "projects": 18,
+    "releases": 3,
+    "techEntries": 43
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 6,
+      "status": "success",
+      "total": 1754
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 3,
+      "status": "partial",
+      "total": 53
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 3479,
+      "status": "success",
+      "total": 3479
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 43,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 15,
+      "tech": 28
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-20T17:33:26+00:00",
+        "source": "The Register",
+        "title": "Palo Alto's firewall OS has been under attack from multiple ransomware groups since June",
+        "url": "https://www.theregister.com/cyber-crime/2026/10/20/palo-altos-firewall-os-has-been-under-attack-from-multiple-ransomware-groups-since-june/5304226"
+      },
+      {
+        "published_at": "2026-10-20T17:03:38+00:00",
+        "source": "AWS",
+        "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
+        "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/"
+      },
+      {
+        "published_at": "2026-10-20T16:30:00+00:00",
+        "source": "The Register",
+        "title": "Swamped curl maintainers take low-level flaws public to survive vulnerability 'avalanche'",
+        "url": "https://www.theregister.com/security/2026/10/20/swamped-curl-maintainers-take-low-level-flaws-public-to-survive-vulnerability-avalanche/5304198"
+      },
+      {
+        "published_at": "2026-10-20T16:05:03+00:00",
+        "source": "GitHub Blog",
+        "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+        "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/"
+      },
+      {
+        "published_at": "2026-10-20T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Claude Opus 5.5 and Claude Sonnet 5.5 are now available in Google Antigravity",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-opus-55-and-claude-sonnet-55-available-in-antigravity/"
+      },
+      {
+        "published_at": "2026-10-20T15:30:00+00:00",
+        "source": "The Register",
+        "title": "openEuler brings China's enterprise Linux ambitions to the desktop",
+        "url": "https://www.theregister.com/os-platforms/2026/10/20/openeuler-brings-chinas-enterprise-linux-ambitions-to-the-desktop/5304145"
+      },
+      {
+        "published_at": "2026-10-20T14:53:27+00:00",
+        "source": "Microsoft",
+        "title": "Can a local git remote replace GitHub in your agent eval?",
+        "url": "https://devblogs.microsoft.com/blog/can-a-local-git-remote-replace-github-in-your-agent-eval/"
+      },
+      {
+        "published_at": "2026-10-20T14:43:00+00:00",
+        "source": "The Register",
+        "title": "Enterprises blow nearly a third of software budgets on upgrades they never asked for",
+        "url": "https://www.theregister.com/software/2026/10/20/enterprises-blow-nearly-a-third-of-software-budgets-on-upgrades-they-never-asked-for/5304181"
+      },
+      {
+        "published_at": "2026-10-20T13:35:00+00:00",
+        "source": "The Register",
+        "title": "'Password1' and a forgotten test account land Welsh outfits in hot water",
+        "url": "https://www.theregister.com/cyber-crime/2026/10/20/password1-and-a-forgotten-test-account-land-welsh-outfits-in-hot-water/5304139"
+      },
+      {
+        "published_at": "2026-10-20T13:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing tsrs: A port of TypeScript to Rust",
+        "url": "https://blog.cloudflare.com/typescript-rust-port/"
+      }
+    ],
+    "sources": {
+      "AWS": 2,
+      "Ars Technica": 3,
+      "Cloudflare": 4,
+      "GitHub Blog": 2,
+      "Google Cloud": 11,
+      "Meta": 3,
+      "Microsoft": 1,
+      "The Register": 17
+    }
+  },
+  "window": {
+    "end": "2026-10-20T18:30:00+00:00",
+    "start": "2026-10-19T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
