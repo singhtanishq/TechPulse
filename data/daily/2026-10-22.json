@@ -1,0 +1,295 @@
+{
+  "coveredIstDay": "2026-10-21",
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-21T21:55:25.923167+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 11,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201172,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 32,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143124,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 3,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139389,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 8,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128468,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 22,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122510,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 11,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120638,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 516,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 112933,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 22,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104969,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 15,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 97960,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": -2,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91480,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 1,
+      "minor": 3,
+      "other": 0,
+      "patch": 6
+    },
+    "recent": [
+      {
+        "project": "terraform",
+        "published_at": "2026-10-21T17:32:54Z",
+        "repository": "hashicorp/terraform",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
+        "version": "v1.17.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-21T15:53:22Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.36.0",
+        "version": "v3.36.0"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-10-21T15:51:32Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
+        "version": "v2.0.0"
+      },
+      {
+        "project": "framework",
+        "published_at": "2026-10-21T12:57:04Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v12.70.1",
+        "version": "v12.70.1"
+      },
+      {
+        "project": "node",
+        "published_at": "2026-10-21T10:38:29Z",
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.12.1",
+        "version": "v26.12.1"
+      },
+      {
+        "project": "node",
+        "published_at": "2026-10-21T10:38:25Z",
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node/releases/tag/v24.22.1",
+        "version": "v24.22.1"
+      },
+      {
+        "project": "node",
+        "published_at": "2026-10-21T10:38:20Z",
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node/releases/tag/v22.23.4",
+        "version": "v22.23.4"
+      },
+      {
+        "project": "vite",
+        "published_at": "2026-10-21T06:35:46Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/v8.3.5",
+        "version": "v8.3.5"
+      },
+      {
+        "project": "vite",
+        "published_at": "2026-10-21T05:31:06Z",
+        "repository": "vitejs/vite",
+        "url": "https://github.com/vitejs/vite/releases/tag/v6.4.5",
+        "version": "v6.4.5"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-10-20T22:13:01Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
+        "version": "v1.17.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [],
+    "severity": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "LOW": 0,
+      "MEDIUM": 0,
+      "NONE": 0,
+      "UNSCORED": 0
+    }
+  },
+  "snapshot": {
+    "cves": 0,
+    "kevAdded": 0,
+    "knownExploited": 0,
+    "projects": 18,
+    "releases": 10,
+    "techEntries": 68
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1754
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 10,
+      "status": "partial",
+      "total": 54
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 1,
+      "inWindow": 0,
+      "status": "failed",
+      "total": 0
+    },
+    "rss": {
+      "failures": 1,
+      "inWindow": 68,
+      "status": "partial",
+      "total": 209
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 25,
+      "tech": 43
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-21T18:22:20+00:00",
+        "source": "The Register",
+        "title": "LiteLLM supply chain attack hoovers up passwords and secrets",
+        "url": "https://www.theregister.com/security/2026/10/21/litellm-supply-chain-attack-hoovers-up-passwords-and-secrets/5304548"
+      },
+      {
+        "published_at": "2026-10-21T17:00:58+00:00",
+        "source": "The Register",
+        "title": "Signal bug could keep your mic - and camera - on after hangup",
+        "url": "https://www.theregister.com/security/2026/10/21/signal-bug-could-keep-your-mic-and-camera-on-after-hangup/5304528"
+      },
+      {
+        "published_at": "2026-10-21T16:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "The bridge to agent-scale Git infrastructure",
+        "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
+      },
+      {
+        "published_at": "2026-10-21T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "BigQuery ObjectRef now GA: Build multimodal data platforms for conversational analytics entirely in SQL",
+        "url": "https://cloud.google.com/blog/products/data-analytics/analyze-unstructured-data-in-bigquery-with-objectref/"
+      },
+      {
+        "published_at": "2026-10-21T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "ZenteiQ scales batch inference 4x with GKE Inference Gateway powered by llm-d",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/zenteiq-scales-physical-ai-inference-4x-with-gke-and-llm-d/"
+      },
+      {
+        "published_at": "2026-10-21T15:08:51+00:00",
+        "source": "The Register",
+        "title": "PHP devs publish critical bug fix as site owners warned: Pull 'em offline if you're unpatched",
+        "url": "https://www.theregister.com/security/2026/10/21/php-devs-publish-critical-bug-fix-as-site-owners-warned-pull-em-offline-if-youre-unpatched/5304519"
+      },
+      {
+        "published_at": "2026-10-21T14:10:42+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing full transaction detection for Cloudflare WAF",
+        "url": "https://blog.cloudflare.com/full-transaction-waf/"
+      },
+      {
+        "published_at": "2026-10-21T14:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Responding to core PHP vulnerabilities CVE-2026-109618 and CVE-2026-109619",
+        "url": "https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619/"
+      },
+      {
+        "published_at": "2026-10-21T13:56:45+00:00",
+        "source": "Cloudflare",
+        "title": "Cloudflare deploys protections against php2shell vulnerability",
+        "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/"
+      },
+      {
+        "published_at": "2026-10-21T13:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Google Public Sector increases partner investments for frontline adoption",
+        "url": "https://cloud.google.com/blog/topics/public-sector/google-public-sector-increases-partner-investments-for-frontline-adoption/"
+      }
+    ],
+    "sources": {
+      "AWS": 2,
+      "Ars Technica": 5,
+      "Cloudflare": 8,
+      "GitHub Blog": 3,
+      "Google Cloud": 19,
+      "Meta": 3,
+      "Microsoft": 1,
+      "The Register": 27
+    }
+  },
+  "window": {
+    "end": "2026-10-21T18:30:00+00:00",
+    "start": "2026-10-20T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

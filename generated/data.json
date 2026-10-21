@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 0,
+      "date": "2026-10-22",
+      "kevAdded": 0,
+      "knownExploited": 0,
+      "projects": 18,
+      "releases": 10,
+      "techEntries": 68
+    },
+    {
       "cves": 3479,
       "date": "2026-10-21",
       "kevAdded": 6,
@@ -317,16 +326,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-20",
-    "date": "2026-10-21",
-    "daysObserved": 35,
-    "generatedAt": "2026-10-20T21:49:34.813793+00:00",
-    "snapshots": 35,
+    "coveredDate": "2026-10-21",
+    "date": "2026-10-22",
+    "daysObserved": 36,
+    "generatedAt": "2026-10-21T21:55:25.923167+00:00",
+    "snapshots": 36,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": -39,
+      "daily_growth": 11,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -334,11 +343,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201161,
+      "stars": 201172,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": -4,
+      "daily_growth": 32,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -346,11 +355,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143092,
+      "stars": 143124,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": -21,
+      "daily_growth": 3,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -358,11 +367,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139386,
+      "stars": 139389,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": -23,
+      "daily_growth": 8,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -370,11 +379,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128460,
+      "stars": 128468,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": -32,
+      "daily_growth": 22,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -382,11 +391,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122488,
+      "stars": 122510,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 11,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -394,11 +403,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120627,
+      "stars": 120638,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 641,
+      "daily_growth": 516,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -406,11 +415,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 112417,
+      "stars": 112933,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 25,
+      "daily_growth": 22,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -418,11 +427,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104947,
+      "stars": 104969,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 6,
+      "daily_growth": 15,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -430,11 +439,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97945,
+      "stars": 97960,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": -47,
+      "daily_growth": -2,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -442,252 +451,119 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91482,
+      "stars": 91480,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
       "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-20T17:49:46Z",
-      "repository": "anthropics/anthropic-sdk-python",
+      "project": "terraform",
+      "publishedAt": "2026-10-21T17:32:54Z",
+      "repository": "hashicorp/terraform",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
-      "version": "v1.16.0"
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
+      "version": "v1.17.0"
     },
     {
       "kind": "minor",
-      "project": "framework",
-      "publishedAt": "2026-10-20T10:47:31Z",
-      "repository": "laravel/framework",
+      "project": "openai-python",
+      "publishedAt": "2026-10-21T15:53:22Z",
+      "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v13.38.0",
-      "version": "v13.38.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.36.0",
+      "version": "v3.36.0"
     },
     {
-      "kind": "other",
+      "kind": "major",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-10-21T15:51:32Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
+      "version": "v2.0.0"
+    },
+    {
+      "kind": "patch",
+      "project": "framework",
+      "publishedAt": "2026-10-21T12:57:04Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v12.70.1",
+      "version": "v12.70.1"
+    },
+    {
+      "kind": "patch",
+      "project": "node",
+      "publishedAt": "2026-10-21T10:38:29Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.12.1",
+      "version": "v26.12.1"
+    },
+    {
+      "kind": "patch",
+      "project": "node",
+      "publishedAt": "2026-10-21T10:38:25Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v24.22.1",
+      "version": "v24.22.1"
+    },
+    {
+      "kind": "patch",
+      "project": "node",
+      "publishedAt": "2026-10-21T10:38:20Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v22.23.4",
+      "version": "v22.23.4"
+    },
+    {
+      "kind": "patch",
       "project": "vite",
-      "publishedAt": "2026-10-20T03:01:54Z",
+      "publishedAt": "2026-10-21T06:35:46Z",
       "repository": "vitejs/vite",
       "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.1",
-      "version": "create-vite@9.3.1"
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.5",
+      "version": "v8.3.5"
+    },
+    {
+      "kind": "patch",
+      "project": "vite",
+      "publishedAt": "2026-10-21T05:31:06Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v6.4.5",
+      "version": "v6.4.5"
+    },
+    {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-10-20T22:13:01Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
+      "version": "v1.17.0"
     }
   ],
   "security": {
-    "critical": 286,
-    "high": 1531,
+    "critical": 0,
+    "high": 0,
     "kevCatalogTotal": 1754,
-    "latest": [
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Access of resource using incompatible type ('type confusion') in RPC Runtime allows an unauthorized attacker to execute code over a network.",
-        "id": "CVE-2026-102203",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:29:10.303",
-        "publishedAt": "2026-10-13T19:17:45.333",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Access of resource using incompatible type ('type confusion') in RPC Runtime allows an unauthorized attacker to execute code over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102203"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "Heap-based buffer overflow in Windows Universal Disk Format File System Driver (UDFS) allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-102205",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:27:52.003",
-        "publishedAt": "2026-10-13T19:17:45.660",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Heap-based buffer overflow in Windows Universal Disk Format File System Driver (UDFS) allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102205"
-      },
-      {
-        "cvss_score": 6.8,
-        "cvss_version": "3.1",
-        "description": "Heap-based buffer overflow in Windows Portable Device MTP Driver allows an unauthorized attacker to elevate privileges with a physical attack.",
-        "id": "CVE-2026-102206",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:26:49.407",
-        "publishedAt": "2026-10-13T19:17:45.843",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Heap-based buffer overflow in Windows Portable Device MTP Driver allows an unauthorized attacker to elevate privileges with a physical attack.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102206"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "3.1",
-        "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-102207",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:25:30.877",
-        "publishedAt": "2026-10-13T19:17:46.027",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Kernel allows an authorized attacker to elevate…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102207"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "3.1",
-        "description": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-102208",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:24:10.370",
-        "publishedAt": "2026-10-13T19:17:46.230",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102208"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_nat_sip: rewind offset when NAT shrinks the packet\n\nsashiko says:\n If map_addr() changes the packet length, such as when the public NAT IP\n string is shorter or longer than the internal IP, coff will still point to\n the offset relative to the pre-mangled packet.\n If the packet shrinks, coff could overshoot the…",
-        "id": "CVE-2026-100070",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:19:31.813",
-        "publishedAt": "2026-09-25T14:17:13.400",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_nat_sip: rewind offset when NAT shrinks the packet\n\nsashiko says:\n If…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100070"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "ColdFusion is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain elevated access to internal resources. Exploit depends on conditions beyond the attacker's control. Exploitation of this issue does not require user interaction. Scope is changed.",
-        "id": "CVE-2026-76001",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:19:19.807",
-        "publishedAt": "2026-10-13T21:18:20.730",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "ColdFusion is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. A low-privileged attacker could exploit…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76001"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "4.0",
-        "description": "In Eclipse Vert.x versions [4.0.0, 4.5.34] or [5.0.0,5.0.12] or [5.1.0,5.1.9] or [5.2.0, 5.2.0], a scope bypass vulnerability exists in Eclipse Vert.x Web's ChainAuthHandler when used with scope-requiring authentication handlers such as JWTAuthHandler or OAuth2AuthHandler. When a user is already authenticated on the routing context by a preceding handler in the request pipeline, ChainAuthHandler…",
-        "id": "CVE-2026-102460",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:19:05.937",
-        "publishedAt": "2026-10-14T19:17:05.050",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In Eclipse Vert.x versions [4.0.0, 4.5.34] or [5.0.0,5.0.12] or [5.1.0,5.1.9] or [5.2.0, 5.2.0], a scope bypass vulnerability exists in Eclipse Vert.x Web's…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102460"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "3.1",
-        "description": "Heap-based buffer overflow in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-102209",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:18:52.743",
-        "publishedAt": "2026-10-13T19:17:46.390",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Heap-based buffer overflow in Microsoft Graphics Component allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102209"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "Heap-based buffer overflow in Windows Text Shaping allows an unauthorized attacker to execute code over a network.",
-        "id": "CVE-2026-102210",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:18:23.497",
-        "publishedAt": "2026-10-13T19:17:46.520",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Heap-based buffer overflow in Windows Text Shaping allows an unauthorized attacker to execute code over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102210"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "3.1",
-        "description": "A stack-based buffer overflow flaw was found in fetchmail when built with NTLM support. A malicious or compromised mail server advertising NTLM authentication can send a crafted Type 2 challenge that causes fetchmail to write past a fixed stack buffer while building the NTLM authenticate response. This may lead to remote code execution depending on stack-frame layout, or to authentication failure…",
-        "id": "CVE-2026-94184",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:17:23.510",
-        "publishedAt": "2026-09-21T15:17:38.547",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A stack-based buffer overflow flaw was found in fetchmail when built with NTLM support. A malicious or compromised mail server advertising NTLM authentication…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94184"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "For XSA-308 logic was introduced, as VMX VMEntry checks do not like the\nexact combination of state which occurs when #DB in intercepted, Single\nStepping is active, and blocked by STI/MovSS is active, despite this being\na legitimate state to be in.  The resulting VMEntry failure is fatal to\nthe guest.\n\nSadly there is another special sub-case of the above, with branch tracing\nenabled.  In that case…",
-        "id": "CVE-2026-79611",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:17:22.447",
-        "publishedAt": "2026-10-13T16:17:23.347",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "For XSA-308 logic was introduced, as VMX VMEntry checks do not like the\nexact combination of state which occurs when #DB in intercepted, Single\nStepping is…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79611"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "XSA-501 was about issues with v1 -> v2 and v2 -> v1 changes racing certain\nother grant table operations.  Sadly a v2 -> v1 -> v2 change has yet\nanother effect which wasn't accounted for: During the first change, status\npages would be freed.  During the second change they would be allocated\nagain.  Hence across the full pair of change the addresses of the status\npages may change, rendering stale…",
-        "id": "CVE-2026-79610",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:17:22.290",
-        "publishedAt": "2026-10-13T16:17:23.247",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "XSA-501 was about issues with v1 -> v2 and v2 -> v1 changes racing certain\nother grant table operations.  Sadly a v2 -> v1 -> v2 change has yet\nanother effect…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79610"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "XPTI (Xen Page Table Isolation) was introduced to mitigate Meltdown\n(CVE-2017-5754, one aspect of XSA-254).  This involves copying 64-bit PV\nguest page table entries from guest-chosen root page tables to the Xen-\nchosen one which is in actual use by hardware.  To read the guest root\npage table, the directmap is used.  PV guests, however, have a directmap\nwhich may not cover all memory; in…",
-        "id": "CVE-2026-79609",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:17:22.137",
-        "publishedAt": "2026-10-13T16:17:23.147",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "XPTI (Xen Page Table Isolation) was introduced to mitigate Meltdown\n(CVE-2017-5754, one aspect of XSA-254).  This involves copying 64-bit PV\nguest page table…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79609"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "The workaround for XSA-433 (Zenbleed, CVE-2023-20593) was later\nre-worked to better integrate with other manipulations of the same MSR.\nIn this rework an inverted conditional was introduced, resulting in the\nworkaround to not be applied when needed and vice versa.\n\nFor more details, see:\n  http://xenbits.xen.org/xsa/advisory-433.html",
-        "id": "CVE-2026-79608",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-20T18:17:21.973",
-        "publishedAt": "2026-10-13T16:17:23.040",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "The workaround for XSA-433 (Zenbleed, CVE-2023-20593) was later\nre-worked to better integrate with other manipulations of the same MSR.\nIn this rework an…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79608"
-      }
-    ],
-    "low": 79,
-    "medium": 840,
+    "latest": [],
+    "low": 0,
+    "medium": 0,
     "none": 0,
-    "unscored": 743
+    "unscored": 0
   },
   "snapshot": {
-    "cves": 3479,
-    "kevAdded": 6,
-    "knownExploited": 3,
+    "cves": 0,
+    "kevAdded": 0,
+    "knownExploited": 0,
     "projects": 18,
-    "releases": 3,
-    "techEntries": 43
+    "releases": 10,
+    "techEntries": 68
   },
   "sources": {
     "opensource": {
@@ -701,154 +577,154 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 3,
+        "inWindow": 10,
         "status": "partial",
-        "total": 53
+        "total": 54
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 6,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1754
       },
       "nvd": {
-        "failures": 0,
-        "inWindow": 3479,
-        "status": "success",
-        "total": 3479
+        "failures": 1,
+        "inWindow": 0,
+        "status": "failed",
+        "total": 0
       }
     },
     "technology": {
       "rss": {
-        "failures": 0,
-        "inWindow": 43,
-        "status": "success",
-        "total": 229
+        "failures": 1,
+        "inWindow": 68,
+        "status": "partial",
+        "total": 209
       }
     }
   },
   "technology": [
     {
       "category": "security",
-      "publishedAt": "2026-10-20T17:33:26+00:00",
+      "publishedAt": "2026-10-21T18:22:20+00:00",
       "source": "The Register",
-      "summary": "Unit 42 investigates network compromises across numerous industries",
-      "title": "Palo Alto's firewall OS has been under attack from multiple ransomware groups since June",
-      "url": "https://www.theregister.com/cyber-crime/2026/10/20/palo-altos-firewall-os-has-been-under-attack-from-multiple-ransomware-groups-since-june/5304226"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-20T17:03:38+00:00",
-      "source": "AWS",
-      "summary": "Try Amazon ECS Gateway, a new account-level resource that simplifies ingress networking for containerized workloads by dynamically provisioning and managing the necessary infrastructure on your behalf, with all resources created directly in your account.",
-      "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
-      "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services/"
+      "summary": "Plus a RAT for good measure - get threat hunting now",
+      "title": "LiteLLM supply chain attack hoovers up passwords and secrets",
+      "url": "https://www.theregister.com/security/2026/10/21/litellm-supply-chain-attack-hoovers-up-passwords-and-secrets/5304548"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-20T16:30:00+00:00",
+      "publishedAt": "2026-10-21T17:00:58+00:00",
       "source": "The Register",
-      "summary": "From October 26, only high and critical cases stay private as project seeks help sharing the workload",
-      "title": "Swamped curl maintainers take low-level flaws public to survive vulnerability 'avalanche'",
-      "url": "https://www.theregister.com/security/2026/10/20/swamped-curl-maintainers-take-low-level-flaws-public-to-survive-vulnerability-avalanche/5304198"
+      "summary": "Careful what you say after goodbye, or better yet, update your messaging app",
+      "title": "Signal bug could keep your mic - and camera - on after hangup",
+      "url": "https://www.theregister.com/security/2026/10/21/signal-bug-could-keep-your-mic-and-camera-on-after-hangup/5304528"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-20T16:05:03+00:00",
+      "publishedAt": "2026-10-21T16:00:00+00:00",
       "source": "GitHub Blog",
-      "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog .",
-      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/"
+      "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog .",
+      "title": "The bridge to agent-scale Git infrastructure",
+      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-20T16:00:00+00:00",
+      "publishedAt": "2026-10-21T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Whether you are iterating on a quick bug fix or planning a complex migration, different tasks call for different models. In keeping with Google Cloud's commitment to an open ecosystem and to give developers the right model for every job, Claude Opus 5.5 and Claude Sonnet 5.5 are…",
-      "title": "Claude Opus 5.5 and Claude Sonnet 5.5 are now available in Google Antigravity",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-opus-55-and-claude-sonnet-55-available-in-antigravity/"
+      "summary": "For data science, data engineering, and machine learning teams, unlocking the value of unstructured data, such as images, videos, audio, and documents, has historically meant managing siloed data pipelines for structured and unstructured data, and for analytics and AI/ML use…",
+      "title": "BigQuery ObjectRef now GA: Build multimodal data platforms for conversational analytics entirely in SQL",
+      "url": "https://cloud.google.com/blog/products/data-analytics/analyze-unstructured-data-in-bigquery-with-objectref/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-20T15:30:00+00:00",
-      "source": "The Register",
-      "summary": "CentOS roots give way to homegrown containers, AI tools, and a workstation edition we took for a spin",
-      "title": "openEuler brings China's enterprise Linux ambitions to the desktop",
-      "url": "https://www.theregister.com/os-platforms/2026/10/20/openeuler-brings-chinas-enterprise-linux-ambitions-to-the-desktop/5304145"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-20T14:53:27+00:00",
-      "source": "Microsoft",
-      "summary": "We swapped GitHub for a local git remote in our agent evals. Rebasing and pushing on request were unaffected, but the agent pushed on its own 11 points less often. Here's when a local remote is a safe shortcut, and when it isn't. The post Can a local git remote replace GitHub in…",
-      "title": "Can a local git remote replace GitHub in your agent eval?",
-      "url": "https://devblogs.microsoft.com/blog/can-a-local-git-remote-replace-github-in-your-agent-eval/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-20T14:43:00+00:00",
-      "source": "The Register",
-      "summary": "Keeping vendors happy is costing businesses millions, even when everything was working fine in the first place",
-      "title": "Enterprises blow nearly a third of software budgets on upgrades they never asked for",
-      "url": "https://www.theregister.com/software/2026/10/20/enterprises-blow-nearly-a-third-of-software-budgets-on-upgrades-they-never-asked-for/5304181"
+      "publishedAt": "2026-10-21T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Today we hear from ZenteiQ , an artificial intelligence startup spun out of the Indian Institute of Science (IISc) and selected under the IndiaAI Mission to build sovereign scientific foundation models from the ground up. To pre-train models that understand physical laws…",
+      "title": "ZenteiQ scales batch inference 4x with GKE Inference Gateway powered by llm-d",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/zenteiq-scales-physical-ai-inference-4x-with-gke-and-llm-d/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-20T13:35:00+00:00",
+      "publishedAt": "2026-10-21T15:08:51+00:00",
       "source": "The Register",
-      "summary": "ICO reprimands Ogi Networks and Data Cymru after ransomware breach exposes info of 3,300 people, mostly children",
-      "title": "'Password1' and a forgotten test account land Welsh outfits in hot water",
-      "url": "https://www.theregister.com/cyber-crime/2026/10/20/password1-and-a-forgotten-test-account-land-welsh-outfits-in-hot-water/5304139"
+      "summary": "Websites down as precaution as exploits have already been published",
+      "title": "PHP devs publish critical bug fix as site owners warned: Pull 'em offline if you're unpatched",
+      "url": "https://www.theregister.com/security/2026/10/21/php-devs-publish-critical-bug-fix-as-site-owners-warned-pull-em-offline-if-youre-unpatched/5304519"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-20T13:00:00+00:00",
+      "publishedAt": "2026-10-21T14:10:42+00:00",
       "source": "Cloudflare",
-      "summary": "Cloudflare is collaborating on tsrs, a Rust port of TypeScript that is up to 8x faster and uses 70% less memory.",
-      "title": "Introducing tsrs: A port of TypeScript to Rust",
-      "url": "https://blog.cloudflare.com/typescript-rust-port/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-20T12:33:13+00:00",
-      "source": "Ars Technica",
-      "summary": "Meta is suspending the sharing feature while it investigates its privacy.",
-      "title": "Meta Muse exposes users' personal and business secrets when they share conversations",
-      "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-20T12:15:00+00:00",
-      "source": "The Register",
-      "summary": "Staffing software giant calls in CrowdStrike as customers face login headaches and questions remain over possible data theft",
-      "title": "Bullhorn sees red after cyberattack knocks recruitment platform offline",
-      "url": "https://www.theregister.com/security/2026/10/20/bullhorn-sees-red-after-cyberattack-knocks-recruitment-platform-offline/5304114"
+      "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only inspection can miss.",
+      "title": "Introducing full transaction detection for Cloudflare WAF",
+      "url": "https://blog.cloudflare.com/full-transaction-waf/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-20T11:30:00+00:00",
+      "publishedAt": "2026-10-21T14:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Today at PyTorch Conference 2026, we announced a range of new products and integrations designed to help you run PyTorch effectively on Google Cloud or in your own infrastructure. Notably, TorchTPU, our native PyTorch stack for Google TPUs, is now available as open source on…",
-      "title": "TorchTPU is now open source: Run native PyTorch on TPUs",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus/"
+      "summary": "PHP and Wiz Research disclosed today two critical vulnerabilities in the core PHP language runtime that can expose applications to unauthenticated remote code execution and memory disclosure. Wiz used a mix of models to identify and help remediate these vulnerabilities. Notably…",
+      "title": "Responding to core PHP vulnerabilities CVE-2026-109618 and CVE-2026-109619",
+      "url": "https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-20T11:30:00+00:00",
+      "publishedAt": "2026-10-21T13:56:45+00:00",
+      "source": "Cloudflare",
+      "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed data from reaching attackers.",
+      "title": "Cloudflare deploys protections against php2shell vulnerability",
+      "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-21T13:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Today at the PyTorch Conference, we released llm-d 1.0, an open-source, Kubernetes-native stack for distributed LLM inference. Co-founded by Google with Red Hat, IBM and others, we worked with a community of more than 500 contributors over 25 organizations on this Cloud Native…",
-      "title": "Announcing llm-d 1.0: Open distributed inference for agents on Google Cloud TPUs and GPUs",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/llm-d-1-0-an-open-source-stack-for-distributed-inference/"
+      "summary": "Partnership is at the core of Google Public Sector’s mission to empower government agencies and education institutions with transformative, mission-aligned solutions. We recognize that we can only scale our impact through a thriving, highly capable partner community. At today’s…",
+      "title": "Google Public Sector increases partner investments for frontline adoption",
+      "url": "https://cloud.google.com/blog/topics/public-sector/google-public-sector-increases-partner-investments-for-frontline-adoption/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-21T13:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
+      "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+      "url": "https://blog.cloudflare.com/webmcp-commerce/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-21T12:43:00+00:00",
+      "source": "The Register",
+      "summary": "Maintainers reckon a quarter of incoming pull requests are slop, rising to 31% on larger projects",
+      "title": "AI cuts coding time, but it's also filling open source's inbox with crap",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/21/ai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap/5304389"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-20T10:45:00+00:00",
+      "publishedAt": "2026-10-21T12:00:00+00:00",
       "source": "The Register",
-      "summary": "Ministers may have scrapped the national scheme, but One Login, digital wallets and 80-plus planned credentials are still very much alive",
-      "title": "Whitehall shuts the front door on digital ID but leaves the back open",
-      "url": "https://www.theregister.com/public-sector/2026/10/20/whitehall-shuts-the-front-door-on-digital-id-but-leaves-the-back-open/5304100"
+      "summary": "Consider this the wake-up call",
+      "title": "AI has 'potential' to turn script kiddies into sophisticated infrastructure attackers",
+      "url": "https://www.theregister.com/security/2026/10/21/ai-has-potential-to-turn-script-kiddies-into-sophisticated-infrastructure-attackers/5304297"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-21T12:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Google Cloud has always been defined by choice, enterprise-grade governance, and market-leading price-performance. Key to the foundation of openness and choice is giving customers flexibility to run agentic workloads across their choice of models and infrastructure to achieve…",
+      "title": "Google Cloud expands model choice and flexibility, bringing OpenAI models to customers",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-21T11:30:00+00:00",
+      "source": "The Register",
+      "summary": "Give your agents freedom to do useful work by locking them down",
+      "title": "Nvidia picks OpenShell to tame AI gents",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/21/nvidia-picks-openshell-to-tame-ai-gents/5304319"
     }
   ]
 }
