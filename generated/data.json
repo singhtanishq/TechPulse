@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 2634,
+      "date": "2026-10-23",
+      "kevAdded": 0,
+      "knownExploited": 0,
+      "projects": 18,
+      "releases": 3,
+      "techEntries": 71
+    },
+    {
       "cves": 0,
       "date": "2026-10-22",
       "kevAdded": 0,
@@ -326,16 +335,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-21",
-    "date": "2026-10-22",
-    "daysObserved": 36,
-    "generatedAt": "2026-10-21T21:55:25.923167+00:00",
-    "snapshots": 36,
+    "coveredDate": "2026-10-22",
+    "date": "2026-10-23",
+    "daysObserved": 37,
+    "generatedAt": "2026-10-22T21:58:41.578712+00:00",
+    "snapshots": 37,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 11,
+      "daily_growth": 10,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -343,11 +352,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201172,
+      "stars": 201182,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 32,
+      "daily_growth": 70,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -355,11 +364,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143124,
+      "stars": 143194,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 3,
+      "daily_growth": 87,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -367,11 +376,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139389,
+      "stars": 139476,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 8,
+      "daily_growth": 89,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -379,11 +388,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128468,
+      "stars": 128557,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 52,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -391,11 +400,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122510,
+      "stars": 122562,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 11,
+      "daily_growth": 43,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -403,11 +412,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120638,
+      "stars": 120681,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 516,
+      "daily_growth": 511,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -415,11 +424,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 112933,
+      "stars": 113444,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 11,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -427,11 +436,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104969,
+      "stars": 104980,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 62,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -439,11 +448,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 97960,
+      "stars": 98022,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": -2,
+      "daily_growth": 79,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -451,119 +460,252 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91480,
+      "stars": 91559,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "minor",
+      "kind": "patch",
       "project": "terraform",
-      "publishedAt": "2026-10-21T17:32:54Z",
+      "publishedAt": "2026-10-22T09:30:19Z",
       "repository": "hashicorp/terraform",
       "source": "GitHub",
-      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
-      "version": "v1.17.0"
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.7",
+      "version": "v1.16.7"
     },
     {
-      "kind": "minor",
+      "kind": "patch",
       "project": "openai-python",
-      "publishedAt": "2026-10-21T15:53:22Z",
+      "publishedAt": "2026-10-22T03:32:31Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.36.0",
-      "version": "v3.36.0"
-    },
-    {
-      "kind": "major",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-21T15:51:32Z",
-      "repository": "anthropics/anthropic-sdk-python",
-      "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
-      "version": "v2.0.0"
-    },
-    {
-      "kind": "patch",
-      "project": "framework",
-      "publishedAt": "2026-10-21T12:57:04Z",
-      "repository": "laravel/framework",
-      "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v12.70.1",
-      "version": "v12.70.1"
-    },
-    {
-      "kind": "patch",
-      "project": "node",
-      "publishedAt": "2026-10-21T10:38:29Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v26.12.1",
-      "version": "v26.12.1"
-    },
-    {
-      "kind": "patch",
-      "project": "node",
-      "publishedAt": "2026-10-21T10:38:25Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v24.22.1",
-      "version": "v24.22.1"
-    },
-    {
-      "kind": "patch",
-      "project": "node",
-      "publishedAt": "2026-10-21T10:38:20Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v22.23.4",
-      "version": "v22.23.4"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-10-21T06:35:46Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.5",
-      "version": "v8.3.5"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-10-21T05:31:06Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v6.4.5",
-      "version": "v6.4.5"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.36.1",
+      "version": "v3.36.1"
     },
     {
       "kind": "minor",
       "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-20T22:13:01Z",
+      "publishedAt": "2026-10-21T22:00:30Z",
       "repository": "anthropics/anthropic-sdk-python",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
-      "version": "v1.17.0"
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
+      "version": "v2.1.0"
     }
   ],
   "security": {
-    "critical": 0,
-    "high": 0,
+    "critical": 226,
+    "high": 1054,
     "kevCatalogTotal": 1754,
-    "latest": [],
-    "low": 0,
-    "medium": 0,
+    "latest": [
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKEYS: fix overflow in keyctl_pkey_params_get_2()\n\nThe length for the internal output buffer is calculated incorrectly, which\ncan result overflow when a too small buffer is provided.\n\nFix the bug by allocating internal output with the size of the maximum\nlength of the cryptographic primitive instead of caller provided size.",
+        "id": "CVE-2026-63824",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:22:18.247",
+        "publishedAt": "2026-07-19T12:16:55.583",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nKEYS: fix overflow in keyctl_pkey_params_get_2()\n\nThe length for the internal output…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63824"
+      },
+      {
+        "cvss_score": 8.6,
+        "cvss_version": "4.0",
+        "description": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the chat interface, any injected JavaScript is executed in the context of the victim’s authenticated Agent Zero Web UI session.",
+        "id": "CVE-2026-97635",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:32.337",
+        "publishedAt": "2026-10-22T18:17:32.337",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97635"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "Missing authorization in the unit resources download route in Canonical Juju 4.0 through 4.0.15 allows a controller-authenticated principal (a unit agent, or a user with only login permission) to read any application's charm resource in any model,  including container-registry credentials, via a crafted request naming an arbitrary unit.",
+        "id": "CVE-2026-93336",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:32.157",
+        "publishedAt": "2026-10-22T18:17:32.157",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Missing authorization in the unit resources download route in Canonical Juju 4.0 through 4.0.15 allows a controller-authenticated principal (a unit agent, or a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93336"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the PeopleSoft Enterprise SCM Strategic Sourcing product of Oracle PeopleSoft (component: Strategic Sourcing).   The supported version that is affected is 9.2. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise SCM Strategic Sourcing.  Successful attacks of this vulnerability can result in takeover of…",
+        "id": "CVE-2026-91478",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:32.010",
+        "publishedAt": "2026-10-20T22:20:51.347",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Vulnerability in the PeopleSoft Enterprise SCM Strategic Sourcing product of Oracle PeopleSoft (component: Strategic Sourcing).   The supported version that is…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91478"
+      },
+      {
+        "cvss_score": 4.6,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal SafeDelete allows Stored XSS. This issue affects SafeDelete versions: from 0.0.0 to 1.0.88.",
+        "id": "CVE-2026-87942",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:31.860",
+        "publishedAt": "2026-10-22T02:17:03.733",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal SafeDelete allows Stored XSS. This issue affects…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87942"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "3.1",
+        "description": "Use of Web Browser Cache Containing Sensitive Information vulnerability in Drupal Key auth allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Key auth versions: from 0.0.0 to 2.2.4.",
+        "id": "CVE-2026-87940",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:31.710",
+        "publishedAt": "2026-10-22T02:17:03.503",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Use of Web Browser Cache Containing Sensitive Information vulnerability in Drupal Key auth allows Exploiting Incorrectly Configured Access Control Security…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87940"
+      },
+      {
+        "cvss_score": 4.2,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Feed Block allows Stored XSS. This issue affects Feed Block versions: from 0.0.0 to 2.0.2, from 3.0.0 to 3.0.2.",
+        "id": "CVE-2026-87939",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:31.560",
+        "publishedAt": "2026-10-22T02:17:03.387",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Feed Block allows Stored XSS. This issue affects…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87939"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Drupal Central Authentication System (CAS) Server allows Fake the Source of Data. This issue affects Central Authentication System (CAS) Server versions: from 0.0.0 to 2.0.4, from 2.1.0 to 2.1.3.",
+        "id": "CVE-2026-87937",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:31.410",
+        "publishedAt": "2026-10-22T02:17:03.147",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Drupal Central Authentication System (CAS) Server allows Fake the Source of Data. This…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87937"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Drupal amazee.ai Private AI Provider allows SQL Injection. This issue affects amazee.ai Private AI Provider versions: from 0.0.0 to 1.3.7, from 1.4.0 to 1.4.3.",
+        "id": "CVE-2026-87936",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:31.253",
+        "publishedAt": "2026-10-22T02:17:03.033",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Drupal amazee.ai Private AI Provider allows SQL…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87936"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Email Verification / SMS Verification / OTP Verification allows Reflected XSS. This issue affects Email Verification / SMS Verification / OTP Verification versions: from 0.0.0 to 2.4.0.",
+        "id": "CVE-2026-84924",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:31.110",
+        "publishedAt": "2026-10-22T02:17:02.910",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Email Verification / SMS Verification / OTP…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84924"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Email Verification / SMS Verification / OTP Verification allows Authentication Bypass. This issue affects Email Verification / SMS Verification / OTP Verification versions: from 0.0.0 to 2.4.0.",
+        "id": "CVE-2026-84923",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:30.960",
+        "publishedAt": "2026-10-22T02:17:02.780",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Email Verification / SMS Verification / OTP Verification allows Authentication…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84923"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "3.1",
+        "description": "Missing Authorization vulnerability in Drupal Webform Submissions Delete allows Forceful Browsing. This issue affects Webform Submissions Delete versions: from 0.0.0 to 1.2.0.",
+        "id": "CVE-2026-84921",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:30.817",
+        "publishedAt": "2026-10-22T02:17:02.667",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Missing Authorization vulnerability in Drupal Webform Submissions Delete allows Forceful Browsing. This issue affects Webform Submissions Delete versions: from…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84921"
+      },
+      {
+        "cvss_score": 4.6,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal PhotoSwipe - Responsive JavaScript Modal Image Gallery allows Stored XSS. This issue affects PhotoSwipe - Responsive JavaScript Modal Image Gallery versions: from 0.0.0 to 5.0.9.",
+        "id": "CVE-2026-84919",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:30.673",
+        "publishedAt": "2026-10-22T02:17:02.420",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal PhotoSwipe - Responsive JavaScript Modal Image…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84919"
+      },
+      {
+        "cvss_score": 3.7,
+        "cvss_version": "3.1",
+        "description": "Improper Verification of Cryptographic Signature vulnerability in Drupal Monobank payment API allows Signature Spoof. This issue affects Monobank payment API versions: from 0.0.0 to 1.0.3.",
+        "id": "CVE-2026-84918",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:30.530",
+        "publishedAt": "2026-10-22T02:17:02.300",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "Improper Verification of Cryptographic Signature vulnerability in Drupal Monobank payment API allows Signature Spoof. This issue affects Monobank payment API…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84918"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "Incorrect Authorization vulnerability in Drupal Jsonapi Role Access  allows Forceful Browsing. This issue affects Jsonapi Role Access  versions: from 0.0.0 to 2.0.2.",
+        "id": "CVE-2026-84917",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-22T18:17:30.380",
+        "publishedAt": "2026-10-22T02:17:02.180",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Incorrect Authorization vulnerability in Drupal Jsonapi Role Access  allows Forceful Browsing. This issue affects Jsonapi Role Access  versions: from 0.0.0 to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84917"
+      }
+    ],
+    "low": 187,
+    "medium": 1061,
     "none": 0,
-    "unscored": 0
+    "unscored": 106
   },
   "snapshot": {
-    "cves": 0,
+    "cves": 2634,
     "kevAdded": 0,
     "knownExploited": 0,
     "projects": 18,
-    "releases": 10,
-    "techEntries": 68
+    "releases": 3,
+    "techEntries": 71
   },
   "sources": {
     "opensource": {
@@ -577,7 +719,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 10,
+        "inWindow": 3,
         "status": "partial",
         "total": 54
       }
@@ -590,141 +732,141 @@
         "total": 1754
       },
       "nvd": {
-        "failures": 1,
-        "inWindow": 0,
-        "status": "failed",
-        "total": 0
+        "failures": 0,
+        "inWindow": 2634,
+        "status": "success",
+        "total": 2634
       }
     },
     "technology": {
       "rss": {
-        "failures": 1,
-        "inWindow": 68,
-        "status": "partial",
-        "total": 209
+        "failures": 0,
+        "inWindow": 71,
+        "status": "success",
+        "total": 229
       }
     }
   },
   "technology": [
     {
       "category": "security",
-      "publishedAt": "2026-10-21T18:22:20+00:00",
+      "publishedAt": "2026-10-22T17:36:30+00:00",
       "source": "The Register",
-      "summary": "Plus a RAT for good measure - get threat hunting now",
-      "title": "LiteLLM supply chain attack hoovers up passwords and secrets",
-      "url": "https://www.theregister.com/security/2026/10/21/litellm-supply-chain-attack-hoovers-up-passwords-and-secrets/5304548"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-21T17:00:58+00:00",
-      "source": "The Register",
-      "summary": "Careful what you say after goodbye, or better yet, update your messaging app",
-      "title": "Signal bug could keep your mic - and camera - on after hangup",
-      "url": "https://www.theregister.com/security/2026/10/21/signal-bug-could-keep-your-mic-and-camera-on-after-hangup/5304528"
+      "summary": "Vendor 'strongly recommends' upgrading to a fixed version 'as soon as possible'",
+      "title": "Max-severity GitLab bug allows remote code execution over 12 years of releases",
+      "url": "https://www.theregister.com/security/2026/10/22/max-severity-gitlab-bug-allows-remote-code-execution-over-12-years-of-releases/5304854"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-21T16:00:00+00:00",
+      "publishedAt": "2026-10-22T17:21:30+00:00",
       "source": "GitHub Blog",
-      "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog .",
-      "title": "The bridge to agent-scale Git infrastructure",
-      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-21T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "For data science, data engineering, and machine learning teams, unlocking the value of unstructured data, such as images, videos, audio, and documents, has historically meant managing siloed data pipelines for structured and unstructured data, and for analytics and AI/ML use…",
-      "title": "BigQuery ObjectRef now GA: Build multimodal data platforms for conversational analytics entirely in SQL",
-      "url": "https://cloud.google.com/blog/products/data-analytics/analyze-unstructured-data-in-bigquery-with-objectref/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-21T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Today we hear from ZenteiQ , an artificial intelligence startup spun out of the Indian Institute of Science (IISc) and selected under the IndiaAI Mission to build sovereign scientific foundation models from the ground up. To pre-train models that understand physical laws…",
-      "title": "ZenteiQ scales batch inference 4x with GKE Inference Gateway powered by llm-d",
-      "url": "https://cloud.google.com/blog/products/containers-kubernetes/zenteiq-scales-physical-ai-inference-4x-with-gke-and-llm-d/"
+      "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub…",
+      "title": "How bug bounty sharpens one researcher’s security skills",
+      "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-21T15:08:51+00:00",
+      "publishedAt": "2026-10-22T16:58:25+00:00",
       "source": "The Register",
-      "summary": "Websites down as precaution as exploits have already been published",
-      "title": "PHP devs publish critical bug fix as site owners warned: Pull 'em offline if you're unpatched",
-      "url": "https://www.theregister.com/security/2026/10/21/php-devs-publish-critical-bug-fix-as-site-owners-warned-pull-em-offline-if-youre-unpatched/5304519"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-21T14:10:42+00:00",
-      "source": "Cloudflare",
-      "summary": "Cloudflare's web application firewall can now correlate an HTTP request with its response. Full transaction detection helps every customer find successful exploits, data exposure, and risky misconfigurations that request-only inspection can miss.",
-      "title": "Introducing full transaction detection for Cloudflare WAF",
-      "url": "https://blog.cloudflare.com/full-transaction-waf/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-21T14:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "PHP and Wiz Research disclosed today two critical vulnerabilities in the core PHP language runtime that can expose applications to unauthenticated remote code execution and memory disclosure. Wiz used a mix of models to identify and help remediate these vulnerabilities. Notably…",
-      "title": "Responding to core PHP vulnerabilities CVE-2026-109618 and CVE-2026-109619",
-      "url": "https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-21T13:56:45+00:00",
-      "source": "Cloudflare",
-      "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed data from reaching attackers.",
-      "title": "Cloudflare deploys protections against php2shell vulnerability",
-      "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-21T13:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Partnership is at the core of Google Public Sector’s mission to empower government agencies and education institutions with transformative, mission-aligned solutions. We recognize that we can only scale our impact through a thriving, highly capable partner community. At today’s…",
-      "title": "Google Public Sector increases partner investments for frontline adoption",
-      "url": "https://cloud.google.com/blog/topics/public-sector/google-public-sector-increases-partner-investments-for-frontline-adoption/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-21T13:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Almost 100,000 Commerce.com domains now give AI agents real shopping tools through WebMCP on Cloudflare. Here's how we turned it on across every store at once, while keeping each merchant in control.",
-      "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
-      "url": "https://blog.cloudflare.com/webmcp-commerce/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-21T12:43:00+00:00",
-      "source": "The Register",
-      "summary": "Maintainers reckon a quarter of incoming pull requests are slop, rising to 31% on larger projects",
-      "title": "AI cuts coding time, but it's also filling open source's inbox with crap",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/21/ai-cuts-coding-time-but-its-also-filling-open-sources-inbox-with-crap/5304389"
+      "summary": "We didn't want to issue SSL/TLS certs anyway, Indian firm suggests after one private key turns out to be the number 4",
+      "title": "Disgraced Indian cert issuer leaves the cert issuing business",
+      "url": "https://www.theregister.com/security/2026/10/22/disgraced-indian-cert-issuer-leaves-the-cert-issuing-business/5304848"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-21T12:00:00+00:00",
+      "publishedAt": "2026-10-22T16:05:53+00:00",
       "source": "The Register",
-      "summary": "Consider this the wake-up call",
-      "title": "AI has 'potential' to turn script kiddies into sophisticated infrastructure attackers",
-      "url": "https://www.theregister.com/security/2026/10/21/ai-has-potential-to-turn-script-kiddies-into-sophisticated-infrastructure-attackers/5304297"
+      "summary": "Ministers report 32 unavailable and four partly disrupted, but no confirmed compromise",
+      "title": "PHP2Shell puts dozens of UK government services out of service",
+      "url": "https://www.theregister.com/security/2026/10/22/php2shell-puts-dozens-of-uk-government-services-out-of-service/5304840"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-21T12:00:00+00:00",
+      "publishedAt": "2026-10-22T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Google Cloud has always been defined by choice, enterprise-grade governance, and market-leading price-performance. Key to the foundation of openness and choice is giving customers flexibility to run agentic workloads across their choice of models and infrastructure to achieve…",
-      "title": "Google Cloud expands model choice and flexibility, bringing OpenAI models to customers",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers/"
+      "summary": "Today, we’re launching self-learning context enrichment (preview) and a reimagined Knowledge Studio experience (preview) in Knowledge Catalog , Google Cloud’s context engine for agents. Building on Knowledge Catalog's existing Gemini-powered enrichment, self-learning enrichment…",
+      "title": "Introducing new self-learning context enrichment in Knowledge Catalog",
+      "url": "https://cloud.google.com/blog/products/data-analytics/knowledge-catalog-self-learning-context-enrichment-for-ai-agents/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-21T11:30:00+00:00",
+      "publishedAt": "2026-10-22T15:25:02+00:00",
+      "source": "Ars Technica",
+      "summary": "Hackers were already probing the bug before defenders were told it existed.",
+      "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
+      "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-22T15:02:00+00:00",
       "source": "The Register",
-      "summary": "Give your agents freedom to do useful work by locking them down",
-      "title": "Nvidia picks OpenShell to tame AI gents",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/21/nvidia-picks-openshell-to-tame-ai-gents/5304319"
+      "summary": "Apple log jam? Apple fast lane pie-lup? We're here all week, on stage... sweeping it",
+      "title": "Apple App Store review process hits a traffic jam",
+      "url": "https://www.theregister.com/applications/2026/10/22/apple-app-store-review-process-hits-a-traffic-jam/5304802"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-22T15:00:00+00:00",
+      "source": "The Register",
+      "summary": "SPONSORED FEATURE: AI makes phishing easier than ever",
+      "title": "When the attacker becomes the user: Rethinking account takeover",
+      "url": "https://www.theregister.com/security/2026/10/22/sponsored-when-the-attacker-becomes-the-user-rethinking-account-takeover/5303913"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-22T13:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Every decade or so, a shift in software forces us to rethink computer architecture from first principles. After the first boom of web-scale traffic, Google pioneered warehouse-scale computing and Linux containers on Borg. This reshaped how we run internal workloads and…",
+      "title": "Inside Agent Compute Engine: Building the compute foundation for the agentic era",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-22T13:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
+      "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+      "url": "https://blog.cloudflare.com/k-isms/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-22T12:15:00+00:00",
+      "source": "The Register",
+      "summary": "Cloudflare reports millions of exploit attempts, while Amazon spotted attackers trying their luck four days before patches landed",
+      "title": "Hackers pile on PHP2Shell as AWS reveals attacks began before disclosure",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/22/hackers-pile-on-php2shell-as-aws-reveals-attacks-began-before-disclosure/5304749"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-22T11:30:33+00:00",
+      "source": "Ars Technica",
+      "summary": "For 3 days this month, 333 exit nodes were hacked in hopes of stealing sensitive data.",
+      "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
+      "url": "https://arstechnica.com/information-technology/2026/10/300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-22T11:28:00+00:00",
+      "source": "The Register",
+      "summary": "AI agents did the dirty work, with hackers gaining privileged access in some environments in under three hours",
+      "title": "Microsoft says ConnectWise breach let Chinese spies loose on 2,250 cloud tenants",
+      "url": "https://www.theregister.com/security/2026/10/22/microsoft-says-connectwise-breach-let-chinese-spies-loose-on-2250-cloud-tenants/5304687"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-22T10:00:00+00:00",
+      "source": "The Register",
+      "summary": "Misaligned incentives led to an intractable argument",
+      "title": "IT department and auditors at major pharmacy chain got into a rip-roaring fight about using 'password' on Cisco firewall",
+      "url": "https://www.theregister.com/security/2026/10/22/it-department-and-auditors-at-major-pharmacy-chain-got-into-a-rip-roaring-fight-about-using-password-on-cisco-firewall/5304592"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-22T06:38:14+00:00",
+      "source": "The Register",
+      "summary": "Says it passed audits and made just a minor mystery error",
+      "title": "Certification authority eMudhra defends its laughably weak private keys",
+      "url": "https://www.theregister.com/security/2026/10/22/certification-authority-emudhra-defends-its-laughably-weak-private-keys/5304647"
     }
   ]
 }

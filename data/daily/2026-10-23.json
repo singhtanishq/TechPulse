@@ -1,0 +1,326 @@
+{
+  "coveredIstDay": "2026-10-22",
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-22T21:58:41.578712+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 10,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201182,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 70,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143194,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 87,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139476,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 89,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128557,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 52,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 122562,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 43,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120681,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 511,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 113444,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 11,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 104980,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 62,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98022,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 79,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91559,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 2
+    },
+    "recent": [
+      {
+        "project": "terraform",
+        "published_at": "2026-10-22T09:30:19Z",
+        "repository": "hashicorp/terraform",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.7",
+        "version": "v1.16.7"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-22T03:32:31Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.36.1",
+        "version": "v3.36.1"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-10-21T22:00:30Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
+        "version": "v2.1.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKEYS: fix overflow in keyctl_pkey_params_get_2()\n\nThe length for the internal output buffer is calculated incorrectly, which\ncan re",
+        "id": "CVE-2026-63824",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63824"
+      },
+      {
+        "cvss": 8.6,
+        "description": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the chat interface, any injected JavaScript is",
+        "id": "CVE-2026-97635",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97635"
+      },
+      {
+        "cvss": 7.1,
+        "description": "Missing authorization in the unit resources download route in Canonical Juju 4.0 through 4.0.15 allows a controller-authenticated principal (a unit agent, or a user with only login permission) to read",
+        "id": "CVE-2026-93336",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93336"
+      },
+      {
+        "cvss": 8.8,
+        "description": "Vulnerability in the PeopleSoft Enterprise SCM Strategic Sourcing product of Oracle PeopleSoft (component: Strategic Sourcing).   The supported version that is affected is 9.2. Easily exploitable vuln",
+        "id": "CVE-2026-91478",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91478"
+      },
+      {
+        "cvss": 4.6,
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal SafeDelete allows Stored XSS. This issue affects SafeDelete versions: from 0.0.0 to 1.0.88.",
+        "id": "CVE-2026-87942",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87942"
+      },
+      {
+        "cvss": 5.4,
+        "description": "Use of Web Browser Cache Containing Sensitive Information vulnerability in Drupal Key auth allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Key auth versions",
+        "id": "CVE-2026-87940",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87940"
+      },
+      {
+        "cvss": 4.2,
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Feed Block allows Stored XSS. This issue affects Feed Block versions: from 0.0.0 to 2.0.2, ",
+        "id": "CVE-2026-87939",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87939"
+      },
+      {
+        "cvss": 6.5,
+        "description": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Drupal Central Authentication System (CAS) Server allows Fake the Source of Data. This issue affects Central Authentication System ",
+        "id": "CVE-2026-87937",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87937"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Drupal amazee.ai Private AI Provider allows SQL Injection. This issue affects amazee.ai Private AI",
+        "id": "CVE-2026-87936",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87936"
+      },
+      {
+        "cvss": 5.4,
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Email Verification / SMS Verification / OTP Verification allows Reflected XSS. This issue a",
+        "id": "CVE-2026-84924",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84924"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 226,
+      "HIGH": 1054,
+      "LOW": 187,
+      "MEDIUM": 1061,
+      "NONE": 0,
+      "UNSCORED": 106
+    }
+  },
+  "snapshot": {
+    "cves": 2634,
+    "kevAdded": 0,
+    "knownExploited": 0,
+    "projects": 18,
+    "releases": 3,
+    "techEntries": 71
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1754
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 3,
+      "status": "partial",
+      "total": 54
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 2634,
+      "status": "success",
+      "total": 2634
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 71,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 33,
+      "tech": 38
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-22T17:36:30+00:00",
+        "source": "The Register",
+        "title": "Max-severity GitLab bug allows remote code execution over 12 years of releases",
+        "url": "https://www.theregister.com/security/2026/10/22/max-severity-gitlab-bug-allows-remote-code-execution-over-12-years-of-releases/5304854"
+      },
+      {
+        "published_at": "2026-10-22T17:21:30+00:00",
+        "source": "GitHub Blog",
+        "title": "How bug bounty sharpens one researcher’s security skills",
+        "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/"
+      },
+      {
+        "published_at": "2026-10-22T16:58:25+00:00",
+        "source": "The Register",
+        "title": "Disgraced Indian cert issuer leaves the cert issuing business",
+        "url": "https://www.theregister.com/security/2026/10/22/disgraced-indian-cert-issuer-leaves-the-cert-issuing-business/5304848"
+      },
+      {
+        "published_at": "2026-10-22T16:05:53+00:00",
+        "source": "The Register",
+        "title": "PHP2Shell puts dozens of UK government services out of service",
+        "url": "https://www.theregister.com/security/2026/10/22/php2shell-puts-dozens-of-uk-government-services-out-of-service/5304840"
+      },
+      {
+        "published_at": "2026-10-22T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Introducing new self-learning context enrichment in Knowledge Catalog",
+        "url": "https://cloud.google.com/blog/products/data-analytics/knowledge-catalog-self-learning-context-enrichment-for-ai-agents/"
+      },
+      {
+        "published_at": "2026-10-22T15:25:02+00:00",
+        "source": "Ars Technica",
+        "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
+        "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
+      },
+      {
+        "published_at": "2026-10-22T15:02:00+00:00",
+        "source": "The Register",
+        "title": "Apple App Store review process hits a traffic jam",
+        "url": "https://www.theregister.com/applications/2026/10/22/apple-app-store-review-process-hits-a-traffic-jam/5304802"
+      },
+      {
+        "published_at": "2026-10-22T15:00:00+00:00",
+        "source": "The Register",
+        "title": "When the attacker becomes the user: Rethinking account takeover",
+        "url": "https://www.theregister.com/security/2026/10/22/sponsored-when-the-attacker-becomes-the-user-rethinking-account-takeover/5303913"
+      },
+      {
+        "published_at": "2026-10-22T13:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Inside Agent Compute Engine: Building the compute foundation for the agentic era",
+        "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive/"
+      },
+      {
+        "published_at": "2026-10-22T13:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+        "url": "https://blog.cloudflare.com/k-isms/"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 8,
+      "Cloudflare": 7,
+      "GitHub Blog": 4,
+      "Google Cloud": 17,
+      "Microsoft": 1,
+      "The Register": 33
+    }
+  },
+  "window": {
+    "end": "2026-10-22T18:30:00+00:00",
+    "start": "2026-10-21T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
