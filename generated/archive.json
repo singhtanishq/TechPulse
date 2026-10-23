@@ -1,6 +1,232 @@
 {
   "archive": [
     {
+      "date": "2026-10-24",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 19,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201201,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 18,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143212,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139502,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128583,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 243,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 122805,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120707,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 321,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 113765,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 34,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105014,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 16,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98038,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91574,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 2,
+          "other": 0,
+          "patch": 1
+        },
+        "recent": [
+          {
+            "project": "next.js",
+            "published_at": "2026-10-23T13:32:31Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v16.4.3",
+            "version": "v16.4.3"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-10-23T13:10:10Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
+            "version": "v2.2.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-22T20:03:54Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.37.0",
+            "version": "v3.37.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 296,
+          "HIGH": 861,
+          "LOW": 79,
+          "MEDIUM": 507,
+          "NONE": 1,
+          "UNSCORED": 231
+        }
+      },
+      "snapshot": {
+        "cves": 1975,
+        "kevAdded": 2,
+        "knownExploited": 1,
+        "projects": 18,
+        "releases": 3,
+        "techEntries": 43
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1756
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 3,
+          "status": "partial",
+          "total": 55
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1975,
+          "status": "success",
+          "total": 1975
+        },
+        "rss": {
+          "failures": 1,
+          "inWindow": 43,
+          "status": "partial",
+          "total": 209
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 26,
+          "tech": 17
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-23T18:22:59+00:00",
+            "source": "Cloudflare",
+            "title": "Origin Range Requests: Serving large files without range-request tuning",
+            "url": "https://blog.cloudflare.com/origin-range-requests/"
+          },
+          {
+            "published_at": "2026-10-23T18:06:56+00:00",
+            "source": "Cloudflare",
+            "title": "Bringing post-quantum cryptography to geographically fenced key management",
+            "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/"
+          },
+          {
+            "published_at": "2026-10-23T16:51:59+00:00",
+            "source": "Ars Technica",
+            "title": "Knicks sent employees fake offer of championship rings in phishing test: Report",
+            "url": "https://arstechnica.com/tech-policy/2026/10/knicks-sent-employees-fake-offer-of-championship-rings-in-phishing-test-report/"
+          },
+          {
+            "published_at": "2026-10-23T15:22:00+00:00",
+            "source": "The Register",
+            "title": "Arc browser on its way out as makers suggest an alternative",
+            "url": "https://www.theregister.com/software/2026/10/23/arc-browser-on-its-way-out-as-makers-suggest-an-alternative/5305114"
+          },
+          {
+            "published_at": "2026-10-23T11:31:00+00:00",
+            "source": "The Register",
+            "title": "Torvalds: AI is fine for competent devs, but spare us the 'drive-by' patches",
+            "url": "https://www.theregister.com/columnists/2026/10/23/torvalds-ai-is-fine-for-competent-devs-but-spare-us-the-drive-by-patches/5304357"
+          },
+          {
+            "published_at": "2026-10-23T09:29:00+00:00",
+            "source": "The Register",
+            "title": "UK threatens subsea cable saboteurs with 14 years behind bars",
+            "url": "https://www.theregister.com/networks/2026/10/23/uk-threatens-subsea-cable-saboteurs-with-14-years-behind-bars/5304794"
+          },
+          {
+            "published_at": "2026-10-22T22:19:12+00:00",
+            "source": "Netflix",
+            "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
+            "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4"
+          },
+          {
+            "published_at": "2026-10-22T20:37:52+00:00",
+            "source": "The Register",
+            "title": "PHP2Shell exploit bypasses protections designed to stop remote code execution",
+            "url": "https://www.theregister.com/security/2026/10/22/php2shell-exploit-bypasses-protections-designed-to-stop-remote-code-execution/5304883"
+          },
+          {
+            "published_at": "2026-10-22T20:33:10+00:00",
+            "source": "AWS",
+            "title": "AWS Continuum for code vulnerabilities is now generally available",
+            "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/"
+          },
+          {
+            "published_at": "2026-10-22T20:17:52+00:00",
+            "source": "Ars Technica",
+            "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+            "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-23",
       "opensource": {
         "topProjects": [
@@ -8167,8 +8393,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-22T21:58:41.578712+00:00",
-    "totalSnapshots": 37,
+    "generatedAt": "2026-10-23T21:37:47.021811+00:00",
+    "totalSnapshots": 38,
     "warnings": []
   }
 }

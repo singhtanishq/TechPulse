@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1975,
+      "date": "2026-10-24",
+      "kevAdded": 2,
+      "knownExploited": 1,
+      "projects": 18,
+      "releases": 3,
+      "techEntries": 43
+    },
+    {
       "cves": 2634,
       "date": "2026-10-23",
       "kevAdded": 0,
@@ -335,16 +344,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-22",
-    "date": "2026-10-23",
-    "daysObserved": 37,
-    "generatedAt": "2026-10-22T21:58:41.578712+00:00",
-    "snapshots": 37,
+    "coveredDate": "2026-10-23",
+    "date": "2026-10-24",
+    "daysObserved": 38,
+    "generatedAt": "2026-10-23T21:37:47.021811+00:00",
+    "snapshots": 38,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 10,
+      "daily_growth": 19,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -352,11 +361,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201182,
+      "stars": 201201,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 70,
+      "daily_growth": 18,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -364,11 +373,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143194,
+      "stars": 143212,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 87,
+      "daily_growth": 26,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -376,11 +385,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139476,
+      "stars": 139502,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 89,
+      "daily_growth": 26,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -388,11 +397,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128557,
+      "stars": 128583,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 52,
+      "daily_growth": 243,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -400,11 +409,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122562,
+      "stars": 122805,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 43,
+      "daily_growth": 26,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -412,11 +421,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120681,
+      "stars": 120707,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 511,
+      "daily_growth": 321,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -424,11 +433,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 113444,
+      "stars": 113765,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 11,
+      "daily_growth": 34,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -436,11 +445,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 104980,
+      "stars": 105014,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 62,
+      "daily_growth": 16,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -448,11 +457,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98022,
+      "stars": 98038,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 79,
+      "daily_growth": 15,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -460,252 +469,252 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91559,
+      "stars": 91574,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
       "kind": "patch",
-      "project": "terraform",
-      "publishedAt": "2026-10-22T09:30:19Z",
-      "repository": "hashicorp/terraform",
+      "project": "next.js",
+      "publishedAt": "2026-10-23T13:32:31Z",
+      "repository": "vercel/next.js",
       "source": "GitHub",
-      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.7",
-      "version": "v1.16.7"
-    },
-    {
-      "kind": "patch",
-      "project": "openai-python",
-      "publishedAt": "2026-10-22T03:32:31Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.36.1",
-      "version": "v3.36.1"
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.3",
+      "version": "v16.4.3"
     },
     {
       "kind": "minor",
       "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-21T22:00:30Z",
+      "publishedAt": "2026-10-23T13:10:10Z",
       "repository": "anthropics/anthropic-sdk-python",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
-      "version": "v2.1.0"
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
+      "version": "v2.2.0"
+    },
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-10-22T20:03:54Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.37.0",
+      "version": "v3.37.0"
     }
   ],
   "security": {
-    "critical": 226,
-    "high": 1054,
-    "kevCatalogTotal": 1754,
+    "critical": 296,
+    "high": 861,
+    "kevCatalogTotal": 1756,
     "latest": [
       {
-        "cvss_score": 7.8,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKEYS: fix overflow in keyctl_pkey_params_get_2()\n\nThe length for the internal output buffer is calculated incorrectly, which\ncan result overflow when a too small buffer is provided.\n\nFix the bug by allocating internal output with the size of the maximum\nlength of the cryptographic primitive instead of caller provided size.",
-        "id": "CVE-2026-63824",
+        "description": "Memory corruption in Mobile in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+        "id": "CVE-2026-113088",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:22:18.247",
-        "publishedAt": "2026-07-19T12:16:55.583",
+        "lastModifiedAt": "2026-10-23T18:18:38.917",
+        "publishedAt": "2026-10-20T22:19:00.490",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nKEYS: fix overflow in keyctl_pkey_params_get_2()\n\nThe length for the internal output…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63824"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "4.0",
-        "description": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the chat interface, any injected JavaScript is executed in the context of the victim’s authenticated Agent Zero Web UI session.",
-        "id": "CVE-2026-97635",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:32.337",
-        "publishedAt": "2026-10-22T18:17:32.337",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97635"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "Missing authorization in the unit resources download route in Canonical Juju 4.0 through 4.0.15 allows a controller-authenticated principal (a unit agent, or a user with only login permission) to read any application's charm resource in any model,  including container-registry credentials, via a crafted request naming an arbitrary unit.",
-        "id": "CVE-2026-93336",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:32.157",
-        "publishedAt": "2026-10-22T18:17:32.157",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Missing authorization in the unit resources download route in Canonical Juju 4.0 through 4.0.15 allows a controller-authenticated principal (a unit agent, or a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93336"
+        "title": "Memory corruption in Mobile in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113088"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the PeopleSoft Enterprise SCM Strategic Sourcing product of Oracle PeopleSoft (component: Strategic Sourcing).   The supported version that is affected is 9.2. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise PeopleSoft Enterprise SCM Strategic Sourcing.  Successful attacks of this vulnerability can result in takeover of…",
-        "id": "CVE-2026-91478",
+        "description": "Use after free in Windows Network Load Balancing allows an unauthorized attacker to execute code over an adjacent network.",
+        "id": "CVE-2026-83862",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:32.010",
-        "publishedAt": "2026-10-20T22:20:51.347",
+        "lastModifiedAt": "2026-10-23T18:18:27.063",
+        "publishedAt": "2026-10-13T19:20:35.520",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the PeopleSoft Enterprise SCM Strategic Sourcing product of Oracle PeopleSoft (component: Strategic Sourcing).   The supported version that is…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91478"
+        "title": "Use after free in Windows Network Load Balancing allows an unauthorized attacker to execute code over an adjacent network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83862"
       },
       {
-        "cvss_score": 4.6,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal SafeDelete allows Stored XSS. This issue affects SafeDelete versions: from 0.0.0 to 1.0.88.",
-        "id": "CVE-2026-87942",
+        "description": "Use after free in PerformanceAPIs in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+        "id": "CVE-2026-113091",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:31.860",
-        "publishedAt": "2026-10-22T02:17:03.733",
+        "lastModifiedAt": "2026-10-23T18:18:25.553",
+        "publishedAt": "2026-10-20T22:19:00.827",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Use after free in PerformanceAPIs in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113091"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Use after free in Passwords in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-113092",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:18:11.770",
+        "publishedAt": "2026-10-20T22:19:00.933",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Use after free in Passwords in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113092"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Memory corruption in Text in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+        "id": "CVE-2026-113096",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:17:27.417",
+        "publishedAt": "2026-10-20T22:19:01.367",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Memory corruption in Text in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113096"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Improper input validation in Omnibox in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+        "id": "CVE-2026-113099",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:17:14.700",
+        "publishedAt": "2026-10-20T22:19:01.717",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper input validation in Omnibox in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113099"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naf_packet: Don't cast tpacket_hdr.tp_len to int in tpacket_parse_header().\n\nsyzbot reported BUG() in sock_sendmsg_nosec(). [0]\n\nThe problem is that tpacket_parse_header() casts user-provided\ntpacket_hdr.tp_len, which is u32, to int.\n\nIf the length is larger than INT_MAX, the following condition\nin tpacket_parse_header()…",
+        "id": "CVE-2026-98095",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:15:25.107",
+        "publishedAt": "2026-09-25T11:17:39.243",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal SafeDelete allows Stored XSS. This issue affects…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87942"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\naf_packet: Don't cast tpacket_hdr.tp_len to int in tpacket_parse_header().\n\nsyzbot…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98095"
       },
       {
-        "cvss_score": 5.4,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Use of Web Browser Cache Containing Sensitive Information vulnerability in Drupal Key auth allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Key auth versions: from 0.0.0 to 2.2.4.",
-        "id": "CVE-2026-87940",
+        "description": "Use after free in Media in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+        "id": "CVE-2026-113107",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:31.710",
-        "publishedAt": "2026-10-22T02:17:03.503",
+        "lastModifiedAt": "2026-10-23T18:14:02.767",
+        "publishedAt": "2026-10-20T22:19:02.620",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Use after free in Media in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113107"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Improper input validation in ANGLE in Google Chrome on on Mac prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-113117",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:13:49.110",
+        "publishedAt": "2026-10-20T22:19:03.773",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper input validation in ANGLE in Google Chrome on on Mac prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113117"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Use after free in Network in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-113119",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:13:32.463",
+        "publishedAt": "2026-10-20T22:19:04.010",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Use after free in Network in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113119"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Memory corruption in ContextMenu in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+        "id": "CVE-2026-113121",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:13:16.553",
+        "publishedAt": "2026-10-20T22:19:04.227",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Memory corruption in ContextMenu in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113121"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Memory corruption in ANGLE in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-113134",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:13:01.660",
+        "publishedAt": "2026-10-20T22:19:05.643",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Memory corruption in ANGLE in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113134"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "Velocity.js is a JavaScript implementation of the Apache Velocity template engine. Prior to 2.1.7, the earlier fix for CVE-2026-44966 filtered constructor, __proto__, and prototype only in the #set assignment handler in src/compile/set.ts, while property-read expressions in src/compile/references.ts remained unfiltered. The getReferences() flow called getAttributes(), whose property access…",
+        "id": "CVE-2026-73649",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:10:00.167",
+        "publishedAt": "2026-08-13T18:18:20.793",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Velocity.js is a JavaScript implementation of the Apache Velocity template engine. Prior to 2.1.7, the earlier fix for CVE-2026-44966 filtered constructor…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73649"
+      },
+      {
+        "cvss_score": 5.1,
+        "cvss_version": "4.0",
+        "description": "rails-html-sanitizer is responsible for sanitizing HTML fragments in Rails applications. From 1.0.3 until 1.7.1, Rails::HTML::PermitScrubber restricted SVG reference elements in SVG_ALLOW_LOCAL_HREF only when they used xlink:href, even though browsers also accept the plain href attribute. Applications with non-default allowed tags that included SVG use or feImage elements could therefore permit…",
+        "id": "CVE-2026-73648",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-23T18:10:00.167",
+        "publishedAt": "2026-08-13T18:18:20.620",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Use of Web Browser Cache Containing Sensitive Information vulnerability in Drupal Key auth allows Exploiting Incorrectly Configured Access Control Security…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87940"
+        "title": "rails-html-sanitizer is responsible for sanitizing HTML fragments in Rails applications. From 1.0.3 until 1.7.1, Rails::HTML::PermitScrubber restricted SVG…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73648"
       },
       {
-        "cvss_score": 4.2,
+        "cvss_score": 5.6,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Feed Block allows Stored XSS. This issue affects Feed Block versions: from 0.0.0 to 2.0.2, from 3.0.0 to 3.0.2.",
-        "id": "CVE-2026-87939",
+        "description": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to 2.22.0, the public extend() utility in ui/src/utils/extend/extend.js recursively copied attacker-controlled object keys during extend(true, target, source) deep merges without rejecting an own __proto__ property. The merge could descend into the prototype object and write attacker-controlled properties…",
+        "id": "CVE-2026-73647",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:31.560",
-        "publishedAt": "2026-10-22T02:17:03.387",
+        "lastModifiedAt": "2026-10-23T18:10:00.167",
+        "publishedAt": "2026-08-13T18:18:20.450",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Feed Block allows Stored XSS. This issue affects…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87939"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Drupal Central Authentication System (CAS) Server allows Fake the Source of Data. This issue affects Central Authentication System (CAS) Server versions: from 0.0.0 to 2.0.4, from 2.1.0 to 2.1.3.",
-        "id": "CVE-2026-87937",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:31.410",
-        "publishedAt": "2026-10-22T02:17:03.147",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Drupal Central Authentication System (CAS) Server allows Fake the Source of Data. This…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87937"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Drupal amazee.ai Private AI Provider allows SQL Injection. This issue affects amazee.ai Private AI Provider versions: from 0.0.0 to 1.3.7, from 1.4.0 to 1.4.3.",
-        "id": "CVE-2026-87936",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:31.253",
-        "publishedAt": "2026-10-22T02:17:03.033",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Drupal amazee.ai Private AI Provider allows SQL…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87936"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Email Verification / SMS Verification / OTP Verification allows Reflected XSS. This issue affects Email Verification / SMS Verification / OTP Verification versions: from 0.0.0 to 2.4.0.",
-        "id": "CVE-2026-84924",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:31.110",
-        "publishedAt": "2026-10-22T02:17:02.910",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Email Verification / SMS Verification / OTP…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84924"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Email Verification / SMS Verification / OTP Verification allows Authentication Bypass. This issue affects Email Verification / SMS Verification / OTP Verification versions: from 0.0.0 to 2.4.0.",
-        "id": "CVE-2026-84923",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:30.960",
-        "publishedAt": "2026-10-22T02:17:02.780",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Email Verification / SMS Verification / OTP Verification allows Authentication…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84923"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "3.1",
-        "description": "Missing Authorization vulnerability in Drupal Webform Submissions Delete allows Forceful Browsing. This issue affects Webform Submissions Delete versions: from 0.0.0 to 1.2.0.",
-        "id": "CVE-2026-84921",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:30.817",
-        "publishedAt": "2026-10-22T02:17:02.667",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Missing Authorization vulnerability in Drupal Webform Submissions Delete allows Forceful Browsing. This issue affects Webform Submissions Delete versions: from…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84921"
-      },
-      {
-        "cvss_score": 4.6,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal PhotoSwipe - Responsive JavaScript Modal Image Gallery allows Stored XSS. This issue affects PhotoSwipe - Responsive JavaScript Modal Image Gallery versions: from 0.0.0 to 5.0.9.",
-        "id": "CVE-2026-84919",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:30.673",
-        "publishedAt": "2026-10-22T02:17:02.420",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal PhotoSwipe - Responsive JavaScript Modal Image…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84919"
-      },
-      {
-        "cvss_score": 3.7,
-        "cvss_version": "3.1",
-        "description": "Improper Verification of Cryptographic Signature vulnerability in Drupal Monobank payment API allows Signature Spoof. This issue affects Monobank payment API versions: from 0.0.0 to 1.0.3.",
-        "id": "CVE-2026-84918",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:30.530",
-        "publishedAt": "2026-10-22T02:17:02.300",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Improper Verification of Cryptographic Signature vulnerability in Drupal Monobank payment API allows Signature Spoof. This issue affects Monobank payment API…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84918"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Incorrect Authorization vulnerability in Drupal Jsonapi Role Access  allows Forceful Browsing. This issue affects Jsonapi Role Access  versions: from 0.0.0 to 2.0.2.",
-        "id": "CVE-2026-84917",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-22T18:17:30.380",
-        "publishedAt": "2026-10-22T02:17:02.180",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Incorrect Authorization vulnerability in Drupal Jsonapi Role Access  allows Forceful Browsing. This issue affects Jsonapi Role Access  versions: from 0.0.0 to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84917"
+        "title": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to 2.22.0, the public extend() utility in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73647"
       }
     ],
-    "low": 187,
-    "medium": 1061,
-    "none": 0,
-    "unscored": 106
+    "low": 79,
+    "medium": 507,
+    "none": 1,
+    "unscored": 231
   },
   "snapshot": {
-    "cves": 2634,
-    "kevAdded": 0,
-    "knownExploited": 0,
+    "cves": 1975,
+    "kevAdded": 2,
+    "knownExploited": 1,
     "projects": 18,
     "releases": 3,
-    "techEntries": 71
+    "techEntries": 43
   },
   "sources": {
     "opensource": {
@@ -721,33 +730,113 @@
         "failures": 2,
         "inWindow": 3,
         "status": "partial",
-        "total": 54
+        "total": 55
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1754
+        "inWindow": 2,
+        "status": "success",
+        "total": 1756
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2634,
+        "inWindow": 1975,
         "status": "success",
-        "total": 2634
+        "total": 1975
       }
     },
     "technology": {
       "rss": {
-        "failures": 0,
-        "inWindow": 71,
-        "status": "success",
-        "total": 229
+        "failures": 1,
+        "inWindow": 43,
+        "status": "partial",
+        "total": 209
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-23T18:22:59+00:00",
+      "source": "Cloudflare",
+      "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
+      "title": "Origin Range Requests: Serving large files without range-request tuning",
+      "url": "https://blog.cloudflare.com/origin-range-requests/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-23T18:06:56+00:00",
+      "source": "Cloudflare",
+      "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
+      "title": "Bringing post-quantum cryptography to geographically fenced key management",
+      "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-23T16:51:59+00:00",
+      "source": "Ars Technica",
+      "summary": "Corporate phishing tests are common, but this one was especially cruel.",
+      "title": "Knicks sent employees fake offer of championship rings in phishing test: Report",
+      "url": "https://arstechnica.com/tech-policy/2026/10/knicks-sent-employees-fake-offer-of-championship-rings-in-phishing-test-report/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-23T15:22:00+00:00",
+      "source": "The Register",
+      "summary": "No new accounts from now, and the end will come in December",
+      "title": "Arc browser on its way out as makers suggest an alternative",
+      "url": "https://www.theregister.com/software/2026/10/23/arc-browser-on-its-way-out-as-makers-suggest-an-alternative/5305114"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-23T11:31:00+00:00",
+      "source": "The Register",
+      "summary": "Kernel maintainers stop asking who used AI, as long as the code is good",
+      "title": "Torvalds: AI is fine for competent devs, but spare us the 'drive-by' patches",
+      "url": "https://www.theregister.com/columnists/2026/10/23/torvalds-ai-is-fine-for-competent-devs-but-spare-us-the-drive-by-patches/5304357"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-23T09:29:00+00:00",
+      "source": "The Register",
+      "summary": "Whitehall wants tougher penalties and new powers over telecoms operators as Russian activity raises alarm",
+      "title": "UK threatens subsea cable saboteurs with 14 years behind bars",
+      "url": "https://www.theregister.com/networks/2026/10/23/uk-threatens-subsea-cable-saboteurs-with-14-years-behind-bars/5304794"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-22T22:19:12+00:00",
+      "source": "Netflix",
+      "summary": "",
+      "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
+      "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-22T20:37:52+00:00",
+      "source": "The Register",
+      "summary": "“Adversaries are clearly spending time (and tokens) on this bug,” researcher says.",
+      "title": "PHP2Shell exploit bypasses protections designed to stop remote code execution",
+      "url": "https://www.theregister.com/security/2026/10/22/php2shell-exploit-bypasses-protections-designed-to-stop-remote-code-execution/5304883"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-22T20:33:10+00:00",
+      "source": "AWS",
+      "summary": "AWS Continuum for code vulnerabilities is a new security service that uses AI to automatically find, validate, and prioritize code vulnerabilities in your environment, then delivers ready-to-review fixes as pull requests replacing what previously took hours of manual…",
+      "title": "AWS Continuum for code vulnerabilities is now generally available",
+      "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-22T20:17:52+00:00",
+      "source": "Ars Technica",
+      "summary": "Flubbed key signing \"ceremony\" allowed minting of web credentials for any site.",
+      "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
+      "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
+    },
     {
       "category": "security",
       "publishedAt": "2026-10-22T17:36:30+00:00",
@@ -768,7 +857,7 @@
       "category": "security",
       "publishedAt": "2026-10-22T16:58:25+00:00",
       "source": "The Register",
-      "summary": "We didn't want to issue SSL/TLS certs anyway, Indian firm suggests after one private key turns out to be the number 4",
+      "summary": "We didn't want to issue SSL/TLS certs anyway, eMudhra suggests after one private key turns out to be the number 4",
       "title": "Disgraced Indian cert issuer leaves the cert issuing business",
       "url": "https://www.theregister.com/security/2026/10/22/disgraced-indian-cert-issuer-leaves-the-cert-issuing-business/5304848"
     },
@@ -781,92 +870,12 @@
       "url": "https://www.theregister.com/security/2026/10/22/php2shell-puts-dozens-of-uk-government-services-out-of-service/5304840"
     },
     {
-      "category": "tech",
-      "publishedAt": "2026-10-22T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Today, we’re launching self-learning context enrichment (preview) and a reimagined Knowledge Studio experience (preview) in Knowledge Catalog , Google Cloud’s context engine for agents. Building on Knowledge Catalog's existing Gemini-powered enrichment, self-learning enrichment…",
-      "title": "Introducing new self-learning context enrichment in Knowledge Catalog",
-      "url": "https://cloud.google.com/blog/products/data-analytics/knowledge-catalog-self-learning-context-enrichment-for-ai-agents/"
-    },
-    {
       "category": "security",
       "publishedAt": "2026-10-22T15:25:02+00:00",
       "source": "Ars Technica",
       "summary": "Hackers were already probing the bug before defenders were told it existed.",
       "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
       "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-22T15:02:00+00:00",
-      "source": "The Register",
-      "summary": "Apple log jam? Apple fast lane pie-lup? We're here all week, on stage... sweeping it",
-      "title": "Apple App Store review process hits a traffic jam",
-      "url": "https://www.theregister.com/applications/2026/10/22/apple-app-store-review-process-hits-a-traffic-jam/5304802"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T15:00:00+00:00",
-      "source": "The Register",
-      "summary": "SPONSORED FEATURE: AI makes phishing easier than ever",
-      "title": "When the attacker becomes the user: Rethinking account takeover",
-      "url": "https://www.theregister.com/security/2026/10/22/sponsored-when-the-attacker-becomes-the-user-rethinking-account-takeover/5303913"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-22T13:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Every decade or so, a shift in software forces us to rethink computer architecture from first principles. After the first boom of web-scale traffic, Google pioneered warehouse-scale computing and Linux containers on Borg. This reshaped how we run internal workloads and…",
-      "title": "Inside Agent Compute Engine: Building the compute foundation for the agentic era",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-22T13:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
-      "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
-      "url": "https://blog.cloudflare.com/k-isms/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T12:15:00+00:00",
-      "source": "The Register",
-      "summary": "Cloudflare reports millions of exploit attempts, while Amazon spotted attackers trying their luck four days before patches landed",
-      "title": "Hackers pile on PHP2Shell as AWS reveals attacks began before disclosure",
-      "url": "https://www.theregister.com/cyber-crime/2026/10/22/hackers-pile-on-php2shell-as-aws-reveals-attacks-began-before-disclosure/5304749"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T11:30:33+00:00",
-      "source": "Ars Technica",
-      "summary": "For 3 days this month, 333 exit nodes were hacked in hopes of stealing sensitive data.",
-      "title": "333 Tor exit nodes hijacked to intercept SSH traffic and retrieve plaintext email",
-      "url": "https://arstechnica.com/information-technology/2026/10/300-tor-exit-nodes-hijacked-to-intercept-ssh-traffic-and-retrieve-plaintext-email/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T11:28:00+00:00",
-      "source": "The Register",
-      "summary": "AI agents did the dirty work, with hackers gaining privileged access in some environments in under three hours",
-      "title": "Microsoft says ConnectWise breach let Chinese spies loose on 2,250 cloud tenants",
-      "url": "https://www.theregister.com/security/2026/10/22/microsoft-says-connectwise-breach-let-chinese-spies-loose-on-2250-cloud-tenants/5304687"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T10:00:00+00:00",
-      "source": "The Register",
-      "summary": "Misaligned incentives led to an intractable argument",
-      "title": "IT department and auditors at major pharmacy chain got into a rip-roaring fight about using 'password' on Cisco firewall",
-      "url": "https://www.theregister.com/security/2026/10/22/it-department-and-auditors-at-major-pharmacy-chain-got-into-a-rip-roaring-fight-about-using-password-on-cisco-firewall/5304592"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T06:38:14+00:00",
-      "source": "The Register",
-      "summary": "Says it passed audits and made just a minor mystery error",
-      "title": "Certification authority eMudhra defends its laughably weak private keys",
-      "url": "https://www.theregister.com/security/2026/10/22/certification-authority-emudhra-defends-its-laughably-weak-private-keys/5304647"
     }
   ]
 }
