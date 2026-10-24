@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 6235,
+      "date": "2026-10-25",
+      "kevAdded": 0,
+      "knownExploited": 12,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 34
+    },
+    {
       "cves": 1975,
       "date": "2026-10-24",
       "kevAdded": 2,
@@ -344,16 +353,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-23",
-    "date": "2026-10-24",
-    "daysObserved": 38,
-    "generatedAt": "2026-10-23T21:37:47.021811+00:00",
-    "snapshots": 38,
+    "coveredDate": "2026-10-24",
+    "date": "2026-10-25",
+    "daysObserved": 39,
+    "generatedAt": "2026-10-24T21:05:54.860346+00:00",
+    "snapshots": 39,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 19,
+      "daily_growth": 21,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -361,11 +370,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201201,
+      "stars": 201222,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 18,
+      "daily_growth": 4,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -373,11 +382,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143212,
+      "stars": 143216,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 11,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -385,7 +394,7 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139502,
+      "stars": 139513,
       "url": "https://github.com/golang/go"
     },
     {
@@ -397,11 +406,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128583,
+      "stars": 128609,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 243,
+      "daily_growth": 254,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -409,11 +418,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 122805,
+      "stars": 123059,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 41,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -421,11 +430,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120707,
+      "stars": 120748,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 321,
+      "daily_growth": 121,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -433,11 +442,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 113765,
+      "stars": 113886,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 34,
+      "daily_growth": 28,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -445,11 +454,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105014,
+      "stars": 105042,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 3,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -457,11 +466,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98038,
+      "stars": 98041,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 4,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -469,252 +478,234 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91574,
+      "stars": 91578,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "patch",
-      "project": "next.js",
-      "publishedAt": "2026-10-23T13:32:31Z",
-      "repository": "vercel/next.js",
-      "source": "GitHub",
-      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.3",
-      "version": "v16.4.3"
-    },
-    {
       "kind": "minor",
       "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-23T13:10:10Z",
+      "publishedAt": "2026-10-23T23:18:22Z",
       "repository": "anthropics/anthropic-sdk-python",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
-      "version": "v2.2.0"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-10-22T20:03:54Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.37.0",
-      "version": "v3.37.0"
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
+      "version": "v2.3.0"
     }
   ],
   "security": {
-    "critical": 296,
-    "high": 861,
+    "critical": 1027,
+    "high": 2740,
     "kevCatalogTotal": 1756,
     "latest": [
       {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Memory corruption in Mobile in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
-        "id": "CVE-2026-113088",
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was determined in FaveoSuite Faveo Helpdesk up to 2.0.3. Affected by this vulnerability is the function UnAuthController.changeStatus/UnAuthController.close/UnAuthController.open/UnAuthController.resolve of the file app/Http/Controllers/Client/helpdesk/UnAuthController.php. Executing a manipulation of the argument id/status can lead to missing authorization. The attack can be…",
+        "id": "CVE-2026-115972",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:18:38.917",
-        "publishedAt": "2026-10-20T22:19:00.490",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-10-24T18:16:48.870",
+        "publishedAt": "2026-10-24T18:16:48.730",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Memory corruption in Mobile in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113088"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Use after free in Windows Network Load Balancing allows an unauthorized attacker to execute code over an adjacent network.",
-        "id": "CVE-2026-83862",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:18:27.063",
-        "publishedAt": "2026-10-13T19:20:35.520",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use after free in Windows Network Load Balancing allows an unauthorized attacker to execute code over an adjacent network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83862"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Use after free in PerformanceAPIs in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
-        "id": "CVE-2026-113091",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:18:25.553",
-        "publishedAt": "2026-10-20T22:19:00.827",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use after free in PerformanceAPIs in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113091"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Use after free in Passwords in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "id": "CVE-2026-113092",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:18:11.770",
-        "publishedAt": "2026-10-20T22:19:00.933",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use after free in Passwords in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113092"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Memory corruption in Text in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-        "id": "CVE-2026-113096",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:17:27.417",
-        "publishedAt": "2026-10-20T22:19:01.367",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Memory corruption in Text in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113096"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Improper input validation in Omnibox in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-        "id": "CVE-2026-113099",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:17:14.700",
-        "publishedAt": "2026-10-20T22:19:01.717",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper input validation in Omnibox in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113099"
+        "title": "A vulnerability was determined in FaveoSuite Faveo Helpdesk up to 2.0.3. Affected by this vulnerability is the function…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115972"
       },
       {
         "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naf_packet: Don't cast tpacket_hdr.tp_len to int in tpacket_parse_header().\n\nsyzbot reported BUG() in sock_sendmsg_nosec(). [0]\n\nThe problem is that tpacket_parse_header() casts user-provided\ntpacket_hdr.tp_len, which is u32, to int.\n\nIf the length is larger than INT_MAX, the following condition\nin tpacket_parse_header()…",
-        "id": "CVE-2026-98095",
+        "cvss_version": "4.0",
+        "description": "A vulnerability was found in Travisun Opptrix 0.4.0. Affected is the function Buffer.concat of the file /api/channels/webhook/ of the component preParsing handler. Performing a manipulation results in denial of service. The attack can be initiated remotely. The exploit has been made public and could be used. The project has been completely taken offline and deprecated. The project maintainer…",
+        "id": "CVE-2026-115971",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:15:25.107",
-        "publishedAt": "2026-09-25T11:17:39.243",
+        "lastModifiedAt": "2026-10-24T18:16:48.550",
+        "publishedAt": "2026-10-24T18:16:48.550",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\naf_packet: Don't cast tpacket_hdr.tp_len to int in tpacket_parse_header().\n\nsyzbot…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98095"
+        "title": "A vulnerability was found in Travisun Opptrix 0.4.0. Affected is the function Buffer.concat of the file /api/channels/webhook/ of the component preParsing…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115971"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "4.0",
+        "description": "A vulnerability has been found in Travisun Opptrix 0.4.0. This impacts an unknown function of the file /api/system-update/import of the component Import Endpoint. Such manipulation leads to code injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The project has been completely taken offline and deprecated. The project maintainer…",
+        "id": "CVE-2026-115970",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-24T18:16:48.367",
+        "publishedAt": "2026-10-24T18:16:48.367",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A vulnerability has been found in Travisun Opptrix 0.4.0. This impacts an unknown function of the file /api/system-update/import of the component Import…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115970"
+      },
+      {
+        "cvss_score": 9.4,
+        "cvss_version": "4.0",
+        "description": "Python has added a denylist for known compromised certificates to the \"ssl\" module to ensure user safety even without certificate revocation configured. Known compromised certificates will automatically be rejected regardless of the SSLContext policy configuration.",
+        "id": "CVE-2026-115557",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-24T18:16:48.250",
+        "publishedAt": "2026-10-24T15:17:33.600",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Python has added a denylist for known compromised certificates to the \"ssl\" module to ensure user safety even without certificate revocation configured. Known…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115557"
+      },
+      {
+        "cvss_score": 9.2,
+        "cvss_version": "4.0",
+        "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli…",
+        "id": "CVE-2026-111497",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-24T18:16:47.170",
+        "publishedAt": "2026-10-22T14:17:37.190",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Use after free in Media in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
-        "id": "CVE-2026-113107",
+        "description": "Vulnerability in the Oracle Process Manufacturing Systems product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Systems.  Successful attacks of this vulnerability can result in takeover of…",
+        "id": "CVE-2026-61010",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:14:02.767",
-        "publishedAt": "2026-10-20T22:19:02.620",
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.907",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Use after free in Media in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113107"
+        "title": "Vulnerability in the Oracle Process Manufacturing Systems product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61010"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 8.0,
         "cvss_version": "3.1",
-        "description": "Improper input validation in ANGLE in Google Chrome on on Mac prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "id": "CVE-2026-113117",
+        "description": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Logistics.  While the vulnerability is in Oracle Process Manufacturing…",
+        "id": "CVE-2026-61009",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:13:49.110",
-        "publishedAt": "2026-10-20T22:19:03.773",
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.803",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper input validation in ANGLE in Google Chrome on on Mac prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113117"
+        "title": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61009"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 7.2,
         "cvss_version": "3.1",
-        "description": "Use after free in Network in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "id": "CVE-2026-113119",
+        "description": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Logistics.  Successful attacks of this vulnerability can result in takeover…",
+        "id": "CVE-2026-61006",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:13:32.463",
-        "publishedAt": "2026-10-20T22:19:04.010",
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.680",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Use after free in Network in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113119"
+        "title": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61006"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "Memory corruption in ContextMenu in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
-        "id": "CVE-2026-113121",
+        "description": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Logistics.  Successful attacks of this vulnerability can result in …",
+        "id": "CVE-2026-61005",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:13:16.553",
-        "publishedAt": "2026-10-20T22:19:04.227",
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.570",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Memory corruption in ContextMenu in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113121"
+        "title": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61005"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "Memory corruption in ANGLE in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "id": "CVE-2026-113134",
+        "description": "Vulnerability in the Oracle Landed Cost Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Landed Cost Management.  Successful attacks of this vulnerability can result in  unauthorized creation…",
+        "id": "CVE-2026-61004",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:13:01.660",
-        "publishedAt": "2026-10-20T22:19:05.643",
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.460",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Memory corruption in ANGLE in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113134"
+        "title": "Vulnerability in the Oracle Landed Cost Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61004"
+      },
+      {
+        "cvss_score": 8.1,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the Oracle Process Manufacturing Systems product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Systems.  Successful attacks of this vulnerability can result in  unauthorized…",
+        "id": "CVE-2026-61000",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.350",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Vulnerability in the Oracle Process Manufacturing Systems product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61000"
       },
       {
         "cvss_score": 9.8,
         "cvss_version": "3.1",
-        "description": "Velocity.js is a JavaScript implementation of the Apache Velocity template engine. Prior to 2.1.7, the earlier fix for CVE-2026-44966 filtered constructor, __proto__, and prototype only in the #set assignment handler in src/compile/set.ts, while property-read expressions in src/compile/references.ts remained unfiltered. The getReferences() flow called getAttributes(), whose property access…",
-        "id": "CVE-2026-73649",
+        "description": "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Rest Service).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1…",
+        "id": "CVE-2026-60999",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:10:00.167",
-        "publishedAt": "2026-08-13T18:18:20.793",
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.240",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Velocity.js is a JavaScript implementation of the Apache Velocity template engine. Prior to 2.1.7, the earlier fix for CVE-2026-44966 filtered constructor…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73649"
+        "title": "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Rest Service).   The supported version that is affected is…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60999"
       },
       {
-        "cvss_score": 5.1,
-        "cvss_version": "4.0",
-        "description": "rails-html-sanitizer is responsible for sanitizing HTML fragments in Rails applications. From 1.0.3 until 1.7.1, Rails::HTML::PermitScrubber restricted SVG reference elements in SVG_ALLOW_LOCAL_HREF only when they used xlink:href, even though browsers also accept the plain href attribute. Applications with non-default allowed tags that included SVG use or feImage elements could therefore permit…",
-        "id": "CVE-2026-73648",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:10:00.167",
-        "publishedAt": "2026-08-13T18:18:20.620",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "rails-html-sanitizer is responsible for sanitizing HTML fragments in Rails applications. From 1.0.3 until 1.7.1, Rails::HTML::PermitScrubber restricted SVG…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73648"
-      },
-      {
-        "cvss_score": 5.6,
+        "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to 2.22.0, the public extend() utility in ui/src/utils/extend/extend.js recursively copied attacker-controlled object keys during extend(true, target, source) deep merges without rejecting an own __proto__ property. The merge could descend into the prototype object and write attacker-controlled properties…",
-        "id": "CVE-2026-73647",
+        "description": "Vulnerability in the Oracle Universal Work Queue product of Oracle E-Business Suite (component: Non-Media Integration issues).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Universal Work Queue.  Successful attacks of this vulnerability can result in  unauthorized…",
+        "id": "CVE-2026-60997",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-23T18:10:00.167",
-        "publishedAt": "2026-08-13T18:18:20.450",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.130",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to 2.22.0, the public extend() utility in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73647"
+        "title": "Vulnerability in the Oracle Universal Work Queue product of Oracle E-Business Suite (component: Non-Media Integration issues).  Supported versions that are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60997"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the Oracle Advanced Collections product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Advanced Collections.  Successful attacks of this vulnerability can result in takeover of Oracle Advanced…",
+        "id": "CVE-2026-60989",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:32.017",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Vulnerability in the Oracle Advanced Collections product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60989"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the Oracle Project Portfolio Analysis product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Project Portfolio Analysis.  Successful attacks of this vulnerability can result in takeover of…",
+        "id": "CVE-2026-60988",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-24T18:10:00.163",
+        "publishedAt": "2026-07-21T22:18:31.910",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Vulnerability in the Oracle Project Portfolio Analysis product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60988"
       }
     ],
-    "low": 79,
-    "medium": 507,
-    "none": 1,
-    "unscored": 231
+    "low": 366,
+    "medium": 2085,
+    "none": 0,
+    "unscored": 17
   },
   "snapshot": {
-    "cves": 1975,
-    "kevAdded": 2,
-    "knownExploited": 1,
+    "cves": 6235,
+    "kevAdded": 0,
+    "knownExploited": 12,
     "projects": 18,
-    "releases": 3,
-    "techEntries": 43
+    "releases": 1,
+    "techEntries": 34
   },
   "sources": {
     "opensource": {
@@ -728,7 +719,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 3,
+        "inWindow": 1,
         "status": "partial",
         "total": 55
       }
@@ -736,27 +727,59 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 2,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1756
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1975,
+        "inWindow": 6235,
         "status": "success",
-        "total": 1975
+        "total": 6235
       }
     },
     "technology": {
       "rss": {
-        "failures": 1,
-        "inWindow": 43,
-        "status": "partial",
-        "total": 209
+        "failures": 0,
+        "inWindow": 34,
+        "status": "success",
+        "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-10-24T13:02:00+00:00",
+      "source": "The Register",
+      "summary": "Designed to carry out 100,000 steps without human approval",
+      "title": "Autonomous attack agent in 'Skynet mode' hijacks other models to carry out its evil deeds",
+      "url": "https://www.theregister.com/security/2026/10/24/autonomous-attack-agent-in-skynet-mode-hijacks-other-models-to-carry-out-its-evil-deeds/5305215"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-23T20:04:40+00:00",
+      "source": "The Register",
+      "summary": "Bad things (and software bugs?) come in threes",
+      "title": "There's a third PHP2Shell bug, but it won't get an emergency fix",
+      "url": "https://www.theregister.com/security/2026/10/23/theres-a-third-php2shell-bug-but-it-wont-get-an-emergency-fix/5305208"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-23T19:14:57+00:00",
+      "source": "The Register",
+      "summary": "Monitoring was only partial and was easily bypassed",
+      "title": "Red-team report found OpenAI utterly failed to monitor its agents during Hugging Face attack",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/23/red-team-report-found-openai-utterly-failed-to-monitor-its-agents-during-hugging-face-attack/5305200"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-23T18:32:51+00:00",
+      "source": "Netflix",
+      "summary": "",
+      "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
+      "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90?source=rss----2615bd06b42e---4"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-10-23T18:22:59+00:00",
@@ -814,6 +837,14 @@
       "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4"
     },
     {
+      "category": "tech",
+      "publishedAt": "2026-10-22T21:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Every organization has unique requirements for building and scaling generative AI. At Google Cloud, we are committed to giving developers model choice and architectural flexibility to run workloads however they need. Today, we’re announcing the general availability of an…",
+      "title": "Expanding Claude availability and deployment choice on Google Cloud",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud/"
+    },
+    {
       "category": "security",
       "publishedAt": "2026-10-22T20:37:52+00:00",
       "source": "The Register",
@@ -836,46 +867,6 @@
       "summary": "Flubbed key signing \"ceremony\" allowed minting of web credentials for any site.",
       "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
       "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T17:36:30+00:00",
-      "source": "The Register",
-      "summary": "Vendor 'strongly recommends' upgrading to a fixed version 'as soon as possible'",
-      "title": "Max-severity GitLab bug allows remote code execution over 12 years of releases",
-      "url": "https://www.theregister.com/security/2026/10/22/max-severity-gitlab-bug-allows-remote-code-execution-over-12-years-of-releases/5304854"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-22T17:21:30+00:00",
-      "source": "GitHub Blog",
-      "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub…",
-      "title": "How bug bounty sharpens one researcher’s security skills",
-      "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T16:58:25+00:00",
-      "source": "The Register",
-      "summary": "We didn't want to issue SSL/TLS certs anyway, eMudhra suggests after one private key turns out to be the number 4",
-      "title": "Disgraced Indian cert issuer leaves the cert issuing business",
-      "url": "https://www.theregister.com/security/2026/10/22/disgraced-indian-cert-issuer-leaves-the-cert-issuing-business/5304848"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T16:05:53+00:00",
-      "source": "The Register",
-      "summary": "Ministers report 32 unavailable and four partly disrupted, but no confirmed compromise",
-      "title": "PHP2Shell puts dozens of UK government services out of service",
-      "url": "https://www.theregister.com/security/2026/10/22/php2shell-puts-dozens-of-uk-government-services-out-of-service/5304840"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T15:25:02+00:00",
-      "source": "Ars Technica",
-      "summary": "Hackers were already probing the bug before defenders were told it existed.",
-      "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
-      "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
     }
   ]
 }
