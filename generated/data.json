@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 3297,
+      "date": "2026-10-26",
+      "kevAdded": 0,
+      "knownExploited": 7,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 15
+    },
+    {
       "cves": 6235,
       "date": "2026-10-25",
       "kevAdded": 0,
@@ -353,16 +362,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-24",
-    "date": "2026-10-25",
-    "daysObserved": 39,
-    "generatedAt": "2026-10-24T21:05:54.860346+00:00",
-    "snapshots": 39,
+    "coveredDate": "2026-10-25",
+    "date": "2026-10-26",
+    "daysObserved": 40,
+    "generatedAt": "2026-10-25T21:07:08.601974+00:00",
+    "snapshots": 40,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 21,
+      "daily_growth": 25,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -370,11 +379,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201222,
+      "stars": 201247,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 4,
+      "daily_growth": 71,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -382,11 +391,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143216,
+      "stars": 143287,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 11,
+      "daily_growth": 76,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -394,11 +403,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139513,
+      "stars": 139589,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 69,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -406,11 +415,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128609,
+      "stars": 128678,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 254,
+      "daily_growth": 23,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -418,11 +427,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123059,
+      "stars": 123082,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 41,
+      "daily_growth": 44,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -430,11 +439,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120748,
+      "stars": 120792,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 121,
+      "daily_growth": 39,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -442,11 +451,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 113886,
+      "stars": 113925,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 28,
+      "daily_growth": 27,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -454,11 +463,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105042,
+      "stars": 105069,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 3,
+      "daily_growth": 74,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -466,11 +475,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98041,
+      "stars": 98115,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 4,
+      "daily_growth": 65,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -478,234 +487,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91578,
+      "stars": 91643,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [
-    {
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-10-23T23:18:22Z",
-      "repository": "anthropics/anthropic-sdk-python",
-      "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
-      "version": "v2.3.0"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 1027,
-    "high": 2740,
+    "critical": 449,
+    "high": 1253,
     "kevCatalogTotal": 1756,
     "latest": [
       {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was determined in FaveoSuite Faveo Helpdesk up to 2.0.3. Affected by this vulnerability is the function UnAuthController.changeStatus/UnAuthController.close/UnAuthController.open/UnAuthController.resolve of the file app/Http/Controllers/Client/helpdesk/UnAuthController.php. Executing a manipulation of the argument id/status can lead to missing authorization. The attack can be…",
-        "id": "CVE-2026-115972",
+        "cvss_score": 8.1,
+        "cvss_version": "3.1",
+        "description": "Out-of-bounds write in .NET allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-70197",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:16:48.870",
-        "publishedAt": "2026-10-24T18:16:48.730",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-25T18:17:00.280",
+        "publishedAt": "2026-10-13T19:19:33.790",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A vulnerability was determined in FaveoSuite Faveo Helpdesk up to 2.0.3. Affected by this vulnerability is the function…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115972"
+        "title": "Out-of-bounds write in .NET allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70197"
+      },
+      {
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "A weakness has been identified in DedeCMS up to 5.7.118. Impacted is the function require_once of the file dede/update_guide.php. This manipulation of the argument vtime causes code injection. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks.",
+        "id": "CVE-2026-116063",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-25T18:16:47.110",
+        "publishedAt": "2026-10-25T18:16:47.110",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A weakness has been identified in DedeCMS up to 5.7.118. Impacted is the function require_once of the file dede/update_guide.php. This manipulation of the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116063"
       },
       {
         "cvss_score": 5.5,
         "cvss_version": "4.0",
-        "description": "A vulnerability was found in Travisun Opptrix 0.4.0. Affected is the function Buffer.concat of the file /api/channels/webhook/ of the component preParsing handler. Performing a manipulation results in denial of service. The attack can be initiated remotely. The exploit has been made public and could be used. The project has been completely taken offline and deprecated. The project maintainer…",
-        "id": "CVE-2026-115971",
+        "description": "A security flaw has been discovered in SourceCodester Performance Indicator System 1.0. This issue affects some unknown processing of the file /opils/staff/save_profile.php. The manipulation of the argument Contact results in sql injection. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks.",
+        "id": "CVE-2026-116062",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:16:48.550",
-        "publishedAt": "2026-10-24T18:16:48.550",
+        "lastModifiedAt": "2026-10-25T18:16:46.950",
+        "publishedAt": "2026-10-25T18:16:46.950",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A vulnerability was found in Travisun Opptrix 0.4.0. Affected is the function Buffer.concat of the file /api/channels/webhook/ of the component preParsing…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115971"
+        "title": "A security flaw has been discovered in SourceCodester Performance Indicator System 1.0. This issue affects some unknown processing of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116062"
       },
       {
         "cvss_score": 5.5,
         "cvss_version": "4.0",
-        "description": "A vulnerability has been found in Travisun Opptrix 0.4.0. This impacts an unknown function of the file /api/system-update/import of the component Import Endpoint. Such manipulation leads to code injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The project has been completely taken offline and deprecated. The project maintainer…",
-        "id": "CVE-2026-115970",
+        "description": "A vulnerability was identified in SourceCodester Performance Indicator System 1.0. This vulnerability affects unknown code of the file /opils/staff/edit_dealer.php. The manipulation of the argument Contact leads to sql injection. The attack may be initiated remotely. The exploit is publicly available and might be used.",
+        "id": "CVE-2026-116061",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:16:48.367",
-        "publishedAt": "2026-10-24T18:16:48.367",
+        "lastModifiedAt": "2026-10-25T18:16:46.790",
+        "publishedAt": "2026-10-25T18:16:46.790",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A vulnerability has been found in Travisun Opptrix 0.4.0. This impacts an unknown function of the file /api/system-update/import of the component Import…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115970"
-      },
-      {
-        "cvss_score": 9.4,
-        "cvss_version": "4.0",
-        "description": "Python has added a denylist for known compromised certificates to the \"ssl\" module to ensure user safety even without certificate revocation configured. Known compromised certificates will automatically be rejected regardless of the SSLContext policy configuration.",
-        "id": "CVE-2026-115557",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:16:48.250",
-        "publishedAt": "2026-10-24T15:17:33.600",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Python has added a denylist for known compromised certificates to the \"ssl\" module to ensure user safety even without certificate revocation configured. Known…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115557"
-      },
-      {
-        "cvss_score": 9.2,
-        "cvss_version": "4.0",
-        "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli…",
-        "id": "CVE-2026-111497",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:16:47.170",
-        "publishedAt": "2026-10-22T14:17:37.190",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497"
+        "title": "A vulnerability was identified in SourceCodester Performance Indicator System 1.0. This vulnerability affects unknown code of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116061"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Process Manufacturing Systems product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Systems.  Successful attacks of this vulnerability can result in takeover of…",
-        "id": "CVE-2026-61010",
+        "description": "Improper control of generation of code ('code injection') in ASP.NET Core allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-102870",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.907",
+        "lastModifiedAt": "2026-10-25T18:16:42.253",
+        "publishedAt": "2026-10-13T19:17:51.617",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Process Manufacturing Systems product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61010"
+        "title": "Improper control of generation of code ('code injection') in ASP.NET Core allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102870"
       },
       {
-        "cvss_score": 8.0,
+        "cvss_score": 4.3,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Logistics.  While the vulnerability is in Oracle Process Manufacturing…",
-        "id": "CVE-2026-61009",
+        "description": "Subscriber Broken Access Control in WPCafe <= 3.0.14 versions.",
+        "id": "CVE-2026-57622",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.803",
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:49.963",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Subscriber Broken Access Control in WPCafe <= 3.0.14 versions.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57622"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "Contributor Cross Site Scripting (XSS) in Neve PRO <= 3.1.2 versions.",
+        "id": "CVE-2026-57618",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:49.843",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Contributor Cross Site Scripting (XSS) in Neve PRO <= 3.1.2 versions.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57618"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "Zed Attack Proxy (ZAP) ViewState add-on before version 4 contains an insecure deserialization vulnerability that allows attackers who control a proxied web server to achieve arbitrary code execution by embedding a malicious serialized Java object in the javax.faces.ViewState HTTP response parameter. The JSFViewState.decode() method base64-decodes the ViewState value and passes it directly to…",
+        "id": "CVE-2026-57527",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:49.587",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61009"
+        "title": "Zed Attack Proxy (ZAP) ViewState add-on before version 4 contains an insecure deserialization vulnerability that allows attackers who control a proxied web…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57527"
       },
       {
-        "cvss_score": 7.2,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Logistics.  Successful attacks of this vulnerability can result in takeover…",
-        "id": "CVE-2026-61006",
+        "description": "Author Cross Site Scripting (XSS) in Featured Image <= 2.1 versions.",
+        "id": "CVE-2026-57431",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.680",
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:49.460",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Author Cross Site Scripting (XSS) in Featured Image <= 2.1 versions.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57431"
+      },
+      {
+        "cvss_score": 4.3,
+        "cvss_version": "3.1",
+        "description": "Contributor Broken Access Control in SEOPress PRO <= 9.1.1 versions.",
+        "id": "CVE-2026-57430",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:49.343",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Contributor Broken Access Control in SEOPress PRO <= 9.1.1 versions.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57430"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Unauthenticated Cross Site Scripting (XSS) in NanoMag <= 1.8 versions.",
+        "id": "CVE-2026-57325",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:49.220",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61006"
+        "title": "Unauthenticated Cross Site Scripting (XSS) in NanoMag <= 1.8 versions.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57325"
       },
       {
-        "cvss_score": 8.1,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Logistics.  Successful attacks of this vulnerability can result in …",
-        "id": "CVE-2026-61005",
+        "description": "Unauthenticated Broken Access Control in GIFT4U <= 1.0.10 versions.",
+        "id": "CVE-2026-57324",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.570",
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:49.097",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Unauthenticated Broken Access Control in GIFT4U <= 1.0.10 versions.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57324"
+      },
+      {
+        "cvss_score": 5.8,
+        "cvss_version": "3.1",
+        "description": "Unauthenticated Broken Access Control in Flash & HTML5 Video <= 2.11.0 versions.",
+        "id": "CVE-2026-57323",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:48.980",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Unauthenticated Broken Access Control in Flash & HTML5 Video <= 2.11.0 versions.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57323"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs weMail wemail allows Reflected XSS.This issue affects weMail: from n/a through 2.1.2.",
+        "id": "CVE-2026-57322",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:48.860",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Process Manufacturing Logistics product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61005"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs weMail wemail allows Reflected XSS.This issue…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57322"
       },
       {
-        "cvss_score": 8.1,
+        "cvss_score": 7.1,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Landed Cost Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Landed Cost Management.  Successful attacks of this vulnerability can result in  unauthorized creation…",
-        "id": "CVE-2026-61004",
+        "description": "Contributor Arbitrary File Deletion in H5P <= 1.17.7 versions.",
+        "id": "CVE-2026-57321",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.460",
+        "lastModifiedAt": "2026-10-25T18:10:00.120",
+        "publishedAt": "2026-06-26T15:16:48.743",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Landed Cost Management product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61004"
-      },
-      {
-        "cvss_score": 8.1,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Process Manufacturing Systems product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Process Manufacturing Systems.  Successful attacks of this vulnerability can result in  unauthorized…",
-        "id": "CVE-2026-61000",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.350",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Process Manufacturing Systems product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61000"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Rest Service).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle Data Integrator.  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1…",
-        "id": "CVE-2026-60999",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.240",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Rest Service).   The supported version that is affected is…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60999"
-      },
-      {
-        "cvss_score": 8.1,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Universal Work Queue product of Oracle E-Business Suite (component: Non-Media Integration issues).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Universal Work Queue.  Successful attacks of this vulnerability can result in  unauthorized…",
-        "id": "CVE-2026-60997",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.130",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Universal Work Queue product of Oracle E-Business Suite (component: Non-Media Integration issues).  Supported versions that are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60997"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Advanced Collections product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Advanced Collections.  Successful attacks of this vulnerability can result in takeover of Oracle Advanced…",
-        "id": "CVE-2026-60989",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:32.017",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Advanced Collections product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60989"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Project Portfolio Analysis product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Project Portfolio Analysis.  Successful attacks of this vulnerability can result in takeover of…",
-        "id": "CVE-2026-60988",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-24T18:10:00.163",
-        "publishedAt": "2026-07-21T22:18:31.910",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Project Portfolio Analysis product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60988"
+        "title": "Contributor Arbitrary File Deletion in H5P <= 1.17.7 versions.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57321"
       }
     ],
-    "low": 366,
-    "medium": 2085,
-    "none": 0,
-    "unscored": 17
+    "low": 382,
+    "medium": 1177,
+    "none": 11,
+    "unscored": 25
   },
   "snapshot": {
-    "cves": 6235,
+    "cves": 3297,
     "kevAdded": 0,
-    "knownExploited": 12,
+    "knownExploited": 7,
     "projects": 18,
-    "releases": 1,
-    "techEntries": 34
+    "releases": 0,
+    "techEntries": 15
   },
   "sources": {
     "opensource": {
@@ -719,7 +718,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 1,
+        "inWindow": 0,
         "status": "partial",
         "total": 55
       }
@@ -733,15 +732,15 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 6235,
+        "inWindow": 3297,
         "status": "success",
-        "total": 6235
+        "total": 3297
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 34,
+        "inWindow": 15,
         "status": "success",
         "total": 229
       }
