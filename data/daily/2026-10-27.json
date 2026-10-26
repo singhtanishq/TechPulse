@@ -1,0 +1,311 @@
+{
+  "coveredIstDay": "2026-10-26",
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-26T22:51:38.059626+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 29,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201276,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 20,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143307,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 31,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139620,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 41,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128719,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 40,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123122,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 64,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120856,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 103,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 114028,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 34,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105103,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 12,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98127,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 29,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91672,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-26T16:35:03Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.38.0",
+        "version": "v3.38.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 8.6,
+        "description": "IBM QRadar SIEM could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+        "id": "CVE-2026-93441",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93441"
+      },
+      {
+        "cvss": 6.2,
+        "description": "A flaw was found in libmodulemd. In the module stream v2 rpm-map emission path, an inner loop incorrectly uses the count of digest algorithms as its bound instead of the number of checksums in the cur",
+        "id": "CVE-2026-92824",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92824"
+      },
+      {
+        "cvss": 8.1,
+        "description": "A flaw was found in Kata Containers. In configurations utilizing genpolicy for Confidential Containers guest protection, a malicious host operator can exploit insufficient validation of CreateContaine",
+        "id": "CVE-2026-77176",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77176"
+      },
+      {
+        "cvss": 7.5,
+        "description": "OpenReception's appointment booking software provides an end-to-end encrypted appointment booking platform. In versions 2.1.0 and prior, a returning client's six-digit booking PIN can be brute-forced ",
+        "id": "CVE-2026-65825",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65825"
+      },
+      {
+        "cvss": 6.2,
+        "description": "A stack overflow in the gensub_ParsePsb() function of AOC LC32D1320 v2.05 allows attackers to cause a Denial of Service (DoS) via supplying a crafted .PSB subtitle file.",
+        "id": "CVE-2026-52167",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52167"
+      },
+      {
+        "cvss": 7.5,
+        "description": "e-SIC Livre (esiclivre) v0.2.2 and earlier contains an uncontrolled resource consumption vulnerability in restrito/inc/captcha.php. The application uses user-supplied parameters (l, a, tf, ql) without",
+        "id": "CVE-2026-50787",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50787"
+      },
+      {
+        "cvss": 6.3,
+        "description": "A local file disclosure vulnerability in the XInclude processing component of Inkscape 1.1 before 1.3 allows a remote attacker to read local files via a crafted SVG file containing malicious xi:includ",
+        "id": "CVE-2026-4980",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4980"
+      },
+      {
+        "cvss": 7.5,
+        "description": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS pac",
+        "id": "CVE-2026-42009",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42009"
+      },
+      {
+        "cvss": 6.3,
+        "description": "A flaw was found in the TrustyAI Service Operator. When deploying services like gorch or NemoGuardrails, if a specific security setting is not enabled, these services can expose their communication ch",
+        "id": "CVE-2026-15044",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15044"
+      },
+      {
+        "cvss": 5.5,
+        "description": "A NULL pointer dereference vulnerability was found in gssproxy. When a GSSX_INIT_SEC_CONTEXT request is received with the target_name field absent, the daemon dereferences the resulting NULL pointer a",
+        "id": "CVE-2026-116497",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116497"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 861,
+      "HIGH": 2554,
+      "LOW": 359,
+      "MEDIUM": 2125,
+      "NONE": 8,
+      "UNSCORED": 91
+    }
+  },
+  "snapshot": {
+    "cves": 5998,
+    "kevAdded": 0,
+    "knownExploited": 23,
+    "projects": 18,
+    "releases": 1,
+    "techEntries": 20
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1756
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 1,
+      "status": "partial",
+      "total": 55
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 5998,
+      "status": "success",
+      "total": 5998
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 20,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 11,
+      "tech": 9
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-26T17:58:00+00:00",
+        "source": "The Register",
+        "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
+        "url": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515"
+      },
+      {
+        "published_at": "2026-10-26T17:04:57+00:00",
+        "source": "Netflix",
+        "title": "Making Failure Diagnosis Reliable with Pensive AI",
+        "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4"
+      },
+      {
+        "published_at": "2026-10-26T17:00:00+00:00",
+        "source": "The Register",
+        "title": "Reddit's r/opensource bans AI slop, and quite a few humans for good measure",
+        "url": "https://www.theregister.com/software/2026/10/26/reddits-r/opensource-bans-ai-slop-and-quite-a-few-humans-for-good-measure/5305392"
+      },
+      {
+        "published_at": "2026-10-26T16:14:00+00:00",
+        "source": "The Register",
+        "title": "UK pentester 'killa' claims $2K Bitcoin prize in PHP2Shell capture-the-flag contest",
+        "url": "https://www.theregister.com/security/2026/10/26/uk-pentester-killa-claims-2k-bitcoin-prize-in-php2shell-capture-the-flag-contest/5305429"
+      },
+      {
+        "published_at": "2026-10-26T16:01:02+00:00",
+        "source": "Netflix",
+        "title": "Multi‑Ratio Video Resizing for Mobile Feed and Marketing",
+        "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4"
+      },
+      {
+        "published_at": "2026-10-26T16:00:07+00:00",
+        "source": "Meta",
+        "title": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+        "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/"
+      },
+      {
+        "published_at": "2026-10-26T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
+        "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/"
+      },
+      {
+        "published_at": "2026-10-26T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Unifying enterprise context and semantics: LookML in Knowledge Catalog is now GA",
+        "url": "https://cloud.google.com/blog/products/business-intelligence/lookml-metadata-indexing-in-knowledge-catalog-is-now-ga/"
+      },
+      {
+        "published_at": "2026-10-26T15:47:05+00:00",
+        "source": "The Register",
+        "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
+        "url": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456"
+      },
+      {
+        "published_at": "2026-10-26T15:05:12+00:00",
+        "source": "Microsoft",
+        "title": "PostgreSQL Like A Pro: Build, query, and troubleshoot without leaving VS Code",
+        "url": "https://devblogs.microsoft.com/blog/postgresql-like-a-pro-vscode/"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Google Cloud": 2,
+      "Meta": 1,
+      "Microsoft": 1,
+      "Netflix": 3,
+      "The Register": 12
+    }
+  },
+  "window": {
+    "end": "2026-10-26T18:30:00+00:00",
+    "start": "2026-10-25T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

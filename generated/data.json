@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 5998,
+      "date": "2026-10-27",
+      "kevAdded": 0,
+      "knownExploited": 23,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 20
+    },
+    {
       "cves": 3297,
       "date": "2026-10-26",
       "kevAdded": 0,
@@ -362,16 +371,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-25",
-    "date": "2026-10-26",
-    "daysObserved": 40,
-    "generatedAt": "2026-10-25T21:07:08.601974+00:00",
-    "snapshots": 40,
+    "coveredDate": "2026-10-26",
+    "date": "2026-10-27",
+    "daysObserved": 41,
+    "generatedAt": "2026-10-26T22:51:38.059626+00:00",
+    "snapshots": 41,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 25,
+      "daily_growth": 29,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -379,11 +388,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201247,
+      "stars": 201276,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 71,
+      "daily_growth": 20,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -391,11 +400,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143287,
+      "stars": 143307,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 76,
+      "daily_growth": 31,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -403,11 +412,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139589,
+      "stars": 139620,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 69,
+      "daily_growth": 41,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -415,11 +424,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128678,
+      "stars": 128719,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 23,
+      "daily_growth": 40,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -427,11 +436,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123082,
+      "stars": 123122,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 44,
+      "daily_growth": 64,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -439,11 +448,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120792,
+      "stars": 120856,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 39,
+      "daily_growth": 103,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -451,11 +460,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 113925,
+      "stars": 114028,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 27,
+      "daily_growth": 34,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -463,11 +472,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105069,
+      "stars": 105103,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 74,
+      "daily_growth": 12,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -475,11 +484,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98115,
+      "stars": 98127,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 65,
+      "daily_growth": 29,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -487,224 +496,234 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91643,
+      "stars": 91672,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-10-26T16:35:03Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.38.0",
+      "version": "v3.38.0"
+    }
+  ],
   "security": {
-    "critical": 449,
-    "high": 1253,
+    "critical": 861,
+    "high": 2554,
     "kevCatalogTotal": 1756,
     "latest": [
       {
+        "cvss_score": 8.6,
+        "cvss_version": "3.1",
+        "description": "IBM QRadar SIEM could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+        "id": "CVE-2026-93441",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-26T18:20:34.553",
+        "publishedAt": "2026-10-20T22:21:07.327",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "IBM QRadar SIEM could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93441"
+      },
+      {
+        "cvss_score": 6.2,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in libmodulemd. In the module stream v2 rpm-map emission path, an inner loop incorrectly uses the count of digest algorithms as its bound instead of the number of checksums in the current digest table. Crafted modulemd v2 metadata with multiple digest types can trigger an out-of-bounds read during YAML serialization, typically causing a crash and resulting in a denial of service.",
+        "id": "CVE-2026-92824",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-26T18:20:34.410",
+        "publishedAt": "2026-10-21T04:18:12.263",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A flaw was found in libmodulemd. In the module stream v2 rpm-map emission path, an inner loop incorrectly uses the count of digest algorithms as its bound…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92824"
+      },
+      {
         "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "Out-of-bounds write in .NET allows an unauthorized attacker to execute code over a network.",
-        "id": "CVE-2026-70197",
+        "description": "A flaw was found in Kata Containers. In configurations utilizing genpolicy for Confidential Containers guest protection, a malicious host operator can exploit insufficient validation of CreateContainer mount and storage rules. This allows them to mount arbitrary container-rootfs paths over sensitive host locations or provision arbitrary content, potentially exposing confidential information or…",
+        "id": "CVE-2026-77176",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:17:00.280",
-        "publishedAt": "2026-10-13T19:19:33.790",
+        "lastModifiedAt": "2026-10-26T18:18:44.203",
+        "publishedAt": "2026-08-20T17:19:49.773",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Out-of-bounds write in .NET allows an unauthorized attacker to execute code over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70197"
+        "title": "A flaw was found in Kata Containers. In configurations utilizing genpolicy for Confidential Containers guest protection, a malicious host operator can exploit…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77176"
       },
       {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "A weakness has been identified in DedeCMS up to 5.7.118. Impacted is the function require_once of the file dede/update_guide.php. This manipulation of the argument vtime causes code injection. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks.",
-        "id": "CVE-2026-116063",
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "OpenReception's appointment booking software provides an end-to-end encrypted appointment booking platform. In versions 2.1.0 and prior, a returning client's six-digit booking PIN can be brute-forced online in the victim tenant. A successful guess yields the client's booking access token, granting access to that client's appointment tunnel, which holds their end-to-end-encrypted appointment data…",
+        "id": "CVE-2026-65825",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:16:47.110",
-        "publishedAt": "2026-10-25T18:16:47.110",
-        "severity": "LOW",
+        "lastModifiedAt": "2026-10-26T18:17:50.167",
+        "publishedAt": "2026-10-23T21:17:24.870",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A weakness has been identified in DedeCMS up to 5.7.118. Impacted is the function require_once of the file dede/update_guide.php. This manipulation of the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116063"
+        "title": "OpenReception's appointment booking software provides an end-to-end encrypted appointment booking platform. In versions 2.1.0 and prior, a returning client's…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65825"
+      },
+      {
+        "cvss_score": 6.2,
+        "cvss_version": "3.1",
+        "description": "A stack overflow in the gensub_ParsePsb() function of AOC LC32D1320 v2.05 allows attackers to cause a Denial of Service (DoS) via supplying a crafted .PSB subtitle file.",
+        "id": "CVE-2026-52167",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-26T18:17:49.173",
+        "publishedAt": "2026-10-15T16:18:12.490",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A stack overflow in the gensub_ParsePsb() function of AOC LC32D1320 v2.05 allows attackers to cause a Denial of Service (DoS) via supplying a crafted .PSB…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52167"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "e-SIC Livre (esiclivre) v0.2.2 and earlier contains an uncontrolled resource consumption vulnerability in restrito/inc/captcha.php. The application uses user-supplied parameters (l, a, tf, ql) without validation to generate CAPTCHA images, allowing remote attackers to cause denial of service via excessive memory and CPU consumption.",
+        "id": "CVE-2026-50787",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-26T18:17:48.850",
+        "publishedAt": "2026-10-23T16:16:51.733",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "e-SIC Livre (esiclivre) v0.2.2 and earlier contains an uncontrolled resource consumption vulnerability in restrito/inc/captcha.php. The application uses…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50787"
+      },
+      {
+        "cvss_score": 6.3,
+        "cvss_version": "3.1",
+        "description": "A local file disclosure vulnerability in the XInclude processing component of Inkscape 1.1 before 1.3 allows a remote attacker to read local files via a crafted SVG file containing malicious xi:include tags.",
+        "id": "CVE-2026-4980",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-26T18:17:48.383",
+        "publishedAt": "2026-03-27T15:17:03.790",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A local file disclosure vulnerability in the XInclude processing component of Inkscape 1.1 before 1.3 allows a remote attacker to read local files via a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4980"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS packets by sequence numbers, did not correctly handle packets with duplicate sequence numbers. This could lead to unstable packet ordering or undefined behavior, resulting in a denial of service.",
+        "id": "CVE-2026-42009",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-26T18:17:46.657",
+        "publishedAt": "2026-05-18T13:16:32.707",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42009"
+      },
+      {
+        "cvss_score": 6.3,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in the TrustyAI Service Operator. When deploying services like gorch or NemoGuardrails, if a specific security setting is not enabled, these services can expose their communication channels without requiring users to prove their identity. This allows any other program within the cluster to access the AI guardrails and orchestrator without proper authorization. An attacker could…",
+        "id": "CVE-2026-15044",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-26T18:17:45.890",
+        "publishedAt": "2026-07-08T15:16:26.120",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A flaw was found in the TrustyAI Service Operator. When deploying services like gorch or NemoGuardrails, if a specific security setting is not enabled, these…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15044"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "A NULL pointer dereference vulnerability was found in gssproxy. When a GSSX_INIT_SEC_CONTEXT request is received with the target_name field absent, the daemon dereferences the resulting NULL pointer and crashes. The request requires no authentication, allowing any local user to crash the gssproxy daemon via its Unix socket. The daemon does not automatically restart, resulting in a persistent…",
+        "id": "CVE-2026-116497",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-26T18:17:45.397",
+        "publishedAt": "2026-10-26T15:16:40.420",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A NULL pointer dereference vulnerability was found in gssproxy. When a GSSX_INIT_SEC_CONTEXT request is received with the target_name field absent, the daemon…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116497"
       },
       {
         "cvss_score": 5.5,
         "cvss_version": "4.0",
-        "description": "A security flaw has been discovered in SourceCodester Performance Indicator System 1.0. This issue affects some unknown processing of the file /opils/staff/save_profile.php. The manipulation of the argument Contact results in sql injection. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks.",
-        "id": "CVE-2026-116062",
+        "description": "A flaw has been found in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this issue is the function mysql_query of the file /source/registerform2.php of the component Registration Wizard. Executing a manipulation of the argument university/institute/branch/degree/status/cpi/semester/experience can lead to sql injection. It is possible to launch the…",
+        "id": "CVE-2026-116049",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:16:46.950",
-        "publishedAt": "2026-10-25T18:16:46.950",
+        "lastModifiedAt": "2026-10-26T18:17:43.360",
+        "publishedAt": "2026-10-25T09:16:27.543",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A security flaw has been discovered in SourceCodester Performance Indicator System 1.0. This issue affects some unknown processing of the file…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116062"
+        "title": "A flaw has been found in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this issue is the function…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116049"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 4.8,
         "cvss_version": "4.0",
-        "description": "A vulnerability was identified in SourceCodester Performance Indicator System 1.0. This vulnerability affects unknown code of the file /opils/staff/edit_dealer.php. The manipulation of the argument Contact leads to sql injection. The attack may be initiated remotely. The exploit is publicly available and might be used.",
-        "id": "CVE-2026-116061",
+        "description": "A flaw has been found in eventcatalog sdk up to 2.29.0. This vulnerability affects the function getCustomDoc/writeCustomDoc/rmCustomDoc of the file packages/sdk/src/custom-docs.ts of the component Custom Documentation Helpers. This manipulation of the argument options.path causes path traversal. It is possible to launch the attack on the local host. Upgrading to version 2.30.0 is able to resolve…",
+        "id": "CVE-2026-116046",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:16:46.790",
-        "publishedAt": "2026-10-25T18:16:46.790",
+        "lastModifiedAt": "2026-10-26T18:17:43.197",
+        "publishedAt": "2026-10-25T07:16:47.180",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A vulnerability was identified in SourceCodester Performance Indicator System 1.0. This vulnerability affects unknown code of the file…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116061"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Improper control of generation of code ('code injection') in ASP.NET Core allows an unauthorized attacker to execute code over a network.",
-        "id": "CVE-2026-102870",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:16:42.253",
-        "publishedAt": "2026-10-13T19:17:51.617",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper control of generation of code ('code injection') in ASP.NET Core allows an unauthorized attacker to execute code over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102870"
-      },
-      {
-        "cvss_score": 4.3,
-        "cvss_version": "3.1",
-        "description": "Subscriber Broken Access Control in WPCafe <= 3.0.14 versions.",
-        "id": "CVE-2026-57622",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:49.963",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Subscriber Broken Access Control in WPCafe <= 3.0.14 versions.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57622"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Contributor Cross Site Scripting (XSS) in Neve PRO <= 3.1.2 versions.",
-        "id": "CVE-2026-57618",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:49.843",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Contributor Cross Site Scripting (XSS) in Neve PRO <= 3.1.2 versions.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57618"
+        "title": "A flaw has been found in eventcatalog sdk up to 2.29.0. This vulnerability affects the function getCustomDoc/writeCustomDoc/rmCustomDoc of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116046"
       },
       {
         "cvss_score": 8.7,
         "cvss_version": "4.0",
-        "description": "Zed Attack Proxy (ZAP) ViewState add-on before version 4 contains an insecure deserialization vulnerability that allows attackers who control a proxied web server to achieve arbitrary code execution by embedding a malicious serialized Java object in the javax.faces.ViewState HTTP response parameter. The JSFViewState.decode() method base64-decodes the ViewState value and passes it directly to…",
-        "id": "CVE-2026-57527",
+        "description": "Grav 2.0.15 before 2.2.13 contains an allowlist bypass vulnerability that allows page editors to invoke arbitrary public static methods by relocating data-*@ directives with unset-name@ or integer keys. Attackers with page-edit permission can embed crafted fields in Flex form overrides in page frontmatter to call methods like Folder::delete or Utils::download, deleting directories, overwriting…",
+        "id": "CVE-2026-116019",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:49.587",
+        "lastModifiedAt": "2026-10-26T18:17:43.013",
+        "publishedAt": "2026-10-24T12:16:58.473",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Zed Attack Proxy (ZAP) ViewState add-on before version 4 contains an insecure deserialization vulnerability that allows attackers who control a proxied web…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57527"
+        "title": "Grav 2.0.15 before 2.2.13 contains an allowlist bypass vulnerability that allows page editors to invoke arbitrary public static methods by relocating data-*@…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116019"
       },
       {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Author Cross Site Scripting (XSS) in Featured Image <= 2.1 versions.",
-        "id": "CVE-2026-57431",
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "yudao-cloud through 2026.09 contains an insecure direct object reference vulnerability in the mall trade module that allows authenticated members to read other members' after-sale operation logs by supplying arbitrary afterSaleId values. Attackers can enumerate sequential after-sale IDs against GET /app-api/trade/after-sale-log/list to expose refund amounts, status transitions and timestamps…",
+        "id": "CVE-2026-116015",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:49.460",
+        "lastModifiedAt": "2026-10-26T18:17:42.863",
+        "publishedAt": "2026-10-24T12:16:57.777",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Author Cross Site Scripting (XSS) in Featured Image <= 2.1 versions.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57431"
+        "title": "yudao-cloud through 2026.09 contains an insecure direct object reference vulnerability in the mall trade module that allows authenticated members to read other…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116015"
       },
       {
-        "cvss_score": 4.3,
-        "cvss_version": "3.1",
-        "description": "Contributor Broken Access Control in SEOPress PRO <= 9.1.1 versions.",
-        "id": "CVE-2026-57430",
+        "cvss_score": 2.9,
+        "cvss_version": "4.0",
+        "description": "A flaw has been found in YunaiV/zhijiantianya ruoyi-vue-pro up to 2026.09. The impacted element is the function SmsCodeServiceImpl.validateSmsCode0 of the file /service/sms/SmsCodeServiceImpl.java of the component SMS Code Verification. This manipulation causes improper restriction of excessive authentication attempts. The attack may be initiated remotely. The complexity of an attack is rather…",
+        "id": "CVE-2026-116007",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:49.343",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-26T18:17:41.440",
+        "publishedAt": "2026-10-25T04:17:34.610",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "Contributor Broken Access Control in SEOPress PRO <= 9.1.1 versions.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57430"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Unauthenticated Cross Site Scripting (XSS) in NanoMag <= 1.8 versions.",
-        "id": "CVE-2026-57325",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:49.220",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Unauthenticated Cross Site Scripting (XSS) in NanoMag <= 1.8 versions.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57325"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Unauthenticated Broken Access Control in GIFT4U <= 1.0.10 versions.",
-        "id": "CVE-2026-57324",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:49.097",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Unauthenticated Broken Access Control in GIFT4U <= 1.0.10 versions.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57324"
-      },
-      {
-        "cvss_score": 5.8,
-        "cvss_version": "3.1",
-        "description": "Unauthenticated Broken Access Control in Flash & HTML5 Video <= 2.11.0 versions.",
-        "id": "CVE-2026-57323",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:48.980",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Unauthenticated Broken Access Control in Flash & HTML5 Video <= 2.11.0 versions.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57323"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs weMail wemail allows Reflected XSS.This issue affects weMail: from n/a through 2.1.2.",
-        "id": "CVE-2026-57322",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:48.860",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs weMail wemail allows Reflected XSS.This issue…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57322"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Contributor Arbitrary File Deletion in H5P <= 1.17.7 versions.",
-        "id": "CVE-2026-57321",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-25T18:10:00.120",
-        "publishedAt": "2026-06-26T15:16:48.743",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Contributor Arbitrary File Deletion in H5P <= 1.17.7 versions.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57321"
+        "title": "A flaw has been found in YunaiV/zhijiantianya ruoyi-vue-pro up to 2026.09. The impacted element is the function SmsCodeServiceImpl.validateSmsCode0 of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116007"
       }
     ],
-    "low": 382,
-    "medium": 1177,
-    "none": 11,
-    "unscored": 25
+    "low": 359,
+    "medium": 2125,
+    "none": 8,
+    "unscored": 91
   },
   "snapshot": {
-    "cves": 3297,
+    "cves": 5998,
     "kevAdded": 0,
-    "knownExploited": 7,
+    "knownExploited": 23,
     "projects": 18,
-    "releases": 0,
-    "techEntries": 15
+    "releases": 1,
+    "techEntries": 20
   },
   "sources": {
     "opensource": {
@@ -718,7 +737,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 0,
+        "inWindow": 1,
         "status": "partial",
         "total": 55
       }
@@ -732,15 +751,15 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 3297,
+        "inWindow": 5998,
         "status": "success",
-        "total": 3297
+        "total": 5998
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 15,
+        "inWindow": 20,
         "status": "success",
         "total": 229
       }
@@ -749,123 +768,123 @@
   "technology": [
     {
       "category": "security",
-      "publishedAt": "2026-10-24T13:02:00+00:00",
+      "publishedAt": "2026-10-26T17:58:00+00:00",
       "source": "The Register",
-      "summary": "Designed to carry out 100,000 steps without human approval",
-      "title": "Autonomous attack agent in 'Skynet mode' hijacks other models to carry out its evil deeds",
-      "url": "https://www.theregister.com/security/2026/10/24/autonomous-attack-agent-in-skynet-mode-hijacks-other-models-to-carry-out-its-evil-deeds/5305215"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-23T20:04:40+00:00",
-      "source": "The Register",
-      "summary": "Bad things (and software bugs?) come in threes",
-      "title": "There's a third PHP2Shell bug, but it won't get an emergency fix",
-      "url": "https://www.theregister.com/security/2026/10/23/theres-a-third-php2shell-bug-but-it-wont-get-an-emergency-fix/5305208"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-23T19:14:57+00:00",
-      "source": "The Register",
-      "summary": "Monitoring was only partial and was easily bypassed",
-      "title": "Red-team report found OpenAI utterly failed to monitor its agents during Hugging Face attack",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/23/red-team-report-found-openai-utterly-failed-to-monitor-its-agents-during-hugging-face-attack/5305200"
+      "summary": "Redmond joins growing list of software maintainers scrambling to patch compression flaw",
+      "title": "Microsoft releases emergency .NET security fixes for Google Brotli bug",
+      "url": "https://www.theregister.com/security/2026/10/26/microsoft-releases-emergency-net-security-fixes-for-google-brotli-bug/5305515"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-23T18:32:51+00:00",
+      "publishedAt": "2026-10-26T17:04:57+00:00",
       "source": "Netflix",
       "summary": "",
-      "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
-      "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90?source=rss----2615bd06b42e---4"
+      "title": "Making Failure Diagnosis Reliable with Pensive AI",
+      "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-23T18:22:59+00:00",
-      "source": "Cloudflare",
-      "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
-      "title": "Origin Range Requests: Serving large files without range-request tuning",
-      "url": "https://blog.cloudflare.com/origin-range-requests/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-23T18:06:56+00:00",
-      "source": "Cloudflare",
-      "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
-      "title": "Bringing post-quantum cryptography to geographically fenced key management",
-      "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/"
+      "publishedAt": "2026-10-26T17:00:00+00:00",
+      "source": "The Register",
+      "summary": "New rules also shut out solo developers, fledgling projects, and anyone who doesn't speak English",
+      "title": "Reddit's r/opensource bans AI slop, and quite a few humans for good measure",
+      "url": "https://www.theregister.com/software/2026/10/26/reddits-r/opensource-bans-ai-slop-and-quite-a-few-humans-for-good-measure/5305392"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-23T16:51:59+00:00",
-      "source": "Ars Technica",
-      "summary": "Corporate phishing tests are common, but this one was especially cruel.",
-      "title": "Knicks sent employees fake offer of championship rings in phishing test: Report",
-      "url": "https://arstechnica.com/tech-policy/2026/10/knicks-sent-employees-fake-offer-of-championship-rings-in-phishing-test-report/"
+      "publishedAt": "2026-10-26T16:14:00+00:00",
+      "source": "The Register",
+      "summary": "Jaydip Modhwadia beats challenge designed to test real-world exploitability of PHP2Shell in around 3 hours",
+      "title": "UK pentester 'killa' claims $2K Bitcoin prize in PHP2Shell capture-the-flag contest",
+      "url": "https://www.theregister.com/security/2026/10/26/uk-pentester-killa-claims-2k-bitcoin-prize-in-php2shell-capture-the-flag-contest/5305429"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-23T15:22:00+00:00",
-      "source": "The Register",
-      "summary": "No new accounts from now, and the end will come in December",
-      "title": "Arc browser on its way out as makers suggest an alternative",
-      "url": "https://www.theregister.com/software/2026/10/23/arc-browser-on-its-way-out-as-makers-suggest-an-alternative/5305114"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-23T11:31:00+00:00",
-      "source": "The Register",
-      "summary": "Kernel maintainers stop asking who used AI, as long as the code is good",
-      "title": "Torvalds: AI is fine for competent devs, but spare us the 'drive-by' patches",
-      "url": "https://www.theregister.com/columnists/2026/10/23/torvalds-ai-is-fine-for-competent-devs-but-spare-us-the-drive-by-patches/5304357"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-23T09:29:00+00:00",
-      "source": "The Register",
-      "summary": "Whitehall wants tougher penalties and new powers over telecoms operators as Russian activity raises alarm",
-      "title": "UK threatens subsea cable saboteurs with 14 years behind bars",
-      "url": "https://www.theregister.com/networks/2026/10/23/uk-threatens-subsea-cable-saboteurs-with-14-years-behind-bars/5304794"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-22T22:19:12+00:00",
+      "publishedAt": "2026-10-26T16:01:02+00:00",
       "source": "Netflix",
       "summary": "",
-      "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
-      "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4"
+      "title": "Multi‑Ratio Video Resizing for Mobile Feed and Marketing",
+      "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-22T21:00:00+00:00",
+      "publishedAt": "2026-10-26T16:00:07+00:00",
+      "source": "Meta",
+      "summary": "At the 2026 Open Compute Project (OCP) Global Summit, Meta shared the networking innovations that are directly supporting our latest AI models, including Muse Wonder and Muse Spark, and our gigawatt-scale Prometheus cluster. Highlights IcePack & IceCube: Meta’s first…",
+      "title": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+      "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-26T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Every organization has unique requirements for building and scaling generative AI. At Google Cloud, we are committed to giving developers model choice and architectural flexibility to run workloads however they need. Today, we’re announcing the general availability of an…",
-      "title": "Expanding Claude availability and deployment choice on Google Cloud",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-22T20:37:52+00:00",
-      "source": "The Register",
-      "summary": "“Adversaries are clearly spending time (and tokens) on this bug,” researcher says.",
-      "title": "PHP2Shell exploit bypasses protections designed to stop remote code execution",
-      "url": "https://www.theregister.com/security/2026/10/22/php2shell-exploit-bypasses-protections-designed-to-stop-remote-code-execution/5304883"
+      "summary": "As organizations adopt autonomous agents to build applications, securing identities and access has become more challenging. Developers relying on agents to provision cloud resources, write Terraform, and deploy microservices at machine-speed only find their CI/CD pipelines blo…",
+      "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
+      "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-22T20:33:10+00:00",
-      "source": "AWS",
-      "summary": "AWS Continuum for code vulnerabilities is a new security service that uses AI to automatically find, validate, and prioritize code vulnerabilities in your environment, then delivers ready-to-review fixes as pull requests replacing what previously took hours of manual…",
-      "title": "AWS Continuum for code vulnerabilities is now generally available",
-      "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/"
+      "publishedAt": "2026-10-26T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "As enterprises go from experimental AI agent prototypes to using them in production, data teams are realizing that access to data is not the same as understanding that data. To help bridge that gap, today, we are announcing the general availability (GA) of LookML semantic…",
+      "title": "Unifying enterprise context and semantics: LookML in Knowledge Catalog is now GA",
+      "url": "https://cloud.google.com/blog/products/business-intelligence/lookml-metadata-indexing-in-knowledge-catalog-is-now-ga/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-22T20:17:52+00:00",
-      "source": "Ars Technica",
-      "summary": "Flubbed key signing \"ceremony\" allowed minting of web credentials for any site.",
-      "title": "Disgraced eMudhra drops out of TLS business after using cert private key of 4",
-      "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
+      "publishedAt": "2026-10-26T15:47:05+00:00",
+      "source": "The Register",
+      "summary": "Claude maker reveals financials and warns investors its AI models could blackmail humans, resist shutdown, or go rogue",
+      "title": "Trumpets blare and skies part as AI hypefest culminates in Anthropic IPO filing",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/26/trumpets-blare-and-skies-part-as-ai-hypefest-culminates-in-anthropic-ipo-filing/5305456"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-26T15:05:12+00:00",
+      "source": "Microsoft",
+      "summary": "Build, query, and troubleshoot without leaving VS Code. The post PostgreSQL Like A Pro: Build, query, and troubleshoot without leaving VS Code appeared first on Microsoft for Developers .",
+      "title": "PostgreSQL Like A Pro: Build, query, and troubleshoot without leaving VS Code",
+      "url": "https://devblogs.microsoft.com/blog/postgresql-like-a-pro-vscode/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-26T15:02:24+00:00",
+      "source": "AWS",
+      "summary": "A few weeks ago I presented to a small group of commercial and technology leaders from Brazilian agribusiness at the AWS office in São Paulo. My talk ran through where generative AI fits across the different stages of an agribusiness operation, and the point I kept returning to…",
+      "title": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-26T13:14:00+00:00",
+      "source": "The Register",
+      "summary": "What better way to celebrate Cybersecurity Awareness Month than warning that three-quarters of the web is about to be set on fire?",
+      "title": "We shouldn't be surprised about the PHPocalypse, as the internet is built on sticks and glue",
+      "url": "https://www.theregister.com/security/2026/10/26/we-shouldnt-be-surprised-about-the-phpocalypse-as-the-internet-is-built-on-sticks-and-glue/5305186"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-26T12:38:00+00:00",
+      "source": "The Register",
+      "summary": "Charity confirms slew of security improvements as it waits for UK.gov's go-ahead",
+      "title": "UK Biobank back online soon, months after someone tried to sell 500k people's data on Alibaba",
+      "url": "https://www.theregister.com/security/2026/10/26/uk-biobank-back-online-soon-months-after-someone-tried-to-sell-500k-peoples-data-on-alibaba/5305363"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-26T11:00:00+00:00",
+      "source": "The Register",
+      "summary": "Whitehall wants agents guarding critical infrastructure as part of a wider £600M spending spree",
+      "title": "Britain bets big on AI to defend against the threats AI is helping create",
+      "url": "https://www.theregister.com/security/2026/10/26/britain-bets-big-on-ai-to-defend-against-the-threats-ai-is-helping-create/5305319"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-26T08:00:00+00:00",
+      "source": "The Register",
+      "summary": "PARTNER CONTENT: Learn what the flaws are, how far exploitation has gone, and how to get to full coverage fast with Tanium",
+      "title": "PHP2Shell: No login, no app code, no warning. What next?",
+      "url": "https://www.theregister.com/security/2026/10/26/partner-content-no-login-no-app-code-no-warning-what-next/5305336"
     }
   ]
 }
