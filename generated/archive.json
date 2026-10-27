@@ -1,6 +1,252 @@
 {
   "archive": [
     {
+      "date": "2026-10-28",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 34,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201310,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": -136,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143171,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -109,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139511,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -109,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128610,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 20,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123142,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 39,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120895,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 143,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114171,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105129,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": -128,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 97999,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -110,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91562,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 3,
+          "other": 2,
+          "patch": 1
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-27T15:37:52Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.40.0",
+            "version": "v3.40.0"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-10-27T14:09:13Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v12.70.2",
+            "version": "v12.70.2"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-10-27T14:06:19Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v13.39.0",
+            "version": "v13.39.0"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-10-27T09:27:16Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.3",
+            "version": "create-vite@9.3.3"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-10-27T06:55:31Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.2",
+            "version": "create-vite@9.3.2"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-26T19:14:00Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.39.0",
+            "version": "v3.39.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 478,
+          "HIGH": 1758,
+          "LOW": 489,
+          "MEDIUM": 1729,
+          "NONE": 1,
+          "UNSCORED": 364
+        }
+      },
+      "snapshot": {
+        "cves": 4819,
+        "kevAdded": 2,
+        "knownExploited": 14,
+        "projects": 18,
+        "releases": 6,
+        "techEntries": 17
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1760
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 6,
+          "status": "partial",
+          "total": 55
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 4819,
+          "status": "success",
+          "total": 4819
+        },
+        "rss": {
+          "failures": 2,
+          "inWindow": 17,
+          "status": "partial",
+          "total": 169
+        }
+      },
+      "technology": {
+        "categories": {
+          "tech": 17
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-27T16:00:12+00:00",
+            "source": "Meta",
+            "title": "PrivacyLib: Privacy Controls at the Data Access Boundary",
+            "url": "https://engineering.fb.com/2026/10/27/security/privacylib/"
+          },
+          {
+            "published_at": "2026-10-27T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
+            "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/"
+          },
+          {
+            "published_at": "2026-10-27T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Securely connecting Gemini Enterprise to Snowflake data",
+            "url": "https://cloud.google.com/blog/products/data-analytics/bridge-gemini-enterprise-and-snowflake-with-google-adk/"
+          },
+          {
+            "published_at": "2026-10-27T15:59:24+00:00",
+            "source": "Meta",
+            "title": "Python Typing Survey 2026: AI Tools and the Shifting Checker Landscape",
+            "url": "https://engineering.fb.com/2026/10/27/developer-tools/python-typing-survey-2026-ai-tools-checker-landscape/"
+          },
+          {
+            "published_at": "2026-10-27T14:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Bringing Google TPUs to Oracle Cloud Infrastructure",
+            "url": "https://cloud.google.com/blog/products/infrastructure/bringing-google-tpus-to-oracle-cloud-infrastructure/"
+          },
+          {
+            "published_at": "2026-10-27T13:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Gemini Robotics Embodied Reasoning 2 is now available on Google Cloud",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud/"
+          },
+          {
+            "published_at": "2026-10-27T13:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "What took the Internet offline in Q3 2026",
+            "url": "https://blog.cloudflare.com/q3-2026-internet-disruption-summary/"
+          },
+          {
+            "published_at": "2026-10-27T13:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Introducing the Cloudflare PHP Capture the Flag challenge",
+            "url": "https://blog.cloudflare.com/php-ctf/"
+          },
+          {
+            "published_at": "2026-10-27T04:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Google Cloud and NASA: Testing robotic systems for deep space missions",
+            "url": "https://cloud.google.com/blog/topics/public-sector/google-cloud-and-nasa-testing-robotic-systems-for-deep-space-missions/"
+          },
+          {
+            "published_at": "2026-10-26T22:01:23+00:00",
+            "source": "Cloudflare",
+            "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+            "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-27",
       "opensource": {
         "topProjects": [
@@ -9021,8 +9267,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-26T22:51:38.059626+00:00",
-    "totalSnapshots": 41,
+    "generatedAt": "2026-10-27T22:31:15.093274+00:00",
+    "totalSnapshots": 42,
     "warnings": []
   }
 }
