@@ -1,0 +1,371 @@
+{
+  "coveredIstDay": "2026-10-28",
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-28T22:46:50.653791+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": -25,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201285,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 16,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143187,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": -17,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139494,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": -16,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128594,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 17,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123159,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": -9,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120886,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 85,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 114256,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 24,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105153,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 12,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98011,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": -23,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91539,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 0,
+      "patch": 5
+    },
+    "recent": [
+      {
+        "project": "terraform",
+        "published_at": "2026-10-28T18:02:22Z",
+        "repository": "hashicorp/terraform",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
+        "version": "v1.17.1"
+      },
+      {
+        "project": "pytorch",
+        "published_at": "2026-10-28T17:09:49Z",
+        "repository": "pytorch/pytorch",
+        "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0",
+        "version": "v2.15.0"
+      },
+      {
+        "project": "node",
+        "published_at": "2026-10-28T16:57:41Z",
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node/releases/tag/v26.13.0",
+        "version": "v26.13.0"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-10-28T04:56:35Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.6",
+        "version": "v1.36.6"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-10-28T04:37:53Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.2",
+        "version": "v1.37.2"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-10-28T04:37:39Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.13",
+        "version": "v1.34.13"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-10-28T04:37:28Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.10",
+        "version": "v1.35.10"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-46300",
+        "date_added": "2026-10-28",
+        "product": "Kernel",
+        "vendor_project": "Linux",
+        "vulnerability_name": "Linux Kernel Missing Initialization of a Variable Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-41709",
+        "date_added": "2026-10-28",
+        "product": "VMware ESX",
+        "vendor_project": "Broadcom",
+        "vulnerability_name": "Broadcom VMWare ESX Insufficient Logging Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 4.4,
+        "description": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1;",
+        "id": "CVE-2026-101754",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101754"
+      },
+      {
+        "cvss": 8.5,
+        "description": "Arcane is an interface for managing Docker containers, images, networks, and volumes. Prior to 2.5.0, UpdateRegistry and TestRegistry in backend/api/services/container_registry_service.go allow the re",
+        "id": "CVE-2026-96626",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96626"
+      },
+      {
+        "cvss": 3.7,
+        "description": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Difficult to exploit vulnerabili",
+        "id": "CVE-2026-91363",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91363"
+      },
+      {
+        "cvss": 5.3,
+        "description": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Easily exploitable vulnerability",
+        "id": "CVE-2026-91362",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91362"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Easily exploitable vulnerability",
+        "id": "CVE-2026-91360",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91360"
+      },
+      {
+        "cvss": 5.3,
+        "description": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Easily exploitable vulnerability",
+        "id": "CVE-2026-91359",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91359"
+      },
+      {
+        "cvss": 8.2,
+        "description": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Case management  Service (11g+)).  Supported versions that are affected are 12.2.1.4.0 and",
+        "id": "CVE-2026-91358",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91358"
+      },
+      {
+        "cvss": 4.2,
+        "description": "Vulnerability in the PeopleSoft Enterprise HCM Global Payroll Switzerland product of Oracle PeopleSoft (component: Global Payroll for Switzerland).   The supported version that is affected is 9.2. Eas",
+        "id": "CVE-2026-91356",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91356"
+      },
+      {
+        "cvss": 8.4,
+        "description": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v",
+        "id": "CVE-2026-91355",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91355"
+      },
+      {
+        "cvss": 9.9,
+        "description": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable v",
+        "id": "CVE-2026-91354",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91354"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 113,
+      "HIGH": 558,
+      "LOW": 87,
+      "MEDIUM": 532,
+      "NONE": 0,
+      "UNSCORED": 596
+    }
+  },
+  "snapshot": {
+    "cves": 1886,
+    "kevAdded": 2,
+    "knownExploited": 4,
+    "projects": 18,
+    "releases": 7,
+    "techEntries": 51
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 2,
+      "status": "success",
+      "total": 1762
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 7,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1886,
+      "status": "success",
+      "total": 1886
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 51,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 21,
+      "tech": 30
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-28T16:59:00+00:00",
+        "source": "Microsoft",
+        "title": "Publish Visual Studio Marketplace extensions securely with Trusted Publishing",
+        "url": "https://devblogs.microsoft.com/blog/trusted-publishing-visual-studio-marketplace/"
+      },
+      {
+        "published_at": "2026-10-28T16:09:28+00:00",
+        "source": "GitHub Blog",
+        "title": "GitHub Universe 2026: Evolving every layer of the stack",
+        "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
+      },
+      {
+        "published_at": "2026-10-28T16:07:40+00:00",
+        "source": "GitHub Blog",
+        "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+        "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+      },
+      {
+        "published_at": "2026-10-28T16:00:01+00:00",
+        "source": "Meta",
+        "title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+        "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/"
+      },
+      {
+        "published_at": "2026-10-28T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Behind the scenes, two months later: How we ship Google Agent Skills like products",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/behind-the-scenes-two-months-later-how-we-ship-google-agent-skills-like-products/"
+      },
+      {
+        "published_at": "2026-10-28T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "How GKE networking scales to support high densities of concurrent AI agents",
+        "url": "https://cloud.google.com/blog/products/networking/gke-networking-dataplane-for-large-agentic-ai-workloads/"
+      },
+      {
+        "published_at": "2026-10-28T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Near-zero downtime upgrades: Announcing Cloud SQL for MySQL blue-green deployments",
+        "url": "https://cloud.google.com/blog/products/databases/cloud-sql-blue-green-deployments/"
+      },
+      {
+        "published_at": "2026-10-28T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Introducing the AlloyDB Omni web UI for easier cluster observability",
+        "url": "https://cloud.google.com/blog/products/databases/alloydb-omni-delivers-a-web-ui-for-cluster-observability/"
+      },
+      {
+        "published_at": "2026-10-28T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "How to troubleshoot GKE workloads faster with VPC Flow Logs",
+        "url": "https://cloud.google.com/blog/products/containers-kubernetes/using-vpc-flow-logs-to-troubleshoot-gke-workloads/"
+      },
+      {
+        "published_at": "2026-10-28T15:52:17+00:00",
+        "source": "The Register",
+        "title": "Serial ransomware crook gets 70 months behind bars for Nefilim, Hive roles",
+        "url": "https://www.theregister.com/cyber-crime/2026/10/28/serial-ransomware-crook-gets-70-months-behind-bars-for-nefilim-hive-roles/5306050"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 1,
+      "Cloudflare": 3,
+      "GitHub Blog": 2,
+      "Google Cloud": 15,
+      "Meta": 4,
+      "Microsoft": 2,
+      "Netflix": 2,
+      "The Register": 21
+    }
+  },
+  "window": {
+    "end": "2026-10-28T18:30:00+00:00",
+    "start": "2026-10-27T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

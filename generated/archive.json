@@ -1,6 +1,260 @@
 {
   "archive": [
     {
+      "date": "2026-10-29",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": -25,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201285,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 16,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143187,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -17,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139494,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -16,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128594,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 17,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123159,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": -9,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120886,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 85,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114256,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 24,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105153,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 12,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98011,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -23,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91539,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 2,
+          "other": 0,
+          "patch": 5
+        },
+        "recent": [
+          {
+            "project": "terraform",
+            "published_at": "2026-10-28T18:02:22Z",
+            "repository": "hashicorp/terraform",
+            "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
+            "version": "v1.17.1"
+          },
+          {
+            "project": "pytorch",
+            "published_at": "2026-10-28T17:09:49Z",
+            "repository": "pytorch/pytorch",
+            "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0",
+            "version": "v2.15.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-10-28T16:57:41Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v26.13.0",
+            "version": "v26.13.0"
+          },
+          {
+            "project": "kubernetes",
+            "published_at": "2026-10-28T04:56:35Z",
+            "repository": "kubernetes/kubernetes",
+            "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.6",
+            "version": "v1.36.6"
+          },
+          {
+            "project": "kubernetes",
+            "published_at": "2026-10-28T04:37:53Z",
+            "repository": "kubernetes/kubernetes",
+            "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.2",
+            "version": "v1.37.2"
+          },
+          {
+            "project": "kubernetes",
+            "published_at": "2026-10-28T04:37:39Z",
+            "repository": "kubernetes/kubernetes",
+            "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.13",
+            "version": "v1.34.13"
+          },
+          {
+            "project": "kubernetes",
+            "published_at": "2026-10-28T04:37:28Z",
+            "repository": "kubernetes/kubernetes",
+            "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.10",
+            "version": "v1.35.10"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 113,
+          "HIGH": 558,
+          "LOW": 87,
+          "MEDIUM": 532,
+          "NONE": 0,
+          "UNSCORED": 596
+        }
+      },
+      "snapshot": {
+        "cves": 1886,
+        "kevAdded": 2,
+        "knownExploited": 4,
+        "projects": 18,
+        "releases": 7,
+        "techEntries": 51
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1762
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 7,
+          "status": "partial",
+          "total": 56
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1886,
+          "status": "success",
+          "total": 1886
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 51,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 21,
+          "tech": 30
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-28T16:59:00+00:00",
+            "source": "Microsoft",
+            "title": "Publish Visual Studio Marketplace extensions securely with Trusted Publishing",
+            "url": "https://devblogs.microsoft.com/blog/trusted-publishing-visual-studio-marketplace/"
+          },
+          {
+            "published_at": "2026-10-28T16:09:28+00:00",
+            "source": "GitHub Blog",
+            "title": "GitHub Universe 2026: Evolving every layer of the stack",
+            "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
+          },
+          {
+            "published_at": "2026-10-28T16:07:40+00:00",
+            "source": "GitHub Blog",
+            "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+            "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+          },
+          {
+            "published_at": "2026-10-28T16:00:01+00:00",
+            "source": "Meta",
+            "title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
+            "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/"
+          },
+          {
+            "published_at": "2026-10-28T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Behind the scenes, two months later: How we ship Google Agent Skills like products",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/behind-the-scenes-two-months-later-how-we-ship-google-agent-skills-like-products/"
+          },
+          {
+            "published_at": "2026-10-28T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How GKE networking scales to support high densities of concurrent AI agents",
+            "url": "https://cloud.google.com/blog/products/networking/gke-networking-dataplane-for-large-agentic-ai-workloads/"
+          },
+          {
+            "published_at": "2026-10-28T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Near-zero downtime upgrades: Announcing Cloud SQL for MySQL blue-green deployments",
+            "url": "https://cloud.google.com/blog/products/databases/cloud-sql-blue-green-deployments/"
+          },
+          {
+            "published_at": "2026-10-28T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Introducing the AlloyDB Omni web UI for easier cluster observability",
+            "url": "https://cloud.google.com/blog/products/databases/alloydb-omni-delivers-a-web-ui-for-cluster-observability/"
+          },
+          {
+            "published_at": "2026-10-28T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How to troubleshoot GKE workloads faster with VPC Flow Logs",
+            "url": "https://cloud.google.com/blog/products/containers-kubernetes/using-vpc-flow-logs-to-troubleshoot-gke-workloads/"
+          },
+          {
+            "published_at": "2026-10-28T15:52:17+00:00",
+            "source": "The Register",
+            "title": "Serial ransomware crook gets 70 months behind bars for Nefilim, Hive roles",
+            "url": "https://www.theregister.com/cyber-crime/2026/10/28/serial-ransomware-crook-gets-70-months-behind-bars-for-nefilim-hive-roles/5306050"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-28",
       "opensource": {
         "topProjects": [
@@ -9267,8 +9521,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-27T22:31:15.093274+00:00",
-    "totalSnapshots": 42,
+    "generatedAt": "2026-10-28T22:46:50.653791+00:00",
+    "totalSnapshots": 43,
     "warnings": []
   }
 }

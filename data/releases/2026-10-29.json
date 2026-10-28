@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "collectedAt": "2026-10-28T22:46:33.852398+00:00",
+    "count": 56,
+    "failures": [
+      {
+        "error": "GitHub repository response was missing required fields or did not match the requested repository.",
+        "repository": "facebook/react"
+      },
+      {
+        "error": "GitHub repository response was missing required fields or did not match the requested repository.",
+        "repository": "prisma/prisma"
+      }
+    ],
+    "reportingDate": "2026-10-29",
+    "source": "GitHub"
+  },
+  "releases": [
+    {
+      "name": "v3.41.0",
+      "project": "openai-python",
+      "published_at": "2026-10-28T22:26:54Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.41.0",
+      "version": "v3.41.0"
+    },
+    {
+      "name": "2026-10-28, Version 24.22.2 'Krypton' (LTS), @aduh95",
+      "project": "node",
+      "published_at": "2026-10-28T18:39:09Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v24.22.2",
+      "version": "v24.22.2"
+    },
+    {
+      "name": "v1.17.1",
+      "project": "terraform",
+      "published_at": "2026-10-28T18:02:22Z",
+      "repository": "hashicorp/terraform",
+      "source": "GitHub",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
+      "version": "v1.17.1"
+    },
+    {
+      "name": "PyTorch 2.15.0 Release",
+      "project": "pytorch",
+      "published_at": "2026-10-28T17:09:49Z",
+      "repository": "pytorch/pytorch",
+      "source": "GitHub",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0",
+      "version": "v2.15.0"
+    },
+    {
+      "name": "2026-10-28, Version 26.13.0 'Lithium' (LTS), @richardlau",
+      "project": "node",
+      "published_at": "2026-10-28T16:57:41Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.13.0",
+      "version": "v26.13.0"
+    },
+    {
+      "name": "v1.36.6",
+      "project": "kubernetes",
+      "published_at": "2026-10-28T04:56:35Z",
+      "repository": "kubernetes/kubernetes",
+      "source": "GitHub",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.6",
+      "version": "v1.36.6"
+    },
+    {
+      "name": "v1.37.2",
+      "project": "kubernetes",
+      "published_at": "2026-10-28T04:37:53Z",
+      "repository": "kubernetes/kubernetes",
+      "source": "GitHub",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.2",
+      "version": "v1.37.2"
+    },
+    {
+      "name": "v1.34.13",
+      "project": "kubernetes",
+      "published_at": "2026-10-28T04:37:39Z",
+      "repository": "kubernetes/kubernetes",
+      "source": "GitHub",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.13",
+      "version": "v1.34.13"
+    },
+    {
+      "name": "v1.35.10",
+      "project": "kubernetes",
+      "published_at": "2026-10-28T04:37:28Z",
+      "repository": "kubernetes/kubernetes",
+      "source": "GitHub",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.10",
+      "version": "v1.35.10"
+    },
+    {
+      "name": "v3.40.0",
+      "project": "openai-python",
+      "published_at": "2026-10-27T15:37:52Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.40.0",
+      "version": "v3.40.0"
+    },
+    {
+      "name": "v12.70.2",
+      "project": "framework",
+      "published_at": "2026-10-27T14:09:13Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v12.70.2",
+      "version": "v12.70.2"
+    },
+    {
+      "name": "v13.39.0",
+      "project": "framework",
+      "published_at": "2026-10-27T14:06:19Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.39.0",
+      "version": "v13.39.0"
+    },
+    {
+      "name": "create-vite@9.3.3",
+      "project": "vite",
+      "published_at": "2026-10-27T09:27:16Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.3",
+      "version": "create-vite@9.3.3"
+    },
+    {
+      "name": "create-vite@9.3.2",
+      "project": "vite",
+      "published_at": "2026-10-27T06:55:31Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.2",
+      "version": "create-vite@9.3.2"
+    },
+    {
+      "name": "v3.39.0",
+      "project": "openai-python",
+      "published_at": "2026-10-26T19:14:00Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.39.0",
+      "version": "v3.39.0"
+    },
+    {
+      "name": "v3.38.0",
+      "project": "openai-python",
+      "published_at": "2026-10-26T16:35:03Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.38.0",
+      "version": "v3.38.0"
+    },
+    {
+      "name": "v2.3.0",
+      "project": "anthropic-sdk-python",
+      "published_at": "2026-10-23T23:18:22Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
+      "version": "v2.3.0"
+    },
+    {
+      "name": "v2.2.0",
+      "project": "anthropic-sdk-python",
+      "published_at": "2026-10-23T13:10:10Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
+      "version": "v2.2.0"
+    },
+    {
+      "name": "v3.37.0",
+      "project": "openai-python",
+      "published_at": "2026-10-22T20:03:54Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.37.0",
+      "version": "v3.37.0"
+    },
+    {
+      "name": "v1.16.7",
+      "project": "terraform",
+      "published_at": "2026-10-22T09:30:19Z",
+      "repository": "hashicorp/terraform",
+      "source": "GitHub",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.7",
+      "version": "v1.16.7"
+    },
+    {
+      "name": "v2.1.0",
+      "project": "anthropic-sdk-python",
+      "published_at": "2026-10-21T22:00:30Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.1.0",
+      "version": "v2.1.0"
+    },
+    {
+      "name": "v1.17.0",
+      "project": "terraform",
+      "published_at": "2026-10-21T17:32:54Z",
+      "repository": "hashicorp/terraform",
+      "source": "GitHub",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
+      "version": "v1.17.0"
+    },
+    {
+      "name": "v2.0.0",
+      "project": "anthropic-sdk-python",
+      "published_at": "2026-10-21T15:51:32Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
+      "version": "v2.0.0"
+    },
+    {
+      "name": "v12.70.1",
+      "project": "framework",
+      "published_at": "2026-10-21T12:57:04Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v12.70.1",
+      "version": "v12.70.1"
+    },
+    {
+      "name": "2026-10-21, Version 26.12.1 (Current), @aduh95 prepared by @RafaelGSS",
+      "project": "node",
+      "published_at": "2026-10-21T10:38:29Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v26.12.1",
+      "version": "v26.12.1"
+    },
+    {
+      "name": "2026-10-21, Version 24.22.1 'Krypton' (LTS), @aduh95",
+      "project": "node",
+      "published_at": "2026-10-21T10:38:25Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v24.22.1",
+      "version": "v24.22.1"
+    },
+    {
+      "name": "2026-10-21, Version 22.23.4 'Jod' (LTS), @aduh95",
+      "project": "node",
+      "published_at": "2026-10-21T10:38:20Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v22.23.4",
+      "version": "v22.23.4"
+    },
+    {
+      "name": "v8.3.5",
+      "project": "vite",
+      "published_at": "2026-10-21T06:35:46Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.5",
+      "version": "v8.3.5"
+    },
+    {
+      "name": "v6.4.5",
+      "project": "vite",
+      "published_at": "2026-10-21T05:31:06Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v6.4.5",
+      "version": "v6.4.5"
+    },
+    {
+      "name": "v1.17.0",
+      "project": "anthropic-sdk-python",
+      "published_at": "2026-10-20T22:13:01Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
+      "version": "v1.17.0"
+    },
+    {
+      "name": "v13.38.0",
+      "project": "framework",
+      "published_at": "2026-10-20T10:47:31Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.38.0",
+      "version": "v13.38.0"
+    },
+    {
+      "name": "create-vite@9.3.1",
+      "project": "vite",
+      "published_at": "2026-10-20T03:01:54Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.1",
+      "version": "create-vite@9.3.1"
+    },
+    {
+      "name": "v13.37.0",
+      "project": "framework",
+      "published_at": "2026-10-16T05:00:57Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.37.0",
+      "version": "v13.37.0"
+    },
+    {
+      "name": "Rust 1.99.1",
+      "project": "rust",
+      "published_at": "2026-10-16T04:47:44Z",
+      "repository": "rust-lang/rust",
+      "source": "GitHub",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.99.1",
+      "version": "1.99.1"
+    },
+    {
+      "name": "v1.16.6",
+      "project": "terraform",
+      "published_at": "2026-10-14T09:31:54Z",
+      "repository": "hashicorp/terraform",
+      "source": "GitHub",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.6",
+      "version": "v1.16.6"
+    },
+    {
+      "name": "v3.5.44",
+      "project": "core",
+      "published_at": "2026-10-13T07:43:25Z",
+      "repository": "vuejs/core",
+      "source": "GitHub",
+      "url": "https://github.com/vuejs/core/releases/tag/v3.5.44",
+      "version": "v3.5.44"
+    },
+    {
+      "name": "Rust 1.99.0",
+      "project": "rust",
+      "published_at": "2026-10-01T12:41:12Z",
+      "repository": "rust-lang/rust",
+      "source": "GitHub",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.99.0",
+      "version": "1.99.0"
+    },
+    {
+      "name": "PyTorch 2.14.1 Release",
+      "project": "pytorch",
+      "published_at": "2026-09-30T19:14:48Z",
+      "repository": "pytorch/pytorch",
+      "source": "GitHub",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.1",
+      "version": "v2.14.1"
+    },
+    {
+      "name": "Rust 1.98.1",
+      "project": "rust",
+      "published_at": "2026-09-03T13:14:07Z",
+      "repository": "rust-lang/rust",
+      "source": "GitHub",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.98.1",
+      "version": "1.98.1"
+    },
+    {
+      "name": "PyTorch 2.14.0 Release",
+      "project": "pytorch",
+      "published_at": "2026-09-02T17:40:10Z",
+      "repository": "pytorch/pytorch",
+      "source": "GitHub",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.14.0",
+      "version": "v2.14.0"
+    },
+    {
+      "name": "Rust 1.98.0",
+      "project": "rust",
+      "published_at": "2026-08-20T18:05:33Z",
+      "repository": "rust-lang/rust",
+      "source": "GitHub",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.98.0",
+      "version": "1.98.0"
+    },
+    {
+      "name": "Developer Update - August 2026",
+      "project": "supabase",
+      "published_at": "2026-08-07T13:57:57Z",
+      "repository": "supabase/supabase",
+      "source": "GitHub",
+      "url": "https://github.com/supabase/supabase/releases/tag/v1.26.08",
+      "version": "v1.26.08"
+    },
+    {
+      "name": "Rust 1.97.1",
+      "project": "rust",
+      "published_at": "2026-07-16T12:29:15Z",
+      "repository": "rust-lang/rust",
+      "source": "GitHub",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.97.1",
+      "version": "1.97.1"
+    },
+    {
+      "name": "v4.3.3",
+      "project": "tailwindcss",
+      "published_at": "2026-07-16T11:55:08Z",
+      "repository": "tailwindlabs/tailwindcss",
+      "source": "GitHub",
+      "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.3",
+      "version": "v4.3.3"
+    },
+    {
+      "name": "Developer Update - July 2026",
+      "project": "supabase",
+      "published_at": "2026-07-09T21:13:24Z",
+      "repository": "supabase/supabase",
+      "source": "GitHub",
+      "url": "https://github.com/supabase/supabase/releases/tag/v1.26.07",
+      "version": "v1.26.07"
+    },
+    {
+      "name": "PyTorch 2.13.0 Release",
+      "project": "pytorch",
+      "published_at": "2026-07-08T17:39:58Z",
+      "repository": "pytorch/pytorch",
+      "source": "GitHub",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.13.0",
+      "version": "v2.13.0"
+    },
+    {
+      "name": "v4.3.2",
+      "project": "tailwindcss",
+      "published_at": "2026-06-29T14:21:45Z",
+      "repository": "tailwindlabs/tailwindcss",
+      "source": "GitHub",
+      "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.2",
+      "version": "v4.3.2"
+    },
+    {
+      "name": "PyTorch 2.12.1 Release, bug fix release",
+      "project": "pytorch",
+      "published_at": "2026-06-18T00:41:17Z",
+      "repository": "pytorch/pytorch",
+      "source": "GitHub",
+      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.12.1",
+      "version": "v2.12.1"
+    },
+    {
+      "name": "v4.3.1",
+      "project": "tailwindcss",
+      "published_at": "2026-06-12T17:50:58Z",
+      "repository": "tailwindlabs/tailwindcss",
+      "source": "GitHub",
+      "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.1",
+      "version": "v4.3.1"
+    },
+    {
+      "name": "v4.3.0",
+      "project": "tailwindcss",
+      "published_at": "2026-05-08T20:17:25Z",
+      "repository": "tailwindlabs/tailwindcss",
+      "source": "GitHub",
+      "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.0",
+      "version": "v4.3.0"
+    },
+    {
+      "name": "Developer Update - May 2026",
+      "project": "supabase",
+      "published_at": "2026-05-07T23:45:42Z",
+      "repository": "supabase/supabase",
+      "source": "GitHub",
+      "url": "https://github.com/supabase/supabase/releases/tag/v1.26.05",
+      "version": "v1.26.05"
+    },
+    {
+      "name": "v4.2.4",
+      "project": "tailwindcss",
+      "published_at": "2026-04-21T13:09:56Z",
+      "repository": "tailwindlabs/tailwindcss",
+      "source": "GitHub",
+      "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.2.4",
+      "version": "v4.2.4"
+    },
+    {
+      "name": "Developer Update - April 2026",
+      "project": "supabase",
+      "published_at": "2026-04-09T14:38:08Z",
+      "repository": "supabase/supabase",
+      "source": "GitHub",
+      "url": "https://github.com/supabase/supabase/releases/tag/v1.26.04",
+      "version": "v1.26.04"
+    },
+    {
+      "name": "TensorFlow 2.21.0",
+      "project": "tensorflow",
+      "published_at": "2026-03-06T19:48:15Z",
+      "repository": "tensorflow/tensorflow",
+      "source": "GitHub",
+      "url": "https://github.com/tensorflow/tensorflow/releases/tag/v2.21.0",
+      "version": "v2.21.0"
+    },
+    {
+      "name": "Developer Update - March 2026",
+      "project": "supabase",
+      "published_at": "2026-03-05T18:43:08Z",
+      "repository": "supabase/supabase",
+      "source": "GitHub",
+      "url": "https://github.com/supabase/supabase/releases/tag/v1.26.03",
+      "version": "v1.26.03"
+    },
+    {
+      "name": "TensorFlow 2.19.1",
+      "project": "tensorflow",
+      "published_at": "2025-08-13T17:45:03Z",
+      "repository": "tensorflow/tensorflow",
+      "source": "GitHub",
+      "url": "https://github.com/tensorflow/tensorflow/releases/tag/v2.19.1",
+      "version": "v2.19.1"
+    }
+  ]
+}
