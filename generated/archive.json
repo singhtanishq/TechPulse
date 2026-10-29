@@ -1,6 +1,225 @@
 {
   "archive": [
     {
+      "date": "2026-10-30",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": -71,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201214,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 9,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143196,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -60,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139434,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -77,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128517,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": -67,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123092,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": -68,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120818,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 50,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114306,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": -148,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105005,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": -3,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98008,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -95,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91444,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 1,
+          "other": 0,
+          "patch": 1
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-10-28T22:26:54Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.41.0",
+            "version": "v3.41.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-10-28T18:39:09Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v24.22.2",
+            "version": "v24.22.2"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 168,
+          "HIGH": 728,
+          "LOW": 78,
+          "MEDIUM": 686,
+          "NONE": 0,
+          "UNSCORED": 162
+        }
+      },
+      "snapshot": {
+        "cves": 1822,
+        "kevAdded": 2,
+        "knownExploited": 7,
+        "projects": 18,
+        "releases": 2,
+        "techEntries": 49
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1764
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 2,
+          "status": "partial",
+          "total": 55
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1822,
+          "status": "success",
+          "total": 1822
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 49,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 19,
+          "tech": 30
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-29T16:00:12+00:00",
+            "source": "Meta",
+            "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+            "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/"
+          },
+          {
+            "published_at": "2026-10-29T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Cloud CISO Perspectives: Introducing new $250,000 tier for Google Cloud VRP (Q&A)",
+            "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-introducing-new-tier-for-google-cloud-vrp/"
+          },
+          {
+            "published_at": "2026-10-29T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Data Cloud",
+            "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+          },
+          {
+            "published_at": "2026-10-29T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Querying Databricks Apache Iceberg Tables with the borderless Lakehouse",
+            "url": "https://cloud.google.com/blog/products/data-analytics/querying-databricks-iceberg-tables-with-google-clouds-lakehouse/"
+          },
+          {
+            "published_at": "2026-10-29T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Grounding agents in one context graph connecting semantic models you already trust",
+            "url": "https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/"
+          },
+          {
+            "published_at": "2026-10-29T14:47:40+00:00",
+            "source": "The Register",
+            "title": "Belgium's tax agency confirms cyberattack, pulls services offline",
+            "url": "https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409"
+          },
+          {
+            "published_at": "2026-10-29T12:58:34+00:00",
+            "source": "Ars Technica",
+            "title": "Massive leak exposes 41,000 DHS workers and undercover ICE agents",
+            "url": "https://arstechnica.com/security/2026/10/massive-leak-exposes-41000-dhs-workers-and-undercover-ice-agents/"
+          },
+          {
+            "published_at": "2026-10-29T12:55:00+00:00",
+            "source": "Cloudflare",
+            "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+            "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/"
+          },
+          {
+            "published_at": "2026-10-29T12:33:00+00:00",
+            "source": "The Register",
+            "title": "Shortlist of age checks for the UK's under-16 social media ban is out, 'some' adults will need verifying",
+            "url": "https://www.theregister.com/security/2026/10/29/shortlist-of-age-checks-for-the-uks-under-16-social-media-ban-is-out-some-adults-will-need-verifying/5306282"
+          },
+          {
+            "published_at": "2026-10-29T12:00:00+00:00",
+            "source": "The Register",
+            "title": "Attackers turn GitHub issues into supply chain campaign against 61 public repos in less than an hour",
+            "url": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-29",
       "opensource": {
         "topProjects": [
@@ -9521,8 +9740,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-28T22:46:50.653791+00:00",
-    "totalSnapshots": 43,
+    "generatedAt": "2026-10-29T22:55:39.405042+00:00",
+    "totalSnapshots": 44,
     "warnings": []
   }
 }

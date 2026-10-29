@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1822,
+      "date": "2026-10-30",
+      "kevAdded": 2,
+      "knownExploited": 7,
+      "projects": 18,
+      "releases": 2,
+      "techEntries": 49
+    },
+    {
       "cves": 1886,
       "date": "2026-10-29",
       "kevAdded": 2,
@@ -389,16 +398,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-28",
-    "date": "2026-10-29",
-    "daysObserved": 43,
-    "generatedAt": "2026-10-28T22:46:50.653791+00:00",
-    "snapshots": 43,
+    "coveredDate": "2026-10-29",
+    "date": "2026-10-30",
+    "daysObserved": 44,
+    "generatedAt": "2026-10-29T22:55:39.405042+00:00",
+    "snapshots": 44,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": -25,
+      "daily_growth": -71,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -406,11 +415,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201285,
+      "stars": 201214,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 9,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -418,11 +427,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143187,
+      "stars": 143196,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": -17,
+      "daily_growth": -60,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -430,11 +439,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139494,
+      "stars": 139434,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": -16,
+      "daily_growth": -77,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -442,11 +451,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128594,
+      "stars": 128517,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 17,
+      "daily_growth": -67,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -454,11 +463,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123159,
+      "stars": 123092,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": -9,
+      "daily_growth": -68,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -466,11 +475,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120886,
+      "stars": 120818,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 85,
+      "daily_growth": 50,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -478,11 +487,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114256,
+      "stars": 114306,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 24,
+      "daily_growth": -148,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -490,11 +499,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105153,
+      "stars": 105005,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 12,
+      "daily_growth": -3,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -502,11 +511,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98011,
+      "stars": 98008,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": -23,
+      "daily_growth": -95,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -514,288 +523,243 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91539,
+      "stars": 91444,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-10-28T22:26:54Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.41.0",
+      "version": "v3.41.0"
+    },
+    {
       "kind": "patch",
-      "project": "terraform",
-      "publishedAt": "2026-10-28T18:02:22Z",
-      "repository": "hashicorp/terraform",
-      "source": "GitHub",
-      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
-      "version": "v1.17.1"
-    },
-    {
-      "kind": "minor",
-      "project": "pytorch",
-      "publishedAt": "2026-10-28T17:09:49Z",
-      "repository": "pytorch/pytorch",
-      "source": "GitHub",
-      "url": "https://github.com/pytorch/pytorch/releases/tag/v2.15.0",
-      "version": "v2.15.0"
-    },
-    {
-      "kind": "minor",
       "project": "node",
-      "publishedAt": "2026-10-28T16:57:41Z",
+      "publishedAt": "2026-10-28T18:39:09Z",
       "repository": "nodejs/node",
       "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v26.13.0",
-      "version": "v26.13.0"
-    },
-    {
-      "kind": "patch",
-      "project": "kubernetes",
-      "publishedAt": "2026-10-28T04:56:35Z",
-      "repository": "kubernetes/kubernetes",
-      "source": "GitHub",
-      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.6",
-      "version": "v1.36.6"
-    },
-    {
-      "kind": "patch",
-      "project": "kubernetes",
-      "publishedAt": "2026-10-28T04:37:53Z",
-      "repository": "kubernetes/kubernetes",
-      "source": "GitHub",
-      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.2",
-      "version": "v1.37.2"
-    },
-    {
-      "kind": "patch",
-      "project": "kubernetes",
-      "publishedAt": "2026-10-28T04:37:39Z",
-      "repository": "kubernetes/kubernetes",
-      "source": "GitHub",
-      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.13",
-      "version": "v1.34.13"
-    },
-    {
-      "kind": "patch",
-      "project": "kubernetes",
-      "publishedAt": "2026-10-28T04:37:28Z",
-      "repository": "kubernetes/kubernetes",
-      "source": "GitHub",
-      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.10",
-      "version": "v1.35.10"
+      "url": "https://github.com/nodejs/node/releases/tag/v24.22.2",
+      "version": "v24.22.2"
     }
   ],
   "security": {
-    "critical": 113,
-    "high": 558,
-    "kevCatalogTotal": 1762,
+    "critical": 168,
+    "high": 728,
+    "kevCatalogTotal": 1764,
     "latest": [
       {
-        "cvss_score": 4.4,
+        "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise…",
-        "id": "CVE-2026-101754",
+        "description": "This issue was addressed by removing additional entitlements. This issue is fixed in macOS Golden Gate 27. An app may be able to access user-sensitive data.",
+        "id": "CVE-2026-86935",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:20:04.327",
-        "publishedAt": "2026-10-20T22:18:30.540",
+        "lastModifiedAt": "2026-10-29T18:28:48.543",
+        "publishedAt": "2026-10-20T01:17:27.990",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Client programs).  Supported versions that are affected are MySQL Server…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101754"
+        "title": "This issue was addressed by removing additional entitlements. This issue is fixed in macOS Golden Gate 27. An app may be able to access user-sensitive data.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86935"
       },
       {
-        "cvss_score": 8.5,
+        "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "Arcane is an interface for managing Docker containers, images, networks, and volumes. Prior to 2.5.0, UpdateRegistry and TestRegistry in backend/api/services/container_registry_service.go allow the registry URL to change while preserving the stored encrypted token. When a holder of registries:update and registries:test repoints a generic registry URL without supplying a replacement token…",
-        "id": "CVE-2026-96626",
+        "description": "This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Golden Gate 27. An app may be able to disclose kernel memory.",
+        "id": "CVE-2026-86940",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:24.670",
-        "publishedAt": "2026-10-16T22:18:58.070",
+        "lastModifiedAt": "2026-10-29T18:27:32.377",
+        "publishedAt": "2026-10-20T01:17:28.080",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Golden Gate 27. An app may be able to disclose kernel memory.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86940"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "A privacy issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
+        "id": "CVE-2026-86979",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-29T18:26:37.613",
+        "publishedAt": "2026-10-20T01:17:29.450",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A privacy issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86979"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "Out-of-bounds read in Microsoft Windows Search Component allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83686",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-29T18:26:29.823",
+        "publishedAt": "2026-10-13T19:20:11.090",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Out-of-bounds read in Microsoft Windows Search Component allows an authorized attacker to disclose information locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83686"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "Access of resource using incompatible type ('type confusion') in Windows Portable Device File System Driver allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83664",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-29T18:26:06.547",
+        "publishedAt": "2026-10-13T19:20:07.843",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Access of resource using incompatible type ('type confusion') in Windows Portable Device File System Driver allows an authorized attacker to disclose…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83664"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "Null pointer dereference in Windows DHCP Server allows an unauthorized attacker to deny service over a network.",
+        "id": "CVE-2026-83665",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-29T18:25:58.600",
+        "publishedAt": "2026-10-13T19:20:08.023",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Arcane is an interface for managing Docker containers, images, networks, and volumes. Prior to 2.5.0, UpdateRegistry and TestRegistry in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96626"
+        "title": "Null pointer dereference in Windows DHCP Server allows an unauthorized attacker to deny service over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83665"
       },
       {
-        "cvss_score": 3.7,
+        "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM Cloud Applications.  Successful attacks of this vulnerability can result in  unauthorized read access to a…",
-        "id": "CVE-2026-91363",
+        "description": "Out-of-bounds read in Windows WLAN Service allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83668",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:24.517",
-        "publishedAt": "2026-10-20T22:20:39.120",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91363"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM Cloud Applications.  Successful attacks of this vulnerability can result in  unauthorized read access to a…",
-        "id": "CVE-2026-91362",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:24.373",
-        "publishedAt": "2026-10-20T22:20:39.000",
+        "lastModifiedAt": "2026-10-29T18:25:50.447",
+        "publishedAt": "2026-10-13T19:20:08.510",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91362"
+        "title": "Out-of-bounds read in Windows WLAN Service allows an authorized attacker to disclose information locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83668"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "Use of uninitialized resource in Windows Error Reporting allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-83669",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-29T18:25:41.727",
+        "publishedAt": "2026-10-13T19:20:08.700",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Use of uninitialized resource in Windows Error Reporting allows an authorized attacker to elevate privileges locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83669"
       },
       {
         "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Siebel CRM Cloud Applications.  Successful attacks of this vulnerability can result in  unauthorized access to critical data…",
-        "id": "CVE-2026-91360",
+        "description": "Out-of-bounds read in Windows Hyper-V allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83671",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:24.230",
-        "publishedAt": "2026-10-20T22:20:38.757",
+        "lastModifiedAt": "2026-10-29T18:25:36.387",
+        "publishedAt": "2026-10-13T19:20:09.060",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91360"
+        "title": "Out-of-bounds read in Windows Hyper-V allows an authorized attacker to disclose information locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83671"
       },
       {
-        "cvss_score": 5.3,
+        "cvss_score": 4.7,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are 22.3-26.9. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Siebel CRM Cloud Applications.  Successful attacks of this vulnerability can result in  unauthorized read access to a…",
-        "id": "CVE-2026-91359",
+        "description": "Exposure of sensitive system information to an unauthorized control sphere in Windows Installer allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83672",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:24.083",
-        "publishedAt": "2026-10-20T22:20:38.643",
+        "lastModifiedAt": "2026-10-29T18:25:29.557",
+        "publishedAt": "2026-10-13T19:20:09.217",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Vulnerability in the Siebel CRM Cloud Applications product of Oracle Siebel CRM (component: Siebel Cloud Manager).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91359"
+        "title": "Exposure of sensitive system information to an unauthorized control sphere in Windows Installer allows an authorized attacker to disclose information locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83672"
       },
       {
-        "cvss_score": 8.2,
+        "cvss_score": 7.0,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Case management  Service (11g+)).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Process Management Suite.  Successful attacks of this…",
-        "id": "CVE-2026-91358",
+        "description": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-83675",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:23.957",
-        "publishedAt": "2026-10-20T22:20:38.527",
+        "lastModifiedAt": "2026-10-29T18:25:23.837",
+        "publishedAt": "2026-10-13T19:20:09.527",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Business Process Management Suite product of Oracle Fusion Middleware (component: Case management  Service (11g+)).  Supported…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91358"
+        "title": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83675"
       },
       {
-        "cvss_score": 4.2,
+        "cvss_score": 7.0,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the PeopleSoft Enterprise HCM Global Payroll Switzerland product of Oracle PeopleSoft (component: Global Payroll for Switzerland).   The supported version that is affected is 9.2. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where PeopleSoft Enterprise HCM Global Payroll Switzerland executes to compromise PeopleSoft Enterprise…",
-        "id": "CVE-2026-91356",
+        "description": "Integer underflow (wrap or wraparound) in Windows Installer allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-83676",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:23.830",
-        "publishedAt": "2026-10-20T22:20:38.267",
+        "lastModifiedAt": "2026-10-29T18:25:19.880",
+        "publishedAt": "2026-10-13T19:20:09.653",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Integer underflow (wrap or wraparound) in Windows Installer allows an authorized attacker to elevate privileges locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83676"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "Out-of-bounds read in Windows IKE Extension allows an authorized attacker to disclose information over a network.",
+        "id": "CVE-2026-83521",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-29T18:25:14.607",
+        "publishedAt": "2026-10-13T19:19:58.087",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Vulnerability in the PeopleSoft Enterprise HCM Global Payroll Switzerland product of Oracle PeopleSoft (component: Global Payroll for Switzerland).   The…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91356"
+        "title": "Out-of-bounds read in Windows IKE Extension allows an authorized attacker to disclose information over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83521"
       },
       {
-        "cvss_score": 8.4,
+        "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with logon to the infrastructure where Oracle Outside In Technology executes to compromise Oracle Outside In Technology.  Successful attacks of this…",
-        "id": "CVE-2026-91355",
+        "description": "Reliance on untrusted inputs in a security decision in Windows IKE Extension allows an unauthorized attacker to perform spoofing over a network.",
+        "id": "CVE-2026-83522",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:23.673",
-        "publishedAt": "2026-10-20T22:20:38.147",
+        "lastModifiedAt": "2026-10-29T18:24:49.460",
+        "publishedAt": "2026-10-13T19:19:58.267",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91355"
+        "title": "Reliance on untrusted inputs in a security decision in Windows IKE Extension allows an unauthorized attacker to perform spoofing over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83522"
       },
       {
-        "cvss_score": 9.9,
+        "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Outside In Technology.  While the vulnerability is in Oracle Outside In Technology, attacks may…",
-        "id": "CVE-2026-91354",
+        "description": "Missing release of memory after effective lifetime in Windows DHCP Client allows an unauthorized attacker to deny service over a network.",
+        "id": "CVE-2026-83677",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:23.530",
-        "publishedAt": "2026-10-20T22:20:38.027",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91354"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Outside In Technology.  While the vulnerability is in Oracle Outside In Technology, attacks may…",
-        "id": "CVE-2026-91353",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:23.383",
-        "publishedAt": "2026-10-20T22:20:37.900",
+        "lastModifiedAt": "2026-10-29T18:24:30.053",
+        "publishedAt": "2026-10-13T19:20:09.793",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91353"
-      },
-      {
-        "cvss_score": 6.1,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Outside In Technology executes to compromise Oracle Outside In Technology.  Successful attacks of this…",
-        "id": "CVE-2026-91351",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:23.220",
-        "publishedAt": "2026-10-20T22:20:37.673",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91351"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that is affected is 8.5.8. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Outside In Technology.  While the vulnerability is in Oracle Outside In Technology, attacks may…",
-        "id": "CVE-2026-91343",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:23.060",
-        "publishedAt": "2026-10-20T22:20:36.713",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Outside In Technology product of Oracle Fusion Middleware (component: Outside In Clean Content SDK).   The supported version that…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91343"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the iSupport product of Oracle E-Business Suite (component: Internal operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise iSupport.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical…",
-        "id": "CVE-2026-91338",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:22.907",
-        "publishedAt": "2026-10-20T22:20:36.123",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the iSupport product of Oracle E-Business Suite (component: Internal operations).  Supported versions that are affected are 12.2.3-12.2.15…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91338"
-      },
-      {
-        "cvss_score": 7.4,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the iProcurement product of Oracle E-Business Suite (component: Internal operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTPS to compromise iProcurement.  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access…",
-        "id": "CVE-2026-91337",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-28T18:17:22.770",
-        "publishedAt": "2026-10-20T22:20:36.007",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the iProcurement product of Oracle E-Business Suite (component: Internal operations).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91337"
+        "title": "Missing release of memory after effective lifetime in Windows DHCP Client allows an unauthorized attacker to deny service over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83677"
       }
     ],
-    "low": 87,
-    "medium": 532,
+    "low": 78,
+    "medium": 686,
     "none": 0,
-    "unscored": 596
+    "unscored": 162
   },
   "snapshot": {
-    "cves": 1886,
+    "cves": 1822,
     "kevAdded": 2,
-    "knownExploited": 4,
+    "knownExploited": 7,
     "projects": 18,
-    "releases": 7,
-    "techEntries": 51
+    "releases": 2,
+    "techEntries": 49
   },
   "sources": {
     "opensource": {
@@ -809,9 +773,9 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 7,
+        "inWindow": 2,
         "status": "partial",
-        "total": 56
+        "total": 55
       }
     },
     "security": {
@@ -819,25 +783,129 @@
         "failures": 0,
         "inWindow": 2,
         "status": "success",
-        "total": 1762
+        "total": 1764
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1886,
+        "inWindow": 1822,
         "status": "success",
-        "total": 1886
+        "total": 1822
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 51,
+        "inWindow": 49,
         "status": "success",
         "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-29T16:00:12+00:00",
+      "source": "Meta",
+      "summary": "Over the last year we’ve been sharing our work leveraging large language models to catch bugs on the fly — a novel approach we call Catching Just-in-Time Tests (JiTTests). Now, we’re sharing the results and positive impact we’ve seen with Catching JiTTests deployed into…",
+      "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+      "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-29T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Welcome to the second Cloud CISO Perspectives for October 2026. Today, Chris Betz talks with Michael Cote, our vulnerability rewards program lead, about the new tier of our Cloud VRP program and the current state of vulnerability rewards. As with all Cloud CISO Perspectives, the…",
+      "title": "Cloud CISO Perspectives: Introducing new $250,000 tier for Google Cloud VRP (Q&A)",
+      "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-introducing-new-tier-for-google-cloud-vrp/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-29T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "October 19 - October 23 BigQuery introduces column aliases in GoogleSQL and cross-region table copy GA GoogleSQL in BigQuery now supports column aliases in SELECT and WHERE clauses (GA opt-in), avoiding nested subqueries and simplifying migrations from Snowflake and Teradata…",
+      "title": "What’s new with Google Data Cloud",
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-29T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Enterprise organizations often leverage multiple data platforms, including Databricks, to execute heavy Apache Spark jobs alongside BigQuery to power highly concurrent analytics workloads. Historically, bridging these systems often meant building complex pipelines to copy data…",
+      "title": "Querying Databricks Apache Iceberg Tables with the borderless Lakehouse",
+      "url": "https://cloud.google.com/blog/products/data-analytics/querying-databricks-iceberg-tables-with-google-clouds-lakehouse/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-29T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Picture the scene: Before an executive business review, your VP of Sales asks an AI assistant, \"What was net revenue for our top enterprise accounts last quarter?\" In seconds, the agent returns a polished chart! Unfortunately, the numbers don't match the finance report. Why?…",
+      "title": "Grounding agents in one context graph connecting semantic models you already trust",
+      "url": "https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-29T14:47:40+00:00",
+      "source": "The Register",
+      "summary": "Officials confirm this week’s tax deadlines extended to November as a result",
+      "title": "Belgium's tax agency confirms cyberattack, pulls services offline",
+      "url": "https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-29T12:58:34+00:00",
+      "source": "Ars Technica",
+      "summary": "The leak reveals undercover agents, surveillance groups, and sensitive DHS access.",
+      "title": "Massive leak exposes 41,000 DHS workers and undercover ICE agents",
+      "url": "https://arstechnica.com/security/2026/10/massive-leak-exposes-41000-dhs-workers-and-undercover-ice-agents/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-29T12:55:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
+      "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-29T12:33:00+00:00",
+      "source": "The Register",
+      "summary": "Some adults may not need to prove it, but many will",
+      "title": "Shortlist of age checks for the UK's under-16 social media ban is out, 'some' adults will need verifying",
+      "url": "https://www.theregister.com/security/2026/10/29/shortlist-of-age-checks-for-the-uks-under-16-social-media-ban-is-out-some-adults-will-need-verifying/5306282"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-29T12:00:00+00:00",
+      "source": "The Register",
+      "summary": "'The workflow automatically is triggered within a second, and if the workflow is indeed vulnerable, then the attack is executed successfully'",
+      "title": "Attackers turn GitHub issues into supply chain campaign against 61 public repos in less than an hour",
+      "url": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-29T09:30:00+00:00",
+      "source": "The Register",
+      "summary": "Once more, with feeling: 'First they ignore you, then they laugh at you, then they fight you'",
+      "title": "Matrix takes sovereign messaging into the realm of the tech giants",
+      "url": "https://www.theregister.com/software/2026/10/29/matrix-takes-sovereign-messaging-into-the-realm-of-the-tech-giants/5305915"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-29T09:00:00+00:00",
+      "source": "The Register",
+      "summary": "Cursing in login credentials can help keep the bad guys out, but not when the rest of your security is BS",
+      "title": "Admin dropped the F-bomb in a password to show hackers who was really 1337",
+      "url": "https://www.theregister.com/security/2026/10/29/admin-dropped-the-f-bomb-in-a-password-to-show-hackers-who-was-really-1337/5306139"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-28T19:56:56+00:00",
+      "source": "The Register",
+      "summary": "Attackers probe another EBS bug, and ShinyHunters' PeopleSoft 0-day turns out to involve three vulns",
+      "title": "Oracle celebrates end of Cybersecurity Awareness Month with quadruple trouble",
+      "url": "https://www.theregister.com/security/2026/10/28/oracle-celebrates-end-of-cybersecurity-awareness-month-with-quadruple-trouble/5306121"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-10-28T16:59:00+00:00",
@@ -853,110 +921,6 @@
       "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world. The post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog .",
       "title": "GitHub Universe 2026: Evolving every layer of the stack",
       "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-28T16:07:40+00:00",
-      "source": "GitHub Blog",
-      "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report. The post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared first on The GitHub Blog .",
-      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
-      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-28T16:00:01+00:00",
-      "source": "Meta",
-      "summary": "This post describes the next generation of Meta Andromeda, Meta’s personalized ads retrieval engine, and how co-designing the model, system, and GPU hardware unlocks a new efficiency frontier for ads retrieval. In production, the system scores every eligible ad with near…",
-      "title": "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design",
-      "url": "https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-28T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "In my previous post, I took you behind the scenes of Google Agent Skills , covering how the project started, how we maintain quality at scale, and how we handle governance. In this post, I'll share what we've built since then: the automated quality gates that every change must…",
-      "title": "Behind the scenes, two months later: How we ship Google Agent Skills like products",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/behind-the-scenes-two-months-later-how-we-ship-google-agent-skills-like-products/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-28T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "What do you need to orchestrate high-density concurrent AI agents? As we transition from static requests toward autonomous agentic workflows, the need for secure, high-density sandboxes is pushing conventional infrastructure far beyond its architectural breaking point. This…",
-      "title": "How GKE networking scales to support high densities of concurrent AI agents",
-      "url": "https://cloud.google.com/blog/products/networking/gke-networking-dataplane-for-large-agentic-ai-workloads/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-28T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Keeping production databases on supported versions shouldn’t require giving up your weekend. To stay secure, compliant, and with the best performance and newest AI capabilities, organizations need to run on the latest database engine versions. Yet for many teams, major version…",
-      "title": "Near-zero downtime upgrades: Announcing Cloud SQL for MySQL blue-green deployments",
-      "url": "https://cloud.google.com/blog/products/databases/cloud-sql-blue-green-deployments/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-28T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Managing PostgreSQL databases across on-premises, edge, and multi-cloud environments often forces administrators to rely on command-line tools, making it hard to see cluster health and quickly diagnose issues. To solve this, we are announcing the General Availability (GA) of the…",
-      "title": "Introducing the AlloyDB Omni web UI for easier cluster observability",
-      "url": "https://cloud.google.com/blog/products/databases/alloydb-omni-delivers-a-web-ui-for-cluster-observability/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-28T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Having visibility into your network traffic is essential to operating Kubernetes environments effectively. When a service slows down or loses connectivity, knowing who is talking to whom lets you narrow the problem down quickly. In a standard cloud network, flow logs provide…",
-      "title": "How to troubleshoot GKE workloads faster with VPC Flow Logs",
-      "url": "https://cloud.google.com/blog/products/containers-kubernetes/using-vpc-flow-logs-to-troubleshoot-gke-workloads/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-28T15:52:17+00:00",
-      "source": "The Register",
-      "summary": "Artem Stryzhak joined both gangs, which targeted businesses and a hospital during the pandemic",
-      "title": "Serial ransomware crook gets 70 months behind bars for Nefilim, Hive roles",
-      "url": "https://www.theregister.com/cyber-crime/2026/10/28/serial-ransomware-crook-gets-70-months-behind-bars-for-nefilim-hive-roles/5306050"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-28T14:41:00+00:00",
-      "source": "Google Cloud",
-      "summary": "The world of work is rapidly evolving, and with it, the tools we use to stay productive and connected. As AI adoption transforms daily workflows, form factors like XR headsets and glasses offer fresh ways to reimagine how productive work happens across apps and devices. Today…",
-      "title": "Step into a new dimension with XREAL AURA, the first-of-its-kind wired XR glasses",
-      "url": "https://cloud.google.com/blog/products/chrome-enterprise/step-in-to-a-new-dimension-with-xreal-aura-a-first-of-its-kind-wired-xr-glasses/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-28T12:00:00+00:00",
-      "source": "The Register",
-      "summary": "Project Quarry aims to provide a 'shared language' for evaluating agent behavior",
-      "title": "Cisco open sources tool for detecting AI agents on hacking sprees",
-      "url": "https://www.theregister.com/security/2026/10/28/cisco-open-sources-tool-for-detecting-ai-agents-on-hacking-sprees/5305867"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-28T11:45:00+00:00",
-      "source": "The Register",
-      "summary": "Company chiefs believe the attackers could be the same as those who used ARTEX to breach South Korea’s financial giants",
-      "title": "123 Reg discloses 'AI cyberattack' on customer data, suspects China nexus",
-      "url": "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-27T20:25:55+00:00",
-      "source": "Ars Technica",
-      "summary": "Critical flaw in EDK2 allows attackers to execute code early in the boot process.",
-      "title": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
-      "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-27T20:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Many organizations with workloads on VMware are looking for ways to expedite their data center exits, migrate and modernize their mission-critical workloads, or simply leverage the cloud as a secondary disaster recovery site. But they want to do so without altering existing…",
-      "title": "Introducing VMware solution on Google Cloud",
-      "url": "https://cloud.google.com/blog/products/infrastructure-modernization/vmware-solution-on-google-cloud/"
     }
   ]
 }

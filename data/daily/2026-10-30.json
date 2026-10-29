@@ -1,0 +1,334 @@
+{
+  "coveredIstDay": "2026-10-29",
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-29T22:55:39.405042+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": -71,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201214,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 9,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143196,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": -60,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139434,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": -77,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128517,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": -67,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123092,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": -68,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120818,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 50,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 114306,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": -148,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105005,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": -3,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98008,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": -95,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91444,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-28T22:26:54Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.41.0",
+        "version": "v3.41.0"
+      },
+      {
+        "project": "node",
+        "published_at": "2026-10-28T18:39:09Z",
+        "repository": "nodejs/node",
+        "url": "https://github.com/nodejs/node/releases/tag/v24.22.2",
+        "version": "v24.22.2"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-97229",
+        "date_added": "2026-10-29",
+        "product": "Community Edition and Enterprise Edition",
+        "vendor_project": "GitLab",
+        "vulnerability_name": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-76418",
+        "date_added": "2026-10-29",
+        "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+        "vendor_project": "Cisco",
+        "vulnerability_name": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 5.5,
+        "description": "This issue was addressed by removing additional entitlements. This issue is fixed in macOS Golden Gate 27. An app may be able to access user-sensitive data.",
+        "id": "CVE-2026-86935",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86935"
+      },
+      {
+        "cvss": 5.5,
+        "description": "This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Golden Gate 27. An app may be able to disclose kernel memory.",
+        "id": "CVE-2026-86940",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86940"
+      },
+      {
+        "cvss": 5.5,
+        "description": "A privacy issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
+        "id": "CVE-2026-86979",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86979"
+      },
+      {
+        "cvss": 5.5,
+        "description": "Out-of-bounds read in Microsoft Windows Search Component allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83686",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83686"
+      },
+      {
+        "cvss": 5.5,
+        "description": "Access of resource using incompatible type ('type confusion') in Windows Portable Device File System Driver allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83664",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83664"
+      },
+      {
+        "cvss": 7.5,
+        "description": "Null pointer dereference in Windows DHCP Server allows an unauthorized attacker to deny service over a network.",
+        "id": "CVE-2026-83665",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83665"
+      },
+      {
+        "cvss": 5.5,
+        "description": "Out-of-bounds read in Windows WLAN Service allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83668",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83668"
+      },
+      {
+        "cvss": 7.8,
+        "description": "Use of uninitialized resource in Windows Error Reporting allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-83669",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83669"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Out-of-bounds read in Windows Hyper-V allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83671",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83671"
+      },
+      {
+        "cvss": 4.7,
+        "description": "Exposure of sensitive system information to an unauthorized control sphere in Windows Installer allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-83672",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83672"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 168,
+      "HIGH": 728,
+      "LOW": 78,
+      "MEDIUM": 686,
+      "NONE": 0,
+      "UNSCORED": 162
+    }
+  },
+  "snapshot": {
+    "cves": 1822,
+    "kevAdded": 2,
+    "knownExploited": 7,
+    "projects": 18,
+    "releases": 2,
+    "techEntries": 49
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 2,
+      "status": "success",
+      "total": 1764
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 2,
+      "status": "partial",
+      "total": 55
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1822,
+      "status": "success",
+      "total": 1822
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 49,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 19,
+      "tech": 30
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-29T16:00:12+00:00",
+        "source": "Meta",
+        "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+        "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/"
+      },
+      {
+        "published_at": "2026-10-29T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Cloud CISO Perspectives: Introducing new $250,000 tier for Google Cloud VRP (Q&A)",
+        "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-introducing-new-tier-for-google-cloud-vrp/"
+      },
+      {
+        "published_at": "2026-10-29T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Data Cloud",
+        "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+      },
+      {
+        "published_at": "2026-10-29T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Querying Databricks Apache Iceberg Tables with the borderless Lakehouse",
+        "url": "https://cloud.google.com/blog/products/data-analytics/querying-databricks-iceberg-tables-with-google-clouds-lakehouse/"
+      },
+      {
+        "published_at": "2026-10-29T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Grounding agents in one context graph connecting semantic models you already trust",
+        "url": "https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/"
+      },
+      {
+        "published_at": "2026-10-29T14:47:40+00:00",
+        "source": "The Register",
+        "title": "Belgium's tax agency confirms cyberattack, pulls services offline",
+        "url": "https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409"
+      },
+      {
+        "published_at": "2026-10-29T12:58:34+00:00",
+        "source": "Ars Technica",
+        "title": "Massive leak exposes 41,000 DHS workers and undercover ICE agents",
+        "url": "https://arstechnica.com/security/2026/10/massive-leak-exposes-41000-dhs-workers-and-undercover-ice-agents/"
+      },
+      {
+        "published_at": "2026-10-29T12:55:00+00:00",
+        "source": "Cloudflare",
+        "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+        "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/"
+      },
+      {
+        "published_at": "2026-10-29T12:33:00+00:00",
+        "source": "The Register",
+        "title": "Shortlist of age checks for the UK's under-16 social media ban is out, 'some' adults will need verifying",
+        "url": "https://www.theregister.com/security/2026/10/29/shortlist-of-age-checks-for-the-uks-under-16-social-media-ban-is-out-some-adults-will-need-verifying/5306282"
+      },
+      {
+        "published_at": "2026-10-29T12:00:00+00:00",
+        "source": "The Register",
+        "title": "Attackers turn GitHub issues into supply chain campaign against 61 public repos in less than an hour",
+        "url": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153"
+      }
+    ],
+    "sources": {
+      "Ars Technica": 2,
+      "Cloudflare": 4,
+      "GitHub Blog": 2,
+      "Google Cloud": 18,
+      "Meta": 4,
+      "Microsoft": 1,
+      "The Register": 18
+    }
+  },
+  "window": {
+    "end": "2026-10-29T18:30:00+00:00",
+    "start": "2026-10-28T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
