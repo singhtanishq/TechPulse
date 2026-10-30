@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 2634,
+      "date": "2026-10-31",
+      "kevAdded": 2,
+      "knownExploited": 3,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 46
+    },
+    {
       "cves": 1822,
       "date": "2026-10-30",
       "kevAdded": 2,
@@ -398,16 +407,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-29",
-    "date": "2026-10-30",
-    "daysObserved": 44,
-    "generatedAt": "2026-10-29T22:55:39.405042+00:00",
-    "snapshots": 44,
+    "coveredDate": "2026-10-30",
+    "date": "2026-10-31",
+    "daysObserved": 45,
+    "generatedAt": "2026-10-30T22:36:29.693138+00:00",
+    "snapshots": 45,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": -71,
+      "daily_growth": 17,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -415,11 +424,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201214,
+      "stars": 201231,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 9,
+      "daily_growth": 21,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -427,11 +436,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143196,
+      "stars": 143217,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": -60,
+      "daily_growth": 25,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -439,11 +448,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139434,
+      "stars": 139459,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": -77,
+      "daily_growth": 22,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -451,11 +460,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128517,
+      "stars": 128539,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": -67,
+      "daily_growth": 25,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -463,11 +472,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123092,
+      "stars": 123117,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": -68,
+      "daily_growth": 46,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -475,11 +484,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120818,
+      "stars": 120864,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 50,
+      "daily_growth": 37,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -487,11 +496,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114306,
+      "stars": 114343,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": -148,
+      "daily_growth": 24,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -499,11 +508,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105005,
+      "stars": 105029,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": -3,
+      "daily_growth": 13,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -511,11 +520,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98008,
+      "stars": 98021,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": -95,
+      "daily_growth": 22,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -523,243 +532,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91444,
+      "stars": 91466,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-10-28T22:26:54Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.41.0",
-      "version": "v3.41.0"
-    },
-    {
-      "kind": "patch",
-      "project": "node",
-      "publishedAt": "2026-10-28T18:39:09Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v24.22.2",
-      "version": "v24.22.2"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 168,
-    "high": 728,
-    "kevCatalogTotal": 1764,
+    "critical": 188,
+    "high": 948,
+    "kevCatalogTotal": 1766,
     "latest": [
       {
-        "cvss_score": 5.5,
+        "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "This issue was addressed by removing additional entitlements. This issue is fixed in macOS Golden Gate 27. An app may be able to access user-sensitive data.",
-        "id": "CVE-2026-86935",
+        "description": "A heap-based buffer overflow vulnerability exists in the vtkWindBladeReader FindVariableOffsets functionality of vtk (version(s): 9.6.1). A specially crafted .wind can lead to a buffer overflow. An attacker can provide a malicious file to trigger this vulnerability.",
+        "id": "CVE-2026-9536",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:28:48.543",
-        "publishedAt": "2026-10-20T01:17:27.990",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-30T18:18:21.873",
+        "publishedAt": "2026-10-29T19:17:30.047",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "This issue was addressed by removing additional entitlements. This issue is fixed in macOS Golden Gate 27. An app may be able to access user-sensitive data.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86935"
+        "title": "A heap-based buffer overflow vulnerability exists in the vtkWindBladeReader FindVariableOffsets functionality of vtk (version(s): 9.6.1). A specially crafted…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9536"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 8.2,
         "cvss_version": "3.1",
-        "description": "This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Golden Gate 27. An app may be able to disclose kernel memory.",
-        "id": "CVE-2026-86940",
+        "description": "A out-of-bounds read vulnerability exists in the vtkChacoReader InputGraph2 functionality of vtk (version(s): 9.6.1). A specially crafted chaco can lead to an out-of-bounds read. An attacker can provide a malicious file to trigger this vulnerability.",
+        "id": "CVE-2026-9535",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:27:32.377",
-        "publishedAt": "2026-10-20T01:17:28.080",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-30T18:18:21.757",
+        "publishedAt": "2026-10-29T19:17:29.923",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "This issue was addressed by removing the vulnerable code. This issue is fixed in macOS Golden Gate 27. An app may be able to disclose kernel memory.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86940"
+        "title": "A out-of-bounds read vulnerability exists in the vtkChacoReader InputGraph2 functionality of vtk (version(s): 9.6.1). A specially crafted chaco can lead to an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9535"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "A privacy issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
-        "id": "CVE-2026-86979",
+        "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
+        "id": "CVE-2026-96203",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:26:37.613",
-        "publishedAt": "2026-10-20T01:17:29.450",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-30T18:18:21.170",
+        "publishedAt": "2026-10-29T16:20:09.003",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A privacy issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27. An app may be able to access sensitive user data.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86979"
+        "title": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96203"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Out-of-bounds read in Microsoft Windows Search Component allows an authorized attacker to disclose information locally.",
-        "id": "CVE-2026-83686",
+        "description": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-96199",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:26:29.823",
-        "publishedAt": "2026-10-13T19:20:11.090",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-10-30T18:18:21.023",
+        "publishedAt": "2026-10-29T16:20:08.737",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "Out-of-bounds read in Microsoft Windows Search Component allows an authorized attacker to disclose information locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83686"
+        "title": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96199"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Access of resource using incompatible type ('type confusion') in Windows Portable Device File System Driver allows an authorized attacker to disclose information locally.",
-        "id": "CVE-2026-83664",
+        "description": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-96198",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:26:06.547",
-        "publishedAt": "2026-10-13T19:20:07.843",
+        "lastModifiedAt": "2026-10-30T18:18:20.877",
+        "publishedAt": "2026-10-29T16:20:08.607",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96198"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Incomplete list of disallowed inputs in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
+        "id": "CVE-2026-96196",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:20.730",
+        "publishedAt": "2026-10-29T16:20:08.477",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Incomplete list of disallowed inputs in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96196"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Use after free in Microsoft Edge for iOS allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-96192",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:20.607",
+        "publishedAt": "2026-10-29T16:20:08.347",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Use after free in Microsoft Edge for iOS allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96192"
+      },
+      {
+        "cvss_score": 9.1,
+        "cvss_version": "3.1",
+        "description": "Net::LibSSH versions before 0.004 for Perl authenticate to an unverified server because connect never checks the host key against known_hosts.\n\nconnect reports success as soon as ssh_connect returns SSH_OK. libssh leaves the known-hosts check to the application, and this binding never makes it, so the strict_hostkeycheck and knownhosts options are set on the session and then decide…",
+        "id": "CVE-2026-94423",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:20.440",
+        "publishedAt": "2026-10-21T22:16:50.480",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Net::LibSSH versions before 0.004 for Perl authenticate to an unverified server because connect never checks the host key against known_hosts.\n\nconnect reports…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94423"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to bypass security restrictions due to improper authentication.",
+        "id": "CVE-2026-93680",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:20.320",
+        "publishedAt": "2026-10-29T16:20:06.040",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to bypass security restrictions due to improper authentication.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93680"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "Omni C20 lacks proper certificate validation which could allow an attacker to perform a man-in-the-middle attack which could allow them to execute arbitrary code.",
+        "id": "CVE-2026-93291",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:20.077",
+        "publishedAt": "2026-09-24T20:17:34.463",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Omni C20 lacks proper certificate validation which could allow an attacker to perform a man-in-the-middle attack which could allow them to execute arbitrary…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93291"
+      },
+      {
+        "cvss_score": 6.8,
+        "cvss_version": "4.0",
+        "description": "Omni C20 uses hard-coded credentials that could allow an attacker to monitor log files to obtain credentials to access information like mapping data.",
+        "id": "CVE-2026-93290",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:19.933",
+        "publishedAt": "2026-09-24T20:17:34.307",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Access of resource using incompatible type ('type confusion') in Windows Portable Device File System Driver allows an authorized attacker to disclose…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83664"
+        "title": "Omni C20 uses hard-coded credentials that could allow an attacker to monitor log files to obtain credentials to access information like mapping data.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93290"
+      },
+      {
+        "cvss_score": 6.6,
+        "cvss_version": "3.1",
+        "description": "Improper neutralization of directives in dynamically evaluated code in the Manager web console of Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows could allow an authenticated Manager administrator to execute arbitrary commands with the privileges of the WS_FTP Server IIS worker process.",
+        "id": "CVE-2026-90872",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:19.807",
+        "publishedAt": "2026-10-29T16:20:05.417",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper neutralization of directives in dynamically evaluated code in the Manager web console of Progress Software WS_FTP Server versions prior to 2024.0.7…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90872"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "3.1",
+        "description": "Improper limitation of a pathname to a restricted directory in Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows could allow an unauthenticated attacker to affect files outside the intended directory.",
+        "id": "CVE-2026-90871",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:17.843",
+        "publishedAt": "2026-10-29T16:20:05.307",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper limitation of a pathname to a restricted directory in Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows could allow…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90871"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "3.1",
+        "description": "A missing release of backend receiver sessions in the Ad Hoc Transfer component of Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows could lead to server resource exhaustion and service degradation.",
+        "id": "CVE-2026-90870",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-30T18:18:17.703",
+        "publishedAt": "2026-10-29T16:20:05.190",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A missing release of backend receiver sessions in the Ad Hoc Transfer component of Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90870"
       },
       {
         "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "Null pointer dereference in Windows DHCP Server allows an unauthorized attacker to deny service over a network.",
-        "id": "CVE-2026-83665",
+        "description": "A remote attacker who knows a valid account's enrolled SSH public key can terminate the shared SSH service in Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows.",
+        "id": "CVE-2026-90869",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:25:58.600",
-        "publishedAt": "2026-10-13T19:20:08.023",
+        "lastModifiedAt": "2026-10-30T18:18:17.587",
+        "publishedAt": "2026-10-29T16:20:05.080",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Null pointer dereference in Windows DHCP Server allows an unauthorized attacker to deny service over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83665"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "Out-of-bounds read in Windows WLAN Service allows an authorized attacker to disclose information locally.",
-        "id": "CVE-2026-83668",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:25:50.447",
-        "publishedAt": "2026-10-13T19:20:08.510",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Out-of-bounds read in Windows WLAN Service allows an authorized attacker to disclose information locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83668"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "Use of uninitialized resource in Windows Error Reporting allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-83669",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:25:41.727",
-        "publishedAt": "2026-10-13T19:20:08.700",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use of uninitialized resource in Windows Error Reporting allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83669"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Out-of-bounds read in Windows Hyper-V allows an authorized attacker to disclose information locally.",
-        "id": "CVE-2026-83671",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:25:36.387",
-        "publishedAt": "2026-10-13T19:20:09.060",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Out-of-bounds read in Windows Hyper-V allows an authorized attacker to disclose information locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83671"
-      },
-      {
-        "cvss_score": 4.7,
-        "cvss_version": "3.1",
-        "description": "Exposure of sensitive system information to an unauthorized control sphere in Windows Installer allows an authorized attacker to disclose information locally.",
-        "id": "CVE-2026-83672",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:25:29.557",
-        "publishedAt": "2026-10-13T19:20:09.217",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Exposure of sensitive system information to an unauthorized control sphere in Windows Installer allows an authorized attacker to disclose information locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83672"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "3.1",
-        "description": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-83675",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:25:23.837",
-        "publishedAt": "2026-10-13T19:20:09.527",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83675"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "3.1",
-        "description": "Integer underflow (wrap or wraparound) in Windows Installer allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-83676",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:25:19.880",
-        "publishedAt": "2026-10-13T19:20:09.653",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Integer underflow (wrap or wraparound) in Windows Installer allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83676"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Out-of-bounds read in Windows IKE Extension allows an authorized attacker to disclose information over a network.",
-        "id": "CVE-2026-83521",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:25:14.607",
-        "publishedAt": "2026-10-13T19:19:58.087",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Out-of-bounds read in Windows IKE Extension allows an authorized attacker to disclose information over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83521"
-      },
-      {
-        "cvss_score": 8.1,
-        "cvss_version": "3.1",
-        "description": "Reliance on untrusted inputs in a security decision in Windows IKE Extension allows an unauthorized attacker to perform spoofing over a network.",
-        "id": "CVE-2026-83522",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:24:49.460",
-        "publishedAt": "2026-10-13T19:19:58.267",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Reliance on untrusted inputs in a security decision in Windows IKE Extension allows an unauthorized attacker to perform spoofing over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83522"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "Missing release of memory after effective lifetime in Windows DHCP Client allows an unauthorized attacker to deny service over a network.",
-        "id": "CVE-2026-83677",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-29T18:24:30.053",
-        "publishedAt": "2026-10-13T19:20:09.793",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Missing release of memory after effective lifetime in Windows DHCP Client allows an unauthorized attacker to deny service over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83677"
+        "title": "A remote attacker who knows a valid account's enrolled SSH public key can terminate the shared SSH service in Progress Software WS_FTP Server versions prior to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90869"
       }
     ],
-    "low": 78,
-    "medium": 686,
+    "low": 75,
+    "medium": 808,
     "none": 0,
-    "unscored": 162
+    "unscored": 615
   },
   "snapshot": {
-    "cves": 1822,
+    "cves": 2634,
     "kevAdded": 2,
-    "knownExploited": 7,
+    "knownExploited": 3,
     "projects": 18,
-    "releases": 2,
-    "techEntries": 49
+    "releases": 0,
+    "techEntries": 46
   },
   "sources": {
     "opensource": {
@@ -773,7 +763,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 2,
+        "inWindow": 0,
         "status": "partial",
         "total": 55
       }
@@ -783,19 +773,19 @@
         "failures": 0,
         "inWindow": 2,
         "status": "success",
-        "total": 1764
+        "total": 1766
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1822,
+        "inWindow": 2634,
         "status": "success",
-        "total": 1822
+        "total": 2634
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 49,
+        "inWindow": 46,
         "status": "success",
         "total": 229
       }
@@ -804,123 +794,123 @@
   "technology": [
     {
       "category": "tech",
-      "publishedAt": "2026-10-29T16:00:12+00:00",
-      "source": "Meta",
-      "summary": "Over the last year we’ve been sharing our work leveraging large language models to catch bugs on the fly — a novel approach we call Catching Just-in-Time Tests (JiTTests). Now, we’re sharing the results and positive impact we’ve seen with Catching JiTTests deployed into…",
-      "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
-      "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-29T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Welcome to the second Cloud CISO Perspectives for October 2026. Today, Chris Betz talks with Michael Cote, our vulnerability rewards program lead, about the new tier of our Cloud VRP program and the current state of vulnerability rewards. As with all Cloud CISO Perspectives, the…",
-      "title": "Cloud CISO Perspectives: Introducing new $250,000 tier for Google Cloud VRP (Q&A)",
-      "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-introducing-new-tier-for-google-cloud-vrp/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-29T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "October 19 - October 23 BigQuery introduces column aliases in GoogleSQL and cross-region table copy GA GoogleSQL in BigQuery now supports column aliases in SELECT and WHERE clauses (GA opt-in), avoiding nested subqueries and simplifying migrations from Snowflake and Teradata…",
-      "title": "What’s new with Google Data Cloud",
-      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-29T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Enterprise organizations often leverage multiple data platforms, including Databricks, to execute heavy Apache Spark jobs alongside BigQuery to power highly concurrent analytics workloads. Historically, bridging these systems often meant building complex pipelines to copy data…",
-      "title": "Querying Databricks Apache Iceberg Tables with the borderless Lakehouse",
-      "url": "https://cloud.google.com/blog/products/data-analytics/querying-databricks-iceberg-tables-with-google-clouds-lakehouse/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-29T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Picture the scene: Before an executive business review, your VP of Sales asks an AI assistant, \"What was net revenue for our top enterprise accounts last quarter?\" In seconds, the agent returns a polished chart! Unfortunately, the numbers don't match the finance report. Why?…",
-      "title": "Grounding agents in one context graph connecting semantic models you already trust",
-      "url": "https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-29T14:47:40+00:00",
-      "source": "The Register",
-      "summary": "Officials confirm this week’s tax deadlines extended to November as a result",
-      "title": "Belgium's tax agency confirms cyberattack, pulls services offline",
-      "url": "https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-29T12:58:34+00:00",
-      "source": "Ars Technica",
-      "summary": "The leak reveals undercover agents, surveillance groups, and sensitive DHS access.",
-      "title": "Massive leak exposes 41,000 DHS workers and undercover ICE agents",
-      "url": "https://arstechnica.com/security/2026/10/massive-leak-exposes-41000-dhs-workers-and-undercover-ice-agents/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-29T12:55:00+00:00",
+      "publishedAt": "2026-10-30T17:38:50+00:00",
       "source": "Cloudflare",
-      "summary": "Cloudflare mitigated over 8,200 DDoS attacks per hour in Q3 2026 as attackers shifted to shorter, high-frequency strikes. Explore the latest threat data, including the collapse of CLDAP vectors and the impact of recent botnet takedowns.",
-      "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
-      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3/"
+      "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.",
+      "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+      "url": "https://blog.cloudflare.com/emudhra-patching/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-29T12:33:00+00:00",
+      "publishedAt": "2026-10-30T16:48:37+00:00",
       "source": "The Register",
-      "summary": "Some adults may not need to prove it, but many will",
-      "title": "Shortlist of age checks for the UK's under-16 social media ban is out, 'some' adults will need verifying",
-      "url": "https://www.theregister.com/security/2026/10/29/shortlist-of-age-checks-for-the-uks-under-16-social-media-ban-is-out-some-adults-will-need-verifying/5306282"
+      "summary": "$220 million? For all of you? Yeah, we can probably dig that up ...",
+      "title": "GM cracks the petty cash box for multistate driver tracking settlement",
+      "url": "https://www.theregister.com/security/2026/10/30/gm-cracks-the-petty-cash-box-for-multistate-driver-tracking-settlement/5306721"
     },
     {
       "category": "security",
-      "publishedAt": "2026-10-29T12:00:00+00:00",
+      "publishedAt": "2026-10-30T16:27:00+00:00",
       "source": "The Register",
-      "summary": "'The workflow automatically is triggered within a second, and if the workflow is indeed vulnerable, then the attack is executed successfully'",
-      "title": "Attackers turn GitHub issues into supply chain campaign against 61 public repos in less than an hour",
-      "url": "https://www.theregister.com/security/2026/10/29/attackers-turn-github-issues-into-supply-chain-campaign-against-61-public-repos-in-less-than-an-hour/5306153"
+      "summary": "Claudeshop fingers 'malicious actor' in targeted supply-chain attack on Cursor",
+      "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/30/anthropic-that-claude-code-extension-compromise-couldnt-be-us/5306682"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-29T09:30:00+00:00",
-      "source": "The Register",
-      "summary": "Once more, with feeling: 'First they ignore you, then they laugh at you, then they fight you'",
-      "title": "Matrix takes sovereign messaging into the realm of the tech giants",
-      "url": "https://www.theregister.com/software/2026/10/29/matrix-takes-sovereign-messaging-into-the-realm-of-the-tech-giants/5305915"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-29T09:00:00+00:00",
-      "source": "The Register",
-      "summary": "Cursing in login credentials can help keep the bad guys out, but not when the rest of your security is BS",
-      "title": "Admin dropped the F-bomb in a password to show hackers who was really 1337",
-      "url": "https://www.theregister.com/security/2026/10/29/admin-dropped-the-f-bomb-in-a-password-to-show-hackers-who-was-really-1337/5306139"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-28T19:56:56+00:00",
-      "source": "The Register",
-      "summary": "Attackers probe another EBS bug, and ShinyHunters' PeopleSoft 0-day turns out to involve three vulns",
-      "title": "Oracle celebrates end of Cybersecurity Awareness Month with quadruple trouble",
-      "url": "https://www.theregister.com/security/2026/10/28/oracle-celebrates-end-of-cybersecurity-awareness-month-with-quadruple-trouble/5306121"
+      "publishedAt": "2026-10-30T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-28T16:59:00+00:00",
+      "publishedAt": "2026-10-30T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Today, we’re announcing that spend caps on Google Cloud Budgets are generally available. With this release, we’re delivering ways to protect your workloads from runaway costs without risking resource deletion. More importantly, we’re introducing three major updates, directly…",
+      "title": "Innovate on your own business terms: Google Cloud spend caps now generally available",
+      "url": "https://cloud.google.com/blog/topics/cost-management/google-cloud-spend-caps-now-generally-available/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-30T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "The Google Cloud AI Infrastructure team had another busy month in October, filled with new product launches and updates to power today’s AI and agentic workloads scalably and efficiently. We were also honored to share our progress with customers, partners, and the broader…",
+      "title": "What’s new in AI infrastructure and orchestration in October",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-30T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Every support engineer has a case that stays with them. The one that comes up at team lunches. The one where, even after it's resolved, you find yourself staring at a packet capture at midnight just to make sure you really understand what happened. This is that case. It started…",
+      "title": "When the Kubernetes API went silent: A three-layer networking mystery",
+      "url": "https://cloud.google.com/blog/products/networking/the-three-layer-gke-network-mystery/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-30T14:23:43+00:00",
+      "source": "Cloudflare",
+      "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity.",
+      "title": "Cloudflare services for private origins is now generally available",
+      "url": "https://blog.cloudflare.com/private-origins-public-to-private/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-30T13:46:39+00:00",
+      "source": "Ars Technica",
+      "summary": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea.",
+      "title": "Hackers steal $6.3 billion from Binance in record crypto heist",
+      "url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-30T13:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Today Google Skills is sharing new, industry-specific video learning bundles to get you into Gemini and using agents. One bundle is designed for financial services and one is built specifically for those in the legal profession . You can access all of these videos at no cost on…",
+      "title": "New Gemini courses for financial services and legal teams",
+      "url": "https://cloud.google.com/blog/topics/training-certifications/new-gemini-courses-for-financial-services-and-legal-teams/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-10-30T12:49:14+00:00",
       "source": "Microsoft",
-      "summary": "Publish Visual Studio Code and Visual Studio extensions from GitHub Actions or Azure Pipelines without storing a long-lived personal access token. The post Publish Visual Studio Marketplace extensions securely with Trusted Publishing appeared first on Microsoft for Developers .",
-      "title": "Publish Visual Studio Marketplace extensions securely with Trusted Publishing",
-      "url": "https://devblogs.microsoft.com/blog/trusted-publishing-visual-studio-marketplace/"
+      "summary": "Your eval might be telling the agent it’s a test before the agent reads a single instruction. Eval tools need a fresh folder for every run, and the easiest way to get one is a temp directory with a random name like /tmp/eval-7f3a2c. The agent sees that path on every turn, in the…",
+      "title": "Does ‘eval’ in the workspace path change what your agent does?",
+      "url": "https://devblogs.microsoft.com/blog/does-eval-in-the-workspace-path-change-what-your-agent-does/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-30T11:45:00+00:00",
+      "source": "The Register",
+      "summary": "Other agency errors included an unchecked software bug that led to Terrorism Act detentions",
+      "title": "British intelligence agency misplaced 'thousands' of storage devices, years later still can't say how many",
+      "url": "https://www.theregister.com/security/2026/10/30/british-intelligence-agency-misplaced-thousands-of-storage-devices-years-later-still-cant-say-how-many/5306605"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-30T04:22:12+00:00",
+      "source": "The Register",
+      "summary": "Binance freezes funny money after compromise of engineer’s laptop linked to $6.3 billion of unauthorized trades",
+      "title": "In the year AI re-wrote the infosec rulebook, it’s comforting to know crypto exchanges still have bad security",
+      "url": "https://www.theregister.com/security/2026/10/30/in-the-year-ai-re-wrote-the-infosec-rulebook-its-comforting-to-know-crypto-exchanges-still-have-bad-security/5306539"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-29T23:12:26+00:00",
+      "source": "The Register",
+      "summary": "Embedded browsers are at the heart of the problem",
+      "title": "Researchers find bugs in 5 AI developer tools, with OpenAI and Microsoft flaws still unpatched",
+      "url": "https://www.theregister.com/security/2026/10/29/researchers-find-bugs-in-5-ai-developer-tools-with-openai-and-microsoft-flaws-still-unpatched/5306508"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-10-28T16:09:28+00:00",
-      "source": "GitHub Blog",
-      "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world. The post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog .",
-      "title": "GitHub Universe 2026: Evolving every layer of the stack",
-      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
+      "publishedAt": "2026-10-29T20:04:05+00:00",
+      "source": "The Register",
+      "summary": "Ask AI dumb things and leave no local chat history, all with the style of a kids' fantasy novel – or rather, one of its magical letters",
+      "title": "Howler will have AI answer your questions, then burn the chat",
+      "url": "https://www.theregister.com/offbeat/2026/10/29/howler-will-have-ai-answer-your-questions-then-burn-the-chat/5306484"
     }
   ]
 }

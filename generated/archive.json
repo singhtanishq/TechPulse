@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-10-31",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 17,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201231,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 21,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143217,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 25,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139459,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128539,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 25,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123117,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 46,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120864,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 37,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114343,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 24,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105029,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 13,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98021,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91466,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 188,
+          "HIGH": 948,
+          "LOW": 75,
+          "MEDIUM": 808,
+          "NONE": 0,
+          "UNSCORED": 615
+        }
+      },
+      "snapshot": {
+        "cves": 2634,
+        "kevAdded": 2,
+        "knownExploited": 3,
+        "projects": 18,
+        "releases": 0,
+        "techEntries": 46
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1766
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 55
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 2634,
+          "status": "success",
+          "total": 2634
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 46,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 18,
+          "tech": 28
+        },
+        "recent": [
+          {
+            "published_at": "2026-10-30T17:38:50+00:00",
+            "source": "Cloudflare",
+            "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+            "url": "https://blog.cloudflare.com/emudhra-patching/"
+          },
+          {
+            "published_at": "2026-10-30T16:48:37+00:00",
+            "source": "The Register",
+            "title": "GM cracks the petty cash box for multistate driver tracking settlement",
+            "url": "https://www.theregister.com/security/2026/10/30/gm-cracks-the-petty-cash-box-for-multistate-driver-tracking-settlement/5306721"
+          },
+          {
+            "published_at": "2026-10-30T16:27:00+00:00",
+            "source": "The Register",
+            "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
+            "url": "https://www.theregister.com/cyber-crime/2026/10/30/anthropic-that-claude-code-extension-compromise-couldnt-be-us/5306682"
+          },
+          {
+            "published_at": "2026-10-30T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-10-30T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Innovate on your own business terms: Google Cloud spend caps now generally available",
+            "url": "https://cloud.google.com/blog/topics/cost-management/google-cloud-spend-caps-now-generally-available/"
+          },
+          {
+            "published_at": "2026-10-30T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new in AI infrastructure and orchestration in October",
+            "url": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month/"
+          },
+          {
+            "published_at": "2026-10-30T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "When the Kubernetes API went silent: A three-layer networking mystery",
+            "url": "https://cloud.google.com/blog/products/networking/the-three-layer-gke-network-mystery/"
+          },
+          {
+            "published_at": "2026-10-30T14:23:43+00:00",
+            "source": "Cloudflare",
+            "title": "Cloudflare services for private origins is now generally available",
+            "url": "https://blog.cloudflare.com/private-origins-public-to-private/"
+          },
+          {
+            "published_at": "2026-10-30T13:46:39+00:00",
+            "source": "Ars Technica",
+            "title": "Hackers steal $6.3 billion from Binance in record crypto heist",
+            "url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/"
+          },
+          {
+            "published_at": "2026-10-30T13:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "New Gemini courses for financial services and legal teams",
+            "url": "https://cloud.google.com/blog/topics/training-certifications/new-gemini-courses-for-financial-services-and-legal-teams/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-10-30",
       "opensource": {
         "topProjects": [
@@ -9740,8 +9944,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-10-29T22:55:39.405042+00:00",
-    "totalSnapshots": 44,
+    "generatedAt": "2026-10-30T22:36:29.693138+00:00",
+    "totalSnapshots": 45,
     "warnings": []
   }
 }
