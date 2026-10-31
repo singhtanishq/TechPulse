@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1098,
+      "date": "2026-11-01",
+      "kevAdded": 0,
+      "knownExploited": 5,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 31
+    },
+    {
       "cves": 2634,
       "date": "2026-10-31",
       "kevAdded": 2,
@@ -407,16 +416,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-10-30",
-    "date": "2026-10-31",
-    "daysObserved": 45,
-    "generatedAt": "2026-10-30T22:36:29.693138+00:00",
-    "snapshots": 45,
+    "coveredDate": "2026-10-31",
+    "date": "2026-11-01",
+    "daysObserved": 46,
+    "generatedAt": "2026-10-31T21:49:04.784449+00:00",
+    "snapshots": 46,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 17,
+      "daily_growth": 19,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -424,11 +433,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201231,
+      "stars": 201250,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 21,
+      "daily_growth": 96,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -436,11 +445,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143217,
+      "stars": 143313,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 25,
+      "daily_growth": 107,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -448,11 +457,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139459,
+      "stars": 139566,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 126,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -460,11 +469,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128539,
+      "stars": 128665,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 25,
+      "daily_growth": 50,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -472,11 +481,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123117,
+      "stars": 123167,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 46,
+      "daily_growth": 62,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -484,11 +493,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120864,
+      "stars": 120926,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 37,
+      "daily_growth": 40,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -496,11 +505,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114343,
+      "stars": 114383,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 24,
+      "daily_growth": 17,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -508,11 +517,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105029,
+      "stars": 105046,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 13,
+      "daily_growth": 103,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -520,11 +529,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98021,
+      "stars": 98124,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 93,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -532,224 +541,234 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91466,
+      "stars": 91559,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-10-31T00:26:41Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.42.0",
+      "version": "v3.42.0"
+    }
+  ],
   "security": {
-    "critical": 188,
-    "high": 948,
+    "critical": 111,
+    "high": 413,
     "kevCatalogTotal": 1766,
     "latest": [
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "A heap-based buffer overflow vulnerability exists in the vtkWindBladeReader FindVariableOffsets functionality of vtk (version(s): 9.6.1). A specially crafted .wind can lead to a buffer overflow. An attacker can provide a malicious file to trigger this vulnerability.",
-        "id": "CVE-2026-9536",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:21.873",
-        "publishedAt": "2026-10-29T19:17:30.047",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A heap-based buffer overflow vulnerability exists in the vtkWindBladeReader FindVariableOffsets functionality of vtk (version(s): 9.6.1). A specially crafted…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9536"
-      },
-      {
-        "cvss_score": 8.2,
-        "cvss_version": "3.1",
-        "description": "A out-of-bounds read vulnerability exists in the vtkChacoReader InputGraph2 functionality of vtk (version(s): 9.6.1). A specially crafted chaco can lead to an out-of-bounds read. An attacker can provide a malicious file to trigger this vulnerability.",
-        "id": "CVE-2026-9535",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:21.757",
-        "publishedAt": "2026-10-29T19:17:29.923",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A out-of-bounds read vulnerability exists in the vtkChacoReader InputGraph2 functionality of vtk (version(s): 9.6.1). A specially crafted chaco can lead to an…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9535"
-      },
-      {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
-        "id": "CVE-2026-96203",
+        "description": "Double free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-83831",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:21.170",
-        "publishedAt": "2026-10-29T16:20:09.003",
+        "lastModifiedAt": "2026-10-31T18:17:44.603",
+        "publishedAt": "2026-10-27T21:19:08.030",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96203"
+        "title": "Double free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83831"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 7.0,
         "cvss_version": "3.1",
-        "description": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "id": "CVE-2026-96199",
+        "description": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-70271",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:21.023",
-        "publishedAt": "2026-10-29T16:20:08.737",
+        "lastModifiedAt": "2026-10-31T18:17:32.730",
+        "publishedAt": "2026-10-13T19:19:45.950",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96199"
+        "title": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70271"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 7.8,
         "cvss_version": "3.1",
-        "description": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "id": "CVE-2026-96198",
+        "description": "Heap-based buffer overflow in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-70106",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:20.877",
-        "publishedAt": "2026-10-29T16:20:08.607",
+        "lastModifiedAt": "2026-10-31T18:17:22.940",
+        "publishedAt": "2026-10-13T19:19:22.223",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96198"
+        "title": "Heap-based buffer overflow in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70106"
       },
       {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Incomplete list of disallowed inputs in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
-        "id": "CVE-2026-96196",
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "FFmpeg 5.0 through 9.0.2 contains a path traversal vulnerability in the IMF demuxer that allows attackers to open files outside the package via unvalidated ASSETMAP Path elements. Attackers can supply a crafted IMF package with '..' or absolute paths to demux local MXF files, probe file existence and size, or trigger server-side requests.",
+        "id": "CVE-2026-120210",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:20.730",
-        "publishedAt": "2026-10-29T16:20:08.477",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-10-31T18:17:09.427",
+        "publishedAt": "2026-10-31T18:17:09.427",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Incomplete list of disallowed inputs in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96196"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Use after free in Microsoft Edge for iOS allows an unauthorized attacker to execute code over a network.",
-        "id": "CVE-2026-96192",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:20.607",
-        "publishedAt": "2026-10-29T16:20:08.347",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use after free in Microsoft Edge for iOS allows an unauthorized attacker to execute code over a network.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96192"
-      },
-      {
-        "cvss_score": 9.1,
-        "cvss_version": "3.1",
-        "description": "Net::LibSSH versions before 0.004 for Perl authenticate to an unverified server because connect never checks the host key against known_hosts.\n\nconnect reports success as soon as ssh_connect returns SSH_OK. libssh leaves the known-hosts check to the application, and this binding never makes it, so the strict_hostkeycheck and knownhosts options are set on the session and then decide…",
-        "id": "CVE-2026-94423",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:20.440",
-        "publishedAt": "2026-10-21T22:16:50.480",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Net::LibSSH versions before 0.004 for Perl authenticate to an unverified server because connect never checks the host key against known_hosts.\n\nconnect reports…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94423"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to bypass security restrictions due to improper authentication.",
-        "id": "CVE-2026-93680",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:20.320",
-        "publishedAt": "2026-10-29T16:20:06.040",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to bypass security restrictions due to improper authentication.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93680"
+        "title": "FFmpeg 5.0 through 9.0.2 contains a path traversal vulnerability in the IMF demuxer that allows attackers to open files outside the package via unvalidated…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120210"
       },
       {
         "cvss_score": 9.3,
         "cvss_version": "4.0",
-        "description": "Omni C20 lacks proper certificate validation which could allow an attacker to perform a man-in-the-middle attack which could allow them to execute arbitrary code.",
-        "id": "CVE-2026-93291",
+        "description": "AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Tokens offline. Attackers can mint a token with reportCode 'dataSet' to access the testTransform endpoint, which passes scripts to GroovyClassLoader for unauthenticated remote code execution.",
+        "id": "CVE-2026-120209",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:20.077",
-        "publishedAt": "2026-09-24T20:17:34.463",
+        "lastModifiedAt": "2026-10-31T18:17:09.263",
+        "publishedAt": "2026-10-31T18:17:09.263",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Omni C20 lacks proper certificate validation which could allow an attacker to perform a man-in-the-middle attack which could allow them to execute arbitrary…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93291"
+        "title": "AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Tokens offline. Attackers can mint a token…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120209"
       },
       {
-        "cvss_score": 6.8,
+        "cvss_score": 7.7,
         "cvss_version": "4.0",
-        "description": "Omni C20 uses hard-coded credentials that could allow an attacker to monitor log files to obtain credentials to access information like mapping data.",
-        "id": "CVE-2026-93290",
+        "description": "libheif 1.18.0 before 1.23.3 contains a heap-based buffer overflow vulnerability in unc_decoder_mixed_interleave::processTile() that allows attackers to write out of bounds by supplying chroma components with unequal bit depths. Attackers can craft a HEIF file declaring, for example, 16-bit Cb and 8-bit Cr to trigger file-controlled heap writes past the Cr plane, potentially achieving code…",
+        "id": "CVE-2026-120208",
         "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:19.933",
-        "publishedAt": "2026-09-24T20:17:34.307",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Omni C20 uses hard-coded credentials that could allow an attacker to monitor log files to obtain credentials to access information like mapping data.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93290"
-      },
-      {
-        "cvss_score": 6.6,
-        "cvss_version": "3.1",
-        "description": "Improper neutralization of directives in dynamically evaluated code in the Manager web console of Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows could allow an authenticated Manager administrator to execute arbitrary commands with the privileges of the WS_FTP Server IIS worker process.",
-        "id": "CVE-2026-90872",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:19.807",
-        "publishedAt": "2026-10-29T16:20:05.417",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Improper neutralization of directives in dynamically evaluated code in the Manager web console of Progress Software WS_FTP Server versions prior to 2024.0.7…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90872"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "3.1",
-        "description": "Improper limitation of a pathname to a restricted directory in Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows could allow an unauthenticated attacker to affect files outside the intended directory.",
-        "id": "CVE-2026-90871",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:17.843",
-        "publishedAt": "2026-10-29T16:20:05.307",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Improper limitation of a pathname to a restricted directory in Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows could allow…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90871"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "3.1",
-        "description": "A missing release of backend receiver sessions in the Ad Hoc Transfer component of Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows could lead to server resource exhaustion and service degradation.",
-        "id": "CVE-2026-90870",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:17.703",
-        "publishedAt": "2026-10-29T16:20:05.190",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A missing release of backend receiver sessions in the Ad Hoc Transfer component of Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90870"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "A remote attacker who knows a valid account's enrolled SSH public key can terminate the shared SSH service in Progress Software WS_FTP Server versions prior to 2024.0.7 and 2025.0.4 on Windows.",
-        "id": "CVE-2026-90869",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-10-30T18:18:17.587",
-        "publishedAt": "2026-10-29T16:20:05.080",
+        "lastModifiedAt": "2026-10-31T18:17:09.210",
+        "publishedAt": "2026-10-31T18:17:09.083",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "A remote attacker who knows a valid account's enrolled SSH public key can terminate the shared SSH service in Progress Software WS_FTP Server versions prior to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90869"
+        "title": "libheif 1.18.0 before 1.23.3 contains a heap-based buffer overflow vulnerability in unc_decoder_mixed_interleave::processTile() that allows attackers to write…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120208"
+      },
+      {
+        "cvss_score": 7.0,
+        "cvss_version": "4.0",
+        "description": "Thelia Page Module before 2.0.4 contains a cross-site request forgery vulnerability that allows remote attackers to delete page tags, documents and images by abusing back-office delete routes lacking CSRF tokens and permission checks. Attackers can lure a logged-in administrator into navigating to crafted GET requests that walk sequential ids, removing TheliaLibrary images, their files and…",
+        "id": "CVE-2026-120207",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:08.920",
+        "publishedAt": "2026-10-31T18:17:08.920",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Thelia Page Module before 2.0.4 contains a cross-site request forgery vulnerability that allows remote attackers to delete page tags, documents and images by…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120207"
+      },
+      {
+        "cvss_score": 5.9,
+        "cvss_version": "4.0",
+        "description": "Thelia before 3.2.0 contains a cross-site request forgery vulnerability in the back office that allows attackers to forge administrative actions because per-session CSRF tokens leak via URL query strings. Attackers can reuse leaked tokens or target the unprotected setToggleVisibilityAction and updatePositionAction to make logged-in administrators delete, hide or reorder catalogue and…",
+        "id": "CVE-2026-120206",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:08.747",
+        "publishedAt": "2026-10-31T18:17:08.747",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Thelia before 3.2.0 contains a cross-site request forgery vulnerability in the back office that allows attackers to forge administrative actions because…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120206"
+      },
+      {
+        "cvss_score": 7.4,
+        "cvss_version": "4.0",
+        "description": "Thelia before 3.1.0 contains a stored cross-site scripting vulnerability in ForSomeCustomers::getSummary() that allows unauthenticated attackers to inject scripts via unescaped customer names. Attackers can register with a script payload as their name that executes when administrators view related coupons, stealing CSRF tokens to create administrator accounts.",
+        "id": "CVE-2026-120205",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:08.570",
+        "publishedAt": "2026-10-31T18:17:08.570",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Thelia before 3.1.0 contains a stored cross-site scripting vulnerability in ForSomeCustomers::getSummary() that allows unauthenticated attackers to inject…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120205"
+      },
+      {
+        "cvss_score": 6.3,
+        "cvss_version": "4.0",
+        "description": "DeepInfer through 0.1.0 contains a path traversal vulnerability in the unauthenticated /profile endpoint that allows remote attackers to create arbitrary directories via the output_dir parameter. Attackers, including cross-site GET requests from an operator's browser, can write chrome trace files to exhaust disk or inodes and use error messages as a filesystem oracle.",
+        "id": "CVE-2026-120204",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:08.403",
+        "publishedAt": "2026-10-31T18:17:08.403",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "DeepInfer through 0.1.0 contains a path traversal vulnerability in the unauthenticated /profile endpoint that allows remote attackers to create arbitrary…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120204"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "ShowDoc 2.8.14 before 3.9.6 contains a code injection vulnerability in its Mock feature that allows authenticated users to execute shell commands through mockjs templates. Attackers can store a template via MockController::add with escaped parentheses that mockjs evaluates with eval(), then trigger it through MockController::infoByKey to run commands, as root in the official Docker image.",
+        "id": "CVE-2026-120203",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:08.237",
+        "publishedAt": "2026-10-31T18:17:08.237",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "ShowDoc 2.8.14 before 3.9.6 contains a code injection vulnerability in its Mock feature that allows authenticated users to execute shell commands through…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120203"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "Highflame ramparts 0.8.1 through 0.8.10 contains a security scan bypass vulnerability that allows attackers to hide malicious payloads because collect_bundle_siblings and walk_bundle_subdir skip nested directories and .pyc files. Attackers can distribute a skill bundle with an unchecked-hash .pyc under scripts/<subdir>/__pycache__/ that ramparts silently ignores, while CPython executes it when…",
+        "id": "CVE-2026-120202",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:08.080",
+        "publishedAt": "2026-10-31T18:17:08.080",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Highflame ramparts 0.8.1 through 0.8.10 contains a security scan bypass vulnerability that allows attackers to hide malicious payloads because…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120202"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain super-administrator access by injecting query conditions into the JPOM-USER-TOKEN header. Attackers can send a value like 'is not null', which Hutool's Condition parser treats as an operator, then execute commands through Jpom's script features.",
+        "id": "CVE-2026-120201",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:08.023",
+        "publishedAt": "2026-10-31T18:17:07.890",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain super-administrator access by…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120201"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "Nexterm through 1.2.2-BETA contains a missing authorization vulnerability that allows authenticated users to hibernate, resume, or terminate other users' remote sessions via session lifecycle routes. Attackers who obtain a session ID can call the hibernate, resume, or DELETE connection endpoints to disrupt live SSH, RDP, VNC, or SFTP sessions.",
+        "id": "CVE-2026-120200",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:07.713",
+        "publishedAt": "2026-10-31T18:17:07.713",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Nexterm through 1.2.2-BETA contains a missing authorization vulnerability that allows authenticated users to hibernate, resume, or terminate other users'…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120200"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "LearnHouse before 1.1.1 contains a missing authorization vulnerability in the assignment API that allows authenticated users to read other users' grades and submissions. Attackers can supply another user_id to the submissions grade endpoint or query submission read functions to view other students' work, grades and instructor feedback.",
+        "id": "CVE-2026-120199",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-10-31T18:17:07.653",
+        "publishedAt": "2026-10-31T18:17:07.010",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "LearnHouse before 1.1.1 contains a missing authorization vulnerability in the assignment API that allows authenticated users to read other users' grades and…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120199"
       }
     ],
-    "low": 75,
-    "medium": 808,
-    "none": 0,
-    "unscored": 615
+    "low": 41,
+    "medium": 395,
+    "none": 2,
+    "unscored": 136
   },
   "snapshot": {
-    "cves": 2634,
-    "kevAdded": 2,
-    "knownExploited": 3,
+    "cves": 1098,
+    "kevAdded": 0,
+    "knownExploited": 5,
     "projects": 18,
-    "releases": 0,
-    "techEntries": 46
+    "releases": 1,
+    "techEntries": 31
   },
   "sources": {
     "opensource": {
@@ -763,7 +782,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 0,
+        "inWindow": 1,
         "status": "partial",
         "total": 55
       }
@@ -771,27 +790,43 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 2,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1766
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2634,
+        "inWindow": 1098,
         "status": "success",
-        "total": 2634
+        "total": 1098
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 46,
+        "inWindow": 31,
         "status": "success",
         "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-10-30T21:09:54+00:00",
+      "source": "Ars Technica",
+      "summary": "It's still unknown how attackers got access to Anthropic's verified Cursor account.",
+      "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+      "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-10-30T19:37:12+00:00",
+      "source": "The Register",
+      "summary": "n0n-existent security",
+      "title": "Crim spent $7K+ on AI services in extortion attacks, then left evidence for all to see",
+      "url": "https://www.theregister.com/security/2026/10/30/crim-spent-7k-on-ai-services-in-extortion-attacks-then-left-evidence-for-all-to-see/5306754"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-10-30T17:38:50+00:00",
@@ -895,22 +930,6 @@
       "summary": "Binance freezes funny money after compromise of engineer’s laptop linked to $6.3 billion of unauthorized trades",
       "title": "In the year AI re-wrote the infosec rulebook, it’s comforting to know crypto exchanges still have bad security",
       "url": "https://www.theregister.com/security/2026/10/30/in-the-year-ai-re-wrote-the-infosec-rulebook-its-comforting-to-know-crypto-exchanges-still-have-bad-security/5306539"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-10-29T23:12:26+00:00",
-      "source": "The Register",
-      "summary": "Embedded browsers are at the heart of the problem",
-      "title": "Researchers find bugs in 5 AI developer tools, with OpenAI and Microsoft flaws still unpatched",
-      "url": "https://www.theregister.com/security/2026/10/29/researchers-find-bugs-in-5-ai-developer-tools-with-openai-and-microsoft-flaws-still-unpatched/5306508"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-10-29T20:04:05+00:00",
-      "source": "The Register",
-      "summary": "Ask AI dumb things and leave no local chat history, all with the style of a kids' fantasy novel – or rather, one of its magical letters",
-      "title": "Howler will have AI answer your questions, then burn the chat",
-      "url": "https://www.theregister.com/offbeat/2026/10/29/howler-will-have-ai-answer-your-questions-then-burn-the-chat/5306484"
     }
   ]
 }

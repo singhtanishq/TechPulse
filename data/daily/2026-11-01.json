@@ -1,0 +1,311 @@
+{
+  "coveredIstDay": "2026-10-31",
+  "date": "2026-11-01",
+  "generatedAt": "2026-10-31T21:49:04.784449+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 19,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201250,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 96,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143313,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 107,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139566,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 126,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128665,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 50,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123167,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 62,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 120926,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 40,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 114383,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 17,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105046,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 103,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98124,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 93,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91559,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-10-31T00:26:41Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.42.0",
+        "version": "v3.42.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 8.8,
+        "description": "Double free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-83831",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83831"
+      },
+      {
+        "cvss": 7.0,
+        "description": "Use after free in Windows Win32 Kernel Subsystem allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-70271",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70271"
+      },
+      {
+        "cvss": 7.8,
+        "description": "Heap-based buffer overflow in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-70106",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70106"
+      },
+      {
+        "cvss": 5.3,
+        "description": "FFmpeg 5.0 through 9.0.2 contains a path traversal vulnerability in the IMF demuxer that allows attackers to open files outside the package via unvalidated ASSETMAP Path elements. Attackers can supply",
+        "id": "CVE-2026-120210",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120210"
+      },
+      {
+        "cvss": 9.3,
+        "description": "AJ-Report through 1.7.1 signs share tokens with a hard-coded JWT secret, allowing attackers to forge valid Share-Tokens offline. Attackers can mint a token with reportCode 'dataSet' to access the test",
+        "id": "CVE-2026-120209",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120209"
+      },
+      {
+        "cvss": 7.7,
+        "description": "libheif 1.18.0 before 1.23.3 contains a heap-based buffer overflow vulnerability in unc_decoder_mixed_interleave::processTile() that allows attackers to write out of bounds by supplying chroma compone",
+        "id": "CVE-2026-120208",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120208"
+      },
+      {
+        "cvss": 7.0,
+        "description": "Thelia Page Module before 2.0.4 contains a cross-site request forgery vulnerability that allows remote attackers to delete page tags, documents and images by abusing back-office delete routes lacking ",
+        "id": "CVE-2026-120207",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120207"
+      },
+      {
+        "cvss": 5.9,
+        "description": "Thelia before 3.2.0 contains a cross-site request forgery vulnerability in the back office that allows attackers to forge administrative actions because per-session CSRF tokens leak via URL query stri",
+        "id": "CVE-2026-120206",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120206"
+      },
+      {
+        "cvss": 7.4,
+        "description": "Thelia before 3.1.0 contains a stored cross-site scripting vulnerability in ForSomeCustomers::getSummary() that allows unauthenticated attackers to inject scripts via unescaped customer names. Attacke",
+        "id": "CVE-2026-120205",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120205"
+      },
+      {
+        "cvss": 6.3,
+        "description": "DeepInfer through 0.1.0 contains a path traversal vulnerability in the unauthenticated /profile endpoint that allows remote attackers to create arbitrary directories via the output_dir parameter. Atta",
+        "id": "CVE-2026-120204",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120204"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 111,
+      "HIGH": 413,
+      "LOW": 41,
+      "MEDIUM": 395,
+      "NONE": 2,
+      "UNSCORED": 136
+    }
+  },
+  "snapshot": {
+    "cves": 1098,
+    "kevAdded": 0,
+    "knownExploited": 5,
+    "projects": 18,
+    "releases": 1,
+    "techEntries": 31
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1766
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 1,
+      "status": "partial",
+      "total": 55
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1098,
+      "status": "success",
+      "total": 1098
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 31,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 15,
+      "tech": 16
+    },
+    "recent": [
+      {
+        "published_at": "2026-10-30T21:09:54+00:00",
+        "source": "Ars Technica",
+        "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
+        "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
+      },
+      {
+        "published_at": "2026-10-30T19:37:12+00:00",
+        "source": "The Register",
+        "title": "Crim spent $7K+ on AI services in extortion attacks, then left evidence for all to see",
+        "url": "https://www.theregister.com/security/2026/10/30/crim-spent-7k-on-ai-services-in-extortion-attacks-then-left-evidence-for-all-to-see/5306754"
+      },
+      {
+        "published_at": "2026-10-30T17:38:50+00:00",
+        "source": "Cloudflare",
+        "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+        "url": "https://blog.cloudflare.com/emudhra-patching/"
+      },
+      {
+        "published_at": "2026-10-30T16:48:37+00:00",
+        "source": "The Register",
+        "title": "GM cracks the petty cash box for multistate driver tracking settlement",
+        "url": "https://www.theregister.com/security/2026/10/30/gm-cracks-the-petty-cash-box-for-multistate-driver-tracking-settlement/5306721"
+      },
+      {
+        "published_at": "2026-10-30T16:27:00+00:00",
+        "source": "The Register",
+        "title": "Anthropic: That Claude Code extension compromise… couldn't be us",
+        "url": "https://www.theregister.com/cyber-crime/2026/10/30/anthropic-that-claude-code-extension-compromise-couldnt-be-us/5306682"
+      },
+      {
+        "published_at": "2026-10-30T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      },
+      {
+        "published_at": "2026-10-30T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Innovate on your own business terms: Google Cloud spend caps now generally available",
+        "url": "https://cloud.google.com/blog/topics/cost-management/google-cloud-spend-caps-now-generally-available/"
+      },
+      {
+        "published_at": "2026-10-30T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new in AI infrastructure and orchestration in October",
+        "url": "https://cloud.google.com/blog/topics/ai-infrastructure/whats-new-in-ai-infrastructure-this-month/"
+      },
+      {
+        "published_at": "2026-10-30T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "When the Kubernetes API went silent: A three-layer networking mystery",
+        "url": "https://cloud.google.com/blog/products/networking/the-three-layer-gke-network-mystery/"
+      },
+      {
+        "published_at": "2026-10-30T14:23:43+00:00",
+        "source": "Cloudflare",
+        "title": "Cloudflare services for private origins is now generally available",
+        "url": "https://blog.cloudflare.com/private-origins-public-to-private/"
+      }
+    ],
+    "sources": {
+      "Ars Technica": 3,
+      "Cloudflare": 3,
+      "Google Cloud": 9,
+      "Meta": 1,
+      "Microsoft": 1,
+      "The Register": 14
+    }
+  },
+  "window": {
+    "end": "2026-10-31T18:30:00+00:00",
+    "start": "2026-10-30T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
