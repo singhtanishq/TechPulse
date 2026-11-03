@@ -1,6 +1,225 @@
 {
   "archive": [
     {
+      "date": "2026-11-03",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 10,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201271,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": -227,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143233,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -194,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139535,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -194,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128621,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 14,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123202,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 36,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 120999,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 43,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114454,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 34,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105100,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": -223,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98055,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -221,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91489,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 2
+        },
+        "recent": [
+          {
+            "project": "next.js",
+            "published_at": "2026-11-02T16:41:08Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v16.4.4",
+            "version": "v16.4.4"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-01T20:56:19Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.42.1",
+            "version": "v3.42.1"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 61,
+          "HIGH": 314,
+          "LOW": 50,
+          "MEDIUM": 328,
+          "NONE": 0,
+          "UNSCORED": 25
+        }
+      },
+      "snapshot": {
+        "cves": 778,
+        "kevAdded": 0,
+        "knownExploited": 3,
+        "projects": 18,
+        "releases": 2,
+        "techEntries": 18
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1766
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 2,
+          "status": "partial",
+          "total": 56
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 778,
+          "status": "success",
+          "total": 778
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 18,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 7,
+          "tech": 11
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-02T18:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Google Cloud Developer plugin now available in Antigravity Marketplace",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-developer-plugin-now-available-in-antigravity-marketplace/"
+          },
+          {
+            "published_at": "2026-11-02T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Beyond Migration: Using Database Migration Service for disk shrinking",
+            "url": "https://cloud.google.com/blog/products/databases/use-dms-to-shrink-cloud-sql-for-sql-server-disk/"
+          },
+          {
+            "published_at": "2026-11-02T16:45:48+00:00",
+            "source": "AWS",
+            "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
+            "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/"
+          },
+          {
+            "published_at": "2026-11-02T16:44:30+00:00",
+            "source": "The Register",
+            "title": "Thieves pilfer environment variables from Trigger AI workflow tool",
+            "url": "https://www.theregister.com/security/2026/11/02/thieves-pilfer-environment-variables-from-trigger-ai-workflow-tool/5306998"
+          },
+          {
+            "published_at": "2026-11-02T16:00:00+00:00",
+            "source": "The Register",
+            "title": "Token thieves costing companies $100K+ per day in illicit LLM charges",
+            "url": "https://www.theregister.com/security/2026/11/02/token-thieves-costing-companies-100k-per-day-in-illicit-llm-charges/5306967"
+          },
+          {
+            "published_at": "2026-11-02T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What Google Cloud announced in AI this month",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month/"
+          },
+          {
+            "published_at": "2026-11-02T15:30:00+00:00",
+            "source": "The Register",
+            "title": "SUSE to cut one in ten employees because of... AI",
+            "url": "https://www.theregister.com/software/2026/11/02/suse-to-cut-one-in-ten-employees-because-of-ai/5306950"
+          },
+          {
+            "published_at": "2026-11-02T14:45:00+00:00",
+            "source": "The Register",
+            "title": "Nuclear threats and street brawls: Russia, Ukraine report attacks on their emergency alert apps",
+            "url": "https://www.theregister.com/security/2026/11/02/nuclear-threats-and-street-brawls-russia-ukraine-report-attacks-on-their-emergency-alert-apps/5306901"
+          },
+          {
+            "published_at": "2026-11-02T14:00:00+00:00",
+            "source": "The Register",
+            "title": "Microsoft's Canada timezone troubles leave admins fixing calendars, pretending they're in Bogota",
+            "url": "https://www.theregister.com/software/2026/11/02/microsofts-canada-timezone-troubles-leave-admins-fixing-calendars-pretending-theyre-in-bogota/5306934"
+          },
+          {
+            "published_at": "2026-11-02T14:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Shutting the Door on the XCPE Botnet",
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-02",
       "opensource": {
         "topProjects": [
@@ -10360,8 +10579,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-01T22:16:30.103711+00:00",
-    "totalSnapshots": 47,
+    "generatedAt": "2026-11-03T01:10:38.953551+00:00",
+    "totalSnapshots": 48,
     "warnings": []
   }
 }
