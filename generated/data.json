@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1610,
+      "date": "2026-11-04",
+      "kevAdded": 1,
+      "knownExploited": 1,
+      "projects": 18,
+      "releases": 4,
+      "techEntries": 30
+    },
+    {
       "cves": 778,
       "date": "2026-11-03",
       "kevAdded": 0,
@@ -434,16 +443,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-02",
-    "date": "2026-11-03",
-    "daysObserved": 48,
-    "generatedAt": "2026-11-03T01:10:38.953551+00:00",
-    "snapshots": 48,
+    "coveredDate": "2026-11-03",
+    "date": "2026-11-04",
+    "daysObserved": 49,
+    "generatedAt": "2026-11-03T23:36:12.303674+00:00",
+    "snapshots": 49,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 10,
+      "daily_growth": 19,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -451,11 +460,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201271,
+      "stars": 201290,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": -227,
+      "daily_growth": 15,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -463,11 +472,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143233,
+      "stars": 143248,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": -194,
+      "daily_growth": 26,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -475,11 +484,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139535,
+      "stars": 139561,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": -194,
+      "daily_growth": 22,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -487,11 +496,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128621,
+      "stars": 128643,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": 16,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -499,11 +508,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123202,
+      "stars": 123218,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 36,
+      "daily_growth": 31,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -511,11 +520,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 120999,
+      "stars": 121030,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 43,
+      "daily_growth": 33,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -523,11 +532,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114454,
+      "stars": 114487,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 34,
+      "daily_growth": 14,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -535,11 +544,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105100,
+      "stars": 105114,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": -223,
+      "daily_growth": 4,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -547,11 +556,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98055,
+      "stars": 98059,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": -221,
+      "daily_growth": 7,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -559,243 +568,261 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91489,
+      "stars": 91496,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "patch",
-      "project": "next.js",
-      "publishedAt": "2026-11-02T16:41:08Z",
-      "repository": "vercel/next.js",
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-11-03T18:05:44Z",
+      "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.4",
-      "version": "v16.4.4"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.43.0",
+      "version": "v3.43.0"
+    },
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-11-03T15:08:56Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.40.0",
+      "version": "v13.40.0"
     },
     {
       "kind": "patch",
-      "project": "openai-python",
-      "publishedAt": "2026-11-01T20:56:19Z",
-      "repository": "openai/openai-python",
+      "project": "tailwindcss",
+      "publishedAt": "2026-11-02T21:16:50Z",
+      "repository": "tailwindlabs/tailwindcss",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.42.1",
-      "version": "v3.42.1"
+      "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.4",
+      "version": "v4.3.4"
+    },
+    {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-11-02T19:07:19Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.4.0",
+      "version": "v2.4.0"
     }
   ],
   "security": {
-    "critical": 61,
-    "high": 314,
-    "kevCatalogTotal": 1766,
+    "critical": 98,
+    "high": 646,
+    "kevCatalogTotal": 1767,
     "latest": [
       {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "An authorization issue was addressed with improved access control. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An application may be able to execute arbitrary code with system privileges.",
-        "id": "CVE-2026-112677",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:29:24.830",
-        "publishedAt": "2026-10-26T21:18:01.417",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "An authorization issue was addressed with improved access control. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112677"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, visionOS 27.2. An app may be able to cause unexpected system termination or write kernel memory.",
-        "id": "CVE-2026-84494",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:28:57.940",
-        "publishedAt": "2026-10-26T21:19:59.083",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, visionOS…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84494"
-      },
-      {
-        "cvss_score": 4.4,
-        "cvss_version": "3.1",
-        "description": "An authentication issue was addressed with improved state management. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2. A malicious app may be able to access Bluetooth without user consent.",
-        "id": "CVE-2026-84493",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:28:26.910",
-        "publishedAt": "2026-10-26T21:19:58.913",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "An authentication issue was addressed with improved state management. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2. A…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84493"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "A permissions issue was addressed with improved validation. This issue is fixed in macOS Golden Gate 27.2. An app may be able to access sensitive user data.",
-        "id": "CVE-2026-112506",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:28:25.427",
-        "publishedAt": "2026-10-26T21:17:41.967",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A permissions issue was addressed with improved validation. This issue is fixed in macOS Golden Gate 27.2. An app may be able to access sensitive user data.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112506"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "An access issue was addressed with improved access restrictions. This issue is fixed in iOS 27.2 and iPadOS 27.2, visionOS 27.2. An app may be able to access sensitive user data.",
-        "id": "CVE-2026-112618",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:28:16.233",
-        "publishedAt": "2026-10-26T21:17:54.690",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "An access issue was addressed with improved access restrictions. This issue is fixed in iOS 27.2 and iPadOS 27.2, visionOS 27.2. An app may be able to access…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112618"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, visionOS 27.2. Processing maliciously crafted web content may lead to arbitrary code execution.",
-        "id": "CVE-2026-112623",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:27:58.770",
-        "publishedAt": "2026-10-26T21:17:55.493",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112623"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "An authorization issue was addressed with improved state management. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2, visionOS 27.2. An app may be able to access sensitive user data.",
-        "id": "CVE-2026-65397",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:27:43.360",
-        "publishedAt": "2026-10-26T21:18:46.993",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "An authorization issue was addressed with improved state management. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65397"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, tvOS 27.2, visionOS 27.2, watchOS 27.2. Processing maliciously crafted web content may lead to arbitrary code execution.",
-        "id": "CVE-2026-112626",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:27:34.580",
-        "publishedAt": "2026-10-26T21:17:55.980",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112626"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, visionOS 27.2, watchOS 27.2. A buffer overflow may result in memory corruption and unexpected app termination.",
-        "id": "CVE-2026-65385",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:27:28.380",
-        "publishedAt": "2026-10-26T21:18:45.830",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65385"
-      },
-      {
-        "cvss_score": 8.7,
+        "cvss_score": 4.8,
         "cvss_version": "4.0",
-        "description": "libexpat through 2.9.0 contains a denial of service vulnerability because billion laughs protection in accountingDiffTolerated() in xmlparse.c detects entity amplification too late. Attackers can supply a moderately sized XML document with a large DTD and nested entity expansions to consume tens of seconds of CPU per parse.",
-        "id": "CVE-2026-115506",
+        "description": "ImageMagick before 7.1.2-33 contains a memory leak vulnerability in PerlMagick that fails to free values returned when reading image properties. Attackers can repeatedly trigger property reads through five affected PerlMagick code locations to exhaust memory and cause denial of service.",
+        "id": "CVE-2026-116157",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:27:06.127",
-        "publishedAt": "2026-10-22T20:17:06.620",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-03T18:29:16.480",
+        "publishedAt": "2026-10-25T14:16:54.270",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "libexpat through 2.9.0 contains a denial of service vulnerability because billion laughs protection in accountingDiffTolerated() in xmlparse.c detects entity…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115506"
+        "title": "ImageMagick before 7.1.2-33 contains a memory leak vulnerability in PerlMagick that fails to free values returned when reading image properties. Attackers can…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116157"
+      },
+      {
+        "cvss_score": 4.8,
+        "cvss_version": "4.0",
+        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak caused by a missing cleanup when the -set profile option is used. An attacker who induces a user to process images with the -set profile option can leak memory, potentially exhausting resources and causing a denial of service.",
+        "id": "CVE-2026-116156",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:29:03.750",
+        "publishedAt": "2026-10-25T14:16:54.133",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak caused by a missing cleanup when the -set profile option is used. An attacker who…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116156"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak in the handling of XMP profiles by various decoders. Attackers can supply images with a crafted XMP profile that leak memory each time they are processed, leading to resource exhaustion and denial of service.",
+        "id": "CVE-2026-116155",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:28:59.510",
+        "publishedAt": "2026-10-25T14:16:53.993",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak in the handling of XMP profiles by various decoders. Attackers can supply images…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116155"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak in its XML parsing code, where allocated memory is not released when parsing reaches the nesting depth limit. Attackers can supply crafted, deeply nested XML data to trigger the leak, causing memory exhaustion and denial of service.",
+        "id": "CVE-2026-116154",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:28:55.267",
+        "publishedAt": "2026-10-25T14:16:53.857",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak in its XML parsing code, where allocated memory is not released when parsing…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116154"
+      },
+      {
+        "cvss_score": 4.8,
+        "cvss_version": "4.0",
+        "description": "ImageMagick before 7.1.2-33 contains a heap buffer over-read vulnerability that allows attackers to read beyond allocated memory when printing a minimum-bounding-box. Attackers can supply a crafted image that triggers the over-read during minimum-bounding-box output, causing crashes or exposing adjacent heap memory.",
+        "id": "CVE-2026-116142",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:28:46.303",
+        "publishedAt": "2026-10-25T14:16:52.097",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "ImageMagick before 7.1.2-33 contains a heap buffer over-read vulnerability that allows attackers to read beyond allocated memory when printing a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116142"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "ImageMagick before 7.1.2-33 contains a policy bypass vulnerability in the UHDR decoder that allows attackers to evade image width and height limits because extent checks occur after decoding. Attackers can supply crafted UHDR images with oversized dimensions that are fully decoded before policy limits are enforced, causing excessive resource consumption.",
+        "id": "CVE-2026-116141",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:28:36.053",
+        "publishedAt": "2026-10-25T14:16:51.940",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "ImageMagick before 7.1.2-33 contains a policy bypass vulnerability in the UHDR decoder that allows attackers to evade image width and height limits because…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116141"
+      },
+      {
+        "cvss_score": 1.8,
+        "cvss_version": "4.0",
+        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-32 contains a security policy bypass caused by an incomplete fix for the policy bypass reported in GHSA-jjp4-3fwf-393j. An attacker able to supply input to ImageMagick can evade configured security policy restrictions, allowing operations the policy was intended to block.",
+        "id": "CVE-2026-116145",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:28:29.483",
+        "publishedAt": "2026-10-25T14:16:52.543",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-32 contains a security policy bypass caused by an incomplete fix for the policy bypass reported in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116145"
+      },
+      {
+        "cvss_score": 9.6,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 can allow attackers to execute arbitrary Python code with root privileges (UID=0) on the Langflow server by submitting components containing socket or urllib imports. This enables: (1) AWS credential theft via IMDSv1 SSRF with full IAM role permissions, (2) arbitrary file exfiltration from the container filesystem, and (3) lateral movement to internal…",
+        "id": "CVE-2026-12944",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:27:56.130",
+        "publishedAt": "2026-09-14T22:16:56.950",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "IBM Langflow OSS 1.0.0 through 1.10.0 can allow attackers to execute arbitrary Python code with root privileges (UID=0) on the Langflow server by submitting…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12944"
       },
       {
         "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2, visionOS 27.2. Processing a maliciously crafted image may lead to unexpected app termination.",
-        "id": "CVE-2026-112629",
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+        "id": "CVE-2026-12767",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:27:00.733",
-        "publishedAt": "2026-10-26T21:17:56.477",
+        "lastModifiedAt": "2026-11-03T18:27:48.923",
+        "publishedAt": "2026-09-14T21:17:00.847",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112629"
+        "title": "IBM Langflow OSS 1.0.0 through 1.11.5 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12767"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.2 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+        "id": "CVE-2026-12766",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:27:37.203",
+        "publishedAt": "2026-09-14T21:17:00.713",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "IBM Langflow OSS 1.0.0 through 1.11.2 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12766"
       },
       {
         "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. Processing a maliciously crafted image may lead to unexpected app termination.",
-        "id": "CVE-2026-112633",
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.2 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+        "id": "CVE-2026-12765",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:26:19.697",
-        "publishedAt": "2026-10-26T21:17:56.973",
+        "lastModifiedAt": "2026-11-03T18:27:24.970",
+        "publishedAt": "2026-09-14T21:17:00.583",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112633"
+        "title": "IBM Langflow OSS 1.0.0 through 1.10.2 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12765"
       },
       {
-        "cvss_score": 8.4,
-        "cvss_version": "3.1",
-        "description": "The issue was addressed with improved checks. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to break out of its sandbox.",
-        "id": "CVE-2026-65363",
+        "cvss_score": 7.2,
+        "cvss_version": "4.0",
+        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a stack-based buffer overflow in the handling of bzip2 compressed images. Attackers can supply a crafted image using bzip2 compression to overwrite stack memory during decoding, causing crashes or memory corruption.",
+        "id": "CVE-2026-116149",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:25:46.667",
-        "publishedAt": "2026-10-26T21:18:42.567",
+        "lastModifiedAt": "2026-11-03T18:27:24.230",
+        "publishedAt": "2026-10-25T14:16:53.123",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "The issue was addressed with improved checks. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65363"
+        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a stack-based buffer overflow in the handling of bzip2 compressed images. Attackers can supply a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116149"
       },
       {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2, visionOS 27.2. Processing a maliciously crafted image may lead to unexpected app termination.",
-        "id": "CVE-2026-112634",
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "ImageMagick before 7.1.2-33 contains a heap buffer overflow vulnerability on 32-bit systems that allows attackers to overwrite heap memory when convex-hull information is requested. Attackers can supply crafted images processed with convex-hull calculations to corrupt heap memory, causing crashes or potential code execution.",
+        "id": "CVE-2026-116153",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:25:37.190",
-        "publishedAt": "2026-10-26T21:17:57.137",
+        "lastModifiedAt": "2026-11-03T18:27:19.120",
+        "publishedAt": "2026-10-25T14:16:53.713",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "ImageMagick before 7.1.2-33 contains a heap buffer overflow vulnerability on 32-bit systems that allows attackers to overwrite heap memory when convex-hull…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116153"
+      },
+      {
+        "cvss_score": 4.2,
+        "cvss_version": "3.1",
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow an authenticated attacker to access another user's MCP server context due to improper cache key isolation in the MCP Tools component.",
+        "id": "CVE-2026-12763",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-03T18:27:09.720",
+        "publishedAt": "2026-09-14T21:17:00.440",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112634"
+        "title": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow an authenticated attacker to access another user's MCP server context due to improper cache key isolation in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12763"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 5.4,
         "cvss_version": "3.1",
-        "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, tvOS 27.2, visionOS 27.2, watchOS 27.2. Processing maliciously crafted web content may lead to arbitrary code execution.",
-        "id": "CVE-2026-112637",
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.2 could allow a remote authenticated attacker to change the password of an account due to improper authentication.",
+        "id": "CVE-2026-17628",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-02T18:25:01.470",
-        "publishedAt": "2026-10-26T21:17:57.297",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-03T18:27:01.363",
+        "publishedAt": "2026-09-14T20:16:42.140",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A use-after-free issue was addressed with improved memory management. This issue is fixed in Safari 27.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112637"
+        "title": "IBM Langflow OSS 1.0.0 through 1.10.2 could allow a remote authenticated attacker to change the password of an account due to improper authentication.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17628"
       }
     ],
-    "low": 50,
-    "medium": 328,
-    "none": 0,
-    "unscored": 25
+    "low": 92,
+    "medium": 619,
+    "none": 1,
+    "unscored": 154
   },
   "snapshot": {
-    "cves": 778,
-    "kevAdded": 0,
-    "knownExploited": 3,
+    "cves": 1610,
+    "kevAdded": 1,
+    "knownExploited": 1,
     "projects": 18,
-    "releases": 2,
-    "techEntries": 18
+    "releases": 4,
+    "techEntries": 30
   },
   "sources": {
     "opensource": {
@@ -809,35 +836,147 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 2,
+        "inWindow": 4,
         "status": "partial",
-        "total": 56
+        "total": 57
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1766
+        "inWindow": 1,
+        "status": "success",
+        "total": 1767
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 778,
+        "inWindow": 1610,
         "status": "success",
-        "total": 778
+        "total": 1610
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 18,
+        "inWindow": 30,
         "status": "success",
-        "total": 229
+        "total": 230
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T18:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "The syndicated loan and private credit markets, both critical components of corporate finance, have long been constrained by manual processes, leading to multi-week settlements, valuation opacity, and trade friction. To solve these long-standing challenges, fintech innovator…",
+      "title": "How Nammu21 automates syndicated loans on Google Cloud Universal Ledger",
+      "url": "https://cloud.google.com/blog/topics/financial-services/how-nammu21-automates-syndicated-loans-on-google-cloud-universal-ledger/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-03T17:08:21+00:00",
+      "source": "Ars Technica",
+      "summary": "Google has cut ties with the company behind the botnet campaign.",
+      "title": "Google dismantles botnet secretly running on 1.3 million Android TV boxes",
+      "url": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T17:00:35+00:00",
+      "source": "Meta",
+      "summary": "Facebook Feature Framework (F3) is Meta’s framework for authoring, compiling, and serving the machine learning features underlying ads ranking models, where a single request can require more than 20,000 features. We first presented F3 at AI @ Scale 2020. F3 reduced execution…",
+      "title": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+      "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Over the past few years, our Google Cloud Consulting team has partnered with many companies to introduce AI into their daily operations. In that time, we’ve seen the focus shift from generative AI that answers questions to agentic systems that fully carry out the work. These…",
+      "title": "Leading in the agentic era: How to put people first as you adopt AI agents",
+      "url": "https://cloud.google.com/blog/topics/consulting/lessons-for-adopting-ai-agents/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-03T16:10:00+00:00",
+      "source": "The Register",
+      "summary": "Customers left wondering what's been compromised after vendor advises resetting passwords, 2FA and passkeys",
+      "title": "Password manager mSecure tells users to change passwords, won't say why",
+      "url": "https://www.theregister.com/security/2026/11/03/password-manager-msecure-tells-users-to-change-passwords-wont-say-why/5307296"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-03T16:03:13+00:00",
+      "source": "Ars Technica",
+      "summary": "UEFI bootkit BlackX exploits Microsoft's lack of clarity around Secure Boot protections.",
+      "title": "UEFI bootkit infected fully patched Windows machines. Is Microsoft to blame?",
+      "url": "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T16:02:00+00:00",
+      "source": "The Register",
+      "summary": "Full-disk encryption joins the toolkit, MATE and Xfce stay while Gershwin sits this one out",
+      "title": "GhostBSD 26.2 takes the fright out of FreeBSD with a friendlier installer",
+      "url": "https://www.theregister.com/os-platforms/2026/11/03/ghostbsd-262-takes-the-fright-out-of-freebsd-with-a-friendlier-installer/5307228"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T16:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone. The post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog .",
+      "title": "Arnis turns any place on Earth into a Minecraft world",
+      "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T14:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure.",
+      "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+      "url": "https://blog.cloudflare.com/zero-wire/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-03T12:39:25+00:00",
+      "source": "The Register",
+      "summary": "Cyber agency warns critical infrastructure is a likely target as chief urges bosses to stop doing 'tech on the cheap'",
+      "title": "Britain on notice: AI-powered ransomware attacks to arrive by 2028",
+      "url": "https://www.theregister.com/security/2026/11/03/britain-on-notice-ai-powered-ransomware-attacks-to-arrive-by-2028/5307200"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T08:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "You’re probably hearing more about SKILL.md files, and you’ll see that a lot of people test them the same way: paste a prompt into chat, watch it pass once on a laptop, and merge to main. But when you paste three pages of CLI docs into a markdown file without an evaluation loop…",
+      "title": "Five rules for evaluating agent skills before they bloat your context window",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/evaluate-agent-skills-before-they-bloat-your-context-window/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T08:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Authors: Burak Gokturk, VP Research & Development; Rujun Han, Research Scientist; George Lee, Product Manager. Today, the Google AI & Infrastructure team is announcing Physical-Engineering's Last Exam (PLE) , a new benchmark and open competition, developed in collaboration with…",
+      "title": "Introducing Physical-Engineering’s Last Exam for agents",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-physical-engineerings-last-exam-for-agents/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-02T22:55:17+00:00",
+      "source": "The Register",
+      "summary": "Your industrial IoT gateway isn't exposed to the internet, right? RIGHT?!",
+      "title": "Max-severity bug in widely used OT programming tool exploited to deliver Linux malware",
+      "url": "https://www.theregister.com/security/2026/11/02/max-severity-bug-in-widely-used-ot-programming-tool-exploited-to-deliver-linux-malware/5307086"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-02T19:03:31+00:00",
+      "source": "The Register",
+      "summary": "Videostrong accused of shipping devices with a backdoor baked in",
+      "title": "Cops bust botnet of 1.3M infected Android TV boxes",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-11-02T18:00:00+00:00",
@@ -845,118 +984,6 @@
       "summary": "Building cloud solutions with autonomous AI agents should feel fast, safe, and reliable. Without cloud-specific context, coding agents often struggle. They might invent deprecated SDK syntax, guess invalid command flags, or attempt operations without the required Identity and…",
       "title": "Google Cloud Developer plugin now available in Antigravity Marketplace",
       "url": "https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-developer-plugin-now-available-in-antigravity-marketplace/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "When database engineers hear “database migration\", they typically think of a one-time onboarding pathway—moving databases from on-premises environments to the cloud, or between different cloud providers. However, Google Cloud's Database Migration Service (DMS) supports Cloud SQL…",
-      "title": "Beyond Migration: Using Database Migration Service for disk shrinking",
-      "url": "https://cloud.google.com/blog/products/databases/use-dms-to-shrink-cloud-sql-for-sql-server-disk/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T16:45:48+00:00",
-      "source": "AWS",
-      "summary": "The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions, which already orchestrates over 220 AWS services, can now be handed to an agent as a tool, so workflows teams already trust became…",
-      "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
-      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-02T16:44:30+00:00",
-      "source": "The Register",
-      "summary": "So, who's ready to clear the dust out of that server closet and move things back on-prem?",
-      "title": "Thieves pilfer environment variables from Trigger AI workflow tool",
-      "url": "https://www.theregister.com/security/2026/11/02/thieves-pilfer-environment-variables-from-trigger-ai-workflow-tool/5306998"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-02T16:00:00+00:00",
-      "source": "The Register",
-      "summary": "Don't let the LLMjackers hit you",
-      "title": "Token thieves costing companies $100K+ per day in illicit LLM charges",
-      "url": "https://www.theregister.com/security/2026/11/02/token-thieves-costing-companies-100k-per-day-in-illicit-llm-charges/5306967"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Editor’s note : Want to keep up with the latest from Google Cloud? Check back here for a monthly recap of our latest updates, announcements, resources, events, learning opportunities, and more. This October, we took massive leaps forward in delivering flexible, open, and…",
-      "title": "What Google Cloud announced in AI this month",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T15:30:00+00:00",
-      "source": "The Register",
-      "summary": "'Modern tooling is already changing our daily workflows' says CEO at open source biz",
-      "title": "SUSE to cut one in ten employees because of... AI",
-      "url": "https://www.theregister.com/software/2026/11/02/suse-to-cut-one-in-ten-employees-because-of-ai/5306950"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-02T14:45:00+00:00",
-      "source": "The Register",
-      "summary": "Within minutes of a ceasefire lifting in Kherson, Ukraine’s citizens were pummelled with threatening notifications",
-      "title": "Nuclear threats and street brawls: Russia, Ukraine report attacks on their emergency alert apps",
-      "url": "https://www.theregister.com/security/2026/11/02/nuclear-threats-and-street-brawls-russia-ukraine-report-attacks-on-their-emergency-alert-apps/5306901"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T14:00:00+00:00",
-      "source": "The Register",
-      "summary": "Canadian regions stop turning back the clocks, Microsoft wishes it could",
-      "title": "Microsoft's Canada timezone troubles leave admins fixing calendars, pretending they're in Bogota",
-      "url": "https://www.theregister.com/software/2026/11/02/microsofts-canada-timezone-troubles-leave-admins-fixing-calendars-pretending-theyre-in-bogota/5306934"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T14:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Introduction Last week, Google and industry partners dismantled the XCPE backdoor which enrolled more than 1.3 million set-top boxes into a botnet. We assess with high confidence that the backdoor and botnet were intentionally developed, deployed, and operated for financial gain…",
-      "title": "Shutting the Door on the XCPE Botnet",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T14:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Written by: Christopher Romano, Codi Starks, Garrett Mahoney, John Wolfram, Josh Murchie, K Singh, Mathew Potaczek, Mike Lombardi, Rik Dolfing Introduction Mandiant responded to multiple incidents in 2026 in which threat actors hijacked enterprise access to Large Language Models…",
-      "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T14:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Zone setting changes used to rebuild entire DNS zones, even ones with tens of millions of records. Here is how we built a planner that picks the smallest safe build, cutting full builds by 40%, peak memory by 85%, and halving build delay.",
-      "title": "How we halved DNS build delay and cut memory use by 85%",
-      "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-02T13:15:00+00:00",
-      "source": "The Register",
-      "summary": "Let it go (bad): Dozens of stores report mass food wastage as managers start their week in puddles",
-      "title": "Frozen part II: Hackers remotely defrost produce in Euro supermarkets ... again",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/02/frozen-part-ii-hackers-remotely-defrost-produce-in-euro-supermarkets-again/5306924"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-02T11:45:00+00:00",
-      "source": "The Register",
-      "summary": "Exchange scrambles to replace stolen funds as customers withdraw billions and hackers get busy laundering their haul",
-      "title": "FBI pins $6.3B Binance crypto heist on North Korean hackers",
-      "url": "https://www.theregister.com/security/2026/11/02/fbi-pins-63b-binance-crypto-heist-on-north-korean-hackers/5306889"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T04:39:50+00:00",
-      "source": "The Register",
-      "summary": "Wants more local AI, without Big Tech getting open access to everything",
-      "title": "India floats AI plan under which ‘The model travels to the data, rather than the data travelling to the model’",
-      "url": "https://www.theregister.com/public-sector/2026/11/02/india-floats-ai-plan-under-which-the-model-travels-to-the-data-rather-than-the-data-travelling-to-the-model/5306872"
     }
   ]
 }

@@ -1,6 +1,239 @@
 {
   "archive": [
     {
+      "date": "2026-11-04",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 19,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201290,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143248,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139561,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128643,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 16,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123218,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 31,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121030,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 33,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114487,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 14,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105114,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 4,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98059,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 7,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91496,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 3,
+          "other": 0,
+          "patch": 1
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-03T18:05:44Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.43.0",
+            "version": "v3.43.0"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-11-03T15:08:56Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v13.40.0",
+            "version": "v13.40.0"
+          },
+          {
+            "project": "tailwindcss",
+            "published_at": "2026-11-02T21:16:50Z",
+            "repository": "tailwindlabs/tailwindcss",
+            "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.4",
+            "version": "v4.3.4"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-11-02T19:07:19Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.4.0",
+            "version": "v2.4.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 98,
+          "HIGH": 646,
+          "LOW": 92,
+          "MEDIUM": 619,
+          "NONE": 1,
+          "UNSCORED": 154
+        }
+      },
+      "snapshot": {
+        "cves": 1610,
+        "kevAdded": 1,
+        "knownExploited": 1,
+        "projects": 18,
+        "releases": 4,
+        "techEntries": 30
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 1,
+          "status": "success",
+          "total": 1767
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 4,
+          "status": "partial",
+          "total": 57
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1610,
+          "status": "success",
+          "total": 1610
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 30,
+          "status": "success",
+          "total": 230
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 11,
+          "tech": 19
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-03T18:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How Nammu21 automates syndicated loans on Google Cloud Universal Ledger",
+            "url": "https://cloud.google.com/blog/topics/financial-services/how-nammu21-automates-syndicated-loans-on-google-cloud-universal-ledger/"
+          },
+          {
+            "published_at": "2026-11-03T17:08:21+00:00",
+            "source": "Ars Technica",
+            "title": "Google dismantles botnet secretly running on 1.3 million Android TV boxes",
+            "url": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/"
+          },
+          {
+            "published_at": "2026-11-03T17:00:35+00:00",
+            "source": "Meta",
+            "title": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
+            "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/"
+          },
+          {
+            "published_at": "2026-11-03T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Leading in the agentic era: How to put people first as you adopt AI agents",
+            "url": "https://cloud.google.com/blog/topics/consulting/lessons-for-adopting-ai-agents/"
+          },
+          {
+            "published_at": "2026-11-03T16:10:00+00:00",
+            "source": "The Register",
+            "title": "Password manager mSecure tells users to change passwords, won't say why",
+            "url": "https://www.theregister.com/security/2026/11/03/password-manager-msecure-tells-users-to-change-passwords-wont-say-why/5307296"
+          },
+          {
+            "published_at": "2026-11-03T16:03:13+00:00",
+            "source": "Ars Technica",
+            "title": "UEFI bootkit infected fully patched Windows machines. Is Microsoft to blame?",
+            "url": "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/"
+          },
+          {
+            "published_at": "2026-11-03T16:02:00+00:00",
+            "source": "The Register",
+            "title": "GhostBSD 26.2 takes the fright out of FreeBSD with a friendlier installer",
+            "url": "https://www.theregister.com/os-platforms/2026/11/03/ghostbsd-262-takes-the-fright-out-of-freebsd-with-a-friendlier-installer/5307228"
+          },
+          {
+            "published_at": "2026-11-03T16:00:00+00:00",
+            "source": "GitHub Blog",
+            "title": "Arnis turns any place on Earth into a Minecraft world",
+            "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/"
+          },
+          {
+            "published_at": "2026-11-03T14:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+            "url": "https://blog.cloudflare.com/zero-wire/"
+          },
+          {
+            "published_at": "2026-11-03T12:39:25+00:00",
+            "source": "The Register",
+            "title": "Britain on notice: AI-powered ransomware attacks to arrive by 2028",
+            "url": "https://www.theregister.com/security/2026/11/03/britain-on-notice-ai-powered-ransomware-attacks-to-arrive-by-2028/5307200"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-03",
       "opensource": {
         "topProjects": [
@@ -10579,8 +10812,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-03T01:10:38.953551+00:00",
-    "totalSnapshots": 48,
+    "generatedAt": "2026-11-03T23:36:12.303674+00:00",
+    "totalSnapshots": 49,
     "warnings": []
   }
 }
