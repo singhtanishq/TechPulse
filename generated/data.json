@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 2234,
+      "date": "2026-11-05",
+      "kevAdded": 1,
+      "knownExploited": 5,
+      "projects": 18,
+      "releases": 3,
+      "techEntries": 44
+    },
+    {
       "cves": 1610,
       "date": "2026-11-04",
       "kevAdded": 1,
@@ -443,16 +452,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-03",
-    "date": "2026-11-04",
-    "daysObserved": 49,
-    "generatedAt": "2026-11-03T23:36:12.303674+00:00",
-    "snapshots": 49,
+    "coveredDate": "2026-11-04",
+    "date": "2026-11-05",
+    "daysObserved": 50,
+    "generatedAt": "2026-11-04T23:53:09.089479+00:00",
+    "snapshots": 50,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 19,
+      "daily_growth": 22,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -460,11 +469,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201290,
+      "stars": 201312,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 76,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -472,11 +481,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143248,
+      "stars": 143324,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 12,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -484,11 +493,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139561,
+      "stars": 139573,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 27,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -496,11 +505,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128643,
+      "stars": 128670,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 20,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -508,11 +517,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123218,
+      "stars": 123238,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 31,
+      "daily_growth": 45,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -520,11 +529,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121030,
+      "stars": 121075,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 33,
+      "daily_growth": 46,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -532,11 +541,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114487,
+      "stars": 114533,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": 30,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -544,11 +553,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105114,
+      "stars": 105144,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 4,
+      "daily_growth": 6,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -556,11 +565,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98059,
+      "stars": 98065,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 7,
+      "daily_growth": 15,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -568,7 +577,7 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91496,
+      "stars": 91511,
       "url": "https://github.com/django/django"
     }
   ],
@@ -576,253 +585,244 @@
     {
       "kind": "minor",
       "project": "openai-python",
-      "publishedAt": "2026-11-03T18:05:44Z",
+      "publishedAt": "2026-11-04T02:23:23Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.43.0",
-      "version": "v3.43.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.45.0",
+      "version": "v3.45.0"
     },
     {
       "kind": "minor",
-      "project": "framework",
-      "publishedAt": "2026-11-03T15:08:56Z",
-      "repository": "laravel/framework",
+      "project": "openai-python",
+      "publishedAt": "2026-11-03T20:20:42Z",
+      "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v13.40.0",
-      "version": "v13.40.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.44.0",
+      "version": "v3.44.0"
     },
     {
       "kind": "patch",
-      "project": "tailwindcss",
-      "publishedAt": "2026-11-02T21:16:50Z",
-      "repository": "tailwindlabs/tailwindcss",
+      "project": "next.js",
+      "publishedAt": "2026-11-03T18:38:39Z",
+      "repository": "vercel/next.js",
       "source": "GitHub",
-      "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.4",
-      "version": "v4.3.4"
-    },
-    {
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-11-02T19:07:19Z",
-      "repository": "anthropics/anthropic-sdk-python",
-      "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.4.0",
-      "version": "v2.4.0"
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.5",
+      "version": "v16.4.5"
     }
   ],
   "security": {
-    "critical": 98,
-    "high": 646,
-    "kevCatalogTotal": 1767,
+    "critical": 234,
+    "high": 1047,
+    "kevCatalogTotal": 1768,
     "latest": [
       {
-        "cvss_score": 4.8,
+        "cvss_score": 7.1,
         "cvss_version": "4.0",
-        "description": "ImageMagick before 7.1.2-33 contains a memory leak vulnerability in PerlMagick that fails to free values returned when reading image properties. Attackers can repeatedly trigger property reads through five affected PerlMagick code locations to exhaust memory and cause denial of service.",
-        "id": "CVE-2026-116157",
+        "description": "When a server in pgAdmin 4 had no password file, client certificate or client key configured, or the configured one could not be found, pgAdmin left the parameter out of the connection and libpq fell back to the defaults of the operating-system account running pgAdmin: ~/.pgpass, ~/.postgresql/postgresql.crt and postgresql.key, or PGPASSFILE, PGSSLCERT and PGSSLKEY. In server mode any user could…",
+        "id": "CVE-2026-116247",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:29:16.480",
-        "publishedAt": "2026-10-25T14:16:54.270",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "ImageMagick before 7.1.2-33 contains a memory leak vulnerability in PerlMagick that fails to free values returned when reading image properties. Attackers can…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116157"
-      },
-      {
-        "cvss_score": 4.8,
-        "cvss_version": "4.0",
-        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak caused by a missing cleanup when the -set profile option is used. An attacker who induces a user to process images with the -set profile option can leak memory, potentially exhausting resources and causing a denial of service.",
-        "id": "CVE-2026-116156",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:29:03.750",
-        "publishedAt": "2026-10-25T14:16:54.133",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak caused by a missing cleanup when the -set profile option is used. An attacker who…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116156"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak in the handling of XMP profiles by various decoders. Attackers can supply images with a crafted XMP profile that leak memory each time they are processed, leading to resource exhaustion and denial of service.",
-        "id": "CVE-2026-116155",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:28:59.510",
-        "publishedAt": "2026-10-25T14:16:53.993",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak in the handling of XMP profiles by various decoders. Attackers can supply images…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116155"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak in its XML parsing code, where allocated memory is not released when parsing reaches the nesting depth limit. Attackers can supply crafted, deeply nested XML data to trigger the leak, causing memory exhaustion and denial of service.",
-        "id": "CVE-2026-116154",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:28:55.267",
-        "publishedAt": "2026-10-25T14:16:53.857",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a memory leak in its XML parsing code, where allocated memory is not released when parsing…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116154"
-      },
-      {
-        "cvss_score": 4.8,
-        "cvss_version": "4.0",
-        "description": "ImageMagick before 7.1.2-33 contains a heap buffer over-read vulnerability that allows attackers to read beyond allocated memory when printing a minimum-bounding-box. Attackers can supply a crafted image that triggers the over-read during minimum-bounding-box output, causing crashes or exposing adjacent heap memory.",
-        "id": "CVE-2026-116142",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:28:46.303",
-        "publishedAt": "2026-10-25T14:16:52.097",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "ImageMagick before 7.1.2-33 contains a heap buffer over-read vulnerability that allows attackers to read beyond allocated memory when printing a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116142"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "ImageMagick before 7.1.2-33 contains a policy bypass vulnerability in the UHDR decoder that allows attackers to evade image width and height limits because extent checks occur after decoding. Attackers can supply crafted UHDR images with oversized dimensions that are fully decoded before policy limits are enforced, causing excessive resource consumption.",
-        "id": "CVE-2026-116141",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:28:36.053",
-        "publishedAt": "2026-10-25T14:16:51.940",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "ImageMagick before 7.1.2-33 contains a policy bypass vulnerability in the UHDR decoder that allows attackers to evade image width and height limits because…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116141"
-      },
-      {
-        "cvss_score": 1.8,
-        "cvss_version": "4.0",
-        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-32 contains a security policy bypass caused by an incomplete fix for the policy bypass reported in GHSA-jjp4-3fwf-393j. An attacker able to supply input to ImageMagick can evade configured security policy restrictions, allowing operations the policy was intended to block.",
-        "id": "CVE-2026-116145",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:28:29.483",
-        "publishedAt": "2026-10-25T14:16:52.543",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-32 contains a security policy bypass caused by an incomplete fix for the policy bypass reported in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116145"
-      },
-      {
-        "cvss_score": 9.6,
-        "cvss_version": "3.1",
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 can allow attackers to execute arbitrary Python code with root privileges (UID=0) on the Langflow server by submitting components containing socket or urllib imports. This enables: (1) AWS credential theft via IMDSv1 SSRF with full IAM role permissions, (2) arbitrary file exfiltration from the container filesystem, and (3) lateral movement to internal…",
-        "id": "CVE-2026-12944",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:27:56.130",
-        "publishedAt": "2026-09-14T22:16:56.950",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "IBM Langflow OSS 1.0.0 through 1.10.0 can allow attackers to execute arbitrary Python code with root privileges (UID=0) on the Langflow server by submitting…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12944"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
-        "id": "CVE-2026-12767",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:27:48.923",
-        "publishedAt": "2026-09-14T21:17:00.847",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM Langflow OSS 1.0.0 through 1.11.5 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12767"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "IBM Langflow OSS 1.0.0 through 1.11.2 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
-        "id": "CVE-2026-12766",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:27:37.203",
-        "publishedAt": "2026-09-14T21:17:00.713",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM Langflow OSS 1.0.0 through 1.11.2 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12766"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.2 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
-        "id": "CVE-2026-12765",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:27:24.970",
-        "publishedAt": "2026-09-14T21:17:00.583",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM Langflow OSS 1.0.0 through 1.10.2 is vulnerable to server-side request forgery (SSRF). This may allow an unauthenticated attacker to send unauthorized…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12765"
-      },
-      {
-        "cvss_score": 7.2,
-        "cvss_version": "4.0",
-        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a stack-based buffer overflow in the handling of bzip2 compressed images. Attackers can supply a crafted image using bzip2 compression to overwrite stack memory during decoding, causing crashes or memory corruption.",
-        "id": "CVE-2026-116149",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:27:24.230",
-        "publishedAt": "2026-10-25T14:16:53.123",
+        "lastModifiedAt": "2026-11-04T18:19:21.823",
+        "publishedAt": "2026-10-30T20:17:04.750",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a stack-based buffer overflow in the handling of bzip2 compressed images. Attackers can supply a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116149"
+        "title": "When a server in pgAdmin 4 had no password file, client certificate or client key configured, or the configured one could not be found, pgAdmin left the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116247"
       },
       {
-        "cvss_score": 2.0,
+        "cvss_score": 5.6,
         "cvss_version": "4.0",
-        "description": "ImageMagick before 7.1.2-33 contains a heap buffer overflow vulnerability on 32-bit systems that allows attackers to overwrite heap memory when convex-hull information is requested. Attackers can supply crafted images processed with convex-hull calculations to corrupt heap memory, causing crashes or potential code execution.",
-        "id": "CVE-2026-116153",
+        "description": "Insufficient authentication and input validation in the listed NETGEAR models allow users connected to the local network to execute commands impacting the product's confidentiality or change certain configurations.",
+        "id": "CVE-2026-9212",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:27:19.120",
-        "publishedAt": "2026-10-25T14:16:53.713",
+        "lastModifiedAt": "2026-11-04T18:17:46.290",
+        "publishedAt": "2026-06-09T17:17:51.517",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Insufficient authentication and input validation in the listed NETGEAR models allow users connected to the local network to execute commands impacting the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9212"
+      },
+      {
+        "cvss_score": 4.6,
+        "cvss_version": "3.0",
+        "description": "A SSRF vulnerability found that enables access to internal Chrome Devtools Protocol APIs that can leak the JWT authentication token for another user. A low privileged attacker could continually exploit this vulnerability to leak the JWT authentication token for another user when they start a recording, which then enables the attacker read/write access to the victim's Whiteboard.",
+        "id": "CVE-2026-87897",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:46.150",
+        "publishedAt": "2026-10-27T17:17:03.530",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A SSRF vulnerability found that enables access to internal Chrome Devtools Protocol APIs that can leak the JWT authentication token for another user. A low…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87897"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "Tanium addressed a denial of service vulnerability in Provision.",
+        "id": "CVE-2026-87086",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:46.010",
+        "publishedAt": "2026-10-27T18:17:38.000",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Tanium addressed a denial of service vulnerability in Provision.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87086"
+      },
+      {
+        "cvss_score": 4.6,
+        "cvss_version": "3.0",
+        "description": "The user in a group can bypass the group restriction set by an administrator on link sharing, creating share links for a table even though they shouldn't have that permission.",
+        "id": "CVE-2026-82986",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:45.877",
+        "publishedAt": "2026-10-27T17:17:03.407",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The user in a group can bypass the group restriction set by an administrator on link sharing, creating share links for a table even though they shouldn't have…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82986"
+      },
+      {
+        "cvss_score": 3.3,
+        "cvss_version": "3.0",
+        "description": "The Tables app's share-listing endpoint (GET /apps/tables/share/table/{tableId}) did not verify that the requesting user has manage-level permission on the table before returning the full list of share recipients (users, groups, and teams) along with their permission levels. A user who was only granted read-data access to a table, and who is correctly prevented from seeing this information in the…",
+        "id": "CVE-2026-82983",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:45.747",
+        "publishedAt": "2026-10-27T17:17:03.170",
         "severity": "LOW",
         "source": "NVD",
-        "title": "ImageMagick before 7.1.2-33 contains a heap buffer overflow vulnerability on 32-bit systems that allows attackers to overwrite heap memory when convex-hull…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116153"
+        "title": "The Tables app's share-listing endpoint (GET /apps/tables/share/table/{tableId}) did not verify that the requesting user has manage-level permission on the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82983"
       },
       {
-        "cvss_score": 4.2,
-        "cvss_version": "3.1",
-        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow an authenticated attacker to access another user's MCP server context due to improper cache key isolation in the MCP Tools component.",
-        "id": "CVE-2026-12763",
+        "cvss_score": 5.3,
+        "cvss_version": "3.0",
+        "description": "App passwords were allowed to bypass password confirmation on sensitive endpoints.",
+        "id": "CVE-2026-77172",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:27:09.720",
-        "publishedAt": "2026-09-14T21:17:00.440",
+        "lastModifiedAt": "2026-11-04T18:17:45.607",
+        "publishedAt": "2026-10-27T17:17:02.933",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow an authenticated attacker to access another user's MCP server context due to improper cache key isolation in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12763"
+        "title": "App passwords were allowed to bypass password confirmation on sensitive endpoints.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77172"
       },
       {
-        "cvss_score": 5.4,
+        "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.2 could allow a remote authenticated attacker to change the password of an account due to improper authentication.",
-        "id": "CVE-2026-17628",
+        "description": "In parseMetaData of StagefrightMetadataRetriever.cpp, there is a possible denial of service due to a stack buffer overflow. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-58949",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-03T18:27:01.363",
-        "publishedAt": "2026-09-14T20:16:42.140",
+        "lastModifiedAt": "2026-11-04T18:17:45.430",
+        "publishedAt": "2026-11-02T20:17:51.720",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In parseMetaData of StagefrightMetadataRetriever.cpp, there is a possible denial of service due to a stack buffer overflow. This could lead to remote denial of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58949"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "In parseContentType of PduParser.java, there is a possible denial of service due to an integer overflow. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-58814",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:45.257",
+        "publishedAt": "2026-11-02T20:17:46.960",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In parseContentType of PduParser.java, there is a possible denial of service due to an integer overflow. This could lead to remote denial of service with no…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58814"
+      },
+      {
+        "cvss_score": 10.0,
+        "cvss_version": "4.0",
+        "description": "A vulnerability has been identified in SIMATIC IoT2050 Advanced (6ES7647-0BA00-1YA2) (All versions < V4.3.4-1 running Industrial OS with Node-RED installed), SIMATIC IoT2050 Basic (6ES7647-0BA00-0YA2) (All versions < V4.3.4-1 running Industrial OS with Node-RED installed), SIMATIC IoT2050 M.2 (6ES7647-0BB00-1YA2) (All versions < V4.3.4-1 running Industrial OS with Node-RED installed), SIMATIC…",
+        "id": "CVE-2026-58115",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:45.050",
+        "publishedAt": "2026-08-11T13:19:00.190",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "A vulnerability has been identified in SIMATIC IoT2050 Advanced (6ES7647-0BA00-1YA2) (All versions < V4.3.4-1 running Industrial OS with Node-RED installed)…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58115"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "DataGerry before 3.3.0 contains a server-side template injection vulnerability that allows authenticated attackers with base.docapi.template.add permission to store arbitrary Jinja2 payloads in the template_data field via POST /rest/docapi/template, which is later rendered in a non-sandboxed Jinja2 environment when a user calls GET /rest/docapi/template/<id>/render/<object_id>. Attackers can…",
+        "id": "CVE-2026-57853",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:44.877",
+        "publishedAt": "2026-11-04T18:17:44.877",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "DataGerry before 3.3.0 contains a server-side template injection vulnerability that allows authenticated attackers with base.docapi.template.add permission to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-57853"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "3.1",
+        "description": "In rw_ci_data_cback of rw_ci.cc, there is a possible memory safety issue due to integer underflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-55292",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:44.710",
+        "publishedAt": "2026-11-02T20:17:45.410",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "IBM Langflow OSS 1.0.0 through 1.10.2 could allow a remote authenticated attacker to change the password of an account due to improper authentication.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17628"
+        "title": "In rw_ci_data_cback of rw_ci.cc, there is a possible memory safety issue due to integer underflow. This could lead to remote information disclosure with no…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55292"
+      },
+      {
+        "cvss_score": 4.0,
+        "cvss_version": "3.1",
+        "description": "In multiple functions of MediaCarouselController.kt, there is a possible way for media to show up after disablement due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-49912",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:44.517",
+        "publishedAt": "2026-11-02T20:17:42.727",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "In multiple functions of MediaCarouselController.kt, there is a possible way for media to show up after disablement due to a logic error in the code. This…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49912"
+      },
+      {
+        "cvss_score": 4.0,
+        "cvss_version": "3.1",
+        "description": "In multiple locations, there is a possible way to share files across profiles due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-28632",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:44.127",
+        "publishedAt": "2026-11-02T20:17:42.157",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "In multiple locations, there is a possible way to share files across profiles due to a logic error in the code. This could lead to local information disclosure…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-28632"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "Grafana’s RBAC service ignored the requested folder when checking whether a user was a folder administrator for deleted dashboard listings. A user with dashboard permission-management rights on any folder could therefore be treated as an administrator of every folder.\n\nThis could expose deleted dashboard items from folders where the user lacked administrative access. The fix requires permission…",
+        "id": "CVE-2026-16491",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-04T18:17:43.983",
+        "publishedAt": "2026-10-27T18:17:37.053",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Grafana’s RBAC service ignored the requested folder when checking whether a user was a folder administrator for deleted dashboard listings. A user with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16491"
       }
     ],
-    "low": 92,
-    "medium": 619,
-    "none": 1,
-    "unscored": 154
+    "low": 112,
+    "medium": 743,
+    "none": 0,
+    "unscored": 98
   },
   "snapshot": {
-    "cves": 1610,
+    "cves": 2234,
     "kevAdded": 1,
-    "knownExploited": 1,
+    "knownExploited": 5,
     "projects": 18,
-    "releases": 4,
-    "techEntries": 30
+    "releases": 3,
+    "techEntries": 44
   },
   "sources": {
     "opensource": {
@@ -836,9 +836,9 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 4,
+        "inWindow": 3,
         "status": "partial",
-        "total": 57
+        "total": 56
       }
     },
     "security": {
@@ -846,25 +846,137 @@
         "failures": 0,
         "inWindow": 1,
         "status": "success",
-        "total": 1767
+        "total": 1768
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1610,
+        "inWindow": 2234,
         "status": "success",
-        "total": 1610
+        "total": 2234
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 30,
+        "inWindow": 44,
         "status": "success",
-        "total": 230
+        "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-04T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Over 2,700 government leaders, innovators, and industry partners convened across two-days at our Google Public Sector Summit in Washington D.C. where we explored the theme, “Where mission meets moonshot.” We were honored to bring together leaders who are driving impact in the…",
+      "title": "Highlights and reflections from Google Public Sector Summit: Where mission meets moonshot",
+      "url": "https://cloud.google.com/blog/topics/public-sector/highlights-and-reflections-from-google-public-sector-summit-where-mission-meets-moonshot/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-04T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "As both a frontier lab and the operator of the world's most comprehensive threat intelligence network, Google occupies a unique vantage point: We see exactly how Large Language Models are engineered, and how adversaries are targeting them in the wild. Passive defense is no…",
+      "title": "Helping you build and defend at machine-speed in the agentic era",
+      "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-04T16:06:03+00:00",
+      "source": "Ars Technica",
+      "summary": "Techniques included laptop infections, compromised internal tooling, and fake job interviews.",
+      "title": "Binance says hackers who stole billions in crypto spent months planning heist",
+      "url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-04T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Ready to modernize your infrastructure without risking production stability? API multi-versioning for Compute Engine, now in general availability, helps you do just that. With date-based API versions, Compute Engine can now regularly deliver modern API semantics, stronger…",
+      "title": "Introducing Compute Engine API multi-versioning: Predictable evolution without breaking production",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/introducing-compute-engine-api-multi-versioning-predictable-evolution-without-breaking-production/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-04T15:39:30+00:00",
+      "source": "The Register",
+      "summary": "Help desk technician agrees to minimum 10-year jail term after being caught copying files for more than 2 years",
+      "title": "US gov IT worker pleads guilty to sending Top Secret files to Ethiopia",
+      "url": "https://www.theregister.com/security/2026/11/04/us-gov-it-worker-pleads-guilty-to-sending-top-secret-files-to-ethiopia/5307595"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-04T14:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Not long ago, we were entering the agentic era; today, organizations are deriving significant value from running agents in production. The opportunity to capture new revenue streams, improve efficiency, and manage risk makes reimagining operations with agents top of mind for…",
+      "title": "New capabilities to power agents at scale with Google's Agentic Data Cloud",
+      "url": "https://cloud.google.com/blog/products/databases/whats-new-across-googles-agentic-data-cloud/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-04T14:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Databases have struggled to keep up with the speed of AI-enabled software development. Across the engineering and platform teams we talk to, we see coding agents stalled by slow database provisioning, CI/CD test pipelines bottlenecked by complexity, and internal apps hitting a…",
+      "title": "AlloyDB Express: Instant, scale-to-zero PostgreSQL for developers and coding agents",
+      "url": "https://cloud.google.com/blog/products/databases/introducing-alloydb-express-for-rapid-testing-and-prototyping/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-04T14:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "To make good business decisions, you need two kinds of data: the live state of the business from operational databases, and the historical context stored in an analytical system such as a lakehouse or a data warehouse. Traditionally, those systems have been separate, but they…",
+      "title": "Unify operational and Lakehouse data with direct Iceberg access in AlloyDB for PostgreSQL",
+      "url": "https://cloud.google.com/blog/products/databases/direct-iceberg-access-in-alloydb/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-04T14:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Personal AI agents have changed how users interact with the web, blurring the lines between automated and human traffic. Learn how Cloudflare gives site owners visibility and control to manage personal agent access.",
+      "title": "See the agents, set the terms: new visibility and control for personal agents",
+      "url": "https://blog.cloudflare.com/personal-agents-visibility-control/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-04T11:56:54+00:00",
+      "source": "The Register",
+      "summary": "Attackers reportedly set cold-room controls to 110°C, but safeguards prevented stock losses",
+      "title": "Cyberattack on French plasma stores is enough to make your blood boil",
+      "url": "https://www.theregister.com/security/2026/11/04/cyberattack-on-french-plasma-stores-is-enough-to-make-your-blood-boil/5307519"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-04T09:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Editor's Note: Today's post is by Yu Susaki, Manager of Enterprise Security at Mercari , a leading consumer-to-consumer (C2C) marketplace with more than 20 million monthly active users. Mercari selected Chrome Enterprise Premium and Chromebooks to secure its highly sensitive…",
+      "title": "Chrome Enterprise Premium drives 50%+ projected cost reduction for Mercari",
+      "url": "https://cloud.google.com/blog/products/chrome-enterprise/chrome-enterprise-premium-drives-50-projected-cost-reduction-for-mercari/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-03T22:04:45+00:00",
+      "source": "The Register",
+      "summary": "'It was not a single isolated breach or a simple phishing incident,' exchange says",
+      "title": "North Korean fake job interview led to $6.3B Binance heist",
+      "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-03T21:38:29+00:00",
+      "source": "The Register",
+      "summary": "We've got a hunch the memory crunch is taking a bite out of Windows revenue",
+      "title": "Microsoft improves Windows 11 performance on 8 GB PCs as RAM prices keep climbing",
+      "url": "https://www.theregister.com/software/2026/11/03/microsoft-improves-windows-11-performance-on-8-gb-pcs-as-ram-prices-keep-climbing/5307382"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-03T19:33:01+00:00",
+      "source": "The Register",
+      "summary": "These are AI agents that operate outside of human control and 'pursue open-ended, evolving survival'",
+      "title": "AI policy wonks declare 'sovereign agents' a threat to civilization",
+      "url": "https://www.theregister.com/security/2026/11/03/ai-policy-wonks-declare-sovereign-agents-a-threat-to-civilization/5307354"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-11-03T18:00:00+00:00",
@@ -872,118 +984,6 @@
       "summary": "The syndicated loan and private credit markets, both critical components of corporate finance, have long been constrained by manual processes, leading to multi-week settlements, valuation opacity, and trade friction. To solve these long-standing challenges, fintech innovator…",
       "title": "How Nammu21 automates syndicated loans on Google Cloud Universal Ledger",
       "url": "https://cloud.google.com/blog/topics/financial-services/how-nammu21-automates-syndicated-loans-on-google-cloud-universal-ledger/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-03T17:08:21+00:00",
-      "source": "Ars Technica",
-      "summary": "Google has cut ties with the company behind the botnet campaign.",
-      "title": "Google dismantles botnet secretly running on 1.3 million Android TV boxes",
-      "url": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-03T17:00:35+00:00",
-      "source": "Meta",
-      "summary": "Facebook Feature Framework (F3) is Meta’s framework for authoring, compiling, and serving the machine learning features underlying ads ranking models, where a single request can require more than 20,000 features. We first presented F3 at AI @ Scale 2020. F3 reduced execution…",
-      "title": "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale",
-      "url": "https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-03T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Over the past few years, our Google Cloud Consulting team has partnered with many companies to introduce AI into their daily operations. In that time, we’ve seen the focus shift from generative AI that answers questions to agentic systems that fully carry out the work. These…",
-      "title": "Leading in the agentic era: How to put people first as you adopt AI agents",
-      "url": "https://cloud.google.com/blog/topics/consulting/lessons-for-adopting-ai-agents/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-03T16:10:00+00:00",
-      "source": "The Register",
-      "summary": "Customers left wondering what's been compromised after vendor advises resetting passwords, 2FA and passkeys",
-      "title": "Password manager mSecure tells users to change passwords, won't say why",
-      "url": "https://www.theregister.com/security/2026/11/03/password-manager-msecure-tells-users-to-change-passwords-wont-say-why/5307296"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-03T16:03:13+00:00",
-      "source": "Ars Technica",
-      "summary": "UEFI bootkit BlackX exploits Microsoft's lack of clarity around Secure Boot protections.",
-      "title": "UEFI bootkit infected fully patched Windows machines. Is Microsoft to blame?",
-      "url": "https://arstechnica.com/security/2026/11/uefi-bootkit-infected-fully-patched-windows-machines-is-microsoft-to-blame/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-03T16:02:00+00:00",
-      "source": "The Register",
-      "summary": "Full-disk encryption joins the toolkit, MATE and Xfce stay while Gershwin sits this one out",
-      "title": "GhostBSD 26.2 takes the fright out of FreeBSD with a friendlier installer",
-      "url": "https://www.theregister.com/os-platforms/2026/11/03/ghostbsd-262-takes-the-fright-out-of-freebsd-with-a-friendlier-installer/5307228"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-03T16:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone. The post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog .",
-      "title": "Arnis turns any place on Earth into a Minecraft world",
-      "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-03T14:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Zero Wire on Cloudflare Radar pairs plain-language briefings with global attack telemetry and remediation steps. Triage critical CVEs faster and decide how to protect your infrastructure.",
-      "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
-      "url": "https://blog.cloudflare.com/zero-wire/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-03T12:39:25+00:00",
-      "source": "The Register",
-      "summary": "Cyber agency warns critical infrastructure is a likely target as chief urges bosses to stop doing 'tech on the cheap'",
-      "title": "Britain on notice: AI-powered ransomware attacks to arrive by 2028",
-      "url": "https://www.theregister.com/security/2026/11/03/britain-on-notice-ai-powered-ransomware-attacks-to-arrive-by-2028/5307200"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-03T08:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "You’re probably hearing more about SKILL.md files, and you’ll see that a lot of people test them the same way: paste a prompt into chat, watch it pass once on a laptop, and merge to main. But when you paste three pages of CLI docs into a markdown file without an evaluation loop…",
-      "title": "Five rules for evaluating agent skills before they bloat your context window",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/evaluate-agent-skills-before-they-bloat-your-context-window/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-03T08:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Authors: Burak Gokturk, VP Research & Development; Rujun Han, Research Scientist; George Lee, Product Manager. Today, the Google AI & Infrastructure team is announcing Physical-Engineering's Last Exam (PLE) , a new benchmark and open competition, developed in collaboration with…",
-      "title": "Introducing Physical-Engineering’s Last Exam for agents",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-physical-engineerings-last-exam-for-agents/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-02T22:55:17+00:00",
-      "source": "The Register",
-      "summary": "Your industrial IoT gateway isn't exposed to the internet, right? RIGHT?!",
-      "title": "Max-severity bug in widely used OT programming tool exploited to deliver Linux malware",
-      "url": "https://www.theregister.com/security/2026/11/02/max-severity-bug-in-widely-used-ot-programming-tool-exploited-to-deliver-linux-malware/5307086"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-02T19:03:31+00:00",
-      "source": "The Register",
-      "summary": "Videostrong accused of shipping devices with a backdoor baked in",
-      "title": "Cops bust botnet of 1.3M infected Android TV boxes",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-02T18:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Building cloud solutions with autonomous AI agents should feel fast, safe, and reliable. Without cloud-specific context, coding agents often struggle. They might invent deprecated SDK syntax, guess invalid command flags, or attempt operations without the required Identity and…",
-      "title": "Google Cloud Developer plugin now available in Antigravity Marketplace",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-developer-plugin-now-available-in-antigravity-marketplace/"
     }
   ]
 }

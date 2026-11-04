@@ -1,6 +1,232 @@
 {
   "archive": [
     {
+      "date": "2026-11-05",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 22,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201312,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 76,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143324,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 12,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139573,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 27,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128670,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 20,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123238,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 45,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121075,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 46,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114533,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 30,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105144,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 6,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98065,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91511,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 2,
+          "other": 0,
+          "patch": 1
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-04T02:23:23Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.45.0",
+            "version": "v3.45.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-03T20:20:42Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.44.0",
+            "version": "v3.44.0"
+          },
+          {
+            "project": "next.js",
+            "published_at": "2026-11-03T18:38:39Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v16.4.5",
+            "version": "v16.4.5"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 234,
+          "HIGH": 1047,
+          "LOW": 112,
+          "MEDIUM": 743,
+          "NONE": 0,
+          "UNSCORED": 98
+        }
+      },
+      "snapshot": {
+        "cves": 2234,
+        "kevAdded": 1,
+        "knownExploited": 5,
+        "projects": 18,
+        "releases": 3,
+        "techEntries": 44
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 1,
+          "status": "success",
+          "total": 1768
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 3,
+          "status": "partial",
+          "total": 56
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 2234,
+          "status": "success",
+          "total": 2234
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 44,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 16,
+          "tech": 28
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-04T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Highlights and reflections from Google Public Sector Summit: Where mission meets moonshot",
+            "url": "https://cloud.google.com/blog/topics/public-sector/highlights-and-reflections-from-google-public-sector-summit-where-mission-meets-moonshot/"
+          },
+          {
+            "published_at": "2026-11-04T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Helping you build and defend at machine-speed in the agentic era",
+            "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era/"
+          },
+          {
+            "published_at": "2026-11-04T16:06:03+00:00",
+            "source": "Ars Technica",
+            "title": "Binance says hackers who stole billions in crypto spent months planning heist",
+            "url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/"
+          },
+          {
+            "published_at": "2026-11-04T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Introducing Compute Engine API multi-versioning: Predictable evolution without breaking production",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/introducing-compute-engine-api-multi-versioning-predictable-evolution-without-breaking-production/"
+          },
+          {
+            "published_at": "2026-11-04T15:39:30+00:00",
+            "source": "The Register",
+            "title": "US gov IT worker pleads guilty to sending Top Secret files to Ethiopia",
+            "url": "https://www.theregister.com/security/2026/11/04/us-gov-it-worker-pleads-guilty-to-sending-top-secret-files-to-ethiopia/5307595"
+          },
+          {
+            "published_at": "2026-11-04T14:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "New capabilities to power agents at scale with Google's Agentic Data Cloud",
+            "url": "https://cloud.google.com/blog/products/databases/whats-new-across-googles-agentic-data-cloud/"
+          },
+          {
+            "published_at": "2026-11-04T14:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "AlloyDB Express: Instant, scale-to-zero PostgreSQL for developers and coding agents",
+            "url": "https://cloud.google.com/blog/products/databases/introducing-alloydb-express-for-rapid-testing-and-prototyping/"
+          },
+          {
+            "published_at": "2026-11-04T14:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Unify operational and Lakehouse data with direct Iceberg access in AlloyDB for PostgreSQL",
+            "url": "https://cloud.google.com/blog/products/databases/direct-iceberg-access-in-alloydb/"
+          },
+          {
+            "published_at": "2026-11-04T14:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "See the agents, set the terms: new visibility and control for personal agents",
+            "url": "https://blog.cloudflare.com/personal-agents-visibility-control/"
+          },
+          {
+            "published_at": "2026-11-04T11:56:54+00:00",
+            "source": "The Register",
+            "title": "Cyberattack on French plasma stores is enough to make your blood boil",
+            "url": "https://www.theregister.com/security/2026/11/04/cyberattack-on-french-plasma-stores-is-enough-to-make-your-blood-boil/5307519"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-04",
       "opensource": {
         "topProjects": [
@@ -10812,8 +11038,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-03T23:36:12.303674+00:00",
-    "totalSnapshots": 49,
+    "generatedAt": "2026-11-04T23:53:09.089479+00:00",
+    "totalSnapshots": 50,
     "warnings": []
   }
 }
