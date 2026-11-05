@@ -1,6 +1,260 @@
 {
   "archive": [
     {
+      "date": "2026-11-06",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 12,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201324,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 20,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143344,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 51,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139624,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 57,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128727,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 39,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123277,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 70,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121145,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 44,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114577,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105166,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98087,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 37,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91548,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 3,
+          "other": 2,
+          "patch": 2
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-05T18:04:10Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.47.0",
+            "version": "v3.47.0"
+          },
+          {
+            "project": "core",
+            "published_at": "2026-11-05T09:15:06Z",
+            "repository": "vuejs/core",
+            "url": "https://github.com/vuejs/core/releases/tag/v3.5.45",
+            "version": "v3.5.45"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-05T06:02:20Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.4",
+            "version": "create-vite@9.3.4"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-05T05:42:26Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.4",
+            "version": "plugin-legacy@8.2.4"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-05T05:39:36Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v8.3.6",
+            "version": "v8.3.6"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-05T00:55:06Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
+            "version": "v3.46.0"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-11-04T20:27:20Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+            "version": "v2.5.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 288,
+          "HIGH": 1094,
+          "LOW": 70,
+          "MEDIUM": 1004,
+          "NONE": 0,
+          "UNSCORED": 361
+        }
+      },
+      "snapshot": {
+        "cves": 2817,
+        "kevAdded": 0,
+        "knownExploited": 2,
+        "projects": 18,
+        "releases": 7,
+        "techEntries": 45
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1768
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 7,
+          "status": "partial",
+          "total": 56
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 2817,
+          "status": "success",
+          "total": 2817
+        },
+        "rss": {
+          "failures": 1,
+          "inWindow": 45,
+          "status": "partial",
+          "total": 200
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 20,
+          "tech": 25
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-05T18:29:00+00:00",
+            "source": "The Register",
+            "title": "Get root on a musl Linux system by slamming it with an overly long password",
+            "url": "https://www.theregister.com/security/2026/11/05/get-root-on-a-musl-linux-system-by-slamming-it-with-an-overly-long-password/5307910"
+          },
+          {
+            "published_at": "2026-11-05T18:03:00+00:00",
+            "source": "The Register",
+            "title": "October crypto-tracker hack: Access cracked, law enforcement tokens packed",
+            "url": "https://www.theregister.com/cyber-crime/2026/11/05/october-crypto-tracker-hack-access-cracked-law-enforcement-tokens-packed/5307852"
+          },
+          {
+            "published_at": "2026-11-05T17:03:04+00:00",
+            "source": "Cloudflare",
+            "title": "Agents aren’t humans (but they kinda are)",
+            "url": "https://blog.cloudflare.com/trusted-agent-delegation/"
+          },
+          {
+            "published_at": "2026-11-05T17:00:00+00:00",
+            "source": "The Register",
+            "title": "OpenAI releases GPT-6 Cyber, and promises this one stays within 'rules of engagement'",
+            "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855"
+          },
+          {
+            "published_at": "2026-11-05T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Building an agent skill optimizer with AlphaEvolve, Harbor and Gemini 4 Argon",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/how-to-build-an-agent-skill-optimizer-with-alphaevolve-and-harbor/"
+          },
+          {
+            "published_at": "2026-11-05T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Data Cloud",
+            "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+          },
+          {
+            "published_at": "2026-11-05T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Semantic aggregation over millions of rows in BigQuery with AI.AGG",
+            "url": "https://cloud.google.com/blog/products/data-analytics/semantic-data-aggregation-with-bigquery-and-ai-agg/"
+          },
+          {
+            "published_at": "2026-11-05T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Gemini Omni 1.2 Flash: Fast, cost-effective, and reliable video generation and editing now generally available",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available/"
+          },
+          {
+            "published_at": "2026-11-05T16:02:00+00:00",
+            "source": "The Register",
+            "title": "Tobacco company got smoked by leaving secret recipes on a file share",
+            "url": "https://www.theregister.com/security/2026/11/05/tobacco-company-got-smoked-by-leaving-secret-recipes-on-a-file-share/5307704"
+          },
+          {
+            "published_at": "2026-11-05T16:00:00+00:00",
+            "source": "GitHub Blog",
+            "title": "Accessibility statements now have a home on GitHub",
+            "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-05",
       "opensource": {
         "topProjects": [
@@ -11038,8 +11292,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-04T23:53:09.089479+00:00",
-    "totalSnapshots": 50,
+    "generatedAt": "2026-11-05T23:49:24.835416+00:00",
+    "totalSnapshots": 51,
     "warnings": []
   }
 }
