@@ -1,0 +1,327 @@
+{
+  "coveredIstDay": "2026-11-06",
+  "date": "2026-11-07",
+  "generatedAt": "2026-11-06T23:25:39.241813+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 41,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201365,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 25,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143369,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 131,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139755,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 152,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128879,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 111,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123388,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 286,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 121431,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 29,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 114606,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 51,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105217,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 79,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98166,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 122,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91670,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "tailwindcss",
+        "published_at": "2026-11-06T15:05:05Z",
+        "repository": "tailwindlabs/tailwindcss",
+        "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.5",
+        "version": "v4.3.5"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-11-05T18:58:47Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+        "version": "v2.6.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-19868",
+        "date_added": "2026-11-06",
+        "product": "SonicOS SSLVPN",
+        "vendor_project": "SonicWall",
+        "vulnerability_name": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 5.4,
+        "description": "IBM Cloud Pak System 2.3.6.0, and 2.3.6.1 is vulnerable to HTML injection. A remotely authenticated attacker could inject malicious HTML code, which when viewed, would be executed in the victim's Web ",
+        "id": "CVE-2026-4418",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4418"
+      },
+      {
+        "cvss": 5.4,
+        "description": "IBM ContextForge MCP Gateway 0.1.0 through 1.0.5 is vulnerable to a server-side request Forgery (SSRF) that allows authenticated users with gateway creation privileges to perform arbitrary HTTP POST r",
+        "id": "CVE-2026-8355",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8355"
+      },
+      {
+        "cvss": 6.5,
+        "description": "A flaw was found in Samba’s vfs_worm module. The module is intended to provide write-once, read-many (WORM) protections by preventing modification of files after a configurable grace period. Due to in",
+        "id": "CVE-2026-2340",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2340"
+      },
+      {
+        "cvss": 6.5,
+        "description": "A flaw was found in Keycloak's administrative services (org.keycloak.services.resources.admin). A highly privileged attacker, authenticated with a 'manage-clients' role, could exploit this vulnerabili",
+        "id": "CVE-2026-9797",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9797"
+      },
+      {
+        "cvss": 8.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: Fix potential UAF in reqsk_timer_handler().\n\nWhen TCP socket migration fails at inet_ehash_insert() in\nreqsk_timer_handler(), ",
+        "id": "CVE-2026-99270",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99270"
+      },
+      {
+        "cvss": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/io-wq: don't hide a link from cancellations\n\nA task that exits cancels its tracked requests and waits until they are\ngone.",
+        "id": "CVE-2026-99255",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99255"
+      },
+      {
+        "cvss": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring: don't flood a cancelling task with task_work\n\nio_ring_exit_work() asks each task which has used the ring to remove its\ntc",
+        "id": "CVE-2026-99254",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99254"
+      },
+      {
+        "cvss": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/cancel: rearm local work wake up before sleep\n\nio_uring_try_cancel_requests() sets ->cq_wait_nr to 1 so that the next\nio_r",
+        "id": "CVE-2026-99253",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99253"
+      },
+      {
+        "cvss": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/waitid: own the request before clearing ->head\n\nio_waitid_remove_wq() only takes the wait queue lock if ->head is set.\nio_",
+        "id": "CVE-2026-99231",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99231"
+      },
+      {
+        "cvss": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/cmd: don't leave list poison in ->hash_node\n\nio_uring_cmd_del_cancelable() uses hlist_del() to take a command off\n->cancel",
+        "id": "CVE-2026-99230",
+        "known_exploited": false,
+        "severity": null,
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99230"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 170,
+      "HIGH": 1010,
+      "LOW": 125,
+      "MEDIUM": 2347,
+      "NONE": 1,
+      "UNSCORED": 302
+    }
+  },
+  "snapshot": {
+    "cves": 3955,
+    "kevAdded": 1,
+    "knownExploited": 5,
+    "projects": 18,
+    "releases": 2,
+    "techEntries": 53
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 1,
+      "status": "success",
+      "total": 1769
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 2,
+      "status": "partial",
+      "total": 55
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 3955,
+      "status": "success",
+      "total": 3955
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 53,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 22,
+      "tech": 31
+    },
+    "recent": [
+      {
+        "published_at": "2026-11-06T17:02:00+00:00",
+        "source": "The Register",
+        "title": "Mac lookalikes multiply as Linux raids Apple's wardrobe",
+        "url": "https://www.theregister.com/os-platforms/2026/11/06/mac-lookalikes-multiply-as-linux-raids-apples-wardrobe/5308070"
+      },
+      {
+        "published_at": "2026-11-06T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "What’s new with Google Cloud",
+        "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      },
+      {
+        "published_at": "2026-11-06T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "The Blueprint: Orchestrating 5,000+ AI assets for a World Cup TV spot",
+        "url": "https://cloud.google.com/blog/products/media-entertainment/how-mito-orchestrated-5000-plus-ai-assets-for-a-world-cup-tv-spot/"
+      },
+      {
+        "published_at": "2026-11-06T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Introducing Z4M: storage-optimized compute for AI/ML and parallel file systems",
+        "url": "https://cloud.google.com/blog/products/compute/storage-optimized-z4m-machine-series-are-ga/"
+      },
+      {
+        "published_at": "2026-11-06T14:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "The post-quantum future of web privacy",
+        "url": "https://blog.cloudflare.com/vole-mole/"
+      },
+      {
+        "published_at": "2026-11-06T13:15:00+00:00",
+        "source": "The Register",
+        "title": "DigiCert admits 16-month security lapse exposed customer information",
+        "url": "https://www.theregister.com/security/2026/11/06/digicert-admits-16-month-security-lapse-exposed-customer-information/5308097"
+      },
+      {
+        "published_at": "2026-11-06T11:00:00+00:00",
+        "source": "The Register",
+        "title": "UK ministers seek powers to investigate when AI agents are let off the leash",
+        "url": "https://www.theregister.com/ai-and-ml/2026/11/06/uk-ministers-seek-powers-to-investigate-when-ai-agents-are-let-off-the-leash/5307889"
+      },
+      {
+        "published_at": "2026-11-06T08:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Zero-shot predictions in Pandas using the new BigQuery Accessor",
+        "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-ai-functions-in-pandas/"
+      },
+      {
+        "published_at": "2026-11-06T06:31:00+00:00",
+        "source": "The Register",
+        "title": "Hospital gave very sick doctor a special PC for his personal, erm, pleasure",
+        "url": "https://www.theregister.com/security/2026/11/06/hospital-gave-very-sick-doctor-a-special-pc-for-his-personal-erm-pleasure/5307750"
+      },
+      {
+        "published_at": "2026-11-06T04:25:14+00:00",
+        "source": "The Register",
+        "title": "AI agents are a 'bane' for some website operators, says Cloudflare",
+        "url": "https://www.theregister.com/networks/2026/11/06/ai-agents-are-a-bane-for-some-website-operators-says-cloudflare/5308022"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 4,
+      "Cloudflare": 3,
+      "GitHub Blog": 2,
+      "Google Cloud": 17,
+      "Microsoft": 1,
+      "The Register": 25
+    }
+  },
+  "window": {
+    "end": "2026-11-06T18:30:00+00:00",
+    "start": "2026-11-05T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

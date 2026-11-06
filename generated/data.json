@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 3955,
+      "date": "2026-11-07",
+      "kevAdded": 1,
+      "knownExploited": 5,
+      "projects": 18,
+      "releases": 2,
+      "techEntries": 53
+    },
+    {
       "cves": 2817,
       "date": "2026-11-06",
       "kevAdded": 0,
@@ -461,16 +470,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-05",
-    "date": "2026-11-06",
-    "daysObserved": 51,
-    "generatedAt": "2026-11-05T23:49:24.835416+00:00",
-    "snapshots": 51,
+    "coveredDate": "2026-11-06",
+    "date": "2026-11-07",
+    "daysObserved": 52,
+    "generatedAt": "2026-11-06T23:25:39.241813+00:00",
+    "snapshots": 52,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 12,
+      "daily_growth": 41,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -478,11 +487,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201324,
+      "stars": 201365,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 20,
+      "daily_growth": 25,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -490,11 +499,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143344,
+      "stars": 143369,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 51,
+      "daily_growth": 131,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -502,11 +511,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139624,
+      "stars": 139755,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 57,
+      "daily_growth": 152,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -514,11 +523,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128727,
+      "stars": 128879,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 39,
+      "daily_growth": 111,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -526,11 +535,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123277,
+      "stars": 123388,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 70,
+      "daily_growth": 286,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -538,11 +547,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121145,
+      "stars": 121431,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 44,
+      "daily_growth": 29,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -550,11 +559,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114577,
+      "stars": 114606,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 51,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -562,11 +571,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105166,
+      "stars": 105217,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 79,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -574,11 +583,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98087,
+      "stars": 98166,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 37,
+      "daily_growth": 122,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -586,288 +595,243 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91548,
+      "stars": 91670,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-05T18:04:10Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.47.0",
-      "version": "v3.47.0"
-    },
-    {
       "kind": "patch",
-      "project": "core",
-      "publishedAt": "2026-11-05T09:15:06Z",
-      "repository": "vuejs/core",
+      "project": "tailwindcss",
+      "publishedAt": "2026-11-06T15:05:05Z",
+      "repository": "tailwindlabs/tailwindcss",
       "source": "GitHub",
-      "url": "https://github.com/vuejs/core/releases/tag/v3.5.45",
-      "version": "v3.5.45"
-    },
-    {
-      "kind": "other",
-      "project": "vite",
-      "publishedAt": "2026-11-05T06:02:20Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.3.4",
-      "version": "create-vite@9.3.4"
-    },
-    {
-      "kind": "other",
-      "project": "vite",
-      "publishedAt": "2026-11-05T05:42:26Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.4",
-      "version": "plugin-legacy@8.2.4"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-11-05T05:39:36Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.6",
-      "version": "v8.3.6"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-05T00:55:06Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
-      "version": "v3.46.0"
+      "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.5",
+      "version": "v4.3.5"
     },
     {
       "kind": "minor",
       "project": "anthropic-sdk-python",
-      "publishedAt": "2026-11-04T20:27:20Z",
+      "publishedAt": "2026-11-05T18:58:47Z",
       "repository": "anthropics/anthropic-sdk-python",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
-      "version": "v2.5.0"
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+      "version": "v2.6.0"
     }
   ],
   "security": {
-    "critical": 288,
-    "high": 1094,
-    "kevCatalogTotal": 1768,
+    "critical": 170,
+    "high": 1010,
+    "kevCatalogTotal": 1769,
     "latest": [
       {
-        "cvss_score": 5.5,
+        "cvss_score": 5.4,
         "cvss_version": "3.1",
-        "description": "In rb_cpu_init of trace.c, there is a possible out-of-bounds read due to an incorrect bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59048",
+        "description": "IBM Cloud Pak System 2.3.6.0, and 2.3.6.1 is vulnerable to HTML injection. A remotely authenticated attacker could inject malicious HTML code, which when viewed, would be executed in the victim's Web browser within the security context of the hosting site.",
+        "id": "CVE-2026-4418",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:24:35.997",
-        "publishedAt": "2026-11-02T20:17:58.160",
+        "lastModifiedAt": "2026-11-06T18:26:53.313",
+        "publishedAt": "2026-10-19T18:17:07.880",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "In rb_cpu_init of trace.c, there is a possible out-of-bounds read due to an incorrect bounds check. This could lead to local information disclosure with no…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59048"
+        "title": "IBM Cloud Pak System 2.3.6.0, and 2.3.6.1 is vulnerable to HTML injection. A remotely authenticated attacker could inject malicious HTML code, which when…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4418"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 5.4,
         "cvss_version": "3.1",
-        "description": "In multiple functions of MediaProvider.java, there is a possible permission bypass due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59022",
+        "description": "IBM ContextForge MCP Gateway 0.1.0 through 1.0.5 is vulnerable to a server-side request Forgery (SSRF) that allows authenticated users with gateway creation privileges to perform arbitrary HTTP POST requests to internal network resources and cloud metadata endpoints. The vulnerability occurs during OAuth-enabled gateway registration when the system fails to validate the oauth_config.token_url…",
+        "id": "CVE-2026-8355",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:24:30.767",
-        "publishedAt": "2026-11-02T20:17:57.147",
+        "lastModifiedAt": "2026-11-06T18:26:02.903",
+        "publishedAt": "2026-10-20T00:19:20.530",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "In multiple functions of MediaProvider.java, there is a possible permission bypass due to a logic error in the code. This could lead to local information…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59022"
+        "title": "IBM ContextForge MCP Gateway 0.1.0 through 1.0.5 is vulnerable to a server-side request Forgery (SSRF) that allows authenticated users with gateway creation…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8355"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "In checkLastKnownCellIdAccessPermission of TelephonyPermissions.java, there is a possible permission bypass due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59012",
+        "description": "A flaw was found in Samba’s vfs_worm module. The module is intended to provide write-once, read-many (WORM) protections by preventing modification of files after a configurable grace period. Due to insufficient validation during rename operations, an authenticated user with write access to a share could overwrite a protected file by renaming a newly created file over the existing WORM-protected…",
+        "id": "CVE-2026-2340",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:24:25.823",
-        "publishedAt": "2026-11-02T20:17:56.450",
+        "lastModifiedAt": "2026-11-06T18:23:43.530",
+        "publishedAt": "2026-05-27T14:16:44.387",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "In checkLastKnownCellIdAccessPermission of TelephonyPermissions.java, there is a possible permission bypass due to a missing permission check. This could lead…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59012"
+        "title": "A flaw was found in Samba’s vfs_worm module. The module is intended to provide write-once, read-many (WORM) protections by preventing modification of files…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-2340"
       },
       {
-        "cvss_score": 5.5,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "In multiple locations, there is a possible permission bypass due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59011",
+        "description": "A flaw was found in Keycloak's administrative services (org.keycloak.services.resources.admin). A highly privileged attacker, authenticated with a 'manage-clients' role, could exploit this vulnerability through several methods, including manipulating client JSON Web Key Sets (JWKS), swapping client authenticator types and resetting secrets, or downloading legitimate signing keys. Successful…",
+        "id": "CVE-2026-9797",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:24:19.600",
-        "publishedAt": "2026-11-02T20:17:56.343",
+        "lastModifiedAt": "2026-11-06T18:18:34.013",
+        "publishedAt": "2026-11-06T07:18:06.340",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "In multiple locations, there is a possible permission bypass due to a logic error in the code. This could lead to local information disclosure with no…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59011"
+        "title": "A flaw was found in Keycloak's administrative services (org.keycloak.services.resources.admin). A highly privileged attacker, authenticated with a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9797"
       },
       {
-        "cvss_score": 5.3,
+        "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "In decode_packed_entry_number of codebook.c, there is a possible out-of-bounds read due to a logic error in the code. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59007",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: Fix potential UAF in reqsk_timer_handler().\n\nWhen TCP socket migration fails at inet_ehash_insert() in\nreqsk_timer_handler(), we jump to the no_ownership: label\nand free the new reqsk immediately with __reqsk_free().\n\nThus, we must stop the new reqsk's timer before jumping to the\nlabel, but the timer might be missed since…",
+        "id": "CVE-2026-99270",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:24:05.957",
-        "publishedAt": "2026-11-02T20:17:55.980",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "In decode_packed_entry_number of codebook.c, there is a possible out-of-bounds read due to a logic error in the code. This could lead to remote information…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59007"
-      },
-      {
-        "cvss_score": 4.0,
-        "cvss_version": "3.1",
-        "description": "In getTouchOcclusionMode of WindowState.java, there is a possible tapjacking issue due to a tapjacking/overlay attack. This could lead to local information disclosure with no additional execution privileges needed. User interaction is needed for exploitation.",
-        "id": "CVE-2026-59006",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:24:00.327",
-        "publishedAt": "2026-11-02T20:17:55.847",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "In getTouchOcclusionMode of WindowState.java, there is a possible tapjacking issue due to a tapjacking/overlay attack. This could lead to local information…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59006"
-      },
-      {
-        "cvss_score": 8.4,
-        "cvss_version": "3.1",
-        "description": "In insertInternal of MmsProvider.java, there is a possible multiuser isolation issue due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59005",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:23:53.737",
-        "publishedAt": "2026-11-02T20:17:55.720",
+        "lastModifiedAt": "2026-11-06T18:18:33.823",
+        "publishedAt": "2026-11-03T13:17:24.097",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In insertInternal of MmsProvider.java, there is a possible multiuser isolation issue due to a missing permission check. This could lead to local escalation of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59005"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: Fix potential UAF in reqsk_timer_handler().\n\nWhen TCP socket migration fails at…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99270"
       },
       {
-        "cvss_score": 8.4,
-        "cvss_version": "3.1",
-        "description": "In multiple locations, there is a possible permission bypass due to an uncaught exception. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59004",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/io-wq: don't hide a link from cancellations\n\nA task that exits cancels its tracked requests and waits until they are\ngone. io_uring_cancel_generic() looks everywhere a request can be, and\ngoes to sleep if it found nothing to cancel. It is woken up each time\none of the requests of the task is completed by task work or…",
+        "id": "CVE-2026-99255",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:23:48.627",
-        "publishedAt": "2026-11-02T20:17:55.590",
+        "lastModifiedAt": "2026-11-06T18:18:33.660",
+        "publishedAt": "2026-11-03T12:17:32.290",
+        "severity": null,
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/io-wq: don't hide a link from cancellations\n\nA task that exits cancels its…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99255"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring: don't flood a cancelling task with task_work\n\nio_ring_exit_work() asks each task which has used the ring to remove its\ntctx node, by task_work, and repeats that until the list is empty.\nio_tctx_exit_cb() doesn't touch the node while the task is in\nio_uring_cancel_generic(), which removes all the nodes at its end. So…",
+        "id": "CVE-2026-99254",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-06T18:18:33.490",
+        "publishedAt": "2026-11-03T12:17:32.137",
+        "severity": null,
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring: don't flood a cancelling task with task_work\n\nio_ring_exit_work() asks each task…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99254"
+      },
+      {
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/cancel: rearm local work wake up before sleep\n\nio_uring_try_cancel_requests() sets ->cq_wait_nr to 1 so that the next\nio_req_local_work_add() wakes the cancelling task. The add that takes the\ncount to zero is the only one that wakes, later ones see a count <= 0 and\nreturn. io_uring_cancel_generic() however only…",
+        "id": "CVE-2026-99253",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-06T18:18:33.357",
+        "publishedAt": "2026-11-03T12:17:32.013",
+        "severity": null,
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/cancel: rearm local work wake up before sleep\n\nio_uring_try_cancel_requests()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99253"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/waitid: own the request before clearing ->head\n\nio_waitid_remove_wq() only takes the wait queue lock if ->head is set.\nio_waitid_wait() clears ->head first thing, before it tries to become the\nowner of the request by bumping ->refs. If somebody else owns the request\nat that point, nothing keeps it from completing the…",
+        "id": "CVE-2026-99231",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-06T18:18:33.167",
+        "publishedAt": "2026-11-02T16:17:48.060",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In multiple locations, there is a possible permission bypass due to an uncaught exception. This could lead to local escalation of privilege with no additional…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59004"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/waitid: own the request before clearing ->head\n\nio_waitid_remove_wq() only takes…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99231"
       },
       {
-        "cvss_score": 4.0,
-        "cvss_version": "3.1",
-        "description": "In getSubscriptionProperty of SubscriptionManagerService.java, there is a possible information disclosure due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59003",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/cmd: don't leave list poison in ->hash_node\n\nio_uring_cmd_del_cancelable() uses hlist_del() to take a command off\n->cancelable_uring_cmd, which leaves LIST_POISON1/2 behind in\n->hash_node. Requests are recycled through the request cache without\nbeing reinitialised, and not every user of ->hash_node sets it up before\nit…",
+        "id": "CVE-2026-99230",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:23:38.440",
-        "publishedAt": "2026-11-02T20:17:55.423",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-06T18:18:33.013",
+        "publishedAt": "2026-11-02T16:17:47.927",
+        "severity": null,
         "source": "NVD",
-        "title": "In getSubscriptionProperty of SubscriptionManagerService.java, there is a possible information disclosure due to a missing permission check. This could lead to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59003"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/cmd: don't leave list poison in ->hash_node\n\nio_uring_cmd_del_cancelable() uses…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99230"
       },
       {
-        "cvss_score": 4.6,
-        "cvss_version": "3.1",
-        "description": "In handleMessage of UsbDeviceManager.java, there is a possible lock-screen bypass due to a logic error in the code. This could lead to physical information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-59002",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/wait: don't spin on a stuck overflow list\n\nAs long as IO_CHECK_CQ_OVERFLOW_BIT is set, io_cqring_wait_schedule()\nreturns right away, before it gets to look at signals or arms the timeout,\nfor io_cqring_wait() to flush the overflow list. If that doesn't empty the\nlist, and the CQ ring doesn't hold the number of events…",
+        "id": "CVE-2026-99229",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:23:31.930",
-        "publishedAt": "2026-11-02T20:17:55.283",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-06T18:18:32.850",
+        "publishedAt": "2026-11-02T16:17:47.780",
+        "severity": null,
         "source": "NVD",
-        "title": "In handleMessage of UsbDeviceManager.java, there is a possible lock-screen bypass due to a logic error in the code. This could lead to physical information…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59002"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/wait: don't spin on a stuck overflow list\n\nAs long as IO_CHECK_CQ_OVERFLOW_BIT is…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99229"
       },
       {
-        "cvss_score": 9.1,
-        "cvss_version": "3.1",
-        "description": "The issue was addressed with improved memory handling. This issue is fixed in macOS Golden Gate 27.2, macOS Tahoe 26.7.2. An app may be able to cause unexpected system termination or corrupt process memory.",
-        "id": "CVE-2026-112443",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/io-wq: don't lose the signal that ends work\n\nWhen a thread exits, only its tracked requests are cancelled. Then its\nio-wq is torn down. io_wq_exit_workers() signals every worker, to get it\nout of an interruptible sleep, and waits for all of them to exit. Before\nthey do, they go through the work that is left. Unbounded…",
+        "id": "CVE-2026-99228",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:21:36.730",
-        "publishedAt": "2026-10-26T21:17:34.167",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-11-06T18:18:32.340",
+        "publishedAt": "2026-11-02T16:17:47.600",
+        "severity": null,
         "source": "NVD",
-        "title": "The issue was addressed with improved memory handling. This issue is fixed in macOS Golden Gate 27.2, macOS Tahoe 26.7.2. An app may be able to cause…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112443"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/io-wq: don't lose the signal that ends work\n\nWhen a thread exits, only its…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99228"
       },
       {
-        "cvss_score": 4.4,
-        "cvss_version": "3.1",
-        "description": "This issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27.2, macOS Tahoe 26.7.2. An app may be able to bypass Gatekeeper checks.",
-        "id": "CVE-2026-112444",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/rocket: search every core slot when looking up a scheduler\n\nsched_to_core() walks rdev->cores[] up to rdev->num_cores, and\nrocket_remove() decrements num_cores for every core it removes. Unbind a\ncore that is not the last one and the cores behind it fall outside the\nsearch, so sched_to_core() returns NULL for a core that…",
+        "id": "CVE-2026-99183",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:21:14.343",
-        "publishedAt": "2026-10-26T21:17:34.327",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-06T18:18:32.180",
+        "publishedAt": "2026-10-28T11:17:39.123",
+        "severity": null,
         "source": "NVD",
-        "title": "This issue was addressed with improved checks. This issue is fixed in macOS Golden Gate 27.2, macOS Tahoe 26.7.2. An app may be able to bypass Gatekeeper…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112444"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/rocket: search every core slot when looking up a scheduler\n\nsched_to_core() walks…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99183"
       },
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "An integer overflow was addressed with improved input validation. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2, visionOS 27.2. Processing a maliciously crafted 3D model may lead to memory corruption.",
-        "id": "CVE-2026-112449",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipc: drop the mqueue mount with kern_unmount() on setup failure\n\nmq_init_ns() creates the mqueue mount with fc_mount_longterm(), so its\n->mnt_ns is MNT_NS_INTERNAL. When setting up the mqueue or ipc sysctls\nor msg_init_ns() fails afterwards, create_ipc_ns() drops it with a plain\nmntput(). With ->mnt_ns set that takes the fast…",
+        "id": "CVE-2026-99172",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:20:31.530",
-        "publishedAt": "2026-10-26T21:17:34.813",
+        "lastModifiedAt": "2026-11-06T18:18:32.033",
+        "publishedAt": "2026-10-28T11:17:37.790",
+        "severity": null,
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nipc: drop the mqueue mount with kern_unmount() on setup failure\n\nmq_init_ns() creates the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99172"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: reject SetEA requests that do not fit the request buffer\n\nCIFSSMBSetEA() copies the caller's extended attribute value into the\nSMB request buffer without checking that it fits.  The requirement is\nstated in the source but was never implemented:\n\n\t/*BB add length check to see if it would fit in\n\t     negotiated SMB…",
+        "id": "CVE-2026-99109",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-06T18:18:31.847",
+        "publishedAt": "2026-10-28T11:17:30.287",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "An integer overflow was addressed with improved input validation. This issue is fixed in iOS 26.7.2 and iPadOS 26.7.2, iOS 27.2 and iPadOS 27.2, macOS Golden…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112449"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 27.2 and iPadOS 27.2. An app may be able to cause unexpected system termination or write kernel memory.",
-        "id": "CVE-2026-112507",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:19:10.650",
-        "publishedAt": "2026-10-26T21:17:42.120",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 27.2 and iPadOS 27.2. An app may be able to cause…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112507"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to cause unexpected system termination or read kernel memory.",
-        "id": "CVE-2026-112508",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-05T18:18:29.110",
-        "publishedAt": "2026-10-26T21:17:42.270",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "An out-of-bounds read was addressed with improved bounds checking. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112508"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: reject SetEA requests that do not fit the request buffer\n\nCIFSSMBSetEA()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99109"
       }
     ],
-    "low": 70,
-    "medium": 1004,
-    "none": 0,
-    "unscored": 361
+    "low": 125,
+    "medium": 2347,
+    "none": 1,
+    "unscored": 302
   },
   "snapshot": {
-    "cves": 2817,
-    "kevAdded": 0,
-    "knownExploited": 2,
+    "cves": 3955,
+    "kevAdded": 1,
+    "knownExploited": 5,
     "projects": 18,
-    "releases": 7,
-    "techEntries": 45
+    "releases": 2,
+    "techEntries": 53
   },
   "sources": {
     "opensource": {
@@ -881,154 +845,154 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 7,
+        "inWindow": 2,
         "status": "partial",
-        "total": 56
+        "total": 55
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1768
+        "inWindow": 1,
+        "status": "success",
+        "total": 1769
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2817,
+        "inWindow": 3955,
         "status": "success",
-        "total": 2817
+        "total": 3955
       }
     },
     "technology": {
       "rss": {
-        "failures": 1,
-        "inWindow": 45,
-        "status": "partial",
-        "total": 200
+        "failures": 0,
+        "inWindow": 53,
+        "status": "success",
+        "total": 229
       }
     }
   },
   "technology": [
     {
-      "category": "security",
-      "publishedAt": "2026-11-05T18:29:00+00:00",
+      "category": "tech",
+      "publishedAt": "2026-11-06T17:02:00+00:00",
       "source": "The Register",
-      "summary": "Decade-old vulnerability in OpenSSH is now fixed, so get a-patchin'",
-      "title": "Get root on a musl Linux system by slamming it with an overly long password",
-      "url": "https://www.theregister.com/security/2026/11/05/get-root-on-a-musl-linux-system-by-slamming-it-with-an-overly-long-password/5307910"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-05T18:03:00+00:00",
-      "source": "The Register",
-      "summary": "Agentic 'on-path attack' went after Chainalysis's tools, which are routinely called upon to assist police investigations",
-      "title": "October crypto-tracker hack: Access cracked, law enforcement tokens packed",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/05/october-crypto-tracker-hack-access-cracked-law-enforcement-tokens-packed/5307852"
+      "summary": "New and revived desktops promise Cupertino polish, but our quick tests found a few seams showing",
+      "title": "Mac lookalikes multiply as Linux raids Apple's wardrobe",
+      "url": "https://www.theregister.com/os-platforms/2026/11/06/mac-lookalikes-multiply-as-linux-raids-apples-wardrobe/5308070"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-05T17:03:04+00:00",
+      "publishedAt": "2026-11-06T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-06T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Welcome back to The Blueprint, a regular feature where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. AI is rapidly…",
+      "title": "The Blueprint: Orchestrating 5,000+ AI assets for a World Cup TV spot",
+      "url": "https://cloud.google.com/blog/products/media-entertainment/how-mito-orchestrated-5000-plus-ai-assets-for-a-world-cup-tv-spot/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-06T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Today, we’re excited to announce the general availability of our next-generation Storage-optimized Z4M machine series in Google Compute Engine, available as both Virtual Machine (VM) and bare-metal instances. We built Z4M to provide storage for AI/ML training and inference…",
+      "title": "Introducing Z4M: storage-optimized compute for AI/ML and parallel file systems",
+      "url": "https://cloud.google.com/blog/products/compute/storage-optimized-z4m-machine-series-are-ga/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-06T14:00:00+00:00",
       "source": "Cloudflare",
-      "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traffic.",
-      "title": "Agents aren’t humans (but they kinda are)",
-      "url": "https://blog.cloudflare.com/trusted-agent-delegation/"
+      "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
+      "title": "The post-quantum future of web privacy",
+      "url": "https://blog.cloudflare.com/vole-mole/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-05T17:00:00+00:00",
+      "publishedAt": "2026-11-06T13:15:00+00:00",
       "source": "The Register",
-      "summary": "The latest bug hunting model 'avoided exploiting out-of-scope services over 99 percent of the time', claims House of Altman",
-      "title": "OpenAI releases GPT-6 Cyber, and promises this one stays within 'rules of engagement'",
-      "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-05T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Every day, more and more people are using coding agents like Google Antigravity and OpenCode to complete software engineering tasks. But those tools need instructions to operate and their output is only as good as the inputs they get. By utilizing agent skills that direct the…",
-      "title": "Building an agent skill optimizer with AlphaEvolve, Harbor and Gemini 4 Argon",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/how-to-build-an-agent-skill-optimizer-with-alphaevolve-and-harbor/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-05T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "November 2 - November 6 BigQuery observability for data agents is now generally available : Data teams can now monitor the performance, adoption, latency, and cost of BigQuery data agents and their multi-turn conversations using Google Cloud Observability. This capability…",
-      "title": "What’s new with Google Data Cloud",
-      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-05T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "For more than a decade, BigQuery has helped set standards for structured data aggregation, calculating financial sums, counting active users, and computing historical averages at a petabyte scale in seconds. But as modern enterprises become inundated with unstructured data —…",
-      "title": "Semantic aggregation over millions of rows in BigQuery with AI.AGG",
-      "url": "https://cloud.google.com/blog/products/data-analytics/semantic-data-aggregation-with-bigquery-and-ai-agg/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-05T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Today, Gemini Omni 1.2 Flash is generally available on Google Cloud. Built for the everyday videos businesses make in volume — like product videos, virtual try-ons, and ads — this model is fast, cost-effective, and follows your image, video and audio references more closely than…",
-      "title": "Gemini Omni 1.2 Flash: Fast, cost-effective, and reliable video generation and editing now generally available",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-omni-1-2-flash-generally-available/"
+      "summary": "Botched server move left the door open, and DigiCert took months to notice someone had wandered in",
+      "title": "DigiCert admits 16-month security lapse exposed customer information",
+      "url": "https://www.theregister.com/security/2026/11/06/digicert-admits-16-month-security-lapse-exposed-customer-information/5308097"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-05T16:02:00+00:00",
+      "publishedAt": "2026-11-06T11:00:00+00:00",
       "source": "The Register",
-      "summary": "They denied the data was real...then removed it",
-      "title": "Tobacco company got smoked by leaving secret recipes on a file share",
-      "url": "https://www.theregister.com/security/2026/11/05/tobacco-company-got-smoked-by-leaving-secret-recipes-on-a-file-share/5307704"
+      "summary": "Cyber Security and Resilience Bill could pave way for searches, seizures, and inspections when operators lose control of automated systems",
+      "title": "UK ministers seek powers to investigate when AI agents are let off the leash",
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/06/uk-ministers-seek-powers-to-investigate-when-ai-agents-are-let-off-the-leash/5307889"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-05T16:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes. The post Accessibility statements now have a home on GitHub appeared first on The GitHub…",
-      "title": "Accessibility statements now have a home on GitHub",
-      "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-05T15:40:49+00:00",
-      "source": "Microsoft",
-      "summary": "All five agent runs produced a working script, and nothing in the eval score looked wrong. The trajectories told a different story. Every run read a DLL as raw bytes to find plugin names, and three scripts would quietly reroute a CI runner's network traffic. Here are the…",
-      "title": "Your best AX fixes are hiding in agent trajectories",
-      "url": "https://devblogs.microsoft.com/blog/your-best-ax-fixes-are-hiding-in-agent-trajectories/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-05T13:00:00+00:00",
-      "source": "The Register",
-      "summary": "From EOP to RCE in six simple steps",
-      "title": "Anthropic won't fix a Claude Dispatch flaw that could let attackers execute remote commands across corporate boundaries",
-      "url": "https://www.theregister.com/research/2026/11/05/anthropic-wont-fix-a-claude-dispatch-flaw-that-could-let-attackers-execute-remote-commands-across-corporate-boundaries/5307684"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-05T12:30:00+00:00",
+      "publishedAt": "2026-11-06T08:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "As AI shifts from human scale to agent scale , from systems of record to systems of action , and from simple requests to complex agentic workflows , the workload underneath your platform changes completely. An agent works in a continuous, stateful loop: It proposes an action…",
-      "title": "Powering open infrastructure for autonomous agents",
-      "url": "https://cloud.google.com/blog/products/containers-kubernetes/open-infrastructure-for-autonomous-agents-comes-to-cncf/"
+      "summary": "Imagine running advanced machine learning workflows—from forecasting and classification to high-dimensional embedding generation—without ever leaving your familiar pandas DataFrame. With the new .bigquery accessor from BigQuery DataFrames (BigFrames) , that vision is now a…",
+      "title": "Zero-shot predictions in Pandas using the new BigQuery Accessor",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-ai-functions-in-pandas/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-05T12:10:15+00:00",
+      "publishedAt": "2026-11-06T06:31:00+00:00",
       "source": "The Register",
-      "summary": "No gang has claimed the attack on incredible neighborhood resource yet",
-      "title": "New York's Queens Public Library battles ransomware crims: Wi-Fi, checkouts, and website go dark",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/05/new-yorks-queens-public-library-battles-ransomware-crims-wi-fi-checkouts-and-website-go-dark/5307796"
+      "summary": "Support chap told to either allow blatant policy violations or find a new job",
+      "title": "Hospital gave very sick doctor a special PC for his personal, erm, pleasure",
+      "url": "https://www.theregister.com/security/2026/11/06/hospital-gave-very-sick-doctor-a-special-pc-for-his-personal-erm-pleasure/5307750"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-05T11:19:16+00:00",
+      "publishedAt": "2026-11-06T04:25:14+00:00",
       "source": "The Register",
-      "summary": "Norad said it cannot be sure that the details of those in 'conflict areas and authoritarian states' are safe or not",
-      "title": "Norway's aid agency pwned and all users' data is stolen",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/05/norways-aid-agency-pwned-and-all-users-data-is-stolen/5307765"
+      "summary": "CEO says sovereigns probably exploited PHP2SHELL ages ago, and suggests containers are dead",
+      "title": "AI agents are a 'bane' for some website operators, says Cloudflare",
+      "url": "https://www.theregister.com/networks/2026/11/06/ai-agents-are-a-bane-for-some-website-operators-says-cloudflare/5308022"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-06T01:17:40+00:00",
+      "source": "The Register",
+      "summary": "CERT-IN warns of ‘significant escalation’ in AI-powered attacks, some after victims tried to improve defences",
+      "title": "Threat actor targets Indian fintechs on weekends when defenders aren’t watching",
+      "url": "https://www.theregister.com/security/2026/11/06/threat-actor-targets-indian-fintechs-on-weekends-when-defenders-arent-watching/5308000"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-05T23:09:36+00:00",
+      "source": "Ars Technica",
+      "summary": "Certain configurations of Alpine are affected. Other distros may be as well.",
+      "title": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices",
+      "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-05T23:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Data Cloud connectors in Gemini for business, now in preview , give business users and analysts a direct way to query live enterprise data in natural language. Across most organizations, data questions multiply faster than analysts can answer them: Projects stall in ticket…",
+      "title": "Bringing conversational analytics to Gemini with Agentic Data Cloud connectors",
+      "url": "https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-05T22:37:06+00:00",
+      "source": "The Register",
+      "summary": "No documented attacks against American supermarkets…yet",
+      "title": "Feds warn grocers: Don't chill on cyber defenses as freezer hacking spree heats up",
+      "url": "https://www.theregister.com/security/2026/11/05/feds-warn-grocers-dont-chill-on-cyber-defenses-as-freezer-hacking-spree-heats-up/5307978"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-05T20:50:57+00:00",
+      "source": "The Register",
+      "summary": "How it got there is another matter entirely",
+      "title": "The White House is apparently a popular residential proxy exit spot",
+      "url": "https://www.theregister.com/security/2026/11/05/the-white-house-is-apparently-a-popular-residential-proxy-exit-spot/5307969"
     }
   ]
 }
