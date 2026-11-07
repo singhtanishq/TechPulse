@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-11-08",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 23,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201388,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 14,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143383,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139781,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 21,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128900,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123403,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 172,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121603,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 33,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114639,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 24,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105241,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 259,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98425,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 14,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91684,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 170,
+          "HIGH": 542,
+          "LOW": 119,
+          "MEDIUM": 635,
+          "NONE": 0,
+          "UNSCORED": 118
+        }
+      },
+      "snapshot": {
+        "cves": 1584,
+        "kevAdded": 0,
+        "knownExploited": 2,
+        "projects": 18,
+        "releases": 0,
+        "techEntries": 44
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1769
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 55
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1584,
+          "status": "success",
+          "total": 1584
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 44,
+          "status": "success",
+          "total": 230
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 21,
+          "tech": 23
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-07T11:00:34+00:00",
+            "source": "Ars Technica",
+            "title": "British soldier ignored order to pull his SIM card, then got blackmailed",
+            "url": "https://arstechnica.com/security/2026/11/british-soldier-ignored-order-to-pull-his-sim-card-then-got-blackmailed/"
+          },
+          {
+            "published_at": "2026-11-07T10:30:00+00:00",
+            "source": "The Register",
+            "title": "NHS breach helpline left staff carrying a 'significant emotional burden'",
+            "url": "https://www.theregister.com/security/2026/11/07/nhs-breach-helpline-left-staff-carrying-a-significant-emotional-burden/5308201"
+          },
+          {
+            "published_at": "2026-11-06T22:15:59+00:00",
+            "source": "GitHub Blog",
+            "title": "Beyond code generation: A developer’s guide to agentic engineering",
+            "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+          },
+          {
+            "published_at": "2026-11-06T21:39:23+00:00",
+            "source": "The Register",
+            "title": "Agents reveal secrets when offered to team up with each other",
+            "url": "https://www.theregister.com/security/2026/11/06/agents-reveal-secrets-when-offered-to-team-up-with-each-other/5308260"
+          },
+          {
+            "published_at": "2026-11-06T20:56:41+00:00",
+            "source": "Ars Technica",
+            "title": "Chainalysis says hackers stole credentials and tokens for all of its customers",
+            "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"
+          },
+          {
+            "published_at": "2026-11-06T17:02:00+00:00",
+            "source": "The Register",
+            "title": "Mac lookalikes multiply as Linux raids Apple's wardrobe",
+            "url": "https://www.theregister.com/os-platforms/2026/11/06/mac-lookalikes-multiply-as-linux-raids-apples-wardrobe/5308070"
+          },
+          {
+            "published_at": "2026-11-06T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-11-06T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "The Blueprint: Orchestrating 5,000+ AI assets for a World Cup TV spot",
+            "url": "https://cloud.google.com/blog/products/media-entertainment/how-mito-orchestrated-5000-plus-ai-assets-for-a-world-cup-tv-spot/"
+          },
+          {
+            "published_at": "2026-11-06T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Introducing Z4M: storage-optimized compute for AI/ML and parallel file systems",
+            "url": "https://cloud.google.com/blog/products/compute/storage-optimized-z4m-machine-series-are-ga/"
+          },
+          {
+            "published_at": "2026-11-06T14:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "The post-quantum future of web privacy",
+            "url": "https://blog.cloudflare.com/vole-mole/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-07",
       "opensource": {
         "topProjects": [
@@ -11511,8 +11715,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-06T23:25:39.241813+00:00",
-    "totalSnapshots": 52,
+    "generatedAt": "2026-11-07T22:12:59.086001+00:00",
+    "totalSnapshots": 53,
     "warnings": []
   }
 }
