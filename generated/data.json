@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 674,
+      "date": "2026-11-09",
+      "kevAdded": 0,
+      "knownExploited": 0,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 21
+    },
+    {
       "cves": 1584,
       "date": "2026-11-08",
       "kevAdded": 0,
@@ -479,16 +488,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-07",
-    "date": "2026-11-08",
-    "daysObserved": 53,
-    "generatedAt": "2026-11-07T22:12:59.086001+00:00",
-    "snapshots": 53,
+    "coveredDate": "2026-11-08",
+    "date": "2026-11-09",
+    "daysObserved": 54,
+    "generatedAt": "2026-11-08T22:22:26.678980+00:00",
+    "snapshots": 54,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 23,
+      "daily_growth": 12,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -496,11 +505,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201388,
+      "stars": 201400,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": 45,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -508,11 +517,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143383,
+      "stars": 143428,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 16,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -520,11 +529,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139781,
+      "stars": 139797,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 21,
+      "daily_growth": 36,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -532,11 +541,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128900,
+      "stars": 128936,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 17,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -544,11 +553,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123403,
+      "stars": 123420,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 172,
+      "daily_growth": 45,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -556,11 +565,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121603,
+      "stars": 121648,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 33,
+      "daily_growth": 39,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -568,11 +577,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114639,
+      "stars": 114678,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 24,
+      "daily_growth": 25,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -580,11 +589,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105241,
+      "stars": 105266,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 259,
+      "daily_growth": 224,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -592,11 +601,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98425,
+      "stars": 98649,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": 10,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -604,224 +613,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91684,
+      "stars": 91694,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [],
   "security": {
-    "critical": 170,
-    "high": 542,
+    "critical": 34,
+    "high": 210,
     "kevCatalogTotal": 1769,
     "latest": [
       {
-        "cvss_score": 6.4,
+        "cvss_score": 6.0,
         "cvss_version": "3.1",
-        "description": "The Stackable – Page Builder Gutenberg Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'update_block_style' endpoint in all versions up to, and including, 3.19.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will…",
-        "id": "CVE-2026-9601",
+        "description": "IBM Storage Scale System 6.2.3.0 through 6.2.3.6, and 7.0.0.0 through 7.0.1.0 and IBM Storage Scale 6.0.0.0 through 6.0.1.0, and 5.2.3.0 through 5.2.3.8 could allow an attacker to leverage an undocumented flag to gain access to an unauthenticated path in the REST API.",
+        "id": "CVE-2026-76052",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:30.250",
-        "publishedAt": "2026-11-07T05:19:03.353",
+        "lastModifiedAt": "2026-11-08T18:17:04.940",
+        "publishedAt": "2026-11-08T18:17:04.827",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "The Stackable – Page Builder Gutenberg Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'update_block_style' endpoint in all…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9601"
+        "title": "IBM Storage Scale System 6.2.3.0 through 6.2.3.6, and 7.0.0.0 through 7.0.1.0 and IBM Storage Scale 6.0.0.0 through 6.0.1.0, and 5.2.3.0 through 5.2.3.8 could…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76052"
       },
       {
-        "cvss_score": 6.4,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "The WP-Members Membership Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via WooCommerce Checkout Multicheckbox/Multiselect Field (scalar bypass of wpmem_sanitize_array) in all versions up to, and including, 3.5.7 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to…",
-        "id": "CVE-2026-96565",
+        "description": "IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and  6.2.2.0 - 6.2.2.1_1 could allow a remote attacker to perform protocol downgrade attacks due to a security misconfiguration.",
+        "id": "CVE-2026-18668",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:30.127",
-        "publishedAt": "2026-11-07T12:17:47.607",
+        "lastModifiedAt": "2026-11-08T18:17:04.593",
+        "publishedAt": "2026-11-08T18:17:04.483",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "The WP-Members Membership Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via WooCommerce Checkout Multicheckbox/Multiselect Field…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96565"
+        "title": "IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and  6.2.2.0 - 6.2.2.1_1 could allow a remote attacker to perform protocol downgrade attacks due to a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18668"
       },
       {
-        "cvss_score": 6.4,
+        "cvss_score": 5.4,
         "cvss_version": "3.1",
-        "description": "The Soledad theme for WordPress is vulnerable to Stored Cross-Site Scripting via Social Profile Fields in all versions up to, and including, 8.7.7 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected…",
-        "id": "CVE-2026-93902",
+        "description": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+        "id": "CVE-2026-18546",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:29.997",
-        "publishedAt": "2026-11-07T05:19:03.103",
+        "lastModifiedAt": "2026-11-08T18:17:04.447",
+        "publishedAt": "2026-11-08T18:17:04.307",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "The Soledad theme for WordPress is vulnerable to Stored Cross-Site Scripting via Social Profile Fields in all versions up to, and including, 8.7.7 due to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93902"
+        "title": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to server-side request forgery…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18546"
       },
       {
-        "cvss_score": 7.2,
+        "cvss_score": 4.9,
         "cvss_version": "3.1",
-        "description": "The Happyforms Pro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'happyforms_client_referer' parameter in all versions up to, and including, 1.38.9 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
-        "id": "CVE-2026-93766",
+        "description": "IBM Secure Proxy 6.1.0.0 through 6.2.1.2 could allow a remote authenticated attacker to cause a denial of service due to improper validation of listener IP address and port.",
+        "id": "CVE-2026-18525",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:29.877",
-        "publishedAt": "2026-11-07T12:17:47.280",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The Happyforms Pro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'happyforms_client_referer' parameter in all versions up to, and…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93766"
-      },
-      {
-        "cvss_score": 7.2,
-        "cvss_version": "3.1",
-        "description": "The Happyforms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via spoofable client IP headers in versions up to, and including, 1.38.9. This is due to the happyforms_get_client_ip() function reading raw HTTP_CLIENT_IP and HTTP_X_FORWARDED_FOR request headers without any validation or sanitization, storing the value as post meta ('client_ip') via update_post_meta() during…",
-        "id": "CVE-2026-93755",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:29.750",
-        "publishedAt": "2026-11-07T12:17:47.120",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The Happyforms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via spoofable client IP headers in versions up to, and including, 1.38.9. This…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93755"
-      },
-      {
-        "cvss_score": 7.2,
-        "cvss_version": "3.1",
-        "description": "The VikBooking Hotel Booking Engine & PMS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'guests[][][documents]' Parameter in all versions up to, and including, 1.8.17 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected…",
-        "id": "CVE-2026-93429",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:29.627",
-        "publishedAt": "2026-11-07T12:17:46.967",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The VikBooking Hotel Booking Engine & PMS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'guests[][][documents]' Parameter in all…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93429"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76500 are related to…",
-        "id": "CVE-2026-76500",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:29.453",
-        "publishedAt": "2026-10-07T17:17:01.963",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76500"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76499 are related to…",
-        "id": "CVE-2026-76499",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:29.297",
-        "publishedAt": "2026-10-07T17:17:01.820",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76499"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-76498 are related to…",
-        "id": "CVE-2026-76498",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:29.137",
-        "publishedAt": "2026-10-07T17:17:01.670",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Application Policy Infrastructure Controller (APIC) engineering team…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76498"
-      },
-      {
-        "cvss_score": 6.6,
-        "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76497 are related to issues concerning…",
-        "id": "CVE-2026-76497",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:28.983",
-        "publishedAt": "2026-10-21T17:19:09.310",
+        "lastModifiedAt": "2026-11-08T18:17:04.270",
+        "publishedAt": "2026-11-08T18:17:04.160",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76497"
+        "title": "IBM Secure Proxy 6.1.0.0 through 6.2.1.2 could allow a remote authenticated attacker to cause a denial of service due to improper validation of listener IP…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18525"
       },
       {
-        "cvss_score": 7.0,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76496 are related to issues concerning…",
-        "id": "CVE-2026-76496",
+        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow a remote authenticated attacker to cause a denial of service due to improper slug normalization causing tool name collisions.",
+        "id": "CVE-2026-18484",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:28.823",
-        "publishedAt": "2026-10-21T17:19:09.177",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-08T18:17:04.123",
+        "publishedAt": "2026-11-08T18:17:04.010",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76496"
+        "title": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow a remote authenticated attacker to cause a denial of service due to improper slug normalization…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18484"
       },
       {
-        "cvss_score": 7.8,
+        "cvss_score": 5.4,
         "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76495 are related to issues concerning…",
-        "id": "CVE-2026-76495",
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to inject arbitrary HTML due to improper output neutralization.",
+        "id": "CVE-2026-18196",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:28.667",
-        "publishedAt": "2026-10-21T17:19:09.037",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-08T18:17:03.980",
+        "publishedAt": "2026-11-08T18:17:03.870",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76495"
+        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to inject arbitrary HTML due to improper…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18196"
       },
       {
-        "cvss_score": 7.8,
+        "cvss_score": 4.2,
         "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76494 are related to issues concerning code…",
-        "id": "CVE-2026-76494",
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to perform content spoofing due to improper output encoding of error messages.",
+        "id": "CVE-2026-18195",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:28.510",
-        "publishedAt": "2026-10-21T17:19:08.897",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-08T18:17:03.840",
+        "publishedAt": "2026-11-08T18:17:03.730",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76494"
+        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to perform content spoofing due to improper…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18195"
+      },
+      {
+        "cvss_score": 2.5,
+        "cvss_version": "3.1",
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to perform unauthorized actions due to missing anti-clickjacking controls.",
+        "id": "CVE-2026-18194",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-08T18:17:03.697",
+        "publishedAt": "2026-11-08T18:17:03.580",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to perform unauthorized actions due to missing anti-clickjacking controls.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18194"
       },
       {
         "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76493 are related to issues concerning…",
-        "id": "CVE-2026-76493",
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control.",
+        "id": "CVE-2026-18093",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:28.337",
-        "publishedAt": "2026-10-21T17:19:08.760",
+        "lastModifiedAt": "2026-11-08T18:17:03.550",
+        "publishedAt": "2026-11-08T18:17:03.440",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76493"
+        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18093"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 9.1,
         "cvss_version": "3.1",
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities. &nbsp;\r\n\r\nThe vulnerabilities tracked by CVE-2026-76492 are related to issues concerning null…",
-        "id": "CVE-2026-76492",
+        "description": "IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
+        "id": "CVE-2026-17466",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-07T18:17:28.140",
-        "publishedAt": "2026-10-21T17:19:08.620",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-08T18:17:03.410",
+        "publishedAt": "2026-11-08T18:17:03.303",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Expressway Series software engineering team has conducted a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76492"
+        "title": "IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17466"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.29 could allow a local attacker to perform an arbitrary file write due to improper validation of pathnames during archive extraction.",
+        "id": "CVE-2026-17437",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-08T18:17:03.267",
+        "publishedAt": "2026-11-08T18:17:03.153",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.29 could allow a local attacker to perform an arbitrary file write due to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17437"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "IBM Netezza Appliance 11.3.0.2 Interim Fix 002 through 11.3.1.3 Interim Fix 006 could allow a remote authenticated attacker to change the passwords of other users due to improper authorization.",
+        "id": "CVE-2026-16699",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-08T18:17:03.123",
+        "publishedAt": "2026-11-08T18:17:03.010",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "IBM Netezza Appliance 11.3.0.2 Interim Fix 002 through 11.3.1.3 Interim Fix 006 could allow a remote authenticated attacker to change the passwords of other…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16699"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+        "id": "CVE-2026-16433",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-08T18:17:02.977",
+        "publishedAt": "2026-11-08T18:17:02.870",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16433"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+        "id": "CVE-2026-16427",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-08T18:17:02.840",
+        "publishedAt": "2026-11-08T18:17:02.733",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16427"
+      },
+      {
+        "cvss_score": 4.4,
+        "cvss_version": "3.1",
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary scripts due to improper neutralization of input in the X-Forwarded-Host header.",
+        "id": "CVE-2026-16325",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-08T18:17:02.700",
+        "publishedAt": "2026-11-08T18:17:02.593",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary scripts due to improper neutralization of input in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16325"
       }
     ],
-    "low": 119,
-    "medium": 635,
-    "none": 0,
-    "unscored": 118
+    "low": 25,
+    "medium": 228,
+    "none": 1,
+    "unscored": 176
   },
   "snapshot": {
-    "cves": 1584,
+    "cves": 674,
     "kevAdded": 0,
-    "knownExploited": 2,
+    "knownExploited": 0,
     "projects": 18,
     "releases": 0,
-    "techEntries": 44
+    "techEntries": 21
   },
   "sources": {
     "opensource": {
@@ -849,15 +858,15 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1584,
+        "inWindow": 674,
         "status": "success",
-        "total": 1584
+        "total": 674
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 44,
+        "inWindow": 21,
         "status": "success",
         "total": 230
       }
