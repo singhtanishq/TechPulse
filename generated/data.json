@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1156,
+      "date": "2026-11-10",
+      "kevAdded": 4,
+      "knownExploited": 1,
+      "projects": 18,
+      "releases": 6,
+      "techEntries": 25
+    },
+    {
       "cves": 674,
       "date": "2026-11-09",
       "kevAdded": 0,
@@ -488,16 +497,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-08",
-    "date": "2026-11-09",
-    "daysObserved": 54,
-    "generatedAt": "2026-11-08T22:22:26.678980+00:00",
-    "snapshots": 54,
+    "coveredDate": "2026-11-09",
+    "date": "2026-11-10",
+    "daysObserved": 55,
+    "generatedAt": "2026-11-10T01:44:27.320417+00:00",
+    "snapshots": 55,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 12,
+      "daily_growth": 27,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -505,11 +514,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201400,
+      "stars": 201427,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 45,
+      "daily_growth": 11,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -517,11 +526,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143428,
+      "stars": 143439,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 25,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -529,11 +538,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139797,
+      "stars": 139822,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 36,
+      "daily_growth": 28,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -541,11 +550,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128936,
+      "stars": 128964,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 17,
+      "daily_growth": 32,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -553,11 +562,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123420,
+      "stars": 123452,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 45,
+      "daily_growth": 59,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -565,11 +574,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121648,
+      "stars": 121707,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 39,
+      "daily_growth": 43,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -577,11 +586,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114678,
+      "stars": 114721,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 25,
+      "daily_growth": 33,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -589,11 +598,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105266,
+      "stars": 105299,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 224,
+      "daily_growth": 12,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -601,11 +610,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98649,
+      "stars": 98661,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 7,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -613,224 +622,279 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91694,
+      "stars": 91701,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-11-09T16:12:58Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.48.0",
+      "version": "v3.48.0"
+    },
+    {
+      "kind": "patch",
+      "project": "vite",
+      "publishedAt": "2026-11-09T11:00:57Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v7.3.8",
+      "version": "v7.3.8"
+    },
+    {
+      "kind": "patch",
+      "project": "vite",
+      "publishedAt": "2026-11-09T10:58:49Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.1.7",
+      "version": "v8.1.7"
+    },
+    {
+      "kind": "patch",
+      "project": "vite",
+      "publishedAt": "2026-11-09T10:57:55Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.2.6",
+      "version": "v8.2.6"
+    },
+    {
+      "kind": "patch",
+      "project": "vite",
+      "publishedAt": "2026-11-09T10:57:45Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.2.5",
+      "version": "v8.2.5"
+    },
+    {
+      "kind": "patch",
+      "project": "vite",
+      "publishedAt": "2026-11-09T10:23:22Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
+      "version": "v8.3.7"
+    }
+  ],
   "security": {
-    "critical": 34,
-    "high": 210,
-    "kevCatalogTotal": 1769,
+    "critical": 106,
+    "high": 404,
+    "kevCatalogTotal": 1773,
     "latest": [
       {
-        "cvss_score": 6.0,
+        "cvss_score": 3.3,
         "cvss_version": "3.1",
-        "description": "IBM Storage Scale System 6.2.3.0 through 6.2.3.6, and 7.0.0.0 through 7.0.1.0 and IBM Storage Scale 6.0.0.0 through 6.0.1.0, and 5.2.3.0 through 5.2.3.8 could allow an attacker to leverage an undocumented flag to gain access to an unauthenticated path in the REST API.",
-        "id": "CVE-2026-76052",
+        "description": "In returnOutputBufferLocked of DeprecatedCamera3StreamSplitter.cpp, there is a possible out-of-bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-58856",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:04.940",
-        "publishedAt": "2026-11-08T18:17:04.827",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM Storage Scale System 6.2.3.0 through 6.2.3.6, and 7.0.0.0 through 7.0.1.0 and IBM Storage Scale 6.0.0.0 through 6.0.1.0, and 5.2.3.0 through 5.2.3.8 could…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76052"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and  6.2.2.0 - 6.2.2.1_1 could allow a remote attacker to perform protocol downgrade attacks due to a security misconfiguration.",
-        "id": "CVE-2026-18668",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:04.593",
-        "publishedAt": "2026-11-08T18:17:04.483",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM Sterling File Gateway 6.2.1.0 through 6.2.1.2_1 and  6.2.2.0 - 6.2.2.1_1 could allow a remote attacker to perform protocol downgrade attacks due to a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18668"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
-        "id": "CVE-2026-18546",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:04.447",
-        "publishedAt": "2026-11-08T18:17:04.307",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is vulnerable to server-side request forgery…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18546"
-      },
-      {
-        "cvss_score": 4.9,
-        "cvss_version": "3.1",
-        "description": "IBM Secure Proxy 6.1.0.0 through 6.2.1.2 could allow a remote authenticated attacker to cause a denial of service due to improper validation of listener IP address and port.",
-        "id": "CVE-2026-18525",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:04.270",
-        "publishedAt": "2026-11-08T18:17:04.160",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM Secure Proxy 6.1.0.0 through 6.2.1.2 could allow a remote authenticated attacker to cause a denial of service due to improper validation of listener IP…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18525"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow a remote authenticated attacker to cause a denial of service due to improper slug normalization causing tool name collisions.",
-        "id": "CVE-2026-18484",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:04.123",
-        "publishedAt": "2026-11-08T18:17:04.010",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow a remote authenticated attacker to cause a denial of service due to improper slug normalization…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18484"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to inject arbitrary HTML due to improper output neutralization.",
-        "id": "CVE-2026-18196",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:03.980",
-        "publishedAt": "2026-11-08T18:17:03.870",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to inject arbitrary HTML due to improper…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18196"
-      },
-      {
-        "cvss_score": 4.2,
-        "cvss_version": "3.1",
-        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to perform content spoofing due to improper output encoding of error messages.",
-        "id": "CVE-2026-18195",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:03.840",
-        "publishedAt": "2026-11-08T18:17:03.730",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.30 could allow a remote attacker to perform content spoofing due to improper…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18195"
-      },
-      {
-        "cvss_score": 2.5,
-        "cvss_version": "3.1",
-        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to perform unauthorized actions due to missing anti-clickjacking controls.",
-        "id": "CVE-2026-18194",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:03.697",
-        "publishedAt": "2026-11-08T18:17:03.580",
+        "lastModifiedAt": "2026-11-09T18:20:36.247",
+        "publishedAt": "2026-10-05T19:17:24.967",
         "severity": "LOW",
         "source": "NVD",
-        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to perform unauthorized actions due to missing anti-clickjacking controls.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18194"
+        "title": "In returnOutputBufferLocked of DeprecatedCamera3StreamSplitter.cpp, there is a possible out-of-bounds read due to a missing bounds check. This could lead to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58856"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 7.0,
         "cvss_version": "3.1",
-        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control.",
-        "id": "CVE-2026-18093",
+        "description": "In handle_app_val_response of btif_rc.cc, there is a possible way to achieve code execution due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-58880",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:03.550",
-        "publishedAt": "2026-11-08T18:17:03.440",
+        "lastModifiedAt": "2026-11-09T18:20:25.283",
+        "publishedAt": "2026-10-05T19:17:25.377",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18093"
+        "title": "In handle_app_val_response of btif_rc.cc, there is a possible way to achieve code execution due to a race condition. This could lead to local escalation of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58880"
       },
       {
-        "cvss_score": 9.1,
+        "cvss_score": 6.2,
         "cvss_version": "3.1",
-        "description": "IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
-        "id": "CVE-2026-17466",
+        "description": "In isPackageNullOrSystem of AppOpsService.java, there is a possible persistent denial of service due to improper input validation. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-0014",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:03.410",
-        "publishedAt": "2026-11-08T18:17:03.303",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-11-09T18:20:05.183",
+        "publishedAt": "2026-03-02T19:16:29.913",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17466"
+        "title": "In isPackageNullOrSystem of AppOpsService.java, there is a possible persistent denial of service due to improper input validation. This could lead to local…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0014"
+      },
+      {
+        "cvss_score": 3.3,
+        "cvss_version": "3.1",
+        "description": "In updateProvidersWhenServiceRemoved of CredentialManagerService.java, there is a possible way to override settings across users due to a permissions bypass. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-0016",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-09T18:17:56.607",
+        "publishedAt": "2026-06-01T22:16:19.303",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "In updateProvidersWhenServiceRemoved of CredentialManagerService.java, there is a possible way to override settings across users due to a permissions bypass…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0016"
       },
       {
         "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.29 could allow a local attacker to perform an arbitrary file write due to improper validation of pathnames during archive extraction.",
-        "id": "CVE-2026-17437",
+        "description": "In multiple functions of AccessibilityManagerService.java, there is a possible persistent denial of service due to improper input validation. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-0018",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:03.267",
-        "publishedAt": "2026-11-08T18:17:03.153",
+        "lastModifiedAt": "2026-11-09T18:17:52.483",
+        "publishedAt": "2026-06-01T22:16:19.417",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2, and 12.0.1.0 through 12.0.12.29 could allow a local attacker to perform an arbitrary file write due to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17437"
+        "title": "In multiple functions of AccessibilityManagerService.java, there is a possible persistent denial of service due to improper input validation. This could lead…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0018"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in the protocol mapper and identity resolution components of Keycloak. The issue occurs when a client manager uses hardcoded-claim mappers to override identity claims in sessionless service-account tokens. Because these tokens lack a session ID, Keycloak may incorrectly resolve the token bearer as a different, highly privileged user based on the manipulated claims. This can allow…",
+        "id": "CVE-2026-97847",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-09T18:17:36.417",
+        "publishedAt": "2026-11-05T18:17:11.840",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A flaw was found in the protocol mapper and identity resolution components of Keycloak. The issue occurs when a client manager uses hardcoded-claim mappers to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97847"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "3.1",
+        "description": "A sensitive information disclosure vulnerability exists in the web-based management interface of HPE Networking Fabric Composer. Successful exploitation could allow an unauthenticated remote attacker to obtain sensitive information.",
+        "id": "CVE-2026-95765",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-09T18:17:36.287",
+        "publishedAt": "2026-11-03T20:18:25.260",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A sensitive information disclosure vulnerability exists in the web-based management interface of HPE Networking Fabric Composer. Successful exploitation could…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95765"
+      },
+      {
+        "cvss_score": 5.9,
+        "cvss_version": "3.1",
+        "description": "An improper certificate validation vulnerability exists in HPE Networking Fabric Composer. Successful exploitation could allow an authenticated attacker with low privileges to obtain sensitive information.",
+        "id": "CVE-2026-95761",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-09T18:17:36.127",
+        "publishedAt": "2026-11-03T20:18:24.760",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "An improper certificate validation vulnerability exists in HPE Networking Fabric Composer. Successful exploitation could allow an authenticated attacker with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95761"
+      },
+      {
+        "cvss_score": 6.4,
+        "cvss_version": "3.1",
+        "description": "A privilege escalation vulnerability exists in the API of HPE Networking Fabric Composer if certain preconditions outside of the attacker's control are met. Successful exploitation could allow an authenticated attacker with low privileges to gain elevated privileges on the affected system.",
+        "id": "CVE-2026-95760",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-09T18:17:36.000",
+        "publishedAt": "2026-11-03T20:18:24.643",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A privilege escalation vulnerability exists in the API of HPE Networking Fabric Composer if certain preconditions outside of the attacker's control are met…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95760"
       },
       {
         "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "IBM Netezza Appliance 11.3.0.2 Interim Fix 002 through 11.3.1.3 Interim Fix 006 could allow a remote authenticated attacker to change the passwords of other users due to improper authorization.",
-        "id": "CVE-2026-16699",
+        "description": "Audit log bypass vulnerabilities exist in the API of HPE Networking Fabric Composer. Successful exploitation could allow an authenticated attacker with low privileges to suppress the audit records of their activity on the affected system.",
+        "id": "CVE-2026-95759",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:03.123",
-        "publishedAt": "2026-11-08T18:17:03.010",
+        "lastModifiedAt": "2026-11-09T18:17:35.860",
+        "publishedAt": "2026-11-03T20:18:24.530",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "IBM Netezza Appliance 11.3.0.2 Interim Fix 002 through 11.3.1.3 Interim Fix 006 could allow a remote authenticated attacker to change the passwords of other…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16699"
+        "title": "Audit log bypass vulnerabilities exist in the API of HPE Networking Fabric Composer. Successful exploitation could allow an authenticated attacker with low…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95759"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
-        "id": "CVE-2026-16433",
+        "description": "A privilege escalation vulnerability exists in the SSH interface of HPE Networking Fabric Composer which could allow an authenticated low-privileged attacker to exceed their authorized level of access, if certain preconditions outside of the attacker's control are met. Successful exploitation could allow an attacker to gain unauthorized access to internal services of the affected system.",
+        "id": "CVE-2026-95747",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:02.977",
-        "publishedAt": "2026-11-08T18:17:02.870",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-09T18:17:35.720",
+        "publishedAt": "2026-11-03T20:18:23.150",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16433"
+        "title": "A privilege escalation vulnerability exists in the SSH interface of HPE Networking Fabric Composer which could allow an authenticated low-privileged attacker…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95747"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
-        "id": "CVE-2026-16427",
+        "description": "Keycloak provides a Dynamic Client Registration feature that allows users with specific tokens to register their own applications. A flaw in how Keycloak validates these registration requests allows an attacker to create a malicious application that forges identity information. By mapping their own user profile details to protected fields like the user ID (sub) or intended audience (aud), an…",
+        "id": "CVE-2026-92857",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:02.840",
-        "publishedAt": "2026-11-08T18:17:02.733",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-09T18:17:35.537",
+        "publishedAt": "2026-11-05T18:17:10.887",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to write arbitrary files due to a path traversal vulnerability.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16427"
+        "title": "Keycloak provides a Dynamic Client Registration feature that allows users with specific tokens to register their own applications. A flaw in how Keycloak…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92857"
       },
       {
-        "cvss_score": 4.4,
+        "cvss_score": 4.9,
         "cvss_version": "3.1",
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary scripts due to improper neutralization of input in the X-Forwarded-Host header.",
-        "id": "CVE-2026-16325",
+        "description": "A flaw was found in the SAML brokering component of Keycloak, an identity and access management solution. The issue occurs when Keycloak acts as an intermediary between an upstream identity provider and downstream services. Keycloak fails to respect specific security instructions called ProxyRestrictions in the login messages it receives. This allows a user to log into downstream services even…",
+        "id": "CVE-2026-92856",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-08T18:17:02.700",
-        "publishedAt": "2026-11-08T18:17:02.593",
+        "lastModifiedAt": "2026-11-09T18:17:35.383",
+        "publishedAt": "2026-11-06T06:16:44.747",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary scripts due to improper neutralization of input in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16325"
+        "title": "A flaw was found in the SAML brokering component of Keycloak, an identity and access management solution. The issue occurs when Keycloak acts as an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92856"
+      },
+      {
+        "cvss_score": 8.2,
+        "cvss_version": "3.1",
+        "description": "FastNetMon is a high-performance DDoS detector and sensor. In version 1.2.9 and earlier, process_sflow_flow_sample() in src/sflow_plugin/sflow_collector.cpp passes the attacker-controlled sflow_raw_protocol_header_t.header_size to parse_raw_packet_to_simple_packet_full() as its trusted captured length without comparing it with the bytes remaining in the record. An inflated header_size creates a…",
+        "id": "CVE-2026-92698",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-09T18:17:35.257",
+        "publishedAt": "2026-11-05T23:17:02.633",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "FastNetMon is a high-performance DDoS detector and sensor. In version 1.2.9 and earlier, process_sflow_flow_sample() in src/sflow_plugin/sflow_collector.cpp…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92698"
+      },
+      {
+        "cvss_score": 5.9,
+        "cvss_version": "3.1",
+        "description": "FastNetMon is a high-performance DDoS detector and sensor. In version 1.2.9 and earlier, FastNetMon's IPv6 top-talkers screen-draw thread in draw_table_ipv6() in src/fastnetmon_logic.cpp iterates ipv6_host_counters.average_speed_map without holding counter_map_mutex while recalculate_speed() inserts new keys and may rehash the same map. The race requires networks_list to include the targeted IPv6…",
+        "id": "CVE-2026-92694",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-09T18:17:35.120",
+        "publishedAt": "2026-11-05T23:17:02.110",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "FastNetMon is a high-performance DDoS detector and sensor. In version 1.2.9 and earlier, FastNetMon's IPv6 top-talkers screen-draw thread in draw_table_ipv6()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92694"
       }
     ],
-    "low": 25,
-    "medium": 228,
-    "none": 1,
-    "unscored": 176
+    "low": 85,
+    "medium": 416,
+    "none": 0,
+    "unscored": 145
   },
   "snapshot": {
-    "cves": 674,
-    "kevAdded": 0,
-    "knownExploited": 0,
+    "cves": 1156,
+    "kevAdded": 4,
+    "knownExploited": 1,
     "projects": 18,
-    "releases": 0,
-    "techEntries": 21
+    "releases": 6,
+    "techEntries": 25
   },
   "sources": {
     "opensource": {
@@ -844,154 +908,154 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 0,
+        "inWindow": 6,
         "status": "partial",
-        "total": 55
+        "total": 56
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1769
+        "inWindow": 4,
+        "status": "success",
+        "total": 1773
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 674,
+        "inWindow": 1156,
         "status": "success",
-        "total": 674
+        "total": 1156
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 21,
+        "inWindow": 25,
         "status": "success",
-        "total": 230
+        "total": 231
       }
     }
   },
   "technology": [
     {
+      "category": "tech",
+      "publishedAt": "2026-11-09T17:55:26+00:00",
+      "source": "AWS",
+      "summary": "Most of the cost of adopting something new isn’t the new thing, it’s the move. Moving a Hive table to Apache Iceberg has typically meant weeks of engineering work. Last week, Amazon S3 Tables turned that into three steps: start, sync as often as you need, complete. The source…",
+      "title": "AWS Weekly Roundup: AgentCore Runtime V2, Amazon DynamoDB bulk put items, and more (November 9, 2026)",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/"
+    },
+    {
       "category": "security",
-      "publishedAt": "2026-11-07T11:00:34+00:00",
+      "publishedAt": "2026-11-09T17:31:00+00:00",
+      "source": "The Register",
+      "summary": "Pair of researchers chain WAF bypasses and default logins to command vehicles in Australia and the US",
+      "title": "Researchers pwn automakers’ Android apps to remotely unlock cars, honk horns",
+      "url": "https://www.theregister.com/security/2026/11/09/researchers-pwn-automakers-android-apps-to-remotely-unlock-cars-honk-horns/5308483"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-09T17:24:26+00:00",
       "source": "Ars Technica",
-      "summary": "Soldier told repeatedly to lock down devices before deploying, got sextorted, court-martialed.",
-      "title": "British soldier ignored order to pull his SIM card, then got blackmailed",
-      "url": "https://arstechnica.com/security/2026/11/british-soldier-ignored-order-to-pull-his-sim-card-then-got-blackmailed/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-07T10:30:00+00:00",
-      "source": "The Register",
-      "summary": "Team given a day's notice faced distressed callers, safeguarding decisions during project that stretched from 2 weeks to 11",
-      "title": "NHS breach helpline left staff carrying a 'significant emotional burden'",
-      "url": "https://www.theregister.com/security/2026/11/07/nhs-breach-helpline-left-staff-carrying-a-significant-emotional-burden/5308201"
+      "summary": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
+      "title": "Claude Code is accidentally exposing secrets all over GitHub",
+      "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-06T22:15:59+00:00",
-      "source": "GitHub Blog",
-      "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment. The post Beyond code generation: A developer’s guide to agentic engineering…",
-      "title": "Beyond code generation: A developer’s guide to agentic engineering",
-      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-06T21:39:23+00:00",
-      "source": "The Register",
-      "summary": "If you wouldn't put it on GitHub, don't give models access to it",
-      "title": "Agents reveal secrets when offered to team up with each other",
-      "url": "https://www.theregister.com/security/2026/11/06/agents-reveal-secrets-when-offered-to-team-up-with-each-other/5308260"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-06T20:56:41+00:00",
-      "source": "Ars Technica",
-      "summary": "Company said a \"multifront cyberattack\" included AI agents and an on-path data snatch.",
-      "title": "Chainalysis says hackers stole credentials and tokens for all of its customers",
-      "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"
+      "publishedAt": "2026-11-09T17:01:02+00:00",
+      "source": "Netflix",
+      "summary": "",
+      "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+      "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808?source=rss----2615bd06b42e---4"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-06T17:02:00+00:00",
-      "source": "The Register",
-      "summary": "New and revived desktops promise Cupertino polish, but our quick tests found a few seams showing",
-      "title": "Mac lookalikes multiply as Linux raids Apple's wardrobe",
-      "url": "https://www.theregister.com/os-platforms/2026/11/06/mac-lookalikes-multiply-as-linux-raids-apples-wardrobe/5308070"
+      "publishedAt": "2026-11-09T17:00:12+00:00",
+      "source": "Meta",
+      "summary": "We built a vendor-neutral accelerator plugin architecture in lldb-server for debugging applications that span CPUs and GPUs. It separates shared debugger infrastructure from hardware-specific device control. The design represents the CPU and GPU as separate debugger processes…",
+      "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
+      "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-06T17:00:00+00:00",
+      "publishedAt": "2026-11-09T17:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
-      "title": "What’s new with Google Cloud",
-      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      "summary": "Throughout my career in cybersecurity and infrastructure protection — both in government and now at Google Cloud — I have consistently seen that friction between new and existing technology is often a barrier to progress. A new piece of software or service may work wonderfully…",
+      "title": "New survey finds enterprises trapped between legacy software and AI modernization",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/new-survey-finds-enterprises-trapped-between-legacy-software-and-ai-modernization/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-06T17:00:00+00:00",
+      "publishedAt": "2026-11-09T16:01:03+00:00",
+      "source": "Microsoft",
+      "summary": "We gave AI coding agents the same breaking upgrade twice. Labeled 2.0.0, Claude Sonnet 5.5 checked it in all 10 runs. Labeled 1.4.3, it checked in two and often left the app broken. Nearly 1,000 runs show which agents still read your version numbers, and what a patch label talks…",
+      "title": "Do AI coding agents care about SemVer?",
+      "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-care-about-semver/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-09T16:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Welcome back to The Blueprint, a regular feature where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. AI is rapidly…",
-      "title": "The Blueprint: Orchestrating 5,000+ AI assets for a World Cup TV spot",
-      "url": "https://cloud.google.com/blog/products/media-entertainment/how-mito-orchestrated-5000-plus-ai-assets-for-a-world-cup-tv-spot/"
+      "summary": "Welcome to the first Cloud CISO Perspectives for November 2026. Today, Chris Betz shares our security forecast for 2027, with insights from top leaders at Google, Google Cloud, and Mandiant. As with all Cloud CISO Perspectives, the contents of this newsletter are posted to the…",
+      "title": "Cloud CISO Perspectives: Our security forecast for 2027",
+      "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-our-security-forecast-2027/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-09T15:02:00+00:00",
+      "source": "The Register",
+      "summary": "A mountain of CVEs, a certificate cleanup, and yet more work for Microsoft's patching teams",
+      "title": "Microsoft's Azure Linux gets 470-plus security fixes in one almighty patching session",
+      "url": "https://www.theregister.com/security/2026/11/09/microsofts-azure-linux-gets-470-plus-security-fixes-in-one-almighty-patching-session/5308434"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-09T14:30:00+00:00",
+      "source": "The Register",
+      "summary": "UK shoppers caught up in third-party security mess, and nobody knows whether the data was flushed away",
+      "title": "Who Gives A Crap? Hackers, apparently, after toilet paper maker's customer data exposed",
+      "url": "https://www.theregister.com/security/2026/11/09/who-gives-a-crap-hackers-apparently-after-toilet-paper-makers-customer-data-exposed/5308419"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-09T13:30:00+00:00",
+      "source": "The Register",
+      "summary": "Missing DMARC or wobbly SPF means your mail may be treated as suspicious",
+      "title": "Outlook.com bounces legit emails as Microsoft's authentication crackdown goes sideways",
+      "url": "https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-06T17:00:00+00:00",
+      "publishedAt": "2026-11-09T13:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Today, we’re excited to announce the general availability of our next-generation Storage-optimized Z4M machine series in Google Compute Engine, available as both Virtual Machine (VM) and bare-metal instances. We built Z4M to provide storage for AI/ML training and inference…",
-      "title": "Introducing Z4M: storage-optimized compute for AI/ML and parallel file systems",
-      "url": "https://cloud.google.com/blog/products/compute/storage-optimized-z4m-machine-series-are-ga/"
+      "summary": "Editor’s note: This blog was originally published on News from Google . We first designed TPUs more than a decade ago motivated by Google’s internal demands, including voice recognition and language translation. Eight generations of TPUs later, the use cases have exploded…",
+      "title": "Our newest TPUs: 8tx and 8i Max, built for the agentic era",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/tpu-8tx-and-tpu-8i-max/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-06T14:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
-      "title": "The post-quantum future of web privacy",
-      "url": "https://blog.cloudflare.com/vole-mole/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-06T13:15:00+00:00",
-      "source": "The Register",
-      "summary": "Botched server move left the door open, and DigiCert took months to notice someone had wandered in",
-      "title": "DigiCert admits 16-month security lapse exposed customer information",
-      "url": "https://www.theregister.com/security/2026/11/06/digicert-admits-16-month-security-lapse-exposed-customer-information/5308097"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-06T11:00:00+00:00",
-      "source": "The Register",
-      "summary": "Cyber Security and Resilience Bill could pave way for searches, seizures, and inspections when operators lose control of automated systems",
-      "title": "UK ministers seek powers to investigate when AI agents are let off the leash",
-      "url": "https://www.theregister.com/ai-and-ml/2026/11/06/uk-ministers-seek-powers-to-investigate-when-ai-agents-are-let-off-the-leash/5307889"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-06T08:00:00+00:00",
+      "publishedAt": "2026-11-09T13:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Imagine running advanced machine learning workflows—from forecasting and classification to high-dimensional embedding generation—without ever leaving your familiar pandas DataFrame. With the new .bigquery accessor from BigQuery DataFrames (BigFrames) , that vision is now a…",
-      "title": "Zero-shot predictions in Pandas using the new BigQuery Accessor",
-      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-ai-functions-in-pandas/"
+      "summary": "As frontier AI evolves from stateless single-turn prompts to million-token agents, disaggregated serving, and continuous reinforcement learning (RL), the primary bottleneck in AI infrastructure has shifted from raw compute to orchestrating live model state — both the contextual…",
+      "title": "Introducing TPU Sync: Fast KV cache and weight transfer for inference and RL on TPU",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-tpu-sync-fast-kv-cache-and-weight-transfer-on-tpu/"
     },
     {
-      "category": "security",
-      "publishedAt": "2026-11-06T06:31:00+00:00",
-      "source": "The Register",
-      "summary": "Support chap told to either allow blatant policy violations or find a new job",
-      "title": "Hospital gave very sick doctor a special PC for his personal, erm, pleasure",
-      "url": "https://www.theregister.com/security/2026/11/06/hospital-gave-very-sick-doctor-a-special-pc-for-his-personal-erm-pleasure/5307750"
+      "category": "tech",
+      "publishedAt": "2026-11-09T13:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Today, we are thrilled to announce the general availability (GA) of Cloud Pathways ( Pathways on Cloud ) on Google Kubernetes Engine (GKE) as a core runtime pillar of the Google Cloud AI Hypercomputer . Originally engineered by Google DeepMind to train and serve Google's…",
+      "title": "Cloud Pathways, a distributed ML runtime for massive accelerator fleets, now GA",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/cloud-pathways-a-distributed-ml-runtime-is-ga/"
     },
     {
-      "category": "security",
-      "publishedAt": "2026-11-06T04:25:14+00:00",
-      "source": "The Register",
-      "summary": "CEO says sovereigns probably exploited PHP2SHELL ages ago, and suggests containers are dead",
-      "title": "AI agents are a 'bane' for some website operators, says Cloudflare",
-      "url": "https://www.theregister.com/networks/2026/11/06/ai-agents-are-a-bane-for-some-website-operators-says-cloudflare/5308022"
+      "category": "tech",
+      "publishedAt": "2026-11-09T13:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Running large-scale AI workloads on TPU and Google Kubernetes Engine (GKE) requires infrastructure that adapts as fast as your models change. Dynamic Slicing is generally available on GKE, which decouples logical TPU slice formation from physical nodepool provisioning. Compared…",
+      "title": "Now generally available: GKE dynamic slicing for higher resilience, and efficiency for TPUs",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-dynamic-slicing-on-tpus/"
     }
   ]
 }

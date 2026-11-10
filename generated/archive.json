@@ -1,6 +1,253 @@
 {
   "archive": [
     {
+      "date": "2026-11-10",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 27,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201427,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 11,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143439,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 25,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139822,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 28,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128964,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 32,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123452,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 59,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121707,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 43,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114721,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 33,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105299,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 12,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98661,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 7,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91701,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 1,
+          "other": 0,
+          "patch": 5
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-09T16:12:58Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.48.0",
+            "version": "v3.48.0"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-09T11:00:57Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v7.3.8",
+            "version": "v7.3.8"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-09T10:58:49Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v8.1.7",
+            "version": "v8.1.7"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-09T10:57:55Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v8.2.6",
+            "version": "v8.2.6"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-09T10:57:45Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v8.2.5",
+            "version": "v8.2.5"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-09T10:23:22Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
+            "version": "v8.3.7"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 106,
+          "HIGH": 404,
+          "LOW": 85,
+          "MEDIUM": 416,
+          "NONE": 0,
+          "UNSCORED": 145
+        }
+      },
+      "snapshot": {
+        "cves": 1156,
+        "kevAdded": 4,
+        "knownExploited": 1,
+        "projects": 18,
+        "releases": 6,
+        "techEntries": 25
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 4,
+          "status": "success",
+          "total": 1773
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 6,
+          "status": "partial",
+          "total": 56
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1156,
+          "status": "success",
+          "total": 1156
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 25,
+          "status": "success",
+          "total": 231
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 12,
+          "tech": 13
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-09T17:55:26+00:00",
+            "source": "AWS",
+            "title": "AWS Weekly Roundup: AgentCore Runtime V2, Amazon DynamoDB bulk put items, and more (November 9, 2026)",
+            "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/"
+          },
+          {
+            "published_at": "2026-11-09T17:31:00+00:00",
+            "source": "The Register",
+            "title": "Researchers pwn automakers’ Android apps to remotely unlock cars, honk horns",
+            "url": "https://www.theregister.com/security/2026/11/09/researchers-pwn-automakers-android-apps-to-remotely-unlock-cars-honk-horns/5308483"
+          },
+          {
+            "published_at": "2026-11-09T17:24:26+00:00",
+            "source": "Ars Technica",
+            "title": "Claude Code is accidentally exposing secrets all over GitHub",
+            "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
+          },
+          {
+            "published_at": "2026-11-09T17:01:02+00:00",
+            "source": "Netflix",
+            "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+            "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808?source=rss----2615bd06b42e---4"
+          },
+          {
+            "published_at": "2026-11-09T17:00:12+00:00",
+            "source": "Meta",
+            "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
+            "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/"
+          },
+          {
+            "published_at": "2026-11-09T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "New survey finds enterprises trapped between legacy software and AI modernization",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/new-survey-finds-enterprises-trapped-between-legacy-software-and-ai-modernization/"
+          },
+          {
+            "published_at": "2026-11-09T16:01:03+00:00",
+            "source": "Microsoft",
+            "title": "Do AI coding agents care about SemVer?",
+            "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-care-about-semver/"
+          },
+          {
+            "published_at": "2026-11-09T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Cloud CISO Perspectives: Our security forecast for 2027",
+            "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-our-security-forecast-2027/"
+          },
+          {
+            "published_at": "2026-11-09T15:02:00+00:00",
+            "source": "The Register",
+            "title": "Microsoft's Azure Linux gets 470-plus security fixes in one almighty patching session",
+            "url": "https://www.theregister.com/security/2026/11/09/microsofts-azure-linux-gets-470-plus-security-fixes-in-one-almighty-patching-session/5308434"
+          },
+          {
+            "published_at": "2026-11-09T14:30:00+00:00",
+            "source": "The Register",
+            "title": "Who Gives A Crap? Hackers, apparently, after toilet paper maker's customer data exposed",
+            "url": "https://www.theregister.com/security/2026/11/09/who-gives-a-crap-hackers-apparently-after-toilet-paper-makers-customer-data-exposed/5308419"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-09",
       "opensource": {
         "topProjects": [
@@ -11919,8 +12166,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-08T22:22:26.678980+00:00",
-    "totalSnapshots": 54,
+    "generatedAt": "2026-11-10T01:44:27.320417+00:00",
+    "totalSnapshots": 55,
     "warnings": []
   }
 }
