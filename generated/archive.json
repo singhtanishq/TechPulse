@@ -1,6 +1,253 @@
 {
   "archive": [
     {
+      "date": "2026-11-11",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 17,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201444,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 15,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143454,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 17,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139839,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 128986,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 13,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123465,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 41,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121748,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 37,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114758,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 30,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105329,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 12,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98673,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 7,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91708,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 5,
+          "other": 0,
+          "patch": 1
+        },
+        "recent": [
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-11-10T16:32:58Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+            "version": "v2.8.0"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-11-10T15:56:30Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v13.42.0",
+            "version": "v13.42.0"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-11-10T15:47:40Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v12.72.0",
+            "version": "v12.72.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-10T06:47:04Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.49.0",
+            "version": "v3.49.0"
+          },
+          {
+            "project": "next.js",
+            "published_at": "2026-11-09T20:27:17Z",
+            "repository": "vercel/next.js",
+            "url": "https://github.com/vercel/next.js/releases/tag/v16.4.6",
+            "version": "v16.4.6"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-11-09T18:52:17Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+            "version": "v2.7.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 196,
+          "HIGH": 830,
+          "LOW": 103,
+          "MEDIUM": 857,
+          "NONE": 2,
+          "UNSCORED": 337
+        }
+      },
+      "snapshot": {
+        "cves": 2325,
+        "kevAdded": 6,
+        "knownExploited": 7,
+        "projects": 18,
+        "releases": 6,
+        "techEntries": 40
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 6,
+          "status": "success",
+          "total": 1779
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 6,
+          "status": "partial",
+          "total": 56
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 2325,
+          "status": "success",
+          "total": 2325
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 40,
+          "status": "success",
+          "total": 231
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 17,
+          "tech": 23
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-10T18:13:57+00:00",
+            "source": "The Register",
+            "title": "Mozilla Thunderbird email service edges closer to launch with early access",
+            "url": "https://www.theregister.com/software/2026/11/10/mozilla-thunderbird-email-service-edges-closer-to-launch-with-early-access/5308826"
+          },
+          {
+            "published_at": "2026-11-10T18:00:00+00:00",
+            "source": "GitHub Blog",
+            "title": "Git security vulnerabilities announced",
+            "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
+          },
+          {
+            "published_at": "2026-11-10T17:00:49+00:00",
+            "source": "Meta",
+            "title": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+            "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/"
+          },
+          {
+            "published_at": "2026-11-10T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Inside the Gemini factory: Accelerating partner solutions",
+            "url": "https://cloud.google.com/blog/topics/partners/inside-the-gemini-factory-accelerating-partner-solutions/"
+          },
+          {
+            "published_at": "2026-11-10T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Don't just flag it, fix it: How to run CodeMender in your pull requests",
+            "url": "https://cloud.google.com/blog/products/identity-security/how-to-run-codemender-in-your-pull-requests/"
+          },
+          {
+            "published_at": "2026-11-10T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "BigQuery measures is now GA: Unifying BI metrics and knowledge graphs for AI accuracy",
+            "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-measures-ga-unifying-bi-metrics-and-knowledge-graphs/"
+          },
+          {
+            "published_at": "2026-11-10T16:59:31+00:00",
+            "source": "Meta",
+            "title": "How We Built TLX: A Hardware-Native GPU Compiler for Production ML at Scale",
+            "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/"
+          },
+          {
+            "published_at": "2026-11-10T16:15:00+00:00",
+            "source": "The Register",
+            "title": "Trump taps Palantir security chief to run battered US cyber defense agency",
+            "url": "https://www.theregister.com/security/2026/11/10/trump-taps-palantir-security-chief-to-run-battered-us-cyber-defense-agency/5308763"
+          },
+          {
+            "published_at": "2026-11-10T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Experimenting with ClusterNetworkPolicy in GKE",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/experimenting-with-clusternetworkpolicy-in-gke/"
+          },
+          {
+            "published_at": "2026-11-10T15:28:00+00:00",
+            "source": "The Register",
+            "title": "Fireworks AI gets burned twice as customer data exposure widens",
+            "url": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-10",
       "opensource": {
         "topProjects": [
@@ -12166,8 +12413,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-10T01:44:27.320417+00:00",
-    "totalSnapshots": 55,
+    "generatedAt": "2026-11-10T23:39:55.389766+00:00",
+    "totalSnapshots": 56,
     "warnings": []
   }
 }

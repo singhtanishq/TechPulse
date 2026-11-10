@@ -1,0 +1,385 @@
+{
+  "coveredIstDay": "2026-11-10",
+  "date": "2026-11-11",
+  "generatedAt": "2026-11-10T23:39:55.389766+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 17,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201444,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 15,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143454,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 17,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139839,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 22,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 128986,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 13,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123465,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 41,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 121748,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 37,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 114758,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 30,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105329,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 12,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98673,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 7,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91708,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 5,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-11-10T16:32:58Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+        "version": "v2.8.0"
+      },
+      {
+        "project": "framework",
+        "published_at": "2026-11-10T15:56:30Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v13.42.0",
+        "version": "v13.42.0"
+      },
+      {
+        "project": "framework",
+        "published_at": "2026-11-10T15:47:40Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v12.72.0",
+        "version": "v12.72.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-11-10T06:47:04Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.49.0",
+        "version": "v3.49.0"
+      },
+      {
+        "project": "next.js",
+        "published_at": "2026-11-09T20:27:17Z",
+        "repository": "vercel/next.js",
+        "url": "https://github.com/vercel/next.js/releases/tag/v16.4.6",
+        "version": "v16.4.6"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-11-09T18:52:17Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+        "version": "v2.7.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-20320",
+        "date_added": "2026-11-10",
+        "product": "BroadWorks",
+        "vendor_project": "Cisco",
+        "vulnerability_name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-125350",
+        "date_added": "2026-11-10",
+        "product": "Chromium",
+        "vendor_project": "Google",
+        "vulnerability_name": "Google Chromium Use-After-Free Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-124194",
+        "date_added": "2026-11-10",
+        "product": "Office",
+        "vendor_project": "Microsoft",
+        "vulnerability_name": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-116606",
+        "date_added": "2026-11-10",
+        "product": "Barracuda Email Security Gateway (ESG)",
+        "vendor_project": "Barracuda Networks",
+        "vulnerability_name": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-111793",
+        "date_added": "2026-11-10",
+        "product": "Webtop Media Transcoder",
+        "vendor_project": "Openwave Messaging Limited",
+        "vulnerability_name": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 7.2,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Upgrade Wizard commit flow trusts the hidden zip_to_dir parame",
+        "id": "CVE-2026-63213",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63213"
+      },
+      {
+        "cvss": 8.8,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, legacy REST methods append an authenticated caller's query paramet",
+        "id": "CVE-2026-63214",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63214"
+      },
+      {
+        "cvss": 8.3,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST API v4.1 get_entry_list method is vulnerable to time-base",
+        "id": "CVE-2026-63215",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63215"
+      },
+      {
+        "cvss": 6.5,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the generatePdf entry point loads an arbitrary record through Bean",
+        "id": "CVE-2026-63217",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63217"
+      },
+      {
+        "cvss": 6.5,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the changeReportPage controller action renders a protected report ",
+        "id": "CVE-2026-63218",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63218"
+      },
+      {
+        "cvss": 8.8,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project module interpolates the authenticated caller's duplica",
+        "id": "CVE-2026-69135",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69135"
+      },
+      {
+        "cvss": 8.8,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST v4 JSON handler reads the pre-filter RAW_REQUEST value an",
+        "id": "CVE-2026-69134",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69134"
+      },
+      {
+        "cvss": 9.4,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Studio Dropdown Editor passes $dropdown_name through html_enti",
+        "id": "CVE-2026-100358",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100358"
+      },
+      {
+        "cvss": 6.5,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project Template module's action_get_end_date function interpo",
+        "id": "CVE-2026-100359",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100359"
+      },
+      {
+        "cvss": 7.1,
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, V8 API relationship write paths do not consistently enforce object",
+        "id": "CVE-2026-100360",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100360"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 196,
+      "HIGH": 830,
+      "LOW": 103,
+      "MEDIUM": 857,
+      "NONE": 2,
+      "UNSCORED": 337
+    }
+  },
+  "snapshot": {
+    "cves": 2325,
+    "kevAdded": 6,
+    "knownExploited": 7,
+    "projects": 18,
+    "releases": 6,
+    "techEntries": 40
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 6,
+      "status": "success",
+      "total": 1779
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 6,
+      "status": "partial",
+      "total": 56
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 2325,
+      "status": "success",
+      "total": 2325
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 40,
+      "status": "success",
+      "total": 231
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 17,
+      "tech": 23
+    },
+    "recent": [
+      {
+        "published_at": "2026-11-10T18:13:57+00:00",
+        "source": "The Register",
+        "title": "Mozilla Thunderbird email service edges closer to launch with early access",
+        "url": "https://www.theregister.com/software/2026/11/10/mozilla-thunderbird-email-service-edges-closer-to-launch-with-early-access/5308826"
+      },
+      {
+        "published_at": "2026-11-10T18:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "Git security vulnerabilities announced",
+        "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
+      },
+      {
+        "published_at": "2026-11-10T17:00:49+00:00",
+        "source": "Meta",
+        "title": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+        "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/"
+      },
+      {
+        "published_at": "2026-11-10T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Inside the Gemini factory: Accelerating partner solutions",
+        "url": "https://cloud.google.com/blog/topics/partners/inside-the-gemini-factory-accelerating-partner-solutions/"
+      },
+      {
+        "published_at": "2026-11-10T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Don't just flag it, fix it: How to run CodeMender in your pull requests",
+        "url": "https://cloud.google.com/blog/products/identity-security/how-to-run-codemender-in-your-pull-requests/"
+      },
+      {
+        "published_at": "2026-11-10T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "BigQuery measures is now GA: Unifying BI metrics and knowledge graphs for AI accuracy",
+        "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-measures-ga-unifying-bi-metrics-and-knowledge-graphs/"
+      },
+      {
+        "published_at": "2026-11-10T16:59:31+00:00",
+        "source": "Meta",
+        "title": "How We Built TLX: A Hardware-Native GPU Compiler for Production ML at Scale",
+        "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/"
+      },
+      {
+        "published_at": "2026-11-10T16:15:00+00:00",
+        "source": "The Register",
+        "title": "Trump taps Palantir security chief to run battered US cyber defense agency",
+        "url": "https://www.theregister.com/security/2026/11/10/trump-taps-palantir-security-chief-to-run-battered-us-cyber-defense-agency/5308763"
+      },
+      {
+        "published_at": "2026-11-10T16:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Experimenting with ClusterNetworkPolicy in GKE",
+        "url": "https://cloud.google.com/blog/topics/developers-practitioners/experimenting-with-clusternetworkpolicy-in-gke/"
+      },
+      {
+        "published_at": "2026-11-10T15:28:00+00:00",
+        "source": "The Register",
+        "title": "Fireworks AI gets burned twice as customer data exposure widens",
+        "url": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 2,
+      "Cloudflare": 1,
+      "GitHub Blog": 1,
+      "Google Cloud": 13,
+      "Meta": 3,
+      "Microsoft": 1,
+      "Netflix": 1,
+      "The Register": 17
+    }
+  },
+  "window": {
+    "end": "2026-11-10T18:30:00+00:00",
+    "start": "2026-11-09T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

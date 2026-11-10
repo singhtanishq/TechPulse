@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 2325,
+      "date": "2026-11-11",
+      "kevAdded": 6,
+      "knownExploited": 7,
+      "projects": 18,
+      "releases": 6,
+      "techEntries": 40
+    },
+    {
       "cves": 1156,
       "date": "2026-11-10",
       "kevAdded": 4,
@@ -497,16 +506,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-09",
-    "date": "2026-11-10",
-    "daysObserved": 55,
-    "generatedAt": "2026-11-10T01:44:27.320417+00:00",
-    "snapshots": 55,
+    "coveredDate": "2026-11-10",
+    "date": "2026-11-11",
+    "daysObserved": 56,
+    "generatedAt": "2026-11-10T23:39:55.389766+00:00",
+    "snapshots": 56,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 27,
+      "daily_growth": 17,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -514,11 +523,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201427,
+      "stars": 201444,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 11,
+      "daily_growth": 15,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -526,11 +535,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143439,
+      "stars": 143454,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 25,
+      "daily_growth": 17,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -538,11 +547,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139822,
+      "stars": 139839,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 28,
+      "daily_growth": 22,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -550,11 +559,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128964,
+      "stars": 128986,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 32,
+      "daily_growth": 13,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -562,11 +571,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123452,
+      "stars": 123465,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 59,
+      "daily_growth": 41,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -574,11 +583,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121707,
+      "stars": 121748,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 43,
+      "daily_growth": 37,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -586,11 +595,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114721,
+      "stars": 114758,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 33,
+      "daily_growth": 30,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -598,7 +607,7 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105299,
+      "stars": 105329,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
@@ -610,7 +619,7 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98661,
+      "stars": 98673,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
@@ -622,279 +631,279 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91701,
+      "stars": 91708,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
       "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-11-10T16:32:58Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+      "version": "v2.8.0"
+    },
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-11-10T15:56:30Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.42.0",
+      "version": "v13.42.0"
+    },
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-11-10T15:47:40Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v12.72.0",
+      "version": "v12.72.0"
+    },
+    {
+      "kind": "minor",
       "project": "openai-python",
-      "publishedAt": "2026-11-09T16:12:58Z",
+      "publishedAt": "2026-11-10T06:47:04Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.48.0",
-      "version": "v3.48.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.49.0",
+      "version": "v3.49.0"
     },
     {
       "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-11-09T11:00:57Z",
-      "repository": "vitejs/vite",
+      "project": "next.js",
+      "publishedAt": "2026-11-09T20:27:17Z",
+      "repository": "vercel/next.js",
       "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v7.3.8",
-      "version": "v7.3.8"
+      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.6",
+      "version": "v16.4.6"
     },
     {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-11-09T10:58:49Z",
-      "repository": "vitejs/vite",
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-11-09T18:52:17Z",
+      "repository": "anthropics/anthropic-sdk-python",
       "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.1.7",
-      "version": "v8.1.7"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-11-09T10:57:55Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.2.6",
-      "version": "v8.2.6"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-11-09T10:57:45Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.2.5",
-      "version": "v8.2.5"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-11-09T10:23:22Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
-      "version": "v8.3.7"
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+      "version": "v2.7.0"
     }
   ],
   "security": {
-    "critical": 106,
-    "high": 404,
-    "kevCatalogTotal": 1773,
+    "critical": 196,
+    "high": 830,
+    "kevCatalogTotal": 1779,
     "latest": [
       {
-        "cvss_score": 3.3,
+        "cvss_score": 7.2,
         "cvss_version": "3.1",
-        "description": "In returnOutputBufferLocked of DeprecatedCamera3StreamSplitter.cpp, there is a possible out-of-bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-58856",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Upgrade Wizard commit flow trusts the hidden zip_to_dir parameter, while clean_path() does not reject traversal sequences. An authenticated administrator can copy extracted package files outside the intended destination, overwrite application or configuration…",
+        "id": "CVE-2026-63213",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:20:36.247",
-        "publishedAt": "2026-10-05T19:17:24.967",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "In returnOutputBufferLocked of DeprecatedCamera3StreamSplitter.cpp, there is a possible out-of-bounds read due to a missing bounds check. This could lead to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58856"
-      },
-      {
-        "cvss_score": 7.0,
-        "cvss_version": "3.1",
-        "description": "In handle_app_val_response of btif_rc.cc, there is a possible way to achieve code execution due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-58880",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:20:25.283",
-        "publishedAt": "2026-10-05T19:17:25.377",
+        "lastModifiedAt": "2026-11-10T18:29:57.343",
+        "publishedAt": "2026-11-05T19:17:23.333",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In handle_app_val_response of btif_rc.cc, there is a possible way to achieve code execution due to a race condition. This could lead to local escalation of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58880"
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Upgrade Wizard commit…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63213"
       },
       {
-        "cvss_score": 6.2,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "In isPackageNullOrSystem of AppOpsService.java, there is a possible persistent denial of service due to improper input validation. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-0014",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, legacy REST methods append an authenticated caller's query parameter as a SQL WHERE clause after insufficient structural validation. The affected flow begins at /service/v4_1/rest.php and uses get_entry_list, get_entries_count, and query to carry…",
+        "id": "CVE-2026-63214",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:20:05.183",
-        "publishedAt": "2026-03-02T19:16:29.913",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "In isPackageNullOrSystem of AppOpsService.java, there is a possible persistent denial of service due to improper input validation. This could lead to local…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0014"
-      },
-      {
-        "cvss_score": 3.3,
-        "cvss_version": "3.1",
-        "description": "In updateProvidersWhenServiceRemoved of CredentialManagerService.java, there is a possible way to override settings across users due to a permissions bypass. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-0016",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:56.607",
-        "publishedAt": "2026-06-01T22:16:19.303",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "In updateProvidersWhenServiceRemoved of CredentialManagerService.java, there is a possible way to override settings across users due to a permissions bypass…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0016"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "In multiple functions of AccessibilityManagerService.java, there is a possible persistent denial of service due to improper input validation. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-0018",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:52.483",
-        "publishedAt": "2026-06-01T22:16:19.417",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "In multiple functions of AccessibilityManagerService.java, there is a possible persistent denial of service due to improper input validation. This could lead…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0018"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in the protocol mapper and identity resolution components of Keycloak. The issue occurs when a client manager uses hardcoded-claim mappers to override identity claims in sessionless service-account tokens. Because these tokens lack a session ID, Keycloak may incorrectly resolve the token bearer as a different, highly privileged user based on the manipulated claims. This can allow…",
-        "id": "CVE-2026-97847",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:36.417",
-        "publishedAt": "2026-11-05T18:17:11.840",
+        "lastModifiedAt": "2026-11-10T18:29:46.970",
+        "publishedAt": "2026-11-05T19:17:23.557",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "A flaw was found in the protocol mapper and identity resolution components of Keycloak. The issue occurs when a client manager uses hardcoded-claim mappers to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97847"
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, legacy REST methods…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63214"
       },
       {
-        "cvss_score": 5.4,
+        "cvss_score": 8.3,
         "cvss_version": "3.1",
-        "description": "A sensitive information disclosure vulnerability exists in the web-based management interface of HPE Networking Fabric Composer. Successful exploitation could allow an unauthenticated remote attacker to obtain sensitive information.",
-        "id": "CVE-2026-95765",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST API v4.1 get_entry_list method is vulnerable to time-based blind SQL injection when an authenticated caller simultaneously bypasses two independent security mechanisms. The advisory does not identify those controls more precisely, so their identities…",
+        "id": "CVE-2026-63215",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:36.287",
-        "publishedAt": "2026-11-03T20:18:25.260",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-10T18:29:43.813",
+        "publishedAt": "2026-11-05T19:17:23.750",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A sensitive information disclosure vulnerability exists in the web-based management interface of HPE Networking Fabric Composer. Successful exploitation could…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95765"
-      },
-      {
-        "cvss_score": 5.9,
-        "cvss_version": "3.1",
-        "description": "An improper certificate validation vulnerability exists in HPE Networking Fabric Composer. Successful exploitation could allow an authenticated attacker with low privileges to obtain sensitive information.",
-        "id": "CVE-2026-95761",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:36.127",
-        "publishedAt": "2026-11-03T20:18:24.760",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "An improper certificate validation vulnerability exists in HPE Networking Fabric Composer. Successful exploitation could allow an authenticated attacker with…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95761"
-      },
-      {
-        "cvss_score": 6.4,
-        "cvss_version": "3.1",
-        "description": "A privilege escalation vulnerability exists in the API of HPE Networking Fabric Composer if certain preconditions outside of the attacker's control are met. Successful exploitation could allow an authenticated attacker with low privileges to gain elevated privileges on the affected system.",
-        "id": "CVE-2026-95760",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:36.000",
-        "publishedAt": "2026-11-03T20:18:24.643",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A privilege escalation vulnerability exists in the API of HPE Networking Fabric Composer if certain preconditions outside of the attacker's control are met…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95760"
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST API v4.1…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63215"
       },
       {
         "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "Audit log bypass vulnerabilities exist in the API of HPE Networking Fabric Composer. Successful exploitation could allow an authenticated attacker with low privileges to suppress the audit records of their activity on the affected system.",
-        "id": "CVE-2026-95759",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the generatePdf entry point loads an arbitrary record through BeanFactory::getBean() without checking the requesting user's record access. The affected flow begins at modules/AOS_PDF_Templates/generatePdf.php and uses generatePdf, and BeanFactory::getBean() to…",
+        "id": "CVE-2026-63217",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:35.860",
-        "publishedAt": "2026-11-03T20:18:24.530",
+        "lastModifiedAt": "2026-11-10T18:29:39.717",
+        "publishedAt": "2026-11-05T19:17:23.957",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Audit log bypass vulnerabilities exist in the API of HPE Networking Fabric Composer. Successful exploitation could allow an authenticated attacker with low…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95759"
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the generatePdf entry…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63217"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "A privilege escalation vulnerability exists in the SSH interface of HPE Networking Fabric Composer which could allow an authenticated low-privileged attacker to exceed their authorized level of access, if certain preconditions outside of the attacker's control are met. Successful exploitation could allow an attacker to gain unauthorized access to internal services of the affected system.",
-        "id": "CVE-2026-95747",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the changeReportPage controller action renders a protected report without repeating the record-level access check enforced by DetailView. The affected flow begins at AOR_Reports and uses changeReportPage, and DetailView to carry attacker-controlled data or…",
+        "id": "CVE-2026-63218",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:35.720",
-        "publishedAt": "2026-11-03T20:18:23.150",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A privilege escalation vulnerability exists in the SSH interface of HPE Networking Fabric Composer which could allow an authenticated low-privileged attacker…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95747"
-      },
-      {
-        "cvss_score": 8.1,
-        "cvss_version": "3.1",
-        "description": "Keycloak provides a Dynamic Client Registration feature that allows users with specific tokens to register their own applications. A flaw in how Keycloak validates these registration requests allows an attacker to create a malicious application that forges identity information. By mapping their own user profile details to protected fields like the user ID (sub) or intended audience (aud), an…",
-        "id": "CVE-2026-92857",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:35.537",
-        "publishedAt": "2026-11-05T18:17:10.887",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Keycloak provides a Dynamic Client Registration feature that allows users with specific tokens to register their own applications. A flaw in how Keycloak…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92857"
-      },
-      {
-        "cvss_score": 4.9,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in the SAML brokering component of Keycloak, an identity and access management solution. The issue occurs when Keycloak acts as an intermediary between an upstream identity provider and downstream services. Keycloak fails to respect specific security instructions called ProxyRestrictions in the login messages it receives. This allows a user to log into downstream services even…",
-        "id": "CVE-2026-92856",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:35.383",
-        "publishedAt": "2026-11-06T06:16:44.747",
+        "lastModifiedAt": "2026-11-10T18:29:35.780",
+        "publishedAt": "2026-11-05T19:17:24.173",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A flaw was found in the SAML brokering component of Keycloak, an identity and access management solution. The issue occurs when Keycloak acts as an…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92856"
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the changeReportPage…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63218"
       },
       {
-        "cvss_score": 8.2,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "FastNetMon is a high-performance DDoS detector and sensor. In version 1.2.9 and earlier, process_sflow_flow_sample() in src/sflow_plugin/sflow_collector.cpp passes the attacker-controlled sflow_raw_protocol_header_t.header_size to parse_raw_packet_to_simple_packet_full() as its trusted captured length without comparing it with the bytes remaining in the record. An inflated header_size creates a…",
-        "id": "CVE-2026-92698",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project module interpolates the authenticated caller's duplicateId POST parameter directly into a SQL query without sanitization, quoting, or parameterization. An authenticated attacker can alter query structure and disclose sensitive database information. This…",
+        "id": "CVE-2026-69135",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:35.257",
-        "publishedAt": "2026-11-05T23:17:02.633",
+        "lastModifiedAt": "2026-11-10T18:29:29.753",
+        "publishedAt": "2026-11-05T19:17:24.753",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "FastNetMon is a high-performance DDoS detector and sensor. In version 1.2.9 and earlier, process_sflow_flow_sample() in src/sflow_plugin/sflow_collector.cpp…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92698"
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project module…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69135"
       },
       {
-        "cvss_score": 5.9,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "FastNetMon is a high-performance DDoS detector and sensor. In version 1.2.9 and earlier, FastNetMon's IPv6 top-talkers screen-draw thread in draw_table_ipv6() in src/fastnetmon_logic.cpp iterates ipv6_host_counters.average_speed_map without holding counter_map_mutex while recalculate_speed() inserts new keys and may rehash the same map. The race requires networks_list to include the targeted IPv6…",
-        "id": "CVE-2026-92694",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST v4 JSON handler reads the pre-filter RAW_REQUEST value and relationship write helpers interpolate supplied field values into INSERT and UPDATE statements. The affected flow begins at $GLOBALS['RAW_REQUEST'] and uses set_relationship…",
+        "id": "CVE-2026-69134",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-09T18:17:35.120",
-        "publishedAt": "2026-11-05T23:17:02.110",
+        "lastModifiedAt": "2026-11-10T18:28:28.583",
+        "publishedAt": "2026-11-05T19:17:24.533",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST v4 JSON handler…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69134"
+      },
+      {
+        "cvss_score": 9.4,
+        "cvss_version": "4.0",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Studio Dropdown Editor passes $dropdown_name through html_entity_decode() and writes the result verbatim into a PHP language file under custom/ that is included on later page loads. An administrator can inject persistent PHP that executes as the web-server…",
+        "id": "CVE-2026-100358",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-10T18:27:25.497",
+        "publishedAt": "2026-11-05T19:16:55.400",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Studio Dropdown…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100358"
+      },
+      {
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project Template module's action_get_end_date function interpolates authenticated caller-controlled task_id and lag POST parameters directly into SQL without sanitization, parameterization, or escaping. Any authenticated user can perform blind SQL injection to…",
+        "id": "CVE-2026-100359",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-10T18:26:40.377",
+        "publishedAt": "2026-11-05T19:16:57.290",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "FastNetMon is a high-performance DDoS detector and sensor. In version 1.2.9 and earlier, FastNetMon's IPv6 top-talkers screen-draw thread in draw_table_ipv6()…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92694"
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project Template…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100359"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, V8 API relationship write paths do not consistently enforce object-level edit and view authorization on both related records. In the verified Account-to-Contact case, an authenticated user can create a relationship while unable to edit the Account and can delete…",
+        "id": "CVE-2026-100360",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-10T18:26:32.430",
+        "publishedAt": "2026-11-05T19:16:57.557",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, V8 API relationship write…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100360"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 write path checks that a field exists but does not enforce api-visible or sensitive metadata that hides the same field on reads. The affected flow begins at PATCH /Api/V8/module and uses user_hash, external_auth_only, api-visible: false, and sensitive: true…",
+        "id": "CVE-2026-100361",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-10T18:25:04.777",
+        "publishedAt": "2026-11-05T19:16:57.780",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 write path checks…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100361"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the /legacy/Api/V8/OAuth2 password-grant endpoint returns distinct error messages for an invalid username and an invalid password. An unauthenticated remote attacker can use those response differences to enumerate valid CRM usernames and target confirmed accounts…",
+        "id": "CVE-2026-100362",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-10T18:24:54.183",
+        "publishedAt": "2026-11-05T19:16:58.000",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the /legacy/Api/V8/OAuth2…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100362"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 module API exposes CRUD operations for administrator-only modules to any authenticated OAuth2 user. The affected flow begins at /Api/V8/module and uses ACLRoles, ACLActions, and Administration to carry attacker-controlled data or authorization state into the…",
+        "id": "CVE-2026-100363",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-10T18:24:00.107",
+        "publishedAt": "2026-11-05T19:16:58.207",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 module API exposes…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100363"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 JSON:API update path fails to remove the id attribute before assigning user-supplied attributes to a SugarBean. The affected flow begins at updateRecord() and uses processAttributes(), id, and ACL_ALLOW_OWNER to carry attacker-controlled data or…",
+        "id": "CVE-2026-100364",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-10T18:23:56.280",
+        "publishedAt": "2026-11-05T19:16:58.647",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 JSON:API update…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100364"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, AOR report generation concatenates an attacker-controlled stored field label into an ORDER BY clause without an allowlist. The affected flow begins at AOR_Reports and uses aor_fields, ORDER BY, and field label to carry attacker-controlled data or authorization…",
+        "id": "CVE-2026-100365",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-10T18:23:52.820",
+        "publishedAt": "2026-11-05T19:16:59.133",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, AOR report generation…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100365"
       }
     ],
-    "low": 85,
-    "medium": 416,
-    "none": 0,
-    "unscored": 145
+    "low": 103,
+    "medium": 857,
+    "none": 2,
+    "unscored": 337
   },
   "snapshot": {
-    "cves": 1156,
-    "kevAdded": 4,
-    "knownExploited": 1,
+    "cves": 2325,
+    "kevAdded": 6,
+    "knownExploited": 7,
     "projects": 18,
     "releases": 6,
-    "techEntries": 25
+    "techEntries": 40
   },
   "sources": {
     "opensource": {
@@ -916,21 +925,21 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 4,
+        "inWindow": 6,
         "status": "success",
-        "total": 1773
+        "total": 1779
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1156,
+        "inWindow": 2325,
         "status": "success",
-        "total": 1156
+        "total": 2325
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 25,
+        "inWindow": 40,
         "status": "success",
         "total": 231
       }
@@ -939,123 +948,123 @@
   "technology": [
     {
       "category": "tech",
-      "publishedAt": "2026-11-09T17:55:26+00:00",
-      "source": "AWS",
-      "summary": "Most of the cost of adopting something new isn’t the new thing, it’s the move. Moving a Hive table to Apache Iceberg has typically meant weeks of engineering work. Last week, Amazon S3 Tables turned that into three steps: start, sync as often as you need, complete. The source…",
-      "title": "AWS Weekly Roundup: AgentCore Runtime V2, Amazon DynamoDB bulk put items, and more (November 9, 2026)",
-      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-09T17:31:00+00:00",
+      "publishedAt": "2026-11-10T18:13:57+00:00",
       "source": "The Register",
-      "summary": "Pair of researchers chain WAF bypasses and default logins to command vehicles in Australia and the US",
-      "title": "Researchers pwn automakers’ Android apps to remotely unlock cars, honk horns",
-      "url": "https://www.theregister.com/security/2026/11/09/researchers-pwn-automakers-android-apps-to-remotely-unlock-cars-honk-horns/5308483"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-09T17:24:26+00:00",
-      "source": "Ars Technica",
-      "summary": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
-      "title": "Claude Code is accidentally exposing secrets all over GitHub",
-      "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"
+      "summary": "Some waitlist members get a first look at Thundermail, a paid alternative to Gmail",
+      "title": "Mozilla Thunderbird email service edges closer to launch with early access",
+      "url": "https://www.theregister.com/software/2026/11/10/mozilla-thunderbird-email-service-edges-closer-to-launch-with-early-access/5308826"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-09T17:01:02+00:00",
-      "source": "Netflix",
-      "summary": "",
-      "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
-      "url": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808?source=rss----2615bd06b42e---4"
+      "publishedAt": "2026-11-10T18:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and imports. Here is what users need to know. The post Git security vulnerabilities announced appeared first on The GitHub Blog .",
+      "title": "Git security vulnerabilities announced",
+      "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-09T17:00:12+00:00",
+      "publishedAt": "2026-11-10T17:00:49+00:00",
       "source": "Meta",
-      "summary": "We built a vendor-neutral accelerator plugin architecture in lldb-server for debugging applications that span CPUs and GPUs. It separates shared debugger infrastructure from hardware-specific device control. The design represents the CPU and GPU as separate debugger processes…",
-      "title": "Extending LLDB to Debug Applications That Span CPUs and GPUs",
-      "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/"
+      "summary": "Your algorithm is a suite of AI-powered tools that makes Facebook recommendations more transparent and steerable, with a single editable view of the interests that shape Feed and Reels. We’re sharing how Your algorithm turns people’s natural language preferences into responsive…",
+      "title": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
+      "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-09T17:00:00+00:00",
+      "publishedAt": "2026-11-10T17:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Throughout my career in cybersecurity and infrastructure protection — both in government and now at Google Cloud — I have consistently seen that friction between new and existing technology is often a barrier to progress. A new piece of software or service may work wonderfully…",
-      "title": "New survey finds enterprises trapped between legacy software and AI modernization",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/new-survey-finds-enterprises-trapped-between-legacy-software-and-ai-modernization/"
+      "summary": "With the new unified Gemini experience, enterprises can bring third-party partner capabilities directly in Gemini through standardized connectors (spanning Model Context Protocol (MCP), Agent-to-Agent (A2A) runtimes, and REST APIs), alongside emerging declarative skills and…",
+      "title": "Inside the Gemini factory: Accelerating partner solutions",
+      "url": "https://cloud.google.com/blog/topics/partners/inside-the-gemini-factory-accelerating-partner-solutions/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-09T16:01:03+00:00",
-      "source": "Microsoft",
-      "summary": "We gave AI coding agents the same breaking upgrade twice. Labeled 2.0.0, Claude Sonnet 5.5 checked it in all 10 runs. Labeled 1.4.3, it checked in two and often left the app broken. Nearly 1,000 runs show which agents still read your version numbers, and what a patch label talks…",
-      "title": "Do AI coding agents care about SemVer?",
-      "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-care-about-semver/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-09T16:00:00+00:00",
+      "publishedAt": "2026-11-10T17:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Welcome to the first Cloud CISO Perspectives for November 2026. Today, Chris Betz shares our security forecast for 2027, with insights from top leaders at Google, Google Cloud, and Mandiant. As with all Cloud CISO Perspectives, the contents of this newsletter are posted to the…",
-      "title": "Cloud CISO Perspectives: Our security forecast for 2027",
-      "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-our-security-forecast-2027/"
+      "summary": "As many developers use agentic tools to create more code faster than ever before, the code has gotten more complex and they’re taking longer to find and fix software flaws. Helping to address that pressure is a key concern at Google. We know that software development velocity is…",
+      "title": "Don't just flag it, fix it: How to run CodeMender in your pull requests",
+      "url": "https://cloud.google.com/blog/products/identity-security/how-to-run-codemender-in-your-pull-requests/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-10T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "To answer a complex business question, an AI agent must understand two things: what happened, and why . The what is a governed metric, like revenue at risk; the why is the network of relationships that produced it. Because metric definitions, a.k.a. measures, traditionally live…",
+      "title": "BigQuery measures is now GA: Unifying BI metrics and knowledge graphs for AI accuracy",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-measures-ga-unifying-bi-metrics-and-knowledge-graphs/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-10T16:59:31+00:00",
+      "source": "Meta",
+      "summary": "Triton Low-Level Extensions (TLX), is an extension to Triton that helps engineers optimize GPU performance while preserving Triton’s productive programming model. TLX introduces explicit warp-group and cluster-level orchestration, letting developers adopt new hardware…",
+      "title": "How We Built TLX: A Hardware-Native GPU Compiler for Production ML at Scale",
+      "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-09T15:02:00+00:00",
+      "publishedAt": "2026-11-10T16:15:00+00:00",
       "source": "The Register",
-      "summary": "A mountain of CVEs, a certificate cleanup, and yet more work for Microsoft's patching teams",
-      "title": "Microsoft's Azure Linux gets 470-plus security fixes in one almighty patching session",
-      "url": "https://www.theregister.com/security/2026/11/09/microsofts-azure-linux-gets-470-plus-security-fixes-in-one-almighty-patching-session/5308434"
+      "summary": "Michael LoSapio could inherit a depleted workforce and a political headache or two, courtesy of his current employer",
+      "title": "Trump taps Palantir security chief to run battered US cyber defense agency",
+      "url": "https://www.theregister.com/security/2026/11/10/trump-taps-palantir-security-chief-to-run-battered-us-cyber-defense-agency/5308763"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-10T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Standard Network Policies limit you to applying policies at the namespace level, but ClusterNetworkPolicy (CNP) lets you apply granular networking policies across an entire cluster. When you use CNP, you can easily scale security and governance policies. Recently, I experimented…",
+      "title": "Experimenting with ClusterNetworkPolicy in GKE",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/experimenting-with-clusternetworkpolicy-in-gke/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-09T14:30:00+00:00",
+      "publishedAt": "2026-11-10T15:28:00+00:00",
       "source": "The Register",
-      "summary": "UK shoppers caught up in third-party security mess, and nobody knows whether the data was flushed away",
-      "title": "Who Gives A Crap? Hackers, apparently, after toilet paper maker's customer data exposed",
-      "url": "https://www.theregister.com/security/2026/11/09/who-gives-a-crap-hackers-apparently-after-toilet-paper-makers-customer-data-exposed/5308419"
+      "summary": "Inference biz pins latest breach on cloud provider and LLMJacking miscreants",
+      "title": "Fireworks AI gets burned twice as customer data exposure widens",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-09T13:30:00+00:00",
+      "publishedAt": "2026-11-10T13:28:00+00:00",
       "source": "The Register",
-      "summary": "Missing DMARC or wobbly SPF means your mail may be treated as suspicious",
-      "title": "Outlook.com bounces legit emails as Microsoft's authentication crackdown goes sideways",
-      "url": "https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428"
+      "summary": "Another Chrome memory bug gets squashed, but not before attackers got their hands on it",
+      "title": "Chrome zero-day whack-a-mole continues as 2026 tally hits 8",
+      "url": "https://www.theregister.com/security/2026/11/10/chrome-zero-day-whack-a-mole-continues-as-2026-tally-hits-8/5308732"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-10T13:00:00+00:00",
+      "source": "The Register",
+      "summary": "BYOD claims extensive data theft as campus Wi-Fi returns, most systems remain restricted, and classes carry on",
+      "title": "Ransomware threat blares from Vanderbilt University computers during cyberattack",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/10/ransomware-threat-blares-from-vanderbilt-university-computers-during-cyberattack/5308687"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-10T12:00:00+00:00",
+      "source": "The Register",
+      "summary": "Post-quantum handshake and Triple Ratchet get a formal security check",
+      "title": "Google DeepMind melds humans and AI agents to vet Signal's secure messaging techniques",
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/10/google-deepmind-melds-humans-and-ai-agents-to-vet-signals-secure-messaging-techniques/5308625"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-09T13:00:00+00:00",
+      "publishedAt": "2026-11-10T12:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Editor’s note: This blog was originally published on News from Google . We first designed TPUs more than a decade ago motivated by Google’s internal demands, including voice recognition and language translation. Eight generations of TPUs later, the use cases have exploded…",
-      "title": "Our newest TPUs: 8tx and 8i Max, built for the agentic era",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/tpu-8tx-and-tpu-8i-max/"
+      "summary": "Welcome to The Blueprint, a new feature where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. Authentic Brands Group, a…",
+      "title": "The Blueprint: How Authentic Brands Group expands creativity with AuthOS",
+      "url": "https://cloud.google.com/blog/topics/retail/the-blueprint-how-authentic-brands-group-expands-creativity-with-authos/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-09T13:00:00+00:00",
+      "publishedAt": "2026-11-10T12:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "As frontier AI evolves from stateless single-turn prompts to million-token agents, disaggregated serving, and continuous reinforcement learning (RL), the primary bottleneck in AI infrastructure has shifted from raw compute to orchestrating live model state — both the contextual…",
-      "title": "Introducing TPU Sync: Fast KV cache and weight transfer for inference and RL on TPU",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-tpu-sync-fast-kv-cache-and-weight-transfer-on-tpu/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-09T13:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Today, we are thrilled to announce the general availability (GA) of Cloud Pathways ( Pathways on Cloud ) on Google Kubernetes Engine (GKE) as a core runtime pillar of the Google Cloud AI Hypercomputer . Originally engineered by Google DeepMind to train and serve Google's…",
-      "title": "Cloud Pathways, a distributed ML runtime for massive accelerator fleets, now GA",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/cloud-pathways-a-distributed-ml-runtime-is-ga/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-09T13:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Running large-scale AI workloads on TPU and Google Kubernetes Engine (GKE) requires infrastructure that adapts as fast as your models change. Dynamic Slicing is generally available on GKE, which decouples logical TPU slice formation from physical nodepool provisioning. Compared…",
-      "title": "Now generally available: GKE dynamic slicing for higher resilience, and efficiency for TPUs",
-      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-dynamic-slicing-on-tpus/"
+      "summary": "Every healthcare organization is working to deliver great care to more people at a lower cost. However, a general AI model is not enough to solve this challenge. Today, healthcare runs on fragmented data. Patient records, coverage policies, and clinical evidence remain trapped…",
+      "title": "Introducing Gemini for healthcare",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare/"
     }
   ]
 }
