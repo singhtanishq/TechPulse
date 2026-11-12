@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 2425,
+      "date": "2026-11-13",
+      "kevAdded": 0,
+      "knownExploited": 3,
+      "projects": 18,
+      "releases": 2,
+      "techEntries": 47
+    },
+    {
       "cves": 3206,
       "date": "2026-11-12",
       "kevAdded": 0,
@@ -515,16 +524,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-11",
-    "date": "2026-11-12",
-    "daysObserved": 57,
-    "generatedAt": "2026-11-12T00:57:38.230517+00:00",
-    "snapshots": 57,
+    "coveredDate": "2026-11-12",
+    "date": "2026-11-13",
+    "daysObserved": 58,
+    "generatedAt": "2026-11-12T23:47:51.403875+00:00",
+    "snapshots": 58,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 122,
+      "daily_growth": 19,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -532,11 +541,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201566,
+      "stars": 201585,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 23,
+      "daily_growth": 19,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -544,11 +553,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143477,
+      "stars": 143496,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 19,
+      "daily_growth": 18,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -556,11 +565,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139858,
+      "stars": 139876,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 28,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -568,11 +577,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129008,
+      "stars": 129036,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 20,
+      "daily_growth": 104,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -580,11 +589,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123485,
+      "stars": 123589,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 44,
+      "daily_growth": 60,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -592,11 +601,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121792,
+      "stars": 121852,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 138,
+      "daily_growth": 36,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -604,11 +613,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114896,
+      "stars": 114932,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 113,
+      "daily_growth": 16,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -616,11 +625,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105442,
+      "stars": 105458,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": -94,
+      "daily_growth": 9,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -628,11 +637,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98579,
+      "stars": 98588,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 9,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -640,270 +649,243 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91718,
+      "stars": 91727,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "patch",
+      "kind": "minor",
+      "project": "rust",
+      "publishedAt": "2026-11-12T18:19:42Z",
+      "repository": "rust-lang/rust",
+      "source": "GitHub",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.100.0",
+      "version": "1.100.0"
+    },
+    {
+      "kind": "major",
       "project": "node",
-      "publishedAt": "2026-11-11T16:44:25Z",
+      "publishedAt": "2026-11-12T13:35:13Z",
       "repository": "nodejs/node",
       "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v26.13.1",
-      "version": "v26.13.1"
-    },
-    {
-      "kind": "patch",
-      "project": "node",
-      "publishedAt": "2026-11-11T16:44:08Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v24.22.3",
-      "version": "v24.22.3"
-    },
-    {
-      "kind": "patch",
-      "project": "node",
-      "publishedAt": "2026-11-11T16:44:03Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v22.23.5",
-      "version": "v22.23.5"
-    },
-    {
-      "kind": "patch",
-      "project": "terraform",
-      "publishedAt": "2026-11-11T11:56:51Z",
-      "repository": "hashicorp/terraform",
-      "source": "GitHub",
-      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.2",
-      "version": "v1.17.2"
-    },
-    {
-      "kind": "patch",
-      "project": "vite",
-      "publishedAt": "2026-11-11T02:46:37Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.8",
-      "version": "v8.3.8"
+      "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.1.0",
+      "version": "v27.0.0-alpha.0.1.0"
     }
   ],
   "security": {
-    "critical": 193,
-    "high": 1608,
+    "critical": 208,
+    "high": 933,
     "kevCatalogTotal": 1779,
     "latest": [
       {
-        "cvss_score": 8.7,
-        "cvss_version": "3.1",
-        "description": "Dell Ansible Storage for Unity , versions prior to 1.2.13 contains an Improper Certificate Validation vulnerability in the UnityRESTConnector component. An unauthenticated attacker with remote access could potentially exploit this vulnerability,leading to information exposure and unauthorized access.",
-        "id": "CVE-2026-91890",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:53.627",
-        "publishedAt": "2026-11-11T18:19:53.627",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Dell Ansible Storage for Unity , versions prior to 1.2.13 contains an Improper Certificate Validation vulnerability in the UnityRESTConnector component. An…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91890"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Dell Terraform for ObjectScale and Powerstore, versions prior to 1.1.1 (ObjectScale) and versions 1.2.1 through 1.3.0 (PowerStore) contains an insertion of sensitive information into Log File vulnerability in the client initialization component.  A low privileged attacker with remote access could potentially exploit this vulnerability, leading to information exposure and unauthorized access.",
-        "id": "CVE-2026-91879",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:53.483",
-        "publishedAt": "2026-11-11T18:19:53.483",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Dell Terraform for ObjectScale and Powerstore, versions prior to 1.1.1 (ObjectScale) and versions 1.2.1 through 1.3.0 (PowerStore) contains an insertion of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91879"
-      },
-      {
         "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "Dell Ansible Storage for PowerStore, versions prior to 3.9.0,contains an Insertion of Sensitive Information into Log File vulnerability in the configuration module. A low privileged attacker with local access could potentially exploit this vulnerability, leading to information exposure.",
-        "id": "CVE-2026-91872",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/pagemap: Prevent double migration of device pages\n\nA device-private folio migrated to system memory by a CPU fault can\nremain reachable through the raw-PFN eviction path until migration\nfinalization drops the source reference.\n\nIf eviction selects the same device-private folio during this window,\nit can attempt to migrate…",
+        "id": "CVE-2026-98106",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:53.347",
-        "publishedAt": "2026-11-11T18:19:53.347",
+        "lastModifiedAt": "2026-11-12T18:29:18.150",
+        "publishedAt": "2026-09-25T11:17:41.110",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Dell Ansible Storage for PowerStore, versions prior to 3.9.0,contains an Insertion of Sensitive Information into Log File vulnerability in the configuration…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91872"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/pagemap: Prevent double migration of device pages\n\nA device-private folio migrated to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98106"
       },
       {
-        "cvss_score": 7.4,
+        "cvss_score": 7.8,
         "cvss_version": "3.1",
-        "description": "Dell Ansible Storage for PowerStore, versions prior to 3.9.0, contains an Improper Certificate Validation vulnerability in the API client component. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to information exposure and unauthorized access.",
-        "id": "CVE-2026-91871",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix out-of-bounds write in l2cap_ecred_connect\n\nl2cap_chan_connect() tries to ensure there are no more than\nL2CAP_ECRED_CONN_SCID_MAX pending ECRED channels, so they fit in the\nsame L2CAP_ECRED_CONN_REQ that l2cap_ecred_connect() constructs.\n\nHowever, the check only counts deferred channels.  If 6 L2CAP…",
+        "id": "CVE-2026-98107",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:53.223",
-        "publishedAt": "2026-11-11T18:19:53.223",
+        "lastModifiedAt": "2026-11-12T18:28:34.740",
+        "publishedAt": "2026-09-25T11:17:41.743",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Dell Ansible Storage for PowerStore, versions prior to 3.9.0, contains an Improper Certificate Validation vulnerability in the API client component. An…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91871"
-      },
-      {
-        "cvss_score": 7.4,
-        "cvss_version": "3.1",
-        "description": "Dell Ansible Storage for PowerFlex, versions prior to 3.2.0, contains an Improper Certificate Validation vulnerability in the API client component. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to information exposure and unauthorized access.",
-        "id": "CVE-2026-91870",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:53.087",
-        "publishedAt": "2026-11-11T18:19:53.087",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Dell Ansible Storage for PowerFlex, versions prior to 3.2.0, contains an Improper Certificate Validation vulnerability in the API client component. An…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91870"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix out-of-bounds write in l2cap_ecred_connect\n\nl2cap_chan_connect()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98107"
       },
       {
         "cvss_score": 7.5,
         "cvss_version": "3.1",
-        "description": "A flaw was found in Cockpit. An unauthenticated remote attacker can exploit this vulnerability by initiating and sustaining numerous simultaneous connections to the `cockpit-tls` service. This forces the service to create an unbounded number of detached threads, consuming system resources such as memory and file descriptors. The primary consequence is a denial of service (DoS), leading to…",
-        "id": "CVE-2026-91149",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix chan mode for LE_CONN_REQ + EXT_FLOWCTL pchan\n\nl2cap_new_connection() sets default value of channel mode to match the\nparent channel.  l2cap_le_connect_req() left this at the default, and\ncreated L2CAP_MODE_EXT_FLOWCTL channels if listening pchan has that\nmode.  This causes FLAG_DEFER_SETUP channels to…",
+        "id": "CVE-2026-98108",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:52.907",
-        "publishedAt": "2026-09-18T17:17:05.563",
+        "lastModifiedAt": "2026-11-12T18:27:45.737",
+        "publishedAt": "2026-09-25T11:17:41.863",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "A flaw was found in Cockpit. An unauthenticated remote attacker can exploit this vulnerability by initiating and sustaining numerous simultaneous connections…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91149"
-      },
-      {
-        "cvss_score": 4.7,
-        "cvss_version": "3.1",
-        "description": "Dell Live Optics Collector, versions prior to 27.3.8.317 contains a Use of Insufficiently Random Values vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information exposure.",
-        "id": "CVE-2026-86364",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:50.980",
-        "publishedAt": "2026-11-11T18:19:50.980",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Dell Live Optics Collector, versions prior to 27.3.8.317 contains a Use of Insufficiently Random Values vulnerability. A low privileged attacker with local…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86364"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix chan mode for LE_CONN_REQ + EXT_FLOWCTL…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98108"
       },
       {
         "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "Dell Live Optics Collector, versions prior to 27.3.13.330 contains a Generation of Predictable IV with CBC Mode vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information exposure.",
-        "id": "CVE-2026-86363",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: gadget: function: rndis: add length check for header\n\nAdd a length check for the rndis header in rndis_rm_hdr, to ensure that\nMessageType, MessageLength, DataOffset, and DataLength fields are\npresent before they are accessed.",
+        "id": "CVE-2026-64505",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:50.837",
-        "publishedAt": "2026-11-11T18:19:50.837",
+        "lastModifiedAt": "2026-11-12T18:26:52.990",
+        "publishedAt": "2026-07-25T10:17:36.583",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Dell Live Optics Collector, versions prior to 27.3.13.330 contains a Generation of Predictable IV with CBC Mode vulnerability. A low privileged attacker with…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86363"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: gadget: function: rndis: add length check for header\n\nAdd a length check for the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64505"
       },
       {
-        "cvss_score": 4.3,
-        "cvss_version": "3.0",
-        "description": "An authorization bypass in channel-edit.php in Revive Adserver 6.0.8 and earlier allows an authenticated manager to create a delivery rule set belonging to another agency by changing the submitted agencyid parameter. The server trusts the submitted agency identifier when inserting the new rule set, allowing unauthorized creation of objects in another agency's account. The issue is fixed in Revive…",
-        "id": "CVE-2026-82978",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:49.960",
-        "publishedAt": "2026-11-11T18:19:49.960",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "An authorization bypass in channel-edit.php in Revive Adserver 6.0.8 and earlier allows an authenticated manager to create a delivery rule set belonging to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82978"
-      },
-      {
-        "cvss_score": 4.3,
-        "cvss_version": "3.0",
-        "description": "A cross-site request forgery vulnerability in tracker-invocation.php in Revive Adserver 6.0.8 and earlier allows an attacker to modify a tracker's name, description or advertiser assignment using an authenticated victim's permissions. A leftover state-changing handler accepts request parameters without verifying a CSRF token, although it is not used by the normal invocation-tag interface…",
-        "id": "CVE-2026-77168",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:49.673",
-        "publishedAt": "2026-11-11T18:19:49.673",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A cross-site request forgery vulnerability in tracker-invocation.php in Revive Adserver 6.0.8 and earlier allows an attacker to modify a tracker's name…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77168"
-      },
-      {
-        "cvss_score": 6.6,
+        "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "Dell Terraform Provider for Dell PowerFlex contain(s) an OS Command Injection Vulnerability in the SDC host provisioning component. A high privileged remote attacker with access to the PowerFlex management plane could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on provisioned SDC hosts. Exploitation may lead to full compromise of affected SDC hosts.",
-        "id": "CVE-2026-68862",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\niio: accel: bmc150: clamp the device-reported FIFO frame count\n\n__bmc150_accel_fifo_flush() copies the number of samples the device\nreports in its hardware FIFO into an on-stack buffer\n\n\tu16 buffer[BMC150_ACCEL_FIFO_LENGTH * 3];\n\nwhich is sized for at most BMC150_ACCEL_FIFO_LENGTH (32) samples. The\nframe count is read from the…",
+        "id": "CVE-2026-64504",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:49.170",
-        "publishedAt": "2026-11-11T18:19:49.170",
+        "lastModifiedAt": "2026-11-12T18:25:29.433",
+        "publishedAt": "2026-07-25T10:17:36.443",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Dell Terraform Provider for Dell PowerFlex contain(s) an OS Command Injection Vulnerability in the SDC host provisioning component. A high privileged remote…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68862"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\niio: accel: bmc150: clamp the device-reported FIFO frame…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64504"
       },
       {
-        "cvss_score": 5.4,
-        "cvss_version": "3.0",
-        "description": "An authorization bypass in campaign-zone linking in Revive Adserver 6.0.8 and earlier allows an authenticated manager, or a trafficker with zone-linking permissions, to associate another agency's campaign with their own zone. Campaign ownership checks are missing from the bulk-linking and single-link operations in zone-include.php and the XML-RPC campaign-linking method. Although agency filtering…",
-        "id": "CVE-2026-68486",
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack()…",
+        "id": "CVE-2026-98432",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:48.960",
-        "publishedAt": "2026-11-11T18:19:48.960",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-12T18:23:34.890",
+        "publishedAt": "2026-10-15T13:17:13.987",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "An authorization bypass in campaign-zone linking in Revive Adserver 6.0.8 and earlier allows an authenticated manager, or a trafficker with zone-linking…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68486"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98432"
       },
       {
-        "cvss_score": 4.3,
-        "cvss_version": "3.0",
-        "description": "An authorization bypass in website-index.php in Revive Adserver 6.0.8 and earlier allows an authenticated manager restricted to one agency to view another agency's website listing by changing the agencyid request parameter. Disclosed information includes website names, identifiers and timestamps. Detailed website pages continue to enforce ownership checks. The issue is fixed in Revive Adserver…",
-        "id": "CVE-2026-68485",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:48.823",
-        "publishedAt": "2026-11-11T18:19:48.823",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "An authorization bypass in website-index.php in Revive Adserver 6.0.8 and earlier allows an authenticated manager restricted to one agency to view another…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68485"
-      },
-      {
-        "cvss_score": 8.7,
+        "cvss_score": 9.5,
         "cvss_version": "4.0",
-        "description": "aeon is a scikit-learn compatible Python library for learning from time series. Prior to version 1.5.0, a GitHub Actions workflow used pull_request_target for pre-commit checks on pull requests from forks. In this configuration, fork-controlled code could be checked out and executed in a privileged context. The vulnerable workflow also generated/used elevated credentials and could automatically…",
-        "id": "CVE-2026-65820",
+        "description": "Joomla Extension - acymailing.com - Remote Code Execution vulnerability in mailbox action feature in AcyMailing Enterprise extension < 11.1.0 - MIME parts of incoming emails were saved to media/com_acym/upload/ with no extension check, so anyone who could email the monitored mailbox could write a PHP file into the web root.",
+        "id": "CVE-2026-94132",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:47.940",
-        "publishedAt": "2026-11-11T18:19:47.940",
+        "lastModifiedAt": "2026-11-12T18:17:55.617",
+        "publishedAt": "2026-09-26T15:16:55.397",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Joomla Extension - acymailing.com - Remote Code Execution vulnerability in mailbox action feature in AcyMailing Enterprise extension < 11.1.0 - MIME parts of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94132"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "The NXP ENET-QOS Ethernet driver's receive work handler eth_nxp_enet_qos_rx() in drivers/ethernet/eth_nxp_enet_qos hands each processed descriptor back to the DMA by writing desc->read.control = rx_desc_refresh_flags, which sets OWN_FLAG and BUF1_ADDR_VALID_FLAG. RDES0 of a receive descriptor is the DMA buffer address in read format, but the hardware write-back aliases that word with the VLAN tag…",
+        "id": "CVE-2026-90591",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-12T18:17:55.087",
+        "publishedAt": "2026-11-09T22:18:57.573",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "aeon is a scikit-learn compatible Python library for learning from time series. Prior to version 1.5.0, a GitHub Actions workflow used pull_request_target for…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65820"
+        "title": "The NXP ENET-QOS Ethernet driver's receive work handler eth_nxp_enet_qos_rx() in drivers/ethernet/eth_nxp_enet_qos hands each processed descriptor back to the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90591"
       },
       {
-        "cvss_score": 5.3,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "vulnerability-operator scans SBOMs and Images for vulnerabilities. Prior to version 0.28.16, an unauthenticated information-disclosure vulnerability exposes all vulnerability scan reports served by the operator. The /report/ HTTP endpoint mounts a raw http.FileServer over the reports directory (default /reports) with no authentication, authorization, or middleware. Any client that can reach the…",
-        "id": "CVE-2026-64858",
+        "description": "The NXP ENET QoS Ethernet driver in drivers/ethernet/eth_nxp_enet_qos serialises transmission with a binary semaphore, data->tx.tx_sem, taken in eth_nxp_enet_qos_tx() and returned only by the transmit-completion interrupt handler tx_dma_done(). A frame that has been handed to the transmit DMA when the Ethernet link goes down is never written back, so that completion interrupt never arrives. The…",
+        "id": "CVE-2026-90590",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-11T18:19:47.770",
-        "publishedAt": "2026-11-11T18:19:47.770",
+        "lastModifiedAt": "2026-11-12T18:17:54.930",
+        "publishedAt": "2026-11-09T22:18:57.417",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "vulnerability-operator scans SBOMs and Images for vulnerabilities. Prior to version 0.28.16, an unauthenticated information-disclosure vulnerability exposes…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64858"
+        "title": "The NXP ENET QoS Ethernet driver in drivers/ethernet/eth_nxp_enet_qos serialises transmission with a binary semaphore, data->tx.tx_sem, taken in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90590"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "When CONFIG_THREAD_STACK_MEM_MAPPED is enabled, each thread stack is mapped into the kernel virtual address space with a guard page on either side, and the mapping is released during abort cleanup. k_thread_abort_cleanup() in kernel/thread.c has two paths: a deferred one for self-abort, which stashes the mapping in thread_cleanup_stack_addr/thread_cleanup_stack_sz, and an immediate one for a…",
+        "id": "CVE-2026-90589",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-12T18:17:54.770",
+        "publishedAt": "2026-11-09T22:18:57.270",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "When CONFIG_THREAD_STACK_MEM_MAPPED is enabled, each thread stack is mapped into the kernel virtual address space with a guard page on either side, and the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90589"
+      },
+      {
+        "cvss_score": 3.7,
+        "cvss_version": "3.1",
+        "description": "The HTTP client's debug helper print_header_field() in subsys/net/lib/http/http_client.c formatted an http_parser data-callback slice with a %s conversion: snprintk(output, len + 1, \"%s\", str). The parser hands its callbacks a pointer and a length into the caller's receive buffer, and those bytes are not NUL terminated. The size argument of snprintk() bounds only the destination, while the %s…",
+        "id": "CVE-2026-90588",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-12T18:17:54.627",
+        "publishedAt": "2026-11-09T22:18:57.123",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "The HTTP client's debug helper print_header_field() in subsys/net/lib/http/http_client.c formatted an http_parser data-callback slice with a %s conversion…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90588"
+      },
+      {
+        "cvss_score": 4.6,
+        "cvss_version": "3.1",
+        "description": "usbh_device_init() in subsys/usb/host/usbh_device.c rejects a device whose device descriptor advertises bNumConfigurations == 0, but it only logs the error and jumps to the cleanup label without setting the return code. At that point the local err is still 0 from the preceding successful descriptor read, so the function returns success while having skipped usbh_device_set_configuration() — the…",
+        "id": "CVE-2026-90587",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-12T18:17:54.463",
+        "publishedAt": "2026-11-09T22:18:56.970",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "usbh_device_init() in subsys/usb/host/usbh_device.c rejects a device whose device descriptor advertises bNumConfigurations == 0, but it only logs the error and…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90587"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "The Xtensa MMU userspace port never initialized the per-thread page-table pointer thread->arch.ptables during thread setup, while arch_mem_domain_thread_add() in arch/xtensa/core/ptables.c uses a non-NULL value of that field as its \"this thread is migrating from another memory domain\" predicate. For a thread whose struct k_thread backing memory is not zeroed, the field holds stale data and the…",
+        "id": "CVE-2026-90586",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-12T18:17:54.310",
+        "publishedAt": "2026-11-09T22:18:56.813",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The Xtensa MMU userspace port never initialized the per-thread page-table pointer thread->arch.ptables during thread setup, while arch_mem_domain_thread_add()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90586"
+      },
+      {
+        "cvss_score": 4.6,
+        "cvss_version": "3.1",
+        "description": "The Renesas RA SCI UART driver's receive-error ISR, uart_ra_sci_eri_isr() in drivers/serial/uart_renesas_ra_sci.c, acknowledged the error condition only when a Zephyr interrupt-driven callback had already been registered. With CONFIG_UART_INTERRUPT_DRIVEN=y and CONFIG_UART_ASYNC_API=n, if data->user_cb is NULL the ISR body is empty: the SCI error flags (SSR.ORER, SSR.FER, SSR.PER) are left set…",
+        "id": "CVE-2026-90585",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-12T18:17:54.147",
+        "publishedAt": "2026-11-09T22:18:56.657",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The Renesas RA SCI UART driver's receive-error ISR, uart_ra_sci_eri_isr() in drivers/serial/uart_renesas_ra_sci.c, acknowledged the error condition only when a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90585"
+      },
+      {
+        "cvss_score": 4.4,
+        "cvss_version": "3.1",
+        "description": "SAP Start Service and SAP Management Console store sensitive credential information in process memory without protection. An attacker with high privileges and local access could inspect the memory to recover credentials and reuse them for authentication. This results in a high impact on confidentiality and no impact on integrity and availability.",
+        "id": "CVE-2026-89115",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-12T18:17:53.870",
+        "publishedAt": "2026-11-10T01:17:21.927",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "SAP Start Service and SAP Management Console store sensitive credential information in process memory without protection. An attacker with high privileges and…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89115"
       }
     ],
-    "low": 88,
-    "medium": 1045,
+    "low": 117,
+    "medium": 1035,
     "none": 1,
-    "unscored": 271
+    "unscored": 131
   },
   "snapshot": {
-    "cves": 3206,
+    "cves": 2425,
     "kevAdded": 0,
-    "knownExploited": 9,
+    "knownExploited": 3,
     "projects": 18,
-    "releases": 5,
-    "techEntries": 54
+    "releases": 2,
+    "techEntries": 47
   },
   "sources": {
     "opensource": {
@@ -917,9 +899,9 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 5,
+        "inWindow": 2,
         "status": "partial",
-        "total": 56
+        "total": 55
       }
     },
     "security": {
@@ -931,21 +913,125 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 3206,
+        "inWindow": 2425,
         "status": "success",
-        "total": 3206
+        "total": 2425
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 54,
+        "inWindow": 47,
         "status": "success",
         "total": 232
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-11-12T18:02:55+00:00",
+      "source": "The Register",
+      "summary": "A little tinkering can black hole obnoxious Samsung TV ads and some tracking, until a firmware fix ruins the fun",
+      "title": "Software Samaritan revamps borked Indian certs to block smart TV ads",
+      "url": "https://www.theregister.com/security/2026/11/12/software-samaritan-revamps-borked-indian-certs-to-block-smart-tv-ads/5309467"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-12T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Modern security operations centers (SOCs) face an ongoing pipeline dilemma. While ingesting comprehensive endpoint telemetry is non-negotiable for defense, conventional delivery paths often drive up transfer overhead and alert latency. As attackers operate at machine speed, any…",
+      "title": "Autonomous defense at cloud speed with SentinelOne and Google Security Operations",
+      "url": "https://cloud.google.com/blog/topics/partners/autonomous-defense-at-cloud-speed-with-sentinelone-and-google-security-operations/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-12T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Cross-Cloud Interconnect is expanding to connect to more of your workloads. We designed Google Cloud's Cross-Cloud Network to simplify and optimize how organizations connect and secure applications across cloud and on-premises environments. Last year, we launched partner…",
+      "title": "Simplifying last mile cloud connectivity with Lumen and partner Cross-Cloud Interconnect",
+      "url": "https://cloud.google.com/blog/products/networking/partner-cross-cloud-interconnect-for-last-mile-delivered-by-lumen/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-12T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Even as sophisticated, new zero-day exploits continue to emerge, most cybersecurity incidents still start from the same common sources: an attacker locating and exploiting a fundamental, easily preventable cloud misconfiguration. Organization Policy Service can help you secure…",
+      "title": "Powering agentic cloud governance: What's new in Organization Policy",
+      "url": "https://cloud.google.com/blog/products/identity-security/ai-powered-cloud-governance-whats-new-in-organization-policy/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-12T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "November 9 - November 13 Bringing conversational analytics to Gemini with Data Cloud connectors : Data Cloud connectors in Gemini are now in preview, enabling knowledge workers to query live enterprise data using natural language directly within tools like Google Docs, Gmail…",
+      "title": "What’s new with Google Data Cloud",
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-12T16:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Gartner has named Google a Leader, positioned furthest in vision, in its first-ever Magic Quadrant for Data Lakehouse Platforms. In our opinion, this recognition validates a fundamental shift our customers are experiencing every day: In the agentic era, the enterprise lakehouse…",
+      "title": "Google named the furthest in vision for the Gartner Magic Quadrant for Data Lakehouse Platforms",
+      "url": "https://cloud.google.com/blog/products/data-analytics/google-is-a-leader-in-the-gartner-magic-quadrant-for-data-lakehouse-platforms/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-12T14:55:00+00:00",
+      "source": "The Register",
+      "summary": "Upgrade, migrate, but don't prevaricate – time has run out",
+      "title": "Microsoft Exchange Server 2016 and 2019 enter their 'permanently vulnerable' era",
+      "url": "https://www.theregister.com/saas/2026/11/12/microsoft-exchange-server-2016-and-2019-enter-their-permanently-vulnerable-era/5309401"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-12T13:02:00+00:00",
+      "source": "The Register",
+      "summary": "ConnectWise disables third-party extensions in 400 environments as bughunters uncover auth hole may let crims bypass MFA",
+      "title": "Hackers exploiting ScreenConnect plugin flaw to spread malware across hundreds of PCs",
+      "url": "https://www.theregister.com/security/2026/11/12/hackers-exploiting-screenconnect-plugin-flaw-to-spread-malware-across-hundreds-of-pcs/5309361"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-12T11:31:00+00:00",
+      "source": "The Register",
+      "summary": "Sales from EU HQ'd vendor rocket in two years. The Trump affect? Yes but NIS2 and DORA are factors too",
+      "title": "European tech buyers add digital sovereignty to cyber shopping list",
+      "url": "https://www.theregister.com/security/2026/11/12/european-tech-buyers-add-digital-sovereignty-to-cyber-shopping-list/5309216"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-12T11:01:00+00:00",
+      "source": "The Register",
+      "summary": "UK staff get their say while a separate union-busting dispute heads towards its conclusion",
+      "title": "Rockstar workers vote on union recognition as GTA VI launch looms",
+      "url": "https://www.theregister.com/software/2026/11/12/rockstar-workers-vote-on-union-recognition-as-gta-vi-launch-looms/5309319"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-12T09:30:00+00:00",
+      "source": "The Register",
+      "summary": "You could check out more than your room",
+      "title": "London hotel put admin login for booking website on whiteboard behind the front desk",
+      "url": "https://www.theregister.com/security/2026/11/12/london-hotel-put-admin-login-for-booking-website-on-whiteboard-behind-the-front-desk/5308889"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-12T04:22:18+00:00",
+      "source": "The Register",
+      "summary": "Couldn’t get the hardware it needed to generate certs, so tried to code a workaround",
+      "title": "Disgraced former CA eMudhra blames buggy script for hopelessly weak certificates",
+      "url": "https://www.theregister.com/security/2026/11/12/disgraced-former-ca-emudhra-blames-buggy-script-for-hopelessly-weak-certificates/5309244"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-11T19:00:44+00:00",
+      "source": "AWS",
+      "summary": "AWS Emulator is a free, open-source local emulator in Rust that lets developers test applications against nearly every AWS service on their own machine using the same CLI and SDK commands, with fidelity measured against real AWS behavior.",
+      "title": "Test your applications against AWS locally with AWS Emulator",
+      "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-11-11T17:00:38+00:00",
@@ -961,110 +1047,6 @@
       "summary": "It just got easier to prove your expertise in building production-ready agents. Today, Google Cloud is introducing the Professional Agentic Architect certification as the latest milestone in our Gemini Agent Ready (GEAR) initiative. Nearly one million developers are using GEAR…",
       "title": "Don’t just prompt AI — architect it: Introducing the Professional Agentic Architect Certification",
       "url": "https://cloud.google.com/blog/topics/training-certifications/google-cloud-agentic-architect-certification-dont-just-prompt-ai-design-it/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-11T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Welcome back to The Blueprint, a regular feature where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. As the electric…",
-      "title": "How lemonflow built real-time agents for EV charging using Gemma and TPUs",
-      "url": "https://cloud.google.com/blog/topics/startups/building-real-time-agents-for-ev-charging-using-gemma-and-tpus/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-11T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Transactional databases store vast amounts of unstructured text — clinical notes, customer reviews, support tickets, invoices, and property descriptions. Historically, working with this text meant building complex application code: You had to export data from the database, call…",
-      "title": "Introducing new AI functions for AlloyDB: ai.classify and ai.extract",
-      "url": "https://cloud.google.com/blog/products/databases/ai-classify-and-ai-extract-functions-in-alloydb-ai/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-11T14:24:46+00:00",
-      "source": "Cloudflare",
-      "summary": "Cloudflare is building an experimental consensus service using a never-before-deployed consensus algorithm, QuePaxa. In this post we explain how QuePaxa works and why we chose it.",
-      "title": "Choosing QuePaxa, an unusual consensus algorithm",
-      "url": "https://blog.cloudflare.com/choosing-quepaxa/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-11T14:08:57+00:00",
-      "source": "Ars Technica",
-      "summary": "The four-week project hints that AI could make formal verification far more practical.",
-      "title": "Google DeepMind just mathematically verified key parts of Signal",
-      "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-11T12:05:34+00:00",
-      "source": "The Register",
-      "summary": "Says it 'strongly' suspects attack limited to legacy system, and that nothing sensitive is at risk",
-      "title": "Shipping giant Maersk probes 'IT security incident,' data theft",
-      "url": "https://www.theregister.com/security/2026/11/11/shipping-giant-maersk-probes-it-security-incident-data-theft/5309096"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-11T05:20:56+00:00",
-      "source": "The Register",
-      "summary": "How much damage can a rogue agent do in 35 seconds? Asking cos that’s how long it might take to shut one down",
-      "title": "OpenAI builds a kill switch for its research models",
-      "url": "https://www.theregister.com/ai-and-ml/2026/11/11/openai-builds-a-kill-switch-for-its-research-models/5309006"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T23:45:26+00:00",
-      "source": "The Register",
-      "summary": "Sheets, Whiteboards, and Data artifact types bring Claude closer to a productivity suite",
-      "title": "Anthropic tiptoes into MS Office territory",
-      "url": "https://www.theregister.com/software/2026/11/10/anthropic-tiptoes-into-ms-office-territory/5308988"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T22:37:01+00:00",
-      "source": "The Register",
-      "summary": "Microsoft admins wail and gnash their teeth",
-      "title": "November Patch Tuesday boasts over 1,000 bugs, one already under attack",
-      "url": "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-one-already-under-attack/5308946"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T21:45:45+00:00",
-      "source": "The Register",
-      "summary": "Amazon calls its home security drone and business patrol bot 'proactive protection'",
-      "title": "Ring robots ready to patrol paranoids’ pads",
-      "url": "https://www.theregister.com/offbeat/2026/11/10/ring-robots-ready-to-patrol-paranoids-pads/5308932"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T21:12:59+00:00",
-      "source": "Ars Technica",
-      "summary": "Researcher finds 35,000 Grok Build apps wide open to anyone who looked for them.",
-      "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
-      "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T18:51:35+00:00",
-      "source": "The Register",
-      "summary": "Someone's fishing for exposed devices",
-      "title": "Barracuda’s email security gateways bitten by make-me-root vulns",
-      "url": "https://www.theregister.com/security/2026/11/10/barracudas-email-security-gateways-bitten-by-make-me-root-vulns/5308883"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T18:31:53+00:00",
-      "source": "The Register",
-      "summary": "Autark can act without constant prompting, but leaves users to enforce their own security boundaries",
-      "title": "14-year-old creates tool for AI agents to band together like a team",
-      "url": "https://www.theregister.com/ai-and-ml/2026/11/10/14-year-old-creates-tool-for-ai-agents-to-band-together-like-a-team/5308841"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T18:13:57+00:00",
-      "source": "The Register",
-      "summary": "Some waitlist members get a first look at Thundermail, a paid alternative to Gmail",
-      "title": "Mozilla Thunderbird email service edges closer to launch with early access",
-      "url": "https://www.theregister.com/software/2026/11/10/mozilla-thunderbird-email-service-edges-closer-to-launch-with-early-access/5308826"
     }
   ]
 }

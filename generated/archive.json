@@ -1,6 +1,225 @@
 {
   "archive": [
     {
+      "date": "2026-11-13",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 19,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201585,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 19,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143496,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 18,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139876,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 28,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129036,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 104,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123589,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 60,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121852,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 36,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114932,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 16,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105458,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 9,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98588,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 9,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91727,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 1,
+          "minor": 1,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "rust",
+            "published_at": "2026-11-12T18:19:42Z",
+            "repository": "rust-lang/rust",
+            "url": "https://github.com/rust-lang/rust/releases/tag/1.100.0",
+            "version": "1.100.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-11-12T13:35:13Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.1.0",
+            "version": "v27.0.0-alpha.0.1.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 208,
+          "HIGH": 933,
+          "LOW": 117,
+          "MEDIUM": 1035,
+          "NONE": 1,
+          "UNSCORED": 131
+        }
+      },
+      "snapshot": {
+        "cves": 2425,
+        "kevAdded": 0,
+        "knownExploited": 3,
+        "projects": 18,
+        "releases": 2,
+        "techEntries": 47
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1779
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 2,
+          "status": "partial",
+          "total": 55
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 2425,
+          "status": "success",
+          "total": 2425
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 47,
+          "status": "success",
+          "total": 232
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 22,
+          "tech": 25
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-12T18:02:55+00:00",
+            "source": "The Register",
+            "title": "Software Samaritan revamps borked Indian certs to block smart TV ads",
+            "url": "https://www.theregister.com/security/2026/11/12/software-samaritan-revamps-borked-indian-certs-to-block-smart-tv-ads/5309467"
+          },
+          {
+            "published_at": "2026-11-12T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Autonomous defense at cloud speed with SentinelOne and Google Security Operations",
+            "url": "https://cloud.google.com/blog/topics/partners/autonomous-defense-at-cloud-speed-with-sentinelone-and-google-security-operations/"
+          },
+          {
+            "published_at": "2026-11-12T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Simplifying last mile cloud connectivity with Lumen and partner Cross-Cloud Interconnect",
+            "url": "https://cloud.google.com/blog/products/networking/partner-cross-cloud-interconnect-for-last-mile-delivered-by-lumen/"
+          },
+          {
+            "published_at": "2026-11-12T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Powering agentic cloud governance: What's new in Organization Policy",
+            "url": "https://cloud.google.com/blog/products/identity-security/ai-powered-cloud-governance-whats-new-in-organization-policy/"
+          },
+          {
+            "published_at": "2026-11-12T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Data Cloud",
+            "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
+          },
+          {
+            "published_at": "2026-11-12T16:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Google named the furthest in vision for the Gartner Magic Quadrant for Data Lakehouse Platforms",
+            "url": "https://cloud.google.com/blog/products/data-analytics/google-is-a-leader-in-the-gartner-magic-quadrant-for-data-lakehouse-platforms/"
+          },
+          {
+            "published_at": "2026-11-12T14:55:00+00:00",
+            "source": "The Register",
+            "title": "Microsoft Exchange Server 2016 and 2019 enter their 'permanently vulnerable' era",
+            "url": "https://www.theregister.com/saas/2026/11/12/microsoft-exchange-server-2016-and-2019-enter-their-permanently-vulnerable-era/5309401"
+          },
+          {
+            "published_at": "2026-11-12T13:02:00+00:00",
+            "source": "The Register",
+            "title": "Hackers exploiting ScreenConnect plugin flaw to spread malware across hundreds of PCs",
+            "url": "https://www.theregister.com/security/2026/11/12/hackers-exploiting-screenconnect-plugin-flaw-to-spread-malware-across-hundreds-of-pcs/5309361"
+          },
+          {
+            "published_at": "2026-11-12T11:31:00+00:00",
+            "source": "The Register",
+            "title": "European tech buyers add digital sovereignty to cyber shopping list",
+            "url": "https://www.theregister.com/security/2026/11/12/european-tech-buyers-add-digital-sovereignty-to-cyber-shopping-list/5309216"
+          },
+          {
+            "published_at": "2026-11-12T11:01:00+00:00",
+            "source": "The Register",
+            "title": "Rockstar workers vote on union recognition as GTA VI launch looms",
+            "url": "https://www.theregister.com/software/2026/11/12/rockstar-workers-vote-on-union-recognition-as-gta-vi-launch-looms/5309319"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-12",
       "opensource": {
         "topProjects": [
@@ -12653,8 +12872,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-12T00:57:38.230517+00:00",
-    "totalSnapshots": 57,
+    "generatedAt": "2026-11-12T23:47:51.403875+00:00",
+    "totalSnapshots": 58,
     "warnings": []
   }
 }
