@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 3206,
+      "date": "2026-11-12",
+      "kevAdded": 0,
+      "knownExploited": 9,
+      "projects": 18,
+      "releases": 5,
+      "techEntries": 54
+    },
+    {
       "cves": 2325,
       "date": "2026-11-11",
       "kevAdded": 6,
@@ -506,16 +515,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-10",
-    "date": "2026-11-11",
-    "daysObserved": 56,
-    "generatedAt": "2026-11-10T23:39:55.389766+00:00",
-    "snapshots": 56,
+    "coveredDate": "2026-11-11",
+    "date": "2026-11-12",
+    "daysObserved": 57,
+    "generatedAt": "2026-11-12T00:57:38.230517+00:00",
+    "snapshots": 57,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 17,
+      "daily_growth": 122,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -523,11 +532,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201444,
+      "stars": 201566,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": 23,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -535,11 +544,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143454,
+      "stars": 143477,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 17,
+      "daily_growth": 19,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -547,7 +556,7 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139839,
+      "stars": 139858,
       "url": "https://github.com/golang/go"
     },
     {
@@ -559,11 +568,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 128986,
+      "stars": 129008,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 13,
+      "daily_growth": 20,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -571,11 +580,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123465,
+      "stars": 123485,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 41,
+      "daily_growth": 44,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -583,11 +592,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121748,
+      "stars": 121792,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 37,
+      "daily_growth": 138,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -595,11 +604,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114758,
+      "stars": 114896,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 30,
+      "daily_growth": 113,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -607,11 +616,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105329,
+      "stars": 105442,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 12,
+      "daily_growth": -94,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -619,11 +628,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98673,
+      "stars": 98579,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 7,
+      "daily_growth": 10,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -631,279 +640,270 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91708,
+      "stars": 91718,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-11-10T16:32:58Z",
-      "repository": "anthropics/anthropic-sdk-python",
+      "kind": "patch",
+      "project": "node",
+      "publishedAt": "2026-11-11T16:44:25Z",
+      "repository": "nodejs/node",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
-      "version": "v2.8.0"
-    },
-    {
-      "kind": "minor",
-      "project": "framework",
-      "publishedAt": "2026-11-10T15:56:30Z",
-      "repository": "laravel/framework",
-      "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v13.42.0",
-      "version": "v13.42.0"
-    },
-    {
-      "kind": "minor",
-      "project": "framework",
-      "publishedAt": "2026-11-10T15:47:40Z",
-      "repository": "laravel/framework",
-      "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v12.72.0",
-      "version": "v12.72.0"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-10T06:47:04Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.49.0",
-      "version": "v3.49.0"
+      "url": "https://github.com/nodejs/node/releases/tag/v26.13.1",
+      "version": "v26.13.1"
     },
     {
       "kind": "patch",
-      "project": "next.js",
-      "publishedAt": "2026-11-09T20:27:17Z",
-      "repository": "vercel/next.js",
+      "project": "node",
+      "publishedAt": "2026-11-11T16:44:08Z",
+      "repository": "nodejs/node",
       "source": "GitHub",
-      "url": "https://github.com/vercel/next.js/releases/tag/v16.4.6",
-      "version": "v16.4.6"
+      "url": "https://github.com/nodejs/node/releases/tag/v24.22.3",
+      "version": "v24.22.3"
     },
     {
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-11-09T18:52:17Z",
-      "repository": "anthropics/anthropic-sdk-python",
+      "kind": "patch",
+      "project": "node",
+      "publishedAt": "2026-11-11T16:44:03Z",
+      "repository": "nodejs/node",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
-      "version": "v2.7.0"
+      "url": "https://github.com/nodejs/node/releases/tag/v22.23.5",
+      "version": "v22.23.5"
+    },
+    {
+      "kind": "patch",
+      "project": "terraform",
+      "publishedAt": "2026-11-11T11:56:51Z",
+      "repository": "hashicorp/terraform",
+      "source": "GitHub",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.2",
+      "version": "v1.17.2"
+    },
+    {
+      "kind": "patch",
+      "project": "vite",
+      "publishedAt": "2026-11-11T02:46:37Z",
+      "repository": "vitejs/vite",
+      "source": "GitHub",
+      "url": "https://github.com/vitejs/vite/releases/tag/v8.3.8",
+      "version": "v8.3.8"
     }
   ],
   "security": {
-    "critical": 196,
-    "high": 830,
+    "critical": 193,
+    "high": 1608,
     "kevCatalogTotal": 1779,
     "latest": [
       {
-        "cvss_score": 7.2,
+        "cvss_score": 8.7,
         "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Upgrade Wizard commit flow trusts the hidden zip_to_dir parameter, while clean_path() does not reject traversal sequences. An authenticated administrator can copy extracted package files outside the intended destination, overwrite application or configuration…",
-        "id": "CVE-2026-63213",
+        "description": "Dell Ansible Storage for Unity , versions prior to 1.2.13 contains an Improper Certificate Validation vulnerability in the UnityRESTConnector component. An unauthenticated attacker with remote access could potentially exploit this vulnerability,leading to information exposure and unauthorized access.",
+        "id": "CVE-2026-91890",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:29:57.343",
-        "publishedAt": "2026-11-05T19:17:23.333",
+        "lastModifiedAt": "2026-11-11T18:19:53.627",
+        "publishedAt": "2026-11-11T18:19:53.627",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Upgrade Wizard commit…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63213"
+        "title": "Dell Ansible Storage for Unity , versions prior to 1.2.13 contains an Improper Certificate Validation vulnerability in the UnityRESTConnector component. An…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91890"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, legacy REST methods append an authenticated caller's query parameter as a SQL WHERE clause after insufficient structural validation. The affected flow begins at /service/v4_1/rest.php and uses get_entry_list, get_entries_count, and query to carry…",
-        "id": "CVE-2026-63214",
+        "description": "Dell Terraform for ObjectScale and Powerstore, versions prior to 1.1.1 (ObjectScale) and versions 1.2.1 through 1.3.0 (PowerStore) contains an insertion of sensitive information into Log File vulnerability in the client initialization component.  A low privileged attacker with remote access could potentially exploit this vulnerability, leading to information exposure and unauthorized access.",
+        "id": "CVE-2026-91879",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:29:46.970",
-        "publishedAt": "2026-11-05T19:17:23.557",
+        "lastModifiedAt": "2026-11-11T18:19:53.483",
+        "publishedAt": "2026-11-11T18:19:53.483",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, legacy REST methods…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63214"
+        "title": "Dell Terraform for ObjectScale and Powerstore, versions prior to 1.1.1 (ObjectScale) and versions 1.2.1 through 1.3.0 (PowerStore) contains an insertion of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91879"
       },
       {
-        "cvss_score": 8.3,
+        "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST API v4.1 get_entry_list method is vulnerable to time-based blind SQL injection when an authenticated caller simultaneously bypasses two independent security mechanisms. The advisory does not identify those controls more precisely, so their identities…",
-        "id": "CVE-2026-63215",
+        "description": "Dell Ansible Storage for PowerStore, versions prior to 3.9.0,contains an Insertion of Sensitive Information into Log File vulnerability in the configuration module. A low privileged attacker with local access could potentially exploit this vulnerability, leading to information exposure.",
+        "id": "CVE-2026-91872",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:29:43.813",
-        "publishedAt": "2026-11-05T19:17:23.750",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST API v4.1…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63215"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the generatePdf entry point loads an arbitrary record through BeanFactory::getBean() without checking the requesting user's record access. The affected flow begins at modules/AOS_PDF_Templates/generatePdf.php and uses generatePdf, and BeanFactory::getBean() to…",
-        "id": "CVE-2026-63217",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:29:39.717",
-        "publishedAt": "2026-11-05T19:17:23.957",
+        "lastModifiedAt": "2026-11-11T18:19:53.347",
+        "publishedAt": "2026-11-11T18:19:53.347",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the generatePdf entry…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63217"
+        "title": "Dell Ansible Storage for PowerStore, versions prior to 3.9.0,contains an Insertion of Sensitive Information into Log File vulnerability in the configuration…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91872"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 7.4,
         "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the changeReportPage controller action renders a protected report without repeating the record-level access check enforced by DetailView. The affected flow begins at AOR_Reports and uses changeReportPage, and DetailView to carry attacker-controlled data or…",
-        "id": "CVE-2026-63218",
+        "description": "Dell Ansible Storage for PowerStore, versions prior to 3.9.0, contains an Improper Certificate Validation vulnerability in the API client component. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to information exposure and unauthorized access.",
+        "id": "CVE-2026-91871",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:29:35.780",
-        "publishedAt": "2026-11-05T19:17:24.173",
+        "lastModifiedAt": "2026-11-11T18:19:53.223",
+        "publishedAt": "2026-11-11T18:19:53.223",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Dell Ansible Storage for PowerStore, versions prior to 3.9.0, contains an Improper Certificate Validation vulnerability in the API client component. An…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91871"
+      },
+      {
+        "cvss_score": 7.4,
+        "cvss_version": "3.1",
+        "description": "Dell Ansible Storage for PowerFlex, versions prior to 3.2.0, contains an Improper Certificate Validation vulnerability in the API client component. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to information exposure and unauthorized access.",
+        "id": "CVE-2026-91870",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-11T18:19:53.087",
+        "publishedAt": "2026-11-11T18:19:53.087",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Dell Ansible Storage for PowerFlex, versions prior to 3.2.0, contains an Improper Certificate Validation vulnerability in the API client component. An…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91870"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "A flaw was found in Cockpit. An unauthenticated remote attacker can exploit this vulnerability by initiating and sustaining numerous simultaneous connections to the `cockpit-tls` service. This forces the service to create an unbounded number of detached threads, consuming system resources such as memory and file descriptors. The primary consequence is a denial of service (DoS), leading to…",
+        "id": "CVE-2026-91149",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-11T18:19:52.907",
+        "publishedAt": "2026-09-18T17:17:05.563",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A flaw was found in Cockpit. An unauthenticated remote attacker can exploit this vulnerability by initiating and sustaining numerous simultaneous connections…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91149"
+      },
+      {
+        "cvss_score": 4.7,
+        "cvss_version": "3.1",
+        "description": "Dell Live Optics Collector, versions prior to 27.3.8.317 contains a Use of Insufficiently Random Values vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information exposure.",
+        "id": "CVE-2026-86364",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-11T18:19:50.980",
+        "publishedAt": "2026-11-11T18:19:50.980",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the changeReportPage…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63218"
+        "title": "Dell Live Optics Collector, versions prior to 27.3.8.317 contains a Use of Insufficiently Random Values vulnerability. A low privileged attacker with local…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86364"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project module interpolates the authenticated caller's duplicateId POST parameter directly into a SQL query without sanitization, quoting, or parameterization. An authenticated attacker can alter query structure and disclose sensitive database information. This…",
-        "id": "CVE-2026-69135",
+        "description": "Dell Live Optics Collector, versions prior to 27.3.13.330 contains a Generation of Predictable IV with CBC Mode vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Information exposure.",
+        "id": "CVE-2026-86363",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:29:29.753",
-        "publishedAt": "2026-11-05T19:17:24.753",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-11T18:19:50.837",
+        "publishedAt": "2026-11-11T18:19:50.837",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project module…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69135"
+        "title": "Dell Live Optics Collector, versions prior to 27.3.13.330 contains a Generation of Predictable IV with CBC Mode vulnerability. A low privileged attacker with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86363"
       },
       {
-        "cvss_score": 8.8,
+        "cvss_score": 4.3,
+        "cvss_version": "3.0",
+        "description": "An authorization bypass in channel-edit.php in Revive Adserver 6.0.8 and earlier allows an authenticated manager to create a delivery rule set belonging to another agency by changing the submitted agencyid parameter. The server trusts the submitted agency identifier when inserting the new rule set, allowing unauthorized creation of objects in another agency's account. The issue is fixed in Revive…",
+        "id": "CVE-2026-82978",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-11T18:19:49.960",
+        "publishedAt": "2026-11-11T18:19:49.960",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "An authorization bypass in channel-edit.php in Revive Adserver 6.0.8 and earlier allows an authenticated manager to create a delivery rule set belonging to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82978"
+      },
+      {
+        "cvss_score": 4.3,
+        "cvss_version": "3.0",
+        "description": "A cross-site request forgery vulnerability in tracker-invocation.php in Revive Adserver 6.0.8 and earlier allows an attacker to modify a tracker's name, description or advertiser assignment using an authenticated victim's permissions. A leftover state-changing handler accepts request parameters without verifying a CSRF token, although it is not used by the normal invocation-tag interface…",
+        "id": "CVE-2026-77168",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-11T18:19:49.673",
+        "publishedAt": "2026-11-11T18:19:49.673",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A cross-site request forgery vulnerability in tracker-invocation.php in Revive Adserver 6.0.8 and earlier allows an attacker to modify a tracker's name…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77168"
+      },
+      {
+        "cvss_score": 6.6,
         "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST v4 JSON handler reads the pre-filter RAW_REQUEST value and relationship write helpers interpolate supplied field values into INSERT and UPDATE statements. The affected flow begins at $GLOBALS['RAW_REQUEST'] and uses set_relationship…",
-        "id": "CVE-2026-69134",
+        "description": "Dell Terraform Provider for Dell PowerFlex contain(s) an OS Command Injection Vulnerability in the SDC host provisioning component. A high privileged remote attacker with access to the PowerFlex management plane could potentially exploit this vulnerability, leading to the execution of arbitrary OS commands on provisioned SDC hosts. Exploitation may lead to full compromise of affected SDC hosts.",
+        "id": "CVE-2026-68862",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:28:28.583",
-        "publishedAt": "2026-11-05T19:17:24.533",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-11T18:19:49.170",
+        "publishedAt": "2026-11-11T18:19:49.170",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST v4 JSON handler…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69134"
+        "title": "Dell Terraform Provider for Dell PowerFlex contain(s) an OS Command Injection Vulnerability in the SDC host provisioning component. A high privileged remote…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68862"
       },
       {
-        "cvss_score": 9.4,
+        "cvss_score": 5.4,
+        "cvss_version": "3.0",
+        "description": "An authorization bypass in campaign-zone linking in Revive Adserver 6.0.8 and earlier allows an authenticated manager, or a trafficker with zone-linking permissions, to associate another agency's campaign with their own zone. Campaign ownership checks are missing from the bulk-linking and single-link operations in zone-include.php and the XML-RPC campaign-linking method. Although agency filtering…",
+        "id": "CVE-2026-68486",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-11T18:19:48.960",
+        "publishedAt": "2026-11-11T18:19:48.960",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "An authorization bypass in campaign-zone linking in Revive Adserver 6.0.8 and earlier allows an authenticated manager, or a trafficker with zone-linking…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68486"
+      },
+      {
+        "cvss_score": 4.3,
+        "cvss_version": "3.0",
+        "description": "An authorization bypass in website-index.php in Revive Adserver 6.0.8 and earlier allows an authenticated manager restricted to one agency to view another agency's website listing by changing the agencyid request parameter. Disclosed information includes website names, identifiers and timestamps. Detailed website pages continue to enforce ownership checks. The issue is fixed in Revive Adserver…",
+        "id": "CVE-2026-68485",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-11T18:19:48.823",
+        "publishedAt": "2026-11-11T18:19:48.823",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "An authorization bypass in website-index.php in Revive Adserver 6.0.8 and earlier allows an authenticated manager restricted to one agency to view another…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68485"
+      },
+      {
+        "cvss_score": 8.7,
         "cvss_version": "4.0",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Studio Dropdown Editor passes $dropdown_name through html_entity_decode() and writes the result verbatim into a PHP language file under custom/ that is included on later page loads. An administrator can inject persistent PHP that executes as the web-server…",
-        "id": "CVE-2026-100358",
+        "description": "aeon is a scikit-learn compatible Python library for learning from time series. Prior to version 1.5.0, a GitHub Actions workflow used pull_request_target for pre-commit checks on pull requests from forks. In this configuration, fork-controlled code could be checked out and executed in a privileged context. The vulnerable workflow also generated/used elevated credentials and could automatically…",
+        "id": "CVE-2026-65820",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:27:25.497",
-        "publishedAt": "2026-11-05T19:16:55.400",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-11-11T18:19:47.940",
+        "publishedAt": "2026-11-11T18:19:47.940",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Studio Dropdown…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100358"
+        "title": "aeon is a scikit-learn compatible Python library for learning from time series. Prior to version 1.5.0, a GitHub Actions workflow used pull_request_target for…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65820"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 5.3,
         "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project Template module's action_get_end_date function interpolates authenticated caller-controlled task_id and lag POST parameters directly into SQL without sanitization, parameterization, or escaping. Any authenticated user can perform blind SQL injection to…",
-        "id": "CVE-2026-100359",
+        "description": "vulnerability-operator scans SBOMs and Images for vulnerabilities. Prior to version 0.28.16, an unauthenticated information-disclosure vulnerability exposes all vulnerability scan reports served by the operator. The /report/ HTTP endpoint mounts a raw http.FileServer over the reports directory (default /reports) with no authentication, authorization, or middleware. Any client that can reach the…",
+        "id": "CVE-2026-64858",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:26:40.377",
-        "publishedAt": "2026-11-05T19:16:57.290",
+        "lastModifiedAt": "2026-11-11T18:19:47.770",
+        "publishedAt": "2026-11-11T18:19:47.770",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the Project Template…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100359"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, V8 API relationship write paths do not consistently enforce object-level edit and view authorization on both related records. In the verified Account-to-Contact case, an authenticated user can create a relationship while unable to edit the Account and can delete…",
-        "id": "CVE-2026-100360",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:26:32.430",
-        "publishedAt": "2026-11-05T19:16:57.557",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, V8 API relationship write…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100360"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 write path checks that a field exists but does not enforce api-visible or sensitive metadata that hides the same field on reads. The affected flow begins at PATCH /Api/V8/module and uses user_hash, external_auth_only, api-visible: false, and sensitive: true…",
-        "id": "CVE-2026-100361",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:25:04.777",
-        "publishedAt": "2026-11-05T19:16:57.780",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 write path checks…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100361"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the /legacy/Api/V8/OAuth2 password-grant endpoint returns distinct error messages for an invalid username and an invalid password. An unauthenticated remote attacker can use those response differences to enumerate valid CRM usernames and target confirmed accounts…",
-        "id": "CVE-2026-100362",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:24:54.183",
-        "publishedAt": "2026-11-05T19:16:58.000",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the /legacy/Api/V8/OAuth2…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100362"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 module API exposes CRUD operations for administrator-only modules to any authenticated OAuth2 user. The affected flow begins at /Api/V8/module and uses ACLRoles, ACLActions, and Administration to carry attacker-controlled data or authorization state into the…",
-        "id": "CVE-2026-100363",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:24:00.107",
-        "publishedAt": "2026-11-05T19:16:58.207",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 module API exposes…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100363"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 JSON:API update path fails to remove the id attribute before assigning user-supplied attributes to a SugarBean. The affected flow begins at updateRecord() and uses processAttributes(), id, and ACL_ALLOW_OWNER to carry attacker-controlled data or…",
-        "id": "CVE-2026-100364",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:23:56.280",
-        "publishedAt": "2026-11-05T19:16:58.647",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 JSON:API update…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100364"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, AOR report generation concatenates an attacker-controlled stored field label into an ORDER BY clause without an allowlist. The affected flow begins at AOR_Reports and uses aor_fields, ORDER BY, and field label to carry attacker-controlled data or authorization…",
-        "id": "CVE-2026-100365",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-10T18:23:52.820",
-        "publishedAt": "2026-11-05T19:16:59.133",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, AOR report generation…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-100365"
+        "title": "vulnerability-operator scans SBOMs and Images for vulnerabilities. Prior to version 0.28.16, an unauthenticated information-disclosure vulnerability exposes…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64858"
       }
     ],
-    "low": 103,
-    "medium": 857,
-    "none": 2,
-    "unscored": 337
+    "low": 88,
+    "medium": 1045,
+    "none": 1,
+    "unscored": 271
   },
   "snapshot": {
-    "cves": 2325,
-    "kevAdded": 6,
-    "knownExploited": 7,
+    "cves": 3206,
+    "kevAdded": 0,
+    "knownExploited": 9,
     "projects": 18,
-    "releases": 6,
-    "techEntries": 40
+    "releases": 5,
+    "techEntries": 54
   },
   "sources": {
     "opensource": {
@@ -917,7 +917,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 6,
+        "inWindow": 5,
         "status": "partial",
         "total": 56
       }
@@ -925,27 +925,139 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 6,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1779
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2325,
+        "inWindow": 3206,
         "status": "success",
-        "total": 2325
+        "total": 3206
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 40,
+        "inWindow": 54,
         "status": "success",
-        "total": 231
+        "total": 232
       }
     }
   },
   "technology": [
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-11T17:00:38+00:00",
+      "source": "Meta",
+      "summary": "Ads ranking models are growing toward LLM scale faster than the hardware to run them can keep up. An extra unit of compute has more impact on some ad requests, models, and chips than on others. The challenge is deciding where to allocate it to get the best outcome for the entire…",
+      "title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+      "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-11T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "It just got easier to prove your expertise in building production-ready agents. Today, Google Cloud is introducing the Professional Agentic Architect certification as the latest milestone in our Gemini Agent Ready (GEAR) initiative. Nearly one million developers are using GEAR…",
+      "title": "Don’t just prompt AI — architect it: Introducing the Professional Agentic Architect Certification",
+      "url": "https://cloud.google.com/blog/topics/training-certifications/google-cloud-agentic-architect-certification-dont-just-prompt-ai-design-it/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-11T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Welcome back to The Blueprint, a regular feature where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. As the electric…",
+      "title": "How lemonflow built real-time agents for EV charging using Gemma and TPUs",
+      "url": "https://cloud.google.com/blog/topics/startups/building-real-time-agents-for-ev-charging-using-gemma-and-tpus/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-11T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Transactional databases store vast amounts of unstructured text — clinical notes, customer reviews, support tickets, invoices, and property descriptions. Historically, working with this text meant building complex application code: You had to export data from the database, call…",
+      "title": "Introducing new AI functions for AlloyDB: ai.classify and ai.extract",
+      "url": "https://cloud.google.com/blog/products/databases/ai-classify-and-ai-extract-functions-in-alloydb-ai/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-11T14:24:46+00:00",
+      "source": "Cloudflare",
+      "summary": "Cloudflare is building an experimental consensus service using a never-before-deployed consensus algorithm, QuePaxa. In this post we explain how QuePaxa works and why we chose it.",
+      "title": "Choosing QuePaxa, an unusual consensus algorithm",
+      "url": "https://blog.cloudflare.com/choosing-quepaxa/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-11T14:08:57+00:00",
+      "source": "Ars Technica",
+      "summary": "The four-week project hints that AI could make formal verification far more practical.",
+      "title": "Google DeepMind just mathematically verified key parts of Signal",
+      "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-11T12:05:34+00:00",
+      "source": "The Register",
+      "summary": "Says it 'strongly' suspects attack limited to legacy system, and that nothing sensitive is at risk",
+      "title": "Shipping giant Maersk probes 'IT security incident,' data theft",
+      "url": "https://www.theregister.com/security/2026/11/11/shipping-giant-maersk-probes-it-security-incident-data-theft/5309096"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-11T05:20:56+00:00",
+      "source": "The Register",
+      "summary": "How much damage can a rogue agent do in 35 seconds? Asking cos that’s how long it might take to shut one down",
+      "title": "OpenAI builds a kill switch for its research models",
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/11/openai-builds-a-kill-switch-for-its-research-models/5309006"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-10T23:45:26+00:00",
+      "source": "The Register",
+      "summary": "Sheets, Whiteboards, and Data artifact types bring Claude closer to a productivity suite",
+      "title": "Anthropic tiptoes into MS Office territory",
+      "url": "https://www.theregister.com/software/2026/11/10/anthropic-tiptoes-into-ms-office-territory/5308988"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-10T22:37:01+00:00",
+      "source": "The Register",
+      "summary": "Microsoft admins wail and gnash their teeth",
+      "title": "November Patch Tuesday boasts over 1,000 bugs, one already under attack",
+      "url": "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-one-already-under-attack/5308946"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-10T21:45:45+00:00",
+      "source": "The Register",
+      "summary": "Amazon calls its home security drone and business patrol bot 'proactive protection'",
+      "title": "Ring robots ready to patrol paranoids’ pads",
+      "url": "https://www.theregister.com/offbeat/2026/11/10/ring-robots-ready-to-patrol-paranoids-pads/5308932"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-10T21:12:59+00:00",
+      "source": "Ars Technica",
+      "summary": "Researcher finds 35,000 Grok Build apps wide open to anyone who looked for them.",
+      "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+      "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-10T18:51:35+00:00",
+      "source": "The Register",
+      "summary": "Someone's fishing for exposed devices",
+      "title": "Barracuda’s email security gateways bitten by make-me-root vulns",
+      "url": "https://www.theregister.com/security/2026/11/10/barracudas-email-security-gateways-bitten-by-make-me-root-vulns/5308883"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-10T18:31:53+00:00",
+      "source": "The Register",
+      "summary": "Autark can act without constant prompting, but leaves users to enforce their own security boundaries",
+      "title": "14-year-old creates tool for AI agents to band together like a team",
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/10/14-year-old-creates-tool-for-ai-agents-to-band-together-like-a-team/5308841"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-11-10T18:13:57+00:00",
@@ -953,118 +1065,6 @@
       "summary": "Some waitlist members get a first look at Thundermail, a paid alternative to Gmail",
       "title": "Mozilla Thunderbird email service edges closer to launch with early access",
       "url": "https://www.theregister.com/software/2026/11/10/mozilla-thunderbird-email-service-edges-closer-to-launch-with-early-access/5308826"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T18:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "Git is releasing updates addressing six security vulnerabilities affecting recursive clones, reference handling, merges, binary patches, and imports. Here is what users need to know. The post Git security vulnerabilities announced appeared first on The GitHub Blog .",
-      "title": "Git security vulnerabilities announced",
-      "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T17:00:49+00:00",
-      "source": "Meta",
-      "summary": "Your algorithm is a suite of AI-powered tools that makes Facebook recommendations more transparent and steerable, with a single editable view of the interests that shape Feed and Reels. We’re sharing how Your algorithm turns people’s natural language preferences into responsive…",
-      "title": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
-      "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "With the new unified Gemini experience, enterprises can bring third-party partner capabilities directly in Gemini through standardized connectors (spanning Model Context Protocol (MCP), Agent-to-Agent (A2A) runtimes, and REST APIs), alongside emerging declarative skills and…",
-      "title": "Inside the Gemini factory: Accelerating partner solutions",
-      "url": "https://cloud.google.com/blog/topics/partners/inside-the-gemini-factory-accelerating-partner-solutions/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "As many developers use agentic tools to create more code faster than ever before, the code has gotten more complex and they’re taking longer to find and fix software flaws. Helping to address that pressure is a key concern at Google. We know that software development velocity is…",
-      "title": "Don't just flag it, fix it: How to run CodeMender in your pull requests",
-      "url": "https://cloud.google.com/blog/products/identity-security/how-to-run-codemender-in-your-pull-requests/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "To answer a complex business question, an AI agent must understand two things: what happened, and why . The what is a governed metric, like revenue at risk; the why is the network of relationships that produced it. Because metric definitions, a.k.a. measures, traditionally live…",
-      "title": "BigQuery measures is now GA: Unifying BI metrics and knowledge graphs for AI accuracy",
-      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-measures-ga-unifying-bi-metrics-and-knowledge-graphs/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T16:59:31+00:00",
-      "source": "Meta",
-      "summary": "Triton Low-Level Extensions (TLX), is an extension to Triton that helps engineers optimize GPU performance while preserving Triton’s productive programming model. TLX introduces explicit warp-group and cluster-level orchestration, letting developers adopt new hardware…",
-      "title": "How We Built TLX: A Hardware-Native GPU Compiler for Production ML at Scale",
-      "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T16:15:00+00:00",
-      "source": "The Register",
-      "summary": "Michael LoSapio could inherit a depleted workforce and a political headache or two, courtesy of his current employer",
-      "title": "Trump taps Palantir security chief to run battered US cyber defense agency",
-      "url": "https://www.theregister.com/security/2026/11/10/trump-taps-palantir-security-chief-to-run-battered-us-cyber-defense-agency/5308763"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Standard Network Policies limit you to applying policies at the namespace level, but ClusterNetworkPolicy (CNP) lets you apply granular networking policies across an entire cluster. When you use CNP, you can easily scale security and governance policies. Recently, I experimented…",
-      "title": "Experimenting with ClusterNetworkPolicy in GKE",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/experimenting-with-clusternetworkpolicy-in-gke/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T15:28:00+00:00",
-      "source": "The Register",
-      "summary": "Inference biz pins latest breach on cloud provider and LLMJacking miscreants",
-      "title": "Fireworks AI gets burned twice as customer data exposure widens",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T13:28:00+00:00",
-      "source": "The Register",
-      "summary": "Another Chrome memory bug gets squashed, but not before attackers got their hands on it",
-      "title": "Chrome zero-day whack-a-mole continues as 2026 tally hits 8",
-      "url": "https://www.theregister.com/security/2026/11/10/chrome-zero-day-whack-a-mole-continues-as-2026-tally-hits-8/5308732"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T13:00:00+00:00",
-      "source": "The Register",
-      "summary": "BYOD claims extensive data theft as campus Wi-Fi returns, most systems remain restricted, and classes carry on",
-      "title": "Ransomware threat blares from Vanderbilt University computers during cyberattack",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/10/ransomware-threat-blares-from-vanderbilt-university-computers-during-cyberattack/5308687"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-10T12:00:00+00:00",
-      "source": "The Register",
-      "summary": "Post-quantum handshake and Triple Ratchet get a formal security check",
-      "title": "Google DeepMind melds humans and AI agents to vet Signal's secure messaging techniques",
-      "url": "https://www.theregister.com/ai-and-ml/2026/11/10/google-deepmind-melds-humans-and-ai-agents-to-vet-signals-secure-messaging-techniques/5308625"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T12:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Welcome to The Blueprint, a new feature where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. Authentic Brands Group, a…",
-      "title": "The Blueprint: How Authentic Brands Group expands creativity with AuthOS",
-      "url": "https://cloud.google.com/blog/topics/retail/the-blueprint-how-authentic-brands-group-expands-creativity-with-authos/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-10T12:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Every healthcare organization is working to deliver great care to more people at a lower cost. However, a general AI model is not enough to solve this challenge. Today, healthcare runs on fragmented data. Patient records, coverage policies, and clinical evidence remain trapped…",
-      "title": "Introducing Gemini for healthcare",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare/"
     }
   ]
 }
