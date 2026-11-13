@@ -1,6 +1,218 @@
 {
   "archive": [
     {
+      "date": "2026-11-14",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 8,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201593,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 10,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143506,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 1,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139877,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 10,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129046,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 115,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123704,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 37,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121889,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 57,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 114989,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 12,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105470,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 10,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98598,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 2,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91729,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 1,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-12T19:26:07Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.50.0",
+            "version": "v3.50.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 252,
+          "HIGH": 1205,
+          "LOW": 177,
+          "MEDIUM": 1074,
+          "NONE": 2,
+          "UNSCORED": 39
+        }
+      },
+      "snapshot": {
+        "cves": 2749,
+        "kevAdded": 2,
+        "knownExploited": 0,
+        "projects": 18,
+        "releases": 1,
+        "techEntries": 46
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1781
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 1,
+          "status": "partial",
+          "total": 55
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 2749,
+          "status": "success",
+          "total": 2749
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 46,
+          "status": "success",
+          "total": 232
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 20,
+          "tech": 26
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-13T17:00:39+00:00",
+            "source": "Meta",
+            "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
+            "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Where supercomputing meets agentic AI: What’s new in Google Cloud HPC and AI at SC26",
+            "url": "https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "From OLAP to OLTP: How Copel Simplified Reverse ETL Using BigQuery's Native Export to AlloyDB",
+            "url": "https://cloud.google.com/blog/products/data-analytics/reverse-etl-bigquery-exports-to-alloydb/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "New AI agent observability and governance across BigQuery and Looker",
+            "url": "https://cloud.google.com/blog/products/data-analytics/enterprise-ai-agent-observability-with-bigquery-and-looker/"
+          },
+          {
+            "published_at": "2026-11-13T16:59:00+00:00",
+            "source": "The Register",
+            "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+            "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632"
+          },
+          {
+            "published_at": "2026-11-13T16:26:32+00:00",
+            "source": "Ars Technica",
+            "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+            "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"
+          },
+          {
+            "published_at": "2026-11-13T14:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
+            "url": "https://blog.cloudflare.com/spend-management/"
+          },
+          {
+            "published_at": "2026-11-13T13:14:00+00:00",
+            "source": "The Register",
+            "title": "Quantum Systems drones back in the air after malware scare",
+            "url": "https://www.theregister.com/security/2026/11/13/quantum-systems-drones-back-in-the-air-after-malware-scare/5309658"
+          },
+          {
+            "published_at": "2026-11-13T11:02:00+00:00",
+            "source": "The Register",
+            "title": "Crackdown on UK medical record snooping after staff reported sneaking 300+ times this year",
+            "url": "https://www.theregister.com/security/2026/11/13/crackdown-on-uk-medical-record-snooping-after-staff-reported-sneaking-300-times-this-year/5309421"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-13",
       "opensource": {
         "topProjects": [
@@ -12872,8 +13084,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-12T23:47:51.403875+00:00",
-    "totalSnapshots": 58,
+    "generatedAt": "2026-11-13T23:48:02.118688+00:00",
+    "totalSnapshots": 59,
     "warnings": []
   }
 }

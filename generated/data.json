@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 2749,
+      "date": "2026-11-14",
+      "kevAdded": 2,
+      "knownExploited": 0,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 46
+    },
+    {
       "cves": 2425,
       "date": "2026-11-13",
       "kevAdded": 0,
@@ -524,16 +533,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-12",
-    "date": "2026-11-13",
-    "daysObserved": 58,
-    "generatedAt": "2026-11-12T23:47:51.403875+00:00",
-    "snapshots": 58,
+    "coveredDate": "2026-11-13",
+    "date": "2026-11-14",
+    "daysObserved": 59,
+    "generatedAt": "2026-11-13T23:48:02.118688+00:00",
+    "snapshots": 59,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 19,
+      "daily_growth": 8,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -541,11 +550,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201585,
+      "stars": 201593,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 19,
+      "daily_growth": 10,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -553,11 +562,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143496,
+      "stars": 143506,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 18,
+      "daily_growth": 1,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -565,11 +574,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139876,
+      "stars": 139877,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 28,
+      "daily_growth": 10,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -577,11 +586,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129036,
+      "stars": 129046,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 104,
+      "daily_growth": 115,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -589,11 +598,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123589,
+      "stars": 123704,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 60,
+      "daily_growth": 37,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -601,11 +610,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121852,
+      "stars": 121889,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 36,
+      "daily_growth": 57,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -613,11 +622,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114932,
+      "stars": 114989,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 12,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -625,11 +634,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105458,
+      "stars": 105470,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 9,
+      "daily_growth": 10,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -637,11 +646,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98588,
+      "stars": 98598,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 9,
+      "daily_growth": 2,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -649,243 +658,234 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91727,
+      "stars": 91729,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
       "kind": "minor",
-      "project": "rust",
-      "publishedAt": "2026-11-12T18:19:42Z",
-      "repository": "rust-lang/rust",
+      "project": "openai-python",
+      "publishedAt": "2026-11-12T19:26:07Z",
+      "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/rust-lang/rust/releases/tag/1.100.0",
-      "version": "1.100.0"
-    },
-    {
-      "kind": "major",
-      "project": "node",
-      "publishedAt": "2026-11-12T13:35:13Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.1.0",
-      "version": "v27.0.0-alpha.0.1.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.50.0",
+      "version": "v3.50.0"
     }
   ],
   "security": {
-    "critical": 208,
-    "high": 933,
-    "kevCatalogTotal": 1779,
+    "critical": 252,
+    "high": 1205,
+    "kevCatalogTotal": 1781,
     "latest": [
       {
-        "cvss_score": 5.5,
+        "cvss_score": 8.6,
         "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/pagemap: Prevent double migration of device pages\n\nA device-private folio migrated to system memory by a CPU fault can\nremain reachable through the raw-PFN eviction path until migration\nfinalization drops the source reference.\n\nIf eviction selects the same device-private folio during this window,\nit can attempt to migrate…",
-        "id": "CVE-2026-98106",
+        "description": "Audition is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
+        "id": "CVE-2026-113558",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:29:18.150",
-        "publishedAt": "2026-09-25T11:17:41.110",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/pagemap: Prevent double migration of device pages\n\nA device-private folio migrated to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98106"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix out-of-bounds write in l2cap_ecred_connect\n\nl2cap_chan_connect() tries to ensure there are no more than\nL2CAP_ECRED_CONN_SCID_MAX pending ECRED channels, so they fit in the\nsame L2CAP_ECRED_CONN_REQ that l2cap_ecred_connect() constructs.\n\nHowever, the check only counts deferred channels.  If 6 L2CAP…",
-        "id": "CVE-2026-98107",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:28:34.740",
-        "publishedAt": "2026-09-25T11:17:41.743",
+        "lastModifiedAt": "2026-11-13T18:29:27.360",
+        "publishedAt": "2026-11-10T21:18:49.657",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix out-of-bounds write in l2cap_ecred_connect\n\nl2cap_chan_connect()…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98107"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix chan mode for LE_CONN_REQ + EXT_FLOWCTL pchan\n\nl2cap_new_connection() sets default value of channel mode to match the\nparent channel.  l2cap_le_connect_req() left this at the default, and\ncreated L2CAP_MODE_EXT_FLOWCTL channels if listening pchan has that\nmode.  This causes FLAG_DEFER_SETUP channels to…",
-        "id": "CVE-2026-98108",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:27:45.737",
-        "publishedAt": "2026-09-25T11:17:41.863",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: fix chan mode for LE_CONN_REQ + EXT_FLOWCTL…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98108"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: gadget: function: rndis: add length check for header\n\nAdd a length check for the rndis header in rndis_rm_hdr, to ensure that\nMessageType, MessageLength, DataOffset, and DataLength fields are\npresent before they are accessed.",
-        "id": "CVE-2026-64505",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:26:52.990",
-        "publishedAt": "2026-07-25T10:17:36.583",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: gadget: function: rndis: add length check for header\n\nAdd a length check for the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64505"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\niio: accel: bmc150: clamp the device-reported FIFO frame count\n\n__bmc150_accel_fifo_flush() copies the number of samples the device\nreports in its hardware FIFO into an on-stack buffer\n\n\tu16 buffer[BMC150_ACCEL_FIFO_LENGTH * 3];\n\nwhich is sized for at most BMC150_ACCEL_FIFO_LENGTH (32) samples. The\nframe count is read from the…",
-        "id": "CVE-2026-64504",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:25:29.433",
-        "publishedAt": "2026-07-25T10:17:36.443",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\niio: accel: bmc150: clamp the device-reported FIFO frame…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64504"
+        "title": "Audition is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. An…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113558"
       },
       {
         "cvss_score": 9.8,
         "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack()…",
-        "id": "CVE-2026-98432",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle\n\ntcf_classify() can return TC_ACT_CONSUMED while the skb is held by the\ndefragmentation engine (e.g. act_ct on out-of-order fragments). When\nthat happens the skb is no longer owned by the caller and must not be\ntouched again.\n\ntcf_qevent_handle() did not handle…",
+        "id": "CVE-2026-64530",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:23:34.890",
-        "publishedAt": "2026-10-15T13:17:13.987",
+        "lastModifiedAt": "2026-11-13T18:27:42.257",
+        "publishedAt": "2026-07-26T07:16:41.680",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock()…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98432"
-      },
-      {
-        "cvss_score": 9.5,
-        "cvss_version": "4.0",
-        "description": "Joomla Extension - acymailing.com - Remote Code Execution vulnerability in mailbox action feature in AcyMailing Enterprise extension < 11.1.0 - MIME parts of incoming emails were saved to media/com_acym/upload/ with no extension check, so anyone who could email the monitored mailbox could write a PHP file into the web root.",
-        "id": "CVE-2026-94132",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:55.617",
-        "publishedAt": "2026-09-26T15:16:55.397",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Joomla Extension - acymailing.com - Remote Code Execution vulnerability in mailbox action feature in AcyMailing Enterprise extension < 11.1.0 - MIME parts of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94132"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "The NXP ENET-QOS Ethernet driver's receive work handler eth_nxp_enet_qos_rx() in drivers/ethernet/eth_nxp_enet_qos hands each processed descriptor back to the DMA by writing desc->read.control = rx_desc_refresh_flags, which sets OWN_FLAG and BUF1_ADDR_VALID_FLAG. RDES0 of a receive descriptor is the DMA buffer address in read format, but the hardware write-back aliases that word with the VLAN tag…",
-        "id": "CVE-2026-90591",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:55.087",
-        "publishedAt": "2026-11-09T22:18:57.573",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "The NXP ENET-QOS Ethernet driver's receive work handler eth_nxp_enet_qos_rx() in drivers/ethernet/eth_nxp_enet_qos hands each processed descriptor back to the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90591"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "The NXP ENET QoS Ethernet driver in drivers/ethernet/eth_nxp_enet_qos serialises transmission with a binary semaphore, data->tx.tx_sem, taken in eth_nxp_enet_qos_tx() and returned only by the transmit-completion interrupt handler tx_dma_done(). A frame that has been handed to the transmit DMA when the Ethernet link goes down is never written back, so that completion interrupt never arrives. The…",
-        "id": "CVE-2026-90590",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:54.930",
-        "publishedAt": "2026-11-09T22:18:57.417",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "The NXP ENET QoS Ethernet driver in drivers/ethernet/eth_nxp_enet_qos serialises transmission with a binary semaphore, data->tx.tx_sem, taken in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90590"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "When CONFIG_THREAD_STACK_MEM_MAPPED is enabled, each thread stack is mapped into the kernel virtual address space with a guard page on either side, and the mapping is released during abort cleanup. k_thread_abort_cleanup() in kernel/thread.c has two paths: a deferred one for self-abort, which stashes the mapping in thread_cleanup_stack_addr/thread_cleanup_stack_sz, and an immediate one for a…",
-        "id": "CVE-2026-90589",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:54.770",
-        "publishedAt": "2026-11-09T22:18:57.270",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "When CONFIG_THREAD_STACK_MEM_MAPPED is enabled, each thread stack is mapped into the kernel virtual address space with a guard page on either side, and the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90589"
-      },
-      {
-        "cvss_score": 3.7,
-        "cvss_version": "3.1",
-        "description": "The HTTP client's debug helper print_header_field() in subsys/net/lib/http/http_client.c formatted an http_parser data-callback slice with a %s conversion: snprintk(output, len + 1, \"%s\", str). The parser hands its callbacks a pointer and a length into the caller's receive buffer, and those bytes are not NUL terminated. The size argument of snprintk() bounds only the destination, while the %s…",
-        "id": "CVE-2026-90588",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:54.627",
-        "publishedAt": "2026-11-09T22:18:57.123",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "The HTTP client's debug helper print_header_field() in subsys/net/lib/http/http_client.c formatted an http_parser data-callback slice with a %s conversion…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90588"
-      },
-      {
-        "cvss_score": 4.6,
-        "cvss_version": "3.1",
-        "description": "usbh_device_init() in subsys/usb/host/usbh_device.c rejects a device whose device descriptor advertises bNumConfigurations == 0, but it only logs the error and jumps to the cleanup label without setting the return code. At that point the local err is still 0 from the preceding successful descriptor read, so the function returns success while having skipped usbh_device_set_configuration() — the…",
-        "id": "CVE-2026-90587",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:54.463",
-        "publishedAt": "2026-11-09T22:18:56.970",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "usbh_device_init() in subsys/usb/host/usbh_device.c rejects a device whose device descriptor advertises bNumConfigurations == 0, but it only logs the error and…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90587"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle\n\ntcf_classify() can return…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64530"
       },
       {
         "cvss_score": 7.8,
         "cvss_version": "3.1",
-        "description": "The Xtensa MMU userspace port never initialized the per-thread page-table pointer thread->arch.ptables during thread setup, while arch_mem_domain_thread_add() in arch/xtensa/core/ptables.c uses a non-NULL value of that field as its \"this thread is migrating from another memory domain\" predicate. For a thread whose struct k_thread backing memory is not zeroed, the field holds stale data and the…",
-        "id": "CVE-2026-90586",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: eir: Fix stack OOB write when prepending the Flags AD\n\neir_create_adv_data() builds the advertising data into a fixed-size\nbuffer (\"size\", 31 for the legacy path). It may prepend a 3-byte \"Flags\"\nAD structure (LE_AD_NO_BREDR on an LE-only controller) and then copies\nthe per-instance data without checking that it still…",
+        "id": "CVE-2026-64539",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:54.310",
-        "publishedAt": "2026-11-09T22:18:56.813",
+        "lastModifiedAt": "2026-11-13T18:27:23.893",
+        "publishedAt": "2026-07-27T21:17:06.277",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "The Xtensa MMU userspace port never initialized the per-thread page-table pointer thread->arch.ptables during thread setup, while arch_mem_domain_thread_add()…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90586"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: eir: Fix stack OOB write when prepending the Flags AD\n\neir_create_adv_data()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64539"
       },
       {
-        "cvss_score": 4.6,
+        "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "The Renesas RA SCI UART driver's receive-error ISR, uart_ra_sci_eri_isr() in drivers/serial/uart_renesas_ra_sci.c, acknowledged the error condition only when a Zephyr interrupt-driven callback had already been registered. With CONFIG_UART_INTERRUPT_DRIVEN=y and CONFIG_UART_ASYNC_API=n, if data->user_cb is NULL the ISR body is empty: the SCI error flags (SSR.ORER, SSR.FER, SSR.PER) are left set…",
-        "id": "CVE-2026-90585",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusbnet: gl620a: fix out-of-bounds read in genelink_rx_fixup()\n\ngenelink_rx_fixup() splits an aggregated RX frame into its individual\npackets, using a per-packet length taken from device-supplied data. That\nlength is only bounded by GL_MAX_PACKET_LEN (1514); it is never compared\nagainst how many bytes were actually received.\n\nA…",
+        "id": "CVE-2026-64540",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:54.147",
-        "publishedAt": "2026-11-09T22:18:56.657",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-13T18:26:54.637",
+        "publishedAt": "2026-07-27T21:17:06.407",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "The Renesas RA SCI UART driver's receive-error ISR, uart_ra_sci_eri_isr() in drivers/serial/uart_renesas_ra_sci.c, acknowledged the error condition only when a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90585"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nusbnet: gl620a: fix out-of-bounds read in genelink_rx_fixup()\n\ngenelink_rx_fixup() splits…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64540"
       },
       {
-        "cvss_score": 4.4,
+        "cvss_score": 9.8,
         "cvss_version": "3.1",
-        "description": "SAP Start Service and SAP Management Console store sensitive credential information in process memory without protection. An attacker with high privileges and local access could inspect the memory to recover credentials and reuse them for authentication. This results in a high impact on confidentiality and no impact on integrity and availability.",
-        "id": "CVE-2026-89115",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/smc: fix UAF in smc_cdc_rx_handler() by pinning the socket\n\nsmc_cdc_rx_handler() looks up the connection by token under the link\ngroup's conns_lock, drops the lock, and then dereferences conn and the\nsmc_sock derived from it, ending in sock_hold(&smc->sk) inside\nsmc_cdc_msg_recv(). No reference is held across the lock…",
+        "id": "CVE-2026-64541",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-12T18:17:53.870",
-        "publishedAt": "2026-11-10T01:17:21.927",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-13T18:26:37.570",
+        "publishedAt": "2026-07-27T21:17:06.570",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "SAP Start Service and SAP Management Console store sensitive credential information in process memory without protection. An attacker with high privileges and…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89115"
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/smc: fix UAF in smc_cdc_rx_handler() by pinning the socket\n\nsmc_cdc_rx_handler() looks…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64541"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntipc: fix use-after-free of the discoverer in tipc_disc_rcv()\n\nbearer_disable() frees b->disc with tipc_disc_delete()'s plain kfree(),\nbut tipc_disc_rcv() still dereferences b->disc in RX softirq under\nrcu_read_lock() (tipc_udp_recv -> tipc_rcv -> tipc_disc_rcv).\n\nL2 bearers are safe thanks to the synchronize_net()…",
+        "id": "CVE-2026-64543",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:26:15.660",
+        "publishedAt": "2026-07-27T21:17:06.850",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\ntipc: fix use-after-free of the discoverer in tipc_disc_rcv()\n\nbearer_disable() frees…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64543"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet, bpf: check master for NULL in xdp_master_redirect()\n\nxdp_master_redirect() dereferences the result of\nnetdev_master_upper_dev_get_rcu() without a NULL check, but that helper\nreturns NULL when the receiving device has no upper-master adjacency.\n\nThe reach guard only checks netif_is_bond_slave(). On bond slave…",
+        "id": "CVE-2026-64545",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:25:20.760",
+        "publishedAt": "2026-07-27T21:17:07.130",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet, bpf: check master for NULL in xdp_master_redirect()\n\nxdp_master_redirect()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64545"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/edid: fix OOB read in drm_parse_tiled_block()\n\ndrm_parse_tiled_block() casts the DisplayID block to a\nstruct displayid_tiled_block and reads the full fixed layout up to\ntile->topology_id[7] without checking block->num_bytes. The DisplayID\niterator only validates the declared payload length, so a crafted EDID\ncan advertise a…",
+        "id": "CVE-2026-64546",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:24:43.687",
+        "publishedAt": "2026-07-27T21:17:07.270",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/edid: fix OOB read in drm_parse_tiled_block()\n\ndrm_parse_tiled_block() casts the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64546"
+      },
+      {
+        "cvss_score": 8.1,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: usb: net1080: validate packet_len before pad-byte access in rx_fixup\n\nFor an even packet_len, net1080_rx_fixup() reads the pad byte at\nskb->data[packet_len] before the skb->len != packet_len check further\ndown, and packet_len is only bounded against NC_MAX_PACKET. A malicious\nNetChip 1080 device can send a short frame…",
+        "id": "CVE-2026-64547",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:24:22.927",
+        "publishedAt": "2026-07-27T21:17:07.427",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: usb: net1080: validate packet_len before pad-byte access in rx_fixup\n\nFor an even…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64547"
+      },
+      {
+        "cvss_score": 8.4,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf, sockmap: reject overflowing copy + len in bpf_msg_push_data()\n\nWhen the scatterlist ring is full or nearly full, bpf_msg_push_data()\nenters a copy fallback path and computes copy + len for the page\nallocation size. Since len comes from BPF with arg3_type = ARG_ANYTHING\nand both are u32, a crafted len can wrap the sum to a…",
+        "id": "CVE-2026-64548",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:23:59.577",
+        "publishedAt": "2026-07-27T21:17:07.570",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf, sockmap: reject overflowing copy + len in bpf_msg_push_data()\n\nWhen the scatterlist…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64548"
+      },
+      {
+        "cvss_score": 9.1,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: validate STALE_COOKIE cause length before reading staleness\n\nWhen an ERROR chunk with a STALE_COOKIE cause is received in the\nCOOKIE_ECHOED state, sctp_sf_do_5_2_6_stale() reads the 4-byte Measure\nof Staleness that follows the cause header:\n\n\terr   = (struct sctp_errhdr *)(chunk->skb->data);\n\tstale = ntohl(*(__be32 *)((u8…",
+        "id": "CVE-2026-64551",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:23:27.807",
+        "publishedAt": "2026-07-27T21:17:08.020",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: validate STALE_COOKIE cause length before reading staleness\n\nWhen an ERROR chunk…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64551"
+      },
+      {
+        "cvss_score": 8.4,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvirtio-net: fix len check in receive_big()\n\nreceive_big() bounds the device-announced length by\n(big_packets_num_skbfrags + 1) * PAGE_SIZE.  That is still too loose:\nadd_recvbuf_big() sets sg[1] to start at offset\nsizeof(struct padded_vnet_hdr) into the first page, so the chain\nactually carries hdr_len + (PAGE_SIZE -…",
+        "id": "CVE-2026-64552",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:22:56.060",
+        "publishedAt": "2026-07-27T21:17:08.173",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nvirtio-net: fix len check in receive_big()\n\nreceive_big() bounds the device-announced…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64552"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: bridge: fix stale prevhdr pointer in br_ip6_fragment()\n\nbr_ip6_fragment() gets prevhdr, a pointer into the skb head, from\nip6_find_1stfragopt(), then calls skb_checksum_help().  For a cloned skb\nskb_checksum_help() reallocates the head via pskb_expand_head(), leaving\nprevhdr dangling.  It is later dereferenced in…",
+        "id": "CVE-2026-64554",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:21:55.717",
+        "publishedAt": "2026-07-27T21:17:08.437",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: bridge: fix stale prevhdr pointer in br_ip6_fragment()\n\nbr_ip6_fragment() gets…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64554"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nperf/core: Detach event groups during remove_on_exec\n\nperf_event_remove_on_exec() removes events by calling\nperf_event_exit_event(). For top-level events, this removes the event from\nthe context with DETACH_EXIT only.\n\nThis can leave inconsistent group state when a removed event is a group\nleader and the group contains siblings…",
+        "id": "CVE-2026-64556",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:21:34.370",
+        "publishedAt": "2026-07-29T09:16:30.153",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nperf/core: Detach event groups during remove_on_exec\n\nperf_event_remove_on_exec() removes…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64556"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: Fix use-after-free in l2cap_sock_new_connection_cb()\n\nl2cap_sock_new_connection_cb() returned l2cap_pi(sk)->chan after\nrelease_sock(parent). Once the parent lock is dropped the newly\nenqueued child socket sk is reachable via the accept queue, so another\ntask can accept and free it before the callback…",
+        "id": "CVE-2026-64557",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-13T18:21:18.733",
+        "publishedAt": "2026-07-29T09:16:30.280",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: Fix use-after-free in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64557"
       }
     ],
-    "low": 117,
-    "medium": 1035,
-    "none": 1,
-    "unscored": 131
+    "low": 177,
+    "medium": 1074,
+    "none": 2,
+    "unscored": 39
   },
   "snapshot": {
-    "cves": 2425,
-    "kevAdded": 0,
-    "knownExploited": 3,
+    "cves": 2749,
+    "kevAdded": 2,
+    "knownExploited": 0,
     "projects": 18,
-    "releases": 2,
-    "techEntries": 47
+    "releases": 1,
+    "techEntries": 46
   },
   "sources": {
     "opensource": {
@@ -899,7 +899,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 2,
+        "inWindow": 1,
         "status": "partial",
         "total": 55
       }
@@ -907,21 +907,21 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1779
+        "inWindow": 2,
+        "status": "success",
+        "total": 1781
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2425,
+        "inWindow": 2749,
         "status": "success",
-        "total": 2425
+        "total": 2749
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 47,
+        "inWindow": 46,
         "status": "success",
         "total": 232
       }
@@ -929,124 +929,124 @@
   },
   "technology": [
     {
-      "category": "security",
-      "publishedAt": "2026-11-12T18:02:55+00:00",
-      "source": "The Register",
-      "summary": "A little tinkering can black hole obnoxious Samsung TV ads and some tracking, until a firmware fix ruins the fun",
-      "title": "Software Samaritan revamps borked Indian certs to block smart TV ads",
-      "url": "https://www.theregister.com/security/2026/11/12/software-samaritan-revamps-borked-indian-certs-to-block-smart-tv-ads/5309467"
-    },
-    {
       "category": "tech",
-      "publishedAt": "2026-11-12T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Modern security operations centers (SOCs) face an ongoing pipeline dilemma. While ingesting comprehensive endpoint telemetry is non-negotiable for defense, conventional delivery paths often drive up transfer overhead and alert latency. As attackers operate at machine speed, any…",
-      "title": "Autonomous defense at cloud speed with SentinelOne and Google Security Operations",
-      "url": "https://cloud.google.com/blog/topics/partners/autonomous-defense-at-cloud-speed-with-sentinelone-and-google-security-operations/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-12T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Cross-Cloud Interconnect is expanding to connect to more of your workloads. We designed Google Cloud's Cross-Cloud Network to simplify and optimize how organizations connect and secure applications across cloud and on-premises environments. Last year, we launched partner…",
-      "title": "Simplifying last mile cloud connectivity with Lumen and partner Cross-Cloud Interconnect",
-      "url": "https://cloud.google.com/blog/products/networking/partner-cross-cloud-interconnect-for-last-mile-delivered-by-lumen/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-12T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Even as sophisticated, new zero-day exploits continue to emerge, most cybersecurity incidents still start from the same common sources: an attacker locating and exploiting a fundamental, easily preventable cloud misconfiguration. Organization Policy Service can help you secure…",
-      "title": "Powering agentic cloud governance: What's new in Organization Policy",
-      "url": "https://cloud.google.com/blog/products/identity-security/ai-powered-cloud-governance-whats-new-in-organization-policy/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-12T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "November 9 - November 13 Bringing conversational analytics to Gemini with Data Cloud connectors : Data Cloud connectors in Gemini are now in preview, enabling knowledge workers to query live enterprise data using natural language directly within tools like Google Docs, Gmail…",
-      "title": "What’s new with Google Data Cloud",
-      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-12T16:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Gartner has named Google a Leader, positioned furthest in vision, in its first-ever Magic Quadrant for Data Lakehouse Platforms. In our opinion, this recognition validates a fundamental shift our customers are experiencing every day: In the agentic era, the enterprise lakehouse…",
-      "title": "Google named the furthest in vision for the Gartner Magic Quadrant for Data Lakehouse Platforms",
-      "url": "https://cloud.google.com/blog/products/data-analytics/google-is-a-leader-in-the-gartner-magic-quadrant-for-data-lakehouse-platforms/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-12T14:55:00+00:00",
-      "source": "The Register",
-      "summary": "Upgrade, migrate, but don't prevaricate – time has run out",
-      "title": "Microsoft Exchange Server 2016 and 2019 enter their 'permanently vulnerable' era",
-      "url": "https://www.theregister.com/saas/2026/11/12/microsoft-exchange-server-2016-and-2019-enter-their-permanently-vulnerable-era/5309401"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-12T13:02:00+00:00",
-      "source": "The Register",
-      "summary": "ConnectWise disables third-party extensions in 400 environments as bughunters uncover auth hole may let crims bypass MFA",
-      "title": "Hackers exploiting ScreenConnect plugin flaw to spread malware across hundreds of PCs",
-      "url": "https://www.theregister.com/security/2026/11/12/hackers-exploiting-screenconnect-plugin-flaw-to-spread-malware-across-hundreds-of-pcs/5309361"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-12T11:31:00+00:00",
-      "source": "The Register",
-      "summary": "Sales from EU HQ'd vendor rocket in two years. The Trump affect? Yes but NIS2 and DORA are factors too",
-      "title": "European tech buyers add digital sovereignty to cyber shopping list",
-      "url": "https://www.theregister.com/security/2026/11/12/european-tech-buyers-add-digital-sovereignty-to-cyber-shopping-list/5309216"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-12T11:01:00+00:00",
-      "source": "The Register",
-      "summary": "UK staff get their say while a separate union-busting dispute heads towards its conclusion",
-      "title": "Rockstar workers vote on union recognition as GTA VI launch looms",
-      "url": "https://www.theregister.com/software/2026/11/12/rockstar-workers-vote-on-union-recognition-as-gta-vi-launch-looms/5309319"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-12T09:30:00+00:00",
-      "source": "The Register",
-      "summary": "You could check out more than your room",
-      "title": "London hotel put admin login for booking website on whiteboard behind the front desk",
-      "url": "https://www.theregister.com/security/2026/11/12/london-hotel-put-admin-login-for-booking-website-on-whiteboard-behind-the-front-desk/5308889"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-12T04:22:18+00:00",
-      "source": "The Register",
-      "summary": "Couldn’t get the hardware it needed to generate certs, so tried to code a workaround",
-      "title": "Disgraced former CA eMudhra blames buggy script for hopelessly weak certificates",
-      "url": "https://www.theregister.com/security/2026/11/12/disgraced-former-ca-emudhra-blames-buggy-script-for-hopelessly-weak-certificates/5309244"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-11T19:00:44+00:00",
-      "source": "AWS",
-      "summary": "AWS Emulator is a free, open-source local emulator in Rust that lets developers test applications against nearly every AWS service on their own machine using the same CLI and SDK commands, with fidelity measured against real AWS behavior.",
-      "title": "Test your applications against AWS locally with AWS Emulator",
-      "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-11T17:00:38+00:00",
+      "publishedAt": "2026-11-13T17:00:39+00:00",
       "source": "Meta",
-      "summary": "Ads ranking models are growing toward LLM scale faster than the hardware to run them can keep up. An extra unit of compute has more impact on some ad requests, models, and chips than on others. The challenge is deciding where to allocate it to get the best outcome for the entire…",
-      "title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
-      "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/"
+      "summary": "How Meta's Reality Labs brought Cuttlefish and its QEMU backend to macOS and Apple silicon. [...] Read More... The post Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon appeared first on Engineering at Meta .",
+      "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
+      "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-11T17:00:00+00:00",
+      "publishedAt": "2026-11-13T17:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "It just got easier to prove your expertise in building production-ready agents. Today, Google Cloud is introducing the Professional Agentic Architect certification as the latest milestone in our Gemini Agent Ready (GEAR) initiative. Nearly one million developers are using GEAR…",
-      "title": "Don’t just prompt AI — architect it: Introducing the Professional Agentic Architect Certification",
-      "url": "https://cloud.google.com/blog/topics/training-certifications/google-cloud-agentic-architect-certification-dont-just-prompt-ai-design-it/"
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Computational scientists and HPC engineers have always been among the earliest adopters of new computing paradigms, and agents are no exception. Today, research and engineering teams use AI models and agents for things such as ingesting dense scientific literature, optimizing…",
+      "title": "Where supercomputing meets agentic AI: What’s new in Google Cloud HPC and AI at SC26",
+      "url": "https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Bridging the gap between analytical systems (OLAP) and transactional databases (OLTP) is notoriously complex. Synchronizing data between the two systems, often called Reverse ETL (Extract, Transform, Load), traditionally requires heavy middleware, staging buckets, and complex…",
+      "title": "From OLAP to OLTP: How Copel Simplified Reverse ETL Using BigQuery's Native Export to AlloyDB",
+      "url": "https://cloud.google.com/blog/products/data-analytics/reverse-etl-bigquery-exports-to-alloydb/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "As enterprises move AI agents from experimental prototypes into production, data and platform teams are discovering that deploying an agent is only half the battle — you also need to see how it reasons, which data it touches, and what it costs to run. Today, we are announcing…",
+      "title": "New AI agent observability and governance across BigQuery and Looker",
+      "url": "https://cloud.google.com/blog/products/data-analytics/enterprise-ai-agent-observability-with-bigquery-and-looker/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T16:59:00+00:00",
+      "source": "The Register",
+      "summary": "If you have one of these AI-generated homepages, you'd better download and save it quick",
+      "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+      "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-13T16:26:32+00:00",
+      "source": "Ars Technica",
+      "summary": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
+      "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+      "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T14:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Spend Management adds opt-in spending caps for Cloudflare Workers and Durable Objects, and more products soon. Here is how we built the metering pipeline that turns usage into runtime decisions.",
+      "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
+      "url": "https://blog.cloudflare.com/spend-management/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-13T13:14:00+00:00",
+      "source": "The Register",
+      "summary": "Germany's Bundeswehr lifted precautionary grounding after malicious update reportedly reached military servers",
+      "title": "Quantum Systems drones back in the air after malware scare",
+      "url": "https://www.theregister.com/security/2026/11/13/quantum-systems-drones-back-in-the-air-after-malware-scare/5309658"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-13T11:02:00+00:00",
+      "source": "The Register",
+      "summary": "Watchdog wants assurances from 200 execs that employees aren't poking around patient files they have no business viewing",
+      "title": "Crackdown on UK medical record snooping after staff reported sneaking 300+ times this year",
+      "url": "https://www.theregister.com/security/2026/11/13/crackdown-on-uk-medical-record-snooping-after-staff-reported-sneaking-300-times-this-year/5309421"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-13T10:15:00+00:00",
+      "source": "The Register",
+      "summary": "New report calls for change, highlights hodgepodge governance and misunderstanding about tech’s limitations among officers",
+      "title": "Brit police watchdog says cops' use of facial recog risks wrongful arrests",
+      "url": "https://www.theregister.com/security/2026/11/13/brit-police-watchdog-says-cops-use-of-facial-recog-risks-wrongful-arrests/5309379"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-13T07:31:00+00:00",
+      "source": "The Register",
+      "summary": "ISO working group faces a fight over runtime checks, complexity, and the language's release timetable",
+      "title": "C++26 stumbles at finish line over Contracts dispute",
+      "url": "https://www.theregister.com/devops/2026/11/13/c26-stumbles-at-finish-line-over-contracts-dispute/5309526"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T06:27:00+00:00",
+      "source": "The Register",
+      "summary": "It wasn't the not-very-legal source code raid that caused it, but a colleague who punted a pager",
+      "title": "Developer cleverly shrank 2,600 lines of C into a six-line script but still ending up losing sleep",
+      "url": "https://www.theregister.com/software/2026/11/13/developer-cleverly-shrank-2600-lines-of-c-into-a-six-line-script-but-still-ending-up-losing-sleep/5309264"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T00:20:16+00:00",
+      "source": "GitHub Blog",
+      "summary": "In October, we experienced eight incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: October 2026 appeared first on The GitHub Blog .",
+      "title": "GitHub availability report: October 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-12T22:54:52+00:00",
+      "source": "GitHub Blog",
+      "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical guide to agent skills appeared first on The GitHub…",
+      "title": "Build once, run on any agent: A practical guide to agent skills",
+      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
     }
   ]
 }
