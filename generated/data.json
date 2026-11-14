@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 756,
+      "date": "2026-11-15",
+      "kevAdded": 0,
+      "knownExploited": 3,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 36
+    },
+    {
       "cves": 2749,
       "date": "2026-11-14",
       "kevAdded": 2,
@@ -533,16 +542,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-13",
-    "date": "2026-11-14",
-    "daysObserved": 59,
-    "generatedAt": "2026-11-13T23:48:02.118688+00:00",
-    "snapshots": 59,
+    "coveredDate": "2026-11-14",
+    "date": "2026-11-15",
+    "daysObserved": 60,
+    "generatedAt": "2026-11-14T22:41:00.360794+00:00",
+    "snapshots": 60,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 8,
+      "daily_growth": 10,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -550,11 +559,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201593,
+      "stars": 201603,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 14,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -562,11 +571,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143506,
+      "stars": 143520,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 1,
+      "daily_growth": 13,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -574,11 +583,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139877,
+      "stars": 139890,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 14,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -586,11 +595,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129046,
+      "stars": 129060,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 115,
+      "daily_growth": 14,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -598,11 +607,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123704,
+      "stars": 123718,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 37,
+      "daily_growth": 30,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -610,11 +619,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121889,
+      "stars": 121919,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 57,
+      "daily_growth": 36,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -622,11 +631,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 114989,
+      "stars": 115025,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 12,
+      "daily_growth": 25,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -634,11 +643,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105470,
+      "stars": 105495,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 5,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -646,11 +655,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98598,
+      "stars": 98603,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 2,
+      "daily_growth": 9,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -658,7 +667,7 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91729,
+      "stars": 91738,
       "url": "https://github.com/django/django"
     }
   ],
@@ -666,226 +675,226 @@
     {
       "kind": "minor",
       "project": "openai-python",
-      "publishedAt": "2026-11-12T19:26:07Z",
+      "publishedAt": "2026-11-13T21:12:49Z",
       "repository": "openai/openai-python",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.50.0",
-      "version": "v3.50.0"
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.51.0",
+      "version": "v3.51.0"
     }
   ],
   "security": {
-    "critical": 252,
-    "high": 1205,
+    "critical": 69,
+    "high": 334,
     "kevCatalogTotal": 1781,
     "latest": [
       {
-        "cvss_score": 8.6,
-        "cvss_version": "3.1",
-        "description": "Audition is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
-        "id": "CVE-2026-113558",
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability in the /dbml/svg endpoint that allows unauthenticated attackers to inject javascript: hyperlinks by supplying crafted DBML table url, headercolor, or TableGroup color settings. Attackers can send a crafted SVG link that, when opened and the table header clicked, executes attacker JavaScript in the Kroki origin.",
+        "id": "CVE-2026-129447",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:29:27.360",
-        "publishedAt": "2026-11-10T21:18:49.657",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-14T18:17:21.100",
+        "publishedAt": "2026-11-14T18:17:21.100",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Audition is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. An…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-113558"
+        "title": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability in the /dbml/svg endpoint that allows unauthenticated attackers to inject…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129447"
       },
       {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle\n\ntcf_classify() can return TC_ACT_CONSUMED while the skb is held by the\ndefragmentation engine (e.g. act_ct on out-of-order fragments). When\nthat happens the skb is no longer owned by the caller and must not be\ntouched again.\n\ntcf_qevent_handle() did not handle…",
-        "id": "CVE-2026-64530",
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was found in sergix44 XBackBone up to 3.8.2. Impacted is the function MediaController::getRawById of the file app/Controllers/MediaController.php. The manipulation results in cross site scripting. It is possible to launch the attack remotely. The exploit has been made public and could be used. The pull request to fix this issue awaits acceptance.",
+        "id": "CVE-2026-129267",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:27:42.257",
-        "publishedAt": "2026-07-26T07:16:41.680",
+        "lastModifiedAt": "2026-11-14T18:17:21.050",
+        "publishedAt": "2026-11-14T18:17:20.077",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A vulnerability was found in sergix44 XBackBone up to 3.8.2. Impacted is the function MediaController::getRawById of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129267"
+      },
+      {
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "A security vulnerability has been detected in sox_ng up to 14.8.1. Affected by this issue is the function read_samples_voc of the file src/voc.c of the component VOC Decoder. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The name of the patch is 0b40408b. A patch should be applied to remediate this…",
+        "id": "CVE-2026-129264",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-14T17:16:53.200",
+        "publishedAt": "2026-11-14T17:16:53.040",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A security vulnerability has been detected in sox_ng up to 14.8.1. Affected by this issue is the function read_samples_voc of the file src/voc.c of the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129264"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "4.0",
+        "description": "A weakness has been identified in Wuxi Wubang Security Software Wubang Five-in-One Safety Production Management Information System up to 3.5. Affected by this vulnerability is the function DiyFileUpload of the file /ws.asmx. This manipulation causes unrestricted upload. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks…",
+        "id": "CVE-2026-129262",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-14T17:16:52.990",
+        "publishedAt": "2026-11-14T17:16:52.833",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "A weakness has been identified in Wuxi Wubang Security Software Wubang Five-in-One Safety Production Management Information System up to 3.5. Affected by this…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129262"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was found in Kingston FURY CTRL RGB Control Software up to 2.0.66.0. The impacted element is an unknown function in the library NTIOLib_X64.sys of the component IOCTL Handler. Performing a manipulation results in exposed ioctl with insufficient access control. The attack is only possible with local access.",
+        "id": "CVE-2026-129261",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-14T16:17:04.677",
+        "publishedAt": "2026-11-14T16:17:04.517",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle\n\ntcf_classify() can return…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64530"
+        "title": "A vulnerability was found in Kingston FURY CTRL RGB Control Software up to 2.0.66.0. The impacted element is an unknown function in the library NTIOLib_X64.sys…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129261"
       },
       {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: eir: Fix stack OOB write when prepending the Flags AD\n\neir_create_adv_data() builds the advertising data into a fixed-size\nbuffer (\"size\", 31 for the legacy path). It may prepend a 3-byte \"Flags\"\nAD structure (LE_AD_NO_BREDR on an LE-only controller) and then copies\nthe per-instance data without checking that it still…",
-        "id": "CVE-2026-64539",
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "A security vulnerability has been detected in Mereithhh VanBlog up to 0.54.0. This vulnerability affects the function fs.readFileSync of the file local.provider.ts of the component Custom Page Handler. The manipulation of the argument path leads to path traversal. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. Upgrading to version…",
+        "id": "CVE-2026-129260",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:27:23.893",
-        "publishedAt": "2026-07-27T21:17:06.277",
+        "lastModifiedAt": "2026-11-14T16:17:04.450",
+        "publishedAt": "2026-11-14T16:17:04.297",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A security vulnerability has been detected in Mereithhh VanBlog up to 0.54.0. This vulnerability affects the function fs.readFileSync of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129260"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "3.1",
+        "description": "The BuddyForms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'buddyforms_form_content' parameter in all versions up to, and including, 2.10.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is…",
+        "id": "CVE-2026-127115",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-14T16:17:04.253",
+        "publishedAt": "2026-11-14T16:17:04.130",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The BuddyForms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'buddyforms_form_content' parameter in all versions up to, and…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127115"
+      },
+      {
+        "cvss_score": 7.2,
+        "cvss_version": "3.1",
+        "description": "The Lightbox & Modal Popup WordPress Plugin – FooBox plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'img alt attribute inside .wp-caption container' parameter in all versions up to, and including, 2.8.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that…",
+        "id": "CVE-2026-120687",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-14T16:17:04.090",
+        "publishedAt": "2026-11-14T16:17:03.957",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: eir: Fix stack OOB write when prepending the Flags AD\n\neir_create_adv_data()…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64539"
+        "title": "The Lightbox & Modal Popup WordPress Plugin – FooBox plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'img alt attribute…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120687"
       },
       {
-        "cvss_score": 8.1,
+        "cvss_score": 7.2,
         "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusbnet: gl620a: fix out-of-bounds read in genelink_rx_fixup()\n\ngenelink_rx_fixup() splits an aggregated RX frame into its individual\npackets, using a per-packet length taken from device-supplied data. That\nlength is only bounded by GL_MAX_PACKET_LEN (1514); it is never compared\nagainst how many bytes were actually received.\n\nA…",
-        "id": "CVE-2026-64540",
+        "description": "The Multi Step for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'multipart field name (array key)' parameter in all versions up to, and including, 2.9.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an…",
+        "id": "CVE-2026-116753",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:26:54.637",
-        "publishedAt": "2026-07-27T21:17:06.407",
+        "lastModifiedAt": "2026-11-14T16:17:03.917",
+        "publishedAt": "2026-11-14T16:17:03.793",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nusbnet: gl620a: fix out-of-bounds read in genelink_rx_fixup()\n\ngenelink_rx_fixup() splits…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64540"
+        "title": "The Multi Step for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'multipart field name (array key)' parameter in all…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116753"
       },
       {
-        "cvss_score": 9.8,
+        "cvss_score": 6.4,
         "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/smc: fix UAF in smc_cdc_rx_handler() by pinning the socket\n\nsmc_cdc_rx_handler() looks up the connection by token under the link\ngroup's conns_lock, drops the lock, and then dereferences conn and the\nsmc_sock derived from it, ending in sock_hold(&smc->sk) inside\nsmc_cdc_msg_recv(). No reference is held across the lock…",
-        "id": "CVE-2026-64541",
+        "description": "The FV Player 8 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'fv_player_videos' parameter in all versions up to, and including, 8.1.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses…",
+        "id": "CVE-2026-110531",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:26:37.570",
-        "publishedAt": "2026-07-27T21:17:06.570",
+        "lastModifiedAt": "2026-11-14T16:17:03.750",
+        "publishedAt": "2026-11-14T16:17:02.753",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "The FV Player 8 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'fv_player_videos' parameter in all versions up to, and including…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110531"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in StylemixThemes uListing ulisting allows Blind SQL Injection.This issue affects uListing: from n/a through 2.2.0.",
+        "id": "CVE-2026-62031",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-14T15:16:58.987",
+        "publishedAt": "2026-10-10T20:16:39.237",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/smc: fix UAF in smc_cdc_rx_handler() by pinning the socket\n\nsmc_cdc_rx_handler() looks…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64541"
+        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in StylemixThemes uListing ulisting allows Blind SQL…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62031"
       },
       {
-        "cvss_score": 7.8,
+        "cvss_score": 9.3,
         "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntipc: fix use-after-free of the discoverer in tipc_disc_rcv()\n\nbearer_disable() frees b->disc with tipc_disc_delete()'s plain kfree(),\nbut tipc_disc_rcv() still dereferences b->disc in RX softirq under\nrcu_read_lock() (tipc_udp_recv -> tipc_rcv -> tipc_disc_rcv).\n\nL2 bearers are safe thanks to the synchronize_net()…",
-        "id": "CVE-2026-64543",
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in BuddyBoss Buddyboss Platform buddyboss-platform allows Blind SQL Injection.This issue affects Buddyboss Platform: from n/a through 3.0.5.",
+        "id": "CVE-2026-59514",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:26:15.660",
-        "publishedAt": "2026-07-27T21:17:06.850",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\ntipc: fix use-after-free of the discoverer in tipc_disc_rcv()\n\nbearer_disable() frees…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64543"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet, bpf: check master for NULL in xdp_master_redirect()\n\nxdp_master_redirect() dereferences the result of\nnetdev_master_upper_dev_get_rcu() without a NULL check, but that helper\nreturns NULL when the receiving device has no upper-master adjacency.\n\nThe reach guard only checks netif_is_bond_slave(). On bond slave…",
-        "id": "CVE-2026-64545",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:25:20.760",
-        "publishedAt": "2026-07-27T21:17:07.130",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet, bpf: check master for NULL in xdp_master_redirect()\n\nxdp_master_redirect()…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64545"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/edid: fix OOB read in drm_parse_tiled_block()\n\ndrm_parse_tiled_block() casts the DisplayID block to a\nstruct displayid_tiled_block and reads the full fixed layout up to\ntile->topology_id[7] without checking block->num_bytes. The DisplayID\niterator only validates the declared payload length, so a crafted EDID\ncan advertise a…",
-        "id": "CVE-2026-64546",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:24:43.687",
-        "publishedAt": "2026-07-27T21:17:07.270",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/edid: fix OOB read in drm_parse_tiled_block()\n\ndrm_parse_tiled_block() casts the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64546"
-      },
-      {
-        "cvss_score": 8.1,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: usb: net1080: validate packet_len before pad-byte access in rx_fixup\n\nFor an even packet_len, net1080_rx_fixup() reads the pad byte at\nskb->data[packet_len] before the skb->len != packet_len check further\ndown, and packet_len is only bounded against NC_MAX_PACKET. A malicious\nNetChip 1080 device can send a short frame…",
-        "id": "CVE-2026-64547",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:24:22.927",
-        "publishedAt": "2026-07-27T21:17:07.427",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: usb: net1080: validate packet_len before pad-byte access in rx_fixup\n\nFor an even…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64547"
-      },
-      {
-        "cvss_score": 8.4,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf, sockmap: reject overflowing copy + len in bpf_msg_push_data()\n\nWhen the scatterlist ring is full or nearly full, bpf_msg_push_data()\nenters a copy fallback path and computes copy + len for the page\nallocation size. Since len comes from BPF with arg3_type = ARG_ANYTHING\nand both are u32, a crafted len can wrap the sum to a…",
-        "id": "CVE-2026-64548",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:23:59.577",
-        "publishedAt": "2026-07-27T21:17:07.570",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf, sockmap: reject overflowing copy + len in bpf_msg_push_data()\n\nWhen the scatterlist…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64548"
-      },
-      {
-        "cvss_score": 9.1,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: validate STALE_COOKIE cause length before reading staleness\n\nWhen an ERROR chunk with a STALE_COOKIE cause is received in the\nCOOKIE_ECHOED state, sctp_sf_do_5_2_6_stale() reads the 4-byte Measure\nof Staleness that follows the cause header:\n\n\terr   = (struct sctp_errhdr *)(chunk->skb->data);\n\tstale = ntohl(*(__be32 *)((u8…",
-        "id": "CVE-2026-64551",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:23:27.807",
-        "publishedAt": "2026-07-27T21:17:08.020",
+        "lastModifiedAt": "2026-11-14T15:16:58.853",
+        "publishedAt": "2026-07-23T12:18:32.103",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: validate STALE_COOKIE cause length before reading staleness\n\nWhen an ERROR chunk…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64551"
+        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in BuddyBoss Buddyboss Platform buddyboss-platform allows…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59514"
       },
       {
-        "cvss_score": 8.4,
+        "cvss_score": 9.3,
         "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvirtio-net: fix len check in receive_big()\n\nreceive_big() bounds the device-announced length by\n(big_packets_num_skbfrags + 1) * PAGE_SIZE.  That is still too loose:\nadd_recvbuf_big() sets sg[1] to start at offset\nsizeof(struct padded_vnet_hdr) into the first page, so the chain\nactually carries hdr_len + (PAGE_SIZE -…",
-        "id": "CVE-2026-64552",
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in INTINITUM FORM Transliterator serbian-transliteration allows Blind SQL Injection.This issue affects Transliterator: from n/a through 2.5.13.",
+        "id": "CVE-2026-39732",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:22:56.060",
-        "publishedAt": "2026-07-27T21:17:08.173",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-14T15:16:58.703",
+        "publishedAt": "2026-10-30T19:18:24.137",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nvirtio-net: fix len check in receive_big()\n\nreceive_big() bounds the device-announced…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64552"
+        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in INTINITUM FORM Transliterator serbian-transliteration…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39732"
       },
       {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: bridge: fix stale prevhdr pointer in br_ip6_fragment()\n\nbr_ip6_fragment() gets prevhdr, a pointer into the skb head, from\nip6_find_1stfragopt(), then calls skb_checksum_help().  For a cloned skb\nskb_checksum_help() reallocates the head via pskb_expand_head(), leaving\nprevhdr dangling.  It is later dereferenced in…",
-        "id": "CVE-2026-64554",
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "A weakness has been identified in Mereithhh VanBlog up to 0.54.0. This affects an unknown part of the file packages/server/src/types/access/access.ts of the component Image Upload Endpoint. Executing a manipulation can lead to cross site scripting. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early…",
+        "id": "CVE-2026-129259",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:21:55.717",
-        "publishedAt": "2026-07-27T21:17:08.437",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-14T15:16:58.633",
+        "publishedAt": "2026-11-14T15:16:58.480",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: bridge: fix stale prevhdr pointer in br_ip6_fragment()\n\nbr_ip6_fragment() gets…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64554"
+        "title": "A weakness has been identified in Mereithhh VanBlog up to 0.54.0. This affects an unknown part of the file packages/server/src/types/access/access.ts of the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129259"
       },
       {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nperf/core: Detach event groups during remove_on_exec\n\nperf_event_remove_on_exec() removes events by calling\nperf_event_exit_event(). For top-level events, this removes the event from\nthe context with DETACH_EXIT only.\n\nThis can leave inconsistent group state when a removed event is a group\nleader and the group contains siblings…",
-        "id": "CVE-2026-64556",
+        "cvss_score": 8.5,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was identified in Tenda AC18 15.03.05.05_multi/15.03.05.19 Build 6318. Affected by this vulnerability is an unknown functionality of the file /cgi-bin/upgrade of the component Firmware Upgrade Handler. Such manipulation of the argument upgradeFile leads to insufficient verification of data authenticity. The attack may be launched remotely. The exploit is publicly available and…",
+        "id": "CVE-2026-129258",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:21:34.370",
-        "publishedAt": "2026-07-29T09:16:30.153",
+        "lastModifiedAt": "2026-11-14T15:16:58.433",
+        "publishedAt": "2026-11-14T15:16:58.257",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nperf/core: Detach event groups during remove_on_exec\n\nperf_event_remove_on_exec() removes…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64556"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: Fix use-after-free in l2cap_sock_new_connection_cb()\n\nl2cap_sock_new_connection_cb() returned l2cap_pi(sk)->chan after\nrelease_sock(parent). Once the parent lock is dropped the newly\nenqueued child socket sk is reachable via the accept queue, so another\ntask can accept and free it before the callback…",
-        "id": "CVE-2026-64557",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-13T18:21:18.733",
-        "publishedAt": "2026-07-29T09:16:30.280",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: L2CAP: Fix use-after-free in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64557"
+        "title": "A vulnerability was identified in Tenda AC18 15.03.05.05_multi/15.03.05.19 Build 6318. Affected by this vulnerability is an unknown functionality of the file…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129258"
       }
     ],
-    "low": 177,
-    "medium": 1074,
-    "none": 2,
-    "unscored": 39
+    "low": 48,
+    "medium": 254,
+    "none": 0,
+    "unscored": 51
   },
   "snapshot": {
-    "cves": 2749,
-    "kevAdded": 2,
-    "knownExploited": 0,
+    "cves": 756,
+    "kevAdded": 0,
+    "knownExploited": 3,
     "projects": 18,
     "releases": 1,
-    "techEntries": 46
+    "techEntries": 36
   },
   "sources": {
     "opensource": {
@@ -901,33 +910,65 @@
         "failures": 2,
         "inWindow": 1,
         "status": "partial",
-        "total": 55
+        "total": 54
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 2,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1781
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2749,
+        "inWindow": 756,
         "status": "success",
-        "total": 2749
+        "total": 756
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 46,
+        "inWindow": 36,
         "status": "success",
         "total": 232
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-11-14T08:18:00+00:00",
+      "source": "The Register",
+      "summary": "Accessing banned content is as easy as whipping out a thesaurus, Parliament's Communications and Digital Committee hears",
+      "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
+      "url": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-13T20:52:17+00:00",
+      "source": "The Register",
+      "summary": "‘We don’t have a security problem anymore. We have a data problem now’",
+      "title": "This year’s bug count just passed 100K",
+      "url": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T20:20:21+00:00",
+      "source": "Cloudflare",
+      "summary": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers.",
+      "title": "Kitesurf is now open source",
+      "url": "https://blog.cloudflare.com/kitesurf-open-source/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-13T19:26:07+00:00",
+      "source": "Cloudflare",
+      "summary": "AI-orchestrated penetration testing platforms like ARTEX have become increasingly powerful tools enabling effective attacks on exposed infrastructure. Here we share Cloudflare’s observations and recommended countermeasures.",
+      "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
+      "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-11-13T17:00:39+00:00",
@@ -1015,38 +1056,6 @@
       "summary": "New report calls for change, highlights hodgepodge governance and misunderstanding about tech’s limitations among officers",
       "title": "Brit police watchdog says cops' use of facial recog risks wrongful arrests",
       "url": "https://www.theregister.com/security/2026/11/13/brit-police-watchdog-says-cops-use-of-facial-recog-risks-wrongful-arrests/5309379"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-13T07:31:00+00:00",
-      "source": "The Register",
-      "summary": "ISO working group faces a fight over runtime checks, complexity, and the language's release timetable",
-      "title": "C++26 stumbles at finish line over Contracts dispute",
-      "url": "https://www.theregister.com/devops/2026/11/13/c26-stumbles-at-finish-line-over-contracts-dispute/5309526"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T06:27:00+00:00",
-      "source": "The Register",
-      "summary": "It wasn't the not-very-legal source code raid that caused it, but a colleague who punted a pager",
-      "title": "Developer cleverly shrank 2,600 lines of C into a six-line script but still ending up losing sleep",
-      "url": "https://www.theregister.com/software/2026/11/13/developer-cleverly-shrank-2600-lines-of-c-into-a-six-line-script-but-still-ending-up-losing-sleep/5309264"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T00:20:16+00:00",
-      "source": "GitHub Blog",
-      "summary": "In October, we experienced eight incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: October 2026 appeared first on The GitHub Blog .",
-      "title": "GitHub availability report: October 2026",
-      "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-12T22:54:52+00:00",
-      "source": "GitHub Blog",
-      "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them. The post Build once, run on any agent: A practical guide to agent skills appeared first on The GitHub…",
-      "title": "Build once, run on any agent: A practical guide to agent skills",
-      "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
     }
   ]
 }
