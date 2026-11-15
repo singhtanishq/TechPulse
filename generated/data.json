@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 95,
+      "date": "2026-11-16",
+      "kevAdded": 0,
+      "knownExploited": 1,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 23
+    },
+    {
       "cves": 756,
       "date": "2026-11-15",
       "kevAdded": 0,
@@ -542,16 +551,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-14",
-    "date": "2026-11-15",
-    "daysObserved": 60,
-    "generatedAt": "2026-11-14T22:41:00.360794+00:00",
-    "snapshots": 60,
+    "coveredDate": "2026-11-15",
+    "date": "2026-11-16",
+    "daysObserved": 61,
+    "generatedAt": "2026-11-15T23:04:44.288606+00:00",
+    "snapshots": 61,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 10,
+      "daily_growth": 44,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -559,11 +568,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201603,
+      "stars": 201647,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": 16,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -571,11 +580,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143520,
+      "stars": 143536,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 13,
+      "daily_growth": 41,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -583,11 +592,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139890,
+      "stars": 139931,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": 44,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -595,11 +604,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129060,
+      "stars": 129104,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 14,
+      "daily_growth": 49,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -607,11 +616,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123718,
+      "stars": 123767,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 30,
+      "daily_growth": 80,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -619,11 +628,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121919,
+      "stars": 121999,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 36,
+      "daily_growth": 56,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -631,11 +640,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115025,
+      "stars": 115081,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 25,
+      "daily_growth": 45,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -643,11 +652,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105495,
+      "stars": 105540,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 5,
+      "daily_growth": 10,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -655,11 +664,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98603,
+      "stars": 98613,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 9,
+      "daily_growth": 38,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -667,234 +676,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91738,
+      "stars": 91776,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-13T21:12:49Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.51.0",
-      "version": "v3.51.0"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 69,
-    "high": 334,
+    "critical": 11,
+    "high": 38,
     "kevCatalogTotal": 1781,
     "latest": [
       {
+        "cvss_score": 7.7,
+        "cvss_version": "4.0",
+        "description": "In FRRouting, bgpd frees the sub-TLV chain of a Tunnel Encapsulation attribute (type 23) while routes stored by bgpd still point to it, if the attribute is received from a neighbor that has \"soft-reconfiguration inbound\" configured. A cache added to speed up attribute interning while processing the prefixes of an UPDATE checks whether an interned attribute set may be reused by comparing the…",
+        "id": "CVE-2026-129456",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T18:16:48.047",
+        "publishedAt": "2026-11-14T20:17:40.060",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "In FRRouting, bgpd frees the sub-TLV chain of a Tunnel Encapsulation attribute (type 23) while routes stored by bgpd still point to it, if the attribute is…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129456"
+      },
+      {
+        "cvss_score": 6.8,
+        "cvss_version": "4.0",
+        "description": "littlefs through 2.11.3, when built with LFS_MIGRATE, contains a type confusion vulnerability in lfs_dir_traverse() that treats a stack lfs_diskoff struct as an lfs_attr array. Attackers can supply a crafted littlefs v1 image whose metadata is read as LFS_FROM_USERATTRS during migration, causing out-of-bounds stack reads and process crashes.",
+        "id": "CVE-2026-129490",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T16:16:56.620",
+        "publishedAt": "2026-11-15T16:16:56.620",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "littlefs through 2.11.3, when built with LFS_MIGRATE, contains a type confusion vulnerability in lfs_dir_traverse() that treats a stack lfs_diskoff struct as…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129490"
+      },
+      {
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "Kroki before 0.36.0 contains a server-side request forgery vulnerability in the BlockDiag family of engines that allows unauthenticated attackers to make server requests via node icon and background attributes. Attackers can send crafted diagrams to POST /blockdiag/svg or sibling endpoints to query internal services or cloud metadata and read local image files from the server.",
+        "id": "CVE-2026-129485",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T16:16:56.473",
+        "publishedAt": "2026-11-15T16:16:56.473",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Kroki before 0.36.0 contains a server-side request forgery vulnerability in the BlockDiag family of engines that allows unauthenticated attackers to make…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129485"
+      },
+      {
         "cvss_score": 5.3,
         "cvss_version": "4.0",
-        "description": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability in the /dbml/svg endpoint that allows unauthenticated attackers to inject javascript: hyperlinks by supplying crafted DBML table url, headercolor, or TableGroup color settings. Attackers can send a crafted SVG link that, when opened and the table header clicked, executes attacker JavaScript in the Kroki origin.",
-        "id": "CVE-2026-129447",
+        "description": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via unvalidated svg-color-dark-scheme and svg-color-light-scheme options. Attackers can craft a GET /goat/svg URL whose option value closes the SVG style element, executing JavaScript in the Kroki origin when victims open it.",
+        "id": "CVE-2026-129484",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T18:17:21.100",
-        "publishedAt": "2026-11-14T18:17:21.100",
+        "lastModifiedAt": "2026-11-15T16:16:56.327",
+        "publishedAt": "2026-11-15T16:16:56.327",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability in the /dbml/svg endpoint that allows unauthenticated attackers to inject…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129447"
+        "title": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via unvalidated…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129484"
       },
       {
-        "cvss_score": 2.0,
+        "cvss_score": 6.8,
         "cvss_version": "4.0",
-        "description": "A vulnerability was found in sergix44 XBackBone up to 3.8.2. Impacted is the function MediaController::getRawById of the file app/Controllers/MediaController.php. The manipulation results in cross site scripting. It is possible to launch the attack remotely. The exploit has been made public and could be used. The pull request to fix this issue awaits acceptance.",
-        "id": "CVE-2026-129267",
+        "description": "MicroQuickJS (mquickjs) before commit 99eed3f contains an out-of-bounds read vulnerability because JS_Call() raises exceptions during frame setup without updating ctx->sp and ctx->fp. Attackers can supply JavaScript that calls a non-function value, causing build_backtrace() to walk stale frame pointers and crash the engine for denial of service.",
+        "id": "CVE-2025-71470",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T18:17:21.050",
-        "publishedAt": "2026-11-14T18:17:20.077",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A vulnerability was found in sergix44 XBackBone up to 3.8.2. Impacted is the function MediaController::getRawById of the file…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129267"
-      },
-      {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "A security vulnerability has been detected in sox_ng up to 14.8.1. Affected by this issue is the function read_samples_voc of the file src/voc.c of the component VOC Decoder. Such manipulation leads to out-of-bounds write. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. The name of the patch is 0b40408b. A patch should be applied to remediate this…",
-        "id": "CVE-2026-129264",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T17:16:53.200",
-        "publishedAt": "2026-11-14T17:16:53.040",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A security vulnerability has been detected in sox_ng up to 14.8.1. Affected by this issue is the function read_samples_voc of the file src/voc.c of the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129264"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "4.0",
-        "description": "A weakness has been identified in Wuxi Wubang Security Software Wubang Five-in-One Safety Production Management Information System up to 3.5. Affected by this vulnerability is the function DiyFileUpload of the file /ws.asmx. This manipulation causes unrestricted upload. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks…",
-        "id": "CVE-2026-129262",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T17:16:52.990",
-        "publishedAt": "2026-11-14T17:16:52.833",
+        "lastModifiedAt": "2026-11-15T16:16:56.167",
+        "publishedAt": "2026-11-15T16:16:56.167",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A weakness has been identified in Wuxi Wubang Security Software Wubang Five-in-One Safety Production Management Information System up to 3.5. Affected by this…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129262"
+        "title": "MicroQuickJS (mquickjs) before commit 99eed3f contains an out-of-bounds read vulnerability because JS_Call() raises exceptions during frame setup without…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71470"
       },
       {
-        "cvss_score": 9.3,
+        "cvss_score": 6.8,
         "cvss_version": "4.0",
-        "description": "A vulnerability was found in Kingston FURY CTRL RGB Control Software up to 2.0.66.0. The impacted element is an unknown function in the library NTIOLib_X64.sys of the component IOCTL Handler. Performing a manipulation results in exposed ioctl with insufficient access control. The attack is only possible with local access.",
-        "id": "CVE-2026-129261",
+        "description": "GPAC before 26.02.0 contains a type confusion vulnerability in ctxload_process() that passes non-object descriptors to ODS_SetupOD() without checking the descriptor tag. Attackers can supply a crafted XMT file with a URL-bearing descriptor that crashes MP4Box or other GPAC-based applications in gf_scene_ns_connect_object(), causing denial of service.",
+        "id": "CVE-2025-71469",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T16:17:04.677",
-        "publishedAt": "2026-11-14T16:17:04.517",
+        "lastModifiedAt": "2026-11-15T16:16:56.123",
+        "publishedAt": "2026-11-15T16:16:56.000",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "GPAC before 26.02.0 contains a type confusion vulnerability in ctxload_process() that passes non-object descriptors to ODS_SetupOD() without checking the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71469"
+      },
+      {
+        "cvss_score": 6.8,
+        "cvss_version": "4.0",
+        "description": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_dash_group_get_audio_channels() in src/media_tools/dash_client.c that allows attackers to crash applications via crafted DASH manifests. Attackers can supply an MPD whose AudioChannelConfiguration element omits schemeIdUri or value, crashing MP4Box or GPAC DASH clients and causing denial of service.",
+        "id": "CVE-2025-71468",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T16:16:55.957",
+        "publishedAt": "2026-11-15T16:16:55.840",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_dash_group_get_audio_channels() in src/media_tools/dash_client.c that allows…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71468"
+      },
+      {
+        "cvss_score": 6.8,
+        "cvss_version": "4.0",
+        "description": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_node_get_field_by_name() in src/scenegraph/base_scenegraph.c that lets attackers crash applications. Attackers can supply a crafted XMT scene referencing a never-created node to crash MP4Box or GPAC scene loader applications, causing denial of service.",
+        "id": "CVE-2025-71467",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T16:16:55.793",
+        "publishedAt": "2026-11-15T16:16:55.677",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_node_get_field_by_name() in src/scenegraph/base_scenegraph.c that lets attackers…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71467"
+      },
+      {
+        "cvss_score": 6.8,
+        "cvss_version": "4.0",
+        "description": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in m2tsdmx_update_sdt() in src/filters/dmx_m2ts.c that allows attackers to crash the MPEG-2 TS demuxer. Attackers can supply a crafted .ts file with an invalid service descriptor leaving service or provider names NULL to crash MP4Box and cause denial of service.",
+        "id": "CVE-2025-71466",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T16:16:55.633",
+        "publishedAt": "2026-11-15T16:16:55.503",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in m2tsdmx_update_sdt() in src/filters/dmx_m2ts.c that allows attackers to crash the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71466"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Marcin Wise Chat wise-chat allows Reflected XSS.This issue affects Wise Chat: from n/a through 3.4.5.",
+        "id": "CVE-2026-128893",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T15:16:47.580",
+        "publishedAt": "2026-11-15T15:16:47.467",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Marcin Wise Chat wise-chat allows Reflected XSS.This…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128893"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "Insertion of Sensitive Information into Externally-Accessible File or Directory vulnerability in Looks Awesome Flow-Flow Social Stream flow-flow-social-streams allows Retrieve Embedded Sensitive Data.This issue affects Flow-Flow Social Stream: from n/a through 5.0.5.",
+        "id": "CVE-2026-125799",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T15:16:47.430",
+        "publishedAt": "2026-11-15T15:16:47.317",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Insertion of Sensitive Information into Externally-Accessible File or Directory vulnerability in Looks Awesome Flow-Flow Social Stream flow-flow-social-streams…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125799"
+      },
+      {
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Estatik Estatik estatik allows PHP Local File Inclusion.This issue affects Estatik: from n/a through 4.3.6.",
+        "id": "CVE-2026-125795",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-15T15:16:47.283",
+        "publishedAt": "2026-11-15T15:16:47.163",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "A vulnerability was found in Kingston FURY CTRL RGB Control Software up to 2.0.66.0. The impacted element is an unknown function in the library NTIOLib_X64.sys…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129261"
+        "title": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Estatik Estatik estatik allows PHP…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125795"
       },
       {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "A security vulnerability has been detected in Mereithhh VanBlog up to 0.54.0. This vulnerability affects the function fs.readFileSync of the file local.provider.ts of the component Custom Page Handler. The manipulation of the argument path leads to path traversal. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used. Upgrading to version…",
-        "id": "CVE-2026-129260",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T16:17:04.450",
-        "publishedAt": "2026-11-14T16:17:04.297",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A security vulnerability has been detected in Mereithhh VanBlog up to 0.54.0. This vulnerability affects the function fs.readFileSync of the file…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129260"
-      },
-      {
-        "cvss_score": 5.4,
+        "cvss_score": 7.1,
         "cvss_version": "3.1",
-        "description": "The BuddyForms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'buddyforms_form_content' parameter in all versions up to, and including, 2.10.6 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is…",
-        "id": "CVE-2026-127115",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in flexmls Flexmls® IDX flexmls-idx allows Reflected XSS.This issue affects Flexmls® IDX: from n/a through 4.1.2.",
+        "id": "CVE-2026-125793",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T16:17:04.253",
-        "publishedAt": "2026-11-14T16:17:04.130",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-15T15:16:47.133",
+        "publishedAt": "2026-11-15T15:16:47.027",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "The BuddyForms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'buddyforms_form_content' parameter in all versions up to, and…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-127115"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in flexmls Flexmls® IDX flexmls-idx allows Reflected…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125793"
       },
       {
         "cvss_score": 7.2,
         "cvss_version": "3.1",
-        "description": "The Lightbox & Modal Popup WordPress Plugin – FooBox plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'img alt attribute inside .wp-caption container' parameter in all versions up to, and including, 2.8.7 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that…",
-        "id": "CVE-2026-120687",
+        "description": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.3.",
+        "id": "CVE-2026-125771",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T16:17:04.090",
-        "publishedAt": "2026-11-14T16:17:03.957",
+        "lastModifiedAt": "2026-11-15T15:16:46.997",
+        "publishedAt": "2026-11-15T15:16:46.890",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "The Lightbox & Modal Popup WordPress Plugin – FooBox plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'img alt attribute…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120687"
+        "title": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125771"
       },
       {
-        "cvss_score": 7.2,
+        "cvss_score": 7.1,
         "cvss_version": "3.1",
-        "description": "The Multi Step for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'multipart field name (array key)' parameter in all versions up to, and including, 2.9.1 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an…",
-        "id": "CVE-2026-116753",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ShortPixel ShortPixel Adaptive Images shortpixel-adaptive-images allows Stored XSS.This issue affects ShortPixel Adaptive Images: from n/a through 3.11.6.",
+        "id": "CVE-2026-125765",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T16:17:03.917",
-        "publishedAt": "2026-11-14T16:17:03.793",
+        "lastModifiedAt": "2026-11-15T15:16:46.853",
+        "publishedAt": "2026-11-15T15:16:46.743",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "The Multi Step for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'multipart field name (array key)' parameter in all…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116753"
-      },
-      {
-        "cvss_score": 6.4,
-        "cvss_version": "3.1",
-        "description": "The FV Player 8 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'fv_player_videos' parameter in all versions up to, and including, 8.1.9 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses…",
-        "id": "CVE-2026-110531",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T16:17:03.750",
-        "publishedAt": "2026-11-14T16:17:02.753",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "The FV Player 8 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'fv_player_videos' parameter in all versions up to, and including…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110531"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in StylemixThemes uListing ulisting allows Blind SQL Injection.This issue affects uListing: from n/a through 2.2.0.",
-        "id": "CVE-2026-62031",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T15:16:58.987",
-        "publishedAt": "2026-10-10T20:16:39.237",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in StylemixThemes uListing ulisting allows Blind SQL…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62031"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in BuddyBoss Buddyboss Platform buddyboss-platform allows Blind SQL Injection.This issue affects Buddyboss Platform: from n/a through 3.0.5.",
-        "id": "CVE-2026-59514",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T15:16:58.853",
-        "publishedAt": "2026-07-23T12:18:32.103",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in BuddyBoss Buddyboss Platform buddyboss-platform allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59514"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in INTINITUM FORM Transliterator serbian-transliteration allows Blind SQL Injection.This issue affects Transliterator: from n/a through 2.5.13.",
-        "id": "CVE-2026-39732",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T15:16:58.703",
-        "publishedAt": "2026-10-30T19:18:24.137",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in INTINITUM FORM Transliterator serbian-transliteration…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39732"
-      },
-      {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "A weakness has been identified in Mereithhh VanBlog up to 0.54.0. This affects an unknown part of the file packages/server/src/types/access/access.ts of the component Image Upload Endpoint. Executing a manipulation can lead to cross site scripting. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks. The vendor was contacted early…",
-        "id": "CVE-2026-129259",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T15:16:58.633",
-        "publishedAt": "2026-11-14T15:16:58.480",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A weakness has been identified in Mereithhh VanBlog up to 0.54.0. This affects an unknown part of the file packages/server/src/types/access/access.ts of the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129259"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was identified in Tenda AC18 15.03.05.05_multi/15.03.05.19 Build 6318. Affected by this vulnerability is an unknown functionality of the file /cgi-bin/upgrade of the component Firmware Upgrade Handler. Such manipulation of the argument upgradeFile leads to insufficient verification of data authenticity. The attack may be launched remotely. The exploit is publicly available and…",
-        "id": "CVE-2026-129258",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-14T15:16:58.433",
-        "publishedAt": "2026-11-14T15:16:58.257",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A vulnerability was identified in Tenda AC18 15.03.05.05_multi/15.03.05.19 Build 6318. Affected by this vulnerability is an unknown functionality of the file…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129258"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ShortPixel ShortPixel Adaptive Images…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125765"
       }
     ],
-    "low": 48,
-    "medium": 254,
+    "low": 4,
+    "medium": 28,
     "none": 0,
-    "unscored": 51
+    "unscored": 14
   },
   "snapshot": {
-    "cves": 756,
+    "cves": 95,
     "kevAdded": 0,
-    "knownExploited": 3,
+    "knownExploited": 1,
     "projects": 18,
-    "releases": 1,
-    "techEntries": 36
+    "releases": 0,
+    "techEntries": 23
   },
   "sources": {
     "opensource": {
@@ -908,7 +907,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 1,
+        "inWindow": 0,
         "status": "partial",
         "total": 54
       }
@@ -922,15 +921,15 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 756,
+        "inWindow": 95,
         "status": "success",
-        "total": 756
+        "total": 95
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 36,
+        "inWindow": 23,
         "status": "success",
         "total": 232
       }

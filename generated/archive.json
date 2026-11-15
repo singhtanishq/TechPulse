@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-11-16",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 44,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201647,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 16,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143536,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 41,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139931,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 44,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129104,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 49,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123767,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 80,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 121999,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 56,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 115081,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 45,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105540,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 10,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98613,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 38,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91776,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 11,
+          "HIGH": 38,
+          "LOW": 4,
+          "MEDIUM": 28,
+          "NONE": 0,
+          "UNSCORED": 14
+        }
+      },
+      "snapshot": {
+        "cves": 95,
+        "kevAdded": 0,
+        "knownExploited": 1,
+        "projects": 18,
+        "releases": 0,
+        "techEntries": 23
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1781
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 54
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 95,
+          "status": "success",
+          "total": 95
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 23,
+          "status": "success",
+          "total": 232
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 9,
+          "tech": 14
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-14T08:18:00+00:00",
+            "source": "The Register",
+            "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
+            "url": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302"
+          },
+          {
+            "published_at": "2026-11-13T20:52:17+00:00",
+            "source": "The Register",
+            "title": "This year’s bug count just passed 100K",
+            "url": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882"
+          },
+          {
+            "published_at": "2026-11-13T20:20:21+00:00",
+            "source": "Cloudflare",
+            "title": "Kitesurf is now open source",
+            "url": "https://blog.cloudflare.com/kitesurf-open-source/"
+          },
+          {
+            "published_at": "2026-11-13T19:26:07+00:00",
+            "source": "Cloudflare",
+            "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
+            "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:39+00:00",
+            "source": "Meta",
+            "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
+            "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Where supercomputing meets agentic AI: What’s new in Google Cloud HPC and AI at SC26",
+            "url": "https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "From OLAP to OLTP: How Copel Simplified Reverse ETL Using BigQuery's Native Export to AlloyDB",
+            "url": "https://cloud.google.com/blog/products/data-analytics/reverse-etl-bigquery-exports-to-alloydb/"
+          },
+          {
+            "published_at": "2026-11-13T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "New AI agent observability and governance across BigQuery and Looker",
+            "url": "https://cloud.google.com/blog/products/data-analytics/enterprise-ai-agent-observability-with-bigquery-and-looker/"
+          },
+          {
+            "published_at": "2026-11-13T16:59:00+00:00",
+            "source": "The Register",
+            "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
+            "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-15",
       "opensource": {
         "topProjects": [
@@ -13296,8 +13500,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-14T22:41:00.360794+00:00",
-    "totalSnapshots": 60,
+    "generatedAt": "2026-11-15T23:04:44.288606+00:00",
+    "totalSnapshots": 61,
     "warnings": []
   }
 }
