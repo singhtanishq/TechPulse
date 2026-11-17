@@ -1,0 +1,309 @@
+{
+  "coveredIstDay": "2026-11-16",
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T01:58:18.054783+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": -40,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201607,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 111,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143647,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 43,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 139974,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 36,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 129140,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": -13,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123754,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 82,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 122081,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": -8,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 115073,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 45,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105585,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 86,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98699,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 34,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91810,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 1,
+      "other": 0,
+      "patch": 0
+    },
+    "recent": [
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-11-16T16:47:17Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
+        "version": "v2.9.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [],
+    "latest": [
+      {
+        "cvss": 5.4,
+        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potential",
+        "id": "CVE-2026-110194",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110194"
+      },
+      {
+        "cvss": 5.4,
+        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow an authenticated caller to bypass upstream credential-level authorization policies due to an insufficiently specific cache key in the RFC ",
+        "id": "CVE-2026-110195",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110195"
+      },
+      {
+        "cvss": 7.4,
+        "description": "In Kura versions <= 5.6.2, `CommandCloudApp.execute()` extracts a caller-supplied ZIP archive into a caller-supplied directory inside the Kura JVM process before dispatching the command to the executo",
+        "id": "CVE-2026-97401",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97401"
+      },
+      {
+        "cvss": 8.8,
+        "description": "Building a malicious package that uses \"//go:cgo_import_dynamic\" or links against a crafted PE object on Windows could pass unsafe library arguments to the external linker. The compiler only checked t",
+        "id": "CVE-2026-97042",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97042"
+      },
+      {
+        "cvss": 8.8,
+        "description": "Building a malicious package containing \"//go:cgo_*\" compiler directives could inject arbitrary flags into the external linker invocation on ELF platforms. The compiler and linker did not reject comma",
+        "id": "CVE-2026-97041",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97041"
+      },
+      {
+        "cvss": 9.8,
+        "description": "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When loading \".syso\" entries from a package archive, the linker on",
+        "id": "CVE-2026-97040",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97040"
+      },
+      {
+        "cvss": 8.3,
+        "description": "Building a malicious package that uses \"#cgo pkg-config:\" directives could load untrusted pkg-config \".pc\" files or inject unvalidated compiler and linker flags. The pkg-config flag allowlist previous",
+        "id": "CVE-2026-97039",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97039"
+      },
+      {
+        "cvss": 4.4,
+        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, PermissionCheckboxSetField accepts permission codes that the field did not offer and stores them without a",
+        "id": "CVE-2026-91114",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91114"
+      },
+      {
+        "cvss": 4.3,
+        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, a CMS user who can edit a record through a GridField detail form can submit a user-controlled ClassName va",
+        "id": "CVE-2026-91113",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91113"
+      },
+      {
+        "cvss": 5.9,
+        "description": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with",
+        "id": "CVE-2026-40424",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40424"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 76,
+      "HIGH": 296,
+      "LOW": 27,
+      "MEDIUM": 189,
+      "NONE": 0,
+      "UNSCORED": 28
+    }
+  },
+  "snapshot": {
+    "cves": 616,
+    "kevAdded": 0,
+    "knownExploited": 6,
+    "projects": 18,
+    "releases": 1,
+    "techEntries": 18
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 0,
+      "status": "empty",
+      "total": 1781
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 1,
+      "status": "partial",
+      "total": 52
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 616,
+      "status": "success",
+      "total": 616
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 18,
+      "status": "success",
+      "total": 232
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 8,
+      "tech": 10
+    },
+    "recent": [
+      {
+        "published_at": "2026-11-16T18:28:00+00:00",
+        "source": "The Register",
+        "title": "NoisyTCP bug gives Linux servers a remote crash problem 11 years in the making",
+        "url": "https://www.theregister.com/security/2026/11/16/noisytcp-bug-gives-linux-servers-a-remote-crash-problem-11-years-in-the-making/5310144"
+      },
+      {
+        "published_at": "2026-11-16T18:01:00+00:00",
+        "source": "The Register",
+        "title": "Ubuntu gets AI-generated security fixes for those feeling brave",
+        "url": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139"
+      },
+      {
+        "published_at": "2026-11-16T17:55:46+00:00",
+        "source": "AWS",
+        "title": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/"
+      },
+      {
+        "published_at": "2026-11-16T17:27:00+00:00",
+        "source": "The Register",
+        "title": "Microsoft fixes Windows activation as admins pick through Exchange outage wreckage",
+        "url": "https://www.theregister.com/software/2026/11/16/microsoft-fixes-windows-activation-as-admins-pick-through-exchange-outage-wreckage/5310102"
+      },
+      {
+        "published_at": "2026-11-16T17:03:00+00:00",
+        "source": "The Register",
+        "title": "Crook turns free trials into phishing factory, as LearnWorlds sends 13,000 fake YouTube copyright notices",
+        "url": "https://www.theregister.com/security/2026/11/16/crook-turns-free-trials-into-phishing-factory-as-learnworlds-sends-13000-fake-youtube-copyright-notices/5310122"
+      },
+      {
+        "published_at": "2026-11-16T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Beyond the compute bottleneck: Maximizing the ROI of AI accelerators with purpose-built storage",
+        "url": "https://cloud.google.com/blog/products/storage-data-transfer/maximizing-ai-accelerator-roi-with-purpose-built-storage/"
+      },
+      {
+        "published_at": "2026-11-16T16:15:00+00:00",
+        "source": "The Register",
+        "title": "US allies deepen deal to guard AI supply chains against 'hostile actors' (cough, China, cough)",
+        "url": "https://www.theregister.com/systems/2026/11/16/us-allies-deepen-deal-to-guard-ai-supply-chains-against-hostile-actors-cough-china-cough/5310094"
+      },
+      {
+        "published_at": "2026-11-16T16:00:00+00:00",
+        "source": "The Register",
+        "title": "Has AI’s ‘Black October’ changed the way you secure your code?",
+        "url": "https://www.theregister.com/security/2026/11/16/partner-content-has-ais-black-october-changed-the-way-you-secure-your-code/5309775"
+      },
+      {
+        "published_at": "2026-11-16T14:00:00+00:00",
+        "source": "The Register",
+        "title": "Google: AI agent turned a security patch into a working exploit with no human help",
+        "url": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926"
+      },
+      {
+        "published_at": "2026-11-16T14:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Cloudflare": 2,
+      "Google Cloud": 5,
+      "The Register": 10
+    }
+  },
+  "window": {
+    "end": "2026-11-16T18:30:00+00:00",
+    "start": "2026-11-15T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

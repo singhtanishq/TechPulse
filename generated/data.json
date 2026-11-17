@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 616,
+      "date": "2026-11-17",
+      "kevAdded": 0,
+      "knownExploited": 6,
+      "projects": 18,
+      "releases": 1,
+      "techEntries": 18
+    },
+    {
       "cves": 95,
       "date": "2026-11-16",
       "kevAdded": 0,
@@ -551,16 +560,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-15",
-    "date": "2026-11-16",
-    "daysObserved": 61,
-    "generatedAt": "2026-11-15T23:04:44.288606+00:00",
-    "snapshots": 61,
+    "coveredDate": "2026-11-16",
+    "date": "2026-11-17",
+    "daysObserved": 62,
+    "generatedAt": "2026-11-17T01:58:18.054783+00:00",
+    "snapshots": 62,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 44,
+      "daily_growth": -40,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -568,11 +577,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201647,
+      "stars": 201607,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 111,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -580,11 +589,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143536,
+      "stars": 143647,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 41,
+      "daily_growth": 43,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -592,11 +601,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139931,
+      "stars": 139974,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 44,
+      "daily_growth": 36,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -604,11 +613,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129104,
+      "stars": 129140,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 49,
+      "daily_growth": -13,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -616,11 +625,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123767,
+      "stars": 123754,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 80,
+      "daily_growth": 82,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -628,11 +637,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 121999,
+      "stars": 122081,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 56,
+      "daily_growth": -8,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -640,7 +649,7 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115081,
+      "stars": 115073,
       "url": "https://github.com/supabase/supabase"
     },
     {
@@ -652,11 +661,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105540,
+      "stars": 105585,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 86,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -664,11 +673,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98613,
+      "stars": 98699,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 38,
+      "daily_growth": 34,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -676,224 +685,234 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91776,
+      "stars": 91810,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-11-16T16:47:17Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
+      "version": "v2.9.0"
+    }
+  ],
   "security": {
-    "critical": 11,
-    "high": 38,
+    "critical": 76,
+    "high": 296,
     "kevCatalogTotal": 1781,
     "latest": [
       {
-        "cvss_score": 7.7,
-        "cvss_version": "4.0",
-        "description": "In FRRouting, bgpd frees the sub-TLV chain of a Tunnel Encapsulation attribute (type 23) while routes stored by bgpd still point to it, if the attribute is received from a neighbor that has \"soft-reconfiguration inbound\" configured. A cache added to speed up attribute interning while processing the prefixes of an UPDATE checks whether an interned attribute set may be reused by comparing the…",
-        "id": "CVE-2026-129456",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T18:16:48.047",
-        "publishedAt": "2026-11-14T20:17:40.060",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In FRRouting, bgpd frees the sub-TLV chain of a Tunnel Encapsulation attribute (type 23) while routes stored by bgpd still point to it, if the attribute is…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129456"
-      },
-      {
-        "cvss_score": 6.8,
-        "cvss_version": "4.0",
-        "description": "littlefs through 2.11.3, when built with LFS_MIGRATE, contains a type confusion vulnerability in lfs_dir_traverse() that treats a stack lfs_diskoff struct as an lfs_attr array. Attackers can supply a crafted littlefs v1 image whose metadata is read as LFS_FROM_USERATTRS during migration, causing out-of-bounds stack reads and process crashes.",
-        "id": "CVE-2026-129490",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T16:16:56.620",
-        "publishedAt": "2026-11-15T16:16:56.620",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "littlefs through 2.11.3, when built with LFS_MIGRATE, contains a type confusion vulnerability in lfs_dir_traverse() that treats a stack lfs_diskoff struct as…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129490"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "Kroki before 0.36.0 contains a server-side request forgery vulnerability in the BlockDiag family of engines that allows unauthenticated attackers to make server requests via node icon and background attributes. Attackers can send crafted diagrams to POST /blockdiag/svg or sibling endpoints to query internal services or cloud metadata and read local image files from the server.",
-        "id": "CVE-2026-129485",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T16:16:56.473",
-        "publishedAt": "2026-11-15T16:16:56.473",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Kroki before 0.36.0 contains a server-side request forgery vulnerability in the BlockDiag family of engines that allows unauthenticated attackers to make…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129485"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via unvalidated svg-color-dark-scheme and svg-color-light-scheme options. Attackers can craft a GET /goat/svg URL whose option value closes the SVG style element, executing JavaScript in the Kroki origin when victims open it.",
-        "id": "CVE-2026-129484",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T16:16:56.327",
-        "publishedAt": "2026-11-15T16:16:56.327",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Kroki before 0.36.0 contains a reflected cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via unvalidated…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129484"
-      },
-      {
-        "cvss_score": 6.8,
-        "cvss_version": "4.0",
-        "description": "MicroQuickJS (mquickjs) before commit 99eed3f contains an out-of-bounds read vulnerability because JS_Call() raises exceptions during frame setup without updating ctx->sp and ctx->fp. Attackers can supply JavaScript that calls a non-function value, causing build_backtrace() to walk stale frame pointers and crash the engine for denial of service.",
-        "id": "CVE-2025-71470",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T16:16:56.167",
-        "publishedAt": "2026-11-15T16:16:56.167",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "MicroQuickJS (mquickjs) before commit 99eed3f contains an out-of-bounds read vulnerability because JS_Call() raises exceptions during frame setup without…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71470"
-      },
-      {
-        "cvss_score": 6.8,
-        "cvss_version": "4.0",
-        "description": "GPAC before 26.02.0 contains a type confusion vulnerability in ctxload_process() that passes non-object descriptors to ODS_SetupOD() without checking the descriptor tag. Attackers can supply a crafted XMT file with a URL-bearing descriptor that crashes MP4Box or other GPAC-based applications in gf_scene_ns_connect_object(), causing denial of service.",
-        "id": "CVE-2025-71469",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T16:16:56.123",
-        "publishedAt": "2026-11-15T16:16:56.000",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "GPAC before 26.02.0 contains a type confusion vulnerability in ctxload_process() that passes non-object descriptors to ODS_SetupOD() without checking the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71469"
-      },
-      {
-        "cvss_score": 6.8,
-        "cvss_version": "4.0",
-        "description": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_dash_group_get_audio_channels() in src/media_tools/dash_client.c that allows attackers to crash applications via crafted DASH manifests. Attackers can supply an MPD whose AudioChannelConfiguration element omits schemeIdUri or value, crashing MP4Box or GPAC DASH clients and causing denial of service.",
-        "id": "CVE-2025-71468",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T16:16:55.957",
-        "publishedAt": "2026-11-15T16:16:55.840",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_dash_group_get_audio_channels() in src/media_tools/dash_client.c that allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71468"
-      },
-      {
-        "cvss_score": 6.8,
-        "cvss_version": "4.0",
-        "description": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_node_get_field_by_name() in src/scenegraph/base_scenegraph.c that lets attackers crash applications. Attackers can supply a crafted XMT scene referencing a never-created node to crash MP4Box or GPAC scene loader applications, causing denial of service.",
-        "id": "CVE-2025-71467",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T16:16:55.793",
-        "publishedAt": "2026-11-15T16:16:55.677",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in gf_node_get_field_by_name() in src/scenegraph/base_scenegraph.c that lets attackers…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71467"
-      },
-      {
-        "cvss_score": 6.8,
-        "cvss_version": "4.0",
-        "description": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in m2tsdmx_update_sdt() in src/filters/dmx_m2ts.c that allows attackers to crash the MPEG-2 TS demuxer. Attackers can supply a crafted .ts file with an invalid service descriptor leaving service or provider names NULL to crash MP4Box and cause denial of service.",
-        "id": "CVE-2025-71466",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T16:16:55.633",
-        "publishedAt": "2026-11-15T16:16:55.503",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "GPAC before 26.02.0 contains a NULL pointer dereference vulnerability in m2tsdmx_update_sdt() in src/filters/dmx_m2ts.c that allows attackers to crash the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-71466"
-      },
-      {
-        "cvss_score": 7.1,
+        "cvss_score": 5.4,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Marcin Wise Chat wise-chat allows Reflected XSS.This issue affects Wise Chat: from n/a through 3.4.5.",
-        "id": "CVE-2026-128893",
+        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
+        "id": "CVE-2026-110194",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T15:16:47.580",
-        "publishedAt": "2026-11-15T15:16:47.467",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-16T18:29:23.680",
+        "publishedAt": "2026-11-13T22:17:20.493",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Marcin Wise Chat wise-chat allows Reflected XSS.This…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128893"
+        "title": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110194"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 5.4,
         "cvss_version": "3.1",
-        "description": "Insertion of Sensitive Information into Externally-Accessible File or Directory vulnerability in Looks Awesome Flow-Flow Social Stream flow-flow-social-streams allows Retrieve Embedded Sensitive Data.This issue affects Flow-Flow Social Stream: from n/a through 5.0.5.",
-        "id": "CVE-2026-125799",
+        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow an authenticated caller to bypass upstream credential-level authorization policies due to an insufficiently specific cache key in the RFC 8693 token exchange cache, enabling reuse of cached upstream bearer tokens across different credentials belonging to the same user.",
+        "id": "CVE-2026-110195",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T15:16:47.430",
-        "publishedAt": "2026-11-15T15:16:47.317",
+        "lastModifiedAt": "2026-11-16T18:28:06.033",
+        "publishedAt": "2026-11-13T22:17:20.627",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow an authenticated caller to bypass upstream credential-level authorization policies due to an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110195"
+      },
+      {
+        "cvss_score": 7.4,
+        "cvss_version": "4.0",
+        "description": "In Kura versions <= 5.6.2, `CommandCloudApp.execute()` extracts a caller-supplied ZIP archive into a caller-supplied directory inside the Kura JVM process before dispatching the command to the executor service. On a packaged Kura installation the JVM runs as `kurad` with `CAP_DAC_OVERRIDE`, while the configurable \"Unprivileged\" executor drops to the `kura` user via `su`.\n\n\n\nA caller with…",
+        "id": "CVE-2026-97401",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:34.877",
+        "publishedAt": "2026-11-10T17:17:55.450",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Insertion of Sensitive Information into Externally-Accessible File or Directory vulnerability in Looks Awesome Flow-Flow Social Stream flow-flow-social-streams…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125799"
+        "title": "In Kura versions <= 5.6.2, `CommandCloudApp.execute()` extracts a caller-supplied ZIP archive into a caller-supplied directory inside the Kura JVM process…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97401"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Building a malicious package that uses \"//go:cgo_import_dynamic\" or links against a crafted PE object on Windows could pass unsafe library arguments to the external linker. The compiler only checked the first character of the library name in \"//go:cgo_import_dynamic\" directives and skipped validation in cgo-generated files. In addition, on Windows, \"cmd/cgo\" and \"cmd/link\" did not validate…",
+        "id": "CVE-2026-97042",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:34.507",
+        "publishedAt": "2026-11-11T05:19:58.563",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Building a malicious package that uses \"//go:cgo_import_dynamic\" or links against a crafted PE object on Windows could pass unsafe library arguments to the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97042"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Building a malicious package containing \"//go:cgo_*\" compiler directives could inject arbitrary flags into the external linker invocation on ELF platforms. The compiler and linker did not reject commas in \"//go:cgo_import_dynamic\", \"//go:cgo_export_dynamic\", \"//go:cgo_export_static\", \"//go:cgo_import_static\", and \"//go:cgo_dynamic_linker\" directives, and the linker passed the dynamic linker path…",
+        "id": "CVE-2026-97041",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:34.327",
+        "publishedAt": "2026-11-11T05:19:58.417",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Building a malicious package containing \"//go:cgo_*\" compiler directives could inject arbitrary flags into the external linker invocation on ELF platforms. The…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97041"
       },
       {
         "cvss_score": 9.8,
         "cvss_version": "3.1",
-        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Estatik Estatik estatik allows PHP Local File Inclusion.This issue affects Estatik: from n/a through 4.3.6.",
-        "id": "CVE-2026-125795",
+        "description": "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When loading \".syso\" entries from a package archive, the linker only checked for recognized host object headers (ELF, Mach-O, PE, and XCOFF) before falling through to Go object parsing. A \".syso\" file beginning with a \"go object\" header was parsed as a Go compiler…",
+        "id": "CVE-2026-97040",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T15:16:47.283",
-        "publishedAt": "2026-11-15T15:16:47.163",
+        "lastModifiedAt": "2026-11-16T18:17:34.137",
+        "publishedAt": "2026-11-11T05:19:58.283",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Estatik Estatik estatik allows PHP…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125795"
+        "title": "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When loading \".syso\"…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97040"
       },
       {
-        "cvss_score": 7.1,
+        "cvss_score": 8.3,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in flexmls Flexmls® IDX flexmls-idx allows Reflected XSS.This issue affects Flexmls® IDX: from n/a through 4.1.2.",
-        "id": "CVE-2026-125793",
+        "description": "Building a malicious package that uses \"#cgo pkg-config:\" directives could load untrusted pkg-config \".pc\" files or inject unvalidated compiler and linker flags. The pkg-config flag allowlist previously permitted \"--with-path=\" and \"--personality=\", allowed \"--define-variable=\" values beginning with \"=\" or \"$\" (which can rewrite paths in system \".pc\" files into sysroot-prefixed \"-L=\" or…",
+        "id": "CVE-2026-97039",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T15:16:47.133",
-        "publishedAt": "2026-11-15T15:16:47.027",
+        "lastModifiedAt": "2026-11-16T18:17:33.960",
+        "publishedAt": "2026-11-11T05:19:58.133",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in flexmls Flexmls® IDX flexmls-idx allows Reflected…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125793"
+        "title": "Building a malicious package that uses \"#cgo pkg-config:\" directives could load untrusted pkg-config \".pc\" files or inject unvalidated compiler and linker…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97039"
       },
       {
-        "cvss_score": 7.2,
+        "cvss_score": 4.4,
         "cvss_version": "3.1",
-        "description": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/a through 2.0.3.",
-        "id": "CVE-2026-125771",
+        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, PermissionCheckboxSetField accepts permission codes that the field did not offer and stores them without an allowlist, then renders permission codes without escaping them. A user with access to the Security section can save attacker-controlled content as a permission code, causing JavaScript to execute…",
+        "id": "CVE-2026-91114",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T15:16:46.997",
-        "publishedAt": "2026-11-15T15:16:46.890",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-16T18:17:33.827",
+        "publishedAt": "2026-11-16T17:17:37.217",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125771"
+        "title": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, PermissionCheckboxSetField accepts permission codes that the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91114"
       },
       {
-        "cvss_score": 7.1,
+        "cvss_score": 4.3,
         "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ShortPixel ShortPixel Adaptive Images shortpixel-adaptive-images allows Stored XSS.This issue affects ShortPixel Adaptive Images: from n/a through 3.11.6.",
-        "id": "CVE-2026-125765",
+        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, a CMS user who can edit a record through a GridField detail form can submit a user-controlled ClassName value to change the record into an unrelated class without the create and edit permission checks required for that target class. This permits an unauthorized record type change outside the GridField's…",
+        "id": "CVE-2026-91113",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-15T15:16:46.853",
-        "publishedAt": "2026-11-15T15:16:46.743",
+        "lastModifiedAt": "2026-11-16T18:17:33.527",
+        "publishedAt": "2026-11-16T17:17:36.967",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, a CMS user who can edit a record through a GridField detail form…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91113"
+      },
+      {
+        "cvss_score": 5.9,
+        "cvss_version": "4.0",
+        "description": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are present without special internal knowledge and requires no user…",
+        "id": "CVE-2026-40424",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:33.250",
+        "publishedAt": "2026-11-10T18:17:38.110",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40424"
+      },
+      {
+        "cvss_score": 4.8,
+        "cvss_version": "4.0",
+        "description": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an authenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are not present without special internal knowledge and requires no…",
+        "id": "CVE-2026-40216",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:33.060",
+        "publishedAt": "2026-11-10T18:17:37.973",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40216"
+      },
+      {
+        "cvss_score": 4.6,
+        "cvss_version": "4.0",
+        "description": "Improper input validation for some Intel(R) oneAPI CLI Tool software within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are not present without special internal knowledge and…",
+        "id": "CVE-2026-40064",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:32.913",
+        "publishedAt": "2026-11-10T18:17:37.837",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Improper input validation for some Intel(R) oneAPI CLI Tool software within Ring 3: User Applications may allow a denial of service. Unprivileged software…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40064"
+      },
+      {
+        "cvss_score": 8.6,
+        "cvss_version": "4.0",
+        "description": "Stack-based buffer overflow in the UEFI firmware for the Intel(R) Slim Bootloader within Ring 0: Bare Metal OS may allow an escalation of privilege. Startup code and smm adversary with an unauthenticated user combined with a low complexity attack may enable escalation of privilege. This result may potentially occur via physical access when attack requirements are not present without special…",
+        "id": "CVE-2026-35500",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:32.777",
+        "publishedAt": "2026-11-10T18:17:37.693",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ShortPixel ShortPixel Adaptive Images…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125765"
+        "title": "Stack-based buffer overflow in the UEFI firmware for the Intel(R) Slim Bootloader within Ring 0: Bare Metal OS may allow an escalation of privilege. Startup…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35500"
+      },
+      {
+        "cvss_score": 5.9,
+        "cvss_version": "4.0",
+        "description": "Untrusted pointer dereference for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are present without special internal knowledge and…",
+        "id": "CVE-2026-34489",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:32.647",
+        "publishedAt": "2026-11-10T18:17:37.547",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Untrusted pointer dereference for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34489"
+      },
+      {
+        "cvss_score": 5.8,
+        "cvss_version": "4.0",
+        "description": "Heap-based buffer overflow for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are present without special internal knowledge and requires…",
+        "id": "CVE-2026-34017",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-16T18:17:32.520",
+        "publishedAt": "2026-11-10T18:17:37.410",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Heap-based buffer overflow for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34017"
       }
     ],
-    "low": 4,
-    "medium": 28,
+    "low": 27,
+    "medium": 189,
     "none": 0,
-    "unscored": 14
+    "unscored": 28
   },
   "snapshot": {
-    "cves": 95,
+    "cves": 616,
     "kevAdded": 0,
-    "knownExploited": 1,
+    "knownExploited": 6,
     "projects": 18,
-    "releases": 0,
-    "techEntries": 23
+    "releases": 1,
+    "techEntries": 18
   },
   "sources": {
     "opensource": {
@@ -907,9 +926,9 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 0,
+        "inWindow": 1,
         "status": "partial",
-        "total": 54
+        "total": 52
       }
     },
     "security": {
@@ -921,15 +940,15 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 95,
+        "inWindow": 616,
         "status": "success",
-        "total": 95
+        "total": 616
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 23,
+        "inWindow": 18,
         "status": "success",
         "total": 232
       }
@@ -938,123 +957,123 @@
   "technology": [
     {
       "category": "security",
+      "publishedAt": "2026-11-16T18:28:00+00:00",
+      "source": "The Register",
+      "summary": "Flaw can take down an entire host, even when the vulnerable service is running inside a container",
+      "title": "NoisyTCP bug gives Linux servers a remote crash problem 11 years in the making",
+      "url": "https://www.theregister.com/security/2026/11/16/noisytcp-bug-gives-linux-servers-a-remote-crash-problem-11-years-in-the-making/5310144"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-16T18:01:00+00:00",
+      "source": "The Register",
+      "summary": "Opt-in Edge archive gives Pro subscribers early access before full testing, while normal updates remain human-validated",
+      "title": "Ubuntu gets AI-generated security fixes for those feeling brave",
+      "url": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-16T17:55:46+00:00",
+      "source": "AWS",
+      "summary": "A second delivery of the same message can reveal more about an application than its happy-path demo. I like tools that make those cases easier to investigate while a change is still small. Last week’s launch of AWS Emulator brings part of that work onto your own machine…",
+      "title": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-16T17:27:00+00:00",
+      "source": "The Register",
+      "summary": "Another unscheduled patch for IT teams already having quite enough fun with Redmond",
+      "title": "Microsoft fixes Windows activation as admins pick through Exchange outage wreckage",
+      "url": "https://www.theregister.com/software/2026/11/16/microsoft-fixes-windows-activation-as-admins-pick-through-exchange-outage-wreckage/5310102"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-16T17:03:00+00:00",
+      "source": "The Register",
+      "summary": "570 bogus accounts, one rewritten welcome email, and a fake YouTube page, but CEO says no breach",
+      "title": "Crook turns free trials into phishing factory, as LearnWorlds sends 13,000 fake YouTube copyright notices",
+      "url": "https://www.theregister.com/security/2026/11/16/crook-turns-free-trials-into-phishing-factory-as-learnworlds-sends-13000-fake-youtube-copyright-notices/5310122"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-16T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "There’s a lot more to AI infrastructure than just buying accelerators. Indeed, the infrastructure mandate for enterprise AI has shifted from acquiring accelerators to keeping them fully utilized. Next to these expensive accelerators, storage accounts for only a small sliver of…",
+      "title": "Beyond the compute bottleneck: Maximizing the ROI of AI accelerators with purpose-built storage",
+      "url": "https://cloud.google.com/blog/products/storage-data-transfer/maximizing-ai-accelerator-roi-with-purpose-built-storage/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-16T16:15:00+00:00",
+      "source": "The Register",
+      "summary": "Securing supply chains or coercing other nations to help Washington sideline Beijing and its AI ambitions?",
+      "title": "US allies deepen deal to guard AI supply chains against 'hostile actors' (cough, China, cough)",
+      "url": "https://www.theregister.com/systems/2026/11/16/us-allies-deepen-deal-to-guard-ai-supply-chains-against-hostile-actors-cough-china-cough/5310094"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-16T16:00:00+00:00",
+      "source": "The Register",
+      "summary": "PARTNER CONTENT: AI agents are making security vulnerabilities easier to find and exploit in your code. Software engineering and application security teams need new ways to find and fix them",
+      "title": "Has AI’s ‘Black October’ changed the way you secure your code?",
+      "url": "https://www.theregister.com/security/2026/11/16/partner-content-has-ais-black-october-changed-the-way-you-secure-your-code/5309775"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-16T14:00:00+00:00",
+      "source": "The Register",
+      "summary": "Look ma, no human in the loop!",
+      "title": "Google: AI agent turned a security patch into a working exploit with no human help",
+      "url": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-16T14:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous multi-agent frameworks , automated vulnerability exploitation pipelines, and alternative monetization schemes like…",
+      "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-16T10:15:00+00:00",
+      "source": "The Register",
+      "summary": "Devuan-based distro swaps Wayland for XLibre and i3, with Xfce waiting if the tiling gets tiresome",
+      "title": "Omaxian takes the Omarchy look down a different Linux backstreet",
+      "url": "https://www.theregister.com/os-platforms/2026/11/16/omaxian-takes-the-omarchy-look-down-a-different-linux-backstreet/5309750"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-16T08:30:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Google has been recognized as a Leader and positioned furthest in vision in the 2026 Gartner® Magic Quadrant™ for Cloud Operational Database Management Systems (Cloud ODBMS). This recognition comes as we cross into the era of agentic AI. Leading enterprises are in their journey…",
+      "title": "Google is a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud Operational Database Management Systems",
+      "url": "https://cloud.google.com/blog/products/databases/2026-gartner-mq-cloud-operational-databases-management-systems/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-16T08:05:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Digital sovereignty is evolving from a standard compliance requirement into a powerful strategic advantage for regulated industries worldwide. From European frameworks designed to meet sovereign standards (DORA, EHDS, GDPR) to FedRAMP/ILs/ITARs in the U.S., or expanding mandates…",
+      "title": "Inside the new Google Cloud Data Boundary experience",
+      "url": "https://cloud.google.com/blog/products/identity-security/inside-the-new-data-boundary-experience/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-16T08:05:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Across Europe, organizations handling sensitive workloads in regulated sectors — such as financial services, healthcare, critical infrastructure, and the public sector — are trying to modernize their infrastructure while adhering to strict local data governance standards…",
+      "title": "How ISVs are unlocking European workloads using Google Cloud Dedicated technology",
+      "url": "https://cloud.google.com/blog/products/identity-security/how-isvs-are-unlocking-european-workloads-on-google-cloud-dedicated/"
+    },
+    {
+      "category": "security",
       "publishedAt": "2026-11-14T08:18:00+00:00",
       "source": "The Register",
       "summary": "Accessing banned content is as easy as whipping out a thesaurus, Parliament's Communications and Digital Committee hears",
       "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
       "url": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-13T20:52:17+00:00",
-      "source": "The Register",
-      "summary": "‘We don’t have a security problem anymore. We have a data problem now’",
-      "title": "This year’s bug count just passed 100K",
-      "url": "https://www.theregister.com/security/2026/11/13/this-years-bug-count-just-passed-100k/5309882"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T20:20:21+00:00",
-      "source": "Cloudflare",
-      "summary": "Kitesurf, our experimental browser engine for AI agents, is now open source. Inspect the code, run it locally, or deploy your own instance on Cloudflare Workers.",
-      "title": "Kitesurf is now open source",
-      "url": "https://blog.cloudflare.com/kitesurf-open-source/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T19:26:07+00:00",
-      "source": "Cloudflare",
-      "summary": "AI-orchestrated penetration testing platforms like ARTEX have become increasingly powerful tools enabling effective attacks on exposed infrastructure. Here we share Cloudflare’s observations and recommended countermeasures.",
-      "title": "Adapting to AI penetration testing orchestrators: The Modern Security Model",
-      "url": "https://blog.cloudflare.com/adapting-to-ai-penetration-testing-orchestrators/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T17:00:39+00:00",
-      "source": "Meta",
-      "summary": "How Meta's Reality Labs brought Cuttlefish and its QEMU backend to macOS and Apple silicon. [...] Read More... The post Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon appeared first on Engineering at Meta .",
-      "title": "Cuttlefish on Mac: Running Android’s Virtual Device Framework Natively on Apple Silicon",
-      "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
-      "title": "What’s new with Google Cloud",
-      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Computational scientists and HPC engineers have always been among the earliest adopters of new computing paradigms, and agents are no exception. Today, research and engineering teams use AI models and agents for things such as ingesting dense scientific literature, optimizing…",
-      "title": "Where supercomputing meets agentic AI: What’s new in Google Cloud HPC and AI at SC26",
-      "url": "https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Bridging the gap between analytical systems (OLAP) and transactional databases (OLTP) is notoriously complex. Synchronizing data between the two systems, often called Reverse ETL (Extract, Transform, Load), traditionally requires heavy middleware, staging buckets, and complex…",
-      "title": "From OLAP to OLTP: How Copel Simplified Reverse ETL Using BigQuery's Native Export to AlloyDB",
-      "url": "https://cloud.google.com/blog/products/data-analytics/reverse-etl-bigquery-exports-to-alloydb/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "As enterprises move AI agents from experimental prototypes into production, data and platform teams are discovering that deploying an agent is only half the battle — you also need to see how it reasons, which data it touches, and what it costs to run. Today, we are announcing…",
-      "title": "New AI agent observability and governance across BigQuery and Looker",
-      "url": "https://cloud.google.com/blog/products/data-analytics/enterprise-ai-agent-observability-with-bigquery-and-looker/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T16:59:00+00:00",
-      "source": "The Register",
-      "summary": "If you have one of these AI-generated homepages, you'd better download and save it quick",
-      "title": "Mozilla leaves Solo website owners to go it alone as hosting shuts down",
-      "url": "https://www.theregister.com/software/2026/11/13/mozilla-leaves-solo-website-owners-to-go-it-alone-as-hosting-shuts-down/5309632"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-13T16:26:32+00:00",
-      "source": "Ars Technica",
-      "summary": "\"SignDrop\" exploit lets local users gain all-powerful System rights.",
-      "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
-      "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-13T14:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Spend Management adds opt-in spending caps for Cloudflare Workers and Durable Objects, and more products soon. Here is how we built the metering pipeline that turns usage into runtime decisions.",
-      "title": "Introducing Spend Management: Spending limits and alerts for Cloudflare",
-      "url": "https://blog.cloudflare.com/spend-management/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-13T13:14:00+00:00",
-      "source": "The Register",
-      "summary": "Germany's Bundeswehr lifted precautionary grounding after malicious update reportedly reached military servers",
-      "title": "Quantum Systems drones back in the air after malware scare",
-      "url": "https://www.theregister.com/security/2026/11/13/quantum-systems-drones-back-in-the-air-after-malware-scare/5309658"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-13T11:02:00+00:00",
-      "source": "The Register",
-      "summary": "Watchdog wants assurances from 200 execs that employees aren't poking around patient files they have no business viewing",
-      "title": "Crackdown on UK medical record snooping after staff reported sneaking 300+ times this year",
-      "url": "https://www.theregister.com/security/2026/11/13/crackdown-on-uk-medical-record-snooping-after-staff-reported-sneaking-300-times-this-year/5309421"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-13T10:15:00+00:00",
-      "source": "The Register",
-      "summary": "New report calls for change, highlights hodgepodge governance and misunderstanding about tech’s limitations among officers",
-      "title": "Brit police watchdog says cops' use of facial recog risks wrongful arrests",
-      "url": "https://www.theregister.com/security/2026/11/13/brit-police-watchdog-says-cops-use-of-facial-recog-risks-wrongful-arrests/5309379"
     }
   ]
 }
