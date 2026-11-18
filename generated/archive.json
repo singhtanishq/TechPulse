@@ -1,6 +1,246 @@
 {
   "archive": [
     {
+      "date": "2026-11-18",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 151,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201758,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 60,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143707,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 215,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 140189,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 216,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129356,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 148,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123902,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 239,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 122320,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 196,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 115269,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 225,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105810,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 57,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98756,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 203,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 92013,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 1,
+          "minor": 4,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-11-17T18:28:13Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
+            "version": "v2.10.0"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-11-17T15:00:52Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v13.43.0",
+            "version": "v13.43.0"
+          },
+          {
+            "project": "framework",
+            "published_at": "2026-11-17T14:56:30Z",
+            "repository": "laravel/framework",
+            "url": "https://github.com/laravel/framework/releases/tag/v12.73.0",
+            "version": "v12.73.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-11-17T03:48:38Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.1.1",
+            "version": "v27.0.0-alpha.0.1.1"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-16T22:40:22Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.52.0",
+            "version": "v3.52.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 101,
+          "HIGH": 557,
+          "LOW": 100,
+          "MEDIUM": 556,
+          "NONE": 0,
+          "UNSCORED": 9
+        }
+      },
+      "snapshot": {
+        "cves": 1323,
+        "kevAdded": 1,
+        "knownExploited": 0,
+        "projects": 18,
+        "releases": 5,
+        "techEntries": 37
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 1,
+          "status": "success",
+          "total": 1782
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 5,
+          "status": "partial",
+          "total": 52
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1323,
+          "status": "success",
+          "total": 1323
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 37,
+          "status": "success",
+          "total": 231
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 15,
+          "tech": 22
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-17T18:29:29+00:00",
+            "source": "GitHub Blog",
+            "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+            "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
+          },
+          {
+            "published_at": "2026-11-17T18:20:40+00:00",
+            "source": "GitHub Blog",
+            "title": "Building the Agent Host Protocol for sessions that continue across devices",
+            "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
+          },
+          {
+            "published_at": "2026-11-17T17:45:00+00:00",
+            "source": "The Register",
+            "title": "Inspiring FOSS project Crosspoint Reader has lessons about tech, communities, and LLMs",
+            "url": "https://www.theregister.com/software/2026/11/17/inspiring-foss-project-crosspoint-reader-has-lessons-about-tech-communities-and-llms/5310424"
+          },
+          {
+            "published_at": "2026-11-17T17:13:28+00:00",
+            "source": "The Register",
+            "title": "SAP's cloud migration chief is migrating to Ionos as CEO",
+            "url": "https://www.theregister.com/software/2026/11/17/saps-cloud-migration-chief-is-migrating-to-ionos-as-ceo/5310530"
+          },
+          {
+            "published_at": "2026-11-17T17:06:43+00:00",
+            "source": "AWS",
+            "title": "Four Continents, Four New AWS Heroes: Closing Out 2026",
+            "url": "https://aws.amazon.com/blogs/aws/four-continents-four-new-aws-heroes-closing-out-2026/"
+          },
+          {
+            "published_at": "2026-11-17T17:01:02+00:00",
+            "source": "Netflix",
+            "title": "Engineering AI Discover",
+            "url": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38?source=rss----2615bd06b42e---4"
+          },
+          {
+            "published_at": "2026-11-17T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Congratulations to our 2026 Google Cloud Partner All-stars",
+            "url": "https://cloud.google.com/blog/topics/partners/2026-google-cloud-partner-all-stars-winners/"
+          },
+          {
+            "published_at": "2026-11-17T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "The visual evolution of Looker: Modern design for enterprise data storytelling",
+            "url": "https://cloud.google.com/blog/products/business-intelligence/modern-data-visualizations-and-custom-charts-in-looker/"
+          },
+          {
+            "published_at": "2026-11-17T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Google Cloud is a Leader in the 2026 Gartner Magic Quadrant for AI Application Development Platforms",
+            "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-a-leader-in-the-2026-gartner-magic-quadrant/"
+          },
+          {
+            "published_at": "2026-11-17T16:15:00+00:00",
+            "source": "The Register",
+            "title": "Hackers smash 'n' grab AI vendor: Take off with license data of Uber drivers",
+            "url": "https://www.theregister.com/security/2026/11/17/hackers-smash-n-grab-ai-vendor-take-off-with-license-data-of-uber-drivers/5310464"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-17",
       "opensource": {
         "topProjects": [
@@ -13712,8 +13952,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-17T01:58:18.054783+00:00",
-    "totalSnapshots": 62,
+    "generatedAt": "2026-11-18T01:11:17.308574+00:00",
+    "totalSnapshots": 63,
     "warnings": []
   }
 }

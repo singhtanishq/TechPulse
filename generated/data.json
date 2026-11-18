@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1323,
+      "date": "2026-11-18",
+      "kevAdded": 1,
+      "knownExploited": 0,
+      "projects": 18,
+      "releases": 5,
+      "techEntries": 37
+    },
+    {
       "cves": 616,
       "date": "2026-11-17",
       "kevAdded": 0,
@@ -560,16 +569,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-16",
-    "date": "2026-11-17",
-    "daysObserved": 62,
-    "generatedAt": "2026-11-17T01:58:18.054783+00:00",
-    "snapshots": 62,
+    "coveredDate": "2026-11-17",
+    "date": "2026-11-18",
+    "daysObserved": 63,
+    "generatedAt": "2026-11-18T01:11:17.308574+00:00",
+    "snapshots": 63,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": -40,
+      "daily_growth": 151,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -577,11 +586,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201607,
+      "stars": 201758,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 111,
+      "daily_growth": 60,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -589,11 +598,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143647,
+      "stars": 143707,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 43,
+      "daily_growth": 215,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -601,11 +610,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 139974,
+      "stars": 140189,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 36,
+      "daily_growth": 216,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -613,11 +622,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129140,
+      "stars": 129356,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": -13,
+      "daily_growth": 148,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -625,11 +634,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123754,
+      "stars": 123902,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 82,
+      "daily_growth": 239,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -637,11 +646,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122081,
+      "stars": 122320,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": -8,
+      "daily_growth": 196,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -649,11 +658,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115073,
+      "stars": 115269,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 45,
+      "daily_growth": 225,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -661,11 +670,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105585,
+      "stars": 105810,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 86,
+      "daily_growth": 57,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -673,11 +682,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98699,
+      "stars": 98756,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 34,
+      "daily_growth": 203,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -685,7 +694,7 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91810,
+      "stars": 92013,
       "url": "https://github.com/django/django"
     }
   ],
@@ -693,226 +702,262 @@
     {
       "kind": "minor",
       "project": "anthropic-sdk-python",
-      "publishedAt": "2026-11-16T16:47:17Z",
+      "publishedAt": "2026-11-17T18:28:13Z",
       "repository": "anthropics/anthropic-sdk-python",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
-      "version": "v2.9.0"
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
+      "version": "v2.10.0"
+    },
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-11-17T15:00:52Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.43.0",
+      "version": "v13.43.0"
+    },
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-11-17T14:56:30Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v12.73.0",
+      "version": "v12.73.0"
+    },
+    {
+      "kind": "major",
+      "project": "node",
+      "publishedAt": "2026-11-17T03:48:38Z",
+      "repository": "nodejs/node",
+      "source": "GitHub",
+      "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.1.1",
+      "version": "v27.0.0-alpha.0.1.1"
+    },
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-11-16T22:40:22Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.52.0",
+      "version": "v3.52.0"
     }
   ],
   "security": {
-    "critical": 76,
-    "high": 296,
-    "kevCatalogTotal": 1781,
+    "critical": 101,
+    "high": 557,
+    "kevCatalogTotal": 1782,
     "latest": [
       {
-        "cvss_score": 5.4,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks.",
-        "id": "CVE-2026-110194",
+        "description": "Access of resource using incompatible type ('type confusion') in Microsoft Office Outlook allows an unauthorized attacker to disclose information over a network.",
+        "id": "CVE-2026-119993",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:29:23.680",
-        "publishedAt": "2026-11-13T22:17:20.493",
+        "lastModifiedAt": "2026-11-17T18:26:48.860",
+        "publishedAt": "2026-11-10T19:20:24.810",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 is vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110194"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow an authenticated caller to bypass upstream credential-level authorization policies due to an insufficiently specific cache key in the RFC 8693 token exchange cache, enabling reuse of cached upstream bearer tokens across different credentials belonging to the same user.",
-        "id": "CVE-2026-110195",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:28:06.033",
-        "publishedAt": "2026-11-13T22:17:20.627",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.11 could allow an authenticated caller to bypass upstream credential-level authorization policies due to an…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110195"
-      },
-      {
-        "cvss_score": 7.4,
-        "cvss_version": "4.0",
-        "description": "In Kura versions <= 5.6.2, `CommandCloudApp.execute()` extracts a caller-supplied ZIP archive into a caller-supplied directory inside the Kura JVM process before dispatching the command to the executor service. On a packaged Kura installation the JVM runs as `kurad` with `CAP_DAC_OVERRIDE`, while the configurable \"Unprivileged\" executor drops to the `kura` user via `su`.\n\n\n\nA caller with…",
-        "id": "CVE-2026-97401",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:34.877",
-        "publishedAt": "2026-11-10T17:17:55.450",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "In Kura versions <= 5.6.2, `CommandCloudApp.execute()` extracts a caller-supplied ZIP archive into a caller-supplied directory inside the Kura JVM process…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97401"
+        "title": "Access of resource using incompatible type ('type confusion') in Microsoft Office Outlook allows an unauthorized attacker to disclose information over a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119993"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Building a malicious package that uses \"//go:cgo_import_dynamic\" or links against a crafted PE object on Windows could pass unsafe library arguments to the external linker. The compiler only checked the first character of the library name in \"//go:cgo_import_dynamic\" directives and skipped validation in cgo-generated files. In addition, on Windows, \"cmd/cgo\" and \"cmd/link\" did not validate…",
-        "id": "CVE-2026-97042",
+        "description": "Release of invalid pointer or reference in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-111309",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:34.507",
-        "publishedAt": "2026-11-11T05:19:58.563",
+        "lastModifiedAt": "2026-11-17T18:26:15.453",
+        "publishedAt": "2026-11-10T19:18:29.113",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Building a malicious package that uses \"//go:cgo_import_dynamic\" or links against a crafted PE object on Windows could pass unsafe library arguments to the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97042"
+        "title": "Release of invalid pointer or reference in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111309"
       },
       {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Building a malicious package containing \"//go:cgo_*\" compiler directives could inject arbitrary flags into the external linker invocation on ELF platforms. The compiler and linker did not reject commas in \"//go:cgo_import_dynamic\", \"//go:cgo_export_dynamic\", \"//go:cgo_export_static\", \"//go:cgo_import_static\", and \"//go:cgo_dynamic_linker\" directives, and the linker passed the dynamic linker path…",
-        "id": "CVE-2026-97041",
+        "description": "Use after free in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-110068",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:34.327",
-        "publishedAt": "2026-11-11T05:19:58.417",
+        "lastModifiedAt": "2026-11-17T18:25:21.800",
+        "publishedAt": "2026-11-10T19:18:25.080",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Building a malicious package containing \"//go:cgo_*\" compiler directives could inject arbitrary flags into the external linker invocation on ELF platforms. The…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97041"
+        "title": "Use after free in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110068"
       },
       {
-        "cvss_score": 9.8,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When loading \".syso\" entries from a package archive, the linker only checked for recognized host object headers (ELF, Mach-O, PE, and XCOFF) before falling through to Go object parsing. A \".syso\" file beginning with a \"go object\" header was parsed as a Go compiler…",
-        "id": "CVE-2026-97040",
+        "description": "Heap-based buffer overflow in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
+        "id": "CVE-2026-110043",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:34.137",
-        "publishedAt": "2026-11-11T05:19:58.283",
+        "lastModifiedAt": "2026-11-17T18:24:22.170",
+        "publishedAt": "2026-11-10T19:18:20.547",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Heap-based buffer overflow in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110043"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Incomplete cleanup in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-126905",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-17T18:20:42.817",
+        "publishedAt": "2026-11-11T23:17:20.403",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Incomplete cleanup in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126905"
+      },
+      {
+        "cvss_score": 8.8,
+        "cvss_version": "3.1",
+        "description": "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-126908",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-17T18:20:25.460",
+        "publishedAt": "2026-11-11T23:17:20.830",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126908"
+      },
+      {
+        "cvss_score": 9.6,
+        "cvss_version": "3.1",
+        "description": "Use after free in Passwords in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-126909",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-17T18:20:06.750",
+        "publishedAt": "2026-11-11T23:17:20.963",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Building a package containing a crafted \".syso\" file could bypass cgo flag validation and inject arbitrary linker flags when linking. When loading \".syso\"…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97040"
+        "title": "Use after free in Passwords in Google Chrome prior to 157.0.8103.78 allowed a remote attacker leveraging social engineering to execute arbitrary code outside…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126909"
       },
       {
-        "cvss_score": 8.3,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Building a malicious package that uses \"#cgo pkg-config:\" directives could load untrusted pkg-config \".pc\" files or inject unvalidated compiler and linker flags. The pkg-config flag allowlist previously permitted \"--with-path=\" and \"--personality=\", allowed \"--define-variable=\" values beginning with \"=\" or \"$\" (which can rewrite paths in system \".pc\" files into sysroot-prefixed \"-L=\" or…",
-        "id": "CVE-2026-97039",
+        "description": "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-126910",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:33.960",
-        "publishedAt": "2026-11-11T05:19:58.133",
+        "lastModifiedAt": "2026-11-17T18:19:36.180",
+        "publishedAt": "2026-11-11T23:17:21.093",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Building a malicious package that uses \"#cgo pkg-config:\" directives could load untrusted pkg-config \".pc\" files or inject unvalidated compiler and linker…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97039"
+        "title": "Type confusion in V8 in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126910"
       },
       {
-        "cvss_score": 4.4,
+        "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, PermissionCheckboxSetField accepts permission codes that the field did not offer and stores them without an allowlist, then renders permission codes without escaping them. A user with access to the Security section can save attacker-controlled content as a permission code, causing JavaScript to execute…",
-        "id": "CVE-2026-91114",
+        "description": "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+        "id": "CVE-2026-126911",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:33.827",
-        "publishedAt": "2026-11-16T17:17:37.217",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-17T18:19:15.090",
+        "publishedAt": "2026-11-11T23:17:21.220",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, PermissionCheckboxSetField accepts permission codes that the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91114"
-      },
-      {
-        "cvss_score": 4.3,
-        "cvss_version": "3.1",
-        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, a CMS user who can edit a record through a GridField detail form can submit a user-controlled ClassName value to change the record into an unrelated class without the create and edit permission checks required for that target class. This permits an unauthorized record type change outside the GridField's…",
-        "id": "CVE-2026-91113",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:33.527",
-        "publishedAt": "2026-11-16T17:17:36.967",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, a CMS user who can edit a record through a GridField detail form…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91113"
-      },
-      {
-        "cvss_score": 5.9,
-        "cvss_version": "4.0",
-        "description": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are present without special internal knowledge and requires no user…",
-        "id": "CVE-2026-40424",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:33.250",
-        "publishedAt": "2026-11-10T18:17:38.110",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40424"
-      },
-      {
-        "cvss_score": 4.8,
-        "cvss_version": "4.0",
-        "description": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an authenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are not present without special internal knowledge and requires no…",
-        "id": "CVE-2026-40216",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:33.060",
-        "publishedAt": "2026-11-10T18:17:37.973",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Out-of-bounds read for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40216"
-      },
-      {
-        "cvss_score": 4.6,
-        "cvss_version": "4.0",
-        "description": "Improper input validation for some Intel(R) oneAPI CLI Tool software within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are not present without special internal knowledge and…",
-        "id": "CVE-2026-40064",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:32.913",
-        "publishedAt": "2026-11-10T18:17:37.837",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Improper input validation for some Intel(R) oneAPI CLI Tool software within Ring 3: User Applications may allow a denial of service. Unprivileged software…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40064"
+        "title": "Use after free in Accessibility in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126911"
       },
       {
         "cvss_score": 8.6,
         "cvss_version": "4.0",
-        "description": "Stack-based buffer overflow in the UEFI firmware for the Intel(R) Slim Bootloader within Ring 0: Bare Metal OS may allow an escalation of privilege. Startup code and smm adversary with an unauthenticated user combined with a low complexity attack may enable escalation of privilege. This result may potentially occur via physical access when attack requirements are not present without special…",
-        "id": "CVE-2026-35500",
+        "description": "OpenEMR before 8.3.0 contains a missing authorization vulnerability in interface/billing/sl_eob_patient_note.php that allows any authenticated user to read and modify patient billing notes. Attackers with low-privilege accounts can enumerate the patient_id parameter and submit POST requests using the embedded CSRF token to view or tamper with confidential billing data.",
+        "id": "CVE-2026-124472",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:32.777",
-        "publishedAt": "2026-11-10T18:17:37.693",
+        "lastModifiedAt": "2026-11-17T18:18:50.343",
+        "publishedAt": "2026-11-08T14:18:15.610",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Stack-based buffer overflow in the UEFI firmware for the Intel(R) Slim Bootloader within Ring 0: Bare Metal OS may allow an escalation of privilege. Startup…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35500"
+        "title": "OpenEMR before 8.3.0 contains a missing authorization vulnerability in interface/billing/sl_eob_patient_note.php that allows any authenticated user to read and…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124472"
       },
       {
-        "cvss_score": 5.9,
-        "cvss_version": "4.0",
-        "description": "Untrusted pointer dereference for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are present without special internal knowledge and…",
-        "id": "CVE-2026-34489",
+        "cvss_score": 9.6,
+        "cvss_version": "3.1",
+        "description": "Buffer overflow in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-126912",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:32.647",
-        "publishedAt": "2026-11-10T18:17:37.547",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-17T18:18:44.747",
+        "publishedAt": "2026-11-11T23:17:21.357",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Untrusted pointer dereference for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34489"
+        "title": "Buffer overflow in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126912"
       },
       {
-        "cvss_score": 5.8,
-        "cvss_version": "4.0",
-        "description": "Heap-based buffer overflow for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software adversary with an unauthenticated user combined with a low complexity attack may enable denial of service. This result may potentially occur via local access when attack requirements are present without special internal knowledge and requires…",
-        "id": "CVE-2026-34017",
+        "cvss_score": 3.4,
+        "cvss_version": "3.1",
+        "description": "Out of bounds read in Compositing in Google Chrome prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to read memory outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-126913",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-16T18:17:32.520",
-        "publishedAt": "2026-11-10T18:17:37.410",
+        "lastModifiedAt": "2026-11-17T18:18:30.320",
+        "publishedAt": "2026-11-11T23:17:21.513",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "Out of bounds read in Compositing in Google Chrome prior to 157.0.8103.78 allowed a remote attacker who had compromised the renderer process to read memory…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126913"
+      },
+      {
+        "cvss_score": 4.3,
+        "cvss_version": "3.1",
+        "description": "Uninitialized resource in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to obtain cross-origin data via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-126914",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-17T18:18:11.783",
+        "publishedAt": "2026-11-11T23:17:21.660",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Heap-based buffer overflow for some Hyperscan before version v5.4.2.1 within Ring 3: User Applications may allow a denial of service. Unprivileged software…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34017"
+        "title": "Uninitialized resource in Skia in Google Chrome prior to 157.0.8103.78 allowed a remote attacker to obtain cross-origin data via a crafted HTML page. (Chromium…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126914"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "4.0",
+        "description": "LibreOffice can import documents in the HWP format, including pictures that link to an external file. An out-of-bounds read existed when the link target of a crafted picture was read, so memory past the picture data could end up in the converted document. In fixed versions the link target is taken only from the picture data.",
+        "id": "CVE-2026-98100",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-17T18:18:01.183",
+        "publishedAt": "2026-11-16T17:17:55.453",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "LibreOffice can import documents in the HWP format, including pictures that link to an external file. An out-of-bounds read existed when the link target of a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-98100"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "4.0",
+        "description": "LibreOffice Base documents can hold an embedded HSQLDB database. When the experimental features option is enabled, LibreOffice offers to migrate such a database to the embedded Firebird engine when the document is opened. A heap buffer overflow existed when binary values were copied during the migration, because a value could be longer than the space set aside for its column. In fixed versions…",
+        "id": "CVE-2026-97999",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-17T18:18:01.067",
+        "publishedAt": "2026-11-16T17:17:55.303",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "LibreOffice Base documents can hold an embedded HSQLDB database. When the experimental features option is enabled, LibreOffice offers to migrate such a…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97999"
       }
     ],
-    "low": 27,
-    "medium": 189,
+    "low": 100,
+    "medium": 556,
     "none": 0,
-    "unscored": 28
+    "unscored": 9
   },
   "snapshot": {
-    "cves": 616,
-    "kevAdded": 0,
-    "knownExploited": 6,
+    "cves": 1323,
+    "kevAdded": 1,
+    "knownExploited": 0,
     "projects": 18,
-    "releases": 1,
-    "techEntries": 18
+    "releases": 5,
+    "techEntries": 37
   },
   "sources": {
     "opensource": {
@@ -926,7 +971,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 1,
+        "inWindow": 5,
         "status": "partial",
         "total": 52
       }
@@ -934,146 +979,146 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1781
+        "inWindow": 1,
+        "status": "success",
+        "total": 1782
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 616,
+        "inWindow": 1323,
         "status": "success",
-        "total": 616
+        "total": 1323
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 18,
+        "inWindow": 37,
         "status": "success",
-        "total": 232
+        "total": 231
       }
     }
   },
   "technology": [
     {
-      "category": "security",
-      "publishedAt": "2026-11-16T18:28:00+00:00",
-      "source": "The Register",
-      "summary": "Flaw can take down an entire host, even when the vulnerable service is running inside a container",
-      "title": "NoisyTCP bug gives Linux servers a remote crash problem 11 years in the making",
-      "url": "https://www.theregister.com/security/2026/11/16/noisytcp-bug-gives-linux-servers-a-remote-crash-problem-11-years-in-the-making/5310144"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-16T18:01:00+00:00",
-      "source": "The Register",
-      "summary": "Opt-in Edge archive gives Pro subscribers early access before full testing, while normal updates remain human-validated",
-      "title": "Ubuntu gets AI-generated security fixes for those feeling brave",
-      "url": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139"
+      "category": "tech",
+      "publishedAt": "2026-11-17T18:29:29+00:00",
+      "source": "GitHub Blog",
+      "summary": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half. The post Maintainers don’t need more AI bug…",
+      "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+      "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-16T17:55:46+00:00",
+      "publishedAt": "2026-11-17T18:20:40+00:00",
+      "source": "GitHub Blog",
+      "summary": "Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud. The post Building the Agent Host Protocol for sessions that continue across devices appeared first on The GitHub Blog .",
+      "title": "Building the Agent Host Protocol for sessions that continue across devices",
+      "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-17T17:45:00+00:00",
+      "source": "The Register",
+      "summary": "Cheap tiny e-readers and the perils of LLM-generated drive-by pull requests – plus much more",
+      "title": "Inspiring FOSS project Crosspoint Reader has lessons about tech, communities, and LLMs",
+      "url": "https://www.theregister.com/software/2026/11/17/inspiring-foss-project-crosspoint-reader-has-lessons-about-tech-communities-and-llms/5310424"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-17T17:13:28+00:00",
+      "source": "The Register",
+      "summary": "After more than two decades in Walldorf, Thomas Saueressig takes reins at hosting provider in April",
+      "title": "SAP's cloud migration chief is migrating to Ionos as CEO",
+      "url": "https://www.theregister.com/software/2026/11/17/saps-cloud-migration-chief-is-migrating-to-ionos-as-ceo/5310530"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-17T17:06:43+00:00",
       "source": "AWS",
-      "summary": "A second delivery of the same message can reveal more about an application than its happy-path demo. I like tools that make those cases easier to investigate while a change is still small. Last week’s launch of AWS Emulator brings part of that work onto your own machine…",
-      "title": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
-      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/"
+      "summary": "As AWS re:Invent is around the corner, we’re proud to recognize a new group of AWS Heroes. Every Hero finds their own way to give back, whether through sharing what they know, bringing people together, or building tools that help others succeed. What they have in common is a…",
+      "title": "Four Continents, Four New AWS Heroes: Closing Out 2026",
+      "url": "https://aws.amazon.com/blogs/aws/four-continents-four-new-aws-heroes-closing-out-2026/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-16T17:27:00+00:00",
-      "source": "The Register",
-      "summary": "Another unscheduled patch for IT teams already having quite enough fun with Redmond",
-      "title": "Microsoft fixes Windows activation as admins pick through Exchange outage wreckage",
-      "url": "https://www.theregister.com/software/2026/11/16/microsoft-fixes-windows-activation-as-admins-pick-through-exchange-outage-wreckage/5310102"
+      "publishedAt": "2026-11-17T17:01:02+00:00",
+      "source": "Netflix",
+      "summary": "",
+      "title": "Engineering AI Discover",
+      "url": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38?source=rss----2615bd06b42e---4"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-17T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "The Google Cloud partner ecosystem plays an essential role in driving customer success. As we enter a transformative new era, our partners are instrumental in helping move AI from early pilots into true production-grade deployment. Closing that gap takes far more than technology…",
+      "title": "Congratulations to our 2026 Google Cloud Partner All-stars",
+      "url": "https://cloud.google.com/blog/topics/partners/2026-google-cloud-partner-all-stars-winners/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-17T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Over the past year, we’ve focused on making Looker easier to use for every business user. We started by redesigning the exploration experience with drag-and-drop workspaces , streamlined field pickers, and conversational analytics to make it easier to start from a blank canvas…",
+      "title": "The visual evolution of Looker: Modern design for enterprise data storytelling",
+      "url": "https://cloud.google.com/blog/products/business-intelligence/modern-data-visualizations-and-custom-charts-in-looker/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-17T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "For the third time in a row, Google Cloud is recognized as a Leader in the 2026 Gartner Magic Quadrant for AI Application Development Platforms , positioned highest overall on the Ability to Execute axis. 1 These days, it’s very clear to us that organizations are looking for AI…",
+      "title": "Google Cloud is a Leader in the 2026 Gartner Magic Quadrant for AI Application Development Platforms",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-a-leader-in-the-2026-gartner-magic-quadrant/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-16T17:03:00+00:00",
+      "publishedAt": "2026-11-17T16:15:00+00:00",
       "source": "The Register",
-      "summary": "570 bogus accounts, one rewritten welcome email, and a fake YouTube page, but CEO says no breach",
-      "title": "Crook turns free trials into phishing factory, as LearnWorlds sends 13,000 fake YouTube copyright notices",
-      "url": "https://www.theregister.com/security/2026/11/16/crook-turns-free-trials-into-phishing-factory-as-learnworlds-sends-13000-fake-youtube-copyright-notices/5310122"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-16T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "There’s a lot more to AI infrastructure than just buying accelerators. Indeed, the infrastructure mandate for enterprise AI has shifted from acquiring accelerators to keeping them fully utilized. Next to these expensive accelerators, storage accounts for only a small sliver of…",
-      "title": "Beyond the compute bottleneck: Maximizing the ROI of AI accelerators with purpose-built storage",
-      "url": "https://cloud.google.com/blog/products/storage-data-transfer/maximizing-ai-accelerator-roi-with-purpose-built-storage/"
+      "summary": "Ride-hailing biz says stolen credentials allowed crooks to help themselves to driver's license data",
+      "title": "Hackers smash 'n' grab AI vendor: Take off with license data of Uber drivers",
+      "url": "https://www.theregister.com/security/2026/11/17/hackers-smash-n-grab-ai-vendor-take-off-with-license-data-of-uber-drivers/5310464"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-16T16:15:00+00:00",
+      "publishedAt": "2026-11-17T15:29:00+00:00",
       "source": "The Register",
-      "summary": "Securing supply chains or coercing other nations to help Washington sideline Beijing and its AI ambitions?",
-      "title": "US allies deepen deal to guard AI supply chains against 'hostile actors' (cough, China, cough)",
-      "url": "https://www.theregister.com/systems/2026/11/16/us-allies-deepen-deal-to-guard-ai-supply-chains-against-hostile-actors-cough-china-cough/5310094"
+      "summary": "Intune feature blocks normal sign-ins without wiping data, while another test build drops Offline Maps settings",
+      "title": "Windows 11 previews remote padlock only IT can open",
+      "url": "https://www.theregister.com/os-platforms/2026/11/17/windows-11-previews-remote-padlock-only-it-can-open/5310402"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-16T16:00:00+00:00",
-      "source": "The Register",
-      "summary": "PARTNER CONTENT: AI agents are making security vulnerabilities easier to find and exploit in your code. Software engineering and application security teams need new ways to find and fix them",
-      "title": "Has AI’s ‘Black October’ changed the way you secure your code?",
-      "url": "https://www.theregister.com/security/2026/11/16/partner-content-has-ais-black-october-changed-the-way-you-secure-your-code/5309775"
+      "publishedAt": "2026-11-17T14:00:29+00:00",
+      "source": "Ars Technica",
+      "summary": "AI agent takes unapproved actions even when laptop lid is closed and told not to.",
+      "title": "Grok Bot took unapproved actions, ignored orders to stop, and then denied it",
+      "url": "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-17T14:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Written by: Josh Murchie, John Wolfram, Joseph Spero, Peter Ukhanov, Fernando Tomlinson, Jr., Wesley Shields Introduction Over the past year, Mandiant has responded to a series of linked intrusions demonstrating how Russian cyber espionage group COLD RELIC (formerly tracked as…",
+      "title": "COLD RELIC: A Case Study in Impersonation and Compromise",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/cold-relic-a-case-study-in-impersonation-and-compromise/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-16T14:00:00+00:00",
+      "publishedAt": "2026-11-17T13:32:00+00:00",
       "source": "The Register",
-      "summary": "Look ma, no human in the loop!",
-      "title": "Google: AI agent turned a security patch into a working exploit with no human help",
-      "url": "https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-16T14:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Written by: Aurora Blum, Kelli Vanderlee, Jess Xia, David Mainor Executive Summary As threat actors increasingly move beyond basic prompting to deploying autonomous multi-agent frameworks , automated vulnerability exploitation pipelines, and alternative monetization schemes like…",
-      "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-16T10:15:00+00:00",
-      "source": "The Register",
-      "summary": "Devuan-based distro swaps Wayland for XLibre and i3, with Xfce waiting if the tiling gets tiresome",
-      "title": "Omaxian takes the Omarchy look down a different Linux backstreet",
-      "url": "https://www.theregister.com/os-platforms/2026/11/16/omaxian-takes-the-omarchy-look-down-a-different-linux-backstreet/5309750"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-16T08:30:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Google has been recognized as a Leader and positioned furthest in vision in the 2026 Gartner® Magic Quadrant™ for Cloud Operational Database Management Systems (Cloud ODBMS). This recognition comes as we cross into the era of agentic AI. Leading enterprises are in their journey…",
-      "title": "Google is a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud Operational Database Management Systems",
-      "url": "https://cloud.google.com/blog/products/databases/2026-gartner-mq-cloud-operational-databases-management-systems/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-16T08:05:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Digital sovereignty is evolving from a standard compliance requirement into a powerful strategic advantage for regulated industries worldwide. From European frameworks designed to meet sovereign standards (DORA, EHDS, GDPR) to FedRAMP/ILs/ITARs in the U.S., or expanding mandates…",
-      "title": "Inside the new Google Cloud Data Boundary experience",
-      "url": "https://cloud.google.com/blog/products/identity-security/inside-the-new-data-boundary-experience/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-16T08:05:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Across Europe, organizations handling sensitive workloads in regulated sectors — such as financial services, healthcare, critical infrastructure, and the public sector — are trying to modernize their infrastructure while adhering to strict local data governance standards…",
-      "title": "How ISVs are unlocking European workloads using Google Cloud Dedicated technology",
-      "url": "https://cloud.google.com/blog/products/identity-security/how-isvs-are-unlocking-european-workloads-on-google-cloud-dedicated/"
+      "summary": "Even strict authentication mode has a hole, we're told, while basic exploit defenses are missing from the firmware",
+      "title": "'Not rocket surgery' claims researcher who found six Danfoss fridge controller zero-days in under an hour",
+      "url": "https://www.theregister.com/security/2026/11/17/not-rocket-surgery-claims-researcher-who-found-six-danfoss-fridge-controller-zero-days-in-under-an-hour/5310197"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-14T08:18:00+00:00",
+      "publishedAt": "2026-11-17T11:44:00+00:00",
       "source": "The Register",
-      "summary": "Accessing banned content is as easy as whipping out a thesaurus, Parliament's Communications and Digital Committee hears",
-      "title": "Big Tech takes a beating as online safety experts accuse companies of doing bare minimum",
-      "url": "https://www.theregister.com/security/2026/11/14/big-tech-takes-a-beating-as-online-safety-experts-accuse-companies-of-doing-bare-minimum/5309302"
+      "summary": "Market research company brings in external specialists to grok cause and scope",
+      "title": "Opinion pollster Ipsos 'fesses up to 'cybersecurity incident'",
+      "url": "https://www.theregister.com/security/2026/11/17/opinion-pollster-ipsos-fesses-up-to-cybersecurity-incident/5310405"
     }
   ]
 }
