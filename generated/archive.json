@@ -1,6 +1,239 @@
 {
   "archive": [
     {
+      "date": "2026-11-19",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": -155,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201603,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": -124,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143583,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -144,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 140045,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -176,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129180,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": -150,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123752,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": -135,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 122185,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": -151,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 115118,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": -156,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105654,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": -115,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98641,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -204,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91809,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 3,
+          "other": 0,
+          "patch": 1
+        },
+        "recent": [
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-18T16:04:26Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.55.1",
+            "version": "v3.55.1"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-18T05:21:54Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.55.0",
+            "version": "v3.55.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-17T22:42:56Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.54.0",
+            "version": "v3.54.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-17T18:40:24Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.53.0",
+            "version": "v3.53.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 235,
+          "HIGH": 933,
+          "LOW": 149,
+          "MEDIUM": 928,
+          "NONE": 36,
+          "UNSCORED": 59
+        }
+      },
+      "snapshot": {
+        "cves": 2340,
+        "kevAdded": 4,
+        "knownExploited": 1,
+        "projects": 18,
+        "releases": 4,
+        "techEntries": 39
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 4,
+          "status": "success",
+          "total": 1786
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 4,
+          "status": "partial",
+          "total": 52
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 2340,
+          "status": "success",
+          "total": 2340
+        },
+        "rss": {
+          "failures": 1,
+          "inWindow": 39,
+          "status": "partial",
+          "total": 211
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 24,
+          "tech": 15
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-18T17:45:00+00:00",
+            "source": "The Register",
+            "title": "California tells Waymo to take the next exit after freeway mishaps",
+            "url": "https://www.theregister.com/security/2026/11/18/california-tells-waymo-to-take-the-next-exit-after-freeway-mishaps/5310841"
+          },
+          {
+            "published_at": "2026-11-18T17:23:37+00:00",
+            "source": "The Register",
+            "title": "Microsoft's official Python agent framework hijacked to distribute malware",
+            "url": "https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858"
+          },
+          {
+            "published_at": "2026-11-18T17:00:00+00:00",
+            "source": "Meta",
+            "title": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+            "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/"
+          },
+          {
+            "published_at": "2026-11-18T16:59:38+00:00",
+            "source": "Meta",
+            "title": "Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem",
+            "url": "https://engineering.fb.com/2026/11/18/ml-applications/design-once-deploy-at-scale-template-driven-ml-ecosystem/"
+          },
+          {
+            "published_at": "2026-11-18T16:00:00+00:00",
+            "source": "The Register",
+            "title": "Cyber insurers now want proof you can actually recover",
+            "url": "https://www.theregister.com/security/2026/11/18/partner-content-cyber-insurers-now-want-proof-you-can-actually-recover/5309325"
+          },
+          {
+            "published_at": "2026-11-18T15:00:00+00:00",
+            "source": "The Register",
+            "title": "AI-powered cyber threats are changing the rules of enterprise recovery",
+            "url": "https://www.theregister.com/security/2026/11/18/sponsored-ai-powered-cyber-threats-are-changing-the-rules-of-enterprise-recovery/5310515"
+          },
+          {
+            "published_at": "2026-11-18T14:52:10+00:00",
+            "source": "Cloudflare",
+            "title": "How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)",
+            "url": "https://blog.cloudflare.com/java4shell-waf-protection/"
+          },
+          {
+            "published_at": "2026-11-18T09:30:00+00:00",
+            "source": "The Register",
+            "title": "UK MPs want AI watchdog with power to pull the plug on dangerous models",
+            "url": "https://www.theregister.com/ai-and-ml/2026/11/18/uk-mps-want-ai-watchdog-with-power-to-pull-the-plug-on-dangerous-models/5310567"
+          },
+          {
+            "published_at": "2026-11-18T04:33:05+00:00",
+            "source": "The Register",
+            "title": "Oracle reveals fix-this-ASAP-grade Java4Shell bug that allows attacks on many third-party apps",
+            "url": "https://www.theregister.com/security/2026/11/18/oracle-reveals-fix-this-asap-grade-java4shell-bug-that-allows-attacks-on-many-third-party-apps/5310661"
+          },
+          {
+            "published_at": "2026-11-17T23:41:31+00:00",
+            "source": "The Register",
+            "title": "Daily disruptive outages that ground planes and halt work – welcome to the new normal",
+            "url": "https://www.theregister.com/security/2026/11/17/daily-disruptive-outages-that-ground-planes-and-halt-work-welcome-to-the-new-normal/5310634"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-18",
       "opensource": {
         "topProjects": [
@@ -13952,8 +14185,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-18T01:11:17.308574+00:00",
-    "totalSnapshots": 63,
+    "generatedAt": "2026-11-19T00:41:27.496810+00:00",
+    "totalSnapshots": 64,
     "warnings": []
   }
 }

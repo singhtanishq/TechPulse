@@ -1,0 +1,362 @@
+{
+  "coveredIstDay": "2026-11-18",
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T00:41:27.496810+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": -155,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201603,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": -124,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143583,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": -144,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 140045,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": -176,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 129180,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": -150,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123752,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": -135,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 122185,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": -151,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 115118,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": -156,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105654,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": -115,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98641,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": -204,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91809,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 3,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "openai-python",
+        "published_at": "2026-11-18T16:04:26Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.55.1",
+        "version": "v3.55.1"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-11-18T05:21:54Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.55.0",
+        "version": "v3.55.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-11-17T22:42:56Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.54.0",
+        "version": "v3.54.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-11-17T18:40:24Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.53.0",
+        "version": "v3.53.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-90817",
+        "date_added": "2026-11-18",
+        "product": "Research Electronic Data Capture (REDCap)",
+        "vendor_project": "Vanderbilt University",
+        "vulnerability_name": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-90436",
+        "date_added": "2026-11-18",
+        "product": "Axis",
+        "vendor_project": "Apache",
+        "vulnerability_name": "Apache Axis Unsafe Reflection Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-40217",
+        "date_added": "2026-11-18",
+        "product": "LiteLLM",
+        "vendor_project": "BerriAI",
+        "vulnerability_name": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2024-10441",
+        "date_added": "2026-11-18",
+        "product": "DiskStation Manager (DSM)",
+        "vendor_project": "Synology",
+        "vulnerability_name": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 8.7,
+        "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, the WebSocket reader retains one bytes object for each transport read while reassembling an incomplete ",
+        "id": "CVE-2026-123817",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123817"
+      },
+      {
+        "cvss": 8.8,
+        "description": "Use after free in WebAudio in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical",
+        "id": "CVE-2026-130975",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130975"
+      },
+      {
+        "cvss": 8.3,
+        "description": "Use after free in UserEducation in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted H",
+        "id": "CVE-2026-130974",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130974"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Information leak in Enterprise in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to leak sensitive information via a crafted HTML page. (Chromium security severity: Low)",
+        "id": "CVE-2026-130981",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130981"
+      },
+      {
+        "cvss": 5.3,
+        "description": "Incorrect authorization in Sensor in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to obtain sensitive information via a crafted HTML page. (C",
+        "id": "CVE-2026-130973",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130973"
+      },
+      {
+        "cvss": 6.5,
+        "description": "Incorrect authorization in Media in Google Chrome prior to 158.0.8127.36 allowed a local attacker to leak sensitive information via UI Interaction. (Chromium security severity: Low)",
+        "id": "CVE-2026-130978",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130978"
+      },
+      {
+        "cvss": 8.7,
+        "description": "llama.cpp b2877 before b11935 contains an uncaught exception vulnerability in the ggml-rpc server that allows unauthenticated remote attackers to crash the rpc-server by sending oversized message leng",
+        "id": "CVE-2026-119052",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119052"
+      },
+      {
+        "cvss": 4.7,
+        "description": "Use of uninitialized resource in Windows Graphics Kernel allows an authorized attacker to disclose information locally.",
+        "id": "CVE-2026-96144",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96144"
+      },
+      {
+        "cvss": 7.8,
+        "description": "Heap-based buffer overflow in Windows Graphics Kernel allows an authorized attacker to elevate privileges locally.",
+        "id": "CVE-2026-96126",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96126"
+      },
+      {
+        "cvss": 8.8,
+        "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.1.1, the `Cross-Domain Single Sign-On` (`CDSSO`) servlet allows a logged-in user's raw OpenAM session token to be POSTed t",
+        "id": "CVE-2026-45049",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45049"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 235,
+      "HIGH": 933,
+      "LOW": 149,
+      "MEDIUM": 928,
+      "NONE": 36,
+      "UNSCORED": 59
+    }
+  },
+  "snapshot": {
+    "cves": 2340,
+    "kevAdded": 4,
+    "knownExploited": 1,
+    "projects": 18,
+    "releases": 4,
+    "techEntries": 39
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 4,
+      "status": "success",
+      "total": 1786
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 4,
+      "status": "partial",
+      "total": 52
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 2340,
+      "status": "success",
+      "total": 2340
+    },
+    "rss": {
+      "failures": 1,
+      "inWindow": 39,
+      "status": "partial",
+      "total": 211
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 24,
+      "tech": 15
+    },
+    "recent": [
+      {
+        "published_at": "2026-11-18T17:45:00+00:00",
+        "source": "The Register",
+        "title": "California tells Waymo to take the next exit after freeway mishaps",
+        "url": "https://www.theregister.com/security/2026/11/18/california-tells-waymo-to-take-the-next-exit-after-freeway-mishaps/5310841"
+      },
+      {
+        "published_at": "2026-11-18T17:23:37+00:00",
+        "source": "The Register",
+        "title": "Microsoft's official Python agent framework hijacked to distribute malware",
+        "url": "https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858"
+      },
+      {
+        "published_at": "2026-11-18T17:00:00+00:00",
+        "source": "Meta",
+        "title": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+        "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/"
+      },
+      {
+        "published_at": "2026-11-18T16:59:38+00:00",
+        "source": "Meta",
+        "title": "Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem",
+        "url": "https://engineering.fb.com/2026/11/18/ml-applications/design-once-deploy-at-scale-template-driven-ml-ecosystem/"
+      },
+      {
+        "published_at": "2026-11-18T16:00:00+00:00",
+        "source": "The Register",
+        "title": "Cyber insurers now want proof you can actually recover",
+        "url": "https://www.theregister.com/security/2026/11/18/partner-content-cyber-insurers-now-want-proof-you-can-actually-recover/5309325"
+      },
+      {
+        "published_at": "2026-11-18T15:00:00+00:00",
+        "source": "The Register",
+        "title": "AI-powered cyber threats are changing the rules of enterprise recovery",
+        "url": "https://www.theregister.com/security/2026/11/18/sponsored-ai-powered-cyber-threats-are-changing-the-rules-of-enterprise-recovery/5310515"
+      },
+      {
+        "published_at": "2026-11-18T14:52:10+00:00",
+        "source": "Cloudflare",
+        "title": "How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)",
+        "url": "https://blog.cloudflare.com/java4shell-waf-protection/"
+      },
+      {
+        "published_at": "2026-11-18T09:30:00+00:00",
+        "source": "The Register",
+        "title": "UK MPs want AI watchdog with power to pull the plug on dangerous models",
+        "url": "https://www.theregister.com/ai-and-ml/2026/11/18/uk-mps-want-ai-watchdog-with-power-to-pull-the-plug-on-dangerous-models/5310567"
+      },
+      {
+        "published_at": "2026-11-18T04:33:05+00:00",
+        "source": "The Register",
+        "title": "Oracle reveals fix-this-ASAP-grade Java4Shell bug that allows attacks on many third-party apps",
+        "url": "https://www.theregister.com/security/2026/11/18/oracle-reveals-fix-this-asap-grade-java4shell-bug-that-allows-attacks-on-many-third-party-apps/5310661"
+      },
+      {
+        "published_at": "2026-11-17T23:41:31+00:00",
+        "source": "The Register",
+        "title": "Daily disruptive outages that ground planes and halt work – welcome to the new normal",
+        "url": "https://www.theregister.com/security/2026/11/17/daily-disruptive-outages-that-ground-planes-and-halt-work-welcome-to-the-new-normal/5310634"
+      }
+    ],
+    "sources": {
+      "AWS": 2,
+      "Ars Technica": 3,
+      "Cloudflare": 2,
+      "GitHub Blog": 2,
+      "Meta": 2,
+      "Netflix": 1,
+      "The Register": 27
+    }
+  },
+  "window": {
+    "end": "2026-11-18T18:30:00+00:00",
+    "start": "2026-11-17T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
