@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-11-20",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 54,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201657,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 18,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143601,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 55,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 140100,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 100,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129280,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 54,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123806,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 99,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 122284,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 60,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 115178,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 62,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105716,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 45,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98686,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 54,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91863,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 146,
+          "HIGH": 530,
+          "LOW": 114,
+          "MEDIUM": 501,
+          "NONE": 0,
+          "UNSCORED": 260
+        }
+      },
+      "snapshot": {
+        "cves": 1551,
+        "kevAdded": 0,
+        "knownExploited": 7,
+        "projects": 18,
+        "releases": 0,
+        "techEntries": 60
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1786
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 52
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1551,
+          "status": "success",
+          "total": 1551
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 60,
+          "status": "success",
+          "total": 230
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 25,
+          "tech": 35
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-19T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Helping our partners market smarter, together, with Gemini",
+            "url": "https://cloud.google.com/blog/topics/partners/helping-our-partners-market-smarter-together-with-gemini/"
+          },
+          {
+            "published_at": "2026-11-19T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new with Google Cloud",
+            "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+          },
+          {
+            "published_at": "2026-11-19T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Introducing object enrichments: Transform unstructured data into agent-ready context",
+            "url": "https://cloud.google.com/blog/products/storage-data-transfer/cost-effective-ai-context-extraction-from-unstructured-gcs-data/"
+          },
+          {
+            "published_at": "2026-11-19T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Introducing in-place migration to GKE Dataplane V2",
+            "url": "https://cloud.google.com/blog/products/networking/gke-dataplane-v2-in-place-migration/"
+          },
+          {
+            "published_at": "2026-11-19T16:20:00+00:00",
+            "source": "The Register",
+            "title": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
+            "url": "https://www.theregister.com/security/2026/11/19/russian-national-accused-of-stalking-san-francisco-techie-in-plot-against-us-defense-tech-giant/5311126"
+          },
+          {
+            "published_at": "2026-11-19T16:00:00+00:00",
+            "source": "GitHub Blog",
+            "title": "The best things in open source are built together",
+            "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/"
+          },
+          {
+            "published_at": "2026-11-19T14:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "ARMORY CASTLE Exploits vSphere",
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/"
+          },
+          {
+            "published_at": "2026-11-19T14:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Scaling workforce productivity and upskilling in the agentic era",
+            "url": "https://cloud.google.com/blog/topics/public-sector/scaling-workforce-productivity-and-upskilling-in-the-agentic-era/"
+          },
+          {
+            "published_at": "2026-11-19T14:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Internet traffic and attacks during the 2026 U.S. midterm elections",
+            "url": "https://blog.cloudflare.com/internet-traffic-2026-us-election/"
+          },
+          {
+            "published_at": "2026-11-19T11:45:00+00:00",
+            "source": "The Register",
+            "title": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
+            "url": "https://www.theregister.com/security/2026/11/19/cyberattack-on-service-provider-exposes-payee-data-at-40-irish-credit-unions/5310979"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-19",
       "opensource": {
         "topProjects": [
@@ -14185,8 +14389,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-19T00:41:27.496810+00:00",
-    "totalSnapshots": 64,
+    "generatedAt": "2026-11-20T00:49:24.467944+00:00",
+    "totalSnapshots": 65,
     "warnings": []
   }
 }

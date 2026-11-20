@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1551,
+      "date": "2026-11-20",
+      "kevAdded": 0,
+      "knownExploited": 7,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 60
+    },
+    {
       "cves": 2340,
       "date": "2026-11-19",
       "kevAdded": 4,
@@ -578,16 +587,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-18",
-    "date": "2026-11-19",
-    "daysObserved": 64,
-    "generatedAt": "2026-11-19T00:41:27.496810+00:00",
-    "snapshots": 64,
+    "coveredDate": "2026-11-19",
+    "date": "2026-11-20",
+    "daysObserved": 65,
+    "generatedAt": "2026-11-20T00:49:24.467944+00:00",
+    "snapshots": 65,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": -155,
+      "daily_growth": 54,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -595,11 +604,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201603,
+      "stars": 201657,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": -124,
+      "daily_growth": 18,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -607,11 +616,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143583,
+      "stars": 143601,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": -144,
+      "daily_growth": 55,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -619,11 +628,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 140045,
+      "stars": 140100,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": -176,
+      "daily_growth": 100,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -631,11 +640,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129180,
+      "stars": 129280,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": -150,
+      "daily_growth": 54,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -643,11 +652,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123752,
+      "stars": 123806,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": -135,
+      "daily_growth": 99,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -655,11 +664,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122185,
+      "stars": 122284,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": -151,
+      "daily_growth": 60,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -667,11 +676,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115118,
+      "stars": 115178,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": -156,
+      "daily_growth": 62,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -679,11 +688,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105654,
+      "stars": 105716,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": -115,
+      "daily_growth": 45,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -691,11 +700,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98641,
+      "stars": 98686,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": -204,
+      "daily_growth": 54,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -703,261 +712,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91809,
+      "stars": 91863,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [
-    {
-      "kind": "patch",
-      "project": "openai-python",
-      "publishedAt": "2026-11-18T16:04:26Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.55.1",
-      "version": "v3.55.1"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-18T05:21:54Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.55.0",
-      "version": "v3.55.0"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-17T22:42:56Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.54.0",
-      "version": "v3.54.0"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-17T18:40:24Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.53.0",
-      "version": "v3.53.0"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 235,
-    "high": 933,
+    "critical": 146,
+    "high": 530,
     "kevCatalogTotal": 1786,
     "latest": [
       {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, the WebSocket reader retains one bytes object for each transport read while reassembling an incomplete frame. A malicious peer can split a frame into many tiny reads so per-object overhead substantially exceeds the payload bytes allowed by max_msg_size. The condition affects a server receiving frames…",
-        "id": "CVE-2026-123817",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:29:34.233",
-        "publishedAt": "2026-11-09T22:18:38.273",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, the WebSocket reader retains one bytes object for each…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123817"
-      },
-      {
         "cvss_score": 8.8,
         "cvss_version": "3.1",
-        "description": "Use after free in WebAudio in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-        "id": "CVE-2026-130975",
+        "description": "Use after free in DOM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "id": "CVE-2026-131022",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:27:43.213",
-        "publishedAt": "2026-11-17T21:17:53.913",
+        "lastModifiedAt": "2026-11-19T18:28:05.060",
+        "publishedAt": "2026-11-17T21:17:59.757",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Use after free in WebAudio in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130975"
+        "title": "Use after free in DOM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131022"
+      },
+      {
+        "cvss_score": 4.4,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL…",
+        "id": "CVE-2026-101611",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-19T18:24:03.190",
+        "publishedAt": "2026-10-20T22:18:14.880",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are MySQL Server…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101611"
+      },
+      {
+        "cvss_score": 4.9,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise…",
+        "id": "CVE-2026-101610",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-19T18:23:32.343",
+        "publishedAt": "2026-10-20T22:18:14.770",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are MySQL…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101610"
+      },
+      {
+        "cvss_score": 4.4,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL…",
+        "id": "CVE-2026-101609",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-19T18:22:53.600",
+        "publishedAt": "2026-10-20T22:18:14.657",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are MySQL Server…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101609"
       },
       {
         "cvss_score": 8.3,
         "cvss_version": "3.1",
-        "description": "Use after free in UserEducation in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-        "id": "CVE-2026-130974",
+        "description": "Vulnerability in the Service Delivery Platform product of Oracle Fusion Middleware (component: Messaging Enabler).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the Service Delivery Platform executes to compromise Service…",
+        "id": "CVE-2026-91558",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:27:02.130",
-        "publishedAt": "2026-11-17T21:17:53.760",
+        "lastModifiedAt": "2026-11-19T18:18:14.757",
+        "publishedAt": "2026-11-17T22:19:24.303",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Use after free in UserEducation in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to execute arbitrary…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130974"
+        "title": "Vulnerability in the Service Delivery Platform product of Oracle Fusion Middleware (component: Messaging Enabler).  Supported versions that are affected are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91558"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 8.6,
         "cvss_version": "3.1",
-        "description": "Information leak in Enterprise in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to leak sensitive information via a crafted HTML page. (Chromium security severity: Low)",
-        "id": "CVE-2026-130981",
+        "description": "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Thirdparty Jars).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Platform Security for Java.  While the vulnerability is in Oracle Platform…",
+        "id": "CVE-2026-91548",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:25:31.990",
-        "publishedAt": "2026-11-17T21:17:54.640",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-19T18:18:14.643",
+        "publishedAt": "2026-11-17T22:19:23.963",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "Information leak in Enterprise in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to leak sensitive information via a crafted HTML page…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130981"
+        "title": "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Thirdparty Jars).  Supported versions that…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91548"
       },
       {
-        "cvss_score": 5.3,
+        "cvss_score": 6.1,
         "cvss_version": "3.1",
-        "description": "Incorrect authorization in Sensor in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to obtain sensitive information via a crafted HTML page. (Chromium security severity: Low)",
-        "id": "CVE-2026-130973",
+        "description": "Vulnerability in the Oracle Application Development Framework (ADF) product of Oracle Fusion Middleware (component: ADF Faces).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Application Development Framework (ADF).  Successful attacks require human interaction from a person…",
+        "id": "CVE-2026-91544",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:24:42.313",
-        "publishedAt": "2026-11-17T21:17:53.640",
+        "lastModifiedAt": "2026-11-19T18:18:14.530",
+        "publishedAt": "2026-11-17T22:19:23.853",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Incorrect authorization in Sensor in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to obtain…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130973"
+        "title": "Vulnerability in the Oracle Application Development Framework (ADF) product of Oracle Fusion Middleware (component: ADF Faces).   The supported version that is…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91544"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 8.7,
         "cvss_version": "3.1",
-        "description": "Incorrect authorization in Media in Google Chrome prior to 158.0.8127.36 allowed a local attacker to leak sensitive information via UI Interaction. (Chromium security severity: Low)",
-        "id": "CVE-2026-130978",
+        "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via SAML to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly…",
+        "id": "CVE-2026-91509",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:24:13.290",
-        "publishedAt": "2026-11-17T21:17:54.280",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-19T18:18:14.420",
+        "publishedAt": "2026-11-17T22:19:22.703",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "Incorrect authorization in Media in Google Chrome prior to 158.0.8127.36 allowed a local attacker to leak sensitive information via UI Interaction. (Chromium…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-130978"
+        "title": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91509"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly…",
+        "id": "CVE-2026-91507",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-19T18:18:14.303",
+        "publishedAt": "2026-11-17T22:19:22.587",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91507"
+      },
+      {
+        "cvss_score": 9.4,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in  unauthorized…",
+        "id": "CVE-2026-91469",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-19T18:18:14.190",
+        "publishedAt": "2026-11-17T22:19:22.107",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91469"
       },
       {
         "cvss_score": 8.7,
         "cvss_version": "4.0",
-        "description": "llama.cpp b2877 before b11935 contains an uncaught exception vulnerability in the ggml-rpc server that allows unauthenticated remote attackers to crash the rpc-server by sending oversized message lengths. After the HELLO handshake, attackers can send a command such as SET_TENSOR with a length above std::vector::max_size(), triggering an uncaught std::length_error that aborts the process and…",
-        "id": "CVE-2026-119052",
+        "description": "OPEXUS eComplaint before version 9.0.45.0 allows an attacker to visit the 'DocumentOpen.aspx' endpoint, iterate through predictable values of 'chargeNumber', and download any uploaded files.",
+        "id": "CVE-2026-22235",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:23:35.340",
-        "publishedAt": "2026-10-29T14:17:52.310",
+        "lastModifiedAt": "2026-11-19T18:18:13.620",
+        "publishedAt": "2026-01-08T18:16:00.523",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "llama.cpp b2877 before b11935 contains an uncaught exception vulnerability in the ggml-rpc server that allows unauthenticated remote attackers to crash the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119052"
+        "title": "OPEXUS eComplaint before version 9.0.45.0 allows an attacker to visit the 'DocumentOpen.aspx' endpoint, iterate through predictable values of 'chargeNumber'…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22235"
       },
       {
-        "cvss_score": 4.7,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "Use of uninitialized resource in Windows Graphics Kernel allows an authorized attacker to disclose information locally.",
-        "id": "CVE-2026-96144",
+        "description": "Mattermost versions 11.11.x <= 11.11.0, 11.7.x <= 11.7.11, 11.10.x <= 11.10.2 fail to limit the aggregate memory allocated when processing ZIP archive entries during document content extraction and Slack workspace import, which allows an authenticated attacker to cause a server-side denial of service via a crafted ZIP archive.. Mattermost Advisory ID: MMSA-2026-00772",
+        "id": "CVE-2026-19865",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:23:16.650",
-        "publishedAt": "2026-11-10T19:22:11.860",
+        "lastModifiedAt": "2026-11-19T18:18:13.497",
+        "publishedAt": "2026-11-19T12:18:47.367",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Use of uninitialized resource in Windows Graphics Kernel allows an authorized attacker to disclose information locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96144"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "Heap-based buffer overflow in Windows Graphics Kernel allows an authorized attacker to elevate privileges locally.",
-        "id": "CVE-2026-96126",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:22:24.593",
-        "publishedAt": "2026-11-10T19:22:10.000",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Heap-based buffer overflow in Windows Graphics Kernel allows an authorized attacker to elevate privileges locally.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96126"
-      },
-      {
-        "cvss_score": 8.8,
-        "cvss_version": "3.1",
-        "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.1.1, the `Cross-Domain Single Sign-On` (`CDSSO`) servlet allows a logged-in user's raw OpenAM session token to be POSTed to an attacker-controlled URL. An attacker who induces an authenticated victim to visit a crafted URL can receive the session credential and potentially hijack the session. Deployments must have…",
-        "id": "CVE-2026-45049",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:21:05.730",
-        "publishedAt": "2026-10-29T22:17:02.400",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Open Access Management (OpenAM) is an access management solution. Prior to 16.1.1, the `Cross-Domain Single Sign-On` (`CDSSO`) servlet allows a logged-in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45049"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "4.0",
-        "description": "Use of externally-controlled format string in certain ASUS Router firmware allows a nearby administrator to read or write memory, potentially resulting in a denial-of-service, via crafted format specifiers sent to the logging/summary function.\nRefer to the ' Security Update for ASUS Router Firmware ' section on the ASUS Security Advisory for more information.",
-        "id": "CVE-2026-93459",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:19:58.720",
-        "publishedAt": "2026-11-18T02:17:42.130",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use of externally-controlled format string in certain ASUS Router firmware allows a nearby administrator to read or write memory, potentially resulting in a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93459"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly…",
-        "id": "CVE-2026-91671",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:19:58.597",
-        "publishedAt": "2026-11-17T22:19:27.083",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91671"
+        "title": "Mattermost versions 11.11.x <= 11.11.0, 11.7.x <= 11.7.11, 11.10.x <= 11.10.2 fail to limit the aggregate memory allocated when processing ZIP archive entries…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19865"
       },
       {
         "cvss_score": 10.0,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  While the vulnerability is in Oracle WebLogic Server…",
-        "id": "CVE-2026-91569",
+        "description": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to conduct a blind command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system. This is MTLVULN-1864.",
+        "id": "CVE-2026-133323",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:19:58.477",
-        "publishedAt": "2026-11-17T22:19:24.980",
+        "lastModifiedAt": "2026-11-19T18:18:13.373",
+        "publishedAt": "2026-11-19T17:18:52.880",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: TopLink Integration).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91569"
+        "title": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323"
       },
       {
-        "cvss_score": 8.1,
+        "cvss_score": 5.4,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via SAML to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in takeover of Oracle Access…",
-        "id": "CVE-2026-91522",
+        "description": "A flaw was found in Keycloak. An authenticated remote user with a pending required security action, such as configuring multi-factor authentication (MFA), can bypass the mandatory action by submitting a specially crafted request to the consent endpoint without a valid session code. Keycloak incorrectly interprets the submission as a page refresh and completes the authentication process, allowing…",
+        "id": "CVE-2026-133221",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:19:58.347",
-        "publishedAt": "2026-11-17T22:19:23.053",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-19T18:18:13.343",
+        "publishedAt": "2026-11-19T18:18:13.230",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91522"
+        "title": "A flaw was found in Keycloak. An authenticated remote user with a pending required security action, such as configuring multi-factor authentication (MFA), can…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133221"
       },
       {
-        "cvss_score": 7.5,
+        "cvss_score": 9.6,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Purchasing product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Purchasing.  Successful attacks of this vulnerability can result in takeover of Oracle Purchasing. CVSS 3.1 Base…",
-        "id": "CVE-2026-83365",
+        "description": "A command injection vulnerability was found in OpenStack Cinder's SSH-based storage-driver support. Incomplete validation of shell metacharacters allows an authenticated user who owns a volume on an affected backend to supply crafted connection information and inject additional commands into the storage array's management interface. Commands execute with the privileges of Cinder's configured…",
+        "id": "CVE-2026-133189",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-18T18:19:53.077",
-        "publishedAt": "2026-11-17T22:19:21.723",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-19T18:18:13.087",
+        "publishedAt": "2026-11-19T17:18:36.627",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Purchasing product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83365"
+        "title": "A command injection vulnerability was found in OpenStack Cinder's SSH-based storage-driver support. Incomplete validation of shell metacharacters allows an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133189"
       }
     ],
-    "low": 149,
-    "medium": 928,
-    "none": 36,
-    "unscored": 59
+    "low": 114,
+    "medium": 501,
+    "none": 0,
+    "unscored": 260
   },
   "snapshot": {
-    "cves": 2340,
-    "kevAdded": 4,
-    "knownExploited": 1,
+    "cves": 1551,
+    "kevAdded": 0,
+    "knownExploited": 7,
     "projects": 18,
-    "releases": 4,
-    "techEntries": 39
+    "releases": 0,
+    "techEntries": 60
   },
   "sources": {
     "opensource": {
@@ -971,7 +943,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 4,
+        "inWindow": 0,
         "status": "partial",
         "total": 52
       }
@@ -979,146 +951,146 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 4,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1786
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 2340,
+        "inWindow": 1551,
         "status": "success",
-        "total": 2340
+        "total": 1551
       }
     },
     "technology": {
       "rss": {
-        "failures": 1,
-        "inWindow": 39,
-        "status": "partial",
-        "total": 211
+        "failures": 0,
+        "inWindow": 60,
+        "status": "success",
+        "total": 230
       }
     }
   },
   "technology": [
     {
-      "category": "security",
-      "publishedAt": "2026-11-18T17:45:00+00:00",
-      "source": "The Register",
-      "summary": "Robotaxi operator suspends driverless rides on high-speed roads nationwide after construction zone incursions and a run-in with patrol vehicles",
-      "title": "California tells Waymo to take the next exit after freeway mishaps",
-      "url": "https://www.theregister.com/security/2026/11/18/california-tells-waymo-to-take-the-next-exit-after-freeway-mishaps/5310841"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-18T17:23:37+00:00",
-      "source": "The Register",
-      "summary": "In today's how-could-things-get-worse-for-Microsoft news, it seems someone's GitHub org admin creds have been compromised",
-      "title": "Microsoft's official Python agent framework hijacked to distribute malware",
-      "url": "https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858"
+      "category": "tech",
+      "publishedAt": "2026-11-19T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "At Google Cloud, our commitment to agentic transformation extends to everyone, including the partners who build and grow alongside us. Today, we are excited to introduce new Gemini-powered co-marketing capabilities directly within everyday go-to-market workflows for our…",
+      "title": "Helping our partners market smarter, together, with Gemini",
+      "url": "https://cloud.google.com/blog/topics/partners/helping-our-partners-market-smarter-together-with-gemini/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-18T17:00:00+00:00",
-      "source": "Meta",
-      "summary": "Our previous post in this series introduced the Ranking Engineer Agent (REA), an autonomous system that generates hypotheses, designs experiments, and proves new machine learning (ML) techniques on ads ranking models. Now, we’re sharing how we propagate ranking model…",
-      "title": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
-      "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/"
+      "publishedAt": "2026-11-19T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-18T16:59:38+00:00",
-      "source": "Meta",
-      "summary": "As ML ecosystems grow to a large number of production models, the bottleneck is no longer inventing new techniques to improve these models, but rather shipping them reliably and efficiently across a fragmented model space, creating a rising tide that lifts all the boats. At…",
-      "title": "Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem",
-      "url": "https://engineering.fb.com/2026/11/18/ml-applications/design-once-deploy-at-scale-template-driven-ml-ecosystem/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-18T16:00:00+00:00",
-      "source": "The Register",
-      "summary": "PARTNER CONTENT: As carriers tighten underwriting, a backup job marked green is no longer enough. Here’s the evidence underwriters expect",
-      "title": "Cyber insurers now want proof you can actually recover",
-      "url": "https://www.theregister.com/security/2026/11/18/partner-content-cyber-insurers-now-want-proof-you-can-actually-recover/5309325"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-18T15:00:00+00:00",
-      "source": "The Register",
-      "summary": "SPONSORED POST: As cyberattacks become more sophisticated, organizations need to look beyond prevention and ensure they can recover critical data quickly and reliably",
-      "title": "AI-powered cyber threats are changing the rules of enterprise recovery",
-      "url": "https://www.theregister.com/security/2026/11/18/sponsored-ai-powered-cyber-threats-are-changing-the-rules-of-enterprise-recovery/5310515"
+      "publishedAt": "2026-11-19T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "The vast majority of enterprise information is unstructured, locked away in object storage as petabytes of images, PDFs, videos, and audio files. This data holds the institutional knowledge AI agents need to do business-critical work. But to an agent, a raw object is just bytes…",
+      "title": "Introducing object enrichments: Transform unstructured data into agent-ready context",
+      "url": "https://cloud.google.com/blog/products/storage-data-transfer/cost-effective-ai-context-extraction-from-unstructured-gcs-data/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-18T14:52:10+00:00",
+      "publishedAt": "2026-11-19T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "GKE Dataplane V2 is Google Cloud’s next-generation networking dataplane for Google Kubernetes Engine (GKE), built on extended Berkeley Packet Filter ( eBPF ) and open-source Cilium to replace traditional iptables routing and kube-proxy . We built GKE Dataplane V2 to meet the…",
+      "title": "Introducing in-place migration to GKE Dataplane V2",
+      "url": "https://cloud.google.com/blog/products/networking/gke-dataplane-v2-in-place-migration/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-19T16:20:00+00:00",
+      "source": "The Register",
+      "summary": "DoJ claims suspect part of 4-month operation to steal secrets, surveil employees",
+      "title": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
+      "url": "https://www.theregister.com/security/2026/11/19/russian-national-accused-of-stalking-san-francisco-techie-in-plot-against-us-defense-tech-giant/5311126"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-19T16:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "Introducing Replica and the Open Source Accessibility Framework, new open source projects for collaboration and inclusion. The post The best things in open source are built together appeared first on The GitHub Blog .",
+      "title": "The best things in open source are built together",
+      "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-19T14:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected…",
+      "title": "ARMORY CASTLE Exploits vSphere",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-19T14:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "As state and local agencies modernize to meet evolving public needs, leaders have an unprecedented opportunity to empower and elevate their teams. Modernizing public sector operations starts with giving dedicated public servants the right tools to thrive. By replacing repetitive…",
+      "title": "Scaling workforce productivity and upskilling in the agentic era",
+      "url": "https://cloud.google.com/blog/topics/public-sector/scaling-workforce-productivity-and-upskilling-in-the-agentic-era/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-19T14:00:00+00:00",
       "source": "Cloudflare",
-      "summary": "Java4Shell is a critical memory-corruption flaw in OpenJDK's Base64 decoder that can lead to remote code execution. Cloudflare has released six WAF managed rules for paid plans that logs matching requests by default. Patch your Java runtimes now.",
-      "title": "How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)",
-      "url": "https://blog.cloudflare.com/java4shell-waf-protection/"
+      "summary": "On November 3, 2026 U.S. voters headed to the polls. Here’s what Cloudflare data across more than 1,400 protected sites tells us about Election Day Internet traffic and cyberattacks.",
+      "title": "Internet traffic and attacks during the 2026 U.S. midterm elections",
+      "url": "https://blog.cloudflare.com/internet-traffic-2026-us-election/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-18T09:30:00+00:00",
+      "publishedAt": "2026-11-19T11:45:00+00:00",
       "source": "The Register",
-      "summary": "Parliamentary committee says tech giants can't be left to mark their own homework when it comes to AI safety",
-      "title": "UK MPs want AI watchdog with power to pull the plug on dangerous models",
-      "url": "https://www.theregister.com/ai-and-ml/2026/11/18/uk-mps-want-ai-watchdog-with-power-to-pull-the-plug-on-dangerous-models/5310567"
+      "summary": "Minister calls notification delay 'not acceptable' after October attack on Irish banking player Wellington IT came to light in November",
+      "title": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
+      "url": "https://www.theregister.com/security/2026/11/19/cyberattack-on-service-provider-exposes-payee-data-at-40-irish-credit-unions/5310979"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-18T04:33:05+00:00",
-      "source": "The Register",
-      "summary": "Attackers can crash the JVM or achieve unauthenticated RCE",
-      "title": "Oracle reveals fix-this-ASAP-grade Java4Shell bug that allows attacks on many third-party apps",
-      "url": "https://www.theregister.com/security/2026/11/18/oracle-reveals-fix-this-asap-grade-java4shell-bug-that-allows-attacks-on-many-third-party-apps/5310661"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-17T23:41:31+00:00",
-      "source": "The Register",
-      "summary": "NSA, Apple add to a week of high-profile network outages, largely attributed to 'routine maintenance'",
-      "title": "Daily disruptive outages that ground planes and halt work – welcome to the new normal",
-      "url": "https://www.theregister.com/security/2026/11/17/daily-disruptive-outages-that-ground-planes-and-halt-work-welcome-to-the-new-normal/5310634"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-17T22:32:16+00:00",
+      "publishedAt": "2026-11-19T11:13:01+00:00",
       "source": "Ars Technica",
-      "summary": "Malware cocktail delivers cryptocurrency theft payloads and iOS exploits, among other things.",
-      "title": "Hundreds of websites deliver potent malware cocktail to unsuspecting visitors",
-      "url": "https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-17T20:24:27+00:00",
-      "source": "Cloudflare",
-      "summary": "Quad9's forced withdrawal from France highlights the dangers of mandating DNS-level blocking. We explore why forcing public resolvers to act as content filters is technically flawed and threatens the open Internet.",
-      "title": "Quad9’s withdrawal from France: A canary in the coal mine",
-      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/"
+      "summary": "When everything goes down, don’t assume it’s a cyberattack.",
+      "title": "How to tell a cyberattack from a plain old outage",
+      "url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-17T19:52:57+00:00",
+      "publishedAt": "2026-11-19T11:01:00+00:00",
       "source": "The Register",
-      "summary": "If you design a test to find misalignment, you will find misalignment",
-      "title": "Gemini test proves once again that amoral AI agents will do almost anything if told ‘NEVER give up’",
-      "url": "https://www.theregister.com/security/2026/11/17/gemini-test-proves-once-again-that-amoral-ai-agents-will-do-almost-anything-if-told-never-give-up/5310574"
+      "summary": "Around 265,000 customers potentially affected as London transport operator grapples with another security breach",
+      "title": "TfL takes Oyster photocard website offline after attackers compromise customer accounts",
+      "url": "https://www.theregister.com/security/2026/11/19/tfl-takes-oyster-photocard-website-offline-after-attackers-compromise-customer-accounts/5310985"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-19T10:15:00+00:00",
+      "source": "The Register",
+      "summary": "Don't leave your credentials out in public, where any visitor can see them.",
+      "title": "Sticky note on monitor provided keys to the company’s kingdom",
+      "url": "https://www.theregister.com/security/2026/11/19/sticky-note-on-monitor-provided-keys-to-the-companys-kingdom/5310908"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-18T22:38:12+00:00",
+      "source": "The Register",
+      "summary": "At least one dangerous RCE bug gota fix on Thursday",
+      "title": "Another critical PHP security release has dropped",
+      "url": "https://www.theregister.com/patches/2026/11/18/another-critical-php-security-release-has-dropped/5310911"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-17T18:29:29+00:00",
-      "source": "GitHub Blog",
-      "summary": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half. The post Maintainers don’t need more AI bug…",
-      "title": "Maintainers don’t need more AI bug reports. They need fixes.",
-      "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-17T18:20:40+00:00",
-      "source": "GitHub Blog",
-      "summary": "Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud. The post Building the Agent Host Protocol for sessions that continue across devices appeared first on The GitHub Blog .",
-      "title": "Building the Agent Host Protocol for sessions that continue across devices",
-      "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
+      "publishedAt": "2026-11-18T22:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Clairic graduates from preview, while Clairic-flash joins the repertoire on Workers AI. We’re doing an open-weight release for both extraction models.",
+      "title": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
+      "url": "https://blog.cloudflare.com/open-clairic/"
     }
   ]
 }
