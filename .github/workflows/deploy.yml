@@ -11,14 +11,22 @@ name: Deploy to GitHub Pages
 # https://<owner>.github.io/TechPulse/
 #
 # Triggers:
-#   - push to main after source or generated data changes
+#   - push to main touching served source, generated data, or this workflow
+#   - after a successful Collect workflow
 #   - manual dispatch
 #
-# Do not use workflow_run here: Pages artifacts are scoped to the
-# workflow run that created them. A workflow_run deployment is a new
-# run and cannot consume this run's artifact through deploy-pages.
+# Build and deploy are separate jobs so the Pages artifact is fully
+# finalized before deploy-pages looks it up.
 
 on:
+  workflow_run:
+    workflows:
+      - Collect
+    types:
+      - completed
+    branches:
+      - main
+
   push:
     branches:
       - main
@@ -31,37 +39,35 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    name: Build and deploy site
+  build:
+    name: Build Pages artifact
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    # A workflow_run deployment is allowed only after Collect succeeds.
+    # Direct pushes and manual runs are allowed independently.
+    if: >-
+      ${{
+        github.event_name != 'workflow_run' ||
+        github.event.workflow_run.conclusion == 'success'
+      }}
+
+    permissions:
+      contents: read
+      pages: write
 
     steps:
-      # -------------------------------------------------------------- #
-      # Checkout
-      # -------------------------------------------------------------- #
-
       - name: Checkout repository
         uses: actions/checkout@v7
         with:
           persist-credentials: false
           fetch-depth: 1
-
-      # -------------------------------------------------------------- #
-      # Validate deployment inputs
-      # -------------------------------------------------------------- #
 
       - name: Verify deployment inputs
         run: |
@@ -88,18 +94,10 @@ jobs:
 
           echo "Deployment inputs verified."
 
-      # -------------------------------------------------------------- #
-      # Configure GitHub Pages
-      # -------------------------------------------------------------- #
-
       - name: Configure Pages
         uses: actions/configure-pages@v6
         with:
           enablement: true
-
-      # -------------------------------------------------------------- #
-      # Assemble static deployment
-      # -------------------------------------------------------------- #
 
       - name: Assemble deployment staging
         run: |
@@ -126,10 +124,6 @@ jobs:
 
           echo "Staging contents:"
           find site -type f | sort
-
-      # -------------------------------------------------------------- #
-      # Static staging validation
-      # -------------------------------------------------------------- #
 
       - name: Validate staged site
         run: |
@@ -160,29 +154,35 @@ jobs:
 
           echo "Staged site validation passed."
 
-      # -------------------------------------------------------------- #
-      # Upload Pages artifact
-      # -------------------------------------------------------------- #
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
-      # -------------------------------------------------------------- #
-      # Deploy
-      # -------------------------------------------------------------- #
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
 
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
 
-      # -------------------------------------------------------------- #
-      # Summary
-      # -------------------------------------------------------------- #
-
       - name: Deployment summary
         if: always()
+        env:
+          DEPLOYMENT_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
           {
             echo "## TechPulse deployment"
@@ -191,12 +191,6 @@ jobs:
             echo "|------|-------|"
             echo "| Trigger | \`${{ github.event_name }}\` |"
             echo "| Commit | \`${{ github.sha }}\` |"
-            echo "| Site artifact | \`site/\` |"
-            echo "| Generated data | \`generated/data.json\` |"
-
-            if [ -f generated/archive.json ]; then
-              echo "| Archive data | present |"
-            else
-              echo "| Archive data | absent |"
-            fi
+            echo "| Pages artifact | \`github-pages\` |"
+            echo "| Deployment URL | ${DEPLOYMENT_URL:-not available} |"
           } >> "$GITHUB_STEP_SUMMARY"
