@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1974,
+      "date": "2026-11-21",
+      "kevAdded": 4,
+      "knownExploited": 3,
+      "projects": 18,
+      "releases": 5,
+      "techEntries": 54
+    },
+    {
       "cves": 1551,
       "date": "2026-11-20",
       "kevAdded": 0,
@@ -587,16 +596,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-19",
-    "date": "2026-11-20",
-    "daysObserved": 65,
-    "generatedAt": "2026-11-20T00:49:24.467944+00:00",
-    "snapshots": 65,
+    "coveredDate": "2026-11-20",
+    "date": "2026-11-21",
+    "daysObserved": 66,
+    "generatedAt": "2026-11-21T00:07:48.463689+00:00",
+    "snapshots": 66,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 54,
+      "daily_growth": 4,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -604,11 +613,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201657,
+      "stars": 201661,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 18,
+      "daily_growth": 26,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -616,11 +625,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143601,
+      "stars": 143627,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 55,
+      "daily_growth": 22,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -628,11 +637,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 140100,
+      "stars": 140122,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 100,
+      "daily_growth": 26,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -640,11 +649,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129280,
+      "stars": 129306,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 54,
+      "daily_growth": 4,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -652,11 +661,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123806,
+      "stars": 123810,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 99,
+      "daily_growth": 31,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -664,11 +673,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122284,
+      "stars": 122315,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 60,
+      "daily_growth": 25,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -676,11 +685,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115178,
+      "stars": 115203,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 62,
+      "daily_growth": 39,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -688,11 +697,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105716,
+      "stars": 105755,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 45,
+      "daily_growth": 26,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -700,11 +709,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98686,
+      "stars": 98712,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 54,
+      "daily_growth": 21,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -712,224 +721,270 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91863,
+      "stars": 91884,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-11-20T15:56:21Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.12.0",
+      "version": "v2.12.0"
+    },
+    {
+      "kind": "patch",
+      "project": "core",
+      "publishedAt": "2026-11-20T08:18:41Z",
+      "repository": "vuejs/core",
+      "source": "GitHub",
+      "url": "https://github.com/vuejs/core/releases/tag/v3.5.46",
+      "version": "v3.5.46"
+    },
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-11-20T01:27:57Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.57.0",
+      "version": "v3.57.0"
+    },
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-11-19T20:56:27Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.56.0",
+      "version": "v3.56.0"
+    },
+    {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-11-19T19:14:21Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.11.0",
+      "version": "v2.11.0"
+    }
+  ],
   "security": {
-    "critical": 146,
-    "high": 530,
-    "kevCatalogTotal": 1786,
+    "critical": 125,
+    "high": 631,
+    "kevCatalogTotal": 1790,
     "latest": [
       {
-        "cvss_score": 8.8,
+        "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "Use after free in DOM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "id": "CVE-2026-131022",
+        "description": "A flaw was found in the automation-controller notification\n                  subsystem. Although NotificationTemplate.notification_\n                  configuration is protected from API filtering, its recipient\n                  value is copied in clear text into the unprotected\n                  Notification.recipients field on every send. Because the\n                  credential-types endpoint…",
+        "id": "CVE-2026-84713",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:28:05.060",
-        "publishedAt": "2026-11-17T21:17:59.757",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Use after free in DOM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131022"
-      },
-      {
-        "cvss_score": 4.4,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL…",
-        "id": "CVE-2026-101611",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:24:03.190",
-        "publishedAt": "2026-10-20T22:18:14.880",
+        "lastModifiedAt": "2026-11-20T18:18:57.000",
+        "publishedAt": "2026-09-23T20:17:17.950",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are MySQL Server…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101611"
+        "title": "A flaw was found in the automation-controller notification\n                  subsystem. Although NotificationTemplate.notification_\n                 …",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84713"
       },
       {
-        "cvss_score": 4.9,
+        "cvss_score": 9.8,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise…",
-        "id": "CVE-2026-101610",
+        "description": "The BuddyBoss Addons plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in versions up to, and including, 1.2.1. This is due to the Social Login REST endpoint trusting unverified Apple and Facebook identity-token claims and linking an attacker-controlled provider identifier to an existing WordPress user selected by the token’s email claim. This makes it…",
+        "id": "CVE-2026-80188",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:23:32.343",
-        "publishedAt": "2026-10-20T22:18:14.770",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are MySQL…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101610"
-      },
-      {
-        "cvss_score": 4.4,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are MySQL Server: 8.4.0-8.4.12, 9.7.0-9.7.3, 26.7.0-26.7.1; MySQL Cluster: 8.0.0-8.0.49, 8.4.0-8.4.12, 9.7.0-9.7.3 and  26.7.0-26.7.1. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL…",
-        "id": "CVE-2026-101609",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:22:53.600",
-        "publishedAt": "2026-10-20T22:18:14.657",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Vulnerability in the MySQL Server, MySQL Cluster product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are MySQL Server…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-101609"
-      },
-      {
-        "cvss_score": 8.3,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Service Delivery Platform product of Oracle Fusion Middleware (component: Messaging Enabler).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the Service Delivery Platform executes to compromise Service…",
-        "id": "CVE-2026-91558",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:14.757",
-        "publishedAt": "2026-11-17T22:19:24.303",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Service Delivery Platform product of Oracle Fusion Middleware (component: Messaging Enabler).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91558"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Thirdparty Jars).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Platform Security for Java.  While the vulnerability is in Oracle Platform…",
-        "id": "CVE-2026-91548",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:14.643",
-        "publishedAt": "2026-11-17T22:19:23.963",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Platform Security for Java product of Oracle Fusion Middleware (component: Centralized Thirdparty Jars).  Supported versions that…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91548"
-      },
-      {
-        "cvss_score": 6.1,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Application Development Framework (ADF) product of Oracle Fusion Middleware (component: ADF Faces).   The supported version that is affected is 14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Application Development Framework (ADF).  Successful attacks require human interaction from a person…",
-        "id": "CVE-2026-91544",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:14.530",
-        "publishedAt": "2026-11-17T22:19:23.853",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Application Development Framework (ADF) product of Oracle Fusion Middleware (component: ADF Faces).   The supported version that is…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91544"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Difficult to exploit vulnerability allows unauthenticated attacker with network access via SAML to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly…",
-        "id": "CVE-2026-91509",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:14.420",
-        "publishedAt": "2026-11-17T22:19:22.703",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91509"
-      },
-      {
-        "cvss_score": 9.3,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly…",
-        "id": "CVE-2026-91507",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:14.303",
-        "publishedAt": "2026-11-17T22:19:22.587",
+        "lastModifiedAt": "2026-11-20T18:18:56.737",
+        "publishedAt": "2026-11-20T14:17:54.003",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91507"
+        "title": "The BuddyBoss Addons plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in versions up to, and including, 1.2.1. This is…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80188"
       },
       {
-        "cvss_score": 9.4,
+        "cvss_score": 7.3,
         "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in  unauthorized…",
-        "id": "CVE-2026-91469",
+        "description": "pmo-platform is a modular PMO and release-management platform for Claude Code. Prior to 3.69.1, core/hooks/block-credential-reads.sh, core/hooks/block-egress.sh, core/hooks/block-fs-boundary.sh, and core/hooks/block-mcp-writes.sh pin PATH to /usr/bin:/bin, hard-code jq as /usr/bin/jq, and return success when jq is unavailable there. On systems where jq exists only in a Homebrew path, including…",
+        "id": "CVE-2026-77350",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:14.190",
-        "publishedAt": "2026-11-17T22:19:22.107",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91469"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "OPEXUS eComplaint before version 9.0.45.0 allows an attacker to visit the 'DocumentOpen.aspx' endpoint, iterate through predictable values of 'chargeNumber', and download any uploaded files.",
-        "id": "CVE-2026-22235",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:13.620",
-        "publishedAt": "2026-01-08T18:16:00.523",
+        "lastModifiedAt": "2026-11-20T18:18:56.280",
+        "publishedAt": "2026-11-20T18:18:56.280",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "OPEXUS eComplaint before version 9.0.45.0 allows an attacker to visit the 'DocumentOpen.aspx' endpoint, iterate through predictable values of 'chargeNumber'…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22235"
+        "title": "pmo-platform is a modular PMO and release-management platform for Claude Code. Prior to 3.69.1, core/hooks/block-credential-reads.sh…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77350"
+      },
+      {
+        "cvss_score": 8.5,
+        "cvss_version": "3.1",
+        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.8, http.paginate in src/core/modules/atomic/http/paginate.py validates only the initial base_url, and _paginate_link_header then follows a server-supplied Link: rel=\"next\" URL without calling the SSRF guard again. A low-privileged caller can make an allowed first page point the next request at an internal or…",
+        "id": "CVE-2026-77315",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-20T18:18:56.007",
+        "publishedAt": "2026-11-19T22:18:44.470",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.8, http.paginate in src/core/modules/atomic/http/paginate.py validates…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77315"
+      },
+      {
+        "cvss_score": 9.0,
+        "cvss_version": "3.1",
+        "description": "NVIDIA VIRTIO-Net for Bluefield contains a vulnerability in Virtio-Net where a VM user may cause a Write-What-Where condition by crafted message. A successful exploit of this vulnerability may lead to Code Execution in Virtio-Net scope.",
+        "id": "CVE-2026-65094",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-20T18:18:55.723",
+        "publishedAt": "2026-11-20T03:17:36.693",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "NVIDIA VIRTIO-Net for Bluefield contains a vulnerability in Virtio-Net where a VM user may cause a Write-What-Where condition by crafted message. A successful…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65094"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "netty-incubator-codec-ohttp implements Oblivious HTTP (OHTTP) gateway and client functionality using Netty. Prior to 0.0.23.Final, BinaryHttpParser.readFieldLine in codec-bhttp/src/main/java/io/netty/incubator/codec/bhttp/BinaryHttpParser.java treats a complete field line that ends exactly at a known field-section boundary as incomplete and returns without consuming bytes…",
+        "id": "CVE-2026-63124",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-20T18:18:55.607",
+        "publishedAt": "2026-11-19T22:18:07.363",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "netty-incubator-codec-ohttp implements Oblivious HTTP (OHTTP) gateway and client functionality using Netty. Prior to 0.0.23.Final…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63124"
       },
       {
         "cvss_score": 6.5,
         "cvss_version": "3.1",
-        "description": "Mattermost versions 11.11.x <= 11.11.0, 11.7.x <= 11.7.11, 11.10.x <= 11.10.2 fail to limit the aggregate memory allocated when processing ZIP archive entries during document content extraction and Slack workspace import, which allows an authenticated attacker to cause a server-side denial of service via a crafted ZIP archive.. Mattermost Advisory ID: MMSA-2026-00772",
-        "id": "CVE-2026-19865",
+        "description": "baserCMS is a website development framework. Prior to 5.3.0, getAuthenticationService permits an Api/Admin session authentication fallback based on the Referer header, although operator accounts have an Admin auth prefix and cannot obtain an Api/Admin JWT. An authenticated operator can therefore access /baser/api/admin/ endpoints whose permission.php entries have auth => true, including…",
+        "id": "CVE-2026-63012",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:13.497",
-        "publishedAt": "2026-11-19T12:18:47.367",
+        "lastModifiedAt": "2026-11-20T18:18:55.487",
+        "publishedAt": "2026-11-19T21:18:03.460",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Mattermost versions 11.11.x <= 11.11.0, 11.7.x <= 11.7.11, 11.10.x <= 11.10.2 fail to limit the aggregate memory allocated when processing ZIP archive entries…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19865"
+        "title": "baserCMS is a website development framework. Prior to 5.3.0, getAuthenticationService permits an Api/Admin session authentication fallback based on the Referer…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63012"
       },
       {
-        "cvss_score": 10.0,
-        "cvss_version": "3.1",
-        "description": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to conduct a blind command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system. This is MTLVULN-1864.",
-        "id": "CVE-2026-133323",
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.1, the afpd Spotlight RPC fetchQueryResultsForContext: reply path in etc/afpd/spotlight_marshalling.c calls the top-level sl_pack function from sl_pack_filemeta on a shifted sub-buffer without passing the remaining capacity of the outer DSI reply buffer. An authenticated AFP client can…",
+        "id": "CVE-2026-62321",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:13.373",
-        "publishedAt": "2026-11-19T17:18:52.880",
+        "lastModifiedAt": "2026-11-20T18:18:55.443",
+        "publishedAt": "2026-11-20T18:18:55.320",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.1, the afpd Spotlight RPC…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62321"
+      },
+      {
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 2.0.0 until 4.5.1, the DHX2 and DHX2-PAM authentication state machine in etc/uams/uams_dhx2_pam.c permits logincont1 to be invoked again with the same FPLoginCont retID after it has released the global gcry_mpi_t Ra object. When DHX2 or DHX2PAM is enabled in the UAM list, a remote attacker without valid AFP…",
+        "id": "CVE-2026-62318",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-20T18:18:54.937",
+        "publishedAt": "2026-11-20T18:18:54.807",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323"
+        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 2.0.0 until 4.5.1, the DHX2 and DHX2-PAM authentication state…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62318"
       },
       {
-        "cvss_score": 5.4,
+        "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "A flaw was found in Keycloak. An authenticated remote user with a pending required security action, such as configuring multi-factor authentication (MFA), can bypass the mandatory action by submitting a specially crafted request to the consent endpoint without a valid session code. Keycloak incorrectly interprets the submission as a page refresh and completes the authentication process, allowing…",
-        "id": "CVE-2026-133221",
+        "description": "Avahi is a system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite. In 0.9-rc4 and earlier, org.freedesktop.Avahi.Server.RecordBrowserNew accepts a domain-name value that avahi_is_valid_domain_name considers valid even though avahi_normalize_name_strdup cannot normalize it. The resulting null key reaches the key assertion in…",
+        "id": "CVE-2026-59987",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:13.343",
-        "publishedAt": "2026-11-19T18:18:13.230",
+        "lastModifiedAt": "2026-11-20T18:18:54.647",
+        "publishedAt": "2026-11-20T18:18:54.647",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A flaw was found in Keycloak. An authenticated remote user with a pending required security action, such as configuring multi-factor authentication (MFA), can…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133221"
+        "title": "Avahi is a system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite. In 0.9-rc4 and earlier…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59987"
       },
       {
-        "cvss_score": 9.6,
+        "cvss_score": 8.1,
         "cvss_version": "3.1",
-        "description": "A command injection vulnerability was found in OpenStack Cinder's SSH-based storage-driver support. Incomplete validation of shell metacharacters allows an authenticated user who owns a volume on an affected backend to supply crafted connection information and inject additional commands into the storage array's management interface. Commands execute with the privileges of Cinder's configured…",
-        "id": "CVE-2026-133189",
+        "description": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. Prior to 1.46.0, social account linking can use an unverified email returned by the standard OAuth 2.0 or Azure AD connector to select an existing local account. When findSocialRelatedUser matches a victim's email and a request to POST /api/experience/identification enables linkSocialIdentity, an attacker who controls that…",
+        "id": "CVE-2026-55216",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-19T18:18:13.087",
-        "publishedAt": "2026-11-19T17:18:36.627",
-        "severity": "CRITICAL",
+        "lastModifiedAt": "2026-11-20T18:18:54.243",
+        "publishedAt": "2026-11-20T18:18:54.100",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "A command injection vulnerability was found in OpenStack Cinder's SSH-based storage-driver support. Incomplete validation of shell metacharacters allows an…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133189"
+        "title": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. Prior to 1.46.0, social account linking can use an unverified email returned by the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55216"
+      },
+      {
+        "cvss_score": 5.7,
+        "cvss_version": "3.1",
+        "description": "Reposilite is lightweight and easy-to-use repository management software dedicated to Maven-based artifacts in the JVM ecosystem. From 3.5.16 until 3.6.0, as stated by the advisory, the Maven directory-index page interpolates the request URI without HTML escaping in its title, heading, base URL, and parent-directory link. The advisory says the content-embedded ctx.uri() is percent-encoded…",
+        "id": "CVE-2026-53526",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-20T18:18:53.977",
+        "publishedAt": "2026-11-19T21:18:02.870",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Reposilite is lightweight and easy-to-use repository management software dedicated to Maven-based artifacts in the JVM ecosystem. From 3.5.16 until 3.6.0, as…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53526"
+      },
+      {
+        "cvss_score": 3.1,
+        "cvss_version": "3.1",
+        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.0.0 until 4.5.0, getoption_int in libatalk/util/netatalk_conf.c accepts an out-of-range server quantum value from afp.conf without applying the documented fallback to the default. An administrator can unintentionally configure a very large allocation whose failure causes AFP_PANIC at startup or a very…",
+        "id": "CVE-2026-49390",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-20T18:18:53.940",
+        "publishedAt": "2026-11-20T18:18:53.810",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.0.0 until 4.5.0, getoption_int in libatalk/util/netatalk_conf.c…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49390"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.0, sl_unpack_loop in etc/afpd/spotlight_marshalling.c uses an attacker-controlled Spotlight table-of-contents index during FPSpotlightRPC without checking it against the number of entries or the remaining dsi->commands buffer. An authenticated AFP client with access to a Spotlight-enabled…",
+        "id": "CVE-2026-49388",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-20T18:18:53.610",
+        "publishedAt": "2026-11-20T18:18:53.480",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.0, sl_unpack_loop in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49388"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.0, the afpd FPSpotlightRPC unmarshalling handlers in etc/afpd/spotlight_marshalling.c trust the element count encoded in the upper 32 bits of an RPC tag without comparing it with the remaining input length. An authenticated client with access to a Spotlight-enabled volume can make…",
+        "id": "CVE-2026-49387",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-20T18:18:53.443",
+        "publishedAt": "2026-11-20T18:18:53.307",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.0, the afpd FPSpotlightRPC unmarshalling handlers in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49387"
       }
     ],
-    "low": 114,
-    "medium": 501,
+    "low": 134,
+    "medium": 830,
     "none": 0,
-    "unscored": 260
+    "unscored": 254
   },
   "snapshot": {
-    "cves": 1551,
-    "kevAdded": 0,
-    "knownExploited": 7,
+    "cves": 1974,
+    "kevAdded": 4,
+    "knownExploited": 3,
     "projects": 18,
-    "releases": 0,
-    "techEntries": 60
+    "releases": 5,
+    "techEntries": 54
   },
   "sources": {
     "opensource": {
@@ -943,29 +998,29 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 0,
+        "inWindow": 5,
         "status": "partial",
-        "total": 52
+        "total": 53
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1786
+        "inWindow": 4,
+        "status": "success",
+        "total": 1790
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1551,
+        "inWindow": 1974,
         "status": "success",
-        "total": 1551
+        "total": 1974
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 60,
+        "inWindow": 54,
         "status": "success",
         "total": 230
       }
@@ -973,124 +1028,124 @@
   },
   "technology": [
     {
-      "category": "tech",
-      "publishedAt": "2026-11-19T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "At Google Cloud, our commitment to agentic transformation extends to everyone, including the partners who build and grow alongside us. Today, we are excited to introduce new Gemini-powered co-marketing capabilities directly within everyday go-to-market workflows for our…",
-      "title": "Helping our partners market smarter, together, with Gemini",
-      "url": "https://cloud.google.com/blog/topics/partners/helping-our-partners-market-smarter-together-with-gemini/"
+      "category": "security",
+      "publishedAt": "2026-11-20T17:30:00+00:00",
+      "source": "The Register",
+      "summary": "'Agents kept adapting for nearly a full day without human direction,' Amazon CISO said",
+      "title": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server",
+      "url": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-19T17:00:00+00:00",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start…",
-      "title": "What’s new with Google Cloud",
-      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/"
+      "summary": "Most Gemini prototypes start the same way. You grab an API key from Google AI Studio , then paste it into your coding agent to start building a prototype. That speed is the point, and shouldn’t be slowed down. The trouble starts later, when the prototype gets real users and the…",
+      "title": "Ultimate guide for fixing your team’s API keys",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/how-to-fix-your-teams-api-keys/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-19T17:00:00+00:00",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "The vast majority of enterprise information is unstructured, locked away in object storage as petabytes of images, PDFs, videos, and audio files. This data holds the institutional knowledge AI agents need to do business-critical work. But to an agent, a raw object is just bytes…",
-      "title": "Introducing object enrichments: Transform unstructured data into agent-ready context",
-      "url": "https://cloud.google.com/blog/products/storage-data-transfer/cost-effective-ai-context-extraction-from-unstructured-gcs-data/"
+      "summary": "Network sidecars have a deserved reputation for excessive resource consumption and increased management overhead, especially in a service mesh environment. Today, we are announcing the general availability of ambient networking for Google Kubernetes Engine (GKE). This milestone…",
+      "title": "Introducing ambient networking for GKE",
+      "url": "https://cloud.google.com/blog/products/networking/ambient-networking-for-gke-sidecarless-service-mesh/"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-19T17:00:00+00:00",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
       "source": "Google Cloud",
-      "summary": "GKE Dataplane V2 is Google Cloud’s next-generation networking dataplane for Google Kubernetes Engine (GKE), built on extended Berkeley Packet Filter ( eBPF ) and open-source Cilium to replace traditional iptables routing and kube-proxy . We built GKE Dataplane V2 to meet the…",
-      "title": "Introducing in-place migration to GKE Dataplane V2",
-      "url": "https://cloud.google.com/blog/products/networking/gke-dataplane-v2-in-place-migration/"
+      "summary": "As organizations scale their cloud footprint to thousands of autonomous agents and microservices, you can accidentally create an operational bottleneck with strict Identity and Access Management (IAM). Meanwhile, administrators still need to enforce least privilege across…",
+      "title": "How to simplify cloud access with Unified Access Policies, now in preview",
+      "url": "https://cloud.google.com/blog/products/identity-security/how-to-simplify-cloud-access-with-unified-access-policies/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Ever wonder how the Google Ads team keeps the massive system stable and online, despite continuous attempts by hackers to take it down? Part of the answer is using Spanner as its core operational and graph database. The Google Ads team uses a central graph-based platform to…",
+      "title": "How Spanner Graph detects ads fraud and abuse at Google at multi-billion node scale",
+      "url": "https://cloud.google.com/blog/products/databases/how-spanner-graph-detects-google-ads-fraud-and-abuse/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "In global maritime logistics, Marine Ports and Terminals play a significant role in the movement of container and cargo, within and beyond. Marine ports and terminals world-wide use a Terminal Operating System (TOS) which acts as the central nervous system managing port…",
+      "title": "DynaPORT modernization on Google Cloud with AlloyDB for PostgreSQL and GKE",
+      "url": "https://cloud.google.com/blog/products/databases/dynaport-modernizes-with-alloydb/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "As organizations move from reactive analytics to proactive systems of action powered by autonomous AI agents, data platforms face a new set of demands. Moving from human scale to agent scale changes both how data pipelines run and how they are built: Teams and AI agents now use…",
+      "title": "What’s new in Managed Service for Apache Spark 4.0",
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-in-managed-service-for-apache-spark-4-0/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "For large organizations, building and maintaining data pipelines is one of the most complex tasks that data engineering teams are tasked with. In BigQuery environments, the Data Engineering Agent can help, leveraging Gemini to to automate these workflows. In this blog post…",
+      "title": "How Vodafone is using the Data Engineering Agent to improve their data pipelines",
+      "url": "https://cloud.google.com/blog/products/data-analytics/vodafone-cuts-data-pipeline-costs-30-via-data-engineeringagent/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "When an Airflow pipeline fails in production, the hard part is rarely the fix. It's finding out what to fix. A task dies without a traceback. Is it the code, the data, or the environment? Hard to say, as clues are scattered across task logs, scheduler logs, and worker metrics…",
+      "title": "Drowning in clicks: Scaling Black Friday pipelines with Managed Airflow agents",
+      "url": "https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Imagine you're building a data agent to answer questions about an enterprise data warehouse. Ideally, you'd develop and test it against production data, but access restrictions and data sensitivity make that difficult – especially when the engineers building the agent sit…",
+      "title": "Frontier and Center: Why your data agents need a “wind tunnel”",
+      "url": "https://cloud.google.com/blog/products/data-analytics/a-data-simulator-to-test-agents/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-19T16:20:00+00:00",
+      "publishedAt": "2026-11-20T16:44:00+00:00",
       "source": "The Register",
-      "summary": "DoJ claims suspect part of 4-month operation to steal secrets, surveil employees",
-      "title": "Russian national accused of stalking San Francisco techie in plot against US defense-tech giant",
-      "url": "https://www.theregister.com/security/2026/11/19/russian-national-accused-of-stalking-san-francisco-techie-in-plot-against-us-defense-tech-giant/5311126"
+      "summary": "Devices found to misinterpret medication instructions and other scenarios impacting human safety",
+      "title": "Dutch data watchdog highlights safety issues with AI glasses",
+      "url": "https://www.theregister.com/security/2026/11/20/dutch-data-watchdog-highlights-safety-issues-with-ai-glasses/5311345"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-20T12:18:19+00:00",
+      "source": "The Register",
+      "summary": "Notice's existence can be acknowledged without harming national security, but its precise demands remain under wraps",
+      "title": "Spy court blasts UK secrecy, forces government to admit Apple ‘backdoor’ demand",
+      "url": "https://www.theregister.com/security/2026/11/20/spy-court-blasts-uk-secrecy-forces-government-to-admit-apple-backdoor-demand/5311292"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-20T11:09:44+00:00",
+      "source": "The Register",
+      "summary": "Optional update fixes misleading Android error for versions 25H2 and 26H2",
+      "title": "Windows 11 passkey bug cries failure after successful sign-in",
+      "url": "https://www.theregister.com/security/2026/11/20/windows-11-passkey-bug-cries-failure-after-successful-sign-in/5311263"
     },
     {
       "category": "tech",
-      "publishedAt": "2026-11-19T16:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "Introducing Replica and the Open Source Accessibility Framework, new open source projects for collaboration and inclusion. The post The best things in open source are built together appeared first on The GitHub Blog .",
-      "title": "The best things in open source are built together",
-      "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-19T14:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Written by: Jayson Frost, Bryce Greathouse, Dhanesh Kizhakkinan, John Palmisano, Steve Rasch, Daniel Sislo, John Wolfram Introduction On Oct. 15, 2026, Mandiant and Google Threat Intelligence Group (GTIG) published a blog post detailing recent activity in which the suspected…",
-      "title": "ARMORY CASTLE Exploits vSphere",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-19T14:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "As state and local agencies modernize to meet evolving public needs, leaders have an unprecedented opportunity to empower and elevate their teams. Modernizing public sector operations starts with giving dedicated public servants the right tools to thrive. By replacing repetitive…",
-      "title": "Scaling workforce productivity and upskilling in the agentic era",
-      "url": "https://cloud.google.com/blog/topics/public-sector/scaling-workforce-productivity-and-upskilling-in-the-agentic-era/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-19T14:00:00+00:00",
+      "publishedAt": "2026-11-20T01:58:29+00:00",
       "source": "Cloudflare",
-      "summary": "On November 3, 2026 U.S. voters headed to the polls. Here’s what Cloudflare data across more than 1,400 protected sites tells us about Election Day Internet traffic and cyberattacks.",
-      "title": "Internet traffic and attacks during the 2026 U.S. midterm elections",
-      "url": "https://blog.cloudflare.com/internet-traffic-2026-us-election/"
+      "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.",
+      "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+      "url": "https://blog.cloudflare.com/nginx2root/"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-19T11:45:00+00:00",
+      "publishedAt": "2026-11-20T00:57:45+00:00",
       "source": "The Register",
-      "summary": "Minister calls notification delay 'not acceptable' after October attack on Irish banking player Wellington IT came to light in November",
-      "title": "Cyberattack on service provider exposes payee data at 40 Irish credit unions",
-      "url": "https://www.theregister.com/security/2026/11/19/cyberattack-on-service-provider-exposes-payee-data-at-40-irish-credit-unions/5310979"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-19T11:13:01+00:00",
-      "source": "Ars Technica",
-      "summary": "When everything goes down, don’t assume it’s a cyberattack.",
-      "title": "How to tell a cyberattack from a plain old outage",
-      "url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-19T11:01:00+00:00",
-      "source": "The Register",
-      "summary": "Around 265,000 customers potentially affected as London transport operator grapples with another security breach",
-      "title": "TfL takes Oyster photocard website offline after attackers compromise customer accounts",
-      "url": "https://www.theregister.com/security/2026/11/19/tfl-takes-oyster-photocard-website-offline-after-attackers-compromise-customer-accounts/5310985"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-19T10:15:00+00:00",
-      "source": "The Register",
-      "summary": "Don't leave your credentials out in public, where any visitor can see them.",
-      "title": "Sticky note on monitor provided keys to the company’s kingdom",
-      "url": "https://www.theregister.com/security/2026/11/19/sticky-note-on-monitor-provided-keys-to-the-companys-kingdom/5310908"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-18T22:38:12+00:00",
-      "source": "The Register",
-      "summary": "At least one dangerous RCE bug gota fix on Thursday",
-      "title": "Another critical PHP security release has dropped",
-      "url": "https://www.theregister.com/patches/2026/11/18/another-critical-php-security-release-has-dropped/5310911"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-18T22:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "Clairic graduates from preview, while Clairic-flash joins the repertoire on Workers AI. We’re doing an open-weight release for both extraction models.",
-      "title": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
-      "url": "https://blog.cloudflare.com/open-clairic/"
+      "summary": "Critical Virtzilla bugs allow authentication bypass, as a nested virtualization issue got Digital Ocean ducking",
+      "title": "Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else",
+      "url": "https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193"
     }
   ]
 }

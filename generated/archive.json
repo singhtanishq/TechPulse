@@ -1,6 +1,246 @@
 {
   "archive": [
     {
+      "date": "2026-11-21",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 4,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201661,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143627,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 22,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 140122,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129306,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 4,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123810,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 31,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 122315,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 25,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 115203,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 39,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105755,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 26,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98712,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 21,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91884,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 4,
+          "other": 0,
+          "patch": 1
+        },
+        "recent": [
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-11-20T15:56:21Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.12.0",
+            "version": "v2.12.0"
+          },
+          {
+            "project": "core",
+            "published_at": "2026-11-20T08:18:41Z",
+            "repository": "vuejs/core",
+            "url": "https://github.com/vuejs/core/releases/tag/v3.5.46",
+            "version": "v3.5.46"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-20T01:27:57Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.57.0",
+            "version": "v3.57.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-19T20:56:27Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.56.0",
+            "version": "v3.56.0"
+          },
+          {
+            "project": "anthropic-sdk-python",
+            "published_at": "2026-11-19T19:14:21Z",
+            "repository": "anthropics/anthropic-sdk-python",
+            "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.11.0",
+            "version": "v2.11.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 125,
+          "HIGH": 631,
+          "LOW": 134,
+          "MEDIUM": 830,
+          "NONE": 0,
+          "UNSCORED": 254
+        }
+      },
+      "snapshot": {
+        "cves": 1974,
+        "kevAdded": 4,
+        "knownExploited": 3,
+        "projects": 18,
+        "releases": 5,
+        "techEntries": 54
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 4,
+          "status": "success",
+          "total": 1790
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 5,
+          "status": "partial",
+          "total": 53
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1974,
+          "status": "success",
+          "total": 1974
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 54,
+          "status": "success",
+          "total": 230
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 25,
+          "tech": 29
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-20T17:30:00+00:00",
+            "source": "The Register",
+            "title": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server",
+            "url": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Ultimate guide for fixing your team’s API keys",
+            "url": "https://cloud.google.com/blog/topics/developers-practitioners/how-to-fix-your-teams-api-keys/"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Introducing ambient networking for GKE",
+            "url": "https://cloud.google.com/blog/products/networking/ambient-networking-for-gke-sidecarless-service-mesh/"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How to simplify cloud access with Unified Access Policies, now in preview",
+            "url": "https://cloud.google.com/blog/products/identity-security/how-to-simplify-cloud-access-with-unified-access-policies/"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How Spanner Graph detects ads fraud and abuse at Google at multi-billion node scale",
+            "url": "https://cloud.google.com/blog/products/databases/how-spanner-graph-detects-google-ads-fraud-and-abuse/"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "DynaPORT modernization on Google Cloud with AlloyDB for PostgreSQL and GKE",
+            "url": "https://cloud.google.com/blog/products/databases/dynaport-modernizes-with-alloydb/"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "What’s new in Managed Service for Apache Spark 4.0",
+            "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-in-managed-service-for-apache-spark-4-0/"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How Vodafone is using the Data Engineering Agent to improve their data pipelines",
+            "url": "https://cloud.google.com/blog/products/data-analytics/vodafone-cuts-data-pipeline-costs-30-via-data-engineeringagent/"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Drowning in clicks: Scaling Black Friday pipelines with Managed Airflow agents",
+            "url": "https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow/"
+          },
+          {
+            "published_at": "2026-11-20T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Frontier and Center: Why your data agents need a “wind tunnel”",
+            "url": "https://cloud.google.com/blog/products/data-analytics/a-data-simulator-to-test-agents/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-20",
       "opensource": {
         "topProjects": [
@@ -14389,8 +14629,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-20T00:49:24.467944+00:00",
-    "totalSnapshots": 65,
+    "generatedAt": "2026-11-21T00:07:48.463689+00:00",
+    "totalSnapshots": 66,
     "warnings": []
   }
 }
