@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 892,
+      "date": "2026-11-22",
+      "kevAdded": 0,
+      "knownExploited": 5,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 44
+    },
+    {
       "cves": 1974,
       "date": "2026-11-21",
       "kevAdded": 4,
@@ -596,16 +605,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-20",
-    "date": "2026-11-21",
-    "daysObserved": 66,
-    "generatedAt": "2026-11-21T00:07:48.463689+00:00",
-    "snapshots": 66,
+    "coveredDate": "2026-11-21",
+    "date": "2026-11-22",
+    "daysObserved": 67,
+    "generatedAt": "2026-11-21T23:32:43.973926+00:00",
+    "snapshots": 67,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 4,
+      "daily_growth": 12,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -613,11 +622,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201661,
+      "stars": 201673,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 6,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -625,11 +634,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143627,
+      "stars": 143633,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 22,
+      "daily_growth": 16,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -637,11 +646,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 140122,
+      "stars": 140138,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 13,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -649,11 +658,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129306,
+      "stars": 129319,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 4,
+      "daily_growth": 18,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -661,11 +670,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123810,
+      "stars": 123828,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 31,
+      "daily_growth": 19,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -673,11 +682,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122315,
+      "stars": 122334,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 25,
+      "daily_growth": 34,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -685,11 +694,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115203,
+      "stars": 115237,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 39,
+      "daily_growth": 25,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -697,11 +706,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105755,
+      "stars": 105780,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 26,
+      "daily_growth": 15,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -709,11 +718,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98712,
+      "stars": 98727,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 21,
+      "daily_growth": 10,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -721,270 +730,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91884,
+      "stars": 91894,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [
-    {
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-11-20T15:56:21Z",
-      "repository": "anthropics/anthropic-sdk-python",
-      "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.12.0",
-      "version": "v2.12.0"
-    },
-    {
-      "kind": "patch",
-      "project": "core",
-      "publishedAt": "2026-11-20T08:18:41Z",
-      "repository": "vuejs/core",
-      "source": "GitHub",
-      "url": "https://github.com/vuejs/core/releases/tag/v3.5.46",
-      "version": "v3.5.46"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-20T01:27:57Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.57.0",
-      "version": "v3.57.0"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-19T20:56:27Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.56.0",
-      "version": "v3.56.0"
-    },
-    {
-      "kind": "minor",
-      "project": "anthropic-sdk-python",
-      "publishedAt": "2026-11-19T19:14:21Z",
-      "repository": "anthropics/anthropic-sdk-python",
-      "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.11.0",
-      "version": "v2.11.0"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 125,
-    "high": 631,
+    "critical": 62,
+    "high": 355,
     "kevCatalogTotal": 1790,
     "latest": [
       {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in the automation-controller notification\n                  subsystem. Although NotificationTemplate.notification_\n                  configuration is protected from API filtering, its recipient\n                  value is copied in clear text into the unprotected\n                  Notification.recipients field on every send. Because the\n                  credential-types endpoint…",
-        "id": "CVE-2026-84713",
+        "cvss_score": 9.3,
+        "cvss_version": "4.0",
+        "description": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.",
+        "id": "CVE-2026-133993",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:57.000",
-        "publishedAt": "2026-09-23T20:17:17.950",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A flaw was found in the automation-controller notification\n                  subsystem. Although NotificationTemplate.notification_\n                 …",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84713"
-      },
-      {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "The BuddyBoss Addons plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in versions up to, and including, 1.2.1. This is due to the Social Login REST endpoint trusting unverified Apple and Facebook identity-token claims and linking an attacker-controlled provider identifier to an existing WordPress user selected by the token’s email claim. This makes it…",
-        "id": "CVE-2026-80188",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:56.737",
-        "publishedAt": "2026-11-20T14:17:54.003",
+        "lastModifiedAt": "2026-11-21T18:16:54.423",
+        "publishedAt": "2026-11-21T18:16:54.277",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "The BuddyBoss Addons plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in versions up to, and including, 1.2.1. This is…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80188"
+        "title": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993"
       },
       {
-        "cvss_score": 7.3,
-        "cvss_version": "3.1",
-        "description": "pmo-platform is a modular PMO and release-management platform for Claude Code. Prior to 3.69.1, core/hooks/block-credential-reads.sh, core/hooks/block-egress.sh, core/hooks/block-fs-boundary.sh, and core/hooks/block-mcp-writes.sh pin PATH to /usr/bin:/bin, hard-code jq as /usr/bin/jq, and return success when jq is unavailable there. On systems where jq exists only in a Homebrew path, including…",
-        "id": "CVE-2026-77350",
+        "cvss_score": 2.9,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was identified in Cockpit-HQ Cockpit up to 2.14.1. Affected by this issue is some unknown functionality of the file cron.php of the component Web Worker. Such manipulation of the argument token leads to missing authentication. The attack can be executed remotely. The attack requires a high level of complexity. The exploitation is known to be difficult. The exploit is publicly…",
+        "id": "CVE-2026-133990",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:56.280",
-        "publishedAt": "2026-11-20T18:18:56.280",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-21T18:16:54.223",
+        "publishedAt": "2026-11-21T18:16:53.430",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "pmo-platform is a modular PMO and release-management platform for Claude Code. Prior to 3.69.1, core/hooks/block-credential-reads.sh…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77350"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "3.1",
-        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.8, http.paginate in src/core/modules/atomic/http/paginate.py validates only the initial base_url, and _paginate_link_header then follows a server-supplied Link: rel=\"next\" URL without calling the SSRF guard again. A low-privileged caller can make an allowed first page point the next request at an internal or…",
-        "id": "CVE-2026-77315",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:56.007",
-        "publishedAt": "2026-11-19T22:18:44.470",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.8, http.paginate in src/core/modules/atomic/http/paginate.py validates…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77315"
-      },
-      {
-        "cvss_score": 9.0,
-        "cvss_version": "3.1",
-        "description": "NVIDIA VIRTIO-Net for Bluefield contains a vulnerability in Virtio-Net where a VM user may cause a Write-What-Where condition by crafted message. A successful exploit of this vulnerability may lead to Code Execution in Virtio-Net scope.",
-        "id": "CVE-2026-65094",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:55.723",
-        "publishedAt": "2026-11-20T03:17:36.693",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "NVIDIA VIRTIO-Net for Bluefield contains a vulnerability in Virtio-Net where a VM user may cause a Write-What-Where condition by crafted message. A successful…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65094"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "netty-incubator-codec-ohttp implements Oblivious HTTP (OHTTP) gateway and client functionality using Netty. Prior to 0.0.23.Final, BinaryHttpParser.readFieldLine in codec-bhttp/src/main/java/io/netty/incubator/codec/bhttp/BinaryHttpParser.java treats a complete field line that ends exactly at a known field-section boundary as incomplete and returns without consuming bytes…",
-        "id": "CVE-2026-63124",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:55.607",
-        "publishedAt": "2026-11-19T22:18:07.363",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "netty-incubator-codec-ohttp implements Oblivious HTTP (OHTTP) gateway and client functionality using Netty. Prior to 0.0.23.Final…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63124"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "baserCMS is a website development framework. Prior to 5.3.0, getAuthenticationService permits an Api/Admin session authentication fallback based on the Referer header, although operator accounts have an Admin auth prefix and cannot obtain an Api/Admin JWT. An authenticated operator can therefore access /baser/api/admin/ endpoints whose permission.php entries have auth => true, including…",
-        "id": "CVE-2026-63012",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:55.487",
-        "publishedAt": "2026-11-19T21:18:03.460",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "baserCMS is a website development framework. Prior to 5.3.0, getAuthenticationService permits an Api/Admin session authentication fallback based on the Referer…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63012"
+        "title": "A vulnerability was identified in Cockpit-HQ Cockpit up to 2.14.1. Affected by this issue is some unknown functionality of the file cron.php of the component…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133990"
       },
       {
         "cvss_score": 8.7,
         "cvss_version": "4.0",
-        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.1, the afpd Spotlight RPC fetchQueryResultsForContext: reply path in etc/afpd/spotlight_marshalling.c calls the top-level sl_pack function from sl_pack_filemeta on a shifted sub-buffer without passing the remaining capacity of the outer DSI reply buffer. An authenticated AFP client can…",
-        "id": "CVE-2026-62321",
+        "description": "Web-Token jwt-framework and jwt-library before 3.4.10, 4.0.0 before 4.0.7, and 4.1.0 before 4.1.7 contain an uncontrolled resource consumption vulnerability in PBES2AESKW::unwrapKey(), which passes the attacker-controlled p2c JWE header value to hash_pbkdf2() without an upper bound. Unauthenticated attackers can send a JWE using a PBES2-HS*+A*KW algorithm with a huge p2c iteration count to force…",
+        "id": "CVE-2026-134461",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:55.443",
-        "publishedAt": "2026-11-20T18:18:55.320",
+        "lastModifiedAt": "2026-11-21T17:17:11.627",
+        "publishedAt": "2026-11-21T17:17:11.627",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.1, the afpd Spotlight RPC…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62321"
+        "title": "Web-Token jwt-framework and jwt-library before 3.4.10, 4.0.0 before 4.0.7, and 4.1.0 before 4.1.7 contain an uncontrolled resource consumption vulnerability in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134461"
       },
       {
-        "cvss_score": 9.3,
+        "cvss_score": 6.3,
         "cvss_version": "4.0",
-        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 2.0.0 until 4.5.1, the DHX2 and DHX2-PAM authentication state machine in etc/uams/uams_dhx2_pam.c permits logincont1 to be invoked again with the same FPLoginCont retID after it has released the global gcry_mpi_t Ra object. When DHX2 or DHX2PAM is enabled in the UAM list, a remote attacker without valid AFP…",
-        "id": "CVE-2026-62318",
+        "description": "web-token jwt-framework 1.2.0 before 3.4.10, jwt-experimental before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a missing integrity check in the experimental Chacha20Poly1305 key-encryption algorithm, which discards the Poly1305 tag in encryptKey() and calls openssl_decrypt() without it in decryptKey(). Attackers on the token path can modify the encrypted content encryption key…",
+        "id": "CVE-2026-134460",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:54.937",
-        "publishedAt": "2026-11-20T18:18:54.807",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 2.0.0 until 4.5.1, the DHX2 and DHX2-PAM authentication state…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-62318"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "Avahi is a system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite. In 0.9-rc4 and earlier, org.freedesktop.Avahi.Server.RecordBrowserNew accepts a domain-name value that avahi_is_valid_domain_name considers valid even though avahi_normalize_name_strdup cannot normalize it. The resulting null key reaches the key assertion in…",
-        "id": "CVE-2026-59987",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:54.647",
-        "publishedAt": "2026-11-20T18:18:54.647",
+        "lastModifiedAt": "2026-11-21T17:17:11.473",
+        "publishedAt": "2026-11-21T17:17:11.473",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Avahi is a system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite. In 0.9-rc4 and earlier…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59987"
+        "title": "web-token jwt-framework 1.2.0 before 3.4.10, jwt-experimental before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a missing integrity check in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134460"
       },
       {
-        "cvss_score": 8.1,
-        "cvss_version": "3.1",
-        "description": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. Prior to 1.46.0, social account linking can use an unverified email returned by the standard OAuth 2.0 or Azure AD connector to select an existing local account. When findSocialRelatedUser matches a victim's email and a request to POST /api/experience/identification enables linkSocialIdentity, an attacker who controls that…",
-        "id": "CVE-2026-55216",
+        "cvss_score": 8.2,
+        "cvss_version": "4.0",
+        "description": "web-token jwt-framework and jwt-library before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a padding oracle in RSACrypt::decryptWithRSA15() because RSA1_5 decryption lacks implicit rejection, so invalid padding, wrong CEK length, and valid padding take measurably different time. Remote attackers can submit adaptively crafted JWE encrypted_key values and measure these timing…",
+        "id": "CVE-2026-134459",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:54.243",
-        "publishedAt": "2026-11-20T18:18:54.100",
+        "lastModifiedAt": "2026-11-21T17:17:11.317",
+        "publishedAt": "2026-11-21T17:17:11.317",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. Prior to 1.46.0, social account linking can use an unverified email returned by the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55216"
+        "title": "web-token jwt-framework and jwt-library before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a padding oracle in RSACrypt::decryptWithRSA15()…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134459"
       },
       {
-        "cvss_score": 5.7,
-        "cvss_version": "3.1",
-        "description": "Reposilite is lightweight and easy-to-use repository management software dedicated to Maven-based artifacts in the JVM ecosystem. From 3.5.16 until 3.6.0, as stated by the advisory, the Maven directory-index page interpolates the request URI without HTML escaping in its title, heading, base URL, and parent-directory link. The advisory says the content-embedded ctx.uri() is percent-encoded…",
-        "id": "CVE-2026-53526",
+        "cvss_score": 8.2,
+        "cvss_version": "4.0",
+        "description": "web-token jwt-framework and jwt-library before 3.4.12, 4.0.x before 4.0.8, 4.1.x before 4.1.10, and 4.2.x before 4.2.4, and jwt-encryption-algorithm-ecdh-es through 3.2.10, have a ConcatKDF::generate() that performs a single SHA-256 round, deriving at most 32 bytes for ECDH-ES and ECDH-SS direct key agreement. Anyone holding a JWE using A256CBC-HS512 can decrypt it under an all-zero AES key…",
+        "id": "CVE-2026-134458",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:53.977",
-        "publishedAt": "2026-11-19T21:18:02.870",
+        "lastModifiedAt": "2026-11-21T17:17:11.147",
+        "publishedAt": "2026-11-21T17:17:11.147",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "web-token jwt-framework and jwt-library before 3.4.12, 4.0.x before 4.0.8, 4.1.x before 4.1.10, and 4.2.x before 4.2.4, and jwt-encryption-algorithm-ecdh-es…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134458"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "Hysteria 2.5.0 before 2.8.2 contains a memory allocation vulnerability when sniffing is enabled, allowing authenticated users to trigger out-of-memory conditions. Attackers with a valid password can forward a crafted QUIC packet with a huge crypto length, causing the server to exhaust memory and crash.",
+        "id": "CVE-2026-134457",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-21T17:17:10.997",
+        "publishedAt": "2026-11-21T17:17:10.997",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Hysteria 2.5.0 before 2.8.2 contains a memory allocation vulnerability when sniffing is enabled, allowing authenticated users to trigger out-of-memory…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134457"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "Hysteria 2.5.0 before 2.9.2 contains a denial of service vulnerability in the HTTP sniff implementation that fails to limit header size. Attackers can continuously send excessively large HTTP headers without terminating them, exhausting server memory and causing out-of-memory crashes.",
+        "id": "CVE-2026-134456",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-21T17:17:10.850",
+        "publishedAt": "2026-11-21T17:17:10.850",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Hysteria 2.5.0 before 2.9.2 contains a denial of service vulnerability in the HTTP sniff implementation that fails to limit header size. Attackers can…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134456"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "Hysteria 1.0.0 before 2.9.2 contains a denial of service vulnerability in FragUDPMessage where UDP fragmentation fails to handle headers larger than the maximum datagram payload size. Authenticated clients can advertise a small max_datagram_frame_size and trigger a UDP response, causing a slice bounds panic that crashes the server.",
+        "id": "CVE-2026-134455",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-21T17:17:10.700",
+        "publishedAt": "2026-11-21T17:17:10.700",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Hysteria 1.0.0 before 2.9.2 contains a denial of service vulnerability in FragUDPMessage where UDP fragmentation fails to handle headers larger than the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134455"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "Hysteria from 2.0.0 before 2.9.2 contains an ACL bypass vulnerability that allows authenticated clients to reach blocked UDP destinations by reusing an established UDP session. Attackers can open a session to an allowed destination, then send later packets to localhost or private-network addresses to access internal-only UDP services.",
+        "id": "CVE-2026-134454",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-21T17:17:10.550",
+        "publishedAt": "2026-11-21T17:17:10.550",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Reposilite is lightweight and easy-to-use repository management software dedicated to Maven-based artifacts in the JVM ecosystem. From 3.5.16 until 3.6.0, as…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53526"
+        "title": "Hysteria from 2.0.0 before 2.9.2 contains an ACL bypass vulnerability that allows authenticated clients to reach blocked UDP destinations by reusing an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134454"
       },
       {
-        "cvss_score": 3.1,
-        "cvss_version": "3.1",
-        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.0.0 until 4.5.0, getoption_int in libatalk/util/netatalk_conf.c accepts an out-of-range server quantum value from afp.conf without applying the documented fallback to the default. An administrator can unintentionally configure a very large allocation whose failure causes AFP_PANIC at startup or a very…",
-        "id": "CVE-2026-49390",
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "Dockhand before 1.0.50 contains an improper access control vulnerability that allows authenticated unprivileged users to read restricted data by querying API endpoints lacking RBAC checks. Attackers can access /api/users, /api/license, and /api/hawser/connect to obtain user emails and roles, the full license key, and environment details, while an invalid license grants all users admin rights.",
+        "id": "CVE-2026-134453",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:53.940",
-        "publishedAt": "2026-11-20T18:18:53.810",
+        "lastModifiedAt": "2026-11-21T17:17:10.400",
+        "publishedAt": "2026-11-21T17:17:10.400",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Dockhand before 1.0.50 contains an improper access control vulnerability that allows authenticated unprivileged users to read restricted data by querying API…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134453"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "Dockhand before 1.0.57 merges stack secret environment variables into the environment used to spawn docker compose during stack deploys without filtering reserved keys such as PATH. An authenticated attacker with stacks:edit permission can set PATH to a directory containing a malicious binary and trigger a deploy, executing arbitrary commands as the Dockhand server process user.",
+        "id": "CVE-2026-134452",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-21T17:17:10.250",
+        "publishedAt": "2026-11-21T17:17:10.250",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Dockhand before 1.0.57 merges stack secret environment variables into the environment used to spawn docker compose during stack deploys without filtering…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134452"
+      },
+      {
+        "cvss_score": 8.6,
+        "cvss_version": "4.0",
+        "description": "Dockhand before 1.0.57 contains a privilege escalation vulnerability that allows non-admin users with settings:edit permission to modify OIDC provider configuration due to an improper permission check. Attackers can send a PUT request to /api/auth/oidc/<provider-id> setting adminClaim to their own OIDC group, gaining full admin access on their next OIDC login.",
+        "id": "CVE-2026-134451",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-21T17:17:10.100",
+        "publishedAt": "2026-11-21T17:17:10.100",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Dockhand before 1.0.57 contains a privilege escalation vulnerability that allows non-admin users with settings:edit permission to modify OIDC provider…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134451"
+      },
+      {
+        "cvss_score": 2.3,
+        "cvss_version": "4.0",
+        "description": "Dockhand before 1.0.57 contains a clickjacking vulnerability because src/hooks.server.ts never sets X-Frame-Options or CSP frame-ancestors headers on responses. Attackers on a same-site origin can embed the UI in an invisible iframe to trick authenticated users into stopping stacks, deleting resources, or changing settings.",
+        "id": "CVE-2026-134450",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-21T17:17:09.953",
+        "publishedAt": "2026-11-21T17:17:09.953",
         "severity": "LOW",
         "source": "NVD",
-        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.0.0 until 4.5.0, getoption_int in libatalk/util/netatalk_conf.c…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49390"
+        "title": "Dockhand before 1.0.57 contains a clickjacking vulnerability because src/hooks.server.ts never sets X-Frame-Options or CSP frame-ancestors headers on…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134450"
       },
       {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.0, sl_unpack_loop in etc/afpd/spotlight_marshalling.c uses an attacker-controlled Spotlight table-of-contents index during FPSpotlightRPC without checking it against the number of entries or the remaining dsi->commands buffer. An authenticated AFP client with access to a Spotlight-enabled…",
-        "id": "CVE-2026-49388",
+        "cvss_score": 6.1,
+        "cvss_version": "4.0",
+        "description": "Dockhand before 1.0.57 contains a cross-site request forgery vulnerability that allows attackers to perform state-changing actions by exploiting missing Origin header validation and absent CSRF tokens. Attackers can lure authenticated users to a same-site attacker page that submits forged POST requests to stop, start, or delete stacks, modify settings, and change credentials.",
+        "id": "CVE-2026-134449",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:53.610",
-        "publishedAt": "2026-11-20T18:18:53.480",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-21T17:17:09.787",
+        "publishedAt": "2026-11-21T17:17:09.787",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.0, sl_unpack_loop in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49388"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.0, the afpd FPSpotlightRPC unmarshalling handlers in etc/afpd/spotlight_marshalling.c trust the element count encoded in the upper 32 bits of an RPC tag without comparing it with the remaining input length. An authenticated client with access to a Spotlight-enabled volume can make…",
-        "id": "CVE-2026-49387",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-20T18:18:53.443",
-        "publishedAt": "2026-11-20T18:18:53.307",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Netatalk is a Free and Open Source file server suite for Unix-like operating systems. From 3.1.0 until 4.5.0, the afpd FPSpotlightRPC unmarshalling handlers in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49387"
+        "title": "Dockhand before 1.0.57 contains a cross-site request forgery vulnerability that allows attackers to perform state-changing actions by exploiting missing Origin…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134449"
       }
     ],
-    "low": 134,
-    "medium": 830,
+    "low": 45,
+    "medium": 375,
     "none": 0,
-    "unscored": 254
+    "unscored": 55
   },
   "snapshot": {
-    "cves": 1974,
-    "kevAdded": 4,
-    "knownExploited": 3,
+    "cves": 892,
+    "kevAdded": 0,
+    "knownExploited": 5,
     "projects": 18,
-    "releases": 5,
-    "techEntries": 54
+    "releases": 0,
+    "techEntries": 44
   },
   "sources": {
     "opensource": {
@@ -998,7 +961,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 5,
+        "inWindow": 0,
         "status": "partial",
         "total": 53
       }
@@ -1006,27 +969,75 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 4,
-        "status": "success",
+        "inWindow": 0,
+        "status": "empty",
         "total": 1790
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1974,
+        "inWindow": 892,
         "status": "success",
-        "total": 1974
+        "total": 892
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 54,
+        "inWindow": 44,
         "status": "success",
         "total": 230
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-11-20T23:28:47+00:00",
+      "source": "The Register",
+      "summary": "Like a parent disciplining a misbehaving child, PHP’s annual update clamps down on loose default behaviors to curb malicious hacker horseplay.",
+      "title": "PHP 8.6: Things are gonna get a lot more strict around here",
+      "url": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-20T21:27:56+00:00",
+      "source": "The Register",
+      "summary": "No financial details, but plenty of other clues",
+      "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-20T20:59:08+00:00",
+      "source": "Ars Technica",
+      "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
+      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-20T20:42:04+00:00",
+      "source": "The Register",
+      "summary": "Apple, Google, and Microsoft called out for failing to provide developers with adequate AI agent controls",
+      "title": "Signal slams door on prying AI agents to protect privacy",
+      "url": "https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T20:24:38+00:00",
+      "source": "Cloudflare",
+      "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
+      "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+      "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T20:00:45+00:00",
+      "source": "Cloudflare",
+      "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release.",
+      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+      "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/"
+    },
     {
       "category": "security",
       "publishedAt": "2026-11-20T17:30:00+00:00",
@@ -1098,54 +1109,6 @@
       "summary": "When an Airflow pipeline fails in production, the hard part is rarely the fix. It's finding out what to fix. A task dies without a traceback. Is it the code, the data, or the environment? Hard to say, as clues are scattered across task logs, scheduler logs, and worker metrics…",
       "title": "Drowning in clicks: Scaling Black Friday pipelines with Managed Airflow agents",
       "url": "https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Imagine you're building a data agent to answer questions about an enterprise data warehouse. Ideally, you'd develop and test it against production data, but access restrictions and data sensitivity make that difficult – especially when the engineers building the agent sit…",
-      "title": "Frontier and Center: Why your data agents need a “wind tunnel”",
-      "url": "https://cloud.google.com/blog/products/data-analytics/a-data-simulator-to-test-agents/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T16:44:00+00:00",
-      "source": "The Register",
-      "summary": "Devices found to misinterpret medication instructions and other scenarios impacting human safety",
-      "title": "Dutch data watchdog highlights safety issues with AI glasses",
-      "url": "https://www.theregister.com/security/2026/11/20/dutch-data-watchdog-highlights-safety-issues-with-ai-glasses/5311345"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T12:18:19+00:00",
-      "source": "The Register",
-      "summary": "Notice's existence can be acknowledged without harming national security, but its precise demands remain under wraps",
-      "title": "Spy court blasts UK secrecy, forces government to admit Apple ‘backdoor’ demand",
-      "url": "https://www.theregister.com/security/2026/11/20/spy-court-blasts-uk-secrecy-forces-government-to-admit-apple-backdoor-demand/5311292"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T11:09:44+00:00",
-      "source": "The Register",
-      "summary": "Optional update fixes misleading Android error for versions 25H2 and 26H2",
-      "title": "Windows 11 passkey bug cries failure after successful sign-in",
-      "url": "https://www.theregister.com/security/2026/11/20/windows-11-passkey-bug-cries-failure-after-successful-sign-in/5311263"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T01:58:29+00:00",
-      "source": "Cloudflare",
-      "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.",
-      "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
-      "url": "https://blog.cloudflare.com/nginx2root/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T00:57:45+00:00",
-      "source": "The Register",
-      "summary": "Critical Virtzilla bugs allow authentication bypass, as a nested virtualization issue got Digital Ocean ducking",
-      "title": "Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else",
-      "url": "https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193"
     }
   ]
 }
