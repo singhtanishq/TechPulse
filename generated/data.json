@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 302,
+      "date": "2026-11-23",
+      "kevAdded": 0,
+      "knownExploited": 0,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 15
+    },
+    {
       "cves": 892,
       "date": "2026-11-22",
       "kevAdded": 0,
@@ -605,16 +614,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-21",
-    "date": "2026-11-22",
-    "daysObserved": 67,
-    "generatedAt": "2026-11-21T23:32:43.973926+00:00",
-    "snapshots": 67,
+    "coveredDate": "2026-11-22",
+    "date": "2026-11-23",
+    "daysObserved": 68,
+    "generatedAt": "2026-11-22T23:45:14.747516+00:00",
+    "snapshots": 68,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 12,
+      "daily_growth": 98,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -622,11 +631,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201673,
+      "stars": 201771,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 6,
+      "daily_growth": -26,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -634,11 +643,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143633,
+      "stars": 143607,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": 45,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -646,11 +655,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 140138,
+      "stars": 140183,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 13,
+      "daily_growth": 62,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -658,11 +667,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129319,
+      "stars": 129381,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 18,
+      "daily_growth": 103,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -670,11 +679,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123828,
+      "stars": 123931,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 19,
+      "daily_growth": 72,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -682,11 +691,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122334,
+      "stars": 122406,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 34,
+      "daily_growth": 104,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -694,11 +703,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115237,
+      "stars": 115341,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 25,
+      "daily_growth": 48,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -706,11 +715,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105780,
+      "stars": 105828,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 15,
+      "daily_growth": -17,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -718,11 +727,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98727,
+      "stars": 98710,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 10,
+      "daily_growth": 44,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -730,224 +739,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91894,
+      "stars": 91938,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [],
   "security": {
-    "critical": 62,
-    "high": 355,
+    "critical": 20,
+    "high": 171,
     "kevCatalogTotal": 1790,
     "latest": [
       {
-        "cvss_score": 9.3,
-        "cvss_version": "4.0",
-        "description": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription Handler. Performing a manipulation of the argument service results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been released to the public and may be used for attacks.",
-        "id": "CVE-2026-133993",
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "Insufficient Session Expiration vulnerability in Drupal Persistent Login allows Forceful Browsing.\n\nThis issue affects Persistent Login: from 1.0.0 before 1.8.0 and from 2.0.0 before 2.2.2.",
+        "id": "CVE-2024-13280",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T18:16:54.423",
-        "publishedAt": "2026-11-21T18:16:54.277",
+        "lastModifiedAt": "2026-11-22T18:17:12.393",
+        "publishedAt": "2025-01-09T20:15:36.913",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "A security flaw has been discovered in D-Link DIR-600L 2.17b02. This affects the function FUN_0040efb0 of the file gena.cgi of the component GENA Subscription…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133993"
+        "title": "Insufficient Session Expiration vulnerability in Drupal Persistent Login allows Forceful Browsing.\n\nThis issue affects Persistent Login: from 1.0.0 before…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-13280"
       },
       {
-        "cvss_score": 2.9,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was identified in Cockpit-HQ Cockpit up to 2.14.1. Affected by this issue is some unknown functionality of the file cron.php of the component Web Worker. Such manipulation of the argument token leads to missing authentication. The attack can be executed remotely. The attack requires a high level of complexity. The exploitation is known to be difficult. The exploit is publicly…",
-        "id": "CVE-2026-133990",
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in Drupal File Entity (fieldable files) allows Forceful Browsing.\n\nThis issue affects File Entity (fieldable files): from 7.X-* before 7.X-2.39.",
+        "id": "CVE-2024-13276",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T18:16:54.223",
-        "publishedAt": "2026-11-21T18:16:53.430",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A vulnerability was identified in Cockpit-HQ Cockpit up to 2.14.1. Affected by this issue is some unknown functionality of the file cron.php of the component…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133990"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "Web-Token jwt-framework and jwt-library before 3.4.10, 4.0.0 before 4.0.7, and 4.1.0 before 4.1.7 contain an uncontrolled resource consumption vulnerability in PBES2AESKW::unwrapKey(), which passes the attacker-controlled p2c JWE header value to hash_pbkdf2() without an upper bound. Unauthenticated attackers can send a JWE using a PBES2-HS*+A*KW algorithm with a huge p2c iteration count to force…",
-        "id": "CVE-2026-134461",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:11.627",
-        "publishedAt": "2026-11-21T17:17:11.627",
+        "lastModifiedAt": "2026-11-22T18:17:12.063",
+        "publishedAt": "2025-01-09T20:15:36.487",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Web-Token jwt-framework and jwt-library before 3.4.10, 4.0.0 before 4.0.7, and 4.1.0 before 4.1.7 contain an uncontrolled resource consumption vulnerability in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134461"
+        "title": "Insertion of Sensitive Information Into Sent Data vulnerability in Drupal File Entity (fieldable files) allows Forceful Browsing.\n\nThis issue affects File…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-13276"
       },
       {
-        "cvss_score": 6.3,
-        "cvss_version": "4.0",
-        "description": "web-token jwt-framework 1.2.0 before 3.4.10, jwt-experimental before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a missing integrity check in the experimental Chacha20Poly1305 key-encryption algorithm, which discards the Poly1305 tag in encryptKey() and calls openssl_decrypt() without it in decryptKey(). Attackers on the token path can modify the encrypted content encryption key…",
-        "id": "CVE-2026-134460",
+        "cvss_score": 5.4,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Drupal File Entity (fieldable files) allows Cross-Site Scripting (XSS).\n\nThis issue affects File Entity (fieldable files): from 7.x-1.0 before 7.X-2.38.",
+        "id": "CVE-2024-13237",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:11.473",
-        "publishedAt": "2026-11-21T17:17:11.473",
+        "lastModifiedAt": "2026-11-22T18:17:10.517",
+        "publishedAt": "2025-01-09T19:15:17.437",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "web-token jwt-framework 1.2.0 before 3.4.10, jwt-experimental before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a missing integrity check in…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134460"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Drupal File Entity (fieldable files) allows Cross-Site…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-13237"
       },
       {
-        "cvss_score": 8.2,
-        "cvss_version": "4.0",
-        "description": "web-token jwt-framework and jwt-library before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a padding oracle in RSACrypt::decryptWithRSA15() because RSA1_5 decryption lacks implicit rejection, so invalid padding, wrong CEK length, and valid padding take measurably different time. Remote attackers can submit adaptively crafted JWE encrypted_key values and measure these timing…",
-        "id": "CVE-2026-134459",
+        "cvss_score": null,
+        "cvss_version": null,
+        "description": "An arbitrary file read vulnerability was discovered in debbugs, a bug tracking system based on the active Debian BTS. versions.cgi failed to correctly sanitize package name inputs in found\n\nand fixed query parameters. Crafted query parameters could cause version.cgi to output any lines of the target file which contained spaces.",
+        "id": "CVE-2026-132147",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:11.317",
-        "publishedAt": "2026-11-21T17:17:11.317",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-22T16:16:45.117",
+        "publishedAt": "2026-11-22T16:16:45.117",
+        "severity": null,
         "source": "NVD",
-        "title": "web-token jwt-framework and jwt-library before 3.4.10, 4.0.x before 4.0.7, and 4.1.x before 4.1.7 contain a padding oracle in RSACrypt::decryptWithRSA15()…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134459"
-      },
-      {
-        "cvss_score": 8.2,
-        "cvss_version": "4.0",
-        "description": "web-token jwt-framework and jwt-library before 3.4.12, 4.0.x before 4.0.8, 4.1.x before 4.1.10, and 4.2.x before 4.2.4, and jwt-encryption-algorithm-ecdh-es through 3.2.10, have a ConcatKDF::generate() that performs a single SHA-256 round, deriving at most 32 bytes for ECDH-ES and ECDH-SS direct key agreement. Anyone holding a JWE using A256CBC-HS512 can decrypt it under an all-zero AES key…",
-        "id": "CVE-2026-134458",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:11.147",
-        "publishedAt": "2026-11-21T17:17:11.147",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "web-token jwt-framework and jwt-library before 3.4.12, 4.0.x before 4.0.8, 4.1.x before 4.1.10, and 4.2.x before 4.2.4, and jwt-encryption-algorithm-ecdh-es…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134458"
+        "title": "An arbitrary file read vulnerability was discovered in debbugs, a bug tracking system based on the active Debian BTS. versions.cgi failed to correctly sanitize…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132147"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "Hysteria 2.5.0 before 2.8.2 contains a memory allocation vulnerability when sniffing is enabled, allowing authenticated users to trigger out-of-memory conditions. Attackers with a valid password can forward a crafted QUIC packet with a huge crypto length, causing the server to exhaust memory and crash.",
-        "id": "CVE-2026-134457",
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in YellowPencil YellowPencil Visual CSS Style Editor yellow-pencil-visual-theme-customizer allows Reflected XSS.This issue affects YellowPencil Visual CSS Style Editor: from n/a through 7.6.7.",
+        "id": "CVE-2026-131794",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:10.997",
-        "publishedAt": "2026-11-21T17:17:10.997",
+        "lastModifiedAt": "2026-11-22T16:16:45.080",
+        "publishedAt": "2026-11-22T16:16:44.980",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Hysteria 2.5.0 before 2.8.2 contains a memory allocation vulnerability when sniffing is enabled, allowing authenticated users to trigger out-of-memory…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134457"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "Hysteria 2.5.0 before 2.9.2 contains a denial of service vulnerability in the HTTP sniff implementation that fails to limit header size. Attackers can continuously send excessively large HTTP headers without terminating them, exhausting server memory and causing out-of-memory crashes.",
-        "id": "CVE-2026-134456",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:10.850",
-        "publishedAt": "2026-11-21T17:17:10.850",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Hysteria 2.5.0 before 2.9.2 contains a denial of service vulnerability in the HTTP sniff implementation that fails to limit header size. Attackers can…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134456"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in YellowPencil YellowPencil Visual CSS Style Editor…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131794"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "Hysteria 1.0.0 before 2.9.2 contains a denial of service vulnerability in FragUDPMessage where UDP fragmentation fails to handle headers larger than the maximum datagram payload size. Authenticated clients can advertise a small max_datagram_frame_size and trigger a UDP response, causing a slice bounds panic that crashes the server.",
-        "id": "CVE-2026-134455",
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in IT Path Solutions Contact Form to Any API contact-form-to-any-api allows Stored XSS.This issue affects Contact Form to Any API: from n/a through 3.0.7.",
+        "id": "CVE-2026-131793",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:10.700",
-        "publishedAt": "2026-11-21T17:17:10.700",
+        "lastModifiedAt": "2026-11-22T16:16:44.950",
+        "publishedAt": "2026-11-22T16:16:44.850",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Hysteria 1.0.0 before 2.9.2 contains a denial of service vulnerability in FragUDPMessage where UDP fragmentation fails to handle headers larger than the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134455"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in IT Path Solutions Contact Form to Any API…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131793"
       },
       {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Hysteria from 2.0.0 before 2.9.2 contains an ACL bypass vulnerability that allows authenticated clients to reach blocked UDP destinations by reusing an established UDP session. Attackers can open a session to an allowed destination, then send later packets to localhost or private-network addresses to access internal-only UDP services.",
-        "id": "CVE-2026-134454",
+        "cvss_score": 6.5,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs Dokan dokan-lite allows Stored XSS.This issue affects Dokan: from n/a through 5.3.4.",
+        "id": "CVE-2026-131792",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:10.550",
-        "publishedAt": "2026-11-21T17:17:10.550",
+        "lastModifiedAt": "2026-11-22T16:16:44.820",
+        "publishedAt": "2026-11-22T16:16:44.710",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Hysteria from 2.0.0 before 2.9.2 contains an ACL bypass vulnerability that allows authenticated clients to reach blocked UDP destinations by reusing an…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134454"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs Dokan dokan-lite allows Stored XSS.This issue…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131792"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "Dockhand before 1.0.50 contains an improper access control vulnerability that allows authenticated unprivileged users to read restricted data by querying API endpoints lacking RBAC checks. Attackers can access /api/users, /api/license, and /api/hawser/connect to obtain user emails and roles, the full license key, and environment details, while an invalid license grants all users admin rights.",
-        "id": "CVE-2026-134453",
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in seowriting SEOWriting seowriting allows Stored XSS.This issue affects SEOWriting: from n/a through 1.15.0.",
+        "id": "CVE-2026-131791",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:10.400",
-        "publishedAt": "2026-11-21T17:17:10.400",
+        "lastModifiedAt": "2026-11-22T16:16:44.677",
+        "publishedAt": "2026-11-22T16:16:44.557",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Dockhand before 1.0.50 contains an improper access control vulnerability that allows authenticated unprivileged users to read restricted data by querying API…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134453"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in seowriting SEOWriting seowriting allows Stored XSS.This…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131791"
       },
       {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "Dockhand before 1.0.57 merges stack secret environment variables into the environment used to spawn docker compose during stack deploys without filtering reserved keys such as PATH. An authenticated attacker with stacks:edit permission can set PATH to a directory containing a malicious binary and trigger a deploy, executing arbitrary commands as the Dockhand server process user.",
-        "id": "CVE-2026-134452",
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Gutenberg Blocks by Kadence Blocks kadence-blocks allows Stored XSS.This issue affects Gutenberg Blocks by Kadence Blocks: from n/a through 3.9.1.1.",
+        "id": "CVE-2026-131790",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:10.250",
-        "publishedAt": "2026-11-21T17:17:10.250",
+        "lastModifiedAt": "2026-11-22T16:16:44.313",
+        "publishedAt": "2026-11-22T16:16:44.157",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Dockhand before 1.0.57 merges stack secret environment variables into the environment used to spawn docker compose during stack deploys without filtering…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134452"
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Gutenberg Blocks by Kadence Blocks…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131790"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Kadence kadence allows Stored XSS.This issue affects Kadence: from n/a through 1.6.0.",
+        "id": "CVE-2026-131788",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-22T16:16:44.103",
+        "publishedAt": "2026-11-22T16:16:43.930",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Kadence kadence allows Stored…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131788"
+      },
+      {
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in myCred myCred mycred allows Retrieve Embedded Sensitive Data.This issue affects myCred: from n/a through 4.0.3.",
+        "id": "CVE-2026-131786",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-22T16:16:43.870",
+        "publishedAt": "2026-11-22T16:16:43.683",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Insertion of Sensitive Information Into Sent Data vulnerability in myCred myCred mycred allows Retrieve Embedded Sensitive Data.This issue affects myCred: from…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131786"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in mra13 / Team Tips and Tricks HQ Stripe Payments stripe-payments allows Stored XSS.This issue affects Stripe Payments: from n/a through 2.1.4.",
+        "id": "CVE-2026-131777",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-22T16:16:43.633",
+        "publishedAt": "2026-11-22T16:16:41.520",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in mra13 / Team Tips and Tricks HQ Stripe Payments…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131777"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PluginUs.Net HUSKY woocommerce-products-filter allows Stored XSS.This issue affects HUSKY: from n/a through 1.4.8.",
+        "id": "CVE-2026-131772",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-22T16:16:41.470",
+        "publishedAt": "2026-11-22T16:16:41.293",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PluginUs.Net HUSKY woocommerce-products-filter allows…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131772"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "3.1",
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Jayasree TU Successful Redirection for Contact Form cf7-redirection allows Reflected XSS.This issue affects Successful Redirection for Contact Form: from n/a through 2.0.",
+        "id": "CVE-2026-131755",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-22T16:16:41.243",
+        "publishedAt": "2026-11-22T16:16:41.073",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Jayasree TU Successful Redirection for Contact Form…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131755"
       },
       {
         "cvss_score": 8.6,
-        "cvss_version": "4.0",
-        "description": "Dockhand before 1.0.57 contains a privilege escalation vulnerability that allows non-admin users with settings:edit permission to modify OIDC provider configuration due to an improper permission check. Attackers can send a PUT request to /api/auth/oidc/<provider-id> setting adminClaim to their own OIDC group, gaining full admin access on their next OIDC login.",
-        "id": "CVE-2026-134451",
+        "cvss_version": "3.1",
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path Traversal.This issue affects Everest Forms: from n/a through 3.6.4.",
+        "id": "CVE-2026-131750",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:10.100",
-        "publishedAt": "2026-11-21T17:17:10.100",
+        "lastModifiedAt": "2026-11-22T16:16:41.027",
+        "publishedAt": "2026-11-22T16:16:40.857",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Dockhand before 1.0.57 contains a privilege escalation vulnerability that allows non-admin users with settings:edit permission to modify OIDC provider…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134451"
-      },
-      {
-        "cvss_score": 2.3,
-        "cvss_version": "4.0",
-        "description": "Dockhand before 1.0.57 contains a clickjacking vulnerability because src/hooks.server.ts never sets X-Frame-Options or CSP frame-ancestors headers on responses. Attackers on a same-site origin can embed the UI in an invisible iframe to trick authenticated users into stopping stacks, deleting resources, or changing settings.",
-        "id": "CVE-2026-134450",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:09.953",
-        "publishedAt": "2026-11-21T17:17:09.953",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "Dockhand before 1.0.57 contains a clickjacking vulnerability because src/hooks.server.ts never sets X-Frame-Options or CSP frame-ancestors headers on…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134450"
-      },
-      {
-        "cvss_score": 6.1,
-        "cvss_version": "4.0",
-        "description": "Dockhand before 1.0.57 contains a cross-site request forgery vulnerability that allows attackers to perform state-changing actions by exploiting missing Origin header validation and absent CSRF tokens. Attackers can lure authenticated users to a same-site attacker page that submits forged POST requests to stop, start, or delete stacks, modify settings, and change credentials.",
-        "id": "CVE-2026-134449",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-21T17:17:09.787",
-        "publishedAt": "2026-11-21T17:17:09.787",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Dockhand before 1.0.57 contains a cross-site request forgery vulnerability that allows attackers to perform state-changing actions by exploiting missing Origin…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134449"
+        "title": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131750"
       }
     ],
-    "low": 45,
-    "medium": 375,
+    "low": 18,
+    "medium": 73,
     "none": 0,
-    "unscored": 55
+    "unscored": 20
   },
   "snapshot": {
-    "cves": 892,
+    "cves": 302,
     "kevAdded": 0,
-    "knownExploited": 5,
+    "knownExploited": 0,
     "projects": 18,
     "releases": 0,
-    "techEntries": 44
+    "techEntries": 15
   },
   "sources": {
     "opensource": {
@@ -975,37 +984,21 @@
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 892,
+        "inWindow": 302,
         "status": "success",
-        "total": 892
+        "total": 302
       }
     },
     "technology": {
       "rss": {
-        "failures": 0,
-        "inWindow": 44,
-        "status": "success",
-        "total": 230
+        "failures": 1,
+        "inWindow": 15,
+        "status": "partial",
+        "total": 200
       }
     }
   },
   "technology": [
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T23:28:47+00:00",
-      "source": "The Register",
-      "summary": "Like a parent disciplining a misbehaving child, PHP’s annual update clamps down on loose default behaviors to curb malicious hacker horseplay.",
-      "title": "PHP 8.6: Things are gonna get a lot more strict around here",
-      "url": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T21:27:56+00:00",
-      "source": "The Register",
-      "summary": "No financial details, but plenty of other clues",
-      "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478"
-    },
     {
       "category": "security",
       "publishedAt": "2026-11-20T20:59:08+00:00",
@@ -1013,14 +1006,6 @@
       "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
       "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
       "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T20:42:04+00:00",
-      "source": "The Register",
-      "summary": "Apple, Google, and Microsoft called out for failing to provide developers with adequate AI agent controls",
-      "title": "Signal slams door on prying AI agents to protect privacy",
-      "url": "https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466"
     },
     {
       "category": "tech",
@@ -1037,14 +1022,6 @@
       "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release.",
       "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
       "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T17:30:00+00:00",
-      "source": "The Register",
-      "summary": "'Agents kept adapting for nearly a full day without human direction,' Amazon CISO said",
-      "title": "China attackers deployed AI agents that autonomously found and exploited a 0-day to take over a university server",
-      "url": "https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382"
     },
     {
       "category": "tech",
@@ -1109,6 +1086,38 @@
       "summary": "When an Airflow pipeline fails in production, the hard part is rarely the fix. It's finding out what to fix. A task dies without a traceback. Is it the code, the data, or the environment? Hard to say, as clues are scattered across task logs, scheduler logs, and worker metrics…",
       "title": "Drowning in clicks: Scaling Black Friday pipelines with Managed Airflow agents",
       "url": "https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Imagine you're building a data agent to answer questions about an enterprise data warehouse. Ideally, you'd develop and test it against production data, but access restrictions and data sensitivity make that difficult – especially when the engineers building the agent sit…",
+      "title": "Frontier and Center: Why your data agents need a “wind tunnel”",
+      "url": "https://cloud.google.com/blog/products/data-analytics/a-data-simulator-to-test-agents/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-20T01:58:29+00:00",
+      "source": "Cloudflare",
+      "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.",
+      "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+      "url": "https://blog.cloudflare.com/nginx2root/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-19T23:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Welcome to The Blueprint , our ongoing series where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. Kult is a London-based…",
+      "title": "The Blueprint: How Kult built a gaming companion that actually knows your game",
+      "url": "https://cloud.google.com/blog/products/gaming/kult-built-a-gaming-companion-with-gemini-that-actually-knows-your-game/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-19T20:29:46+00:00",
+      "source": "Ars Technica",
+      "summary": "25-year-old accused of stalking employees at coffee shop and in an \"aggressive\" car pursuit.",
+      "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
+      "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/"
     }
   ]
 }
