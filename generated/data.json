@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1906,
+      "date": "2026-11-24",
+      "kevAdded": 2,
+      "knownExploited": 1,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 19
+    },
+    {
       "cves": 302,
       "date": "2026-11-23",
       "kevAdded": 0,
@@ -614,16 +623,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-22",
-    "date": "2026-11-23",
-    "daysObserved": 68,
-    "generatedAt": "2026-11-22T23:45:14.747516+00:00",
-    "snapshots": 68,
+    "coveredDate": "2026-11-23",
+    "date": "2026-11-24",
+    "daysObserved": 69,
+    "generatedAt": "2026-11-24T04:05:20.725507+00:00",
+    "snapshots": 69,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 98,
+      "daily_growth": -62,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -631,11 +640,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201771,
+      "stars": 201709,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": -26,
+      "daily_growth": 13,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -643,11 +652,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143607,
+      "stars": 143620,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 45,
+      "daily_growth": -138,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -655,11 +664,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 140183,
+      "stars": 140045,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 62,
+      "daily_growth": -127,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -667,11 +676,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129381,
+      "stars": 129254,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 103,
+      "daily_growth": -56,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -679,11 +688,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123931,
+      "stars": 123875,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 72,
+      "daily_growth": -77,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -691,11 +700,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122406,
+      "stars": 122329,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 104,
+      "daily_growth": -26,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -703,11 +712,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115341,
+      "stars": 115315,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 48,
+      "daily_growth": -127,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -715,11 +724,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105828,
+      "stars": 105701,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": -17,
+      "daily_growth": 3,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -727,11 +736,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98710,
+      "stars": 98713,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 44,
+      "daily_growth": -108,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -739,224 +748,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91938,
+      "stars": 91830,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [],
   "security": {
-    "critical": 20,
-    "high": 171,
-    "kevCatalogTotal": 1790,
+    "critical": 125,
+    "high": 696,
+    "kevCatalogTotal": 1792,
     "latest": [
       {
-        "cvss_score": 9.8,
-        "cvss_version": "3.1",
-        "description": "Insufficient Session Expiration vulnerability in Drupal Persistent Login allows Forceful Browsing.\n\nThis issue affects Persistent Login: from 1.0.0 before 1.8.0 and from 2.0.0 before 2.2.2.",
-        "id": "CVE-2024-13280",
+        "cvss_score": 6.8,
+        "cvss_version": "4.0",
+        "description": "MediaInfoLib before 26.10 contains a divide-by-zero vulnerability in TimeCode::FromString() that allows attackers to crash applications by supplying hour-unit timestamps with fewer than three fractional digits. Attackers can craft a TTML file whose begin or end attribute contains such a timestamp, causing MediaInfo or embedding applications to crash with SIGFPE when opened.",
+        "id": "CVE-2026-135445",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T18:17:12.393",
-        "publishedAt": "2025-01-09T20:15:36.913",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "Insufficient Session Expiration vulnerability in Drupal Persistent Login allows Forceful Browsing.\n\nThis issue affects Persistent Login: from 1.0.0 before…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-13280"
-      },
-      {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in Drupal File Entity (fieldable files) allows Forceful Browsing.\n\nThis issue affects File Entity (fieldable files): from 7.X-* before 7.X-2.39.",
-        "id": "CVE-2024-13276",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T18:17:12.063",
-        "publishedAt": "2025-01-09T20:15:36.487",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Insertion of Sensitive Information Into Sent Data vulnerability in Drupal File Entity (fieldable files) allows Forceful Browsing.\n\nThis issue affects File…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-13276"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Drupal File Entity (fieldable files) allows Cross-Site Scripting (XSS).\n\nThis issue affects File Entity (fieldable files): from 7.x-1.0 before 7.X-2.38.",
-        "id": "CVE-2024-13237",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T18:17:10.517",
-        "publishedAt": "2025-01-09T19:15:17.437",
+        "lastModifiedAt": "2026-11-23T18:17:15.787",
+        "publishedAt": "2026-11-23T18:17:15.787",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Drupal File Entity (fieldable files) allows Cross-Site…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-13237"
+        "title": "MediaInfoLib before 26.10 contains a divide-by-zero vulnerability in TimeCode::FromString() that allows attackers to crash applications by supplying hour-unit…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135445"
       },
       {
-        "cvss_score": null,
-        "cvss_version": null,
-        "description": "An arbitrary file read vulnerability was discovered in debbugs, a bug tracking system based on the active Debian BTS. versions.cgi failed to correctly sanitize package name inputs in found\n\nand fixed query parameters. Crafted query parameters could cause version.cgi to output any lines of the target file which contained spaces.",
-        "id": "CVE-2026-132147",
+        "cvss_score": 6.9,
+        "cvss_version": "4.0",
+        "description": "MediaInfoLib before 26.10 contains an out-of-bounds read vulnerability in the VC-1 parser that uses uninitialized AspectRatio, profile and colordiff_format members as unchecked table indices. Attackers can supply a crafted MP4 file that finalizes the VC-1 stream before synchronization, crashing the process and potentially exposing adjacent memory in reported metadata.",
+        "id": "CVE-2026-135443",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:45.117",
-        "publishedAt": "2026-11-22T16:16:45.117",
-        "severity": null,
-        "source": "NVD",
-        "title": "An arbitrary file read vulnerability was discovered in debbugs, a bug tracking system based on the active Debian BTS. versions.cgi failed to correctly sanitize…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132147"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in YellowPencil YellowPencil Visual CSS Style Editor yellow-pencil-visual-theme-customizer allows Reflected XSS.This issue affects YellowPencil Visual CSS Style Editor: from n/a through 7.6.7.",
-        "id": "CVE-2026-131794",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:45.080",
-        "publishedAt": "2026-11-22T16:16:44.980",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in YellowPencil YellowPencil Visual CSS Style Editor…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131794"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in IT Path Solutions Contact Form to Any API contact-form-to-any-api allows Stored XSS.This issue affects Contact Form to Any API: from n/a through 3.0.7.",
-        "id": "CVE-2026-131793",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:44.950",
-        "publishedAt": "2026-11-22T16:16:44.850",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in IT Path Solutions Contact Form to Any API…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131793"
-      },
-      {
-        "cvss_score": 6.5,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs Dokan dokan-lite allows Stored XSS.This issue affects Dokan: from n/a through 5.3.4.",
-        "id": "CVE-2026-131792",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:44.820",
-        "publishedAt": "2026-11-22T16:16:44.710",
+        "lastModifiedAt": "2026-11-23T18:17:15.487",
+        "publishedAt": "2026-11-23T18:17:15.487",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs Dokan dokan-lite allows Stored XSS.This issue…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131792"
+        "title": "MediaInfoLib before 26.10 contains an out-of-bounds read vulnerability in the VC-1 parser that uses uninitialized AspectRatio, profile and colordiff_format…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135443"
+      },
+      {
+        "cvss_score": 6.8,
+        "cvss_version": "4.0",
+        "description": "MediaInfoLib before 26.10 contains an uninitialized pointer dereference vulnerability because the File_Mpeg4_Descriptors constructor leaves the IsCmaf pointer holding stale heap contents. Attackers can supply a crafted MP4 file with an AAC/USAC decoder specific descriptor so File_Usac::Streams_Finish_Conformance_Profile dereferences an invalid address, crashing the application.",
+        "id": "CVE-2026-135441",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-23T18:17:15.187",
+        "publishedAt": "2026-11-23T18:17:15.187",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "MediaInfoLib before 26.10 contains an uninitialized pointer dereference vulnerability because the File_Mpeg4_Descriptors constructor leaves the IsCmaf pointer…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135441"
+      },
+      {
+        "cvss_score": 5.1,
+        "cvss_version": "4.0",
+        "description": "Fusion through 1.3.1 contains a server-side request forgery vulnerability that allows authenticated users to bypass private-address protection by submitting URLs to the POST /api/feeds/validate endpoint. Attackers can supply a public URL that redirects or links to loopback, private, or link-local addresses, making feedfinder request internal services and leak parsed titles in responses.",
+        "id": "CVE-2026-135439",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-23T18:17:14.793",
+        "publishedAt": "2026-11-23T18:17:14.793",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Fusion through 1.3.1 contains a server-side request forgery vulnerability that allows authenticated users to bypass private-address protection by submitting…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135439"
+      },
+      {
+        "cvss_score": 8.7,
+        "cvss_version": "4.0",
+        "description": "KindleEar 3.0.0 through 3.5.3 contains a remote code execution vulnerability that allows authenticated non-admin users to run Python code by uploading malicious recipes. Attackers can submit crafted recipe source to the /recipe/upload action, which calibre compile_recipe executes via exec() without sandboxing, gaining root code execution in the Docker container and access to password hashes.",
+        "id": "CVE-2026-135436",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-23T18:17:14.333",
+        "publishedAt": "2026-11-23T18:17:14.333",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "KindleEar 3.0.0 through 3.5.3 contains a remote code execution vulnerability that allows authenticated non-admin users to run Python code by uploading…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135436"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "django-appointment before 3.14.2 contains a missing authorization vulnerability that allows authenticated staff members to modify other staff members' appointments by supplying arbitrary appointment IDs. Attackers can send POST requests to /ajax/update_appt_date_time/ with sequential appointment_id values to reschedule appointments, rewriting date, start and end times and reminders.",
+        "id": "CVE-2026-135434",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-23T18:17:14.007",
+        "publishedAt": "2026-11-23T18:17:14.007",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "django-appointment before 3.14.2 contains a missing authorization vulnerability that allows authenticated staff members to modify other staff members'…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135434"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in seowriting SEOWriting seowriting allows Stored XSS.This issue affects SEOWriting: from n/a through 1.15.0.",
-        "id": "CVE-2026-131791",
+        "cvss_version": "4.0",
+        "description": "sdcb Chats 1.10.0 before 1.17.1 contains an incorrect authorization vulnerability in GetAssignedUserDetails that allows assigned non-admin users to read other users' per-user MCP headers. Attackers can request the assigned-user-details endpoint to obtain bearer tokens in CustomHeaders and impersonate other users against the downstream MCP server.",
+        "id": "CVE-2026-135432",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:44.677",
-        "publishedAt": "2026-11-22T16:16:44.557",
+        "lastModifiedAt": "2026-11-23T18:17:13.693",
+        "publishedAt": "2026-11-23T18:17:13.693",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in seowriting SEOWriting seowriting allows Stored XSS.This…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131791"
+        "title": "sdcb Chats 1.10.0 before 1.17.1 contains an incorrect authorization vulnerability in GetAssignedUserDetails that allows assigned non-admin users to read other…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135432"
+      },
+      {
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "KindleEar 3.0.0 through 3.5.3 contains an insecure direct object reference vulnerability in application/view/subscribe.py that allows authenticated users to access other users' records by id without ownership checks. Attackers can enumerate sequential recipe ids to read recipe source containing credentials, delete recipes and custom RSS feeds, and overwrite saved site logins.",
+        "id": "CVE-2026-135430",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-23T18:17:13.383",
+        "publishedAt": "2026-11-23T18:17:13.383",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "KindleEar 3.0.0 through 3.5.3 contains an insecure direct object reference vulnerability in application/view/subscribe.py that allows authenticated users to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135430"
+      },
+      {
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "A security flaw has been discovered in vijaythapa333 django-student-management-system up to 0d96e62cc4e996e3e77bec1b8e3da3980edf8889. This issue affects the function add_student_save of the file HodViews.py of the component Student Profile Picture Upload. Performing a manipulation of the argument profile_pic results in unrestricted upload. The attack can be initiated remotely. The exploit has…",
+        "id": "CVE-2026-135082",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-23T18:17:13.027",
+        "publishedAt": "2026-11-23T18:17:12.870",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A security flaw has been discovered in vijaythapa333 django-student-management-system up to 0d96e62cc4e996e3e77bec1b8e3da3980edf8889. This issue affects the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135082"
+      },
+      {
+        "cvss_score": 2.0,
+        "cvss_version": "4.0",
+        "description": "A vulnerability was determined in vijaythapa333 django-student-management-system up to 0d96e62cc4e996e3e77bec1b8e3da3980edf8889. This affects the function get_students of the file StaffViews.py of the component Take Attendance Staff Dashboard. This manipulation of the argument first_name causes cross site scripting. It is possible to initiate the attack remotely. The exploit has been publicly…",
+        "id": "CVE-2026-135080",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-23T18:17:12.627",
+        "publishedAt": "2026-11-23T18:17:12.480",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A vulnerability was determined in vijaythapa333 django-student-management-system up to 0d96e62cc4e996e3e77bec1b8e3da3980edf8889. This affects the function…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135080"
       },
       {
         "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Gutenberg Blocks by Kadence Blocks kadence-blocks allows Stored XSS.This issue affects Gutenberg Blocks by Kadence Blocks: from n/a through 3.9.1.1.",
-        "id": "CVE-2026-131790",
+        "cvss_version": "4.0",
+        "description": "Frappe ERPNext 15.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module import endpoint that does not check whether the caller may create inserted records or download a named file. Authenticated attackers, including portal users or users with no roles, can send crafted import requests to read file contents and create Serial No and Batch…",
+        "id": "CVE-2026-134432",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:44.313",
-        "publishedAt": "2026-11-22T16:16:44.157",
+        "lastModifiedAt": "2026-11-23T18:17:12.150",
+        "publishedAt": "2026-11-21T17:17:08.770",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Gutenberg Blocks by Kadence Blocks…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131790"
+        "title": "Frappe ERPNext 15.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module import endpoint that does not…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134432"
       },
       {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Kadence kadence allows Stored XSS.This issue affects Kadence: from n/a through 1.6.0.",
-        "id": "CVE-2026-131788",
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "Frappe ERPNext 15.53.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an Assets module endpoint that returns cost and quantity fields of purchase and stock transactions without record-level permission checks. Authenticated users, including portal users or users with no roles, can send crafted requests naming out-of-scope records to read these fields.",
+        "id": "CVE-2026-134427",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:44.103",
-        "publishedAt": "2026-11-22T16:16:43.930",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-23T18:17:12.020",
+        "publishedAt": "2026-11-21T17:17:07.910",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Kadence kadence allows Stored…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131788"
+        "title": "Frappe ERPNext 15.53.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an Assets module endpoint that returns cost…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134427"
       },
       {
-        "cvss_score": 7.5,
-        "cvss_version": "3.1",
-        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in myCred myCred mycred allows Retrieve Embedded Sensitive Data.This issue affects myCred: from n/a through 4.0.3.",
-        "id": "CVE-2026-131786",
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "Frappe ERPNext 6.26.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module endpoint that returns stock data without checking whether the caller may read the requested records. Authenticated attackers, including portal users or users with no assigned roles, can send crafted requests naming out-of-scope records to read per-warehouse and…",
+        "id": "CVE-2026-134423",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:43.870",
-        "publishedAt": "2026-11-22T16:16:43.683",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-23T18:17:11.893",
+        "publishedAt": "2026-11-21T17:17:07.207",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Insertion of Sensitive Information Into Sent Data vulnerability in myCred myCred mycred allows Retrieve Embedded Sensitive Data.This issue affects myCred: from…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131786"
+        "title": "Frappe ERPNext 6.26.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module endpoint that returns stock data…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134423"
       },
       {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in mra13 / Team Tips and Tricks HQ Stripe Payments stripe-payments allows Stored XSS.This issue affects Stripe Payments: from n/a through 2.1.4.",
-        "id": "CVE-2026-131777",
+        "cvss_score": 8.3,
+        "cvss_version": "4.0",
+        "description": "Frappe ERPNext 4.0.0 before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns the taxes and charges of documents without checking record permissions. Authenticated users, including portal users or users with no roles, can request arbitrary document types and records to read tax rows beyond their permitted scope.",
+        "id": "CVE-2026-134418",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:43.633",
-        "publishedAt": "2026-11-22T16:16:41.520",
+        "lastModifiedAt": "2026-11-23T18:17:11.760",
+        "publishedAt": "2026-11-21T17:17:06.360",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in mra13 / Team Tips and Tricks HQ Stripe Payments…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131777"
+        "title": "Frappe ERPNext 4.0.0 before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134418"
       },
       {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PluginUs.Net HUSKY woocommerce-products-filter allows Stored XSS.This issue affects HUSKY: from n/a through 1.4.8.",
-        "id": "CVE-2026-131772",
+        "cvss_score": 5.3,
+        "cvss_version": "4.0",
+        "description": "Frappe ERPNext 5.0.0 before 15.122.0 contains a missing authorization vulnerability in an Accounts module endpoint that allows authenticated users to read Taxes and Charges Template rows without permission checks. Attackers, including portal users or users with no assigned roles, can send crafted requests naming out-of-scope records to read account heads and tax rates.",
+        "id": "CVE-2026-134414",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:41.470",
-        "publishedAt": "2026-11-22T16:16:41.293",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-23T18:17:11.630",
+        "publishedAt": "2026-11-21T17:17:05.687",
+        "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PluginUs.Net HUSKY woocommerce-products-filter allows…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131772"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "3.1",
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Jayasree TU Successful Redirection for Contact Form cf7-redirection allows Reflected XSS.This issue affects Successful Redirection for Contact Form: from n/a through 2.0.",
-        "id": "CVE-2026-131755",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:41.243",
-        "publishedAt": "2026-11-22T16:16:41.073",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Jayasree TU Successful Redirection for Contact Form…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131755"
-      },
-      {
-        "cvss_score": 8.6,
-        "cvss_version": "3.1",
-        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path Traversal.This issue affects Everest Forms: from n/a through 3.6.4.",
-        "id": "CVE-2026-131750",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-22T16:16:41.027",
-        "publishedAt": "2026-11-22T16:16:40.857",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131750"
+        "title": "Frappe ERPNext 5.0.0 before 15.122.0 contains a missing authorization vulnerability in an Accounts module endpoint that allows authenticated users to read…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134414"
       }
     ],
-    "low": 18,
-    "medium": 73,
+    "low": 65,
+    "medium": 579,
     "none": 0,
-    "unscored": 20
+    "unscored": 441
   },
   "snapshot": {
-    "cves": 302,
-    "kevAdded": 0,
-    "knownExploited": 0,
+    "cves": 1906,
+    "kevAdded": 2,
+    "knownExploited": 1,
     "projects": 18,
     "releases": 0,
-    "techEntries": 15
+    "techEntries": 19
   },
   "sources": {
     "opensource": {
@@ -978,146 +987,146 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1790
+        "inWindow": 2,
+        "status": "success",
+        "total": 1792
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 302,
+        "inWindow": 1906,
         "status": "success",
-        "total": 302
+        "total": 1906
       }
     },
     "technology": {
       "rss": {
-        "failures": 1,
-        "inWindow": 15,
-        "status": "partial",
-        "total": 200
+        "failures": 0,
+        "inWindow": 19,
+        "status": "success",
+        "total": 230
       }
     }
   },
   "technology": [
     {
       "category": "security",
-      "publishedAt": "2026-11-20T20:59:08+00:00",
-      "source": "Ars Technica",
-      "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
-      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T20:24:38+00:00",
-      "source": "Cloudflare",
-      "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
-      "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
-      "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T20:00:45+00:00",
-      "source": "Cloudflare",
-      "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release.",
-      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
-      "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Most Gemini prototypes start the same way. You grab an API key from Google AI Studio , then paste it into your coding agent to start building a prototype. That speed is the point, and shouldn’t be slowed down. The trouble starts later, when the prototype gets real users and the…",
-      "title": "Ultimate guide for fixing your team’s API keys",
-      "url": "https://cloud.google.com/blog/topics/developers-practitioners/how-to-fix-your-teams-api-keys/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Network sidecars have a deserved reputation for excessive resource consumption and increased management overhead, especially in a service mesh environment. Today, we are announcing the general availability of ambient networking for Google Kubernetes Engine (GKE). This milestone…",
-      "title": "Introducing ambient networking for GKE",
-      "url": "https://cloud.google.com/blog/products/networking/ambient-networking-for-gke-sidecarless-service-mesh/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "As organizations scale their cloud footprint to thousands of autonomous agents and microservices, you can accidentally create an operational bottleneck with strict Identity and Access Management (IAM). Meanwhile, administrators still need to enforce least privilege across…",
-      "title": "How to simplify cloud access with Unified Access Policies, now in preview",
-      "url": "https://cloud.google.com/blog/products/identity-security/how-to-simplify-cloud-access-with-unified-access-policies/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Ever wonder how the Google Ads team keeps the massive system stable and online, despite continuous attempts by hackers to take it down? Part of the answer is using Spanner as its core operational and graph database. The Google Ads team uses a central graph-based platform to…",
-      "title": "How Spanner Graph detects ads fraud and abuse at Google at multi-billion node scale",
-      "url": "https://cloud.google.com/blog/products/databases/how-spanner-graph-detects-google-ads-fraud-and-abuse/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "In global maritime logistics, Marine Ports and Terminals play a significant role in the movement of container and cargo, within and beyond. Marine ports and terminals world-wide use a Terminal Operating System (TOS) which acts as the central nervous system managing port…",
-      "title": "DynaPORT modernization on Google Cloud with AlloyDB for PostgreSQL and GKE",
-      "url": "https://cloud.google.com/blog/products/databases/dynaport-modernizes-with-alloydb/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "As organizations move from reactive analytics to proactive systems of action powered by autonomous AI agents, data platforms face a new set of demands. Moving from human scale to agent scale changes both how data pipelines run and how they are built: Teams and AI agents now use…",
-      "title": "What’s new in Managed Service for Apache Spark 4.0",
-      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-in-managed-service-for-apache-spark-4-0/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "For large organizations, building and maintaining data pipelines is one of the most complex tasks that data engineering teams are tasked with. In BigQuery environments, the Data Engineering Agent can help, leveraging Gemini to to automate these workflows. In this blog post…",
-      "title": "How Vodafone is using the Data Engineering Agent to improve their data pipelines",
-      "url": "https://cloud.google.com/blog/products/data-analytics/vodafone-cuts-data-pipeline-costs-30-via-data-engineeringagent/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "When an Airflow pipeline fails in production, the hard part is rarely the fix. It's finding out what to fix. A task dies without a traceback. Is it the code, the data, or the environment? Hard to say, as clues are scattered across task logs, scheduler logs, and worker metrics…",
-      "title": "Drowning in clicks: Scaling Black Friday pipelines with Managed Airflow agents",
-      "url": "https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Imagine you're building a data agent to answer questions about an enterprise data warehouse. Ideally, you'd develop and test it against production data, but access restrictions and data sensitivity make that difficult – especially when the engineers building the agent sit…",
-      "title": "Frontier and Center: Why your data agents need a “wind tunnel”",
-      "url": "https://cloud.google.com/blog/products/data-analytics/a-data-simulator-to-test-agents/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-20T01:58:29+00:00",
-      "source": "Cloudflare",
-      "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.",
-      "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
-      "url": "https://blog.cloudflare.com/nginx2root/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-19T23:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Welcome to The Blueprint , our ongoing series where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. Kult is a London-based…",
-      "title": "The Blueprint: How Kult built a gaming companion that actually knows your game",
-      "url": "https://cloud.google.com/blog/products/gaming/kult-built-a-gaming-companion-with-gemini-that-actually-knows-your-game/"
+      "publishedAt": "2026-11-23T17:56:56+00:00",
+      "source": "The Register",
+      "summary": "CISA, F6 sound the alarm after PoC exploit made public",
+      "title": "Critical Cisco remote code execution bug under attack",
+      "url": "https://www.theregister.com/security/2026/11/23/critical-cisco-remote-code-execution-bug-under-attack/5311722"
     },
     {
       "category": "security",
-      "publishedAt": "2026-11-19T20:29:46+00:00",
-      "source": "Ars Technica",
-      "summary": "25-year-old accused of stalking employees at coffee shop and in an \"aggressive\" car pursuit.",
-      "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
-      "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/"
+      "publishedAt": "2026-11-23T17:01:00+00:00",
+      "source": "The Register",
+      "summary": "Minister says intruders downloaded more than 130 GB of data as political churn left security neglected",
+      "title": "Bulgaria evicts cyber snoops who lurked inside government networks for 5 years",
+      "url": "https://www.theregister.com/security/2026/11/23/bulgaria-evicts-cyber-snoops-who-lurked-inside-government-networks-for-5-years/5311629"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-23T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Today, we are proud to announce that Gartner has recognized Google as a Leader in the 2026 Gartner® Magic Quadrant™ for Security Information and Event Management (SIEM). Among the 15 vendors evaluated this year, Google was positioned furthest on “Completeness of Vision.” Today's…",
+      "title": "Google is named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
+      "url": "https://cloud.google.com/blog/products/identity-security/google-is-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-23T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Open models like Gemma 4 from Google DeepMind are a great option to keep your data local. But how can a local AI model integrate with on-premises data? AlloyDB Omni , Google’s 100% PostgreSQL-compatible database that runs anywhere, now integrates with locally hosted large…",
+      "title": "Data + AI Anywhere: AlloyDB Omni integration with local models",
+      "url": "https://cloud.google.com/blog/products/databases/alloydb-omni-integration-with-local-models/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-23T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "As the scale of global communications grows larger and larger, enterprise platforms must process billions of interactions with customers across a complex network of touchpoints without breaking them. A prime example is Sinch , one of the world’s leading cloud communications and…",
+      "title": "How Sinch modernized its enterprise data warehouse from Snowflake to BigQuery to power AI",
+      "url": "https://cloud.google.com/blog/products/data-analytics/how-sinch-migrated-from-snowflake-to-bigquery-to-power-ai/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-23T14:04:00+00:00",
+      "source": "The Register",
+      "summary": "Rogue AI or nation-state hackers would be preferable to the amount of technical debt the past week of wobbling services laid bare",
+      "title": "Everything going down at once wasn't evidence of a conspiracy – but the truth may be scarier",
+      "url": "https://www.theregister.com/off-prem/2026/11/23/everything-going-down-at-once-wasnt-evidence-of-a-conspiracy-but-the-truth-may-be-scarier/5311458"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-23T14:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "At Cloudflare we’ve built tools to enable teams to extend our internal testing framework and build test tooling for networking protocols. This is the story of how this was used for DNS.",
+      "title": "Probing DNS at Cloudflare",
+      "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-23T12:29:00+00:00",
+      "source": "The Register",
+      "summary": "Microsoft says mitigation is in place, but admins must investigate possible compromise and rotate secrets",
+      "title": "Norway links energy firm cyberattacks to critical Azure API Management flaw",
+      "url": "https://www.theregister.com/security/2026/11/23/norway-links-energy-firm-cyberattacks-to-critical-azure-api-management-flaw/5311598"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-23T11:48:00+00:00",
+      "source": "The Register",
+      "summary": "Payments platform hasn't disclosed how the data was captured or the scale of the breach",
+      "title": "Cleverbridge admits attackers stole customers' credit card and CVV numbers. Yep, you read that right",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/23/cleverbridge-admits-attackers-stole-customers-credit-card-and-cvv-numbers-yep-you-read-that-right/5311573"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-23T10:25:28+00:00",
+      "source": "Microsoft",
+      "summary": "Should your next API be REST, or something else? And which one will AI coding agents handle best? We tested REST, POST-only and RPC-style APIs with six models across 1,356 runs, and what decided whether agents succeeded had nothing to do with API style. The post Do AI coding…",
+      "title": "Do AI coding agents struggle with non-REST APIs?",
+      "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-23T08:42:00+00:00",
+      "source": "The Register",
+      "summary": "Outage after outage after outage is a syndrome that needs radical treatment",
+      "title": "When Microsoft, Apple, and the FAA can't keep it up, it's a system of a down",
+      "url": "https://www.theregister.com/columnists/2026/11/23/when-microsoft-apple-and-the-faa-cant-keep-it-up-its-a-system-of-a-down/5311363"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-23T04:39:19+00:00",
+      "source": "The Register",
+      "summary": "China-linked ARMORY CASTLE knew about it weeks before it unleashed five custom malware tools targeting vCenter",
+      "title": "Google claims last week’s critical VMware bug was under attack in September",
+      "url": "https://www.theregister.com/virtualization/2026/11/23/google-claims-last-weeks-critical-vmware-bug-was-under-attack-in-september/5311547"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-23T00:23:31+00:00",
+      "source": "The Register",
+      "summary": "PLUS: Lenovo's infra group finally makes big profit; Indonesia’s glaciers are gone; Australian bank releases its AI bug-finder; and more!",
+      "title": "$1 of GPT-5.1 tokens finds new ways around China’s Great Firewall",
+      "url": "https://www.theregister.com/security/2026/11/23/1-of-gpt-51-tokens-finds-new-ways-around-chinas-great-firewall/5311532"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-20T23:28:47+00:00",
+      "source": "The Register",
+      "summary": "Like a parent disciplining a misbehaving child, PHP’s annual update clamps down on loose default behaviors to curb malicious hacker horseplay.",
+      "title": "PHP 8.6: Things are gonna get a lot more strict around here",
+      "url": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-20T21:27:56+00:00",
+      "source": "The Register",
+      "summary": "No financial details, but plenty of other clues",
+      "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478"
     }
   ]
 }

@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-11-24",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": -62,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201709,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 13,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143620,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -138,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 140045,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -127,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129254,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": -56,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123875,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": -77,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 122329,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": -26,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 115315,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": -127,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105701,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 3,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98713,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -108,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91830,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 125,
+          "HIGH": 696,
+          "LOW": 65,
+          "MEDIUM": 579,
+          "NONE": 0,
+          "UNSCORED": 441
+        }
+      },
+      "snapshot": {
+        "cves": 1906,
+        "kevAdded": 2,
+        "knownExploited": 1,
+        "projects": 18,
+        "releases": 0,
+        "techEntries": 19
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 2,
+          "status": "success",
+          "total": 1792
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 53
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1906,
+          "status": "success",
+          "total": 1906
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 19,
+          "status": "success",
+          "total": 230
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 12,
+          "tech": 7
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-23T17:56:56+00:00",
+            "source": "The Register",
+            "title": "Critical Cisco remote code execution bug under attack",
+            "url": "https://www.theregister.com/security/2026/11/23/critical-cisco-remote-code-execution-bug-under-attack/5311722"
+          },
+          {
+            "published_at": "2026-11-23T17:01:00+00:00",
+            "source": "The Register",
+            "title": "Bulgaria evicts cyber snoops who lurked inside government networks for 5 years",
+            "url": "https://www.theregister.com/security/2026/11/23/bulgaria-evicts-cyber-snoops-who-lurked-inside-government-networks-for-5-years/5311629"
+          },
+          {
+            "published_at": "2026-11-23T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Google is named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
+            "url": "https://cloud.google.com/blog/products/identity-security/google-is-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/"
+          },
+          {
+            "published_at": "2026-11-23T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "Data + AI Anywhere: AlloyDB Omni integration with local models",
+            "url": "https://cloud.google.com/blog/products/databases/alloydb-omni-integration-with-local-models/"
+          },
+          {
+            "published_at": "2026-11-23T17:00:00+00:00",
+            "source": "Google Cloud",
+            "title": "How Sinch modernized its enterprise data warehouse from Snowflake to BigQuery to power AI",
+            "url": "https://cloud.google.com/blog/products/data-analytics/how-sinch-migrated-from-snowflake-to-bigquery-to-power-ai/"
+          },
+          {
+            "published_at": "2026-11-23T14:04:00+00:00",
+            "source": "The Register",
+            "title": "Everything going down at once wasn't evidence of a conspiracy – but the truth may be scarier",
+            "url": "https://www.theregister.com/off-prem/2026/11/23/everything-going-down-at-once-wasnt-evidence-of-a-conspiracy-but-the-truth-may-be-scarier/5311458"
+          },
+          {
+            "published_at": "2026-11-23T14:00:00+00:00",
+            "source": "Cloudflare",
+            "title": "Probing DNS at Cloudflare",
+            "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/"
+          },
+          {
+            "published_at": "2026-11-23T12:29:00+00:00",
+            "source": "The Register",
+            "title": "Norway links energy firm cyberattacks to critical Azure API Management flaw",
+            "url": "https://www.theregister.com/security/2026/11/23/norway-links-energy-firm-cyberattacks-to-critical-azure-api-management-flaw/5311598"
+          },
+          {
+            "published_at": "2026-11-23T11:48:00+00:00",
+            "source": "The Register",
+            "title": "Cleverbridge admits attackers stole customers' credit card and CVV numbers. Yep, you read that right",
+            "url": "https://www.theregister.com/cyber-crime/2026/11/23/cleverbridge-admits-attackers-stole-customers-credit-card-and-cvv-numbers-yep-you-read-that-right/5311573"
+          },
+          {
+            "published_at": "2026-11-23T10:25:28+00:00",
+            "source": "Microsoft",
+            "title": "Do AI coding agents struggle with non-REST APIs?",
+            "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-23",
       "opensource": {
         "topProjects": [
@@ -15037,8 +15241,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-22T23:45:14.747516+00:00",
-    "totalSnapshots": 68,
+    "generatedAt": "2026-11-24T04:05:20.725507+00:00",
+    "totalSnapshots": 69,
     "warnings": []
   }
 }
