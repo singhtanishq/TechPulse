@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1500,
+      "date": "2026-11-25",
+      "kevAdded": 3,
+      "knownExploited": 5,
+      "projects": 18,
+      "releases": 4,
+      "techEntries": 27
+    },
+    {
       "cves": 1906,
       "date": "2026-11-24",
       "kevAdded": 2,
@@ -623,16 +632,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-23",
-    "date": "2026-11-24",
-    "daysObserved": 69,
-    "generatedAt": "2026-11-24T04:05:20.725507+00:00",
-    "snapshots": 69,
+    "coveredDate": "2026-11-24",
+    "date": "2026-11-25",
+    "daysObserved": 70,
+    "generatedAt": "2026-11-25T02:44:33.287544+00:00",
+    "snapshots": 70,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": -62,
+      "daily_growth": 54,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -640,11 +649,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201709,
+      "stars": 201763,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 13,
+      "daily_growth": 65,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -652,11 +661,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143620,
+      "stars": 143685,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": -138,
+      "daily_growth": 23,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -664,11 +673,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 140045,
+      "stars": 140068,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": -127,
+      "daily_growth": 32,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -676,11 +685,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129254,
+      "stars": 129286,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": -56,
+      "daily_growth": 76,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -688,11 +697,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123875,
+      "stars": 123951,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": -77,
+      "daily_growth": 46,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -700,11 +709,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122329,
+      "stars": 122375,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": -26,
+      "daily_growth": 90,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -712,11 +721,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115315,
+      "stars": 115405,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": -127,
+      "daily_growth": 0,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -728,7 +737,7 @@
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 3,
+      "daily_growth": 67,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -736,11 +745,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98713,
+      "stars": 98780,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": -108,
+      "daily_growth": 28,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -748,224 +757,261 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91830,
+      "stars": 91858,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "kind": "minor",
+      "project": "framework",
+      "publishedAt": "2026-11-24T16:22:37Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v12.74.0",
+      "version": "v12.74.0"
+    },
+    {
+      "kind": "patch",
+      "project": "framework",
+      "publishedAt": "2026-11-24T16:11:28Z",
+      "repository": "laravel/framework",
+      "source": "GitHub",
+      "url": "https://github.com/laravel/framework/releases/tag/v13.44.1",
+      "version": "v13.44.1"
+    },
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-11-23T19:00:21Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.58.0",
+      "version": "v3.58.0"
+    },
+    {
+      "kind": "minor",
+      "project": "anthropic-sdk-python",
+      "publishedAt": "2026-11-23T18:34:26Z",
+      "repository": "anthropics/anthropic-sdk-python",
+      "source": "GitHub",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
+      "version": "v2.13.0"
+    }
+  ],
   "security": {
-    "critical": 125,
-    "high": 696,
-    "kevCatalogTotal": 1792,
+    "critical": 99,
+    "high": 522,
+    "kevCatalogTotal": 1795,
     "latest": [
       {
-        "cvss_score": 6.8,
+        "cvss_score": 6.9,
         "cvss_version": "4.0",
-        "description": "MediaInfoLib before 26.10 contains a divide-by-zero vulnerability in TimeCode::FromString() that allows attackers to crash applications by supplying hour-unit timestamps with fewer than three fractional digits. Attackers can craft a TTML file whose begin or end attribute contains such a timestamp, causing MediaInfo or embedding applications to crash with SIGFPE when opened.",
-        "id": "CVE-2026-135445",
+        "description": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in mxf_write_d10_audio_packet() in libavformat/mxfenc.c because mxf_init() accepts unsupported D-10 audio codecs. Attackers can supply a crafted input with a non-PCM multichannel audio stream remuxed to D-10 MXF to leak heap memory into the output file or crash the application.",
+        "id": "CVE-2026-135732",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:15.787",
-        "publishedAt": "2026-11-23T18:17:15.787",
+        "lastModifiedAt": "2026-11-24T18:26:33.490",
+        "publishedAt": "2026-11-24T04:17:31.773",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "MediaInfoLib before 26.10 contains a divide-by-zero vulnerability in TimeCode::FromString() that allows attackers to crash applications by supplying hour-unit…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135445"
+        "title": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in mxf_write_d10_audio_packet() in libavformat/mxfenc.c because mxf_init() accepts unsupported…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135732"
       },
       {
         "cvss_score": 6.9,
         "cvss_version": "4.0",
-        "description": "MediaInfoLib before 26.10 contains an out-of-bounds read vulnerability in the VC-1 parser that uses uninitialized AspectRatio, profile and colordiff_format members as unchecked table indices. Attackers can supply a crafted MP4 file that finalizes the VC-1 stream before synchronization, crashing the process and potentially exposing adjacent memory in reported metadata.",
-        "id": "CVE-2026-135443",
+        "description": "FFmpeg through 9.1 contains an insecure default configuration in the zmq and azmq filters of libavfilter/f_zmq.c that binds an unauthenticated command socket to all interfaces on TCP port 5555. Remote attackers can send 'TARGET COMMAND [ARG]' messages passed to avfilter_graph_send_command() to change filter runtime parameters and alter processed audio or video.",
+        "id": "CVE-2026-135733",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:15.487",
-        "publishedAt": "2026-11-23T18:17:15.487",
+        "lastModifiedAt": "2026-11-24T18:26:26.603",
+        "publishedAt": "2026-11-24T04:17:31.953",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "MediaInfoLib before 26.10 contains an out-of-bounds read vulnerability in the VC-1 parser that uses uninitialized AspectRatio, profile and colordiff_format…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135443"
+        "title": "FFmpeg through 9.1 contains an insecure default configuration in the zmq and azmq filters of libavfilter/f_zmq.c that binds an unauthenticated command socket…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135733"
       },
       {
-        "cvss_score": 6.8,
+        "cvss_score": 8.5,
         "cvss_version": "4.0",
-        "description": "MediaInfoLib before 26.10 contains an uninitialized pointer dereference vulnerability because the File_Mpeg4_Descriptors constructor leaves the IsCmaf pointer holding stale heap contents. Attackers can supply a crafted MP4 file with an AAC/USAC decoder specific descriptor so File_Usac::Streams_Finish_Conformance_Profile dereferences an invalid address, crashing the application.",
-        "id": "CVE-2026-135441",
+        "description": "FFmpeg before 9.1 contains a heap out-of-bounds write vulnerability in the deflicker filter that lets attackers corrupt heap memory via unclamped high bit depth luma samples. Attackers can supply crafted video whose luma values exceed the nominal depth, making calc_avgy16() increment counters past the histogram allocation, causing crashes or possibly code execution.",
+        "id": "CVE-2026-135734",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:15.187",
-        "publishedAt": "2026-11-23T18:17:15.187",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-24T18:26:19.497",
+        "publishedAt": "2026-11-24T04:17:32.137",
+        "severity": "HIGH",
         "source": "NVD",
-        "title": "MediaInfoLib before 26.10 contains an uninitialized pointer dereference vulnerability because the File_Mpeg4_Descriptors constructor leaves the IsCmaf pointer…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135441"
+        "title": "FFmpeg before 9.1 contains a heap out-of-bounds write vulnerability in the deflicker filter that lets attackers corrupt heap memory via unclamped high bit…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135734"
       },
       {
-        "cvss_score": 5.1,
+        "cvss_score": 6.9,
         "cvss_version": "4.0",
-        "description": "Fusion through 1.3.1 contains a server-side request forgery vulnerability that allows authenticated users to bypass private-address protection by submitting URLs to the POST /api/feeds/validate endpoint. Attackers can supply a public URL that redirects or links to loopback, private, or link-local addresses, making feedfinder request internal services and leak parsed titles in responses.",
-        "id": "CVE-2026-135439",
+        "description": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in filter_slice_rgba_planar() that allows attackers to read beyond lookup tables using unmasked high bit depth planar samples. Attackers can supply crafted video with samples exceeding the nominal depth, passed unchanged by rawvideo, to crash the application or leak heap contents into output video.",
+        "id": "CVE-2026-135735",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:14.793",
-        "publishedAt": "2026-11-23T18:17:14.793",
+        "lastModifiedAt": "2026-11-24T18:26:12.787",
+        "publishedAt": "2026-11-24T04:17:32.317",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Fusion through 1.3.1 contains a server-side request forgery vulnerability that allows authenticated users to bypass private-address protection by submitting…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135439"
+        "title": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in filter_slice_rgba_planar() that allows attackers to read beyond lookup tables using…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135735"
       },
       {
         "cvss_score": 8.7,
         "cvss_version": "4.0",
-        "description": "KindleEar 3.0.0 through 3.5.3 contains a remote code execution vulnerability that allows authenticated non-admin users to run Python code by uploading malicious recipes. Attackers can submit crafted recipe source to the /recipe/upload action, which calibre compile_recipe executes via exec() without sandboxing, gaining root code execution in the Docker container and access to password hashes.",
-        "id": "CVE-2026-135436",
+        "description": "FFmpeg before 9.1 contains a heap buffer overflow vulnerability in recv_msg() of the zmq and azmq filters that allows unauthenticated network attackers to corrupt memory by sending oversized command messages. Attackers can send a 4 GiB message to the default listening port, truncating the int buffer size so memcpy() writes past the heap allocation and crashes FFmpeg.",
+        "id": "CVE-2026-135742",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:14.333",
-        "publishedAt": "2026-11-23T18:17:14.333",
+        "lastModifiedAt": "2026-11-24T18:26:03.887",
+        "publishedAt": "2026-11-24T04:17:33.490",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "KindleEar 3.0.0 through 3.5.3 contains a remote code execution vulnerability that allows authenticated non-admin users to run Python code by uploading…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135436"
+        "title": "FFmpeg before 9.1 contains a heap buffer overflow vulnerability in recv_msg() of the zmq and azmq filters that allows unauthenticated network attackers to…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135742"
       },
       {
-        "cvss_score": 5.3,
+        "cvss_score": 9.2,
         "cvss_version": "4.0",
-        "description": "django-appointment before 3.14.2 contains a missing authorization vulnerability that allows authenticated staff members to modify other staff members' appointments by supplying arbitrary appointment IDs. Attackers can send POST requests to /ajax/update_appt_date_time/ with sequential appointment_id values to reschedule appointments, rewriting date, start and end times and reminders.",
-        "id": "CVE-2026-135434",
+        "description": "FFmpeg 4.3 before 9.1 contains a heap out-of-bounds read and write vulnerability in the dynaudnorm filter because cqueue_resize() miscalculates gain history queue element counts when gausssize changes at runtime. Attackers can send gausssize commands via asendcmd scripts or an unauthenticated azmq filter to corrupt heap memory, crashing the process or potentially executing code.",
+        "id": "CVE-2026-135743",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:14.007",
-        "publishedAt": "2026-11-23T18:17:14.007",
+        "lastModifiedAt": "2026-11-24T18:25:47.820",
+        "publishedAt": "2026-11-24T04:17:33.657",
+        "severity": "CRITICAL",
+        "source": "NVD",
+        "title": "FFmpeg 4.3 before 9.1 contains a heap out-of-bounds read and write vulnerability in the dynaudnorm filter because cqueue_resize() miscalculates gain history…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135743"
+      },
+      {
+        "cvss_score": 5.8,
+        "cvss_version": "4.0",
+        "description": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in the lut1d filter in libavfilter/vf_lut3d.c that allows attackers to read heap memory by supplying planar high bit depth samples above the nominal depth. Attackers can craft 9, 10, 12 or 14 bit planar RGB video processed with a large 1D LUT to crash applications or disclose heap contents in output pixels.",
+        "id": "CVE-2026-135744",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-24T18:25:39.913",
+        "publishedAt": "2026-11-24T04:17:33.820",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "django-appointment before 3.14.2 contains a missing authorization vulnerability that allows authenticated staff members to modify other staff members'…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135434"
+        "title": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in the lut1d filter in libavfilter/vf_lut3d.c that allows attackers to read heap memory by…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135744"
       },
       {
-        "cvss_score": 7.1,
+        "cvss_score": 6.9,
         "cvss_version": "4.0",
-        "description": "sdcb Chats 1.10.0 before 1.17.1 contains an incorrect authorization vulnerability in GetAssignedUserDetails that allows assigned non-admin users to read other users' per-user MCP headers. Attackers can request the assigned-user-details endpoint to obtain bearer tokens in CustomHeaders and impersonate other users against the downstream MCP server.",
-        "id": "CVE-2026-135432",
+        "description": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in the curves filter in libavfilter/vf_curves.c that allows attackers to read past lookup tables by supplying planar high bit depth samples exceeding the nominal depth. Attackers can craft video files with unmasked gbrp9 to gbrp14 samples passed through the rawvideo decoder to crash applications or leak heap contents into output…",
+        "id": "CVE-2026-135745",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:13.693",
-        "publishedAt": "2026-11-23T18:17:13.693",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "sdcb Chats 1.10.0 before 1.17.1 contains an incorrect authorization vulnerability in GetAssignedUserDetails that allows assigned non-admin users to read other…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135432"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "KindleEar 3.0.0 through 3.5.3 contains an insecure direct object reference vulnerability in application/view/subscribe.py that allows authenticated users to access other users' records by id without ownership checks. Attackers can enumerate sequential recipe ids to read recipe source containing credentials, delete recipes and custom RSS feeds, and overwrite saved site logins.",
-        "id": "CVE-2026-135430",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:13.383",
-        "publishedAt": "2026-11-23T18:17:13.383",
+        "lastModifiedAt": "2026-11-24T18:25:32.637",
+        "publishedAt": "2026-11-24T04:17:33.987",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "KindleEar 3.0.0 through 3.5.3 contains an insecure direct object reference vulnerability in application/view/subscribe.py that allows authenticated users to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135430"
-      },
-      {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "A security flaw has been discovered in vijaythapa333 django-student-management-system up to 0d96e62cc4e996e3e77bec1b8e3da3980edf8889. This issue affects the function add_student_save of the file HodViews.py of the component Student Profile Picture Upload. Performing a manipulation of the argument profile_pic results in unrestricted upload. The attack can be initiated remotely. The exploit has…",
-        "id": "CVE-2026-135082",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:13.027",
-        "publishedAt": "2026-11-23T18:17:12.870",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A security flaw has been discovered in vijaythapa333 django-student-management-system up to 0d96e62cc4e996e3e77bec1b8e3da3980edf8889. This issue affects the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135082"
-      },
-      {
-        "cvss_score": 2.0,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was determined in vijaythapa333 django-student-management-system up to 0d96e62cc4e996e3e77bec1b8e3da3980edf8889. This affects the function get_students of the file StaffViews.py of the component Take Attendance Staff Dashboard. This manipulation of the argument first_name causes cross site scripting. It is possible to initiate the attack remotely. The exploit has been publicly…",
-        "id": "CVE-2026-135080",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:12.627",
-        "publishedAt": "2026-11-23T18:17:12.480",
-        "severity": "LOW",
-        "source": "NVD",
-        "title": "A vulnerability was determined in vijaythapa333 django-student-management-system up to 0d96e62cc4e996e3e77bec1b8e3da3980edf8889. This affects the function…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135080"
-      },
-      {
-        "cvss_score": 7.1,
-        "cvss_version": "4.0",
-        "description": "Frappe ERPNext 15.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module import endpoint that does not check whether the caller may create inserted records or download a named file. Authenticated attackers, including portal users or users with no roles, can send crafted import requests to read file contents and create Serial No and Batch…",
-        "id": "CVE-2026-134432",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:12.150",
-        "publishedAt": "2026-11-21T17:17:08.770",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Frappe ERPNext 15.0.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module import endpoint that does not…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134432"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Frappe ERPNext 15.53.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an Assets module endpoint that returns cost and quantity fields of purchase and stock transactions without record-level permission checks. Authenticated users, including portal users or users with no roles, can send crafted requests naming out-of-scope records to read these fields.",
-        "id": "CVE-2026-134427",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:12.020",
-        "publishedAt": "2026-11-21T17:17:07.910",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Frappe ERPNext 15.53.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in an Assets module endpoint that returns cost…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134427"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Frappe ERPNext 6.26.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module endpoint that returns stock data without checking whether the caller may read the requested records. Authenticated attackers, including portal users or users with no assigned roles, can send crafted requests naming out-of-scope records to read per-warehouse and…",
-        "id": "CVE-2026-134423",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:11.893",
-        "publishedAt": "2026-11-21T17:17:07.207",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Frappe ERPNext 6.26.0 before 15.121.4 and 16.x before 16.36.0 contains a missing authorization vulnerability in a Stock module endpoint that returns stock data…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134423"
+        "title": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in the curves filter in libavfilter/vf_curves.c that allows attackers to read past lookup…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135745"
       },
       {
         "cvss_score": 8.3,
         "cvss_version": "4.0",
-        "description": "Frappe ERPNext 4.0.0 before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns the taxes and charges of documents without checking record permissions. Authenticated users, including portal users or users with no roles, can request arbitrary document types and records to read tax rows beyond their permitted scope.",
-        "id": "CVE-2026-134418",
+        "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, when the pipelined request queue is full, the pure-Python parser stores the unparsed remainder internally and also returns the same data to its caller. After a handler declines an upgrade request, the caller feeds the remainder back to the parser, causing the buffer to grow with each handled request…",
+        "id": "CVE-2026-128130",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:11.760",
-        "publishedAt": "2026-11-21T17:17:06.360",
+        "lastModifiedAt": "2026-11-24T18:24:20.770",
+        "publishedAt": "2026-11-13T21:17:44.893",
         "severity": "HIGH",
         "source": "NVD",
-        "title": "Frappe ERPNext 4.0.0 before 15.122.0 and 16.x before 16.50.0 contains a missing authorization vulnerability in an Accounts module endpoint that returns the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134418"
+        "title": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, when the pipelined request queue is full, the pure-Python…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128130"
       },
       {
-        "cvss_score": 5.3,
-        "cvss_version": "4.0",
-        "description": "Frappe ERPNext 5.0.0 before 15.122.0 contains a missing authorization vulnerability in an Accounts module endpoint that allows authenticated users to read Taxes and Charges Template rows without permission checks. Attackers, including portal users or users with no assigned roles, can send crafted requests naming out-of-scope records to read account heads and tax rates.",
-        "id": "CVE-2026-134414",
+        "cvss_score": 7.5,
+        "cvss_version": "3.1",
+        "description": "A buffer overflow vulnerability in the icmp6_send_response_with_addrs_and_netif() function of Free Software Foundation lwIP version git head allows attackers to access sensitive information via a crafted ICMPv6 packet.",
+        "id": "CVE-2020-22283",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-23T18:17:11.630",
-        "publishedAt": "2026-11-21T17:17:05.687",
+        "lastModifiedAt": "2026-11-24T18:23:56.677",
+        "publishedAt": "2021-07-22T20:15:07.920",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "A buffer overflow vulnerability in the icmp6_send_response_with_addrs_and_netif() function of Free Software Foundation lwIP version git head allows attackers…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-22283"
+      },
+      {
+        "cvss_score": 7.8,
+        "cvss_version": "3.1",
+        "description": "virtualenv is a tool for creating isolated virtual python environments. Prior to 21.7.13, the generated activate (bash and zsh) and activate.fish scripts place values already escaped by shlex.quote inside an additional quoted context. In the bash and zsh script, a crafted virtual environment path reaches __VIRTUAL_ENV__ when a relocated environment's recorded directory is absent; in the fish…",
+        "id": "CVE-2026-102925",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-24T18:23:38.387",
+        "publishedAt": "2026-09-29T21:17:18.570",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "virtualenv is a tool for creating isolated virtual python environments. Prior to 21.7.13, the generated activate (bash and zsh) and activate.fish scripts place…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102925"
+      },
+      {
+        "cvss_score": 8.1,
+        "cvss_version": "3.1",
+        "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit…",
+        "id": "CVE-2026-114938",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-24T18:23:19.743",
+        "publishedAt": "2026-11-17T22:18:23.777",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114938"
+      },
+      {
+        "cvss_score": 5.5,
+        "cvss_version": "3.1",
+        "description": "Kafka dissector crash in Wireshark 4.6.0 and 4.4.0 to 4.4.10 allows denial of service",
+        "id": "CVE-2025-13499",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-24T18:22:52.337",
+        "publishedAt": "2025-11-21T06:15:48.203",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "Frappe ERPNext 5.0.0 before 15.122.0 contains a missing authorization vulnerability in an Accounts module endpoint that allows authenticated users to read…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134414"
+        "title": "Kafka dissector crash in Wireshark 4.6.0 and 4.4.0 to 4.4.10 allows denial of service",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13499"
+      },
+      {
+        "cvss_score": 4.4,
+        "cvss_version": "3.1",
+        "description": "In IsoDataChannelImpl::TrySendPackets of iso_data_channel.cc, there is a possible assertion failure due to improper input validation. This could lead to local denial of service with System execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-95424",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-24T18:19:06.877",
+        "publishedAt": "2026-11-23T17:17:57.270",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "In IsoDataChannelImpl::TrySendPackets of iso_data_channel.cc, there is a possible assertion failure due to improper input validation. This could lead to local…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95424"
+      },
+      {
+        "cvss_score": 4.4,
+        "cvss_version": "3.1",
+        "description": "In OnSyncEstablished of periodic_advertising_synchronizer.cc, there is a possible crash due to a reachable assertion. This could lead to local denial of service with System execution privileges needed. User interaction is not needed for exploitation.",
+        "id": "CVE-2026-95422",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-24T18:19:06.723",
+        "publishedAt": "2026-11-23T17:17:57.033",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "In OnSyncEstablished of periodic_advertising_synchronizer.cc, there is a possible crash due to a reachable assertion. This could lead to local denial of…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95422"
       }
     ],
-    "low": 65,
-    "medium": 579,
+    "low": 62,
+    "medium": 791,
     "none": 0,
-    "unscored": 441
+    "unscored": 26
   },
   "snapshot": {
-    "cves": 1906,
-    "kevAdded": 2,
-    "knownExploited": 1,
+    "cves": 1500,
+    "kevAdded": 3,
+    "knownExploited": 5,
     "projects": 18,
-    "releases": 0,
-    "techEntries": 19
+    "releases": 4,
+    "techEntries": 27
   },
   "sources": {
     "opensource": {
@@ -979,7 +1025,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 0,
+        "inWindow": 4,
         "status": "partial",
         "total": 53
       }
@@ -987,27 +1033,139 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 2,
+        "inWindow": 3,
         "status": "success",
-        "total": 1792
+        "total": 1795
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1906,
+        "inWindow": 1500,
         "status": "success",
-        "total": 1906
+        "total": 1500
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 19,
+        "inWindow": 27,
         "status": "success",
-        "total": 230
+        "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-11-24T17:00:00+00:00",
+      "source": "The Register",
+      "summary": "No sophisticated malware or attack framework required",
+      "title": "An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes",
+      "url": "https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes/5311922"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-24T17:00:00+00:00",
+      "source": "Google Cloud",
+      "summary": "For over 20 years, we have protected 4 billion users and 13 million organizations in Workspace, and critical enterprise and government systems on Google Cloud. From personal and financial records to board materials, regulated workloads, applications, and AI models, those…",
+      "title": "Built for trust and control: Powering the next wave of AI agents across Google Workspace and Google Cloud",
+      "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-24T16:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "The developer you're shopping for hasn’t shared their holiday wish list with you yet? Check out these gifts, plus our Black Friday discount all week long. The post These are the gifts developers will actually want appeared first on The GitHub Blog .",
+      "title": "These are the gifts developers will actually want",
+      "url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-24T15:39:59+00:00",
+      "source": "AWS",
+      "summary": "Some limits shape architecture more than any feature does. AWS Lambda launched in 2014 with a 60-second timeout, moved to 5 minutes in 2015 and to 15 minutes in 2018, and then stayed there for eight years. Last week the limit doubled, and in the same week Lambda learned to run…",
+      "title": "AWS Weekly Roundup: Local Zone in Bogotá, 30-minute Lambda timeout, and more (November 24, 2026)",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-24T15:23:13+00:00",
+      "source": "Microsoft",
+      "summary": "You ask an agent for your top five, sorted by impact, and it hands you a confident list. But you never said what impact means, so what did the agent actually sort by? We ran four models through the same lists 1,500 times to find out, and what we found should change how you ask…",
+      "title": "Is “sort by impact” just vibes?",
+      "url": "https://devblogs.microsoft.com/blog/is-sort-by-impact-just-vibes/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-24T15:02:00+00:00",
+      "source": "Google Cloud",
+      "summary": "Editor’s note: Founded in 1988 in Kota, Rajasthan, ALLEN is one of India’s leading coaching institutions, serving over 400,000 students across 350+ classroom campuses in 78 cities. Here, the IT and Cybersecurity Leadership Team shares how they standardized on Chrome Enterprise…",
+      "title": "Enabling zero trust: ALLEN’s move to Chrome Enterprise Premium",
+      "url": "https://cloud.google.com/blog/products/chrome-enterprise/enabling-zero-trust-allens-move-to-chrome-enterprise-premium/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-24T13:06:00+00:00",
+      "source": "The Register",
+      "summary": "A spatial classic Finder in the style of A/UX",
+      "title": "9/UX brings a classic Mac feel to 9front",
+      "url": "https://www.theregister.com/software/2026/11/24/9/ux-brings-a-classic-mac-feel-to-9front/5311844"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-24T12:30:05+00:00",
+      "source": "Ars Technica",
+      "summary": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
+      "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+      "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-24T12:22:17+00:00",
+      "source": "The Register",
+      "summary": "Record-breaking cybersecurity deal promises tighter integration, but sysadmins fear higher prices and vendor lock-in",
+      "title": "CrowdStrike splashes $44B on Zscaler, customers brace for the bill",
+      "url": "https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill/5311877"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-24T11:32:41+00:00",
+      "source": "The Register",
+      "summary": "EU Academy names and email addresses exposed, with users warned via website notice rather than contacted directly",
+      "title": "European Commission confirms personal data stolen in AI-assisted cyberattack",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/24/european-commission-confirms-personal-data-stolen-in-ai-assisted-cyberattack/5311834"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-24T05:13:51+00:00",
+      "source": "The Register",
+      "summary": "Leakers move through denial, bargaining, delay, legal threats, then claiming Hunt is the real villain",
+      "title": "Orgs that leak data 'prioritize corporate interests over customers' says Have I Been Pwned’s Troy Hunt",
+      "url": "https://www.theregister.com/security/2026/11/24/orgs-that-leak-data-prioritize-corporate-interests-over-customers-says-have-i-been-pwneds-troy-hunt/5311802"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-24T01:46:56+00:00",
+      "source": "The Register",
+      "summary": "‘Shirudo’ project promises to whip up compensating controls in a hurry",
+      "title": "Cisco and OpenAI pitch eBPF kernel plugins as the way to tame the patchpocalypse",
+      "url": "https://www.theregister.com/security/2026/11/24/cisco-and-openai-pitch-ebpf-kernel-plugins-as-the-way-to-tame-the-patchpocalypse/5311795"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-23T21:52:23+00:00",
+      "source": "The Register",
+      "summary": "Whatever they call themselves these days: be on the lookout for voice phishing attempts",
+      "title": "Inception - possibly a ShinyHunters reboot - claims seven victims in a week",
+      "url": "https://www.theregister.com/security/2026/11/23/inception-possibly-a-shinyhunters-reboot-claims-seven-victims-in-a-week/5311768"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-23T19:29:59+00:00",
+      "source": "The Register",
+      "summary": "Security fixes are available for two Elecbrakes models, but an older controller remains vulnerable and unpatched",
+      "title": "Bluetooth brakes are broken as researchers find anyone can control them",
+      "url": "https://www.theregister.com/security/2026/11/23/bluetooth-brakes-are-broken-as-researchers-find-anyone-can-control-them/5311748"
+    },
     {
       "category": "security",
       "publishedAt": "2026-11-23T17:56:56+00:00",
@@ -1015,118 +1173,6 @@
       "summary": "CISA, F6 sound the alarm after PoC exploit made public",
       "title": "Critical Cisco remote code execution bug under attack",
       "url": "https://www.theregister.com/security/2026/11/23/critical-cisco-remote-code-execution-bug-under-attack/5311722"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T17:01:00+00:00",
-      "source": "The Register",
-      "summary": "Minister says intruders downloaded more than 130 GB of data as political churn left security neglected",
-      "title": "Bulgaria evicts cyber snoops who lurked inside government networks for 5 years",
-      "url": "https://www.theregister.com/security/2026/11/23/bulgaria-evicts-cyber-snoops-who-lurked-inside-government-networks-for-5-years/5311629"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-23T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Today, we are proud to announce that Gartner has recognized Google as a Leader in the 2026 Gartner® Magic Quadrant™ for Security Information and Event Management (SIEM). Among the 15 vendors evaluated this year, Google was positioned furthest on “Completeness of Vision.” Today's…",
-      "title": "Google is named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
-      "url": "https://cloud.google.com/blog/products/identity-security/google-is-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-23T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Open models like Gemma 4 from Google DeepMind are a great option to keep your data local. But how can a local AI model integrate with on-premises data? AlloyDB Omni , Google’s 100% PostgreSQL-compatible database that runs anywhere, now integrates with locally hosted large…",
-      "title": "Data + AI Anywhere: AlloyDB Omni integration with local models",
-      "url": "https://cloud.google.com/blog/products/databases/alloydb-omni-integration-with-local-models/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-23T17:00:00+00:00",
-      "source": "Google Cloud",
-      "summary": "As the scale of global communications grows larger and larger, enterprise platforms must process billions of interactions with customers across a complex network of touchpoints without breaking them. A prime example is Sinch , one of the world’s leading cloud communications and…",
-      "title": "How Sinch modernized its enterprise data warehouse from Snowflake to BigQuery to power AI",
-      "url": "https://cloud.google.com/blog/products/data-analytics/how-sinch-migrated-from-snowflake-to-bigquery-to-power-ai/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T14:04:00+00:00",
-      "source": "The Register",
-      "summary": "Rogue AI or nation-state hackers would be preferable to the amount of technical debt the past week of wobbling services laid bare",
-      "title": "Everything going down at once wasn't evidence of a conspiracy – but the truth may be scarier",
-      "url": "https://www.theregister.com/off-prem/2026/11/23/everything-going-down-at-once-wasnt-evidence-of-a-conspiracy-but-the-truth-may-be-scarier/5311458"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-23T14:00:00+00:00",
-      "source": "Cloudflare",
-      "summary": "At Cloudflare we’ve built tools to enable teams to extend our internal testing framework and build test tooling for networking protocols. This is the story of how this was used for DNS.",
-      "title": "Probing DNS at Cloudflare",
-      "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T12:29:00+00:00",
-      "source": "The Register",
-      "summary": "Microsoft says mitigation is in place, but admins must investigate possible compromise and rotate secrets",
-      "title": "Norway links energy firm cyberattacks to critical Azure API Management flaw",
-      "url": "https://www.theregister.com/security/2026/11/23/norway-links-energy-firm-cyberattacks-to-critical-azure-api-management-flaw/5311598"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T11:48:00+00:00",
-      "source": "The Register",
-      "summary": "Payments platform hasn't disclosed how the data was captured or the scale of the breach",
-      "title": "Cleverbridge admits attackers stole customers' credit card and CVV numbers. Yep, you read that right",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/23/cleverbridge-admits-attackers-stole-customers-credit-card-and-cvv-numbers-yep-you-read-that-right/5311573"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-23T10:25:28+00:00",
-      "source": "Microsoft",
-      "summary": "Should your next API be REST, or something else? And which one will AI coding agents handle best? We tested REST, POST-only and RPC-style APIs with six models across 1,356 runs, and what decided whether agents succeeded had nothing to do with API style. The post Do AI coding…",
-      "title": "Do AI coding agents struggle with non-REST APIs?",
-      "url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T08:42:00+00:00",
-      "source": "The Register",
-      "summary": "Outage after outage after outage is a syndrome that needs radical treatment",
-      "title": "When Microsoft, Apple, and the FAA can't keep it up, it's a system of a down",
-      "url": "https://www.theregister.com/columnists/2026/11/23/when-microsoft-apple-and-the-faa-cant-keep-it-up-its-a-system-of-a-down/5311363"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T04:39:19+00:00",
-      "source": "The Register",
-      "summary": "China-linked ARMORY CASTLE knew about it weeks before it unleashed five custom malware tools targeting vCenter",
-      "title": "Google claims last week’s critical VMware bug was under attack in September",
-      "url": "https://www.theregister.com/virtualization/2026/11/23/google-claims-last-weeks-critical-vmware-bug-was-under-attack-in-september/5311547"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T00:23:31+00:00",
-      "source": "The Register",
-      "summary": "PLUS: Lenovo's infra group finally makes big profit; Indonesia’s glaciers are gone; Australian bank releases its AI bug-finder; and more!",
-      "title": "$1 of GPT-5.1 tokens finds new ways around China’s Great Firewall",
-      "url": "https://www.theregister.com/security/2026/11/23/1-of-gpt-51-tokens-finds-new-ways-around-chinas-great-firewall/5311532"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T23:28:47+00:00",
-      "source": "The Register",
-      "summary": "Like a parent disciplining a misbehaving child, PHP’s annual update clamps down on loose default behaviors to curb malicious hacker horseplay.",
-      "title": "PHP 8.6: Things are gonna get a lot more strict around here",
-      "url": "https://www.theregister.com/devops/2026/11/20/php-86-things-are-gonna-get-a-lot-more-strict-around-here/5311486"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-20T21:27:56+00:00",
-      "source": "The Register",
-      "summary": "No financial details, but plenty of other clues",
-      "title": "Visa, Mastercard theft included info useful for phishing, but not draining bank accounts, say researchers",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478"
     }
   ]
 }

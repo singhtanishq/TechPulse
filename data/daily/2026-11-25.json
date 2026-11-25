@@ -1,0 +1,355 @@
+{
+  "coveredIstDay": "2026-11-24",
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T02:44:33.287544+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 54,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201763,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 65,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143685,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 23,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 140068,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 32,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 129286,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 76,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 123951,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 46,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 122375,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 90,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 115405,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 0,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105701,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 67,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98780,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 28,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91858,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 3,
+      "other": 0,
+      "patch": 1
+    },
+    "recent": [
+      {
+        "project": "framework",
+        "published_at": "2026-11-24T16:22:37Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v12.74.0",
+        "version": "v12.74.0"
+      },
+      {
+        "project": "framework",
+        "published_at": "2026-11-24T16:11:28Z",
+        "repository": "laravel/framework",
+        "url": "https://github.com/laravel/framework/releases/tag/v13.44.1",
+        "version": "v13.44.1"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-11-23T19:00:21Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.58.0",
+        "version": "v3.58.0"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-11-23T18:34:26Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
+        "version": "v2.13.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-132224",
+        "date_added": "2026-11-24",
+        "product": "Web Experimentation",
+        "vendor_project": "Optimizely",
+        "vulnerability_name": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-132165",
+        "date_added": "2026-11-24",
+        "product": "Core",
+        "vendor_project": "Drupal",
+        "vulnerability_name": "Drupal Core Remote Code Execution Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-131914",
+        "date_added": "2026-11-24",
+        "product": "AntiCsrf",
+        "vendor_project": "Idunno",
+        "vulnerability_name": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 6.9,
+        "description": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in mxf_write_d10_audio_packet() in libavformat/mxfenc.c because mxf_init() accepts unsupported D-10 audio codecs. Attackers can supply a ",
+        "id": "CVE-2026-135732",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135732"
+      },
+      {
+        "cvss": 6.9,
+        "description": "FFmpeg through 9.1 contains an insecure default configuration in the zmq and azmq filters of libavfilter/f_zmq.c that binds an unauthenticated command socket to all interfaces on TCP port 5555. Remote",
+        "id": "CVE-2026-135733",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135733"
+      },
+      {
+        "cvss": 8.5,
+        "description": "FFmpeg before 9.1 contains a heap out-of-bounds write vulnerability in the deflicker filter that lets attackers corrupt heap memory via unclamped high bit depth luma samples. Attackers can supply craf",
+        "id": "CVE-2026-135734",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135734"
+      },
+      {
+        "cvss": 6.9,
+        "description": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in filter_slice_rgba_planar() that allows attackers to read beyond lookup tables using unmasked high bit depth planar samples. Attack",
+        "id": "CVE-2026-135735",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135735"
+      },
+      {
+        "cvss": 8.7,
+        "description": "FFmpeg before 9.1 contains a heap buffer overflow vulnerability in recv_msg() of the zmq and azmq filters that allows unauthenticated network attackers to corrupt memory by sending oversized command m",
+        "id": "CVE-2026-135742",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135742"
+      },
+      {
+        "cvss": 9.2,
+        "description": "FFmpeg 4.3 before 9.1 contains a heap out-of-bounds read and write vulnerability in the dynaudnorm filter because cqueue_resize() miscalculates gain history queue element counts when gausssize changes",
+        "id": "CVE-2026-135743",
+        "known_exploited": false,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135743"
+      },
+      {
+        "cvss": 5.8,
+        "description": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in the lut1d filter in libavfilter/vf_lut3d.c that allows attackers to read heap memory by supplying planar high bit depth samples above ",
+        "id": "CVE-2026-135744",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135744"
+      },
+      {
+        "cvss": 6.9,
+        "description": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in the curves filter in libavfilter/vf_curves.c that allows attackers to read past lookup tables by supplying planar high bit depth s",
+        "id": "CVE-2026-135745",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135745"
+      },
+      {
+        "cvss": 8.3,
+        "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, when the pipelined request queue is full, the pure-Python parser stores the unparsed remainder internal",
+        "id": "CVE-2026-128130",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128130"
+      },
+      {
+        "cvss": 7.5,
+        "description": "A buffer overflow vulnerability in the icmp6_send_response_with_addrs_and_netif() function of Free Software Foundation lwIP version git head allows attackers to access sensitive information via a craf",
+        "id": "CVE-2020-22283",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-22283"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 99,
+      "HIGH": 522,
+      "LOW": 62,
+      "MEDIUM": 791,
+      "NONE": 0,
+      "UNSCORED": 26
+    }
+  },
+  "snapshot": {
+    "cves": 1500,
+    "kevAdded": 3,
+    "knownExploited": 5,
+    "projects": 18,
+    "releases": 4,
+    "techEntries": 27
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 3,
+      "status": "success",
+      "total": 1795
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 4,
+      "status": "partial",
+      "total": 53
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1500,
+      "status": "success",
+      "total": 1500
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 27,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 16,
+      "tech": 11
+    },
+    "recent": [
+      {
+        "published_at": "2026-11-24T17:00:00+00:00",
+        "source": "The Register",
+        "title": "An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes",
+        "url": "https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes/5311922"
+      },
+      {
+        "published_at": "2026-11-24T17:00:00+00:00",
+        "source": "Google Cloud",
+        "title": "Built for trust and control: Powering the next wave of AI agents across Google Workspace and Google Cloud",
+        "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise/"
+      },
+      {
+        "published_at": "2026-11-24T16:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "These are the gifts developers will actually want",
+        "url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/"
+      },
+      {
+        "published_at": "2026-11-24T15:39:59+00:00",
+        "source": "AWS",
+        "title": "AWS Weekly Roundup: Local Zone in Bogotá, 30-minute Lambda timeout, and more (November 24, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/"
+      },
+      {
+        "published_at": "2026-11-24T15:23:13+00:00",
+        "source": "Microsoft",
+        "title": "Is “sort by impact” just vibes?",
+        "url": "https://devblogs.microsoft.com/blog/is-sort-by-impact-just-vibes/"
+      },
+      {
+        "published_at": "2026-11-24T15:02:00+00:00",
+        "source": "Google Cloud",
+        "title": "Enabling zero trust: ALLEN’s move to Chrome Enterprise Premium",
+        "url": "https://cloud.google.com/blog/products/chrome-enterprise/enabling-zero-trust-allens-move-to-chrome-enterprise-premium/"
+      },
+      {
+        "published_at": "2026-11-24T13:06:00+00:00",
+        "source": "The Register",
+        "title": "9/UX brings a classic Mac feel to 9front",
+        "url": "https://www.theregister.com/software/2026/11/24/9/ux-brings-a-classic-mac-feel-to-9front/5311844"
+      },
+      {
+        "published_at": "2026-11-24T12:30:05+00:00",
+        "source": "Ars Technica",
+        "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+        "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+      },
+      {
+        "published_at": "2026-11-24T12:22:17+00:00",
+        "source": "The Register",
+        "title": "CrowdStrike splashes $44B on Zscaler, customers brace for the bill",
+        "url": "https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill/5311877"
+      },
+      {
+        "published_at": "2026-11-24T11:32:41+00:00",
+        "source": "The Register",
+        "title": "European Commission confirms personal data stolen in AI-assisted cyberattack",
+        "url": "https://www.theregister.com/cyber-crime/2026/11/24/european-commission-confirms-personal-data-stolen-in-ai-assisted-cyberattack/5311834"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 1,
+      "Cloudflare": 1,
+      "GitHub Blog": 1,
+      "Google Cloud": 5,
+      "Microsoft": 2,
+      "The Register": 16
+    }
+  },
+  "window": {
+    "end": "2026-11-24T18:30:00+00:00",
+    "start": "2026-11-23T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
