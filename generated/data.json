@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 1936,
+      "date": "2026-11-26",
+      "kevAdded": 10,
+      "knownExploited": 3,
+      "projects": 18,
+      "releases": 5,
+      "techEntries": 39
+    },
+    {
       "cves": 1500,
       "date": "2026-11-25",
       "kevAdded": 3,
@@ -632,16 +641,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-24",
-    "date": "2026-11-25",
-    "daysObserved": 70,
-    "generatedAt": "2026-11-25T02:44:33.287544+00:00",
-    "snapshots": 70,
+    "coveredDate": "2026-11-25",
+    "date": "2026-11-26",
+    "daysObserved": 71,
+    "generatedAt": "2026-11-26T01:55:56.066757+00:00",
+    "snapshots": 71,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 54,
+      "daily_growth": 71,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -649,11 +658,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201763,
+      "stars": 201834,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 65,
+      "daily_growth": 44,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -661,11 +670,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143685,
+      "stars": 143729,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 23,
+      "daily_growth": 63,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -673,11 +682,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 140068,
+      "stars": 140131,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 32,
+      "daily_growth": 75,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -685,11 +694,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129286,
+      "stars": 129361,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 76,
+      "daily_growth": 68,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -697,11 +706,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 123951,
+      "stars": 124019,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 46,
+      "daily_growth": 113,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -709,11 +718,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122375,
+      "stars": 122488,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 90,
+      "daily_growth": 110,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -721,11 +730,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115405,
+      "stars": 115515,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 0,
+      "daily_growth": 65,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -733,11 +742,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105701,
+      "stars": 105766,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 67,
+      "daily_growth": 55,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -745,11 +754,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98780,
+      "stars": 98835,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 28,
+      "daily_growth": 55,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -757,261 +766,270 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91858,
+      "stars": 91913,
       "url": "https://github.com/django/django"
     }
   ],
   "releases": [
     {
-      "kind": "minor",
-      "project": "framework",
-      "publishedAt": "2026-11-24T16:22:37Z",
-      "repository": "laravel/framework",
+      "kind": "patch",
+      "project": "kubernetes",
+      "publishedAt": "2026-11-25T14:57:49Z",
+      "repository": "kubernetes/kubernetes",
       "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v12.74.0",
-      "version": "v12.74.0"
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.11",
+      "version": "v1.35.11"
     },
     {
       "kind": "patch",
-      "project": "framework",
-      "publishedAt": "2026-11-24T16:11:28Z",
-      "repository": "laravel/framework",
+      "project": "kubernetes",
+      "publishedAt": "2026-11-25T14:57:06Z",
+      "repository": "kubernetes/kubernetes",
       "source": "GitHub",
-      "url": "https://github.com/laravel/framework/releases/tag/v13.44.1",
-      "version": "v13.44.1"
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.7",
+      "version": "v1.36.7"
     },
     {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-23T19:00:21Z",
-      "repository": "openai/openai-python",
+      "kind": "patch",
+      "project": "kubernetes",
+      "publishedAt": "2026-11-25T14:55:41Z",
+      "repository": "kubernetes/kubernetes",
       "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.58.0",
-      "version": "v3.58.0"
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.3",
+      "version": "v1.37.3"
     },
     {
       "kind": "minor",
       "project": "anthropic-sdk-python",
-      "publishedAt": "2026-11-23T18:34:26Z",
+      "publishedAt": "2026-11-24T21:00:57Z",
       "repository": "anthropics/anthropic-sdk-python",
       "source": "GitHub",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
-      "version": "v2.13.0"
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0",
+      "version": "v2.14.0"
+    },
+    {
+      "kind": "minor",
+      "project": "openai-python",
+      "publishedAt": "2026-11-24T19:18:59Z",
+      "repository": "openai/openai-python",
+      "source": "GitHub",
+      "url": "https://github.com/openai/openai-python/releases/tag/v3.59.0",
+      "version": "v3.59.0"
     }
   ],
   "security": {
-    "critical": 99,
-    "high": 522,
-    "kevCatalogTotal": 1795,
+    "critical": 146,
+    "high": 645,
+    "kevCatalogTotal": 1805,
     "latest": [
       {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in mxf_write_d10_audio_packet() in libavformat/mxfenc.c because mxf_init() accepts unsupported D-10 audio codecs. Attackers can supply a crafted input with a non-PCM multichannel audio stream remuxed to D-10 MXF to leak heap memory into the output file or crash the application.",
-        "id": "CVE-2026-135732",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:26:33.490",
-        "publishedAt": "2026-11-24T04:17:31.773",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in mxf_write_d10_audio_packet() in libavformat/mxfenc.c because mxf_init() accepts unsupported…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135732"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "FFmpeg through 9.1 contains an insecure default configuration in the zmq and azmq filters of libavfilter/f_zmq.c that binds an unauthenticated command socket to all interfaces on TCP port 5555. Remote attackers can send 'TARGET COMMAND [ARG]' messages passed to avfilter_graph_send_command() to change filter runtime parameters and alter processed audio or video.",
-        "id": "CVE-2026-135733",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:26:26.603",
-        "publishedAt": "2026-11-24T04:17:31.953",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "FFmpeg through 9.1 contains an insecure default configuration in the zmq and azmq filters of libavfilter/f_zmq.c that binds an unauthenticated command socket…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135733"
-      },
-      {
-        "cvss_score": 8.5,
-        "cvss_version": "4.0",
-        "description": "FFmpeg before 9.1 contains a heap out-of-bounds write vulnerability in the deflicker filter that lets attackers corrupt heap memory via unclamped high bit depth luma samples. Attackers can supply crafted video whose luma values exceed the nominal depth, making calc_avgy16() increment counters past the histogram allocation, causing crashes or possibly code execution.",
-        "id": "CVE-2026-135734",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:26:19.497",
-        "publishedAt": "2026-11-24T04:17:32.137",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "FFmpeg before 9.1 contains a heap out-of-bounds write vulnerability in the deflicker filter that lets attackers corrupt heap memory via unclamped high bit…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135734"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in filter_slice_rgba_planar() that allows attackers to read beyond lookup tables using unmasked high bit depth planar samples. Attackers can supply crafted video with samples exceeding the nominal depth, passed unchanged by rawvideo, to crash the application or leak heap contents into output video.",
-        "id": "CVE-2026-135735",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:26:12.787",
-        "publishedAt": "2026-11-24T04:17:32.317",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in filter_slice_rgba_planar() that allows attackers to read beyond lookup tables using…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135735"
-      },
-      {
-        "cvss_score": 8.7,
-        "cvss_version": "4.0",
-        "description": "FFmpeg before 9.1 contains a heap buffer overflow vulnerability in recv_msg() of the zmq and azmq filters that allows unauthenticated network attackers to corrupt memory by sending oversized command messages. Attackers can send a 4 GiB message to the default listening port, truncating the int buffer size so memcpy() writes past the heap allocation and crashes FFmpeg.",
-        "id": "CVE-2026-135742",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:26:03.887",
-        "publishedAt": "2026-11-24T04:17:33.490",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "FFmpeg before 9.1 contains a heap buffer overflow vulnerability in recv_msg() of the zmq and azmq filters that allows unauthenticated network attackers to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135742"
-      },
-      {
-        "cvss_score": 9.2,
-        "cvss_version": "4.0",
-        "description": "FFmpeg 4.3 before 9.1 contains a heap out-of-bounds read and write vulnerability in the dynaudnorm filter because cqueue_resize() miscalculates gain history queue element counts when gausssize changes at runtime. Attackers can send gausssize commands via asendcmd scripts or an unauthenticated azmq filter to corrupt heap memory, crashing the process or potentially executing code.",
-        "id": "CVE-2026-135743",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:25:47.820",
-        "publishedAt": "2026-11-24T04:17:33.657",
+        "cvss_score": 9.8,
+        "cvss_version": "3.1",
+        "description": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
+        "id": "CVE-2026-103406",
+        "known_exploited": true,
+        "lastModifiedAt": "2026-11-25T18:21:06.383",
+        "publishedAt": "2026-10-28T17:17:25.830",
         "severity": "CRITICAL",
         "source": "NVD",
-        "title": "FFmpeg 4.3 before 9.1 contains a heap out-of-bounds read and write vulnerability in the dynaudnorm filter because cqueue_resize() miscalculates gain history…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135743"
+        "title": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
       },
       {
-        "cvss_score": 5.8,
-        "cvss_version": "4.0",
-        "description": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in the lut1d filter in libavfilter/vf_lut3d.c that allows attackers to read heap memory by supplying planar high bit depth samples above the nominal depth. Attackers can craft 9, 10, 12 or 14 bit planar RGB video processed with a large 1D LUT to crash applications or disclose heap contents in output pixels.",
-        "id": "CVE-2026-135744",
+        "cvss_score": 3.6,
+        "cvss_version": "3.1",
+        "description": "Flatpak passes through arbitrary vendor-extension keys unmodified when exporting an application's Desktop Entry (.desktop) and D-Bus Service (.service) files, instead of validating against an allowlist. A malicious Flatpak app can use this to cause denial of service (e.g. forced application restart loops) or to influence host D-Bus/systemd activation behavior beyond what the sandbox is intended…",
+        "id": "CVE-2026-97027",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:25:39.913",
-        "publishedAt": "2026-11-24T04:17:33.820",
+        "lastModifiedAt": "2026-11-25T18:18:58.740",
+        "publishedAt": "2026-09-28T21:17:20.067",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "Flatpak passes through arbitrary vendor-extension keys unmodified when exporting an application's Desktop Entry (.desktop) and D-Bus Service (.service) files…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97027"
+      },
+      {
+        "cvss_score": 3.9,
+        "cvss_version": "3.1",
+        "description": "Flatpak creates temporary child repository directories under the user cache with world-writable permissions (0777). On multi-user systems with a permissive umask, other local users could read or modify the temporary directory used while installing apps or runtimes, potentially causing installation failures (denial of service); tampered content would fail signature/digest verification rather than…",
+        "id": "CVE-2026-97026",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:58.603",
+        "publishedAt": "2026-09-28T21:17:19.907",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "Flatpak creates temporary child repository directories under the user cache with world-writable permissions (0777). On multi-user systems with a permissive…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97026"
+      },
+      {
+        "cvss_score": 3.2,
+        "cvss_version": "3.1",
+        "description": "Flatpak writes the OCI repository authentication token with world-readable permissions (0644) in the system-helper's cache directory, allowing other local users on a multi-user system to read the token and impersonate the authenticated user against the OCI repository. Only OCI-based sources (e.g. as used by Fedora) are affected; libostree-based sources such as Flathub are not.",
+        "id": "CVE-2026-97025",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:58.467",
+        "publishedAt": "2026-09-28T21:17:19.757",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "Flatpak writes the OCI repository authentication token with world-readable permissions (0644) in the system-helper's cache directory, allowing other local…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97025"
+      },
+      {
+        "cvss_score": 2.5,
+        "cvss_version": "3.1",
+        "description": "A one-byte out-of-bounds heap read flaw was found in GIMP's uncompressed DDS image loader. When a user opens an uncompressed DDS image, the file-dds plug-in performs an unconditional one-byte look-ahead after processing the final pixel. This may cause the plug-in to crash if the byte immediately following the pixel buffer is inaccessible; no information disclosure or code execution has been…",
+        "id": "CVE-2026-96546",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:58.320",
+        "publishedAt": "2026-09-23T19:19:54.373",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A one-byte out-of-bounds heap read flaw was found in GIMP's uncompressed DDS image loader. When a user opens an uncompressed DDS image, the file-dds plug-in…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96546"
+      },
+      {
+        "cvss_score": 2.5,
+        "cvss_version": "3.1",
+        "description": "A malicious user can get read-access to files in the flatpak-system-helper context if a system OCI repository is configured, because the OCI code paths in the system helper follow symlinks when importing OCI images that are under the user's control.",
+        "id": "CVE-2026-96284",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:58.190",
+        "publishedAt": "2026-09-27T23:17:01.130",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A malicious user can get read-access to files in the flatpak-system-helper context if a system OCI repository is configured, because the OCI code paths in the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96284"
+      },
+      {
+        "cvss_score": 3.3,
+        "cvss_version": "3.1",
+        "description": "By calling org.freedesktop.Flatpak.SystemHelper.CancelPull on another user's pull, the pull is not actually cancelled but removed from internal tracking, making it impossible for the owning user to stop it. Ongoing pulls cannot be stopped.",
+        "id": "CVE-2026-96283",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:58.060",
+        "publishedAt": "2026-09-27T22:17:06.557",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "By calling org.freedesktop.Flatpak.SystemHelper.CancelPull on another user's pull, the pull is not actually cancelled but removed from internal tracking…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96283"
+      },
+      {
+        "cvss_score": 3.1,
+        "cvss_version": "3.1",
+        "description": "A malicious Flatpak extension can probe the host filesystem to determine what files and directories exist at arbitrary paths, and host directory listings can be disclosed to sandboxed applications using the extension. Additionally, unvalidated extension metadata can cause extension content to be mounted at unintended locations inside the sandbox.",
+        "id": "CVE-2026-96282",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:57.920",
+        "publishedAt": "2026-09-27T22:17:06.430",
+        "severity": "LOW",
+        "source": "NVD",
+        "title": "A malicious Flatpak extension can probe the host filesystem to determine what files and directories exist at arbitrary paths, and host directory listings can…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96282"
+      },
+      {
+        "cvss_score": 7.2,
+        "cvss_version": "3.1",
+        "description": "Description\n\nThe SQL status backend serialises per-URL metadata into a single column by concatenating a tabulation,\nthe key, an equals sign and the value, with no escaping. On read-back the string is split on the same\ntwo characters, so the round trip is not injective: a value that contains a tabulation returns as one\nor more additional keys that were never written.\n\nValues on that path are…",
+        "id": "CVE-2026-82445",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:57.713",
+        "publishedAt": "2026-11-24T11:17:21.187",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Description\n\nThe SQL status backend serialises per-URL metadata into a single column by concatenating a tabulation,\nthe key, an equals sign and the value, with…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82445"
+      },
+      {
+        "cvss_score": 4.9,
+        "cvss_version": "3.1",
+        "description": "Description\n\n`CookieConverter.getCookies` decides which stored cookies to attach to an outbound request. The\napplicability check is nested inside a test for the presence of a `Domain` attribute, so a cookie\nwithout one, which is the ordinary form of a session cookie, skips scoping entirely and is returned for\nwhatever target URL was passed. RFC 6265 requires the opposite: a cookie with no…",
+        "id": "CVE-2026-82444",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:57.513",
+        "publishedAt": "2026-11-24T11:17:21.033",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in the lut1d filter in libavfilter/vf_lut3d.c that allows attackers to read heap memory by…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135744"
+        "title": "Description\n\n`CookieConverter.getCookies` decides which stored cookies to attach to an outbound request. The\napplicability check is nested inside a test for…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82444"
       },
       {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in the curves filter in libavfilter/vf_curves.c that allows attackers to read past lookup tables by supplying planar high bit depth samples exceeding the nominal depth. Attackers can craft video files with unmasked gbrp9 to gbrp14 samples passed through the rawvideo decoder to crash applications or leak heap contents into output…",
-        "id": "CVE-2026-135745",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:25:32.637",
-        "publishedAt": "2026-11-24T04:17:33.987",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "FFmpeg before 9.1 contains a heap out-of-bounds read vulnerability in the curves filter in libavfilter/vf_curves.c that allows attackers to read past lookup…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135745"
-      },
-      {
-        "cvss_score": 8.3,
-        "cvss_version": "4.0",
-        "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, when the pipelined request queue is full, the pure-Python parser stores the unparsed remainder internally and also returns the same data to its caller. After a handler declines an upgrade request, the caller feeds the remainder back to the parser, causing the buffer to grow with each handled request…",
-        "id": "CVE-2026-128130",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:24:20.770",
-        "publishedAt": "2026-11-13T21:17:44.893",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, when the pipelined request queue is full, the pure-Python…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-128130"
-      },
-      {
-        "cvss_score": 7.5,
+        "cvss_score": 9.1,
         "cvss_version": "3.1",
-        "description": "A buffer overflow vulnerability in the icmp6_send_response_with_addrs_and_netif() function of Free Software Foundation lwIP version git head allows attackers to access sensitive information via a crafted ICMPv6 packet.",
-        "id": "CVE-2020-22283",
+        "description": "Description\n\n`HostURLFilter.configure` reads the `ignoreOutsideDomain` parameter but tests the node belonging to\n`ignoreOutsideHost` when deciding whether the domain mode was configured. A filter configuration that\nnames only `ignoreOutsideDomain`, which the class documentation presents as an independent mode, is\ntherefore discarded: the flag is forced to false, `filter` short-circuits on its…",
+        "id": "CVE-2026-82442",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:23:56.677",
-        "publishedAt": "2021-07-22T20:15:07.920",
-        "severity": "HIGH",
+        "lastModifiedAt": "2026-11-25T18:18:57.320",
+        "publishedAt": "2026-11-24T11:17:20.887",
+        "severity": "CRITICAL",
         "source": "NVD",
-        "title": "A buffer overflow vulnerability in the icmp6_send_response_with_addrs_and_netif() function of Free Software Foundation lwIP version git head allows attackers…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-22283"
-      },
-      {
-        "cvss_score": 7.8,
-        "cvss_version": "3.1",
-        "description": "virtualenv is a tool for creating isolated virtual python environments. Prior to 21.7.13, the generated activate (bash and zsh) and activate.fish scripts place values already escaped by shlex.quote inside an additional quoted context. In the bash and zsh script, a crafted virtual environment path reaches __VIRTUAL_ENV__ when a relocated environment's recorded directory is absent; in the fish…",
-        "id": "CVE-2026-102925",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:23:38.387",
-        "publishedAt": "2026-09-29T21:17:18.570",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "virtualenv is a tool for creating isolated virtual python environments. Prior to 21.7.13, the generated activate (bash and zsh) and activate.fish scripts place…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102925"
-      },
-      {
-        "cvss_score": 8.1,
-        "cvss_version": "3.1",
-        "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit…",
-        "id": "CVE-2026-114938",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:23:19.743",
-        "publishedAt": "2026-11-17T22:18:23.777",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114938"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "Kafka dissector crash in Wireshark 4.6.0 and 4.4.0 to 4.4.10 allows denial of service",
-        "id": "CVE-2025-13499",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:22:52.337",
-        "publishedAt": "2025-11-21T06:15:48.203",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "Kafka dissector crash in Wireshark 4.6.0 and 4.4.0 to 4.4.10 allows denial of service",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13499"
+        "title": "Description\n\n`HostURLFilter.configure` reads the `ignoreOutsideDomain` parameter but tests the node belonging to\n`ignoreOutsideHost` when deciding whether the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82442"
       },
       {
         "cvss_score": 4.4,
         "cvss_version": "3.1",
-        "description": "In IsoDataChannelImpl::TrySendPackets of iso_data_channel.cc, there is a possible assertion failure due to improper input validation. This could lead to local denial of service with System execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-95424",
+        "description": "A flaw was found in the containers/storage library. A crafted tar archive containing a malicious whiteout header (e.g. victim/.wh.) can cause the extraction destination directory to be replaced with an arbitrary file when processed by storage/pkg/archive.UnpackLayer, ApplyLayer, or ApplyUncompressedLayer.",
+        "id": "CVE-2026-79699",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:19:06.877",
-        "publishedAt": "2026-11-23T17:17:57.270",
+        "lastModifiedAt": "2026-11-25T18:18:54.787",
+        "publishedAt": "2026-09-15T17:17:27.083",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "In IsoDataChannelImpl::TrySendPackets of iso_data_channel.cc, there is a possible assertion failure due to improper input validation. This could lead to local…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95424"
+        "title": "A flaw was found in the containers/storage library. A crafted tar archive containing a malicious whiteout header (e.g. victim/.wh.) can cause the extraction…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79699"
       },
       {
-        "cvss_score": 4.4,
-        "cvss_version": "3.1",
-        "description": "In OnSyncEstablished of periodic_advertising_synchronizer.cc, there is a possible crash due to a reachable assertion. This could lead to local denial of service with System execution privileges needed. User interaction is not needed for exploitation.",
-        "id": "CVE-2026-95422",
+        "cvss_score": 8.6,
+        "cvss_version": "4.0",
+        "description": "Cross-site scripting in the conversation file-sharing feature of Unblu inc. Unblu Spark 7.0 through 7.57.10 and 8.0 before 8.41.1, on on-premises and cloud deployments, allows an unauthenticated remote attacker in the visitor role to execute arbitrary JavaScript in the browser of a user who opens a crafted link to a file the attacker uploaded, via a file type that the browser renders as active…",
+        "id": "CVE-2026-19881",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-24T18:19:06.723",
-        "publishedAt": "2026-11-23T17:17:57.033",
+        "lastModifiedAt": "2026-11-25T18:18:53.980",
+        "publishedAt": "2026-11-24T10:17:50.140",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Cross-site scripting in the conversation file-sharing feature of Unblu inc. Unblu Spark 7.0 through 7.57.10 and 8.0 before 8.41.1, on on-premises and cloud…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19881"
+      },
+      {
+        "cvss_score": 4.3,
+        "cvss_version": "3.1",
+        "description": "A cross-site request forgery (CSRF) vulnerability in Jenkins Spira Importer Plugin 4.0.0 and earlier allows attackers to have Jenkins connect to an attacker-specified URL.",
+        "id": "CVE-2026-136843",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:53.350",
+        "publishedAt": "2026-11-25T17:17:51.480",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "In OnSyncEstablished of periodic_advertising_synchronizer.cc, there is a possible crash due to a reachable assertion. This could lead to local denial of…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95422"
+        "title": "A cross-site request forgery (CSRF) vulnerability in Jenkins Spira Importer Plugin 4.0.0 and earlier allows attackers to have Jenkins connect to an…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136843"
+      },
+      {
+        "cvss_score": 5.4,
+        "cvss_version": "3.1",
+        "description": "Jenkins Performance Plugin 1024.ve69e11844523 and earlier does not limit URL schemes for the external report links it creates based on Taurus XML format performance reports, allowing the `javascript:` scheme, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to control these reports.",
+        "id": "CVE-2026-136842",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-25T18:18:53.197",
+        "publishedAt": "2026-11-25T17:17:51.373",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Jenkins Performance Plugin 1024.ve69e11844523 and earlier does not limit URL schemes for the external report links it creates based on Taurus XML format…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-136842"
       }
     ],
-    "low": 62,
-    "medium": 791,
+    "low": 164,
+    "medium": 896,
     "none": 0,
-    "unscored": 26
+    "unscored": 85
   },
   "snapshot": {
-    "cves": 1500,
-    "kevAdded": 3,
-    "knownExploited": 5,
+    "cves": 1936,
+    "kevAdded": 10,
+    "knownExploited": 3,
     "projects": 18,
-    "releases": 4,
-    "techEntries": 27
+    "releases": 5,
+    "techEntries": 39
   },
   "sources": {
     "opensource": {
@@ -1025,35 +1043,131 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 4,
+        "inWindow": 5,
         "status": "partial",
-        "total": 53
+        "total": 52
       }
     },
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 3,
+        "inWindow": 10,
         "status": "success",
-        "total": 1795
+        "total": 1805
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1500,
+        "inWindow": 1936,
         "status": "success",
-        "total": 1500
+        "total": 1936
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 27,
+        "inWindow": 39,
         "status": "success",
         "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-11-25T17:01:00+00:00",
+      "source": "The Register",
+      "summary": "It's not our fault if you've implemented it wrong",
+      "title": "Microsoft's NTLM security changes trip up third-party logins",
+      "url": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-25T16:40:16+00:00",
+      "source": "The Register",
+      "summary": "FinCEN takes systems offline and extends filing deadlines while investigating 'unauthorized access'",
+      "title": "US Treasury financial crimes unit becomes latest fed breach victim",
+      "url": "https://www.theregister.com/security/2026/11/25/us-treasury-financial-crimes-unit-becomes-latest-fed-breach-victim/5312165"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-25T16:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "Now that code ships faster than ever, you have more time to spend on projects just for the fun of it. Here's what we can learn through that process as developers. The post Art of play in the age of AI appeared first on The GitHub Blog .",
+      "title": "Art of play in the age of AI",
+      "url": "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-25T15:00:00+00:00",
+      "source": "GitHub Blog",
+      "summary": "Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill. The post How to choose the next safe step in application modernization appeared first on The GitHub Blog .",
+      "title": "How to choose the next safe step in application modernization",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-25T14:45:00+00:00",
+      "source": "The Register",
+      "summary": "Update resolves work-blocking popup, but affected users may need an administrator command prompt to install it",
+      "title": "Microsoft fixes Office dialog that had nothing to say and wouldn't go away",
+      "url": "https://www.theregister.com/software/2026/11/25/microsoft-fixes-office-dialog-that-had-nothing-to-say-and-wouldnt-go-away/5312057"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-25T14:29:43+00:00",
+      "source": "Ars Technica",
+      "summary": "France blames an Iranian cyber unit for sabotaging hundreds of supermarket freezers.",
+      "title": "A familiar Iranian hacking group has found a new way to cause chaos",
+      "url": "https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-25T14:00:00+00:00",
+      "source": "Cloudflare",
+      "summary": "Flip one toggle to make your site searchable by AI agents — complete with automatic content indexing, a discoverable search API, and native HTTP QUERY support.",
+      "title": "Introducing Search for Agents",
+      "url": "https://blog.cloudflare.com/search-for-agents/"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-25T13:23:32+00:00",
+      "source": "The Register",
+      "summary": "Win4Wine runs the genuine Explorer shell atop Linux",
+      "title": "Debian wakes up wearing Windows XP's actual skin",
+      "url": "https://www.theregister.com/os-platforms/2026/11/25/debian-wakes-up-wearing-windows-xps-actual-skin/5312111"
+    },
+    {
+      "category": "tech",
+      "publishedAt": "2026-11-25T11:46:06+00:00",
+      "source": "Microsoft",
+      "summary": "Somewhere in your docs, two pages disagree. Coding agents often notice, follow the wrong page anyway, and pay for it in extra tokens or a broken build. The post Do inconsistent docs hurt AI coding agents? appeared first on Microsoft for Developers .",
+      "title": "Do inconsistent docs hurt AI coding agents?",
+      "url": "https://devblogs.microsoft.com/blog/do-inconsistent-docs-hurt-ai-coding-agents/"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-25T11:16:18+00:00",
+      "source": "The Register",
+      "summary": "AutoPay login and vehicle records affected, alongside limited payment information and customer service emails",
+      "title": "Gatwick drop-off customers' personal data exposed in supplier breach",
+      "url": "https://www.theregister.com/security/2026/11/25/gatwick-drop-off-customers-personal-data-exposed-in-supplier-breach/5312060"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-25T05:15:08+00:00",
+      "source": "The Register",
+      "summary": "Four more critical vulns, including another unauthorized access flaw in vCenter",
+      "title": "This could mess with Thanksgiving, says VMware as it drops third critical patch bundle in a week",
+      "url": "https://www.theregister.com/virtualization/2026/11/25/this-could-mess-with-thanksgiving-says-vmware-as-it-drops-third-critical-patch-bundle-in-a-week/5312017"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-24T20:15:36+00:00",
+      "source": "The Register",
+      "summary": "Nothing to see here…",
+      "title": "'We are not ShinyHunters,' says criminal hacking crew that looks and acts just like ShinyHunters",
+      "url": "https://www.theregister.com/security/2026/11/24/we-are-not-shinyhunters-says-criminal-hacking-crew-that-looks-and-acts-just-like-shinyhunters/5311978"
+    },
     {
       "category": "security",
       "publishedAt": "2026-11-24T17:00:00+00:00",
@@ -1077,102 +1191,6 @@
       "summary": "The developer you're shopping for hasn’t shared their holiday wish list with you yet? Check out these gifts, plus our Black Friday discount all week long. The post These are the gifts developers will actually want appeared first on The GitHub Blog .",
       "title": "These are the gifts developers will actually want",
       "url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-24T15:39:59+00:00",
-      "source": "AWS",
-      "summary": "Some limits shape architecture more than any feature does. AWS Lambda launched in 2014 with a 60-second timeout, moved to 5 minutes in 2015 and to 15 minutes in 2018, and then stayed there for eight years. Last week the limit doubled, and in the same week Lambda learned to run…",
-      "title": "AWS Weekly Roundup: Local Zone in Bogotá, 30-minute Lambda timeout, and more (November 24, 2026)",
-      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-24T15:23:13+00:00",
-      "source": "Microsoft",
-      "summary": "You ask an agent for your top five, sorted by impact, and it hands you a confident list. But you never said what impact means, so what did the agent actually sort by? We ran four models through the same lists 1,500 times to find out, and what we found should change how you ask…",
-      "title": "Is “sort by impact” just vibes?",
-      "url": "https://devblogs.microsoft.com/blog/is-sort-by-impact-just-vibes/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-24T15:02:00+00:00",
-      "source": "Google Cloud",
-      "summary": "Editor’s note: Founded in 1988 in Kota, Rajasthan, ALLEN is one of India’s leading coaching institutions, serving over 400,000 students across 350+ classroom campuses in 78 cities. Here, the IT and Cybersecurity Leadership Team shares how they standardized on Chrome Enterprise…",
-      "title": "Enabling zero trust: ALLEN’s move to Chrome Enterprise Premium",
-      "url": "https://cloud.google.com/blog/products/chrome-enterprise/enabling-zero-trust-allens-move-to-chrome-enterprise-premium/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-24T13:06:00+00:00",
-      "source": "The Register",
-      "summary": "A spatial classic Finder in the style of A/UX",
-      "title": "9/UX brings a classic Mac feel to 9front",
-      "url": "https://www.theregister.com/software/2026/11/24/9/ux-brings-a-classic-mac-feel-to-9front/5311844"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-24T12:30:05+00:00",
-      "source": "Ars Technica",
-      "summary": "The Cairn AI framework is proving to be a boon for defenders and attackers.",
-      "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
-      "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-24T12:22:17+00:00",
-      "source": "The Register",
-      "summary": "Record-breaking cybersecurity deal promises tighter integration, but sysadmins fear higher prices and vendor lock-in",
-      "title": "CrowdStrike splashes $44B on Zscaler, customers brace for the bill",
-      "url": "https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill/5311877"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-24T11:32:41+00:00",
-      "source": "The Register",
-      "summary": "EU Academy names and email addresses exposed, with users warned via website notice rather than contacted directly",
-      "title": "European Commission confirms personal data stolen in AI-assisted cyberattack",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/24/european-commission-confirms-personal-data-stolen-in-ai-assisted-cyberattack/5311834"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-24T05:13:51+00:00",
-      "source": "The Register",
-      "summary": "Leakers move through denial, bargaining, delay, legal threats, then claiming Hunt is the real villain",
-      "title": "Orgs that leak data 'prioritize corporate interests over customers' says Have I Been Pwned’s Troy Hunt",
-      "url": "https://www.theregister.com/security/2026/11/24/orgs-that-leak-data-prioritize-corporate-interests-over-customers-says-have-i-been-pwneds-troy-hunt/5311802"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-24T01:46:56+00:00",
-      "source": "The Register",
-      "summary": "‘Shirudo’ project promises to whip up compensating controls in a hurry",
-      "title": "Cisco and OpenAI pitch eBPF kernel plugins as the way to tame the patchpocalypse",
-      "url": "https://www.theregister.com/security/2026/11/24/cisco-and-openai-pitch-ebpf-kernel-plugins-as-the-way-to-tame-the-patchpocalypse/5311795"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T21:52:23+00:00",
-      "source": "The Register",
-      "summary": "Whatever they call themselves these days: be on the lookout for voice phishing attempts",
-      "title": "Inception - possibly a ShinyHunters reboot - claims seven victims in a week",
-      "url": "https://www.theregister.com/security/2026/11/23/inception-possibly-a-shinyhunters-reboot-claims-seven-victims-in-a-week/5311768"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T19:29:59+00:00",
-      "source": "The Register",
-      "summary": "Security fixes are available for two Elecbrakes models, but an older controller remains vulnerable and unpatched",
-      "title": "Bluetooth brakes are broken as researchers find anyone can control them",
-      "url": "https://www.theregister.com/security/2026/11/23/bluetooth-brakes-are-broken-as-researchers-find-anyone-can-control-them/5311748"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-23T17:56:56+00:00",
-      "source": "The Register",
-      "summary": "CISA, F6 sound the alarm after PoC exploit made public",
-      "title": "Critical Cisco remote code execution bug under attack",
-      "url": "https://www.theregister.com/security/2026/11/23/critical-cisco-remote-code-execution-bug-under-attack/5311722"
     }
   ]
 }

@@ -1,0 +1,376 @@
+{
+  "coveredIstDay": "2026-11-25",
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T01:55:56.066757+00:00",
+  "opensource": {
+    "growthBasis": "previous_reporting_date",
+    "topProjects": [
+      {
+        "daily_growth": 71,
+        "full_name": "tensorflow/tensorflow",
+        "language": "C++",
+        "stars": 201834,
+        "url": "https://github.com/tensorflow/tensorflow"
+      },
+      {
+        "daily_growth": 44,
+        "full_name": "vercel/next.js",
+        "language": "JavaScript",
+        "stars": 143729,
+        "url": "https://github.com/vercel/next.js"
+      },
+      {
+        "daily_growth": 63,
+        "full_name": "golang/go",
+        "language": "Go",
+        "stars": 140131,
+        "url": "https://github.com/golang/go"
+      },
+      {
+        "daily_growth": 75,
+        "full_name": "kubernetes/kubernetes",
+        "language": "Go",
+        "stars": 129361,
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "daily_growth": 68,
+        "full_name": "nodejs/node",
+        "language": "JavaScript",
+        "stars": 124019,
+        "url": "https://github.com/nodejs/node"
+      },
+      {
+        "daily_growth": 113,
+        "full_name": "rust-lang/rust",
+        "language": "Rust",
+        "stars": 122488,
+        "url": "https://github.com/rust-lang/rust"
+      },
+      {
+        "daily_growth": 110,
+        "full_name": "supabase/supabase",
+        "language": "TypeScript",
+        "stars": 115515,
+        "url": "https://github.com/supabase/supabase"
+      },
+      {
+        "daily_growth": 65,
+        "full_name": "pytorch/pytorch",
+        "language": "Python",
+        "stars": 105766,
+        "url": "https://github.com/pytorch/pytorch"
+      },
+      {
+        "daily_growth": 55,
+        "full_name": "tailwindlabs/tailwindcss",
+        "language": "TypeScript",
+        "stars": 98835,
+        "url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "daily_growth": 55,
+        "full_name": "django/django",
+        "language": "Python",
+        "stars": 91913,
+        "url": "https://github.com/django/django"
+      }
+    ]
+  },
+  "releases": {
+    "categories": {
+      "major": 0,
+      "minor": 2,
+      "other": 0,
+      "patch": 3
+    },
+    "recent": [
+      {
+        "project": "kubernetes",
+        "published_at": "2026-11-25T14:57:49Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.11",
+        "version": "v1.35.11"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-11-25T14:57:06Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.7",
+        "version": "v1.36.7"
+      },
+      {
+        "project": "kubernetes",
+        "published_at": "2026-11-25T14:55:41Z",
+        "repository": "kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.3",
+        "version": "v1.37.3"
+      },
+      {
+        "project": "anthropic-sdk-python",
+        "published_at": "2026-11-24T21:00:57Z",
+        "repository": "anthropics/anthropic-sdk-python",
+        "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0",
+        "version": "v2.14.0"
+      },
+      {
+        "project": "openai-python",
+        "published_at": "2026-11-24T19:18:59Z",
+        "repository": "openai/openai-python",
+        "url": "https://github.com/openai/openai-python/releases/tag/v3.59.0",
+        "version": "v3.59.0"
+      }
+    ]
+  },
+  "security": {
+    "kevRecent": [
+      {
+        "cve_id": "CVE-2026-133469",
+        "date_added": "2026-11-25",
+        "product": "Xen Orchestra",
+        "vendor_project": "Vates",
+        "vulnerability_name": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-133324",
+        "date_added": "2026-11-25",
+        "product": "MiCollab",
+        "vendor_project": "Mitel",
+        "vulnerability_name": "Mitel MiCollab Not Failing Securely Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-133323",
+        "date_added": "2026-11-25",
+        "product": "MiCollab",
+        "vendor_project": "Mitel",
+        "vulnerability_name": "Mitel MiCollab OS Command Injection Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-133311",
+        "date_added": "2026-11-25",
+        "product": "MiCollab",
+        "vendor_project": "Mitel",
+        "vulnerability_name": "Mitel MiCollab Weak Authentication Vulnerability"
+      },
+      {
+        "cve_id": "CVE-2026-133303",
+        "date_added": "2026-11-25",
+        "product": "MiCollab",
+        "vendor_project": "Mitel",
+        "vulnerability_name": "Mitel MiCollab XML Injection Vulnerability"
+      }
+    ],
+    "latest": [
+      {
+        "cvss": 9.8,
+        "description": "An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary",
+        "id": "CVE-2026-103406",
+        "known_exploited": true,
+        "severity": "CRITICAL",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+      },
+      {
+        "cvss": 3.6,
+        "description": "Flatpak passes through arbitrary vendor-extension keys unmodified when exporting an application's Desktop Entry (.desktop) and D-Bus Service (.service) files, instead of validating against an allowlis",
+        "id": "CVE-2026-97027",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97027"
+      },
+      {
+        "cvss": 3.9,
+        "description": "Flatpak creates temporary child repository directories under the user cache with world-writable permissions (0777). On multi-user systems with a permissive umask, other local users could read or modif",
+        "id": "CVE-2026-97026",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97026"
+      },
+      {
+        "cvss": 3.2,
+        "description": "Flatpak writes the OCI repository authentication token with world-readable permissions (0644) in the system-helper's cache directory, allowing other local users on a multi-user system to read the toke",
+        "id": "CVE-2026-97025",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97025"
+      },
+      {
+        "cvss": 2.5,
+        "description": "A one-byte out-of-bounds heap read flaw was found in GIMP's uncompressed DDS image loader. When a user opens an uncompressed DDS image, the file-dds plug-in performs an unconditional one-byte look-ahe",
+        "id": "CVE-2026-96546",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96546"
+      },
+      {
+        "cvss": 2.5,
+        "description": "A malicious user can get read-access to files in the flatpak-system-helper context if a system OCI repository is configured, because the OCI code paths in the system helper follow symlinks when import",
+        "id": "CVE-2026-96284",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96284"
+      },
+      {
+        "cvss": 3.3,
+        "description": "By calling org.freedesktop.Flatpak.SystemHelper.CancelPull on another user's pull, the pull is not actually cancelled but removed from internal tracking, making it impossible for the owning user to st",
+        "id": "CVE-2026-96283",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96283"
+      },
+      {
+        "cvss": 3.1,
+        "description": "A malicious Flatpak extension can probe the host filesystem to determine what files and directories exist at arbitrary paths, and host directory listings can be disclosed to sandboxed applications usi",
+        "id": "CVE-2026-96282",
+        "known_exploited": false,
+        "severity": "LOW",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96282"
+      },
+      {
+        "cvss": 7.2,
+        "description": "Description\n\nThe SQL status backend serialises per-URL metadata into a single column by concatenating a tabulation,\nthe key, an equals sign and the value, with no escaping. On read-back the string is ",
+        "id": "CVE-2026-82445",
+        "known_exploited": false,
+        "severity": "HIGH",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82445"
+      },
+      {
+        "cvss": 4.9,
+        "description": "Description\n\n`CookieConverter.getCookies` decides which stored cookies to attach to an outbound request. The\napplicability check is nested inside a test for the presence of a `Domain` attribute, so a ",
+        "id": "CVE-2026-82444",
+        "known_exploited": false,
+        "severity": "MEDIUM",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82444"
+      }
+    ],
+    "severity": {
+      "CRITICAL": 146,
+      "HIGH": 645,
+      "LOW": 164,
+      "MEDIUM": 896,
+      "NONE": 0,
+      "UNSCORED": 85
+    }
+  },
+  "snapshot": {
+    "cves": 1936,
+    "kevAdded": 10,
+    "knownExploited": 3,
+    "projects": 18,
+    "releases": 5,
+    "techEntries": 39
+  },
+  "sources": {
+    "cisa": {
+      "failures": 0,
+      "inWindow": 10,
+      "status": "success",
+      "total": 1805
+    },
+    "github_releases": {
+      "failures": 2,
+      "inWindow": 5,
+      "status": "partial",
+      "total": 52
+    },
+    "github_repos": {
+      "failures": 2,
+      "inWindow": 18,
+      "status": "partial",
+      "total": 18
+    },
+    "nvd": {
+      "failures": 0,
+      "inWindow": 1936,
+      "status": "success",
+      "total": 1936
+    },
+    "rss": {
+      "failures": 0,
+      "inWindow": 39,
+      "status": "success",
+      "total": 229
+    }
+  },
+  "technology": {
+    "categories": {
+      "security": 22,
+      "tech": 17
+    },
+    "recent": [
+      {
+        "published_at": "2026-11-25T17:01:00+00:00",
+        "source": "The Register",
+        "title": "Microsoft's NTLM security changes trip up third-party logins",
+        "url": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085"
+      },
+      {
+        "published_at": "2026-11-25T16:40:16+00:00",
+        "source": "The Register",
+        "title": "US Treasury financial crimes unit becomes latest fed breach victim",
+        "url": "https://www.theregister.com/security/2026/11/25/us-treasury-financial-crimes-unit-becomes-latest-fed-breach-victim/5312165"
+      },
+      {
+        "published_at": "2026-11-25T16:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "Art of play in the age of AI",
+        "url": "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/"
+      },
+      {
+        "published_at": "2026-11-25T15:00:00+00:00",
+        "source": "GitHub Blog",
+        "title": "How to choose the next safe step in application modernization",
+        "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/"
+      },
+      {
+        "published_at": "2026-11-25T14:45:00+00:00",
+        "source": "The Register",
+        "title": "Microsoft fixes Office dialog that had nothing to say and wouldn't go away",
+        "url": "https://www.theregister.com/software/2026/11/25/microsoft-fixes-office-dialog-that-had-nothing-to-say-and-wouldnt-go-away/5312057"
+      },
+      {
+        "published_at": "2026-11-25T14:29:43+00:00",
+        "source": "Ars Technica",
+        "title": "A familiar Iranian hacking group has found a new way to cause chaos",
+        "url": "https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos/"
+      },
+      {
+        "published_at": "2026-11-25T14:00:00+00:00",
+        "source": "Cloudflare",
+        "title": "Introducing Search for Agents",
+        "url": "https://blog.cloudflare.com/search-for-agents/"
+      },
+      {
+        "published_at": "2026-11-25T13:23:32+00:00",
+        "source": "The Register",
+        "title": "Debian wakes up wearing Windows XP's actual skin",
+        "url": "https://www.theregister.com/os-platforms/2026/11/25/debian-wakes-up-wearing-windows-xps-actual-skin/5312111"
+      },
+      {
+        "published_at": "2026-11-25T11:46:06+00:00",
+        "source": "Microsoft",
+        "title": "Do inconsistent docs hurt AI coding agents?",
+        "url": "https://devblogs.microsoft.com/blog/do-inconsistent-docs-hurt-ai-coding-agents/"
+      },
+      {
+        "published_at": "2026-11-25T11:16:18+00:00",
+        "source": "The Register",
+        "title": "Gatwick drop-off customers' personal data exposed in supplier breach",
+        "url": "https://www.theregister.com/security/2026/11/25/gatwick-drop-off-customers-personal-data-exposed-in-supplier-breach/5312060"
+      }
+    ],
+    "sources": {
+      "AWS": 1,
+      "Ars Technica": 2,
+      "Cloudflare": 2,
+      "GitHub Blog": 3,
+      "Google Cloud": 5,
+      "Microsoft": 3,
+      "The Register": 23
+    }
+  },
+  "window": {
+    "end": "2026-11-25T18:30:00+00:00",
+    "start": "2026-11-24T18:30:00+00:00",
+    "timezone": "Asia/Kolkata"
+  }
+}
