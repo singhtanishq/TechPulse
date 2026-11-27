@@ -1,6 +1,239 @@
 {
   "archive": [
     {
+      "date": "2026-11-27",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": 31,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201865,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": 16,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143745,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": 29,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 140160,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": 21,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129382,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": 23,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 124042,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": 56,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 122544,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": 49,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 115564,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": 24,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105790,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 18,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98853,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": 12,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91925,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 1,
+          "minor": 2,
+          "other": 1,
+          "patch": 0
+        },
+        "recent": [
+          {
+            "project": "vite",
+            "published_at": "2026-11-26T10:59:41Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.4.0",
+            "version": "create-vite@9.4.0"
+          },
+          {
+            "project": "vite",
+            "published_at": "2026-11-26T10:57:29Z",
+            "repository": "vitejs/vite",
+            "url": "https://github.com/vitejs/vite/releases/tag/v8.4.0",
+            "version": "v8.4.0"
+          },
+          {
+            "project": "node",
+            "published_at": "2026-11-26T08:45:39Z",
+            "repository": "nodejs/node",
+            "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.2.0",
+            "version": "v27.0.0-alpha.0.2.0"
+          },
+          {
+            "project": "openai-python",
+            "published_at": "2026-11-26T07:09:55Z",
+            "repository": "openai/openai-python",
+            "url": "https://github.com/openai/openai-python/releases/tag/v3.60.0",
+            "version": "v3.60.0"
+          }
+        ]
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 84,
+          "HIGH": 505,
+          "LOW": 66,
+          "MEDIUM": 497,
+          "NONE": 0,
+          "UNSCORED": 86
+        }
+      },
+      "snapshot": {
+        "cves": 1238,
+        "kevAdded": 0,
+        "knownExploited": 11,
+        "projects": 18,
+        "releases": 4,
+        "techEntries": 35
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 0,
+          "status": "empty",
+          "total": 1805
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 4,
+          "status": "partial",
+          "total": 52
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 1238,
+          "status": "success",
+          "total": 1238
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 35,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 21,
+          "tech": 14
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-26T18:15:00+00:00",
+            "source": "The Register",
+            "title": "Indie web browser Ladybird enters alpha testing",
+            "url": "https://www.theregister.com/software/2026/11/26/indie-web-browser-ladybird-enters-alpha-testing/5311914"
+          },
+          {
+            "published_at": "2026-11-26T16:16:00+00:00",
+            "source": "The Register",
+            "title": "UK privacy watchdog faces probe into its workplace culture",
+            "url": "https://www.theregister.com/public-sector/2026/11/26/uk-privacy-watchdog-faces-probe-into-its-workplace-culture/5312380"
+          },
+          {
+            "published_at": "2026-11-26T15:29:00+00:00",
+            "source": "The Register",
+            "title": "'Significant number of customer records' pwned in Flight Centre Travel Group breach",
+            "url": "https://www.theregister.com/security/2026/11/26/significant-number-of-customer-records-pwned-in-flight-centre-travel-group-breach/5312360"
+          },
+          {
+            "published_at": "2026-11-26T14:02:00+00:00",
+            "source": "The Register",
+            "title": "Wyoming uranium operation shuts down after cyberattack",
+            "url": "https://www.theregister.com/security/2026/11/26/wyoming-uranium-operation-shuts-down-after-cyberattack/5312323"
+          },
+          {
+            "published_at": "2026-11-26T13:22:00+00:00",
+            "source": "The Register",
+            "title": "Company was religious about backups but sinned by leaving them exposed",
+            "url": "https://www.theregister.com/security/2026/11/26/company-was-religious-about-backups-but-sinned-by-leaving-them-exposed/5312234"
+          },
+          {
+            "published_at": "2026-11-26T11:02:00+00:00",
+            "source": "The Register",
+            "title": "Hackers help themselves to 1Password's source code and customer data",
+            "url": "https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317"
+          },
+          {
+            "published_at": "2026-11-26T09:30:00+00:00",
+            "source": "The Register",
+            "title": "UK Home Office waved through border system without a working fix for bad data",
+            "url": "https://www.theregister.com/security/2026/11/26/uk-home-office-waved-through-border-system-without-a-working-fix-for-bad-data/5312162"
+          },
+          {
+            "published_at": "2026-11-25T19:40:17+00:00",
+            "source": "The Register",
+            "title": "The security of US water systems is even leakier than we thought",
+            "url": "https://www.theregister.com/security/2026/11/25/the-security-of-us-water-systems-is-even-leakier-than-we-thought/5312243"
+          },
+          {
+            "published_at": "2026-11-25T18:38:29+00:00",
+            "source": "Ars Technica",
+            "title": "Backblaze explains why it's sharing customer information with advertisers",
+            "url": "https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/"
+          },
+          {
+            "published_at": "2026-11-25T17:01:00+00:00",
+            "source": "The Register",
+            "title": "Microsoft's NTLM security changes trip up third-party logins",
+            "url": "https://www.theregister.com/security/2026/11/25/microsofts-ntlm-security-changes-trip-up-third-party-logins/5312085"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-26",
       "opensource": {
         "topProjects": [
@@ -15714,8 +15947,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-26T01:55:56.066757+00:00",
-    "totalSnapshots": 71,
+    "generatedAt": "2026-11-27T01:53:15.544318+00:00",
+    "totalSnapshots": 72,
     "warnings": []
   }
 }
