@@ -1,6 +1,15 @@
 {
   "history": [
     {
+      "cves": 712,
+      "date": "2026-11-28",
+      "kevAdded": 3,
+      "knownExploited": 13,
+      "projects": 18,
+      "releases": 0,
+      "techEntries": 24
+    },
+    {
       "cves": 1238,
       "date": "2026-11-27",
       "kevAdded": 0,
@@ -650,16 +659,16 @@
     }
   ],
   "meta": {
-    "coveredDate": "2026-11-26",
-    "date": "2026-11-27",
-    "daysObserved": 72,
-    "generatedAt": "2026-11-27T01:53:15.544318+00:00",
-    "snapshots": 72,
+    "coveredDate": "2026-11-27",
+    "date": "2026-11-28",
+    "daysObserved": 73,
+    "generatedAt": "2026-11-28T01:35:32.119423+00:00",
+    "snapshots": 73,
     "timezone": "Asia/Kolkata"
   },
   "openSource": [
     {
-      "daily_growth": 31,
+      "daily_growth": -137,
       "description": "An Open Source Machine Learning Framework for Everyone",
       "full_name": "tensorflow/tensorflow",
       "growth_available": true,
@@ -667,11 +676,11 @@
       "name": "tensorflow",
       "rank": 1,
       "source": "GitHub",
-      "stars": 201865,
+      "stars": 201728,
       "url": "https://github.com/tensorflow/tensorflow"
     },
     {
-      "daily_growth": 16,
+      "daily_growth": -4,
       "description": "The React Framework",
       "full_name": "vercel/next.js",
       "growth_available": true,
@@ -679,11 +688,11 @@
       "name": "next.js",
       "rank": 2,
       "source": "GitHub",
-      "stars": 143745,
+      "stars": 143741,
       "url": "https://github.com/vercel/next.js"
     },
     {
-      "daily_growth": 29,
+      "daily_growth": -326,
       "description": "The Go programming language",
       "full_name": "golang/go",
       "growth_available": true,
@@ -691,11 +700,11 @@
       "name": "go",
       "rank": 3,
       "source": "GitHub",
-      "stars": 140160,
+      "stars": 139834,
       "url": "https://github.com/golang/go"
     },
     {
-      "daily_growth": 21,
+      "daily_growth": -122,
       "description": "Production-Grade Container Scheduling and Management",
       "full_name": "kubernetes/kubernetes",
       "growth_available": true,
@@ -703,11 +712,11 @@
       "name": "kubernetes",
       "rank": 4,
       "source": "GitHub",
-      "stars": 129382,
+      "stars": 129260,
       "url": "https://github.com/kubernetes/kubernetes"
     },
     {
-      "daily_growth": 23,
+      "daily_growth": -124,
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "full_name": "nodejs/node",
       "growth_available": true,
@@ -715,11 +724,11 @@
       "name": "node",
       "rank": 5,
       "source": "GitHub",
-      "stars": 124042,
+      "stars": 123918,
       "url": "https://github.com/nodejs/node"
     },
     {
-      "daily_growth": 56,
+      "daily_growth": -101,
       "description": "Empowering everyone to build reliable and efficient software.",
       "full_name": "rust-lang/rust",
       "growth_available": true,
@@ -727,11 +736,11 @@
       "name": "rust",
       "rank": 6,
       "source": "GitHub",
-      "stars": 122544,
+      "stars": 122443,
       "url": "https://github.com/rust-lang/rust"
     },
     {
-      "daily_growth": 49,
+      "daily_growth": -72,
       "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
       "full_name": "supabase/supabase",
       "growth_available": true,
@@ -739,11 +748,11 @@
       "name": "supabase",
       "rank": 7,
       "source": "GitHub",
-      "stars": 115564,
+      "stars": 115492,
       "url": "https://github.com/supabase/supabase"
     },
     {
-      "daily_growth": 24,
+      "daily_growth": -97,
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "full_name": "pytorch/pytorch",
       "growth_available": true,
@@ -751,11 +760,11 @@
       "name": "pytorch",
       "rank": 8,
       "source": "GitHub",
-      "stars": 105790,
+      "stars": 105693,
       "url": "https://github.com/pytorch/pytorch"
     },
     {
-      "daily_growth": 18,
+      "daily_growth": 4,
       "description": "A utility-first CSS framework for rapid UI development.",
       "full_name": "tailwindlabs/tailwindcss",
       "growth_available": true,
@@ -763,11 +772,11 @@
       "name": "tailwindcss",
       "rank": 9,
       "source": "GitHub",
-      "stars": 98853,
+      "stars": 98857,
       "url": "https://github.com/tailwindlabs/tailwindcss"
     },
     {
-      "daily_growth": 12,
+      "daily_growth": -179,
       "description": "The Web framework for perfectionists with deadlines.",
       "full_name": "django/django",
       "growth_available": true,
@@ -775,261 +784,224 @@
       "name": "django",
       "rank": 10,
       "source": "GitHub",
-      "stars": 91925,
+      "stars": 91746,
       "url": "https://github.com/django/django"
     }
   ],
-  "releases": [
-    {
-      "kind": "other",
-      "project": "vite",
-      "publishedAt": "2026-11-26T10:59:41Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/create-vite%409.4.0",
-      "version": "create-vite@9.4.0"
-    },
-    {
-      "kind": "minor",
-      "project": "vite",
-      "publishedAt": "2026-11-26T10:57:29Z",
-      "repository": "vitejs/vite",
-      "source": "GitHub",
-      "url": "https://github.com/vitejs/vite/releases/tag/v8.4.0",
-      "version": "v8.4.0"
-    },
-    {
-      "kind": "major",
-      "project": "node",
-      "publishedAt": "2026-11-26T08:45:39Z",
-      "repository": "nodejs/node",
-      "source": "GitHub",
-      "url": "https://github.com/nodejs/node/releases/tag/v27.0.0-alpha.0.2.0",
-      "version": "v27.0.0-alpha.0.2.0"
-    },
-    {
-      "kind": "minor",
-      "project": "openai-python",
-      "publishedAt": "2026-11-26T07:09:55Z",
-      "repository": "openai/openai-python",
-      "source": "GitHub",
-      "url": "https://github.com/openai/openai-python/releases/tag/v3.60.0",
-      "version": "v3.60.0"
-    }
-  ],
+  "releases": [],
   "security": {
-    "critical": 84,
-    "high": 505,
-    "kevCatalogTotal": 1805,
+    "critical": 54,
+    "high": 266,
+    "kevCatalogTotal": 1808,
     "latest": [
       {
-        "cvss_score": 0.9,
-        "cvss_version": "4.0",
-        "description": "A weakness has been identified in sgl-project SpecForge 0.2.0. This impacts the function Eagle3DraftModel.load_embedding of the file specforge/modeling/draft/base.py of the component Draft Embedding Loader. Executing a manipulation can lead to path traversal. The attack can only be executed locally. The exploit has been made available to the public and could be used for attacks. This patch is…",
-        "id": "CVE-2026-137416",
+        "cvss_score": 7.7,
+        "cvss_version": "3.1",
+        "description": "Dreamweaver Desktop is affected by a Dependency on Vulnerable Third-Party Component vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation depends on conditions beyond the attacker's control and requires user interaction in that a victim must open a malicious file. Scope…",
+        "id": "CVE-2026-132876",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:18.220",
-        "publishedAt": "2026-11-26T18:17:18.070",
+        "lastModifiedAt": "2026-11-27T18:16:46.217",
+        "publishedAt": "2026-11-27T18:16:46.217",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Dreamweaver Desktop is affected by a Dependency on Vulnerable Third-Party Component vulnerability that could result in arbitrary code execution in the context…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132876"
+      },
+      {
+        "cvss_score": 5.1,
+        "cvss_version": "4.0",
+        "description": "SunEditor from 3.0.0 before 3.4.3 contains a stored cross-site scripting vulnerability in the codeBlock plugin that allows attackers to inject script via entity-encoded pre language class values. Attackers can store content whose language- class decodes to HTML written via innerHTML into the hover button, executing script when victims hover over the block.",
+        "id": "CVE-2026-137557",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:25:14.573",
+        "publishedAt": "2026-11-26T16:18:09.680",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "SunEditor from 3.0.0 before 3.4.3 contains a stored cross-site scripting vulnerability in the codeBlock plugin that allows attackers to inject script via…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137557"
+      },
+      {
+        "cvss_score": 8.5,
+        "cvss_version": "4.0",
+        "description": "FFmpeg 3.0 before 8.1.3 contains a heap buffer overflow vulnerability in libavfilter/vf_boxblur.c because query_formats() accepts pixel formats deeper than 16 bits while the blur temporary buffers hold only 2 bytes per pixel. Attackers can supply crafted 32-bit float media, such as PFM or OpenEXR images, that when processed by the boxblur filter overflow the temporary buffers, crashing…",
+        "id": "CVE-2026-137907",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:21:30.633",
+        "publishedAt": "2026-11-27T13:17:25.483",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "FFmpeg 3.0 before 8.1.3 contains a heap buffer overflow vulnerability in libavfilter/vf_boxblur.c because query_formats() accepts pixel formats deeper than 16…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137907"
+      },
+      {
+        "cvss_score": 5.7,
+        "cvss_version": "4.0",
+        "description": "FFmpeg 7.1 before 9.1 contains a memory leak vulnerability in eb_receive_packet() in libavcodec/libsvtav1.c that returns without unreferencing the queued input frame when eb_send_frame() fails. Attackers can supply crafted video in which some frames lack Dolby Vision metadata to an SVT-AV1 encode with Dolby Vision RPU coding enabled, leaking each rejected frame's buffers or aborting in…",
+        "id": "CVE-2026-137908",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:21:21.980",
+        "publishedAt": "2026-11-27T13:17:25.660",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "FFmpeg 7.1 before 9.1 contains a memory leak vulnerability in eb_receive_packet() in libavcodec/libsvtav1.c that returns without unreferencing the queued input…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137908"
+      },
+      {
+        "cvss_score": 5.8,
+        "cvss_version": "4.0",
+        "description": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in pcx_encode_frame() in libavcodec/pcxenc.c that rounds each row up to an even number of bytes and run-length encodes that many bytes from the input frame. Attackers who control the width of images encoded to PCX by an application that supplies tightly packed frames can make the encoder read past the end of the frame buffer, crashing…",
+        "id": "CVE-2026-137910",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:20:51.500",
+        "publishedAt": "2026-11-27T13:17:26.047",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in pcx_encode_frame() in libavcodec/pcxenc.c that rounds each row up to an even number of bytes…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137910"
+      },
+      {
+        "cvss_score": 5.8,
+        "cvss_version": "4.0",
+        "description": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in xwd_encode_frame() in libavcodec/xwdenc.c that copies each RGB24 or BGR24 row using the padded XWD scanline size instead of the pixel row size. Attackers who control the width of video encoded to XWD by an application that supplies tightly packed frames can make the encoder read past the frame buffer, crashing the application or…",
+        "id": "CVE-2026-137911",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:20:44.937",
+        "publishedAt": "2026-11-27T13:17:26.230",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "FFmpeg before 9.1 contains an out-of-bounds read vulnerability in xwd_encode_frame() in libavcodec/xwdenc.c that copies each RGB24 or BGR24 row using the…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137911"
+      },
+      {
+        "cvss_score": 7.2,
+        "cvss_version": "3.1",
+        "description": "The Easy Form Builder by WhiteStudio – Drag & Drop Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via esign 'value' Field via Cross-Type 'r_matrix' Poisoning in all versions up to, and including, 4.3.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will…",
+        "id": "CVE-2026-95810",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:18:03.530",
+        "publishedAt": "2026-11-26T15:17:45.040",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The Easy Form Builder by WhiteStudio – Drag & Drop Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via esign 'value' Field via…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-95810"
+      },
+      {
+        "cvss_score": 7.2,
+        "cvss_version": "3.1",
+        "description": "The Lenix Leads Collector plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Field Name in all versions up to, and including, 2.0.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This is exploitable because…",
+        "id": "CVE-2026-85416",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:18:03.387",
+        "publishedAt": "2026-11-26T16:18:12.440",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "The Lenix Leads Collector plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Field Name in all versions up to, and including, 2.0.0 due…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85416"
+      },
+      {
+        "cvss_score": 6.0,
+        "cvss_version": "4.0",
+        "description": "Nmap before 7.992 contains an infinite loop vulnerability in the process_write function of the NSE tn3270.lua library, whose write loop does not advance when it processes a malformed Repeat to Address (RA) order. A malicious TN3270 server on a scanned host can embed a single 6-byte malformed RA order in an ordinary screen-write data stream after a normal negotiation, causing a permanent 100% CPU…",
+        "id": "CVE-2026-81416",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:18:03.243",
+        "publishedAt": "2026-11-25T18:18:56.720",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Nmap before 7.992 contains an infinite loop vulnerability in the process_write function of the NSE tn3270.lua library, whose write loop does not advance when…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81416"
+      },
+      {
+        "cvss_score": 7.1,
+        "cvss_version": "4.0",
+        "description": "Nmap before 7.992 contains an infinite loop vulnerability in the ConfCreateResponse GCC block parser of the NSE rdp.lua library, which does not check that each block advances the read position. A malicious RDP server on a scanned host can include a single malformed zero-length block in an otherwise valid handshake, causing a permanent 100% CPU hang of the Nmap process that the script-timeout…",
+        "id": "CVE-2026-81411",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:18:03.090",
+        "publishedAt": "2026-11-25T18:18:55.963",
+        "severity": "HIGH",
+        "source": "NVD",
+        "title": "Nmap before 7.992 contains an infinite loop vulnerability in the ConfCreateResponse GCC block parser of the NSE rdp.lua library, which does not check that each…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81411"
+      },
+      {
+        "cvss_score": 6.0,
+        "cvss_version": "4.0",
+        "description": "Nmap before 7.992 contains a hardcoded cryptographic key vulnerability in the DHCAST128 login of the NSE afp.lua library, which uses a fixed, publicly known Diffie-Hellman private exponent. A passive observer of the network traffic between Nmap and an Apple Filing Protocol server can compute the shared secret from the hardcoded exponent and the server's public value and decrypt the password…",
+        "id": "CVE-2026-81407",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:18:02.940",
+        "publishedAt": "2026-11-25T18:18:55.340",
+        "severity": "MEDIUM",
+        "source": "NVD",
+        "title": "Nmap before 7.992 contains a hardcoded cryptographic key vulnerability in the DHCAST128 login of the NSE afp.lua library, which uses a fixed, publicly known…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81407"
+      },
+      {
+        "cvss_score": 2.9,
+        "cvss_version": "3.1",
+        "description": "Dell Secure Connect Gateway - Virtual Edition, versions prior to 5.36.00.16, contains an Observable Timing Discrepancy vulnerability. A low privileged remote attacker could potentially exploit this vulnerability, leading to Session theft.",
+        "id": "CVE-2026-81055",
+        "known_exploited": false,
+        "lastModifiedAt": "2026-11-27T17:18:02.803",
+        "publishedAt": "2026-11-27T17:18:02.803",
         "severity": "LOW",
         "source": "NVD",
-        "title": "A weakness has been identified in sgl-project SpecForge 0.2.0. This impacts the function Eagle3DraftModel.load_embedding of the file…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137416"
-      },
-      {
-        "cvss_score": 6.9,
-        "cvss_version": "4.0",
-        "description": "A security flaw has been discovered in Tencent RapidJSON up to 1.1.0. This affects the function Writer::WriteString in the library include/rapidjson/writer.h. Performing a manipulation of the argument length results in integer overflow. The attack may be initiated remotely. The patch is named 297637bc0a0f00dc504dbc1a47ebdaa577f8ae19. To fix this issue, it is recommended to deploy a patch.",
-        "id": "CVE-2026-137415",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:18.017",
-        "publishedAt": "2026-11-26T18:17:17.873",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A security flaw has been discovered in Tencent RapidJSON up to 1.1.0. This affects the function Writer::WriteString in the library include/rapidjson/writer.h…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137415"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was identified in itsourcecode Event Management System 1.0. The impacted element is an unknown function of the file view_event.php. Such manipulation of the argument ID leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might be used.",
-        "id": "CVE-2026-137414",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:17.830",
-        "publishedAt": "2026-11-26T18:17:17.687",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A vulnerability was identified in itsourcecode Event Management System 1.0. The impacted element is an unknown function of the file view_event.php. Such…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137414"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "4.0",
-        "description": "A vulnerability was determined in projectworlds Online Jewellery Shopping System 1.0. The affected element is the function Dashbord_model.searchAdvance of the file /jewllary-shop/application/models/dashbord_model.php of the component Advanced Search. This manipulation of the argument from/to causes sql injection. The attack can be initiated remotely. The exploit has been publicly disclosed and…",
-        "id": "CVE-2026-137412",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:17.640",
-        "publishedAt": "2026-11-26T18:17:17.497",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A vulnerability was determined in projectworlds Online Jewellery Shopping System 1.0. The affected element is the function Dashbord_model.searchAdvance of the…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137412"
-      },
-      {
-        "cvss_score": 10.0,
-        "cvss_version": "3.1",
-        "description": "A **server-side request forgery** flaw has been found in the get_remote_artifact_url() function in pulp_python/app/models.py of the pull-through caching feature in the **pulp_python** package. The function uses the redirect query parameter from the client request as the URL to download. A network attacker or user who can reach the content app of a Python distribution that has a remote can choose…",
-        "id": "CVE-2026-126984",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:17.380",
-        "publishedAt": "2026-11-26T16:17:50.623",
-        "severity": "CRITICAL",
-        "source": "NVD",
-        "title": "A **server-side request forgery** flaw has been found in the get_remote_artifact_url() function in pulp_python/app/models.py of the pull-through caching…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-126984"
-      },
-      {
-        "cvss_score": 8.3,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in the github.com/containers/image library. This flaw allows attackers to trigger unexpected authenticated registry accesses on behalf of a victim user, causing resource exhaustion, local path traversal, and other attacks.",
-        "id": "CVE-2024-3727",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:15.580",
-        "publishedAt": "2024-05-14T15:42:07.060",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A flaw was found in the github.com/containers/image library. This flaw allows attackers to trigger unexpected authenticated registry accesses on behalf of a…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3727"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "A vulnerability in the Eclipse Vert.x toolkit causes a memory leak in TCP servers configured with TLS and SNI support. When processing an unknown SNI server name assigned the default certificate instead of a mapped certificate, the SSL context is erroneously cached in the server name map, leading to memory exhaustion. This flaw allows attackers to send TLS client hello messages with fake server…",
-        "id": "CVE-2024-1300",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:15.310",
-        "publishedAt": "2024-04-02T08:15:53.993",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A vulnerability in the Eclipse Vert.x toolkit causes a memory leak in TCP servers configured with TLS and SNI support. When processing an unknown SNI server…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1300"
-      },
-      {
-        "cvss_score": 7.4,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in Keycloak's OIDC component in the \"checkLoginIframe,\" which allows unvalidated cross-origin messages. This flaw allows attackers to coordinate and send millions of requests in seconds using simple code, significantly impacting the application's availability without proper origin validation for incoming messages.",
-        "id": "CVE-2024-1249",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:15.043",
-        "publishedAt": "2024-04-17T14:15:08.160",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A flaw was found in Keycloak's OIDC component in the \"checkLoginIframe,\" which allows unvalidated cross-origin messages. This flaw allows attackers to…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1249"
+        "title": "Dell Secure Connect Gateway - Virtual Edition, versions prior to 5.36.00.16, contains an Observable Timing Discrepancy vulnerability. A low privileged remote…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81055"
       },
       {
         "cvss_score": 5.5,
         "cvss_version": "3.1",
-        "description": "A vulnerability was reported in the Open vSwitch sub-component in the Linux Kernel. The flaw occurs when a recursive operation of code push recursively calls into the code block. The OVS module does not validate the stack depth, pushing too many frames and causing a stack overflow. As a result, this can lead to a crash or other related issues.",
-        "id": "CVE-2024-1151",
+        "description": "Dell Secure Connect Gateway - Virtual Edition, versions prior to 5.36.00.16, contains an Insertion of Sensitive Information into Log File vulnerability. A low privileged local attacker could potentially exploit this vulnerability, leading to Information exposure.",
+        "id": "CVE-2026-81054",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:14.517",
-        "publishedAt": "2024-02-11T15:15:07.890",
+        "lastModifiedAt": "2026-11-27T17:18:02.673",
+        "publishedAt": "2026-11-27T17:18:02.673",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A vulnerability was reported in the Open vSwitch sub-component in the Linux Kernel. The flaw occurs when a recursive operation of code push recursively calls…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1151"
+        "title": "Dell Secure Connect Gateway - Virtual Edition, versions prior to 5.36.00.16, contains an Insertion of Sensitive Information into Log File vulnerability. A low…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81054"
       },
       {
-        "cvss_score": 8.1,
+        "cvss_score": 6.7,
         "cvss_version": "3.1",
-        "description": "A flaw was found in Keycloak, where it does not properly validate URLs included in a redirect. This issue could allow an attacker to construct a malicious request to bypass validation and access other URLs and sensitive information within the domain or conduct further attacks. This flaw affects any client that utilizes a wildcard in the Valid Redirect URIs field, and requires user interaction…",
-        "id": "CVE-2024-1132",
+        "description": "Dell Secure Connect Gateway - Virtual Edition, versions prior to 5.36.00.16, contains a Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') vulnerability. A low privileged remote attacker could potentially exploit this vulnerability, leading to Denial of service.",
+        "id": "CVE-2026-81053",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:14.257",
-        "publishedAt": "2024-04-17T14:15:07.953",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A flaw was found in Keycloak, where it does not properly validate URLs included in a redirect. This issue could allow an attacker to construct a malicious…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1132"
-      },
-      {
-        "cvss_score": 5.5,
-        "cvss_version": "3.1",
-        "description": "A heap overflow flaw was found in 389-ds-base. This issue leads to a denial of service when writing a value larger than 256 chars in log_entry_attr.",
-        "id": "CVE-2024-1062",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:14.050",
-        "publishedAt": "2024-02-12T13:15:09.210",
+        "lastModifiedAt": "2026-11-27T17:18:02.527",
+        "publishedAt": "2026-11-27T17:18:02.527",
         "severity": "MEDIUM",
         "source": "NVD",
-        "title": "A heap overflow flaw was found in 389-ds-base. This issue leads to a denial of service when writing a value larger than 256 chars in log_entry_attr.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1062"
+        "title": "Dell Secure Connect Gateway - Virtual Edition, versions prior to 5.36.00.16, contains a Concurrent Execution using Shared Resource with Improper…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81053"
       },
       {
-        "cvss_score": 6.5,
+        "cvss_score": 2.9,
         "cvss_version": "3.1",
-        "description": "A vulnerability in the Eclipse Vert.x toolkit results in a memory leak due to using Netty FastThreadLocal data structures. Specifically, when the Vert.x HTTP client establishes connections to different hosts, triggering the memory leak. The leak can be accelerated with intimate runtime knowledge, allowing an attacker to exploit this vulnerability. For instance, a server accepting arbitrary…",
-        "id": "CVE-2024-1023",
+        "description": "Dell Secure Connect Gateway - Virtual Edition, versions prior to 5.36.00.16, contains an Insufficient Logging vulnerability. An unauthenticated local attacker could potentially exploit this vulnerability, leading to Session theft.",
+        "id": "CVE-2026-81050",
         "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:13.807",
-        "publishedAt": "2024-03-27T08:15:38.140",
-        "severity": "MEDIUM",
+        "lastModifiedAt": "2026-11-27T17:18:02.397",
+        "publishedAt": "2026-11-27T17:18:02.397",
+        "severity": "LOW",
         "source": "NVD",
-        "title": "A vulnerability in the Eclipse Vert.x toolkit results in a memory leak due to using Netty FastThreadLocal data structures. Specifically, when the Vert.x HTTP…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1023"
-      },
-      {
-        "cvss_score": 8.2,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in openshift-gitops-operator-container. The openshift.io/cluster-monitoring label is applied to all namespaces that deploy an ArgoCD CR instance, allowing the namespace to create a rogue PrometheusRule. This issue can have adverse effects on the platform monitoring stack, as the rule is rolled out cluster-wide when the label is applied.",
-        "id": "CVE-2024-13484",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:13.520",
-        "publishedAt": "2025-01-28T18:15:32.537",
-        "severity": "HIGH",
-        "source": "NVD",
-        "title": "A flaw was found in openshift-gitops-operator-container. The openshift.io/cluster-monitoring label is applied to all namespaces that deploy an ArgoCD CR…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-13484"
-      },
-      {
-        "cvss_score": 5.4,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in npm-serialize-javascript. The vulnerability occurs because the serialize-javascript module does not properly sanitize certain inputs, such as regex or other JavaScript object types, allowing an attacker to inject malicious code. This code could be executed when deserialized by a web browser, causing Cross-site scripting (XSS) attacks. This issue is critical in environments…",
-        "id": "CVE-2024-11831",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:13.013",
-        "publishedAt": "2025-02-10T16:15:37.080",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A flaw was found in npm-serialize-javascript. The vulnerability occurs because the serialize-javascript module does not properly sanitize certain inputs, such…",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-11831"
-      },
-      {
-        "cvss_score": 5.3,
-        "cvss_version": "3.1",
-        "description": "A flaw was found in coredns. This issue could lead to invalid cache entries returning due to incorrectly implemented caching.",
-        "id": "CVE-2024-0874",
-        "known_exploited": false,
-        "lastModifiedAt": "2026-11-26T18:17:12.853",
-        "publishedAt": "2024-04-25T17:15:47.083",
-        "severity": "MEDIUM",
-        "source": "NVD",
-        "title": "A flaw was found in coredns. This issue could lead to invalid cache entries returning due to incorrectly implemented caching.",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-0874"
+        "title": "Dell Secure Connect Gateway - Virtual Edition, versions prior to 5.36.00.16, contains an Insufficient Logging vulnerability. An unauthenticated local attacker…",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81050"
       }
     ],
-    "low": 66,
-    "medium": 497,
+    "low": 45,
+    "medium": 333,
     "none": 0,
-    "unscored": 86
+    "unscored": 14
   },
   "snapshot": {
-    "cves": 1238,
-    "kevAdded": 0,
-    "knownExploited": 11,
+    "cves": 712,
+    "kevAdded": 3,
+    "knownExploited": 13,
     "projects": 18,
-    "releases": 4,
-    "techEntries": 35
+    "releases": 0,
+    "techEntries": 24
   },
   "sources": {
     "opensource": {
@@ -1043,7 +1015,7 @@
     "releases": {
       "github": {
         "failures": 2,
-        "inWindow": 4,
+        "inWindow": 0,
         "status": "partial",
         "total": 52
       }
@@ -1051,27 +1023,51 @@
     "security": {
       "cisa": {
         "failures": 0,
-        "inWindow": 0,
-        "status": "empty",
-        "total": 1805
+        "inWindow": 3,
+        "status": "success",
+        "total": 1808
       },
       "nvd": {
         "failures": 0,
-        "inWindow": 1238,
+        "inWindow": 712,
         "status": "success",
-        "total": 1238
+        "total": 712
       }
     },
     "technology": {
       "rss": {
         "failures": 0,
-        "inWindow": 35,
+        "inWindow": 24,
         "status": "success",
         "total": 229
       }
     }
   },
   "technology": [
+    {
+      "category": "security",
+      "publishedAt": "2026-11-27T10:01:00+00:00",
+      "source": "The Register",
+      "summary": "Pensioners assured their funds will arrive as normal",
+      "title": "British social security system techies yank services offline following 'cyber incident'",
+      "url": "https://www.theregister.com/security/2026/11/27/british-social-security-system-techies-yank-services-offline-following-cyber-incident/5312522"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-27T01:19:31+00:00",
+      "source": "The Register",
+      "summary": "India’s Digital Infrastructure for Governance Impact and Transformation tool can leak data",
+      "title": "Free e-government platform that serves two billion people in ten countries has critical SQL injection bug",
+      "url": "https://www.theregister.com/security/2026/11/27/free-e-government-platform-that-serves-two-billion-people-in-ten-countries-has-critical-sql-injection-bug/5312449"
+    },
+    {
+      "category": "security",
+      "publishedAt": "2026-11-26T19:04:00+00:00",
+      "source": "The Register",
+      "summary": "Agentic offensive framework automates familiar attack techniques, with weak defenses potentially breached in minutes",
+      "title": "Microsoft: Hackers in China, N Korea using ARTEX AI tool to break into global tech systems",
+      "url": "https://www.theregister.com/security/2026/11/26/microsoft-hackers-in-china-n-korea-using-artex-ai-tool-to-break-into-global-tech-systems/5312433"
+    },
     {
       "category": "tech",
       "publishedAt": "2026-11-26T18:15:00+00:00",
@@ -1167,30 +1163,6 @@
       "summary": "Now that code ships faster than ever, you have more time to spend on projects just for the fun of it. Here's what we can learn through that process as developers. The post Art of play in the age of AI appeared first on The GitHub Blog .",
       "title": "Art of play in the age of AI",
       "url": "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-25T15:00:00+00:00",
-      "source": "GitHub Blog",
-      "summary": "Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill. The post How to choose the next safe step in application modernization appeared first on The GitHub Blog .",
-      "title": "How to choose the next safe step in application modernization",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/"
-    },
-    {
-      "category": "tech",
-      "publishedAt": "2026-11-25T14:45:00+00:00",
-      "source": "The Register",
-      "summary": "Update resolves work-blocking popup, but affected users may need an administrator command prompt to install it",
-      "title": "Microsoft fixes Office dialog that had nothing to say and wouldn't go away",
-      "url": "https://www.theregister.com/software/2026/11/25/microsoft-fixes-office-dialog-that-had-nothing-to-say-and-wouldnt-go-away/5312057"
-    },
-    {
-      "category": "security",
-      "publishedAt": "2026-11-25T14:29:43+00:00",
-      "source": "Ars Technica",
-      "summary": "France blames an Iranian cyber unit for sabotaging hundreds of supermarket freezers.",
-      "title": "A familiar Iranian hacking group has found a new way to cause chaos",
-      "url": "https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos/"
     }
   ]
 }

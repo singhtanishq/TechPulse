@@ -1,6 +1,210 @@
 {
   "archive": [
     {
+      "date": "2026-11-28",
+      "opensource": {
+        "topProjects": [
+          {
+            "daily_growth": -137,
+            "full_name": "tensorflow/tensorflow",
+            "language": "C++",
+            "stars": 201728,
+            "url": "https://github.com/tensorflow/tensorflow"
+          },
+          {
+            "daily_growth": -4,
+            "full_name": "vercel/next.js",
+            "language": "JavaScript",
+            "stars": 143741,
+            "url": "https://github.com/vercel/next.js"
+          },
+          {
+            "daily_growth": -326,
+            "full_name": "golang/go",
+            "language": "Go",
+            "stars": 139834,
+            "url": "https://github.com/golang/go"
+          },
+          {
+            "daily_growth": -122,
+            "full_name": "kubernetes/kubernetes",
+            "language": "Go",
+            "stars": 129260,
+            "url": "https://github.com/kubernetes/kubernetes"
+          },
+          {
+            "daily_growth": -124,
+            "full_name": "nodejs/node",
+            "language": "JavaScript",
+            "stars": 123918,
+            "url": "https://github.com/nodejs/node"
+          },
+          {
+            "daily_growth": -101,
+            "full_name": "rust-lang/rust",
+            "language": "Rust",
+            "stars": 122443,
+            "url": "https://github.com/rust-lang/rust"
+          },
+          {
+            "daily_growth": -72,
+            "full_name": "supabase/supabase",
+            "language": "TypeScript",
+            "stars": 115492,
+            "url": "https://github.com/supabase/supabase"
+          },
+          {
+            "daily_growth": -97,
+            "full_name": "pytorch/pytorch",
+            "language": "Python",
+            "stars": 105693,
+            "url": "https://github.com/pytorch/pytorch"
+          },
+          {
+            "daily_growth": 4,
+            "full_name": "tailwindlabs/tailwindcss",
+            "language": "TypeScript",
+            "stars": 98857,
+            "url": "https://github.com/tailwindlabs/tailwindcss"
+          },
+          {
+            "daily_growth": -179,
+            "full_name": "django/django",
+            "language": "Python",
+            "stars": 91746,
+            "url": "https://github.com/django/django"
+          }
+        ]
+      },
+      "releases": {
+        "categories": {
+          "major": 0,
+          "minor": 0,
+          "other": 0,
+          "patch": 0
+        },
+        "recent": []
+      },
+      "security": {
+        "severity": {
+          "CRITICAL": 54,
+          "HIGH": 266,
+          "LOW": 45,
+          "MEDIUM": 333,
+          "NONE": 0,
+          "UNSCORED": 14
+        }
+      },
+      "snapshot": {
+        "cves": 712,
+        "kevAdded": 3,
+        "knownExploited": 13,
+        "projects": 18,
+        "releases": 0,
+        "techEntries": 24
+      },
+      "sources": {
+        "cisa": {
+          "failures": 0,
+          "inWindow": 3,
+          "status": "success",
+          "total": 1808
+        },
+        "github_releases": {
+          "failures": 2,
+          "inWindow": 0,
+          "status": "partial",
+          "total": 52
+        },
+        "github_repos": {
+          "failures": 2,
+          "inWindow": 18,
+          "status": "partial",
+          "total": 18
+        },
+        "nvd": {
+          "failures": 0,
+          "inWindow": 712,
+          "status": "success",
+          "total": 712
+        },
+        "rss": {
+          "failures": 0,
+          "inWindow": 24,
+          "status": "success",
+          "total": 229
+        }
+      },
+      "technology": {
+        "categories": {
+          "security": 16,
+          "tech": 8
+        },
+        "recent": [
+          {
+            "published_at": "2026-11-27T10:01:00+00:00",
+            "source": "The Register",
+            "title": "British social security system techies yank services offline following 'cyber incident'",
+            "url": "https://www.theregister.com/security/2026/11/27/british-social-security-system-techies-yank-services-offline-following-cyber-incident/5312522"
+          },
+          {
+            "published_at": "2026-11-27T01:19:31+00:00",
+            "source": "The Register",
+            "title": "Free e-government platform that serves two billion people in ten countries has critical SQL injection bug",
+            "url": "https://www.theregister.com/security/2026/11/27/free-e-government-platform-that-serves-two-billion-people-in-ten-countries-has-critical-sql-injection-bug/5312449"
+          },
+          {
+            "published_at": "2026-11-26T19:04:00+00:00",
+            "source": "The Register",
+            "title": "Microsoft: Hackers in China, N Korea using ARTEX AI tool to break into global tech systems",
+            "url": "https://www.theregister.com/security/2026/11/26/microsoft-hackers-in-china-n-korea-using-artex-ai-tool-to-break-into-global-tech-systems/5312433"
+          },
+          {
+            "published_at": "2026-11-26T18:15:00+00:00",
+            "source": "The Register",
+            "title": "Indie web browser Ladybird enters alpha testing",
+            "url": "https://www.theregister.com/software/2026/11/26/indie-web-browser-ladybird-enters-alpha-testing/5311914"
+          },
+          {
+            "published_at": "2026-11-26T16:16:00+00:00",
+            "source": "The Register",
+            "title": "UK privacy watchdog faces probe into its workplace culture",
+            "url": "https://www.theregister.com/public-sector/2026/11/26/uk-privacy-watchdog-faces-probe-into-its-workplace-culture/5312380"
+          },
+          {
+            "published_at": "2026-11-26T15:29:00+00:00",
+            "source": "The Register",
+            "title": "'Significant number of customer records' pwned in Flight Centre Travel Group breach",
+            "url": "https://www.theregister.com/security/2026/11/26/significant-number-of-customer-records-pwned-in-flight-centre-travel-group-breach/5312360"
+          },
+          {
+            "published_at": "2026-11-26T14:02:00+00:00",
+            "source": "The Register",
+            "title": "Wyoming uranium operation shuts down after cyberattack",
+            "url": "https://www.theregister.com/security/2026/11/26/wyoming-uranium-operation-shuts-down-after-cyberattack/5312323"
+          },
+          {
+            "published_at": "2026-11-26T13:22:00+00:00",
+            "source": "The Register",
+            "title": "Company was religious about backups but sinned by leaving them exposed",
+            "url": "https://www.theregister.com/security/2026/11/26/company-was-religious-about-backups-but-sinned-by-leaving-them-exposed/5312234"
+          },
+          {
+            "published_at": "2026-11-26T11:02:00+00:00",
+            "source": "The Register",
+            "title": "Hackers help themselves to 1Password's source code and customer data",
+            "url": "https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317"
+          },
+          {
+            "published_at": "2026-11-26T09:30:00+00:00",
+            "source": "The Register",
+            "title": "UK Home Office waved through border system without a working fix for bad data",
+            "url": "https://www.theregister.com/security/2026/11/26/uk-home-office-waved-through-border-system-without-a-working-fix-for-bad-data/5312162"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-11-27",
       "opensource": {
         "topProjects": [
@@ -15947,8 +16151,8 @@
     }
   ],
   "meta": {
-    "generatedAt": "2026-11-27T01:53:15.544318+00:00",
-    "totalSnapshots": 72,
+    "generatedAt": "2026-11-28T01:35:32.119423+00:00",
+    "totalSnapshots": 73,
     "warnings": []
   }
 }
